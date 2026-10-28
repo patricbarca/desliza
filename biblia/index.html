@@ -13,8 +13,24 @@
   --ui:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#121916; --surface:#1B2420; --fg:#E4E9E4; --muted:#93A29B; --line:#2C3833; --accent:#8CC4AF; --on-accent:#0F1613; --glow:#D9B861; color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#121916; --surface:#1B2420; --fg:#E4E9E4; --muted:#93A29B; --line:#2C3833; --accent:#8CC4AF; --on-accent:#0F1613; --glow:#D9B861; color-scheme:dark}
+  --bg:#121916; --surface:#1B2420; --fg:#E4E9E4; --muted:#93A29B; --line:#2C3833; --accent:#8CC4AF; --on-accent:#0F1613; --glow:#D9B861; color-scheme:dark;
+  --glass:rgba(255,255,255,.07); --glass-strong:rgba(22,32,28,.62); --glass-edge:rgba(255,255,255,.16);
+  --glass-sheen:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.02) 45%,rgba(255,255,255,0) 60%,rgba(255,255,255,.06));
+  --glass-hi:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(255,255,255,.05);
+  --glass-shadow:0 12px 36px rgba(0,0,0,.45),0 2px 6px rgba(0,0,0,.3);
+  --mesh:radial-gradient(42% 36% at 12% 18%,rgba(60,140,115,.38),transparent 70%),
+         radial-gradient(36% 32% at 88% 12%,rgba(217,184,97,.24),transparent 70%),
+         radial-gradient(46% 40% at 76% 86%,rgba(60,120,170,.30),transparent 70%),
+         radial-gradient(40% 36% at 8% 92%,rgba(140,196,175,.18),transparent 70%),var(--bg)}}
+:root[data-theme="dark"]{--bg:#121916; --surface:#1B2420; --fg:#E4E9E4; --muted:#93A29B; --line:#2C3833; --accent:#8CC4AF; --on-accent:#0F1613; --glow:#D9B861; color-scheme:dark;
+  --glass:rgba(255,255,255,.07); --glass-strong:rgba(22,32,28,.62); --glass-edge:rgba(255,255,255,.16);
+  --glass-sheen:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.02) 45%,rgba(255,255,255,0) 60%,rgba(255,255,255,.06));
+  --glass-hi:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(255,255,255,.05);
+  --glass-shadow:0 12px 36px rgba(0,0,0,.45),0 2px 6px rgba(0,0,0,.3);
+  --mesh:radial-gradient(42% 36% at 12% 18%,rgba(60,140,115,.38),transparent 70%),
+         radial-gradient(36% 32% at 88% 12%,rgba(217,184,97,.24),transparent 70%),
+         radial-gradient(46% 40% at 76% 86%,rgba(60,120,170,.30),transparent 70%),
+         radial-gradient(40% 36% at 8% 92%,rgba(140,196,175,.18),transparent 70%),var(--bg)}
 [hidden]{display:none!important} /* #cover etc. set display:flex, which would otherwise override the hidden attribute */
 html,body{height:100%;margin:0}
 body{background:var(--bg);color:var(--fg);font-family:var(--ui);overflow:hidden}
@@ -22,12 +38,10 @@ button,select{font-family:var(--ui)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 /* Cover */
-#cover{position:fixed;inset:0;z-index:20;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;text-align:center;
+#cover{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;text-align:center;
   padding-block:calc(24px + env(safe-area-inset-top,0px)) calc(24px + env(safe-area-inset-bottom,0px));
-  padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));overflow-y:auto;
-  background-image:radial-gradient(60% 45% at 50% 30%,color-mix(in srgb,var(--glow) 18%,transparent),transparent 70%)}
+  padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));overflow-y:auto}
 .logo{width:112px;height:112px}
-.logo .tile{fill:var(--accent)} .logo .page{fill:var(--on-accent)} .logo .ray{fill:var(--glow)}
 #cover h1{font-family:var(--verse);font-weight:700;font-size:clamp(40px,11vw,64px);line-height:1;margin:0;letter-spacing:-.01em;text-wrap:balance}
 #cover h1 em{font-style:italic;font-weight:500;color:var(--accent)}
 .tag{font-size:16px;line-height:1.5;color:var(--muted);max-width:30ch;margin:0}
@@ -43,8 +57,7 @@ button,select{font-family:var(--ui)}
 /* Feed */
 .top{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;align-items:center;gap:8px;
   padding-top:calc(10px + env(safe-area-inset-top,0px));padding-bottom:10px;
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
-  background:linear-gradient(var(--bg) 60%,transparent)}
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .brand{display:flex;align-items:center;gap:8px;margin-right:auto;border:0;background:none;color:var(--fg);cursor:pointer;padding:0}
 .brand svg{width:28px;height:28px}
 .brand span{font-family:var(--verse);font-size:21px;font-weight:700}
@@ -68,7 +81,7 @@ select{font-weight:500;font-size:13px;color:var(--fg);background:var(--surface);
 .sum h2{font-family:var(--verse);font-weight:700;font-size:clamp(34px,8vw,48px);line-height:1.05;margin:0}
 .sumtext{font-size:18px;line-height:1.6;max-width:60ch;border-left:2px solid var(--glow);padding-left:14px}
 @media (max-width:440px){.brand span{display:none}.tabs button{padding:6px 7px;font-size:12px}#lang{display:none}.top{gap:6px}}
-#tl{position:fixed;inset:0;box-sizing:border-box;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;touch-action:pan-x pan-y;padding-block:calc(70px + env(safe-area-inset-top,0px)) 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+#tl{position:fixed;inset:0;box-sizing:border-box;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;touch-action:pan-x pan-y;padding-block:calc(70px + env(safe-area-inset-top,0px)) 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
 .tlw{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
 .crumbs{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
 .crumbs button{border:0;background:none;color:var(--accent);font-weight:600;font-size:13px;cursor:pointer;padding:2px 0}
@@ -88,14 +101,13 @@ select{font-weight:500;font-size:13px;color:var(--fg);background:var(--surface);
 .go{align-self:flex-start;border:0;background:var(--accent);color:var(--on-accent);font-weight:600;font-size:15px;border-radius:999px;padding:11px 20px;cursor:pointer}
 .map{border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow-x:auto}
 .map svg{display:block;width:100%;min-width:340px;height:auto}
-.map .sea{fill:color-mix(in srgb,var(--accent) 16%,var(--surface))}.map .land{fill:var(--bg);stroke:var(--line)}
+.map .sea{fill:color-mix(in srgb,var(--accent) 16%,var(--surface))}.map .land{fill:color-mix(in srgb,var(--bg) 70%,transparent);stroke:var(--line)}
 .map .river{fill:none;stroke:color-mix(in srgb,var(--accent) 45%,transparent);stroke-width:2}
 .map .pt{fill:var(--glow);stroke:var(--fg);stroke-width:1}.map text{fill:var(--fg);font:600 11px var(--ui)}.map .soft{fill:var(--muted);font-weight:500;font-style:italic}
 .map .route{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-dasharray:4 4}
 .cap{font-size:12px;color:var(--muted);padding:8px 12px}
 /* Horizontal timeline: full-bleed, positions in % of track height so it fits any screen */
-#tl{overflow-x:hidden}
-.hscroll{--ax:54%;--cw:200px;width:100vw;margin-left:calc(50% - 50vw);overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.hscroll{--ax:57%;--cw:200px;width:100vw;margin-left:calc(50% - 50vw);overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
 .htrack{position:relative;height:clamp(560px,80vh,700px)}
 .hci{display:block;width:calc(100% + 24px);margin:-10px -12px 4px;height:84px;object-fit:cover;border-radius:11px 11px 0 0;filter:sepia(.15)}
 .evfig{margin:0;display:flex;flex-direction:column;gap:6px}
@@ -103,8 +115,8 @@ select{font-weight:500;font-size:13px;color:var(--fg);background:var(--surface);
 .evfig figcaption{font-size:12px;color:var(--muted)}
 .band{position:absolute;top:0;bottom:0}
 .band.b0{background:color-mix(in srgb,var(--accent) 6%,transparent)}.band.b1{background:color-mix(in srgb,var(--glow) 9%,transparent)}
-.seg{position:absolute;top:0;height:54px;box-sizing:border-box;border-right:1px solid var(--bg);display:flex;align-items:center}
-.seg.s0{background:color-mix(in srgb,var(--accent) 26%,var(--surface))}.seg.s1{background:color-mix(in srgb,var(--glow) 30%,var(--surface))}
+.seg{position:absolute;top:0;height:54px;box-sizing:border-box;border-right:1px solid var(--glass-edge);display:flex;align-items:center}
+.seg.s0{background:color-mix(in srgb,var(--accent) 22%,transparent)}.seg.s1{background:color-mix(in srgb,var(--glow) 26%,transparent)}
 .segl{position:sticky;left:12px;padding:0 12px;display:flex;flex-direction:column;gap:1px;max-width:calc(100vw - 40px)}
 .segl span{font-family:var(--verse);font-weight:700;font-size:19px;line-height:1.1;white-space:nowrap}
 .segl small{font-size:11px;font-weight:600;color:var(--fg);opacity:.75;white-space:nowrap}
@@ -119,11 +131,9 @@ select{font-weight:500;font-size:13px;color:var(--fg);background:var(--surface);
 .hev.up .hc{bottom:calc(100% - var(--ax) + 52px)}.hev.down .hc{top:calc(var(--ax) + 52px)}
 .hev:hover .hc,.hev:focus-visible .hc{border-color:var(--accent);transform:translateX(-50%) translateY(-2px)}
 .hev:focus-visible{outline:none}
-.hc b{font-size:14px;font-weight:600;line-height:1.25}.hc span{font-size:12px;line-height:1.4;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.hc small{font-size:11px;font-weight:600;color:var(--accent)}
-@media (max-width:480px){.hscroll{--cw:164px}.hc span{-webkit-line-clamp:2}.segl span{font-size:16px}.hci{height:70px}}
-.hc span{-webkit-line-clamp:2}
+.hc b{font-size:14px;font-weight:600;line-height:1.25}.hc span{font-size:12px;line-height:1.4;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.hc small{font-size:11px;font-weight:600;color:var(--accent)}
+@media (max-width:480px){.hscroll{--cw:164px}.segl span{font-size:16px}.hci{height:70px}}
 @media (max-height:640px){.hci{display:none}}
-.hscroll{--ax:57%}
 @media (max-height:520px){.hc span{display:none}}
 .fsbtn{align-self:flex-start;border:1px solid var(--accent);background:none;color:var(--accent);font-weight:600;font-size:14px;border-radius:999px;padding:8px 14px;cursor:pointer}
 .fsclose{display:none}
@@ -135,7 +145,6 @@ body.fs .top{display:none}
 .eras{display:flex;flex-wrap:wrap;gap:6px}.eras button{border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer}
 @media (prefers-reduced-motion:reduce){.hev .hc{transition:none}}
 #prog{position:fixed;inset:0;box-sizing:border-box;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding-block:calc(70px + env(safe-area-inset-top,0px)) 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.card{position:relative}
 .card[data-v]::after{content:"✓";position:absolute;right:max(24px,env(safe-area-inset-right,0px));bottom:110px;font-size:13px;font-weight:700;color:var(--accent);opacity:0;transition:opacity .4s}
 .card.seen::after{opacity:.8}
 .chst{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
@@ -199,7 +208,7 @@ button.sq:hover{outline:2px solid var(--glow);outline-offset:1px}
 .twin{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
 .pfilter{font:inherit;font-size:15px;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
 .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
-.pcard{text-align:left;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:12px;padding:12px 14px;cursor:pointer;display:flex;flex-direction:column;gap:4px}
+.pcard{text-align:left;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:12px;padding:12px 14px;cursor:pointer;display:flex;align-items:flex-start;gap:12px}
 .pcard b{font-size:15px}.pcard span{font-size:13px;line-height:1.45;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .pcard:hover{border-color:var(--accent)}
 .eratag{font-size:12px;font-weight:600;color:var(--accent);letter-spacing:.04em}
@@ -230,7 +239,7 @@ button.sq:hover{outline:2px solid var(--glow);outline-offset:1px}
 .segx{border:0;background:none;padding:0;color:var(--accent);font:600 11px var(--ui);cursor:pointer;text-decoration:underline;pointer-events:auto}
 .cgrid.big{gap:5px}.sq.lbl{width:30px;height:30px;font-size:11px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}.sq.lbl.full{color:var(--on-accent)}
 .secbox{display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--surface)}.secbox b{font-size:14px}
-.pcard{flex-direction:row!important;align-items:flex-start;gap:12px!important}.pct{display:flex;flex-direction:column;gap:4px;min-width:0}
+.pct{display:flex;flex-direction:column;gap:4px;min-width:0}
 .pav{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:none;border:1px solid var(--line);filter:sepia(.15)}
 .pini{display:grid;place-items:center;background:var(--bg);color:var(--accent);font:700 20px var(--verse)}
 .pbig{width:100%;height:auto;max-height:40vh;object-fit:contain;background:var(--surface);border-radius:14px;border:1px solid var(--line);filter:sepia(.12)}
@@ -239,9 +248,9 @@ button.sq:hover{outline:2px solid var(--glow);outline-offset:1px}
 .loading{height:100%;display:grid;place-items:center;color:var(--muted)}
 
 /* Sheet */
-.scrim{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:9}
-.sheet{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--surface);border-top:1px solid var(--line);border-radius:18px 18px 0 0;
-  max-height:72%;overflow-y:auto;padding-top:18px;padding-bottom:calc(24px + env(safe-area-inset-bottom,0px));
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.18);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);z-index:9}
+.sheet{position:fixed;left:8px;right:8px;bottom:8px;z-index:10;border-radius:28px;
+  max-height:calc(72% - 8px);overflow-y:auto;padding-top:18px;padding-bottom:calc(24px + env(safe-area-inset-bottom,0px));
   padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 .sheet .inner{max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
 .sheet h2{font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0}
@@ -266,27 +275,9 @@ button.sq:hover{outline:2px solid var(--glow);outline-offset:1px}
          radial-gradient(46% 40% at 76% 86%,rgba(72,138,168,.30),transparent 70%),
          radial-gradient(40% 36% at 8% 92%,rgba(140,196,175,.45),transparent 70%),var(--bg);
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --glass:rgba(255,255,255,.07); --glass-strong:rgba(22,32,28,.62); --glass-edge:rgba(255,255,255,.16);
-  --glass-sheen:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.02) 45%,rgba(255,255,255,0) 60%,rgba(255,255,255,.06));
-  --glass-hi:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(255,255,255,.05);
-  --glass-shadow:0 12px 36px rgba(0,0,0,.45),0 2px 6px rgba(0,0,0,.3);
-  --mesh:radial-gradient(42% 36% at 12% 18%,rgba(60,140,115,.38),transparent 70%),
-         radial-gradient(36% 32% at 88% 12%,rgba(217,184,97,.24),transparent 70%),
-         radial-gradient(46% 40% at 76% 86%,rgba(60,120,170,.30),transparent 70%),
-         radial-gradient(40% 36% at 8% 92%,rgba(140,196,175,.18),transparent 70%),var(--bg)}}
-:root[data-theme="dark"]{
-  --glass:rgba(255,255,255,.07); --glass-strong:rgba(22,32,28,.62); --glass-edge:rgba(255,255,255,.16);
-  --glass-sheen:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.02) 45%,rgba(255,255,255,0) 60%,rgba(255,255,255,.06));
-  --glass-hi:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(255,255,255,.05);
-  --glass-shadow:0 12px 36px rgba(0,0,0,.45),0 2px 6px rgba(0,0,0,.3);
-  --mesh:radial-gradient(42% 36% at 12% 18%,rgba(60,140,115,.38),transparent 70%),
-         radial-gradient(36% 32% at 88% 12%,rgba(217,184,97,.24),transparent 70%),
-         radial-gradient(46% 40% at 76% 86%,rgba(60,120,170,.30),transparent 70%),
-         radial-gradient(40% 36% at 8% 92%,rgba(140,196,175,.18),transparent 70%),var(--bg)}
+/* Dark values of these tokens are with the other dark tokens at the top. */
 
 /* Background: a slowly drifting colour mesh behind everything */
-body{background:var(--bg)}
 body::before{content:"";position:fixed;inset:-15%;z-index:-1;background:var(--mesh);animation:drift 40s ease-in-out infinite alternate;pointer-events:none}
 @keyframes drift{to{transform:translate3d(4%,-3%,0) rotate(6deg) scale(1.06)}}
 #cover,.hscroll.full{background:var(--mesh)}
@@ -300,7 +291,6 @@ body::before{content:"";position:fixed;inset:-15%;z-index:-1;background:var(--me
 .hev .yr,.sheet button{box-shadow:var(--glass-hi)}
 
 /* Floating controls: no solid bar, content scrolls under the glass pills */
-.top{background:none}
 /* Soft frosted fade behind the floating controls so scrolled text never collides with them */
 .top::before{content:"";position:absolute;inset:0 0 -16px;z-index:-1;pointer-events:none;
   background:color-mix(in srgb,var(--bg) 40%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
@@ -324,25 +314,21 @@ select{border-radius:999px;padding:7px 12px;appearance:none;-webkit-appearance:n
 .card{position:relative;isolation:isolate}
 .card::before{content:"";position:absolute;inset:84px 10px 96px;z-index:-1;border-radius:32px;pointer-events:none}
 .ask{border-color:var(--glass-edge);padding:9px 18px}
-.sumtext{border-left-color:var(--glow)}
 
 /* Bottom sheet floats as a glass panel */
-.scrim{background:rgba(0,0,0,.18);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
-.sheet{background:var(--glass-sheen),var(--glass-strong);left:8px;right:8px;bottom:8px;border-radius:28px;max-height:calc(72% - 8px)}
+.sheet{background:var(--glass-sheen),var(--glass-strong)}
 
 /* History */
 .node,.fact,.map{border-radius:18px}
 .hev .hc{border-radius:16px}
-.seg.s0{background:color-mix(in srgb,var(--accent) 22%,transparent)}.seg.s1{background:color-mix(in srgb,var(--glow) 26%,transparent)}
-.seg{border-right-color:var(--glass-edge)}
-.map svg .land{fill:color-mix(in srgb,var(--bg) 70%,transparent)}
 
 /* Accessibility and fallbacks */
 @media (prefers-reduced-motion:reduce){body::before{animation:none}.langs button{transition:none}}
-@media (prefers-reduced-transparency:reduce){
-  .tabs,select,.langs button,.ask,.sheet,.node,.fact,.map,.hev .hc,.eras button,.fsbtn,.hev .yr,.card::before,.brand{background:var(--surface);-webkit-backdrop-filter:none;backdrop-filter:none}}
+/* Fallbacks swap the tokens, so they cover every glass surface. Selectors match the dark blocks' weight. */
+@media (prefers-reduced-transparency:reduce){:root,:root:not([data-theme="light"]),:root[data-theme="dark"]{
+  --glass:var(--surface);--glass-strong:var(--surface);--glass-sheen:none;--blur:none}}
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
-  .tabs,select,.langs button,.ask,.node,.fact,.map,.hev .hc,.eras button,.fsbtn,.hev .yr,.card::before,.brand{background:var(--glass-strong)}}
+  :root,:root:not([data-theme="light"]),:root[data-theme="dark"]{--glass:var(--glass-strong)}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -419,23 +405,23 @@ const L={
  es:{name:"Español",ver:"Reina-Valera 1909",sub:"la Palabra",tag:"La Biblia, un versículo a la vez. Desliza como en tus redes, pero hacia lo que alimenta el alma.",start:"Empezar a deslizar",
    for:"Para ti",read:"Leer",ask:"¿Qué significa?",chap:"Capítulo",next:"Siguiente",cont:"Toca para continuar",end:"Fin de la Biblia",loading:"Cargando la Biblia…",fail:"No se pudo cargar el texto. Recarga la página.",
    think:"Pensando…",close:"Cerrar",note:"Explicación generada con IA. Úsala como apoyo, no como autoridad.",noai:"La explicación con IA no está disponible en esta vista.",grant:"Permite el acceso a Claude para ver explicaciones.",rate:"Demasiadas consultas seguidas. Espera un momento.",err:"No se pudo generar la explicación. Inténtalo de nuevo.",
-   p:["Qué dice (aclara palabras antiguas si las hay)","Contexto: quién habla y por qué","Para hoy: una aplicación práctica"],pl:"español sencillo y latinoamericano",sumL:"Resumen del capítulo",swipe:"Desliza para leer ↑"},
+   p:["Qué dice (aclara palabras antiguas si las hay)","Contexto: quién habla y por qué","Para hoy: una aplicación práctica"],pl:"español sencillo y latinoamericano",sumL:"Resumen del capítulo",chapw:"capítulo",swipe:"Desliza para leer ↑"},
  en:{name:"English",ver:"King James Version",sub:"the Word",tag:"The Bible, one verse at a time. Scroll like your feed, toward what feeds the soul.",start:"Start scrolling",
    for:"For you",read:"Read",ask:"What does it mean?",chap:"Chapter",next:"Next",cont:"Tap to continue",end:"End of the Bible",loading:"Loading the Bible…",fail:"Couldn't load the text. Reload the page.",
    think:"Thinking…",close:"Close",note:"AI-generated explanation. Use it as a help, not an authority.",noai:"AI explanations aren't available in this view.",grant:"Allow access to Claude to see explanations.",rate:"Too many requests in a row. Wait a moment.",err:"Couldn't generate the explanation. Try again.",
-   p:["What it says (clarify archaic words if any)","Context: who is speaking and why","For today: one practical application"],pl:"plain, modern English",sumL:"Chapter summary",swipe:"Swipe up to read ↑"},
+   p:["What it says (clarify archaic words if any)","Context: who is speaking and why","For today: one practical application"],pl:"plain, modern English",sumL:"Chapter summary",chapw:"chapter",swipe:"Swipe up to read ↑"},
  pt:{name:"Português",ver:"Bíblia Livre",sub:"a Palavra",tag:"A Bíblia, um versículo de cada vez. Deslize como nas redes, rumo ao que alimenta a alma.",start:"Começar a deslizar",
    for:"Para você",read:"Ler",ask:"O que significa?",chap:"Capítulo",next:"Próximo",cont:"Toque para continuar",end:"Fim da Bíblia",loading:"Carregando a Bíblia…",fail:"Não foi possível carregar o texto. Recarregue a página.",
    think:"Pensando…",close:"Fechar",note:"Explicação gerada por IA. Use como apoio, não como autoridade.",noai:"A explicação por IA não está disponível nesta visualização.",grant:"Permita o acesso ao Claude para ver explicações.",rate:"Muitas consultas seguidas. Aguarde um momento.",err:"Não foi possível gerar a explicação. Tente novamente.",
-   p:["O que diz (esclareça palavras antigas, se houver)","Contexto: quem fala e por quê","Para hoje: uma aplicação prática"],pl:"português brasileiro simples",sumL:"Resumo do capítulo",swipe:"Deslize para ler ↑"},
+   p:["O que diz (esclareça palavras antigas, se houver)","Contexto: quem fala e por quê","Para hoje: uma aplicação prática"],pl:"português brasileiro simples",sumL:"Resumo do capítulo",chapw:"capítulo",swipe:"Deslize para ler ↑"},
  fr:{name:"Français",ver:"Darby 1885",sub:"la Parole",tag:"La Bible, un verset à la fois. Faites défiler comme sur vos réseaux, vers ce qui nourrit l'âme.",start:"Commencer",
    for:"Pour vous",read:"Lire",ask:"Que signifie-t-il ?",chap:"Chapitre",next:"Suivant",cont:"Touchez pour continuer",end:"Fin de la Bible",loading:"Chargement de la Bible…",fail:"Impossible de charger le texte. Rechargez la page.",
    think:"Réflexion…",close:"Fermer",note:"Explication générée par IA. Utilisez-la comme aide, pas comme autorité.",noai:"Les explications par IA ne sont pas disponibles ici.",grant:"Autorisez l'accès à Claude pour voir les explications.",rate:"Trop de demandes à la suite. Patientez un instant.",err:"Impossible de générer l'explication. Réessayez.",
-   p:["Ce qu'il dit (clarifie les mots anciens s'il y en a)","Contexte : qui parle et pourquoi","Pour aujourd'hui : une application pratique"],pl:"français simple et moderne",sumL:"Résumé du chapitre",swipe:"Faites défiler pour lire ↑"},
+   p:["Ce qu'il dit (clarifie les mots anciens s'il y en a)","Contexte : qui parle et pourquoi","Pour aujourd'hui : une application pratique"],pl:"français simple et moderne",sumL:"Résumé du chapitre",chapw:"chapitre",swipe:"Faites défiler pour lire ↑"},
  de:{name:"Deutsch",ver:"Elberfelder 1905",sub:"das Wort",tag:"Die Bibel, Vers für Vers. Wische wie in deinem Feed, hin zu dem, was die Seele nährt.",start:"Loslegen",
    for:"Für dich",read:"Lesen",ask:"Was bedeutet das?",chap:"Kapitel",next:"Weiter",cont:"Tippen zum Fortfahren",end:"Ende der Bibel",loading:"Bibel wird geladen…",fail:"Text konnte nicht geladen werden. Seite neu laden.",
    think:"Denke nach…",close:"Schließen",note:"KI-generierte Erklärung. Als Hilfe nutzen, nicht als Autorität.",noai:"KI-Erklärungen sind in dieser Ansicht nicht verfügbar.",grant:"Erlaube den Zugriff auf Claude, um Erklärungen zu sehen.",rate:"Zu viele Anfragen hintereinander. Kurz warten.",err:"Erklärung konnte nicht erstellt werden. Erneut versuchen.",
-   p:["Was er sagt (erkläre altertümliche Wörter, falls vorhanden)","Kontext: wer spricht und warum","Für heute: eine praktische Anwendung"],pl:"einfaches, modernes Deutsch",sumL:"Kapitelübersicht",swipe:"Nach oben wischen zum Lesen ↑"}
+   p:["Was er sagt (erkläre altertümliche Wörter, falls vorhanden)","Kontext: wer spricht und warum","Für heute: eine praktische Anwendung"],pl:"einfaches, modernes Deutsch",sumL:"Kapitelübersicht",chapw:"Kapitel",swipe:"Nach oben wischen zum Lesen ↑"}
 };
 const $=id=>document.getElementById(id), feed=$("feed"), cache={};
 let lang="es", B=null, mode="for", sampleFn, ctrl=null, rendered=0, pool=[], expReq=0;
@@ -444,31 +430,19 @@ const T=k=>L[lang][k];
 /* History/Characters/Progress text. Spanish is the key and the fallback; other languages come from
    i18n/<lang>.js (HI18N[lang] = {ui:{es:txt}, TL:[...same shape as timeline.js], PP:{id:{n,d}}}). */
 window.HI18N=window.HI18N||{};
-/* ES-UI */
-/* Spanish relationship sentences: people.js labels are bare ("mató a"), and "X es mató a Y" didn't read.
-   Here each label carries its own verb. Only used for display; people.js keeps the original labels. */
-HI18N.es={ui:Object.fromEntries([["{0} es {1} {2}","{0} {1} {2}"],
- ...["amigo de","antepasado de","antepasado de su pueblo","apóstol junto a","bisabuela de","compañero de","contemporáneo de",
-   "esposo de","gemelo y rival de","hermana de","hermano de","madre de","maestro de","mentor de","padre adoptivo de","padre de",
-   "primo y tutor de","seguidora de","suegra de","tío de"].map(l=>[l,"es "+l]),
- ["antepasado de su pueblo","es antepasado del pueblo de"],["juez antes que","fue juez antes que"],["jueza antes que","fue jueza antes que"],
- ...["bautizó a","crió a","enfrentó a","llevó al exilio a","mató a","persiguió a","profetizó sobre","resucitó a","traicionó a",
-   "tuvo un hijo con","ungió a","venció a"].map(l=>[l,l]),
- ["profetizó sobre el Mesías","profetizó sobre el Mesías,"],["su muerte fue aprobada por","murió con la aprobación de"],
- ["antepasado de (Mt 1)","es antepasado (Mt 1) de"],["antepasada de (Mt 1)","es antepasada (Mt 1) de"],
- ["apareció junto a (Mt 17)","apareció (Mt 17) junto a"],["precursor de (Lc 1:17)","es precursor (Lc 1:17) de"],
- ["señal citada por (Mt 12)","es una señal (Mt 12) citada por"],["profeta citado por (Mt 24)","es un profeta (Mt 24) citado por"]])};
-/* /ES-UI */
+/* TR */
+/* Fills {0},{1}… and lets the language file adjust the result (HI18N.fr.fix: elision, HI18N.de.fix: dative). */
 const tr=(k,...a)=>{const t=HI18N[lang]?.ui?.[k]??k;if(!a.length)return t;
-  const r=t.replace(/\{(\d)\}/g,(_,i)=>a[i]);
-  // French elision when a name is slotted in: "le frère de Aaron" -> "le frère d’Aaron"
-  if(lang==="fr")return r.replace(/\b([dD])e ([AEIOUYÉÈÊÎÔaeiouyéèêîô])/g,"$1’$2");
-  // German dative after von/mit: "von Johannes der Täufer" -> "von Johannes dem Täufer"
-  if(lang==="de")return r.replace(/\b(von|mit) (\S+) der Täufer\b/g,"$1 $2 dem Täufer");
-  return r};
+  const r=t.replace(/\{(\d)\}/g,(_,i)=>a[i]);return HI18N[lang]?.fix?.(r)??r};
+/* Relationship sentence: each label in people.js REL has a full Spanish template; other languages translate the label key. */
+const rel=(l,a,b)=>tr(HI18N[lang]?.ui?.[l]!=null?l:(REL[l]?.es??"{0} "+l+" {1}"),a,b);
+const isFam=l=>!!REL[l]?.fam;
+/* /TR */
 const TL_ES=window.TL,PP_ES=window.PP;
+let EVL=[],EVI={};  // flat [era,event] list and "ei,vi" -> index; rebuilt when TL changes
 function applyHist(){const h=HI18N[lang];window.TL=h?.TL||TL_ES;
-  window.PP=h?.PP?Object.fromEntries(Object.entries(PP_ES).map(([k,p])=>[k,{...p,...(h.PP[k]||{})}])):PP_ES}
+  window.PP=h?.PP?Object.fromEntries(Object.entries(PP_ES).map(([k,p])=>[k,{...p,...(h.PP[k]||{})}])):PP_ES;
+  EVL=TL.flatMap((era,ei)=>era.e.map((_,vi)=>[ei,vi]));EVI=Object.fromEntries(EVL.map((x,i)=>[x.join(),i]))}
 const histLoad={};
 function loadHist(k){if(k==="es")return Promise.resolve();
   return histLoad[k]??=new Promise(res=>{const sc=document.createElement("script");sc.src=`i18n/${k}.js?v=3`;
@@ -478,7 +452,7 @@ function guessLang(){const n=(navigator.language||"es").slice(0,2);return L[n]?n
 function paintText(){
   document.documentElement.lang=lang;
   $("cSub").textContent=T("sub");$("cTag").textContent=T("tag");$("cStart").textContent=T("start");
-  $("tFor").textContent=T("for");$("tRead").textContent=T("read");$("tHist").textContent={es:"Historia",en:"History",pt:"História",fr:"Histoire",de:"Geschichte"}[lang];$("tProg").textContent={es:"Progreso",en:"Progress",pt:"Progresso",fr:"Progrès",de:"Fortschritt"}[lang];$("close").textContent=T("close");$("sNote").textContent=T("note");
+  $("tFor").textContent=T("for");$("tRead").textContent=T("read");$("tHist").textContent=tr("Historia");$("tProg").textContent=tr("Progreso");$("close").textContent=T("close");$("sNote").textContent=T("note");
   [...$("langs").children].forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===lang));
   $("lang").value=lang;
   applyHist();
@@ -503,10 +477,15 @@ const iaCache={};
 function iaBook(k,b){const key=k+"/"+b;
   if(!(key in iaCache))iaCache[key]=fetch(`ia/${k}/${b}.json`).then(r=>r.ok?r.json():null).catch(()=>null);
   return iaCache[key]}
+let Blang=null;  // language of the Bible currently in B
 async function useLang(k){
-  lang=k;store.set("lang",k);await loadHist(k);if(lang!==k)return;paintText();
-  feed.innerHTML=`<div class="loading">${T("loading")}</div>`;
-  try{B=await load(k)}catch(e){delete cache[k];feed.innerHTML=`<div class="loading">${T("fail")}</div>`;return}
+  lang=k;store.set("lang",k);
+  if(Blang===k){paintText();setMode(mode);return}  // e.g. Home -> Start with the same language
+  clearFeed();feed.innerHTML=`<div class="loading">${T("loading")}</div>`;
+  const [,bible]=await Promise.all([loadHist(k),load(k).catch(()=>null)]);
+  if(lang!==k)return;paintText();
+  if(!bible){delete cache[k];feed.innerHTML=`<div class="loading">${T("fail")}</div>`;return}
+  B=bible;Blang=k;for(const x in cache)if(x!==k)delete cache[x];  // a parsed Bible is ~20 MB
   pool=[];buildPool();
   $("book").innerHTML=B.map((x,i)=>`<option value="${i}">${x[0]}</option>`).join("");
   const pos=store.get("pos",[42,2]);$("book").value=pos[0];fillChaps();$("chap").value=pos[1];
@@ -522,7 +501,7 @@ function card(b,c,v){
   const t=B[b][1][c][v],el=document.createElement("article");el.className="card"+(isRead(b,c,v)?" seen":"");el.tabIndex=0;
   el.dataset.b=b;el.dataset.c=c;el.dataset.v=v;
   el.innerHTML='<div class="ref"></div><p></p><button class="ask"></button>';
-  vObs&&vObs.observe(el);
+  vObs.observe(el);
   el.querySelector(".ref").textContent=ref(b,c,v);
   const p=el.querySelector("p");p.textContent=t;if(t.length>180)p.classList.add("long");
   const a=el.querySelector(".ask");a.textContent=T("ask");a.onclick=e=>{e.stopPropagation();explain(b,c,v)};
@@ -530,16 +509,17 @@ function card(b,c,v){
 }
 function more(n=8){if(!pool.length)return;const f=document.createDocumentFragment();
   for(let i=0;i<n;i++){const [b,c,v]=pool[rendered++%pool.length];f.appendChild(card(b,c,v))}feed.appendChild(f)}
-function showFor(){feed.innerHTML="";rendered=0;more(12);feed.scrollTop=0}
+function clearFeed(){vObs.disconnect();sObs.disconnect();pager?.obs.disconnect();pager=null;feed.innerHTML=""}
+function showFor(){clearFeed();rendered=0;more(12);feed.scrollTop=0}
 function showRead(){if(RS.mode!=="verse")return showFlow();feed.className="";
-  const b=+$("book").value,c=+$("chap").value;feed.innerHTML="";const f=document.createDocumentFragment();
+  const b=+$("book").value,c=+$("chap").value;clearFeed();const f=document.createDocumentFragment();
   f.appendChild(summaryCard(b,c));
   B[b][1][c].forEach((_,v)=>f.appendChild(card(b,c,v)));
   const nx=document.createElement("article");nx.className="card";
-  const nb=c+1<B[b][1].length?[b,c+1]:(b+1<B.length?[b+1,0]:null);
+  const nb=chapAt(b,c,1);
   if(nb){nx.innerHTML='<div class="ref"></div><p></p><div class="hint"></div>';
     nx.querySelector(".ref").textContent=T("next");nx.querySelector("p").textContent=`${B[nb[0]][0]} ${nb[1]+1}`;nx.querySelector(".hint").textContent=T("cont");
-    nx.onclick=()=>{$("book").value=nb[0];fillChaps();$("chap").value=nb[1];showRead();savePos()}}
+    nx.onclick=()=>goChap(1)}
   else{nx.innerHTML="<p></p>";nx.querySelector("p").textContent=T("end")}
   f.appendChild(nx);feed.appendChild(f);feed.scrollTop=0}
 function summaryCard(b,c){
@@ -547,7 +527,7 @@ function summaryCard(b,c){
   el.innerHTML='<div class="ref"></div><h2></h2><div class="sumtext"></div><div class="hint"></div>';
   el.querySelector(".ref").textContent=T("sumL");
   el.querySelector("h2").textContent=`${B[b][0]} ${c+1}`;
-  el.querySelector(".hint").textContent=T("swipe")+" · ← → "+({es:"capítulo",en:"chapter",pt:"capítulo",fr:"chapitre",de:"Kapitel"}[lang]);
+  el.querySelector(".hint").textContent=T("swipe")+" · ← → "+T("chapw");
   const ci=chapImage(b,c);
   if(ci){const fig=document.createElement("figure");fig.className="chfig";fig.innerHTML=`<img class="chimg" src="${ci.src}" alt="" loading="lazy"><figcaption>${ci.exact?"":tr("Ilustración relacionada:")+" "}${esc(ci.title)}</figcaption>`;el.insertBefore(fig,el.querySelector("h2"))}
   const st=document.createElement("div");st.className="chst";el.insertBefore(st,el.querySelector(".hint"));
@@ -571,11 +551,12 @@ async function fillSummary(b,c,box){
   const prompt=`You summarize Bible chapters for a reading app. Write ONLY in ${T("pl")}.\nChapter: ${B[b][0]} ${c+1} (${T("ver")}).\nText:\n${text}\n\nPlain text, no markdown, no title. 2 to 3 short sentences (max 60 words) saying what happens or what is taught in this chapter, based only on the text above. Neutral, non-denominational tone.`;
   try{const r=await s(prompt,{modelTier:"quick",onText:({text})=>{box.textContent=text}});
     box.textContent=r.text;if(!r.truncated)store.set(key,r.text)}
-  catch(e){box.textContent=e?.code==="not_granted"?T("grant"):e?.code==="rate_limited"?T("rate"):T("err")}
+  catch(e){box.textContent=aiErr(e,T("err"))}
 }
 function fillChaps(){const b=+$("book").value;$("chap").innerHTML=B[b][1].map((_,i)=>`<option value="${i}">${T("chap")} ${i+1}${chapFrac(b,i)>=1?" ✓":""}</option>`).join("")}
 function savePos(){store.set("pos",[+$("book").value,+$("chap").value])}
-function setMode(m){mode=m;$("tFor").setAttribute("aria-pressed",m==="for");$("tRead").setAttribute("aria-pressed",m==="read");$("tHist").setAttribute("aria-pressed",m==="hist");$("tProg").setAttribute("aria-pressed",m==="prog");
+const TABS={for:"tFor",read:"tRead",hist:"tHist",prog:"tProg"};
+function setMode(m){mode=m;for(const [k,id] of Object.entries(TABS))$(id).setAttribute("aria-pressed",m===k);
   $("picker").hidden=m!=="read";$("feed").hidden=m==="hist"||m==="prog";$("tl").hidden=m!=="hist";$("prog").hidden=m!=="prog";
   if(m==="hist"){renderTL();return}
   if(m==="prog"){renderProg();return}
@@ -587,11 +568,10 @@ function hTimeline(){
   /* x: proportional to the year, but each event keeps a minimum gap so cards never overlap */
   const GAP=150,PX=0.55,PAD=116;let x=PAD,prev=null,items=[],bands=[];
   TL.forEach((era,ei)=>{const start=x;era.e.forEach((ev,vi)=>{const y=YEARS[ei][vi];
-    if(prev!==null&&y!==null&&prev!==null)x=Math.max(x+GAP,x+(y-prev)*PX);else if(items.length)x+=GAP;
+    if(prev!==null&&y!==null)x=Math.max(x+GAP,x+(y-prev)*PX);else if(items.length)x+=GAP;
     items.push({ev,ei,vi,y,x});if(y!==null)prev=y;});
-    bands.push({ei,start:start-GAP/2+ (ei?0:GAP/2-PAD+4),end:x+GAP/2});x+=GAP*0.4;});
-  for(let i=0;i<bands.length-1;i++)bands[i].end=bands[i+1].start;
-  const W=x+GAP;bands[bands.length-1].end=W;bands[0].start=0;
+    bands.push({ei,start:start-GAP/2});x+=GAP*0.4;});
+  const W=x+GAP;bands[0].start=0;bands.forEach((b,i)=>b.end=bands[i+1]?.start??W);
   const yr=y=>y===null?tr("Sin fecha"):y<0?tr("{0} a.C.",-y):tr("{0} d.C.",y);
   return `<button class="fsbtn" id="fsOpen">⤢ ${tr("Pantalla completa")}</button><div class="hscroll" tabindex="0" aria-label="${tr("Línea de tiempo")}"><button class="fsclose" id="fsClose" aria-label="${tr("Salir de pantalla completa")}">✕</button><div class="htrack" style="width:${W}px">
    ${bands.map((b,i)=>`<div class="band b${i%2}" data-band="${b.ei}" style="left:${b.start}px;width:${b.end-b.start}px"></div><div class="seg s${i%2}" style="left:${b.start}px;width:${b.end-b.start}px"><div class="segl"><span>${esc(TL[b.ei].t)}</span><small>${esc(TL[b.ei].d)} · <button class="segx" data-era="${b.ei}">${tr("Ver todos los capítulos")} ›</button></small></div></div>`).join("")}
@@ -626,6 +606,8 @@ const MAP=()=>`<svg viewBox="0 0 640 380" role="img" aria-label="${tr("Mapa del 
 <circle class="pt" cx="610" cy="260" r="4"/><text x="568" y="250">${tr("Persia →")}</text>
 <text class="soft" x="20" y="62">${tr("← Grecia y Roma")}</text></svg>`;
 
+function exitFS(){document.querySelector(".hscroll.full")?.classList.remove("full");document.body.classList.remove("fs");
+  try{if(document.fullscreenElement)document.exitFullscreen()}catch(e){}}
 function renderTL(){
   const box=$("tl"),[ei,vi]=tlPath,era=ei!=null&&ei>=0?TL[ei]:null,ev=era&&vi!=null?era.e[vi]:null;
   const crumbs=`<nav class="crumbs"><button data-go="">${tr("Historia")}</button>${tlPath[0]===-1?" › "+tr("Panorama"):""}${era?` › <button data-go="${ei}">${esc(era.t)}</button>`:""}${ev?` › ${esc(ev.t)}`:""}</nav>`;
@@ -656,52 +638,51 @@ function renderTL(){
     <p class="note">${tr("Agrupados por libro. Toca un capítulo para leerlo; el color indica tu progreso. Las fechas de algunos libros (Job, Salmos, profetas) son aproximadas.")}</p>
     ${eraChaptersHTML(ei)}`;
   }else{
-    const im=(window.TLIMG||{})[ei+','+vi];
+    const im=(window.TLIMG||{})[ei+','+vi],ix=evIndex(ei,vi);
     h=`${crumbs}${im?`<figure class="evfig"><img src="${im.src}" alt="${esc(im.t)}"><figcaption>${im.a?`${esc(im.a)}, ${tr("grabado de «Die Bibel in Bildern»")} (${im.y})`:`Gustave Doré, «${esc(im.t.replace(/^\d+[A-Z]?\.\s*/,""))}» (1866)`}. ${tr("Dominio público, vía Wikimedia Commons.")}</figcaption></figure>`:""}<h2>${esc(ev.t)}</h2><p class="lead">${esc(ev.s)}</p>
     <dl class="dl"><div><dt>${tr("Fecha")}</dt><dd>${esc(ev.d)}</dd></div><div><dt>${tr("Pasaje")}</dt><dd>${esc(bookName(ev.r[0]))} ${ev.r[1]}</dd></div>
     <div><dt>${tr("Personajes")}</dt><dd>${ev.p.map(esc).join(", ")}</dd></div><div><dt>${tr("Para saber más")}</dt><dd>${ev.k.map(esc).join("<br>")}</dd></div></dl>
-    ${(()=>{const s=evSection(ei,vi);return `<div class="secbox"><b>${tr("Capítulos de esta sección:")} ${esc(bookName(s.b))} ${s.from}${s.to>s.from?"–"+s.to:""}</b><div class="cgrid big">${Array.from({length:s.to-s.from+1},(_,i)=>{const c=s.from+i,f=B?chapFrac(s.b,c-1):0;return `<button class="sq lbl ${f>=1?"full":f>0?"part":""}" data-rc="${s.b},${c}">${c}</button>`}).join("")}</div></div>`})()}
+    ${(()=>{const s=evSection(ei,vi);return `<div class="secbox"><b>${tr("Capítulos de esta sección:")} ${esc(bookName(s.b))} ${s.from}${s.to>s.from?"–"+s.to:""}</b>${chapGrid(s.b,s.from,s.to)}</div>`})()}
     <button class="go" id="goRead">${tr("Leer")} ${esc(bookName(ev.r[0]))} ${ev.r[1]} →</button>
-    <div class="evnav"><button id="evPrev" ${evIndex(ei,vi)===0?"disabled":""}>‹ ${tr("Anterior")}</button><span>${evIndex(ei,vi)+1} / ${EVS().length} · ${tr("desliza")} ← →</span><button id="evNext" ${evIndex(ei,vi)===EVS().length-1?"disabled":""}>${tr("Siguiente")} ›</button></div>`;
+    <div class="evnav"><button id="evPrev" ${ix===0?"disabled":""}>‹ ${tr("Anterior")}</button><span>${ix+1} / ${EVL.length} · ${tr("desliza")} ← →</span><button id="evNext" ${ix===EVL.length-1?"disabled":""}>${tr("Siguiente")} ›</button></div>`;
   }
   box.innerHTML=`<div class="tlw">${h}</div>`;box.scrollTop=0;
   const hs=box.querySelector(".hscroll");
   if(hs){
-    const exitFS=()=>{hs.classList.remove("full");document.body.classList.remove("fs");try{if(document.fullscreenElement)document.exitFullscreen()}catch(e){}};
     $("fsOpen").onclick=()=>{hs.classList.add("full");document.body.classList.add("fs");try{hs.requestFullscreen?.().catch(()=>{})}catch(e){}};
     $("fsClose").onclick=exitFS;
-    document.onfullscreenchange=()=>{if(!document.fullscreenElement&&hs.classList.contains("full")){hs.classList.remove("full");document.body.classList.remove("fs")}};
+    document.onfullscreenchange=()=>{if(!document.fullscreenElement)exitFS()};
     if(tlX!=null)hs.scrollLeft=tlX;hs.addEventListener("scroll",()=>{tlX=hs.scrollLeft},{passive:true});
     box.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{const el=hs.querySelector(`[data-band="${b.dataset.jump}"]`);hs.scrollTo({left:el.offsetLeft-12,behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth"})});
     box.querySelectorAll("[data-hev]").forEach(b=>b.onclick=()=>{exitFS();const [a,c]=b.dataset.hev.split(",").map(Number);tlPath=[a,c];renderTL()})}
   box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{tlPath=b.dataset.go===""?[]:[+b.dataset.go];renderTL()});
   box.querySelectorAll("[data-ov]").forEach(b=>b.onclick=()=>{tlPath=[-1];renderTL()});
   box.querySelectorAll("[data-pp]").forEach(b=>b.onclick=e=>{e.preventDefault();tlPath=b.dataset.pp?["pp",b.dataset.pp]:["pp"];renderTL()});
-  box.querySelectorAll("[data-ppread]").forEach(b=>b.onclick=()=>{if(!B)return;const [bk,ch]=b.dataset.ppread.split(",").map(Number);$("book").value=bk;fillChaps();$("chap").value=ch-1;savePos();setMode("read")});
   const gw=$("gwrap");if(gw){const sv=gw.querySelector("svg");let z=innerWidth<700?.55:.8;const W0=1800,H0=900;
     const setZ=()=>{sv.setAttribute("width",W0*z);sv.setAttribute("height",H0*z)};setZ();
     $("gzIn").onclick=()=>{z=Math.min(2,z*1.25);setZ()};
     sv.querySelectorAll(".mn").forEach(g=>{g.onclick=e=>{e.preventDefault();e.stopPropagation();const id=g.dataset.pp,p=PP[id],N=ppNeighbors(id),path=ppPath(id)||[];
       sv.querySelectorAll(".mn").forEach(x=>x.classList.toggle("on",x===g));sv.querySelectorAll(".mn").forEach(x=>x.classList.toggle("path",path.includes(x.dataset.pp)&&x!==g));
-      const pop=$("gpop");pop.hidden=false;pop.innerHTML=`<button class="gx" aria-label="${tr("Cerrar")}">✕</button>${ppImg(id)?`<img class="pav" src="${ppImg(id)}" alt="">`:""}<b>${esc(p.n)}</b><small>${esc(TL[p.e].t)} · ${tr("{0} relaciones",N.length)}</small><p>${esc(p.d)}</p><div class="gpath">${ppPathHTML(id)}</div><button class="go" data-full="${id}">${tr("Ver ficha completa →")}</button>`;
+      const pop=$("gpop"),pi=ppImg(id);pop.hidden=false;pop.innerHTML=`<button class="gx" aria-label="${tr("Cerrar")}">✕</button>${pi?`<img class="pav" src="${pi}" alt="">`:""}<b>${esc(p.n)}</b><small>${esc(TL[p.e].t)} · ${tr("{0} relaciones",N.length)}</small><p>${esc(p.d)}</p><div class="gpath">${ppPathHTML(id,path)}</div><button class="go" data-full="${id}">${tr("Ver ficha completa →")}</button>`;
       pop.querySelector(".gx").onclick=()=>{pop.hidden=true;sv.querySelectorAll(".mn").forEach(x=>x.classList.remove("on","path"))};
       pop.querySelector("[data-full]").onclick=()=>{tlPath=["pp",id];renderTL()};
       pop.querySelectorAll(".plink").forEach(a=>a.onclick=ev=>{ev.preventDefault();const t=sv.querySelector(`.mn[data-pp="${a.dataset.pp}"]`);if(t)t.dispatchEvent(new MouseEvent("click",{bubbles:false}))})};
       g.addEventListener("keydown",e=>{if(e.key==="Enter")g.onclick(e)})});$("gzOut").onclick=()=>{z=Math.max(.35,z/1.25);setZ()}}
   const pf=$("ppFilter");if(pf)pf.oninput=()=>{const q=pf.value.toLowerCase();box.querySelectorAll(".pcard").forEach(c=>c.hidden=!c.dataset.q.includes(q))};
-  box.querySelectorAll("[data-era]").forEach(b=>b.onclick=e=>{e.stopPropagation();const ex=box.querySelector(".hscroll.full");if(ex){ex.classList.remove("full");document.body.classList.remove("fs")}tlPath=[+b.dataset.era];renderTL()});
-  box.querySelectorAll("[data-rc]").forEach(b=>b.onclick=()=>{if(!B)return;const [bk,ch]=b.dataset.rc.split(",").map(Number);$("book").value=bk;fillChaps();$("chap").value=ch-1;savePos();setMode("read")});
+  box.querySelectorAll("[data-era]").forEach(b=>b.onclick=e=>{e.stopPropagation();exitFS();tlPath=[+b.dataset.era];renderTL()});
+  box.querySelectorAll("[data-rc]").forEach(b=>b.onclick=()=>{const [bk,ch]=b.dataset.rc.split(",").map(Number);openChap(bk,ch-1)});
   box.querySelectorAll("[data-ev]").forEach(b=>b.onclick=()=>{tlPath=[ei,+b.dataset.ev];renderTL()});
   const pv=$("evPrev"),nx=$("evNext");if(pv){pv.onclick=()=>goEv(-1);nx.onclick=()=>goEv(1)}
-  const g=$("goRead");if(g)g.onclick=()=>{if(!B)return;$("book").value=ev.r[0];fillChaps();$("chap").value=ev.r[1]-1;savePos();setMode("read")};
+  const g=$("goRead");if(g)g.onclick=()=>openChap(ev.r[0],ev.r[1]-1);
 }
 /* Personajes y mapa de relaciones */
-function ppPath(id,to="jesus"){if(id===to)return [id];const adj={};for(const [a,b] of PR){(adj[a]=adj[a]||[]).push(b);(adj[b]=adj[b]||[]).push(a)}
+const ADJ={};for(const [a,b] of PR){(ADJ[a]??=[]).push(b);(ADJ[b]??=[]).push(a)}
+function ppPath(id,to="jesus"){if(id===to)return [id];const adj=ADJ;
   const prev={[id]:null},q=[id];while(q.length){const x=q.shift();for(const y of adj[x]||[])if(!(y in prev)){prev[y]=x;if(y===to){const p=[y];let k=x;while(k!==null){p.unshift(k);k=prev[k]}return p}q.push(y)}}return null}
-function ppPathHTML(id){const p=ppPath(id);if(!p)return tr("No hay una relación con Jesús registrada en estos datos.");if(p.length===1)return tr("Es Jesús.");
+function ppPathHTML(id,p=ppPath(id)){if(!p)return tr("No hay una relación con Jesús registrada en estos datos.");if(p.length===1)return tr("Es Jesús.");
   return p.map(k=>`<a href="#" class="plink" data-pp="${k}">${esc(PP[k].n)}</a>`).join(" → ")+(p.length===2?" ("+tr("relación directa")+")":" ("+tr("{0} pasos",p.length-1)+")")}
-function ppNeighbors(id){const out=[];for(const [a,b,l] of PR){if(a===id)out.push({id:b,txt:tr("{0} es {1} {2}",PP[id].n,tr(l),PP[b].n),fam:/padre|madre|esposo|hermano|hermana|gemelo|primo|tío|suegra|bisabuela|antepasado|tuvo un hijo/.test(l)});
-  else if(b===id)out.push({id:a,txt:tr("{0} es {1} {2}",PP[a].n,tr(l),PP[id].n),fam:/padre|madre|esposo|hermano|hermana|gemelo|primo|tío|suegra|bisabuela|antepasado|tuvo un hijo/.test(l)})}
+function ppNeighbors(id){const out=[];for(const [a,b,l] of PR){if(a!==id&&b!==id)continue;
+  out.push({id:a===id?b:a,txt:rel(l,PP[a].n,PP[b].n),fam:isFam(l)})}
   const seen=new Set();return out.filter(x=>!seen.has(x.id)&&seen.add(x.id))}
 function ppMap(id){const N=ppNeighbors(id),W=380,H=Math.max(340,N.length>8?420:340),cx=W/2,cy=H/2;
   const R=N.length>8?[118,170]:[130],pts=N.map((n,i)=>{const r=R[i%R.length],a=-Math.PI/2+i*2*Math.PI/N.length;return {...n,x:cx+r*Math.cos(a)*1.05,y:cy+r*Math.sin(a)*(H/W)*.95}});
@@ -714,21 +695,21 @@ function ppHTML(id){
   if(id==="__global")return `<nav class="crumbs"><button data-go="">${tr("Historia")}</button> › <button data-pp="">${tr("Personajes")}</button> ${tr("› Mapa global")}</nav>
     <h2>${tr("Mapa global")}</h2><p class="lead">${tr("Todos los personajes, ordenados por época de izquierda a derecha. Desliza para moverte, usa + y − para acercar, y toca un nombre para ver su ficha.")}</p>
     <div class="gtools"><button id="gzOut" aria-label="${tr("Alejar")}">−</button><button id="gzIn" aria-label="${tr("Acercar")}">+</button><span class="legend"><span><i class="ln lf"></i> ${tr("Familia")}</span><span><i class="ln lo"></i> ${tr("Otra relación")}</span></span></div>
-    <div class="gwrap" id="gwrap">${globalMap()}</div>
+    <div class="gwrap" id="gwrap">${gmapCache[lang]??=globalMap()}</div>
     <div class="gpop" id="gpop" hidden></div>`;
   if(!id){const byEra=TL.map((era,ei)=>({era,list:Object.entries(PP).filter(([,p])=>p.e===ei)})).filter(g=>g.list.length);
     return `<nav class="crumbs"><button data-go="">${tr("Historia")}</button> ${tr("› Personajes")}</nav><h2>${tr("Personajes")}</h2>
     <p class="lead">${tr("Toca una persona para leer quién es y ver su mapa de relaciones.")}</p>
     <button class="go" data-pp="__global">${tr("Ver mapa global de relaciones →")}</button>
     <input id="ppFilter" class="pfilter" type="search" placeholder="${tr("Buscar personaje…")}" aria-label="${tr("Buscar personaje")}">
-    ${byEra.map(g=>`<h3 class="testa">${esc(g.era.t)}</h3><div class="pgrid">${g.list.map(([k,p])=>`<button class="pcard" data-pp="${k}" data-q="${esc(p.n.toLowerCase())}">${ppImg(k)?`<img class="pav" src="${ppImg(k)}" alt="" loading="lazy">`:`<span class="pav pini">${esc(p.n[0])}</span>`}<span class="pct"><b>${esc(p.n)}</b><span>${esc(p.d)}</span></span></button>`).join("")}</div>`).join("")}`}
-  const p=PP[id],N=ppNeighbors(id);
+    ${byEra.map(g=>`<h3 class="testa">${esc(g.era.t)}</h3><div class="pgrid">${g.list.map(([k,p])=>{const pi=ppImg(k);return `<button class="pcard" data-pp="${k}" data-q="${esc(p.n.toLowerCase())}">${pi?`<img class="pav" src="${pi}" alt="" loading="lazy">`:`<span class="pav pini">${esc(p.n[0])}</span>`}<span class="pct"><b>${esc(p.n)}</b><span>${esc(p.d)}</span></span></button>`}).join("")}</div>`).join("")}`}
+  const p=PP[id],N=ppNeighbors(id),pi=ppImg(id);
   return `<nav class="crumbs"><button data-go="">${tr("Historia")}</button> › <button data-pp="">${tr("Personajes")}</button> › ${esc(p.n)}</nav>
-  ${ppImg(id)?`<figure class="chfig"><img class="pbig" src="${ppImg(id)}" alt=""><figcaption>${(window.PPIMG||{})[id]?"James Tissot (c. 1896–1902). "+tr("Dominio público, vía Wikimedia Commons."):tr("Grabado de un acontecimiento donde aparece. Dominio público.")}</figcaption></figure>`:""}<h2>${esc(p.n)}</h2><small class="eratag">${esc(TL[p.e].t)} · ${esc(TL[p.e].d)}</small>
+  ${pi?`<figure class="chfig"><img class="pbig" src="${pi}" alt=""><figcaption>${(window.PPIMG||{})[id]?"James Tissot (c. 1896–1902). "+tr("Dominio público, vía Wikimedia Commons."):tr("Grabado de un acontecimiento donde aparece. Dominio público.")}</figcaption></figure>`:""}<h2>${esc(p.n)}</h2><small class="eratag">${esc(TL[p.e].t)} · ${esc(TL[p.e].d)}</small>
   <p class="lead">${esc(p.d)}</p>
   <div class="mindbox">${ppMap(id)}<div class="legend"><span><i class="ln lf"></i> ${tr("Familia")}</span><span><i class="ln lo"></i> ${tr("Otra relación")}</span><span>${tr("Toca un nombre para centrar el mapa")}</span></div></div>
   <dl class="dl"><div><dt>${tr("Camino hasta Jesús")}</dt><dd>${ppPathHTML(id)}</dd></div><div><dt>${tr("Relaciones")}</dt><dd>${N.map(n=>`<a href="#" class="plink" data-pp="${n.id}">${esc(n.txt)}</a>`).join("<br>")||"—"}</dd></div>
-  <div><dt>${tr("Dónde leer")}</dt><dd class="reads">${p.r.map(r=>`<button class="chip" data-ppread="${r[0]},${r[1]}">${esc(bookName(r[0]))} ${r[1]}</button>`).join("")}</dd></div></dl>`}
+  <div><dt>${tr("Dónde leer")}</dt><dd class="reads">${p.r.map(r=>`<button class="chip" data-rc="${r[0]},${r[1]}">${esc(bookName(r[0]))} ${r[1]}</button>`).join("")}</dd></div></dl>`}
 /* Imagen para cada capítulo: la del acontecimiento exacto, si no la más cercana del mismo libro, si no una de su época */
 const BOOK_ERA=[1,2,2,2,2,3,3,3,4,4,4,5,4,5,6,6,6,1,4,4,4,4,5,5,5,6,6,5,5,5,5,5,5,5,5,5,6,6,6,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8];
 function chapImage(b,c){const I=window.TLIMG||{};let best=null;
@@ -738,6 +719,7 @@ function chapImage(b,c){const I=window.TLIMG||{};let best=null;
   const [ev,k]=list[(b*7+c)%list.length];return {src:I[k].src,title:ev.t,exact:false}}
 
 /* Mapa global de personajes: columnas por época + fuerzas suaves */
+const gmapCache={};
 function globalMap(){const ids=Object.keys(PP),W=1800,H=900,colW=W/TL.length,pos={};
   let seed=7;const rnd=()=>(seed=(seed*9301+49297)%233280)/233280;
   ids.forEach(id=>{const e=PP[id].e;pos[id]={x:colW*(e+.5)+(rnd()-.5)*colW*.6,y:90+rnd()*(H-150),vx:0,vy:0}});
@@ -746,10 +728,9 @@ function globalMap(){const ids=Object.keys(PP),W=1800,H=900,colW=W/TL.length,pos
     for(let i=0;i<ids.length;i++)for(let j=i+1;j<ids.length;j++){const a=pos[ids[i]],b=pos[ids[j]];let dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+.01;if(d2>40000)continue;const f=1800/d2;dx*=f;dy*=f;a.vx+=dx;a.vy+=dy;b.vx-=dx;b.vy-=dy}
     for(const [s,d] of E){const a=pos[s],b=pos[d];const dx=b.x-a.x,dy=b.y-a.y,dist=Math.hypot(dx,dy)||1,f=(dist-90)*.02;a.vx+=dx/dist*f;a.vy+=dy/dist*f;b.vx-=dx/dist*f;b.vy-=dy/dist*f}
     ids.forEach(id=>{const p=pos[id],cx=colW*(PP[id].e+.5);p.vx+=(cx-p.x)*.03;p.vy+=(H/2-p.y)*.002;p.x+=Math.max(-12,Math.min(12,p.vx*t));p.y+=Math.max(-12,Math.min(12,p.vy*t));p.vx*=.5;p.vy*=.5;p.y=Math.max(76,Math.min(H-24,p.y));const hw=Math.max(54,PP[id].n.length*6.6+16)/2+8;p.x=Math.max(hw,Math.min(W-hw,p.x))})}
-  const fam=l=>/padre|madre|esposo|hermano|hermana|gemelo|primo|tío|suegra|bisabuela|antepasado|tuvo un hijo/.test(l);
   return `<svg class="gmap" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="${tr("Mapa global de personajes")}">
    ${TL.map((era,i)=>`<rect x="${i*colW}" y="0" width="${colW}" height="${H}" class="gcol g${i%2}"/><text x="${i*colW+colW/2}" y="30" text-anchor="middle" class="gera">${esc(era.t)}</text><text x="${i*colW+colW/2}" y="48" text-anchor="middle" class="gerad">${esc(era.d)}</text>`).join("")}
-   ${E.map(([s,d,l])=>`<line x1="${pos[s].x.toFixed(1)}" y1="${pos[s].y.toFixed(1)}" x2="${pos[d].x.toFixed(1)}" y2="${pos[d].y.toFixed(1)}" class="${fam(l)?"lf":"lo"}"><title>${esc(tr("{0} es {1} {2}",PP[s].n,tr(l),PP[d].n))}</title></line>`).join("")}
+   ${E.map(([s,d,l])=>`<line x1="${pos[s].x.toFixed(1)}" y1="${pos[s].y.toFixed(1)}" x2="${pos[d].x.toFixed(1)}" y2="${pos[d].y.toFixed(1)}" class="${isFam(l)?"lf":"lo"}"><title>${esc(rel(l,PP[s].n,PP[d].n))}</title></line>`).join("")}
    ${ids.map(id=>{const p=pos[id],w=Math.max(54,PP[id].n.length*6.6+16);return `<g class="mn" data-pp="${id}" tabindex="0"><rect x="${(p.x-w/2).toFixed(1)}" y="${(p.y-13).toFixed(1)}" width="${w.toFixed(0)}" height="26" rx="13"/><text x="${p.x.toFixed(1)}" y="${(p.y+4).toFixed(1)}" text-anchor="middle">${esc(PP[id].n)}</text></g>`}).join("")}
   </svg>`}
 /* Capítulos por época y secciones de cada acontecimiento */
@@ -761,24 +742,30 @@ const ERA_CH=[[[0,1,11]],[[0,12,50],[17,1,42]],[[1,1,40],[2,1,27],[3,1,36],[4,1,
  Array.from({length:23},(_,i)=>[43+i,1,null])];
 function eraChaptersHTML(ei){return ERA_CH[ei].map(([b,from,to])=>{const n=B?B[b][1].length:to||1;to=to||n;to=Math.min(to,n);
   const done=Array.from({length:to-from+1},(_,i)=>B&&chapFrac(b,from+i-1)>=1).filter(Boolean).length;
-  return `<section class="pbook"><div class="pbh"><b>${esc(bookName(b))}${from>1||to<n?` ${from}–${to}`:""}</b><small>${done}/${to-from+1}</small></div><div class="cgrid big">${Array.from({length:to-from+1},(_,i)=>{const c=from+i,f=B?chapFrac(b,c-1):0;return `<button class="sq lbl ${f>=1?"full":f>0?"part":""}" data-rc="${b},${c}" aria-label="${esc(bookName(b))} ${c}">${c}</button>`}).join("")}</div></section>`}).join("")}
+  return `<section class="pbook"><div class="pbh"><b>${esc(bookName(b))}${from>1||to<n?` ${from}–${to}`:""}</b><small>${done}/${to-from+1}</small></div>${chapGrid(b,from,to)}</section>`}).join("")}
+/* Numbered chapter squares (1-based from..to), coloured by reading progress */
+const sqCls=f=>f>=1?"full":f>0?"part":"";
+function chapGrid(b,from,to){let h="";for(let c=from;c<=to;c++)h+=`<button class="sq lbl ${B?sqCls(chapFrac(b,c-1)):""}" data-rc="${b},${c}" aria-label="${esc(bookName(b))} ${c}">${c}</button>`;return `<div class="cgrid big">${h}</div>`}
 function evSection(ei,vi){const ev=TL[ei].e[vi],b=ev.r[0];let to=B?B[b][1].length:ev.r[1];
-  const L=EVS();for(const [a,c] of L){const e2=TL[a].e[c];if(e2.r[0]===b&&e2.r[1]>ev.r[1])to=Math.min(to,e2.r[1]-1)}
+  const L=EVL;for(const [a,c] of L){const e2=TL[a].e[c];if(e2.r[0]===b&&e2.r[1]>ev.r[1])to=Math.min(to,e2.r[1]-1)}
   const era=ERA_CH[ei].find(x=>x[0]===b);if(era&&era[2])to=Math.min(to,era[2]);
   let from=ev.r[1];const first=L.filter(([a,c])=>TL[a].e[c].r[0]===b).sort((x,y)=>TL[x[0]].e[x[1]].r[1]-TL[y[0]].e[y[1]].r[1])[0];
   if(first&&first[0]===ei&&first[1]===vi&&era)from=era[1];return {b,from,to:Math.max(from,to)}}
 /* Imagen de personaje: grabado de un acontecimiento donde aparece */
-function ppImg(id){if((window.PPIMG||{})[id])return PPIMG[id].src;const n=PP_ES[id].n.split(" (")[0],I=window.TLIMG||{};for(let ei=0;ei<TL_ES.length;ei++)for(let vi=0;vi<TL_ES[ei].e.length;vi++){const ev=TL_ES[ei].e[vi];if(I[ei+","+vi]&&ev.p.some(x=>x.split("/")[0].startsWith(n)||x.includes(n)))return I[ei+","+vi].src}return null}
+const ppImgCache=new Map();
+function ppImg(id){if(!ppImgCache.has(id))ppImgCache.set(id,findPpImg(id));return ppImgCache.get(id)}
+function findPpImg(id){if((window.PPIMG||{})[id])return PPIMG[id].src;const n=PP_ES[id].n.split(" (")[0],I=window.TLIMG||{};for(let ei=0;ei<TL_ES.length;ei++)for(let vi=0;vi<TL_ES[ei].e.length;vi++){const ev=TL_ES[ei].e[vi];if(I[ei+","+vi]&&ev.p.some(x=>x.split("/")[0].startsWith(n)||x.includes(n)))return I[ei+","+vi].src}return null}
 const ES_BOOKS=["Génesis","Éxodo","Levítico","Números","Deuteronomio","Josué","Jueces","Rut","1 Samuel","2 Samuel","1 Reyes","2 Reyes","1 Crónicas","2 Crónicas","Esdras","Nehemías","Ester","Job","Salmos","Proverbios","Eclesiastés","Cantares","Isaías","Jeremías","Lamentaciones","Ezequiel","Daniel","Oseas","Joel","Amós","Abdías","Jonás","Miqueas","Nahúm","Habacuc","Sofonías","Hageo","Zacarías","Malaquías","Mateo","Marcos","Lucas","Juan","Hechos","Romanos","1 Corintios","2 Corintios","Gálatas","Efesios","Filipenses","Colosenses","1 Tesalonicenses","2 Tesalonicenses","1 Timoteo","2 Timoteo","Tito","Filemón","Hebreos","Santiago","1 Pedro","2 Pedro","1 Juan","2 Juan","3 Juan","Judas","Apocalipsis"];
 const bookName=i=>B?B[i][0]:ES_BOOKS[i];
 
 /* Navegación entre acontecimientos y capítulos */
-const EVS=()=>TL.flatMap((era,ei)=>era.e.map((_,vi)=>[ei,vi]));
-const evIndex=(a,b)=>EVS().findIndex(x=>x[0]===a&&x[1]===b);
-function goEv(d){if(!isEvPath())return;const L=EVS(),i=evIndex(tlPath[0],tlPath[1])+d;if(i<0||i>=L.length)return;tlPath=L[i];renderTL()}
-function goChap(d){if(!B)return;let b=+$("book").value,c=+$("chap").value+d;
-  if(c<0){if(b===0)return;b--;c=B[b][1].length-1}else if(c>=B[b][1].length){if(b===B.length-1)return;b++;c=0}
-  $("book").value=b;fillChaps();$("chap").value=c;savePos();showRead()}
+const evIndex=(a,b)=>EVI[a+","+b]??-1;
+function goEv(d){if(!isEvPath())return;const i=evIndex(tlPath[0],tlPath[1])+d;if(i<0||i>=EVL.length)return;tlPath=EVL[i];renderTL()}
+/* Chapter d steps from b:c (0-based), crossing book boundaries; null past either end of the Bible */
+function chapAt(b,c,d){c+=d;if(c<0){if(b===0)return null;b--;c=B[b][1].length-1}else if(c>=B[b][1].length){if(b===B.length-1)return null;b++;c=0}return [b,c]}
+/* Select book b, chapter c (0-based), remember it, then show it (default: switch to Read) */
+function openChap(b,c,show=()=>setMode("read")){if(!B)return;$("book").value=b;fillChaps();$("chap").value=c;savePos();show()}
+function goChap(d){if(!B)return;const n=chapAt(+$("book").value,+$("chap").value,d);if(n)openChap(n[0],n[1],showRead)}
 function onSwipe(el,fn){let x0=null,y0,t0;
   el.addEventListener("touchstart",e=>{if(e.touches.length>1){x0=null;return}const t=e.touches[0];x0=t.clientX;y0=t.clientY;t0=Date.now()},{passive:true});
   el.addEventListener("touchend",e=>{if(x0==null)return;const t=e.changedTouches[0],dx=t.clientX-x0,dy=t.clientY-y0;x0=null;
@@ -786,7 +773,8 @@ function onSwipe(el,fn){let x0=null,y0,t0;
 onSwipe(feed,d=>{if(mode!=="read")return;if(RS.mode==="paged")turnPage(d);else goChap(d)});
 const isEvPath=()=>tlPath.length===2&&typeof tlPath[0]==="number"&&tlPath[0]>=0;
 onSwipe($("tl"),d=>{if(mode==="hist"&&isEvPath())goEv(d)});
-document.addEventListener("keydown",e=>{if(e.target.closest("select,input,textarea"))return;
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeSheet();closeRS();return}
+  if(e.target.closest("select,input,textarea"))return;
   if(e.key!=="ArrowLeft"&&e.key!=="ArrowRight")return;const d=e.key==="ArrowRight"?1:-1;
   if(mode==="read"){RS.mode==="paged"?turnPage(d):goChap(d)}else if(mode==="hist"&&isEvPath())goEv(d)});
 
@@ -794,20 +782,23 @@ document.addEventListener("keydown",e=>{if(e.target.closest("select,input,textar
 const RD=store.get("rd",{});let rdT=null;
 const rdSave=()=>{clearTimeout(rdT);rdT=setTimeout(()=>store.set("rd",RD),300)};
 function isRead(b,c,v){const s=RD[b+":"+c];return !!s&&s[v]==="1"}
-function chapFrac(b,c){const s=RD[b+":"+c];if(!s)return 0;const n=B?B[b][1][c].length:s.length;return Math.min(1,(s.match(/1/g)||[]).length/n)}
-function markRead(b,c,v){const k=b+":"+c,n=B[b][1][c].length;let s=(RD[k]||"").padEnd(n,"0");if(s[v]==="1")return false;RD[k]=s.slice(0,v)+"1"+s.slice(v+1);rdSave();return true}
+function chapFrac(b,c){const s=RD[b+":"+c];if(!s)return 0;const n=B?B[b][1][c].length:s.length;let r=0;for(const x of s)if(x==="1")r++;return Math.min(1,r/n)}
+/* Set verse v read (on) or unread; returns whether it changed */
+function markRead(b,c,v,on=true){const k=b+":"+c,n=B[b][1][c].length,s=(RD[k]||"").padEnd(n,"0"),x=on?"1":"0";if(s[v]===x)return false;RD[k]=s.slice(0,v)+x+s.slice(v+1);rdSave();return true}
 function markChap(b,c,on){RD[b+":"+c]=(on?"1":"0").repeat(B[b][1][c].length);store.set("rd",RD)}
-const vObs="IntersectionObserver" in window?new IntersectionObserver(es=>{for(const en of es){const el=en.target;
-  if(en.isIntersecting){el._t=setTimeout(()=>{const b=+el.dataset.b,c=+el.dataset.c,v=+el.dataset.v;
-    if(markRead(b,c,v)){el.classList.add("seen");const s=feed.querySelector(".card.sum");if(s&&s._paint&&mode==="read")s._paint();
-      if(mode==="read"&&chapFrac(b,c)>=1){fillChaps();$("chap").value=c}}},1000)}
-  else clearTimeout(el._t)}},{root:feed,threshold:.6}):null;
+/* A verse card or span counts as read after it stays visible for `ms` */
+function seenV(el){const b=+el.dataset.b,c=+el.dataset.c,v=+el.dataset.v;if(!markRead(b,c,v))return;el.classList.add("seen");
+  if(mode!=="read")return;feed.querySelector(".sum")?._paint?.();if(chapFrac(b,c)>=1){fillChaps();$("chap").value=c}}
+const mkObs=(root,ms,threshold)=>"IntersectionObserver" in window?new IntersectionObserver(es=>{for(const en of es){const el=en.target;
+  if(en.isIntersecting)el._t=setTimeout(()=>seenV(el),ms);else clearTimeout(el._t)}},{root,threshold}):{observe(){},disconnect(){}};
+const vObs=mkObs(feed,1000,.6),sObs=mkObs(feed,1500,.9);
 
 /* Vista de progreso */
 let progSel=null;
 function renderProg(){const box=$("prog");
   if(!B){box.innerHTML=`<div class="loading">${T("loading")}</div>`;return}
-  let tv=0,rv=0,tc=0,rc=0;B.forEach((bk,b)=>bk[1].forEach((ch,c)=>{tv+=ch.length;tc++;const f=chapFrac(b,c);rv+=Math.round(f*ch.length);if(f>=1)rc++}));
+  const F=B.map((bk,b)=>bk[1].map((_,c)=>chapFrac(b,c)));
+  let tv=0,rv=0,tc=0,rc=0;B.forEach((bk,b)=>bk[1].forEach((ch,c)=>{const f=F[b][c];tv+=ch.length;tc++;rv+=Math.round(f*ch.length);if(f>=1)rc++}));
   const pct=x=>(x*100).toFixed(x>0&&x<.01?2:1).replace(/\.0$/,"");
   let h="";
   if(progSel){const [b,c]=progSel,ch=B[b][1][c],n=ch.length,r=Math.round(chapFrac(b,c)*n);
@@ -823,15 +814,14 @@ function renderProg(){const box=$("prog");
     <div class="legend"><span><i class="sq"></i> ${tr("Sin leer")}</span><span><i class="sq part"></i> ${tr("En curso")}</span><span><i class="sq full"></i> ${tr("Leído")}</span></div>
     <p class="note">${tr("Cada cuadrado es un capítulo. Toca uno para ver sus versículos. El progreso se guarda en este navegador.")}</p>`;
     B.forEach((bk,b)=>{if(b===0)h+=`<h3 class="testa">${tr("Antiguo Testamento")}</h3>`;if(b===39)h+=`<h3 class="testa">${tr("Nuevo Testamento")}</h3>`;
-      const done=bk[1].filter((_,c)=>chapFrac(b,c)>=1).length;
-      h+=`<section class="pbook"><div class="pbh"><b>${esc(bk[0])}</b><small>${done}/${bk[1].length}</small></div><div class="cgrid">${bk[1].map((_,c)=>{const f=chapFrac(b,c);return `<button class="sq ${f>=1?"full":f>0?"part":""}" data-pc="${b},${c}" title="${esc(bk[0])} ${c+1}" aria-label="${esc(bk[0])} ${c+1}"></button>`}).join("")}</div></section>`});
+      const done=F[b].filter(f=>f>=1).length;
+      h+=`<section class="pbook"><div class="pbh"><b>${esc(bk[0])}</b><small>${done}/${bk[1].length}</small></div><div class="cgrid">${bk[1].map((_,c)=>`<button class="sq ${sqCls(F[b][c])}" data-pc="${b},${c}" title="${esc(bk[0])} ${c+1}" aria-label="${esc(bk[0])} ${c+1}"></button>`).join("")}</div></section>`});
   }
   box.innerHTML=`<div class="tlw">${h}</div>`;
   box.querySelectorAll("[data-pc]").forEach(x=>x.onclick=()=>{progSel=x.dataset.pc.split(",").map(Number);renderProg();box.scrollTop=0});
   const bk=box.querySelector("[data-pback]");if(bk)bk.onclick=()=>{progSel=null;renderProg()};
-  box.querySelectorAll("[data-vv]").forEach(x=>x.onclick=()=>{const [b,c]=progSel,v=+x.dataset.vv,k=b+":"+c,n=B[b][1][c].length;let s=(RD[k]||"").padEnd(n,"0");
-    RD[k]=s.slice(0,v)+(s[v]==="1"?"0":"1")+s.slice(v+1);store.set("rd",RD);renderProg()});
-  const pr=$("pRead");if(pr)pr.onclick=()=>{const [b,c]=progSel;$("book").value=b;fillChaps();$("chap").value=c;savePos();setMode("read")};
+  box.querySelectorAll("[data-vv]").forEach(x=>x.onclick=()=>{const [b,c]=progSel,v=+x.dataset.vv;markRead(b,c,v,!isRead(b,c,v));renderProg()});
+  const pr=$("pRead");if(pr)pr.onclick=()=>openChap(...progSel);
   const pa=$("pAll");if(pa)pa.onclick=()=>{const [b,c]=progSel;markChap(b,c,chapFrac(b,c)<1);renderProg()};
 }
 feed.addEventListener("scroll",()=>{if(mode==="for"&&feed.scrollTop+feed.clientHeight*3>feed.scrollHeight)more()});
@@ -862,7 +852,6 @@ $("rSize").oninput=e=>{RS.size=+e.target.value;applyRS();if(RS.mode==="paged")re
 function openRS(){$("rsheet").hidden=false;$("scrim").hidden=false}
 function closeRS(){$("rsheet").hidden=true;if($("sheet").hidden)$("scrim").hidden=true}
 $("aa").onclick=()=>$("rsheet").hidden?openRS():closeRS();$("rClose").onclick=closeRS;
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeRS()});
 applyRS();
 
 /* Capítulo completo y páginas */
@@ -870,25 +859,23 @@ let pageIdx=0,pager=null;
 function chapterBody(b,c){const p=document.createElement("div");p.className="ctext";
   B[b][1][c].forEach((t,v)=>{const s=document.createElement("span");s.className="vs"+(isRead(b,c,v)?" seen":"");s.dataset.b=b;s.dataset.c=c;s.dataset.v=v;
     s.innerHTML=`<sup>${v+1}</sup>`;s.appendChild(document.createTextNode(t+" "));s.onclick=()=>explain(b,c,v);p.appendChild(s)});return p}
-function showFlow(){const b=+$("book").value,c=+$("chap").value;feed.innerHTML="";feed.className=RS.mode;
+function showFlow(){const b=+$("book").value,c=+$("chap").value;clearFeed();feed.className=RS.mode;
   const sum=summaryCard(b,c);sum.className="sum flowsum";
-  const nb=c+1<B[b][1].length?[b,c+1]:(b+1<B.length?[b+1,0]:null);
+  const nb=chapAt(b,c,1);
   const end=document.createElement("div");end.className="flowend";
   if(nb){end.innerHTML=`<button class="go"></button>`;end.firstChild.textContent=`${T("next")}: ${B[nb[0]][0]} ${nb[1]+1} →`;end.firstChild.onclick=()=>goChap(1)}
-  if(RS.mode==="flow"){const art=document.createElement("article");art.className="flowc";art.append(sum,chapterBody(b,c),end);feed.appendChild(art);feed.scrollTop=0;pager=null;
-    art.querySelectorAll(".vs").forEach(s=>sObs&&sObs.observe(s))}
+  if(RS.mode==="flow"){const art=document.createElement("article");art.className="flowc";art.append(sum,chapterBody(b,c),end);feed.appendChild(art);feed.scrollTop=0;
+    art.querySelectorAll(".vs").forEach(s=>sObs.observe(s))}
   else{const wrap=document.createElement("div");wrap.className="pwrap";const cols=document.createElement("div");cols.className="pcols";
-    cols.append(sum,chapterBody(b,c),end);wrap.appendChild(cols);const ind=document.createElement("div");ind.className="pind";feed.append(wrap,ind);pager={wrap,cols,ind};pageIdx=0;
+    cols.append(sum,chapterBody(b,c),end);wrap.appendChild(cols);const ind=document.createElement("div");ind.className="pind";feed.append(wrap,ind);pager={wrap,cols,ind,obs:mkObs(wrap,1500,.9)};pageIdx=0;
     wrap.addEventListener("click",e=>{if(e.target.closest("button,.vs"))return;const x=e.clientX/wrap.clientWidth;if(x>.66)turnPage(1);else if(x<.33)turnPage(-1)});
-    requestAnimationFrame(()=>{goPage(0);cols.querySelectorAll(".vs").forEach(s=>pObs(wrap).observe(s))})}}
+    const pg=pager;requestAnimationFrame(()=>{goPage(0);cols.querySelectorAll(".vs").forEach(s=>pg.obs.observe(s))})}}
 function pages(){return pager?Math.max(1,Math.round(pager.cols.scrollWidth/pager.wrap.clientWidth)):1}
 function goPage(i){if(!pager)return;pageIdx=Math.max(0,Math.min(pages()-1,i));pager.wrap.scrollTo({left:pageIdx*pager.wrap.clientWidth,behavior:"auto"});pager.ind.textContent=`${pageIdx+1} / ${pages()}`}
 function turnPage(d){if(!pager)return goChap(d);const n=pages();if(pageIdx+d<0){goChap(-1);return}if(pageIdx+d>=n){goChap(1);return}goPage(pageIdx+d)}
 addEventListener("resize",()=>{if(mode==="read"&&RS.mode==="paged")rerender()});
-const seenV=(s)=>{const b=+s.dataset.b,c=+s.dataset.c,v=+s.dataset.v;if(markRead(b,c,v)){s.classList.add("seen");const sm=feed.querySelector(".sum");if(sm&&sm._paint)sm._paint();if(chapFrac(b,c)>=1){fillChaps();$("chap").value=c}}};
-const mkObs=root=>"IntersectionObserver" in window?new IntersectionObserver(es=>{for(const en of es){const s=en.target;if(en.isIntersecting)s._t=setTimeout(()=>seenV(s),1500);else clearTimeout(s._t)}},{root,threshold:.9}):{observe(){}};
-const sObs=mkObs(feed);let _po=null,_pw=null;function pObs(w){if(_pw!==w){_po=mkObs(w);_pw=w}return _po}
 
+const aiErr=(e,fallback)=>e?.code==="not_granted"?T("grant"):e?.code==="rate_limited"?T("rate"):fallback;
 async function getSample(){if(sampleFn===undefined){try{sampleFn=(await window.claude?.use?.("sample"))??null}catch(e){sampleFn=null}}return sampleFn}
 async function explain(b,c,v){
   const t=B[b][1][c][v];$("sRef").textContent=ref(b,c,v);$("sText").textContent=t;
@@ -911,11 +898,10 @@ Plain text, no markdown, at most 130 words, three short parts separated by a bla
 Do not invent historical facts; if something is uncertain or interpreted in several ways, say so.`;
   try{const r=await s(prompt,{signal:ctrl.signal,modelTier:"quick",onText:({text})=>{$("exp").textContent=text}});$("exp").textContent=r.text}
   catch(e){if(e?.name==="AbortError")return;
-    $("exp").textContent=e?.code==="not_granted"?T("grant"):e?.code==="rate_limited"?T("rate"):(e?.text||T("err"))}
+    $("exp").textContent=aiErr(e,e?.text||T("err"))}
 }
 function closeSheet(){expReq++;ctrl?.abort();$("sheet").hidden=$("scrim").hidden=true}
 $("close").onclick=closeSheet;$("scrim").onclick=()=>{closeSheet();closeRS()};
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeSheet()});
 $("tFor").onclick=()=>setMode("for");$("tRead").onclick=()=>setMode("read");$("tHist").onclick=()=>{tlPath=[];setMode("hist")};$("tProg").onclick=()=>{progSel=null;setMode("prog")};
 $("book").onchange=()=>{fillChaps();showRead();savePos()};$("chap").onchange=()=>{showRead();savePos()};
 $("lang").onchange=e=>useLang(e.target.value);
