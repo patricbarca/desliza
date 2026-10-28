@@ -22,7 +22,7 @@
          radial-gradient(36% 32% at 88% 12%,rgba(217,184,97,.24),transparent 70%),
          radial-gradient(46% 40% at 76% 86%,rgba(60,120,170,.30),transparent 70%),
          radial-gradient(40% 36% at 8% 92%,rgba(140,196,175,.18),transparent 70%),var(--bg)}}
-:root[data-theme="dark"]{--bg:#121916; --surface:#1B2420; --fg:#E4E9E4; --muted:#93A29B; --line:#2C3833; --accent:#8CC4AF; --on-accent:#0F1613; --glow:#D9B861; color-scheme:dark;
+:root[data-theme="dark"],:root[data-rt="quiet"],:root[data-rt="night"]{--bg:#121916; --surface:#1B2420; --fg:#E4E9E4; --muted:#93A29B; --line:#2C3833; --accent:#8CC4AF; --on-accent:#0F1613; --glow:#D9B861; color-scheme:dark;
   --glass:rgba(255,255,255,.07); --glass-strong:rgba(22,32,28,.62); --glass-edge:rgba(255,255,255,.16);
   --glass-sheen:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.02) 45%,rgba(255,255,255,0) 60%,rgba(255,255,255,.06));
   --glass-hi:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(255,255,255,.05);
@@ -263,8 +263,10 @@ button.sq:hover{outline:2px solid var(--glow);outline-offset:1px}
 
 /* ===== Liquid glass theme =====
    Translucent, blurred panels with a bright top edge, floating over a soft colour mesh.
-   Overrides the base styles above; tokens adapt to light/dark like the rest of the palette. */
-:root{
+   Overrides the base styles above; tokens adapt to light/dark like the rest of the palette.
+   Light reading themes (Aa) force the light glass even when the phone is in dark mode, so their dark
+   text never lands on dark glass; dark reading themes join the dark token block at the top. */
+:root,:root[data-rt="original"],:root[data-rt="paper"],:root[data-rt="bold"],:root[data-rt="calm"]{
   --glass:rgba(255,255,255,.44); --glass-strong:rgba(255,255,255,.68); --glass-edge:rgba(255,255,255,.8);
   --glass-sheen:linear-gradient(160deg,rgba(255,255,255,.55),rgba(255,255,255,.08) 45%,rgba(255,255,255,0) 60%,rgba(255,255,255,.18));
   --glass-hi:inset 0 1px 0 rgba(255,255,255,.95),inset 0 -1px 0 rgba(255,255,255,.3);
