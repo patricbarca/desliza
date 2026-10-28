@@ -2,6 +2,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Desliza la Palabra</title>
+<!-- PWA: installable, works offline for what has been read (see sw.js) -->
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="theme-color" content="#E9ECE6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121916" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Desliza">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Figtree:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
@@ -407,23 +417,23 @@ const L={
  es:{name:"Español",ver:"Reina-Valera 1909",sub:"la Palabra",tag:"La Biblia, un versículo a la vez. Desliza como en tus redes, pero hacia lo que alimenta el alma.",start:"Empezar a deslizar",
    for:"Para ti",read:"Leer",ask:"¿Qué significa?",chap:"Capítulo",next:"Siguiente",cont:"Toca para continuar",end:"Fin de la Biblia",loading:"Cargando la Biblia…",fail:"No se pudo cargar el texto. Recarga la página.",
    think:"Pensando…",close:"Cerrar",note:"Explicación generada con IA. Úsala como apoyo, no como autoridad.",noai:"La explicación con IA no está disponible en esta vista.",grant:"Permite el acceso a Claude para ver explicaciones.",rate:"Demasiadas consultas seguidas. Espera un momento.",err:"No se pudo generar la explicación. Inténtalo de nuevo.",
-   p:["Qué dice (aclara palabras antiguas si las hay)","Contexto: quién habla y por qué","Para hoy: una aplicación práctica"],pl:"español sencillo y latinoamericano",sumL:"Resumen del capítulo",chapw:"capítulo",swipe:"Desliza para leer ↑"},
+   p:["Qué dice (aclara palabras antiguas si las hay)","Contexto: quién habla y por qué","Para hoy: una aplicación práctica"],pl:"español sencillo y latinoamericano",sumL:"Resumen del capítulo",offline:"Sin conexión. Abre este libro una vez con internet para tenerlo disponible sin conexión.",chapw:"capítulo",swipe:"Desliza para leer ↑"},
  en:{name:"English",ver:"King James Version",sub:"the Word",tag:"The Bible, one verse at a time. Scroll like your feed, toward what feeds the soul.",start:"Start scrolling",
    for:"For you",read:"Read",ask:"What does it mean?",chap:"Chapter",next:"Next",cont:"Tap to continue",end:"End of the Bible",loading:"Loading the Bible…",fail:"Couldn't load the text. Reload the page.",
    think:"Thinking…",close:"Close",note:"AI-generated explanation. Use it as a help, not an authority.",noai:"AI explanations aren't available in this view.",grant:"Allow access to Claude to see explanations.",rate:"Too many requests in a row. Wait a moment.",err:"Couldn't generate the explanation. Try again.",
-   p:["What it says (clarify archaic words if any)","Context: who is speaking and why","For today: one practical application"],pl:"plain, modern English",sumL:"Chapter summary",chapw:"chapter",swipe:"Swipe up to read ↑"},
+   p:["What it says (clarify archaic words if any)","Context: who is speaking and why","For today: one practical application"],pl:"plain, modern English",sumL:"Chapter summary",offline:"You're offline. Open this book once with internet to keep it available offline.",chapw:"chapter",swipe:"Swipe up to read ↑"},
  pt:{name:"Português",ver:"Bíblia Livre",sub:"a Palavra",tag:"A Bíblia, um versículo de cada vez. Deslize como nas redes, rumo ao que alimenta a alma.",start:"Começar a deslizar",
    for:"Para você",read:"Ler",ask:"O que significa?",chap:"Capítulo",next:"Próximo",cont:"Toque para continuar",end:"Fim da Bíblia",loading:"Carregando a Bíblia…",fail:"Não foi possível carregar o texto. Recarregue a página.",
    think:"Pensando…",close:"Fechar",note:"Explicação gerada por IA. Use como apoio, não como autoridade.",noai:"A explicação por IA não está disponível nesta visualização.",grant:"Permita o acesso ao Claude para ver explicações.",rate:"Muitas consultas seguidas. Aguarde um momento.",err:"Não foi possível gerar a explicação. Tente novamente.",
-   p:["O que diz (esclareça palavras antigas, se houver)","Contexto: quem fala e por quê","Para hoje: uma aplicação prática"],pl:"português brasileiro simples",sumL:"Resumo do capítulo",chapw:"capítulo",swipe:"Deslize para ler ↑"},
+   p:["O que diz (esclareça palavras antigas, se houver)","Contexto: quem fala e por quê","Para hoje: uma aplicação prática"],pl:"português brasileiro simples",sumL:"Resumo do capítulo",offline:"Sem conexão. Abra este livro uma vez com internet para tê-lo disponível offline.",chapw:"capítulo",swipe:"Deslize para ler ↑"},
  fr:{name:"Français",ver:"Darby 1885",sub:"la Parole",tag:"La Bible, un verset à la fois. Faites défiler comme sur vos réseaux, vers ce qui nourrit l'âme.",start:"Commencer",
    for:"Pour vous",read:"Lire",ask:"Que signifie-t-il ?",chap:"Chapitre",next:"Suivant",cont:"Touchez pour continuer",end:"Fin de la Bible",loading:"Chargement de la Bible…",fail:"Impossible de charger le texte. Rechargez la page.",
    think:"Réflexion…",close:"Fermer",note:"Explication générée par IA. Utilisez-la comme aide, pas comme autorité.",noai:"Les explications par IA ne sont pas disponibles ici.",grant:"Autorisez l'accès à Claude pour voir les explications.",rate:"Trop de demandes à la suite. Patientez un instant.",err:"Impossible de générer l'explication. Réessayez.",
-   p:["Ce qu'il dit (clarifie les mots anciens s'il y en a)","Contexte : qui parle et pourquoi","Pour aujourd'hui : une application pratique"],pl:"français simple et moderne",sumL:"Résumé du chapitre",chapw:"chapitre",swipe:"Faites défiler pour lire ↑"},
+   p:["Ce qu'il dit (clarifie les mots anciens s'il y en a)","Contexte : qui parle et pourquoi","Pour aujourd'hui : une application pratique"],pl:"français simple et moderne",sumL:"Résumé du chapitre",offline:"Hors ligne. Ouvrez ce livre une fois avec internet pour l’avoir hors ligne.",chapw:"chapitre",swipe:"Faites défiler pour lire ↑"},
  de:{name:"Deutsch",ver:"Elberfelder 1905",sub:"das Wort",tag:"Die Bibel, Vers für Vers. Wische wie in deinem Feed, hin zu dem, was die Seele nährt.",start:"Loslegen",
    for:"Für dich",read:"Lesen",ask:"Was bedeutet das?",chap:"Kapitel",next:"Weiter",cont:"Tippen zum Fortfahren",end:"Ende der Bibel",loading:"Bibel wird geladen…",fail:"Text konnte nicht geladen werden. Seite neu laden.",
    think:"Denke nach…",close:"Schließen",note:"KI-generierte Erklärung. Als Hilfe nutzen, nicht als Autorität.",noai:"KI-Erklärungen sind in dieser Ansicht nicht verfügbar.",grant:"Erlaube den Zugriff auf Claude, um Erklärungen zu sehen.",rate:"Zu viele Anfragen hintereinander. Kurz warten.",err:"Erklärung konnte nicht erstellt werden. Erneut versuchen.",
-   p:["Was er sagt (erkläre altertümliche Wörter, falls vorhanden)","Kontext: wer spricht und warum","Für heute: eine praktische Anwendung"],pl:"einfaches, modernes Deutsch",sumL:"Kapitelübersicht",chapw:"Kapitel",swipe:"Nach oben wischen zum Lesen ↑"}
+   p:["Was er sagt (erkläre altertümliche Wörter, falls vorhanden)","Kontext: wer spricht und warum","Für heute: eine praktische Anwendung"],pl:"einfaches, modernes Deutsch",sumL:"Kapitelübersicht",offline:"Keine Verbindung. Öffne dieses Buch einmal mit Internet, um es offline zu haben.",chapw:"Kapitel",swipe:"Nach oben wischen zum Lesen ↑"}
 };
 const $=id=>document.getElementById(id), feed=$("feed"), cache={};
 let lang="es", B=null, mode="for", sampleFn, ctrl=null, rendered=0, pool=[], expReq=0;
@@ -547,7 +557,7 @@ async function fillSummary(b,c,box){
   if(pre){box.textContent=pre;return}
   const saved=store.get(key,null);
   if(saved){box.textContent=saved;return}
-  const s=await getSample();if(!s){box.textContent=T("noai");return}
+  const s=await getSample();if(!s){box.textContent=T(navigator.onLine?"noai":"offline");return}
   const ch=B[b][1][c];
   const text=ch.map((t,i)=>`${i+1} ${t}`).join("\n").slice(0,9000);
   const prompt=`You summarize Bible chapters for a reading app. Write ONLY in ${T("pl")}.\nChapter: ${B[b][0]} ${c+1} (${T("ver")}).\nText:\n${text}\n\nPlain text, no markdown, no title. 2 to 3 short sentences (max 60 words) saying what happens or what is taught in this chapter, based only on the text above. Neutral, non-denominational tone.`;
@@ -886,7 +896,7 @@ async function explain(b,c,v){
   const pre=(await iaBook(lang,b))?.exp?.[`${c}:${v}`];
   if(id!==expReq)return; // user opened another verse meanwhile
   if(pre){$("exp").textContent=pre;return}
-  const s=await getSample();if(id!==expReq)return;if(!s){$("exp").textContent=T("noai");return}
+  const s=await getSample();if(id!==expReq)return;if(!s){$("exp").textContent=T(navigator.onLine?"noai":"offline");return}
   ctrl=new AbortController();
   const ch=B[b][1][c],prev=ch.slice(Math.max(0,v-2),v).join(" "),next=ch.slice(v+1,v+3).join(" "),P=T("p");
   const prompt=`You are a warm, clear, non-denominational Christian Bible teacher. Explain this verse from the ${T("ver")} translation. Write ONLY in ${T("pl")}.
@@ -910,6 +920,8 @@ $("lang").onchange=e=>useLang(e.target.value);
 $("start").onclick=()=>{$("cover").hidden=true;useLang(lang)};
 $("home").onclick=()=>{closeSheet();$("cover").hidden=false};
 
+/* Offline support. Fails quietly where service workers aren't allowed (e.g. inside a claude.ai artifact). */
+if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
 buildLangUI();lang=store.get("lang",guessLang());if(!L[lang])lang="es";paintText();load(lang).catch(()=>{});
 </script>
 

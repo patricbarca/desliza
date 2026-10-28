@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "Desliza la Palabra",
+  "short_name": "Desliza",
+  "description": "La Biblia, un versículo a la vez, con explicaciones, historia y personajes en 5 idiomas.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#E9ECE6",
+  "theme_color": "#2E5B4E",
+  "categories": ["books", "education", "lifestyle"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
