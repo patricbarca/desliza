@@ -1,0 +1,6 @@
+# Original download and Python cache
+desliza.zip
+__pycache__/
+*.pyc
+# Atomic-write temp files from generar_ia.py
+*.tmp
