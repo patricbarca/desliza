@@ -7,9 +7,10 @@
      stale-while-revalidate. The chosen language's Bible is cached on first load, and each book's AI
      texts once that book is opened, so whatever the reader has used works offline.
    - Google Fonts: same stale-while-revalidate, in their own cache.
-   Bump VERSION when the shell list changes; old caches are deleted on activate. */
-const VERSION = "v1";
-const SHELL = `shell-${VERSION}`, DATA = "datos-v1", FONTS = "fuentes-v1";
+   Bump VERSION when the shell list changes, and DATOS when Bible/AI files are regenerated (stale-while-revalidate
+   would otherwise show the old copy once); old caches are deleted on activate. */
+const VERSION = "v2", DATOS = "v2";  // v2: BSB added; ~1,500 explanations fixed in en/pt/fr/de
+const SHELL = `shell-${VERSION}`, DATA = `datos-${DATOS}`, FONTS = "fuentes-v1";
 const SHELL_FILES = ["./", "index.html", "timeline.js?v=3", "people.js?v=3", "manifest.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/maskable-512.png", "icons/apple-touch-icon.png"];
 

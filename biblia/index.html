@@ -390,6 +390,7 @@ select{border-radius:999px;padding:7px 12px;appearance:none;-webkit-appearance:n
       <button data-m="flow"><b data-tr="">Capítulo completo</b><span data-tr="">Texto continuo, como un libro</span></button>
       <button data-m="paged"><b data-tr="">Páginas</b><span data-tr="">Pasa página con toques o gestos</span></button>
     </div>
+    <div id="rVerWrap" hidden><h2 data-tr="">Versión</h2><div class="lhseg" id="rVer"></div></div>
     <h2 data-tr="">Tema</h2>
     <div class="themes" id="rTheme"></div>
     <h2 data-tr="">Letra</h2>
@@ -438,7 +439,12 @@ const L={
 const $=id=>document.getElementById(id), feed=$("feed"), cache={};
 let lang="es", B=null, mode="for", sampleFn, ctrl=null, rendered=0, pool=[], expReq=0;
 const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
-const T=k=>L[lang][k];
+const T=k=>k==="ver"?verOf(lang).ver:L[lang][k];
+/* Bibles per language, default first. d = data key: <d>.json and ia/<d>/. The choice is kept per language. */
+const VERS={en:[{d:"bsb",ver:"Berean Standard Bible"},{d:"en",ver:"King James Version"}]};
+const versOf=k=>VERS[k]||[{d:k,ver:L[k].ver}];
+const verOf=k=>{const vs=versOf(k),p=store.get("ver_"+k,null);return vs.find(x=>x.d===p)||vs[0]};
+const dk=k=>verOf(k).d;
 /* History/Characters/Progress text. Spanish is the key and the fallback; other languages come from
    i18n/<lang>.js (HI18N[lang] = {ui:{es:txt}, TL:[...same shape as timeline.js], PP:{id:{n,d}}}). */
 window.HI18N=window.HI18N||{};
@@ -476,7 +482,7 @@ function buildLangUI(){
   $("langs").innerHTML="";$("lang").innerHTML="";
   for(const [k,v] of Object.entries(L)){
     const b=document.createElement("button");b.dataset.l=k;b.innerHTML="<b></b><span></span>";
-    b.querySelector("b").textContent=v.name;b.querySelector("span").textContent=v.ver;
+    b.querySelector("b").textContent=v.name;b.querySelector("span").textContent=verOf(k).ver;
     b.onclick=()=>{lang=k;store.set("lang",k);paintText()};$("langs").appendChild(b);
     const o=document.createElement("option");o.value=k;o.textContent=k.toUpperCase();$("lang").appendChild(o);
   }
@@ -489,15 +495,15 @@ const iaCache={};
 function iaBook(k,b){const key=k+"/"+b;
   if(!(key in iaCache))iaCache[key]=fetch(`ia/${k}/${b}.json`).then(r=>r.ok?r.json():null).catch(()=>null);
   return iaCache[key]}
-let Blang=null;  // language of the Bible currently in B
+let Blang=null;  // data key (dk) of the Bible currently in B
 async function useLang(k){
-  lang=k;store.set("lang",k);
-  if(Blang===k){paintText();setMode(mode);return}  // e.g. Home -> Start with the same language
+  lang=k;store.set("lang",k);const d=dk(k);
+  if(Blang===d){paintText();setMode(mode);return}  // e.g. Home -> Start with the same Bible
   clearFeed();feed.innerHTML=`<div class="loading">${T("loading")}</div>`;
-  const [,bible]=await Promise.all([loadHist(k),load(k).catch(()=>null)]);
-  if(lang!==k)return;paintText();
-  if(!bible){delete cache[k];feed.innerHTML=`<div class="loading">${T("fail")}</div>`;return}
-  B=bible;Blang=k;for(const x in cache)if(x!==k)delete cache[x];  // a parsed Bible is ~20 MB
+  const [,bible]=await Promise.all([loadHist(k),load(d).catch(()=>null)]);
+  if(lang!==k||dk(k)!==d)return;paintText();
+  if(!bible){delete cache[d];feed.innerHTML=`<div class="loading">${T("fail")}</div>`;return}
+  B=bible;Blang=d;for(const x in cache)if(x!==d)delete cache[x];  // a parsed Bible is ~20 MB
   pool=[];buildPool();
   $("book").innerHTML=B.map((x,i)=>`<option value="${i}">${x[0]}</option>`).join("");
   const pos=store.get("pos",[42,2]);$("book").value=pos[0];fillChaps();$("chap").value=pos[1];
@@ -553,7 +559,7 @@ function summaryCard(b,c){
 async function fillSummary(b,c,box){
   const lg=lang,key=`sum:${lg}:${b}:${c}`;
   box.textContent=T("think");
-  const pre=(await iaBook(lg,b))?.sum?.[c];
+  const pre=(await iaBook(dk(lg),b))?.sum?.[c];
   if(pre){box.textContent=pre;return}
   const saved=store.get(key,null);
   if(saved){box.textContent=saved;return}
@@ -851,12 +857,16 @@ function applyRS(){const r=document.documentElement;
   document.querySelectorAll("#rFont [data-f]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===RS.font));
   document.querySelectorAll("#rLh [data-l]").forEach(b=>b.setAttribute("aria-pressed",+b.dataset.l===+RS.lh));
   $("rSize").value=RS.size;store.set("rs",RS)}
-function paintRS(){$("rTheme").innerHTML=THEMES.map(([k,n])=>`<button data-t="${k}" class="th th-${k}"><i>Aa</i><span>${esc(tr(n))}</span></button>`).join("");
+function paintRS(){const vs=versOf(lang);$("rVerWrap").hidden=vs.length<2;
+$("rVer").innerHTML=vs.map(v=>`<button data-v="${v.d}" aria-pressed="${v.d===dk(lang)}">${esc(v.ver)}</button>`).join("");
+$("rTheme").innerHTML=THEMES.map(([k,n])=>`<button data-t="${k}" class="th th-${k}"><i>Aa</i><span>${esc(tr(n))}</span></button>`).join("");
 $("rFont").innerHTML=FONTS.map(([k,n,ff])=>`<button data-f="${k}" style="font-family:${ff.replace(/"/g,"&quot;")}">${esc(tr(n))}</button>`).join("");
 if(typeof RS!=="undefined")applyRS()}
 paintRS();
 let relayout=null;const rerender=()=>{clearTimeout(relayout);relayout=setTimeout(()=>{if(mode==="read"&&B){const sp=pageIdx;showRead();if(RS.mode==="paged")setTimeout(()=>goPage(sp),30)}},120)};
 $("rMode").onclick=e=>{const b=e.target.closest("[data-m]");if(!b)return;RS.mode=b.dataset.m;applyRS();if(mode!=="read")setMode("read");else showRead()};
+$("rVer").onclick=e=>{const b=e.target.closest("[data-v]");if(!b||b.dataset.v===dk(lang))return;
+  store.set("ver_"+lang,b.dataset.v);buildLangUI();paintRS();useLang(lang)};
 $("rTheme").onclick=e=>{const b=e.target.closest("[data-t]");if(!b)return;RS.theme=b.dataset.t;applyRS()};
 $("rFont").onclick=e=>{const b=e.target.closest("[data-f]");if(!b)return;RS.font=b.dataset.f;applyRS();if(RS.mode==="paged")rerender()};
 $("rLh").onclick=e=>{const b=e.target.closest("[data-l]");if(!b)return;RS.lh=+b.dataset.l;applyRS();if(RS.mode==="paged")rerender()};
@@ -893,7 +903,7 @@ async function explain(b,c,v){
   const t=B[b][1][c][v];$("sRef").textContent=ref(b,c,v);$("sText").textContent=t;
   $("exp").textContent=T("think");$("sheet").hidden=$("scrim").hidden=false;
   ctrl?.abort();ctrl=null;const id=++expReq; // stop any live answer still streaming for a previous verse
-  const pre=(await iaBook(lang,b))?.exp?.[`${c}:${v}`];
+  const pre=(await iaBook(dk(lang),b))?.exp?.[`${c}:${v}`];
   if(id!==expReq)return; // user opened another verse meanwhile
   if(pre){$("exp").textContent=pre;return}
   const s=await getSample();if(id!==expReq)return;if(!s){$("exp").textContent=T(navigator.onLine?"noai":"offline");return}
@@ -922,7 +932,7 @@ $("home").onclick=()=>{closeSheet();$("cover").hidden=false};
 
 /* Offline support. Fails quietly where service workers aren't allowed (e.g. inside a claude.ai artifact). */
 if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
-buildLangUI();lang=store.get("lang",guessLang());if(!L[lang])lang="es";paintText();load(lang).catch(()=>{});
+buildLangUI();lang=store.get("lang",guessLang());if(!L[lang])lang="es";paintText();load(dk(lang)).catch(()=>{});
 </script>
 
 </body></html>

@@ -44,6 +44,8 @@ IDIOMA = {
     "pt": ("Bíblia Livre", "português brasileiro simples"),
     "fr": ("Darby 1885", "français simple et moderne"),
     "de": ("Elberfelder 1905", "einfaches, modernes Deutsch"),
+    # Second English Bible, modern wording. Its texts are adapted from "en" with the `adaptar` command.
+    "bsb": ("Berean Standard Bible", "plain, modern English"),
 }
 LOTE = 20000  # solicitudes por batch (límite de la API: 100.000 o 256 MB)
 # max_tokens: Spanish runs ~2.3 tokens/word and the model often writes ~150-175 words; 400 truncated
@@ -53,6 +55,9 @@ MAX_EXP, MAX_SUM = 700, 400
 SISTEMA = ("You are a warm, clear, non-denominational Christian Bible teacher. "
            "Never invent historical facts; if something is uncertain or interpreted in several ways, say so. "
            "Plain text only, no markdown, no titles.")
+SISTEMA_ADAPT = ("You are a careful editor of Bible study material for a reading app. "
+                 "Keep the meaning, tone, three-part structure and approximate length. "
+                 "Never add facts or opinions. Plain text only, no markdown, no titles, no editor notes.")
 SISTEMA_TRAD = ("You are a careful translator of Bible study material for a reading app. "
                 "Translate faithfully: keep the meaning, tone, paragraph structure and approximate length. "
                 "Never add facts or opinions. Plain text only, no markdown, no titles, no translator notes.")
@@ -157,12 +162,25 @@ CITA = re.compile(r'["“«]([^"”»]{3,40})["”»]')
 # How each target language names Spanish, the source we translate from. A translation that names it is
 # talking about the source wording ("the Spanish word ...", "the sentence about Spanish words is removed").
 NOMBRE_ES = {"en": "spanish", "pt": "espanhol", "fr": "espagnol", "de": "spanisch"}
-# Spanish words rare in pt/fr/de/en; 3+ of them means the text was left in Spanish.
-# ("está" is left out: it is also common Portuguese.)
-# The lookbehind skips Portuguese enclitics like "escrevê-las", "arrancá-los".
-SOLO_ES = re.compile(r"(?<![-\w])(los|las|del|pero|él|también|esto|ustedes|qué)\b", re.I)
-# German "Los" (lot, as in casting lots) is not Spanish.
-SOLO_ES_DE = re.compile(r"(?<![-\w])(las|del|pero|él|también|esto|ustedes|qué)\b", re.I)
+# Spanish words that the target language does not use; 4+ of them means the text was left in Spanish.
+# One list per language, because the overlaps differ ("que" and "la" are French, "para" and "que" are
+# Portuguese, "Los" is German for "lot"). The earlier single list ("los", "también"…) missed ~1,260 texts
+# written with "el", "que", "y", "una". The lookbehind skips Portuguese enclitics ("escrevê-las").
+_ES_COMUN = "el|los|las|del|y|pero|también|una|dice|ustedes|él|qué|esto"
+ES_MARCAS = {
+    "en": _ES_COMUN + "|que|para|por|con|versículo",
+    "de": "el|las|del|y|pero|también|una|dice|ustedes|él|qué|esto|que|para|por|con|versículo",
+    "fr": _ES_COMUN.replace("|y|", "|") + "|para|por|con|versículo",  # "y" is French too ("il y a")
+    "pt": _ES_COMUN + "|con",
+}
+ES_MARCAS = {k: re.compile(r"(?<![-\w])(" + v + r")\b", re.I) for k, v in ES_MARCAS.items()}
+ES_MARCAS["bsb"] = ES_MARCAS["en"]
+
+
+def en_espanol(texto, lang):
+    """True if `texto` (meant to be in `lang`) is really Spanish."""
+    m = ES_MARCAS.get(lang)
+    return bool(m) and len(m.findall(texto)) >= 4
 # Haiku sometimes answered in English instead of French/German (~120 French texts).
 SOLO_EN = re.compile(r"\b(the|and|this|that|with|which|they|from|what|says)\b", re.I)
 
@@ -178,7 +196,7 @@ def fuga(src, dst, verso, lang="en", desde="es"):
     if desde == "es" and lang in NOMBRE_ES:
         if re.search(r"\b" + NOMBRE_ES[lang] + r"\b", dl):
             return f"menciona '{NOMBRE_ES[lang]}'"
-        if len((SOLO_ES_DE if lang == "de" else SOLO_ES).findall(dst)) >= 3:
+        if en_espanol(dst, lang):
             return "sin traducir"
     for tok in CITA.findall(src):
         t = tok.strip().lower()
@@ -313,6 +331,95 @@ def traducir(a, d):
         mandar(d, a.lang, reqs)
 
 
+# ---------- Adapting explanations to another Bible in the same language ----------
+
+# Verses a modern Bible leaves out are stored with this note (see convertir_bsb.py).
+NOTA_OMITIDO = "[This verse is not included in the earliest manuscripts.]"
+# Wording that only makes sense for the King James text.
+ARCAICO = re.compile(r"\b(thee|thou|thy|thine|hath|doth|ye|unto|saith|cometh|shalt|wilt|begat|verily|archaic|"
+                     r"old word|old-fashioned|older English|old English|King James|KJV)\b", re.I)
+
+
+def desajuste(texto, verso):
+    """True if an explanation quotes wording missing from `verso` or comments on old English."""
+    # The BSB uses curly apostrophes, and quotes often carry their own trailing comma or period.
+    norm = lambda s: s.lower().replace("’", "'").replace("‘", "'").strip().strip(".,;:!?")
+    v = norm(verso)
+    return (bool(ARCAICO.search(texto)) or bool(META.search(texto))
+            or any(norm(t) not in v for t in CITA.findall(texto)))
+
+
+# The model describing its own edit instead of explaining the verse ("the note about … is dropped").
+META = re.compile(r"your reader|the reader's verse|(comment|note|explanation) (about|on) .{0,40}(is|was) "
+                  r"(removed|dropped|omitted)|is (removed|dropped|omitted)|the original explanation|"
+                  r"where the explanation|source (wording|text)|older wording|the verse simply says", re.I)
+ES_EN_INGLES = re.compile(r"\b(hembra|varón|también|pero|esto|ustedes|qué|él)\b", re.I)
+
+
+def grave(texto):
+    """Problems worth paying to fix: old-English notes, edit talk, or Spanish words. (Quoted paraphrases
+    like 'means "remaining childless"' also trip desajuste() but read fine, so they are left alone.)"""
+    return bool(ARCAICO.search(texto) or META.search(texto) or ES_EN_INGLES.search(texto)
+                or en_espanol(texto, "bsb"))
+
+
+def pedido_adaptar(ref, verso_o, verso, texto, ver_o, ver):
+    return (f"This explanation of {ref} was written for readers of the {ver_o}, where the verse reads:\n"
+            f'"{verso_o}"\n'
+            f"Your reader sees the {ver}, where it reads:\n"
+            f'"{verso}"\n'
+            "Rewrite the explanation for that reader in plain, modern English. Keep the same meaning, the three "
+            "short parts and the length. Wherever it quotes or comments on wording that is not in your reader's "
+            "verse, use your reader's wording instead or drop that comment. Drop notes that explain old words "
+            "(thee, unto, begat...) your reader's verse does not use. Never mention other translations. "
+            "Write straight to the reader as their Bible teacher: never describe your edits and never talk "
+            "about 'your reader', notes or comments being removed, or the wording of other versions. "
+            "Write entirely in English. Output only the explanation.\n\n"
+            f"Explanation:\n{texto}")
+
+
+def adaptar(a, d):
+    """Fill ia/<lang>/ from ia/<desde>/ for a second Bible in the same language: copy what already fits
+    (summaries, explanations that quote nothing missing from the new verse, omitted verses) and send the
+    rest to the model to rewrite with the new wording."""
+    O, X = cargar_biblia(d, a.desde), cargar_biblia(d, a.lang)
+    if [len(c) for _, c in O] != [len(c) for _, c in X]:
+        sys.exit("Las dos Biblias deben tener los mismos capítulos")
+    validar_libros(libros_arg(a), X)
+    modelo, reqs = MODELOS[a.modelo], []
+    copias = 0
+    for b, (libro, caps) in enumerate(X):
+        if libros_arg(a) is not None and b not in libros_arg(a):
+            continue
+        fuente = leer_json(ruta_ia(d, a.desde, b), vacio())
+        hecho = leer_json(ruta_ia(d, a.lang, b), vacio())
+        if not a.solo_faltantes:
+            hecho = vacio()
+        nuevo = False
+        for c, s in fuente["sum"].items():
+            if c not in hecho["sum"]:
+                hecho["sum"][c] = s; copias += 1; nuevo = True
+        for c, versos in enumerate(caps):
+            for v, verso in enumerate(versos):
+                k = f"{c}:{v}"
+                src = fuente["exp"].get(k)
+                # Already adapted: redo only if it has a real problem (see grave()).
+                if src is None or (k in hecho["exp"] and not grave(hecho["exp"][k])):
+                    continue
+                if verso == NOTA_OMITIDO or not (desajuste(src, verso) or grave(src)):
+                    hecho["exp"][k] = src; copias += 1; nuevo = True
+                    continue
+                reqs.append(peticion(f"e-{a.lang}-{b}-{c}-{v}", modelo, MAX_EXP, SISTEMA_ADAPT,
+                                     pedido_adaptar(f"{libro} {c+1}:{v+1}", O[b][1][c][v], verso, src,
+                                                    IDIOMA[a.desde][0], IDIOMA[a.lang][0]), EXTRA_TRAD))
+        if nuevo and not a.simular:
+            guardar_json(ruta_ia(d, a.lang, b), hecho, separators=(",", ":"))
+    print(f"{copias} textos copiados sin cambios" + (" (simulado, no se guardó nada)" if a.simular else "")
+          + f"; {len(reqs)} solicitudes de adaptación ({a.desde}→{a.lang}, {a.modelo})")
+    if not a.simular and reqs:
+        mandar(d, a.lang, reqs)
+
+
 def estado(a, d):
     est = leer_json(ruta_estado(d), [])
     if not est:
@@ -380,10 +487,13 @@ if __name__ == "__main__":
     t = sp.add_parser("traducir", help="traduce lo generado en otro idioma")
     comunes(t, "haiku")
     t.add_argument("--desde", default="es", choices=IDIOMA, help="idioma de origen (por defecto es)")
+    ad = sp.add_parser("adaptar", help="adapta los textos de otra Biblia del mismo idioma (ej. en -> bsb)")
+    comunes(ad, "haiku")
+    ad.add_argument("--desde", default="en", choices=IDIOMA, help="Biblia de origen (por defecto en)")
     sp.add_parser("estado"); sp.add_parser("descargar")
     a = ap.parse_args()
     if not os.environ.get("ANTHROPIC_API_KEY") and not getattr(a, "simular", False):
         sys.exit("Falta la API key. En esta misma ventana de PowerShell ejecuta:\n"
                  '  $env:ANTHROPIC_API_KEY="tu-clave"\n'
                  "y vuelve a lanzar el comando. (setx solo afecta a ventanas que abras después.)")
-    {"enviar": enviar, "traducir": traducir, "estado": estado, "descargar": descargar}[a.cmd](a, carpeta_datos(a.dir))
+    {"enviar": enviar, "traducir": traducir, "adaptar": adaptar, "estado": estado, "descargar": descargar}[a.cmd](a, carpeta_datos(a.dir))

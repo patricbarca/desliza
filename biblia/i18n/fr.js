@@ -2,6 +2,7 @@
 window.HI18N=window.HI18N||{};
 HI18N.fr={
 ui:{
+"Versión":"Version",
 "66 (39 AT + 27 NT)":"66 (39 AT + 27 NT)",
 "Acercar":"Zoomer",
 "Agrupados por libro. Toca un capítulo para leerlo; el color indica tu progreso. Las fechas de algunos libros (Job, Salmos, profetas) son aproximadas.":"Regroupés par livre. Touchez un chapitre pour le lire ; la couleur indique votre progression. Les dates de certains livres (Job, Psaumes, prophètes) sont approximatives.",

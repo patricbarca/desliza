@@ -4,3 +4,7 @@ __pycache__/
 *.pyc
 # Atomic-write temp files from generar_ia.py
 *.tmp
+
+# Investigación de mercado (no se publica)
+research_notes/
+reports/
