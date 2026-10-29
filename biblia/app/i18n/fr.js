@@ -5,6 +5,8 @@ ui:{
 "Versión":"Version",
 "66 (39 AT + 27 NT)":"66 (39 AT + 27 NT)",
 "Acercar":"Zoomer",
+"Reproducir":"Lecture",
+"Pausa":"Pause",
 "Todas las escenas":"Toutes les scènes",
 "Página principal":"Page d’accueil",
 "Ver completa":"Tout voir",

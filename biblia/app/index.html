@@ -144,7 +144,17 @@ select{font-weight:500;font-size:13px;color:var(--fg);background:var(--surface);
 .mprev{position:absolute;z-index:6;display:grid;grid-template-columns:auto minmax(170px,240px);grid-template-rows:auto auto 1fr;align-content:start;column-gap:14px;row-gap:4px;
   max-width:min(560px,calc(100% - 16px));overflow:hidden;padding:12px 14px;border:1px solid var(--accent);border-radius:12px;background:var(--surface);box-shadow:0 10px 30px rgb(0 0 0/.25);pointer-events:none}
 .mprev img{grid-row:1/4;display:block;width:auto;height:auto;max-width:300px;max-height:var(--ph);margin:-12px 0 -12px -14px;border-radius:11px 0 0 11px;object-fit:contain}
+.mosaic.narrow .mprev{grid-template-columns:1fr;left:8px!important;right:8px;max-width:none}
+.mosaic.narrow .mprev img{grid-row:auto;width:calc(100% + 28px);max-width:none;max-height:calc(var(--ph) * .55);margin:-12px -14px 6px;border-radius:11px 11px 0 0;object-fit:contain;background:color-mix(in srgb,var(--fg) 8%,transparent)}
 .mprev b{font-size:15px;font-weight:600;line-height:1.25}.mprev span{font-size:12px;line-height:1.45;color:var(--muted)}.mprev small{font-size:11px;font-weight:600;color:var(--accent)}
+.mplay{display:flex;align-items:center;gap:6px}
+.mplay button{height:38px;min-width:38px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);font-size:14px;font-weight:600;cursor:pointer;padding:0 12px}
+.mplay #mPlay{background:var(--accent);color:var(--on-accent);border-color:var(--accent);padding:0 16px}
+.mplay small{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:44px}
+/* reading-time bar along the bottom of the card while playing */
+.mprev .mbar{position:absolute;left:0;bottom:0;height:3px;width:100%;background:var(--accent);transform-origin:left;animation:mbar linear forwards}
+@keyframes mbar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.mprev .mbar{animation:none;display:none}}
 .zgrp #zFit{font-size:13px;font-weight:600}.zgrp button:disabled{opacity:.4;cursor:default}
 /* --z scales the horizontal axis only (cards keep their size), so the axis stays in the vertical middle at every zoom */
 .hscroll{--ax:calc(50% + 27px);--cw:200px;--z:1;height:clamp(560px,80vh,700px);overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;touch-action:pan-x}
@@ -655,7 +665,7 @@ function hTimeline(){
   TLI={items,bands,W,yr:it=>it.y===null?"":it.y<0?tr("{0} a.C.",-it.y):tr("{0} d.C.",it.y)};
   const yr=y=>y===null?tr("Sin fecha"):y<0?tr("{0} a.C.",-y):tr("{0} d.C.",y);
   const zx=v=>`calc(${Math.round(v)}px * var(--z))`;
-  return `<div class="tlbox"><div class="tlbar"><button class="fsbtn" id="fsOpen">⤢ ${tr("Pantalla completa")}</button><button class="fsbtn" id="zAll" aria-pressed="${tlMos}">▦ ${tr("Todas las escenas")}</button><span class="zgrp"><button id="zOut" aria-label="${tr("Alejar")}">−</button><button id="zFit">${tr("Ver completa")}</button><button id="zIn" aria-label="${tr("Acercar")}">+</button></span><button class="fsclose" id="fsClose" aria-label="${tr("Salir de pantalla completa")}">✕</button></div>
+  return `<div class="tlbox"><div class="tlbar"><button class="fsbtn" id="fsOpen">⤢ ${tr("Pantalla completa")}</button><button class="fsbtn" id="zAll" aria-pressed="${tlMos}">▦ ${tr("Todas las escenas")}</button><span class="mplay" ${tlMos?"":"hidden"}><button id="mPrev" aria-label="${tr("Anterior")}">⏮</button><button id="mPlay">▶ ${tr("Reproducir")}</button><button id="mNext" aria-label="${tr("Siguiente")}">⏭</button><small id="mCount"></small></span><span class="zgrp"><button id="zOut" aria-label="${tr("Alejar")}">−</button><button id="zFit">${tr("Ver completa")}</button><button id="zIn" aria-label="${tr("Acercar")}">+</button></span><button class="fsclose" id="fsClose" aria-label="${tr("Salir de pantalla completa")}">✕</button></div>
   <div class="mosaic" ${tlMos?"":"hidden"} aria-label="${tr("Todas las escenas")}"></div><div class="hscroll" tabindex="0" ${tlMos?"hidden":""} aria-label="${tr("Línea de tiempo")}"><div class="htrack" data-w="${Math.round(W)}" style="--w:${Math.round(W)}px">
    ${bands.map((b,i)=>`<div class="band b${i%2}" data-band="${b.ei}" style="left:${zx(b.start)};width:${zx(b.end-b.start)}"></div><div class="seg s${i%2}" data-x="${Math.round(b.start)}" data-sw="${Math.round(b.end-b.start)}" style="left:${zx(b.start)};width:${zx(b.end-b.start)}" title="${esc(TL[b.ei].t)}"><div class="segl"><span>${esc(TL[b.ei].t)}</span><small>${esc(TL[b.ei].d)} · <button class="segx" data-era="${b.ei}">${tr("Ver todos los capítulos")} ›</button></small></div></div>`).join("")}
    <div class="axis"></div>
@@ -742,24 +752,38 @@ function tlMosaic(m,hs){
       /* the connector leaves the card, crosses the nearer row through the gap between its cards, then runs to the dot */
       svg+=`<path class="ml" data-l="${id}" d="M${P(cm,edge)}L${P(cm,g)}L${P(dm(it),dc)}"/><circle class="md" data-d="${id}" cx="${vert?dc:dm(it)}" cy="${vert?dm(it):dc}" r="3.5"/>`;
       html+=`<button class="mc${im?"":" noimg"}${cls}" data-mc="${id}" style="${box(cm-w/2,c0,w,h)}" aria-label="${esc(it.ev.t)}">${im?`<img src="${im.src}" alt="" loading="lazy" decoding="async">`:""}<b>${esc(it.ev.t)}</b></button>`}));
-    m.innerHTML=svg+"</svg>"+html+`<div class="mprev" hidden></div>`};
+    m.classList.toggle("narrow",pw<560);m.innerHTML=svg+"</svg>"+html+`<div class="mprev" hidden></div>`};
   const pv=()=>m.querySelector(".mprev");
-  const show=c=>{const id=c.dataset.mc,[ei,vi]=id.split(",").map(Number),it=TLI.items.find(t=>t.ei===ei&&t.vi===vi),im=(window.TLIMG||{})[id],p=pv();
+  /* Play: walks the scenes in time order, opening each card as if hovered, long enough to read its summary.
+     Any hover, tap or key from the reader pauses it; ⏮ ⏭ step by hand. */
+  const ids=TLI.items.map(it=>it.ei+","+it.vi);let cur=-1,timer=0,playing=false;
+  const readMs=it=>Math.min(16000,3500+it.ev.s.length*45);
+  const btn=()=>{$("mPlay").textContent=playing?"⏸ "+tr("Pausa"):"▶ "+tr("Reproducir");$("mCount").textContent=cur<0?"":`${cur+1} / ${ids.length}`};
+  const go=i=>{if(!m.isConnected||m.hidden){stop();return}
+    cur=Math.max(0,Math.min(ids.length-1,i));const c=m.querySelector(`[data-mc="${ids[cur]}"]`);if(!c)return;show(c,true);btn();
+    clearTimeout(timer);if(playing){const it=TLI.items[cur],ms=readMs(it),b=document.createElement("i");b.className="mbar";b.style.animationDuration=ms+"ms";pv().append(b);
+      timer=setTimeout(()=>{if(cur<ids.length-1)go(cur+1);else{stop();hide()}},ms)}};
+  const start=()=>{playing=true;m.scrollIntoView({block:"nearest",behavior:"smooth"});go(cur<0||cur>=ids.length-1?0:cur)};
+  function stop(){playing=false;clearTimeout(timer);pv()?.querySelector(".mbar")?.remove();if($("mPlay"))btn()}
+  const show=(c,auto)=>{if(!auto&&playing)stop();if(!auto)cur=ids.indexOf(c.dataset.mc);const id=c.dataset.mc,[ei,vi]=id.split(",").map(Number),it=TLI.items.find(t=>t.ei===ei&&t.vi===vi),im=(window.TLIMG||{})[id],p=pv();
     m.classList.add("hl");m.querySelectorAll(".on").forEach(e=>e.classList.remove("on"));
     [c,m.querySelector(`[data-l="${id}"]`),m.querySelector(`[data-d="${id}"]`)].forEach(e=>e?.classList.add("on"));
     const top=c.offsetTop<m.clientHeight/2,room=m.clientHeight/2-30;p.style.setProperty("--ph",room+"px");p.style.maxHeight=room+"px";
     p.innerHTML=`${im?`<img src="${im.src}" alt="">`:""}<b>${esc(it.ev.t)}</b><span>${esc(it.ev.s)}</span><small>${esc(TLI.yr(it))}${it.y===null?"":" · "}${esc(bookName(it.ev.r[0]))} ${it.ev.r[1]}</small>`;
     p.hidden=false;const place=()=>{const cx=c.offsetLeft+c.offsetWidth/2;p.style.left=Math.max(8,Math.min(m.clientWidth-p.offsetWidth-8,cx-p.offsetWidth/2))+"px";
       p.style.top=top?(m.clientHeight/2+24)+"px":"";p.style.bottom=top?"":(m.clientHeight/2+24)+"px"};place();p.querySelector("img")?.addEventListener("load",place)};
-  const hide=()=>{m.classList.remove("hl");m.querySelectorAll(".on").forEach(e=>e.classList.remove("on"));const p=pv();if(p)p.hidden=true};
+  const hide=()=>{if(playing)return;m.classList.remove("hl");m.querySelectorAll(".on").forEach(e=>e.classList.remove("on"));const p=pv();if(p)p.hidden=true};
   m.addEventListener("mouseover",e=>{const c=e.target.closest(".mc");if(c)show(c)});m.addEventListener("mouseleave",hide);
   m.addEventListener("focusin",e=>{const c=e.target.closest(".mc");if(c)show(c)});m.addEventListener("focusout",hide);
   m.addEventListener("mouseout",e=>{if(e.target.closest(".mc")&&!e.relatedTarget?.closest?.(".mc"))hide()});
   m.onclick=e=>{const c=e.target.closest(".mc");if(!c)return;exitFS();tlPath=c.dataset.mc.split(",").map(Number);renderTL()};
-  const set=on=>{tlMos=on;m.hidden=!on;hs.hidden=on;$("zAll").setAttribute("aria-pressed",on);draw();if(!on)tlRefit?.()};
-  $("zAll").onclick=()=>set(!tlMos);
+  const set=on=>{tlMos=on;m.hidden=!on;hs.hidden=on;box0.hidden=!on;$("zAll").setAttribute("aria-pressed",on);draw();if(on)start();else{stop();tlRefit?.()}};
+  $("mPlay").onclick=()=>playing?stop():start();
+  $("mPrev").onclick=()=>{stop();go(cur-1)};$("mNext").onclick=()=>{stop();go(cur+1)};
+  m.addEventListener("keydown",e=>{if(e.key==="ArrowRight"||e.key==="ArrowDown"){e.preventDefault();stop();go(cur+1)}else if(e.key==="ArrowLeft"||e.key==="ArrowUp"){e.preventDefault();stop();go(cur-1)}});
+  const box0=$("mPlay").parentElement;$("zAll").onclick=()=>set(!tlMos);
   ["zIn","zOut","zFit"].forEach(k=>$(k).addEventListener("click",()=>{if(tlMos)set(false)},{capture:true}));
-  new ResizeObserver(draw).observe(m);draw();
+  new ResizeObserver(()=>{draw();if(cur>=0&&(playing||m.classList.contains("hl")))go(cur)}).observe(m);draw();btn();
 }
 function exitFS(){document.querySelector(".tlbox.full")?.classList.remove("full");document.body.classList.remove("fs");
   try{if(document.fullscreenElement)document.exitFullscreen()}catch(e){}}

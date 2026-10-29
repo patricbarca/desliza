@@ -5,6 +5,8 @@ ui:{
 "Versión":"Übersetzung",
 "66 (39 AT + 27 NT)":"66 (39 AT + 27 NT)",
 "Acercar":"Vergrößern",
+"Reproducir":"Abspielen",
+"Pausa":"Pause",
 "Todas las escenas":"Alle Szenen",
 "Página principal":"Startseite",
 "Ver completa":"Alles zeigen",
