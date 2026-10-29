@@ -5,6 +5,7 @@ ui:{
 "Versión":"Version",
 "66 (39 AT + 27 NT)":"66 (39 AT + 27 NT)",
 "Acercar":"Zoomer",
+"Todas las escenas":"Toutes les scènes",
 "Página principal":"Page d’accueil",
 "Ver completa":"Tout voir",
 "Agrupados por libro. Toca un capítulo para leerlo; el color indica tu progreso. Las fechas de algunos libros (Job, Salmos, profetas) son aproximadas.":"Regroupés par livre. Touchez un chapitre pour le lire ; la couleur indique votre progression. Les dates de certains livres (Job, Psaumes, prophètes) sont approximatives.",

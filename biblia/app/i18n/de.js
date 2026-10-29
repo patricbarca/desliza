@@ -5,6 +5,7 @@ ui:{
 "Versión":"Übersetzung",
 "66 (39 AT + 27 NT)":"66 (39 AT + 27 NT)",
 "Acercar":"Vergrößern",
+"Todas las escenas":"Alle Szenen",
 "Página principal":"Startseite",
 "Ver completa":"Alles zeigen",
 "Agrupados por libro. Toca un capítulo para leerlo; el color indica tu progreso. Las fechas de algunos libros (Job, Salmos, profetas) son aproximadas.":"Nach Büchern gruppiert. Tippe auf ein Kapitel, um es zu lesen; die Farbe zeigt deinen Fortschritt. Die Datierung mancher Bücher (Hiob, Psalmen, Propheten) ist ungefähr.",

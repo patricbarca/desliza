@@ -121,6 +121,30 @@ select{font-weight:500;font-size:13px;color:var(--fg);background:var(--surface);
 .tlbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px))}
 .zgrp{display:flex;gap:6px;margin-left:auto}
 .zgrp button{height:38px;min-width:38px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);font-size:19px;line-height:1;cursor:pointer;padding:0 12px}
+.fsbtn[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+/* "All scenes": the whole timeline fits the box; scenes tile the space above and below the axis, each tied to its dot */
+.mosaic{position:relative;height:clamp(560px,80vh,700px);overflow:hidden;margin-inline:max(8px,env(safe-area-inset-left,0px)) max(8px,env(safe-area-inset-right,0px))}
+.tlbox.full .mosaic{flex:1;height:auto;min-height:0}
+.mosaic svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.mosaic .ml{fill:none;stroke:var(--accent);stroke-width:1;opacity:.45}
+.mosaic .md{fill:var(--glow);stroke:var(--accent);stroke-width:1.5}
+.mosaic .mx{fill:color-mix(in srgb,var(--fg) 45%,transparent)}
+.mosaic.hl .ml,.mosaic.hl .mc{opacity:.25}.mosaic.hl .md{opacity:.4}
+.mosaic .ml.on{opacity:1;stroke-width:2}.mosaic .md.on{opacity:1;r:6}.mosaic .mc.on{opacity:1;border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)}
+.mera{position:absolute;height:22px;box-sizing:border-box;padding:0 5px;font:700 11px/22px var(--verse);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-right:1px solid var(--glass-edge)}
+.mera.v{writing-mode:vertical-rl;padding:5px 0;line-height:22px;border-right:0;border-bottom:1px solid var(--glass-edge)}
+.mera.s0{background:color-mix(in srgb,var(--accent) 22%,transparent)}.mera.s1{background:color-mix(in srgb,var(--glow) 26%,transparent)}
+.mc{position:absolute;box-sizing:border-box;padding:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface);color:var(--fg);cursor:pointer;transition:opacity .12s}
+.mc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:sepia(.12)}
+.mc b{position:absolute;left:0;right:0;bottom:0;padding:14px 5px 4px;font-size:10.5px;line-height:1.2;font-weight:600;text-align:left;color:#fff;
+  background:linear-gradient(transparent,rgb(0 0 0/.72));display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.mc.noimg b{position:static;display:block;color:var(--fg);background:none;padding:6px}
+.mc.tiny b{display:none}.mc.sm b{font-size:9px;padding:10px 3px 2px;-webkit-line-clamp:2}
+.mc:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.mprev{position:absolute;z-index:6;display:grid;grid-template-columns:auto minmax(170px,240px);grid-template-rows:auto auto 1fr;align-content:start;column-gap:14px;row-gap:4px;
+  max-width:min(560px,calc(100% - 16px));overflow:hidden;padding:12px 14px;border:1px solid var(--accent);border-radius:12px;background:var(--surface);box-shadow:0 10px 30px rgb(0 0 0/.25);pointer-events:none}
+.mprev img{grid-row:1/4;display:block;width:auto;height:auto;max-width:300px;max-height:var(--ph);margin:-12px 0 -12px -14px;border-radius:11px 0 0 11px;object-fit:contain}
+.mprev b{font-size:15px;font-weight:600;line-height:1.25}.mprev span{font-size:12px;line-height:1.45;color:var(--muted)}.mprev small{font-size:11px;font-weight:600;color:var(--accent)}
 .zgrp #zFit{font-size:13px;font-weight:600}.zgrp button:disabled{opacity:.4;cursor:default}
 /* --z scales the horizontal axis only (cards keep their size), so the axis stays in the vertical middle at every zoom */
 .hscroll{--ax:calc(50% + 27px);--cw:200px;--z:1;height:clamp(560px,80vh,700px);overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;touch-action:pan-x}
@@ -182,7 +206,7 @@ select{font-weight:500;font-size:13px;color:var(--fg);background:var(--surface);
 .fsclose{display:none}
 .tlbox.full{position:fixed;inset:0;z-index:30;width:auto;margin:0;background:var(--bg);box-sizing:border-box;
   padding-top:calc(12px + env(safe-area-inset-top,0px));padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}
-.tlbox.full .hscroll{flex:1;height:auto;min-height:0}.tlbox.full .htrack{min-height:380px}.tlbox.full .fsbtn{display:none}
+.tlbox.full .hscroll{flex:1;height:auto;min-height:0}.tlbox.full .htrack{min-height:380px}.tlbox.full #fsOpen{display:none}
 .tlbox.full .fsclose{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--fg);font-size:16px;cursor:pointer}
 body.fs .top{display:none}
 .eras{display:flex;flex-wrap:wrap;gap:6px}.eras button{border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer}
@@ -333,7 +357,7 @@ body::before{content:"";position:fixed;inset:-15%;z-index:-1;background:var(--me
 #cover{background-attachment:fixed}
 
 /* Shared glass surface */
-.tabs,select,.langs button,.ask,.sheet,.node,.fact,.map,.hev .hc,.eras button,.fsbtn,.tlbox.full .fsclose,.hev .yr,.card::before,.sheet button,.brand{
+.tabs,select,.langs button,.ask,.sheet,.node,.fact,.map,.hev .hc,.mprev,.eras button,.fsbtn,.tlbox.full .fsclose,.hev .yr,.card::before,.sheet button,.brand{
   background:var(--glass-sheen),var(--glass);
   -webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);
   border:1px solid var(--glass-edge);box-shadow:var(--glass-hi),var(--glass-shadow)}
@@ -618,7 +642,7 @@ function setMode(m){mode=m;for(const [k,id] of Object.entries(TABS))$(id).setAtt
   if(m==="prog"){renderProg();return}
   if(B)(m==="for"?showFor():showRead())}
 
-let tlPath=[],tlX=null,tlZ=1;
+let tlPath=[],tlX=null,tlZ=1,tlMos=false,TLI=null;
 const YEARS=[[null,null,null,null,null],[-2000,-2000,-1950,-1900,-1800],[-1446,-1446,-1446,-1446,-1440],[-1400,-1200,-1150,-1100,-1100],[-1070,-1050,-1025,-1000,-960],[-930,-860,-760,-722,-586],[-539,-538,-480,-445],[-5,27,28,30,33,33,33],[33,34,35,47,49,61,95]];
 function hTimeline(){
   /* x: proportional to the year, but each event keeps a minimum gap so cards never overlap */
@@ -628,10 +652,11 @@ function hTimeline(){
     items.push({ev,ei,vi,y,x});if(y!==null)prev=y;});
     bands.push({ei,start:start-GAP/2});x+=GAP*0.4;});
   const W=x+GAP;bands[0].start=0;bands.forEach((b,i)=>b.end=bands[i+1]?.start??W);
+  TLI={items,bands,W,yr:it=>it.y===null?"":it.y<0?tr("{0} a.C.",-it.y):tr("{0} d.C.",it.y)};
   const yr=y=>y===null?tr("Sin fecha"):y<0?tr("{0} a.C.",-y):tr("{0} d.C.",y);
   const zx=v=>`calc(${Math.round(v)}px * var(--z))`;
-  return `<div class="tlbox"><div class="tlbar"><button class="fsbtn" id="fsOpen">⤢ ${tr("Pantalla completa")}</button><span class="zgrp"><button id="zOut" aria-label="${tr("Alejar")}">−</button><button id="zFit">${tr("Ver completa")}</button><button id="zIn" aria-label="${tr("Acercar")}">+</button></span><button class="fsclose" id="fsClose" aria-label="${tr("Salir de pantalla completa")}">✕</button></div>
-  <div class="hscroll" tabindex="0" aria-label="${tr("Línea de tiempo")}"><div class="htrack" data-w="${Math.round(W)}" style="--w:${Math.round(W)}px">
+  return `<div class="tlbox"><div class="tlbar"><button class="fsbtn" id="fsOpen">⤢ ${tr("Pantalla completa")}</button><button class="fsbtn" id="zAll" aria-pressed="${tlMos}">▦ ${tr("Todas las escenas")}</button><span class="zgrp"><button id="zOut" aria-label="${tr("Alejar")}">−</button><button id="zFit">${tr("Ver completa")}</button><button id="zIn" aria-label="${tr("Acercar")}">+</button></span><button class="fsclose" id="fsClose" aria-label="${tr("Salir de pantalla completa")}">✕</button></div>
+  <div class="mosaic" ${tlMos?"":"hidden"} aria-label="${tr("Todas las escenas")}"></div><div class="hscroll" tabindex="0" ${tlMos?"hidden":""} aria-label="${tr("Línea de tiempo")}"><div class="htrack" data-w="${Math.round(W)}" style="--w:${Math.round(W)}px">
    ${bands.map((b,i)=>`<div class="band b${i%2}" data-band="${b.ei}" style="left:${zx(b.start)};width:${zx(b.end-b.start)}"></div><div class="seg s${i%2}" data-x="${Math.round(b.start)}" data-sw="${Math.round(b.end-b.start)}" style="left:${zx(b.start)};width:${zx(b.end-b.start)}" title="${esc(TL[b.ei].t)}"><div class="segl"><span>${esc(TL[b.ei].t)}</span><small>${esc(TL[b.ei].d)} · <button class="segx" data-era="${b.ei}">${tr("Ver todos los capítulos")} ›</button></small></div></div>`).join("")}
    <div class="axis"></div>
    ${items.map((it,i)=>{const up=i%2===0;return `<button class="hev ${up?"up":"down"}" data-hev="${it.ei},${it.vi}" style="left:${zx(it.x)}" aria-label="${esc(it.ev.t)}">
@@ -697,6 +722,45 @@ function tlZoom(hs){
   hs.addEventListener("scroll",()=>{const h=hs.querySelector(".hev:hover");if(h)fit(h)},{passive:true}); /* rotation / resize: keep the zoom within the new limits */
 }
 let tlRefit=null;addEventListener("resize",()=>tlRefit?.());
+/* "All scenes" view. Events alternate above/below the axis as in the scrolling timeline. On each side the k-th event
+   gets a "gate" at x = (k + R/2)·s and its card spans R gates, in row k mod R (row 0 nearest the axis). With R ≤ 2 rows
+   every connector drops through the gap between the cards of the nearer row, then runs diagonally to its dot; gates
+   and dots are both in time order, so connectors never cross. R is chosen per screen to make the cards as big as possible. */
+function tlMosaic(m,hs){
+  const draw=()=>{if(!m.isConnected||m.hidden)return;
+    /* Work in (along time, across) coordinates; a tall screen (phone held upright) runs the timeline top to bottom. */
+    const {items,bands,W}=TLI,pw=m.clientWidth,ph=m.clientHeight,vert=ph>pw*1.15,L=vert?ph:pw,C=vert?pw:ph;
+    const a=C/2,SH=11,GUT=Math.max(14,Math.min(40,C*.05)),G=6,P=(t,c)=>vert?`${c} ${t}`:`${t} ${c}`;
+    const sides=[items.filter((_,i)=>i%2===0),items.filter((_,i)=>i%2===1)],n=Math.max(...sides.map(x=>x.length));
+    const reg=a-SH-GUT-4,opt=[1,2].map(R=>{const s=L/(n+R-1),w=R*s-G,h=(reg-(R-1)*G)/R;return {R,s,w,h,sc:Math.min(w,h)}});
+    const {R,s,w,h}=opt[1].sc>=opt[0].sc?opt[1]:opt[0],dm=it=>it.x/W*L,box=(t,c,lt,lc)=>vert?`left:${c}px;top:${t}px;width:${lc}px;height:${lt}px`:`left:${t}px;top:${c}px;width:${lt}px;height:${lc}px`;
+    const cw=vert?h:w,chh=vert?w:h,cls=Math.min(cw,chh)<40?" tiny":Math.min(cw,chh)<72?" sm":"";
+    let svg=`<svg aria-hidden="true">`,html="";
+    bands.forEach((b,i)=>{const t0=b.start/W*L,t1=b.end/W*L;html+=`<div class="mera s${i%2}${vert?" v":""}" style="${box(t0,a-SH,t1-t0,2*SH)}" title="${esc(TL[b.ei].t)}">${esc(TL[b.ei].t)}</div>`});
+    sides.forEach((list,side)=>list.forEach((it,k)=>{const r=k%R,cm=(k+R/2)*s,id=it.ei+","+it.vi,im=(window.TLIMG||{})[id];
+      const c0=side===0?a-SH-GUT-h-r*(h+G):a+SH+GUT+r*(h+G),edge=side===0?c0+h:c0,g=side===0?a-SH-GUT:a+SH+GUT,dc=side===0?a-SH:a+SH;
+      /* the connector leaves the card, crosses the nearer row through the gap between its cards, then runs to the dot */
+      svg+=`<path class="ml" data-l="${id}" d="M${P(cm,edge)}L${P(cm,g)}L${P(dm(it),dc)}"/><circle class="md" data-d="${id}" cx="${vert?dc:dm(it)}" cy="${vert?dm(it):dc}" r="3.5"/>`;
+      html+=`<button class="mc${im?"":" noimg"}${cls}" data-mc="${id}" style="${box(cm-w/2,c0,w,h)}" aria-label="${esc(it.ev.t)}">${im?`<img src="${im.src}" alt="" loading="lazy" decoding="async">`:""}<b>${esc(it.ev.t)}</b></button>`}));
+    m.innerHTML=svg+"</svg>"+html+`<div class="mprev" hidden></div>`};
+  const pv=()=>m.querySelector(".mprev");
+  const show=c=>{const id=c.dataset.mc,[ei,vi]=id.split(",").map(Number),it=TLI.items.find(t=>t.ei===ei&&t.vi===vi),im=(window.TLIMG||{})[id],p=pv();
+    m.classList.add("hl");m.querySelectorAll(".on").forEach(e=>e.classList.remove("on"));
+    [c,m.querySelector(`[data-l="${id}"]`),m.querySelector(`[data-d="${id}"]`)].forEach(e=>e?.classList.add("on"));
+    const top=c.offsetTop<m.clientHeight/2,room=m.clientHeight/2-30;p.style.setProperty("--ph",room+"px");p.style.maxHeight=room+"px";
+    p.innerHTML=`${im?`<img src="${im.src}" alt="">`:""}<b>${esc(it.ev.t)}</b><span>${esc(it.ev.s)}</span><small>${esc(TLI.yr(it))}${it.y===null?"":" · "}${esc(bookName(it.ev.r[0]))} ${it.ev.r[1]}</small>`;
+    p.hidden=false;const place=()=>{const cx=c.offsetLeft+c.offsetWidth/2;p.style.left=Math.max(8,Math.min(m.clientWidth-p.offsetWidth-8,cx-p.offsetWidth/2))+"px";
+      p.style.top=top?(m.clientHeight/2+24)+"px":"";p.style.bottom=top?"":(m.clientHeight/2+24)+"px"};place();p.querySelector("img")?.addEventListener("load",place)};
+  const hide=()=>{m.classList.remove("hl");m.querySelectorAll(".on").forEach(e=>e.classList.remove("on"));const p=pv();if(p)p.hidden=true};
+  m.addEventListener("mouseover",e=>{const c=e.target.closest(".mc");if(c)show(c)});m.addEventListener("mouseleave",hide);
+  m.addEventListener("focusin",e=>{const c=e.target.closest(".mc");if(c)show(c)});m.addEventListener("focusout",hide);
+  m.addEventListener("mouseout",e=>{if(e.target.closest(".mc")&&!e.relatedTarget?.closest?.(".mc"))hide()});
+  m.onclick=e=>{const c=e.target.closest(".mc");if(!c)return;exitFS();tlPath=c.dataset.mc.split(",").map(Number);renderTL()};
+  const set=on=>{tlMos=on;m.hidden=!on;hs.hidden=on;$("zAll").setAttribute("aria-pressed",on);draw();if(!on)tlRefit?.()};
+  $("zAll").onclick=()=>set(!tlMos);
+  ["zIn","zOut","zFit"].forEach(k=>$(k).addEventListener("click",()=>{if(tlMos)set(false)},{capture:true}));
+  new ResizeObserver(draw).observe(m);draw();
+}
 function exitFS(){document.querySelector(".tlbox.full")?.classList.remove("full");document.body.classList.remove("fs");
   try{if(document.fullscreenElement)document.exitFullscreen()}catch(e){}}
 function renderTL(){
@@ -744,7 +808,7 @@ function renderTL(){
     $("fsOpen").onclick=()=>{tb.classList.add("full");document.body.classList.add("fs");try{tb.requestFullscreen?.().catch(()=>{})}catch(e){}};
     $("fsClose").onclick=exitFS;
     document.onfullscreenchange=()=>{if(!document.fullscreenElement)exitFS()};
-    tlZoom(hs);
+    tlZoom(hs);tlMosaic(box.querySelector(".mosaic"),hs);
     if(tlX!=null)hs.scrollLeft=tlX;hs.addEventListener("scroll",()=>{tlX=hs.scrollLeft},{passive:true});
     box.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{const el=hs.querySelector(`[data-band="${b.dataset.jump}"]`);hs.scrollTo({left:el.offsetLeft-12,behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth"})});
     box.querySelectorAll("[data-hev]").forEach(b=>b.onclick=()=>{exitFS();const [a,c]=b.dataset.hev.split(",").map(Number);tlPath=[a,c];renderTL()})}
