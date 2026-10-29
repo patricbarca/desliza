@@ -5,7 +5,7 @@ Requisitos:
   pip install anthropic
   export ANTHROPIC_API_KEY=...        (Windows PowerShell:  $env:ANTHROPIC_API_KEY="...")
 
-Los datos se buscan en ./biblia, junto al script o en la carpeta actual (o indica --dir).
+Los datos se buscan en ./biblia/app (o ./biblia), junto al script o en la carpeta actual (o indica --dir).
 
 Uso:
   0) Ver cuántas solicitudes se enviarían, sin gastar nada (vale para enviar y traducir):
@@ -71,7 +71,7 @@ def carpeta_datos(d):
         if not os.path.exists(os.path.join(d, "es.json")):
             sys.exit(f"No encuentro es.json en {d}")
         return d
-    for c in (os.path.join(AQUI, "biblia"), AQUI, "biblia", "."):
+    for c in (os.path.join(AQUI, "biblia", "app"), os.path.join(AQUI, "biblia"), AQUI, "biblia", "."):
         if os.path.exists(os.path.join(c, "es.json")):
             return c
     sys.exit("No encuentro es.json. Indica la carpeta con --dir")
@@ -470,7 +470,7 @@ def descargar(a, d):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dir", help="carpeta con es.json, en.json… (por defecto ./biblia)")
+    ap.add_argument("--dir", help="carpeta con es.json, en.json… (por defecto ./biblia/app)")
     sp = ap.add_subparsers(dest="cmd", required=True)
 
     def comunes(p, modelo):

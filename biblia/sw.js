@@ -1,65 +1,13 @@
-/* Service worker for Desliza la Palabra.
-
-   The whole site is ~156 MB (5 Bibles + AI texts for every book), far too much to store up front. So:
-   - App shell (page, scripts, manifest, icons): cached at install, served network-first so updates
-     show up as soon as there is a connection, and from cache when offline.
-   - Data (Bible JSON, ia/<lang>/<book>.json, images): cached the first time they are used, served
-     stale-while-revalidate. The chosen language's Bible is cached on first load, and each book's AI
-     texts once that book is opened, so whatever the reader has used works offline.
-   - Google Fonts: same stale-while-revalidate, in their own cache.
-   Bump VERSION when the shell list changes, and DATOS when Bible/AI files are regenerated (stale-while-revalidate
-   would otherwise show the old copy once); old caches are deleted on activate. */
-const VERSION = "v2", DATOS = "v2";  // v2: BSB added; ~1,500 explanations fixed in en/pt/fr/de
-const SHELL = `shell-${VERSION}`, DATA = `datos-${DATOS}`, FONTS = "fuentes-v1";
-const SHELL_FILES = ["./", "index.html", "timeline.js?v=3", "people.js?v=3", "manifest.json",
-  "icons/icon-192.png", "icons/icon-512.png", "icons/maskable-512.png", "icons/apple-touch-icon.png"];
-
-self.addEventListener("install", e => {
-  e.waitUntil(caches.open(SHELL).then(c => c.addAll(SHELL_FILES)).then(() => self.skipWaiting()));
-});
-
+/* Farewell service worker for the site root.
+   Until Nov 2026 the app lived at the root and installed a service worker here (scope "/desliza/"), which would
+   otherwise keep serving the old cached app instead of the new landing page. The app now lives in app/ with
+   its own service worker. When a browser that has the old one checks for updates, it gets this file, which
+   deletes the old caches (everything not prefixed "app-"), unregisters itself and reloads open pages. */
+self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", e => {
-  const keep = new Set([SHELL, DATA, FONTS]);
-  e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => !keep.has(k)).map(k => caches.delete(k))))
-    .then(() => self.clients.claim()));
-});
-
-async function networkFirst(req) {
-  const cache = await caches.open(SHELL);
-  try {
-    const res = await fetch(req);
-    if (res.ok) cache.put(req, res.clone());
-    return res;
-  } catch (err) {
-    return (await cache.match(req)) || (req.mode === "navigate" && await cache.match("index.html")) || Response.error();
-  }
-}
-
-async function staleWhileRevalidate(req, name) {
-  const cache = await caches.open(name);
-  const hit = await cache.match(req);
-  const fresh = fetch(req).then(res => {
-    // Opaque responses (cross-origin fonts) have status 0 but are still usable.
-    if (res.ok || res.type === "opaque") cache.put(req, res.clone());
-    return res;
-  }).catch(() => hit || Response.error());
-  return hit || fresh;
-}
-
-self.addEventListener("fetch", e => {
-  const req = e.request;
-  if (req.method !== "GET") return;
-  const url = new URL(req.url);
-  if (url.hostname === "fonts.googleapis.com" || url.hostname === "fonts.gstatic.com") {
-    e.respondWith(staleWhileRevalidate(req, FONTS));
-    return;
-  }
-  if (url.origin !== location.origin) return;
-  // Data and images: large and rarely changing.
-  if (/\.(json|jpg|jpeg|png|webp)$/i.test(url.pathname) && !url.pathname.endsWith("manifest.json")) {
-    e.respondWith(staleWhileRevalidate(req, DATA));
-    return;
-  }
-  // Page and scripts: always try the network first so a new version is picked up right away.
-  e.respondWith(networkFirst(req));
+  e.waitUntil((async () => {
+    for (const k of await caches.keys()) if (!k.startsWith("app-")) await caches.delete(k);
+    await self.registration.unregister();
+    for (const c of await self.clients.matchAll({ type: "window" })) c.navigate(c.url);
+  })());
 });

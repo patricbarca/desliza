@@ -1,4 +1,4 @@
-"""Draws the app icons from the logo in index.html (<symbol id="mark">, 120x120 units) into biblia/icons/.
+"""Draws the app icons from the logo in index.html (<symbol id="mark">, 120x120 units) into biblia/app/icons/.
 
   icon-192.png, icon-512.png   rounded tile on transparent background ("any" purpose)
   maskable-512.png             full-bleed tile, logo inside the 80% safe zone (Android crops it to its own shape)
@@ -10,7 +10,7 @@ import os
 from PIL import Image, ImageDraw
 
 ACCENT, GLOW, PAGE = "#2E5B4E", "#C9A44C", "#F6F7F3"
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "biblia", "icons")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "biblia", "app", "icons")
 
 
 def bezier(p0, p1, p2, p3, n=24):

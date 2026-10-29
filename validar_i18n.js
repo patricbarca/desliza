@@ -1,4 +1,4 @@
-/* Checks biblia/i18n/<lang>.js against the Spanish source: same timeline shape, every character,
+/* Checks biblia/app/i18n/<lang>.js against the Spanish source: same timeline shape, every character,
    every UI string index.html uses (collected automatically), and every relation as a "{0} … {1}" sentence.
    Usage: node validar_i18n.js <lang> [<lang>…]   (no args: en pt fr de). Exits 1 if anything is wrong. */
 const { cargar, clavesUI } = require("./i18n_ctx");

@@ -1,351 +1,117 @@
 <!doctype html>
+<html lang="es">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Desliza la Palabra</title>
-<!-- PWA: installable, works offline for what has been read (see sw.js) -->
-<link rel="manifest" href="manifest.json">
-<link rel="icon" type="image/png" href="icons/icon-192.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<title>Desliza la Palabra · La Biblia, un versículo a la vez</title>
+<meta name="description" content="La Biblia completa en 5 idiomas, un versículo a la vez, con explicaciones sencillas, historia y personajes. Gratis, sin anuncios y sin cuenta.">
+<meta property="og:title" content="Desliza la Palabra">
+<meta property="og:description" content="La Biblia, un versículo a la vez. Desliza como en tus redes, pero hacia lo que alimenta el alma.">
+<meta property="og:image" content="app/icons/icon-512.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="app/icons/icon-192.png">
+<link rel="apple-touch-icon" href="app/icons/apple-touch-icon.png">
 <meta name="theme-color" content="#E9ECE6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121916" media="(prefers-color-scheme: dark)">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Desliza">
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Figtree:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Figtree:wght@400;500;600&display=swap">
 <style>
-/* Layout: cover screen with logo + language choice, then a full-height snap feed with a bottom sheet for AI explanations. */
+/* Same palette, fonts and liquid-glass surfaces as the app (app/index.html), so the landing reads as one product. */
 :root{
-  --bg:#E9ECE6; --surface:#F6F7F3; --fg:#1C2724; --muted:#5E6B66; --line:#CDD3CC; --accent:#2E5B4E; --on-accent:#F6F7F3; --glow:#C9A44C;
-  --verse:"Cormorant Garamond",Georgia,"Times New Roman",serif;
-  --ui:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --bg:#E9ECE6;--surface:#F6F7F3;--fg:#1C2724;--muted:#5E6B66;--line:#CDD3CC;--accent:#2E5B4E;--on-accent:#F6F7F3;--glow:#C9A44C;
+  --verse:"Cormorant Garamond",Georgia,"Times New Roman",serif;--ui:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --glass:rgba(255,255,255,.46);--glass-edge:rgba(255,255,255,.8);
+  --glass-hi:inset 0 1px 0 rgba(255,255,255,.95);--glass-shadow:0 10px 34px rgba(24,48,40,.14),0 2px 6px rgba(24,48,40,.06);
+  --mesh:radial-gradient(42% 36% at 12% 18%,rgba(46,91,78,.34),transparent 70%),radial-gradient(36% 32% at 88% 12%,rgba(201,164,76,.40),transparent 70%),
+         radial-gradient(46% 40% at 76% 86%,rgba(72,138,168,.30),transparent 70%),radial-gradient(40% 36% at 8% 92%,rgba(140,196,175,.45),transparent 70%),var(--bg);
+  color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#121916; --surface:#1B2420; --fg:#E4E9E4; --muted:#93A29B; --line:#2C3833; --accent:#8CC4AF; --on-accent:#0F1613; --glow:#D9B861; color-scheme:dark;
-  --glass:rgba(255,255,255,.07); --glass-strong:rgba(22,32,28,.62); --glass-edge:rgba(255,255,255,.16);
-  --glass-sheen:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.02) 45%,rgba(255,255,255,0) 60%,rgba(255,255,255,.06));
-  --glass-hi:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(255,255,255,.05);
-  --glass-shadow:0 12px 36px rgba(0,0,0,.45),0 2px 6px rgba(0,0,0,.3);
-  --mesh:radial-gradient(42% 36% at 12% 18%,rgba(60,140,115,.38),transparent 70%),
-         radial-gradient(36% 32% at 88% 12%,rgba(217,184,97,.24),transparent 70%),
-         radial-gradient(46% 40% at 76% 86%,rgba(60,120,170,.30),transparent 70%),
-         radial-gradient(40% 36% at 8% 92%,rgba(140,196,175,.18),transparent 70%),var(--bg)}}
-:root[data-theme="dark"],:root[data-rt="quiet"],:root[data-rt="night"]{--bg:#121916; --surface:#1B2420; --fg:#E4E9E4; --muted:#93A29B; --line:#2C3833; --accent:#8CC4AF; --on-accent:#0F1613; --glow:#D9B861; color-scheme:dark;
-  --glass:rgba(255,255,255,.07); --glass-strong:rgba(22,32,28,.62); --glass-edge:rgba(255,255,255,.16);
-  --glass-sheen:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.02) 45%,rgba(255,255,255,0) 60%,rgba(255,255,255,.06));
-  --glass-hi:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(255,255,255,.05);
-  --glass-shadow:0 12px 36px rgba(0,0,0,.45),0 2px 6px rgba(0,0,0,.3);
-  --mesh:radial-gradient(42% 36% at 12% 18%,rgba(60,140,115,.38),transparent 70%),
-         radial-gradient(36% 32% at 88% 12%,rgba(217,184,97,.24),transparent 70%),
-         radial-gradient(46% 40% at 76% 86%,rgba(60,120,170,.30),transparent 70%),
-         radial-gradient(40% 36% at 8% 92%,rgba(140,196,175,.18),transparent 70%),var(--bg)}
-[hidden]{display:none!important} /* #cover etc. set display:flex, which would otherwise override the hidden attribute */
-html,body{height:100%;margin:0}
-body{background:var(--bg);color:var(--fg);font-family:var(--ui);overflow:hidden}
-button,select{font-family:var(--ui)}
-:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-
-/* Cover */
-#cover{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;text-align:center;
-  padding-block:calc(24px + env(safe-area-inset-top,0px)) calc(24px + env(safe-area-inset-bottom,0px));
-  padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));overflow-y:auto}
-.logo{width:112px;height:112px}
-#cover h1{font-family:var(--verse);font-weight:700;font-size:clamp(40px,11vw,64px);line-height:1;margin:0;letter-spacing:-.01em;text-wrap:balance}
-#cover h1 em{font-style:italic;font-weight:500;color:var(--accent)}
-.tag{font-size:16px;line-height:1.5;color:var(--muted);max-width:30ch;margin:0}
-.langs{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;width:100%;max-width:420px}
-.langs button{border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:12px;padding:12px 10px;cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:2px}
-.langs button b{font-weight:600;font-size:15px}
-.langs button span{font-size:11px;color:var(--muted)}
-.langs button[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
-.start{border:0;background:var(--accent);color:var(--on-accent);font-weight:600;font-size:16px;border-radius:999px;padding:14px 32px;cursor:pointer;display:flex;align-items:center;gap:10px}
-.start svg{width:18px;height:18px;animation:nudge 1.8s ease-in-out infinite}
-@keyframes nudge{50%{transform:translateY(-4px)}}
-
-/* Feed */
-.top{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;align-items:center;gap:8px;
-  padding-top:calc(10px + env(safe-area-inset-top,0px));padding-bottom:10px;
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.brand{display:flex;align-items:center;gap:8px;margin-right:auto;border:0;background:none;color:var(--fg);cursor:pointer;padding:0}
-.brand svg{width:28px;height:28px}
-.brand span{font-family:var(--verse);font-size:21px;font-weight:700}
-.tabs{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
-.tabs button{font-weight:500;font-size:13px;border:0;background:none;color:var(--muted);padding:6px 11px;border-radius:999px;cursor:pointer}
-.tabs button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
-select{font-weight:500;font-size:13px;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 8px;max-width:10em}
-#lang{max-width:4.6em}
-.picker{display:flex;gap:6px;justify-content:center;position:fixed;top:calc(56px + env(safe-area-inset-top,0px));left:0;right:0;z-index:5;
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-#feed{height:100%;overflow-y:auto;scroll-snap-type:y mandatory;scrollbar-width:none}
-#feed::-webkit-scrollbar{display:none}
-.card{height:100%;scroll-snap-align:start;scroll-snap-stop:always;display:flex;flex-direction:column;justify-content:center;gap:22px;
-  padding-block:100px 120px;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));
-  max-width:640px;margin:0 auto;cursor:pointer}
-.card p{font-family:var(--rfont,var(--verse));font-weight:500;font-size:calc(clamp(26px,6.4vw,38px) * var(--rs,1));line-height:var(--rlh,1.3);text-wrap:pretty;margin:0}
-.card p.long{font-size:calc(clamp(21px,5vw,30px) * var(--rs,1))}
-.ref{font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-.hint{font-size:13px;color:var(--muted)}
-.ask{align-self:flex-start;font-weight:600;font-size:14px;color:var(--accent);background:none;border:1px solid var(--accent);border-radius:999px;padding:8px 16px;cursor:pointer}
-.sum h2{font-family:var(--verse);font-weight:700;font-size:clamp(34px,8vw,48px);line-height:1.05;margin:0}
-.sumtext{font-size:18px;line-height:1.6;max-width:60ch;border-left:2px solid var(--glow);padding-left:14px}
-@media (max-width:440px){.brand span{display:none}.tabs button{padding:6px 7px;font-size:12px}#lang{display:none}.top{gap:6px}}
-#tl{position:fixed;inset:0;box-sizing:border-box;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;touch-action:pan-x pan-y;padding-block:calc(70px + env(safe-area-inset-top,0px)) 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
-.tlw{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
-.crumbs{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
-.crumbs button{border:0;background:none;color:var(--accent);font-weight:600;font-size:13px;cursor:pointer;padding:2px 0}
-.tlw h2{font-family:var(--verse);font-weight:700;font-size:clamp(30px,7vw,42px);line-height:1.05;margin:0;text-wrap:balance}
-.lead{font-size:16px;line-height:1.6;color:var(--muted);margin:0;max-width:62ch}
-.rail{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line);display:flex;flex-direction:column;gap:10px}
-.rail li{position:relative}
-.rail li::before{content:"";position:absolute;left:-29px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
-.node{width:100%;text-align:left;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:12px;padding:12px 14px;cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:center}
-.node b{font-size:16px;font-weight:600}.node small{grid-column:1;font-size:12px;color:var(--accent);font-weight:600;letter-spacing:.04em}
-.node span{grid-column:1;font-size:13px;color:var(--muted);line-height:1.45}
-.node i{grid-row:1/4;grid-column:2;font-style:normal;color:var(--muted);font-size:20px}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
-.fact{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--surface)}
-.fact small{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.fact b{font-size:15px}
-.dl{display:flex;flex-direction:column;gap:10px;margin:0}.dl div{display:flex;flex-direction:column;gap:2px}.dl dt{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.dl dd{margin:0;font-size:16px;line-height:1.5}
-.go{align-self:flex-start;border:0;background:var(--accent);color:var(--on-accent);font-weight:600;font-size:15px;border-radius:999px;padding:11px 20px;cursor:pointer}
-.map{border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow-x:auto}
-.map svg{display:block;width:100%;min-width:340px;height:auto}
-.map .sea{fill:color-mix(in srgb,var(--accent) 16%,var(--surface))}.map .land{fill:color-mix(in srgb,var(--bg) 70%,transparent);stroke:var(--line)}
-.map .river{fill:none;stroke:color-mix(in srgb,var(--accent) 45%,transparent);stroke-width:2}
-.map .pt{fill:var(--glow);stroke:var(--fg);stroke-width:1}.map text{fill:var(--fg);font:600 11px var(--ui)}.map .soft{fill:var(--muted);font-weight:500;font-style:italic}
-.map .route{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-dasharray:4 4}
-.cap{font-size:12px;color:var(--muted);padding:8px 12px}
-/* Horizontal timeline: full-bleed, positions in % of track height so it fits any screen */
-.hscroll{--ax:57%;--cw:200px;width:100vw;margin-left:calc(50% - 50vw);overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
-.htrack{position:relative;height:clamp(560px,80vh,700px)}
-.hci{display:block;width:calc(100% + 24px);margin:-10px -12px 4px;height:84px;object-fit:cover;border-radius:11px 11px 0 0;filter:sepia(.15)}
-.evfig{margin:0;display:flex;flex-direction:column;gap:6px}
-.evfig img{width:100%;max-height:52vh;object-fit:contain;background:var(--surface);border-radius:12px;border:1px solid var(--line)}
-.evfig figcaption{font-size:12px;color:var(--muted)}
-.band{position:absolute;top:0;bottom:0}
-.band.b0{background:color-mix(in srgb,var(--accent) 6%,transparent)}.band.b1{background:color-mix(in srgb,var(--glow) 9%,transparent)}
-.seg{position:absolute;top:0;height:54px;box-sizing:border-box;border-right:1px solid var(--glass-edge);display:flex;align-items:center}
-.seg.s0{background:color-mix(in srgb,var(--accent) 22%,transparent)}.seg.s1{background:color-mix(in srgb,var(--glow) 26%,transparent)}
-.segl{position:sticky;left:12px;padding:0 12px;display:flex;flex-direction:column;gap:1px;max-width:calc(100vw - 40px)}
-.segl span{font-family:var(--verse);font-weight:700;font-size:19px;line-height:1.1;white-space:nowrap}
-.segl small{font-size:11px;font-weight:600;color:var(--fg);opacity:.75;white-space:nowrap}
-.axis{position:absolute;left:0;right:0;top:var(--ax);height:2px;margin-top:-1px;background:var(--fg);opacity:.35}
-.hev{position:absolute;top:0;width:0;height:100%;border:0;background:none;padding:0;cursor:pointer;color:var(--fg);scroll-snap-align:center}
-.hev .dot{position:absolute;top:var(--ax);left:-7px;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:var(--glow);border:2px solid var(--bg);box-shadow:0 0 0 2px var(--accent)}
-.hev .stem{position:absolute;left:-1px;width:2px;background:var(--accent);opacity:.6;height:44px}
-.hev.up .stem{top:calc(var(--ax) - 52px)}.hev.down .stem{top:calc(var(--ax) + 8px)}
-.hev .yr{position:absolute;left:0;transform:translateX(-50%);font-size:11px;font-weight:600;color:var(--accent);white-space:nowrap;background:var(--bg);padding:1px 6px;border-radius:999px}
-.hev.up .yr{top:calc(var(--ax) + 12px)}.hev.down .yr{top:calc(var(--ax) - 30px)}
-.hev .hc{position:absolute;left:0;transform:translateX(-50%);width:var(--cw);text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:4px;transition:transform .15s,border-color .15s}
-.hev.up .hc{bottom:calc(100% - var(--ax) + 52px)}.hev.down .hc{top:calc(var(--ax) + 52px)}
-.hev:hover .hc,.hev:focus-visible .hc{border-color:var(--accent);transform:translateX(-50%) translateY(-2px)}
-.hev:focus-visible{outline:none}
-.hc b{font-size:14px;font-weight:600;line-height:1.25}.hc span{font-size:12px;line-height:1.4;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.hc small{font-size:11px;font-weight:600;color:var(--accent)}
-@media (max-width:480px){.hscroll{--cw:164px}.segl span{font-size:16px}.hci{height:70px}}
-@media (max-height:640px){.hci{display:none}}
-@media (max-height:520px){.hc span{display:none}}
-.fsbtn{align-self:flex-start;border:1px solid var(--accent);background:none;color:var(--accent);font-weight:600;font-size:14px;border-radius:999px;padding:8px 14px;cursor:pointer}
-.fsclose{display:none}
-.hscroll.full{position:fixed;inset:0;z-index:30;width:auto;margin:0;background:var(--bg);box-sizing:border-box;
-  padding-top:calc(60px + env(safe-area-inset-top,0px));padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}
-.hscroll.full .htrack{height:100%;min-height:380px}
-.hscroll.full .fsclose{display:grid;place-items:center;position:fixed;z-index:31;top:calc(12px + env(safe-area-inset-top,0px));right:calc(12px + env(safe-area-inset-right,0px));width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--fg);font-size:16px;cursor:pointer}
-body.fs .top{display:none}
-.eras{display:flex;flex-wrap:wrap;gap:6px}.eras button{border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer}
-@media (prefers-reduced-motion:reduce){.hev .hc{transition:none}}
-#prog{position:fixed;inset:0;box-sizing:border-box;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding-block:calc(70px + env(safe-area-inset-top,0px)) 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.card[data-v]::after{content:"✓";position:absolute;right:max(24px,env(safe-area-inset-right,0px));bottom:110px;font-size:13px;font-weight:700;color:var(--accent);opacity:0;transition:opacity .4s}
-.card.seen::after{opacity:.8}
-.chst{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
-.chst .done{color:var(--accent);font-weight:700}
-.chst button{border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;font-size:12px;cursor:pointer}
-.evnav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
-.evnav span{font-size:12px;color:var(--muted)}
-.evnav button:not(.go){border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:9px 16px;font-size:14px;font-weight:600;cursor:pointer}
-.evnav button:disabled{opacity:.4;cursor:default}
-.pbar{height:8px;border-radius:999px;background:var(--line);overflow:hidden}.pbar i{display:block;height:100%;background:var(--accent);min-width:2px}
-.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted)}.legend span{display:flex;align-items:center;gap:6px}
-.testa{font-family:var(--verse);font-size:24px;margin:8px 0 0}
-.pbook{display:flex;flex-direction:column;gap:6px}
-.pbh{display:flex;justify-content:space-between;align-items:baseline}.pbh b{font-size:14px}.pbh small{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
-.cgrid{display:flex;flex-wrap:wrap;gap:4px}
-.sq{width:16px;height:16px;border-radius:4px;border:1px solid var(--line);background:var(--surface);padding:0;cursor:pointer;display:inline-block;box-sizing:border-box}
-.sq.part{background:color-mix(in srgb,var(--accent) 40%,var(--surface));border-color:color-mix(in srgb,var(--accent) 50%,var(--line))}
-.sq.full{background:var(--accent);border-color:var(--accent)}
-button.sq:hover{outline:2px solid var(--glow);outline-offset:1px}
-.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(38px,1fr));gap:6px}
-.vsq{height:38px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:12px;font-weight:600;cursor:pointer;font-variant-numeric:tabular-nums}
-.vsq.on{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
-/* Reader themes: override the base tokens when chosen */
-:root[data-rt="original"]{--bg:#FFFFFF;--surface:#F4F4F2;--fg:#1A1A1A;--muted:#6B6B6B;--line:#E2E2DE;--accent:#2E5B4E;--on-accent:#FFFFFF;--glow:#C9A44C;color-scheme:light}
-:root[data-rt="quiet"]{--bg:#4A4A4D;--surface:#555559;--fg:#E6E6E6;--muted:#B5B5B8;--line:#636367;--accent:#A9D3C3;--on-accent:#2A2A2C;--glow:#D9B861;color-scheme:dark}
-:root[data-rt="paper"]{--bg:#F3E9D2;--surface:#EADFC4;--fg:#3B2F21;--muted:#7A6A55;--line:#D9CBAA;--accent:#7A4E21;--on-accent:#F8F1E0;--glow:#B5832F;color-scheme:light}
-:root[data-rt="bold"]{--bg:#FFFFFF;--surface:#F2F2F2;--fg:#000000;--muted:#333333;--line:#BDBDBD;--accent:#0B3D2E;--on-accent:#FFFFFF;--glow:#9A6B00;color-scheme:light}
-:root[data-rt="calm"]{--bg:#EEE5D3;--surface:#E5DAC3;--fg:#47392A;--muted:#7D6D5A;--line:#D3C5A8;--accent:#5F6E3B;--on-accent:#F5EEDD;--glow:#B08A3E;color-scheme:light}
-:root[data-rt="night"]{--bg:#000000;--surface:#121212;--fg:#D6D6D6;--muted:#8A8A8A;--line:#262626;--accent:#8CC4AF;--on-accent:#000000;--glow:#D9B861;color-scheme:dark}
-.chimg{width:100%;height:auto;max-height:36vh;object-fit:contain;background:var(--surface);border-radius:12px;border:1px solid var(--line);filter:sepia(.12)}
-.aa{border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:5px 9px;font-family:var(--verse);font-weight:700;font-size:15px;cursor:pointer}
-.rset{z-index:11}.rset h2{margin-top:6px}
-.seg3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.sheet.rset .seg3 button{display:flex;flex-direction:column;gap:3px;text-align:left;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:12px;padding:10px;cursor:pointer}
-.seg3 b{font-size:13px}.seg3 span{font-size:11px;color:var(--muted);line-height:1.35}
-.rset .seg3 button[aria-pressed="true"],.rset .fonts button[aria-pressed="true"],.rset .lhseg button[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
-.themes{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));gap:8px}
-.sheet.rset .th{border:1px solid var(--line);border-radius:12px;padding:8px 6px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px}
-.th i{font-style:normal;font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:22px}.th span{font-size:11px}
-.sheet.rset .th[aria-pressed="true"]{outline:2px solid var(--accent);outline-offset:2px}
-.sheet.rset .th-auto{background:linear-gradient(135deg,#FFFFFF 50%,#1B2420 50%);color:#5E6B66}.sheet.rset .th-original{background:#FFFFFF;color:#1A1A1A}.sheet.rset .th-quiet{background:#4A4A4D;color:#E6E6E6}.sheet.rset .th-paper{background:#F3E9D2;color:#3B2F21}
-.sheet.rset .th-bold{background:#FFFFFF;color:#000000;font-weight:700}.sheet.rset .th-calm{background:#EEE5D3;color:#47392A}.sheet.rset .th-night{background:#000000;color:#D6D6D6}
-.fonts{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
-.sheet.rset .fonts button{border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:10px;padding:10px 4px;font-size:15px;cursor:pointer}
-.szrow{display:flex;align-items:center;gap:12px}.szrow input{flex:1;accent-color:var(--accent)}.szrow .small{font-size:13px}.szrow .big{font-size:22px}
-.lhseg{display:flex;gap:6px}.sheet.rset .lhseg button{flex:1;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:10px;padding:8px;font-size:13px;cursor:pointer}
-#feed.flow,#feed.paged{scroll-snap-type:none}
-#feed.paged{overflow:hidden}
-.flowc{max-width:680px;margin:0 auto;padding-block:100px 120px;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:28px}
-.flowsum{display:flex;flex-direction:column;gap:14px}
-.ctext{font-family:var(--rfont,var(--verse));font-size:calc(21px * var(--rs,1));line-height:calc(var(--rlh,1.4) + .15);text-align:left;hyphens:auto}
-.ctext .vs{cursor:pointer;border-radius:3px;transition:background .3s}
-.ctext .vs:hover{background:color-mix(in srgb,var(--glow) 18%,transparent)}
-.ctext sup{font-family:var(--ui);font-size:.55em;font-weight:600;color:var(--accent);margin-right:3px;vertical-align:.5em}
-.ctext .vs.seen sup{color:var(--muted)}
-.flowend{display:flex;justify-content:center}
-.pwrap{position:absolute;inset:0;overflow:hidden}
-.pcols{box-sizing:border-box;height:100%;padding:92px 28px 64px;column-width:calc(100vw - 56px);column-gap:56px;column-fill:auto}
-.pcols>*{break-inside:auto}.pcols .flowsum{break-inside:avoid;margin-bottom:24px}.pcols .flowend{margin-top:20px;break-inside:avoid}
-.pind{position:fixed;left:0;right:0;bottom:calc(16px + env(safe-area-inset-bottom,0px));text-align:center;font-size:12px;color:var(--muted);pointer-events:none;font-variant-numeric:tabular-nums}
-.twin{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
-.pfilter{font:inherit;font-size:15px;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
-.pcard{text-align:left;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:12px;padding:12px 14px;cursor:pointer;display:flex;align-items:flex-start;gap:12px}
-.pcard b{font-size:15px}.pcard span{font-size:13px;line-height:1.45;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.pcard:hover{border-color:var(--accent)}
-.eratag{font-size:12px;font-weight:600;color:var(--accent);letter-spacing:.04em}
-.mindbox{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:8px;display:flex;flex-direction:column;gap:6px}
-.mind{width:100%;height:auto;display:block}
-.mind line{stroke-width:1.6}.mind .lf{stroke:var(--accent)}.mind .lo{stroke:var(--glow);stroke-dasharray:4 4}
-.mind .mn rect{fill:var(--bg);stroke:var(--line)}.mind .mn text{fill:var(--fg);font:600 11px var(--ui)}
-.mind .mn{cursor:pointer}.mind .mn:hover rect,.mind .mn:focus rect{stroke:var(--accent);stroke-width:2}.mind .mn:focus{outline:none}
-.mind .mc circle{fill:var(--accent)}.mind .mc text{fill:var(--on-accent);font:700 12px var(--ui)}
-.legend .ln{display:inline-block;width:18px;height:0;border-top:2px solid var(--accent)}.legend .ln.lo{border-top:2px dashed var(--glow)}
-.plink{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--line);line-height:1.9}.plink:hover{border-color:var(--accent);color:var(--accent)}
-.reads{display:flex;flex-wrap:wrap;gap:6px}.chip{border:1px solid var(--accent);background:none;color:var(--accent);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;cursor:pointer}
-.chfig{margin:0;display:flex;flex-direction:column;gap:4px}.chfig figcaption{font-size:11px;color:var(--muted)}
-.gtools{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.gtools button{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--fg);font-size:20px;cursor:pointer}
-.gwrap{width:100vw;margin-left:calc(50% - 50vw);overflow:auto;-webkit-overflow-scrolling:touch;max-height:72vh;border-block:1px solid var(--line);background:var(--surface)}
-.gmap{display:block}
-.gmap .gcol.g0{fill:color-mix(in srgb,var(--accent) 5%,var(--surface))}.gmap .gcol.g1{fill:color-mix(in srgb,var(--glow) 8%,var(--surface))}
-.gmap .gera{fill:var(--fg);font:700 16px var(--verse)}.gmap .gerad{fill:var(--muted);font:500 10px var(--ui)}
-.gmap line{stroke-width:1.4;opacity:.75}.gmap .lf{stroke:var(--accent)}.gmap .lo{stroke:var(--glow);stroke-dasharray:4 4}
-.gmap .mn rect{fill:var(--bg);stroke:var(--line)}.gmap .mn text{fill:var(--fg);font:600 11px var(--ui)}.gmap .mn{cursor:pointer}.gmap .mn:hover rect,.gmap .mn:focus rect{stroke:var(--accent);stroke-width:2}.gmap .mn:focus{outline:none}
-.gpop{position:fixed;left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:8;max-width:520px;margin:0 auto;background:var(--surface);border:1px solid var(--accent);border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
-.gpop b{font-size:18px;font-family:var(--verse)}.gpop small{font-size:12px;color:var(--accent);font-weight:600}.gpop p{margin:0;font-size:14px;line-height:1.5}
-.gpop .gpath{font-size:13px;color:var(--muted)}.gpop .go{align-self:flex-start;margin-top:4px}
-.gpop .gx{position:absolute;top:8px;right:10px;border:0;background:none;color:var(--muted);font-size:16px;cursor:pointer}
-.gmap .mn.on rect{fill:var(--accent);stroke:var(--accent)}.gmap .mn.on text{fill:var(--on-accent)}
-.gmap .mn.path rect{stroke:var(--glow);stroke-width:2.5}
-.segx{border:0;background:none;padding:0;color:var(--accent);font:600 11px var(--ui);cursor:pointer;text-decoration:underline;pointer-events:auto}
-.cgrid.big{gap:5px}.sq.lbl{width:30px;height:30px;font-size:11px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}.sq.lbl.full{color:var(--on-accent)}
-.secbox{display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--surface)}.secbox b{font-size:14px}
-.pct{display:flex;flex-direction:column;gap:4px;min-width:0}
-.pav{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:none;border:1px solid var(--line);filter:sepia(.15)}
-.pini{display:grid;place-items:center;background:var(--bg);color:var(--accent);font:700 20px var(--verse)}
-.pbig{width:100%;height:auto;max-height:40vh;object-fit:contain;background:var(--surface);border-radius:14px;border:1px solid var(--line);filter:sepia(.12)}
-.gpop .pav{width:56px;height:56px}
-.overview{background:color-mix(in srgb,var(--glow) 14%,var(--surface));border-color:color-mix(in srgb,var(--glow) 45%,var(--line))}
-.loading{height:100%;display:grid;place-items:center;color:var(--muted)}
-
-/* Sheet */
-.scrim{position:fixed;inset:0;background:rgba(0,0,0,.18);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);z-index:9}
-.sheet{position:fixed;left:8px;right:8px;bottom:8px;z-index:10;border-radius:28px;
-  max-height:calc(72% - 8px);overflow-y:auto;padding-top:18px;padding-bottom:calc(24px + env(safe-area-inset-bottom,0px));
-  padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
-.sheet .inner{max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
-.sheet h2{font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0}
-.sheet blockquote{font-family:var(--verse);font-style:italic;font-size:20px;line-height:1.35;margin:0}
-#exp{font-size:16px;line-height:1.6;white-space:pre-wrap;max-width:65ch}
-.sheet .row{display:flex;justify-content:flex-end}
-.sheet button{font-weight:600;font-size:14px;border-radius:999px;padding:8px 16px;cursor:pointer;border:1px solid var(--line);background:none;color:var(--fg)}
-.note{font-size:12px;color:var(--muted)}
-@media (prefers-reduced-motion:reduce){.start svg{animation:none}}
-
-/* ===== Liquid glass theme =====
-   Translucent, blurred panels with a bright top edge, floating over a soft colour mesh.
-   Overrides the base styles above; tokens adapt to light/dark like the rest of the palette.
-   Light reading themes (Aa) force the light glass even when the phone is in dark mode, so their dark
-   text never lands on dark glass; dark reading themes join the dark token block at the top. */
-:root,:root[data-rt="original"],:root[data-rt="paper"],:root[data-rt="bold"],:root[data-rt="calm"]{
-  --glass:rgba(255,255,255,.44); --glass-strong:rgba(255,255,255,.68); --glass-edge:rgba(255,255,255,.8);
-  --glass-sheen:linear-gradient(160deg,rgba(255,255,255,.55),rgba(255,255,255,.08) 45%,rgba(255,255,255,0) 60%,rgba(255,255,255,.18));
-  --glass-hi:inset 0 1px 0 rgba(255,255,255,.95),inset 0 -1px 0 rgba(255,255,255,.3);
-  --glass-shadow:0 10px 34px rgba(24,48,40,.14),0 2px 6px rgba(24,48,40,.06);
-  --blur:blur(22px) saturate(185%);
-  --mesh:radial-gradient(42% 36% at 12% 18%,rgba(46,91,78,.34),transparent 70%),
-         radial-gradient(36% 32% at 88% 12%,rgba(201,164,76,.40),transparent 70%),
-         radial-gradient(46% 40% at 76% 86%,rgba(72,138,168,.30),transparent 70%),
-         radial-gradient(40% 36% at 8% 92%,rgba(140,196,175,.45),transparent 70%),var(--bg);
-}
-/* Dark values of these tokens are with the other dark tokens at the top. */
-
-/* Background: a slowly drifting colour mesh behind everything */
-body::before{content:"";position:fixed;inset:-15%;z-index:-1;background:var(--mesh);animation:drift 40s ease-in-out infinite alternate;pointer-events:none}
-@keyframes drift{to{transform:translate3d(4%,-3%,0) rotate(6deg) scale(1.06)}}
-#cover,.hscroll.full{background:var(--mesh)}
-#cover{background-attachment:fixed}
-
-/* Shared glass surface */
-.tabs,select,.langs button,.ask,.sheet,.node,.fact,.map,.hev .hc,.eras button,.fsbtn,.hscroll.full .fsclose,.hev .yr,.card::before,.sheet button,.brand{
-  background:var(--glass-sheen),var(--glass);
-  -webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);
+  --bg:#121916;--surface:#1B2420;--fg:#E4E9E4;--muted:#93A29B;--line:#2C3833;--accent:#8CC4AF;--on-accent:#0F1613;--glow:#D9B861;
+  --glass:rgba(255,255,255,.07);--glass-edge:rgba(255,255,255,.16);--glass-hi:inset 0 1px 0 rgba(255,255,255,.22);--glass-shadow:0 12px 36px rgba(0,0,0,.45);
+  --mesh:radial-gradient(42% 36% at 12% 18%,rgba(60,140,115,.38),transparent 70%),radial-gradient(36% 32% at 88% 12%,rgba(217,184,97,.24),transparent 70%),
+         radial-gradient(46% 40% at 76% 86%,rgba(60,120,170,.30),transparent 70%),radial-gradient(40% 36% at 8% 92%,rgba(140,196,175,.18),transparent 70%),var(--bg);
+  color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--ui);line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:-15%;z-index:-1;background:var(--mesh);pointer-events:none}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.glass{background:linear-gradient(160deg,rgba(255,255,255,.35),rgba(255,255,255,0) 55%),var(--glass);-webkit-backdrop-filter:blur(20px) saturate(170%);backdrop-filter:blur(20px) saturate(170%);
   border:1px solid var(--glass-edge);box-shadow:var(--glass-hi),var(--glass-shadow)}
-.hev .yr,.sheet button{box-shadow:var(--glass-hi)}
+@media (prefers-reduced-transparency:reduce){.glass{background:var(--surface);-webkit-backdrop-filter:none;backdrop-filter:none}}
+.wrap{max-width:1080px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-left,0px))}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:13px 24px;font:600 16px var(--ui);text-decoration:none;cursor:pointer}
+.btn.primary{background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,0) 55%),var(--accent);color:var(--on-accent);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 10px 28px color-mix(in srgb,var(--accent) 40%,transparent)}
+.btn.ghost{color:var(--fg)}
+.btn[aria-disabled="true"]{opacity:.55;cursor:default}
 
-/* Floating controls: no solid bar, content scrolls under the glass pills */
-/* Soft frosted fade behind the floating controls so scrolled text never collides with them */
-.top::before{content:"";position:absolute;inset:0 0 -16px;z-index:-1;pointer-events:none;
-  background:color-mix(in srgb,var(--bg) 40%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
-  -webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}
-.brand{border-radius:999px;padding:4px 12px 4px 4px}
-@media (max-width:440px){.brand{padding:4px}}
-.tabs{padding:4px}
-.tabs button{transition:background .2s,color .2s}
-.tabs button[aria-pressed="true"]{background:linear-gradient(180deg,rgba(255,255,255,.28),rgba(255,255,255,0)),var(--accent);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 2px 8px color-mix(in srgb,var(--accent) 40%,transparent)}
-select{border-radius:999px;padding:7px 12px;appearance:none;-webkit-appearance:none;text-align:center}
+/* Header */
+header{position:sticky;top:0;z-index:5;padding:10px 0}
+.bar{display:flex;align-items:center;gap:10px;border-radius:999px;padding:6px 6px 6px 8px}
+.brand{display:flex;align-items:center;gap:8px;margin-right:auto;text-decoration:none;font:700 20px var(--verse)}
+.brand svg{width:32px;height:32px}
+.bar select{font:500 13px var(--ui);color:var(--fg);background:transparent;border:1px solid var(--line);border-radius:999px;padding:7px 10px}
+.bar .btn{padding:9px 16px;font-size:14px}
+@media (max-width:480px){.brand span{display:none}}
 
-/* Cover */
-.langs button{border-radius:18px;padding:12px 14px;transition:transform .15s}
-.langs button:hover{transform:translateY(-1px)}
-.langs button[aria-pressed="true"]{border-color:color-mix(in srgb,var(--accent) 70%,transparent);box-shadow:var(--glass-hi),inset 0 0 0 1px var(--accent),var(--glass-shadow)}
-.start,.go{background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,0) 55%),var(--accent);
-  border:1px solid color-mix(in srgb,var(--accent) 60%,white);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 10px 28px color-mix(in srgb,var(--accent) 40%,transparent)}
-.logo{filter:drop-shadow(0 12px 28px color-mix(in srgb,var(--accent) 45%,transparent))}
+/* Hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:56px 0 40px}
+@media (max-width:820px){.hero{grid-template-columns:1fr;padding-top:28px;text-align:center}.hero .cta{justify-content:center}}
+h1{font:700 clamp(44px,8vw,76px)/1 var(--verse);margin:0 0 14px;letter-spacing:-.01em;text-wrap:balance}
+h1 em{font-style:italic;font-weight:500;color:var(--accent)}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0 0 26px;max-width:34ch;text-wrap:pretty}
+@media (max-width:820px){.lead{margin-inline:auto}}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:18px;font-size:13px;color:var(--muted)}
+@media (max-width:820px){.chips{justify-content:center}}
+.chips span{border:1px solid var(--line);border-radius:999px;padding:4px 10px}
 
-/* Feed: each verse sits on its own glass pane */
-.card{position:relative;isolation:isolate}
-.card::before{content:"";position:absolute;inset:84px 10px 96px;z-index:-1;border-radius:32px;pointer-events:none}
-.ask{border-color:var(--glass-edge);padding:9px 18px}
+/* Phone mock: a verse card and the explanation sheet, as the app shows them */
+.phone{width:min(320px,82vw);aspect-ratio:9/18.5;margin:0 auto;border-radius:44px;padding:12px;position:relative}
+.screen{position:relative;height:100%;border-radius:34px;overflow:hidden;background:var(--mesh);display:flex;flex-direction:column;justify-content:center;padding:40px 22px 150px}
+.screen .ref{font:600 11px var(--ui);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.screen .vs{font:500 25px/1.3 var(--verse);margin:0 0 16px}
+.screen .ask{align-self:flex-start;font:600 13px var(--ui);color:var(--accent);border-radius:999px;padding:7px 14px}
+.screen .sheet{position:absolute;left:8px;right:8px;bottom:8px;border-radius:24px;padding:14px 16px;font-size:12.5px;line-height:1.5}
+.screen .sheet b{display:block;font:600 10px var(--ui);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+.screen .hint{position:absolute;top:18px;left:0;right:0;text-align:center;font-size:11px;color:var(--muted)}
 
-/* Bottom sheet floats as a glass panel */
-.sheet{background:var(--glass-sheen),var(--glass-strong)}
-
-/* History */
-.node,.fact,.map{border-radius:18px}
-.hev .hc{border-radius:16px}
-
-/* Accessibility and fallbacks */
-@media (prefers-reduced-motion:reduce){body::before{animation:none}.langs button{transition:none}}
-/* Fallbacks swap the tokens, so they cover every glass surface. Selectors match the dark blocks' weight. */
-@media (prefers-reduced-transparency:reduce){:root,:root:not([data-theme="light"]),:root[data-theme="dark"]{
-  --glass:var(--surface);--glass-strong:var(--surface);--glass-sheen:none;--blur:none}}
-@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
-  :root,:root:not([data-theme="light"]),:root[data-theme="dark"]{--glass:var(--glass-strong)}}
+/* Sections */
+section{padding:44px 0}
+h2{font:700 clamp(30px,5vw,44px)/1.08 var(--verse);margin:0 0 10px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 26px;max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{border-radius:24px;padding:22px}
+.card .ic{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--accent);color:var(--on-accent);font-size:22px;margin-bottom:12px}
+.card h3{font:600 18px var(--ui);margin:0 0 6px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.langs{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.lang{border-radius:18px;padding:14px 16px}.lang b{display:block;font-size:16px}.lang span{font-size:13px;color:var(--muted)}
+.trust{border-radius:28px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media (max-width:720px){.trust{grid-template-columns:1fr}}
+.trust ul{margin:0;padding-left:18px;color:var(--muted)}.trust li{margin:6px 0}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.steps ol{margin:8px 0 0;padding-left:20px;color:var(--muted)}.steps li{margin:4px 0}
+.support{border-radius:28px;padding:32px;text-align:center}
+.support p{color:var(--muted);max-width:52ch;margin:0 auto 20px}
+.support small{display:block;margin-top:10px;color:var(--muted)}
+details{border-radius:18px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600;list-style:none}summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--accent);font-size:20px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin:10px 0 0}
+footer{padding:36px 0 56px;color:var(--muted);font-size:13px}
+footer .links{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+footer a{color:var(--fg)}
 </style>
-
+</head>
+<body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="mark" viewBox="0 0 120 120">
-    <rect x="0" y="0" width="120" height="120" rx="30" style="fill:var(--accent)"/>
+    <rect width="120" height="120" rx="30" style="fill:var(--accent)"/>
     <path d="M60 14 l7 14 h-14z" style="fill:var(--glow)"/>
     <path d="M58 46 C46 39 32 38 22 41 V90 C32 87 46 88 58 95z" style="fill:var(--on-accent)"/>
     <path d="M62 46 C74 39 88 38 98 41 V90 C88 87 74 88 62 95z" style="fill:var(--on-accent)"/>
@@ -353,586 +119,252 @@ select{border-radius:999px;padding:7px 12px;appearance:none;-webkit-appearance:n
   </symbol>
 </svg>
 
-<section id="cover" aria-labelledby="cTitle">
-  <svg class="logo" viewBox="0 0 120 120" role="img" aria-label="Logo"><use href="#mark" width="120" height="120"/></svg>
-  <h1 id="cTitle">Desliza<br><em id="cSub">la Palabra</em></h1>
-  <p class="tag" id="cTag"></p>
-  <div class="langs" id="langs" role="group" aria-label="Idioma"></div>
-  <button class="start" id="start"><span id="cStart"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-</section>
-
-<div class="top">
-  <button class="brand" id="home" aria-label="Portada"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#mark" width="120" height="120"/></svg><span>Desliza</span></button>
-  <div class="tabs" role="group">
-    <button id="tFor" aria-pressed="true"></button>
-    <button id="tRead" aria-pressed="false"></button>
-    <button id="tHist" aria-pressed="false"></button>
-    <button id="tProg" aria-pressed="false"></button>
-  </div>
-  <button class="aa" id="aa" aria-label="Ajustes de lectura" data-tra="Ajustes de lectura">Aa</button>
+<header><div class="wrap"><div class="bar glass">
+  <a class="brand" href="#"><svg aria-hidden="true"><use href="#mark"/></svg><span>Desliza</span></a>
   <select id="lang" aria-label="Idioma"></select>
-</div>
-<div class="picker" id="picker" hidden>
-  <select id="book"></select>
-  <select id="chap"></select>
-</div>
-<main id="feed"></main>
+  <a class="btn primary" href="app/" data-k="open"></a>
+</div></div></header>
 
-<main id="tl" hidden></main>
-<main id="prog" hidden></main>
-
-<div class="scrim" id="scrim" hidden></div>
-<section class="sheet rset" id="rsheet" hidden aria-label="Ajustes de lectura" data-tra="Ajustes de lectura">
-  <div class="inner">
-    <h2 data-tr="">Modo de lectura</h2>
-    <div class="seg3" id="rMode">
-      <button data-m="verse"><b data-tr="">Versículo a versículo</b><span data-tr="">Un versículo por pantalla</span></button>
-      <button data-m="flow"><b data-tr="">Capítulo completo</b><span data-tr="">Texto continuo, como un libro</span></button>
-      <button data-m="paged"><b data-tr="">Páginas</b><span data-tr="">Pasa página con toques o gestos</span></button>
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <h1>Desliza<br><em data-k="sub"></em></h1>
+      <p class="lead" data-k="tag"></p>
+      <div class="cta">
+        <a class="btn primary" href="app/" data-k="start"></a>
+        <a class="btn ghost glass" href="#instalar" data-k="install"></a>
+      </div>
+      <div class="chips"><span data-k="c1"></span><span data-k="c2"></span><span data-k="c3"></span><span data-k="c4"></span></div>
     </div>
-    <div id="rVerWrap" hidden><h2 data-tr="">Versión</h2><div class="lhseg" id="rVer"></div></div>
-    <h2 data-tr="">Tema</h2>
-    <div class="themes" id="rTheme"></div>
-    <h2 data-tr="">Letra</h2>
-    <div class="fonts" id="rFont"></div>
-    <div class="szrow"><span class="small">A</span><input type="range" id="rSize" min="0.8" max="1.5" step="0.05" aria-label="Tamaño de letra" data-tra="Tamaño de letra"><span class="big">A</span></div>
-    <h2 data-tr="">Interlineado</h2>
-    <div class="lhseg" id="rLh"><button data-l="1.2" data-tr="">Compacto</button><button data-l="1.4" data-tr="">Normal</button><button data-l="1.7" data-tr="">Amplio</button></div>
-    <div class="row"><button id="rClose" data-tr="">Listo</button></div>
+    <div class="phone glass" aria-hidden="true">
+      <div class="screen">
+        <div class="hint" data-k="swipe"></div>
+        <div class="ref" id="mRef"></div>
+        <p class="vs" id="mVerse"></p>
+        <span class="ask glass" data-k="ask"></span>
+        <div class="sheet glass"><b data-k="expL"></b><span id="mExp"></span></div>
+      </div>
+    </div>
   </div>
-</section>
-<section class="sheet" id="sheet" hidden aria-live="polite">
-  <div class="inner">
-    <h2 id="sRef"></h2>
-    <blockquote id="sText"></blockquote>
-    <div id="exp"></div>
-    <div class="note" id="sNote"></div>
-    <div class="row"><button id="close"></button></div>
-  </div>
-</section>
 
-<script src="timeline.js?v=3"></script>
-<script src="people.js?v=3"></script>
+  <section>
+    <h2 data-k="fH"></h2><p class="sub" data-k="fS"></p>
+    <div class="grid">
+      <div class="card glass"><div class="ic">↑</div><h3 data-k="f1t"></h3><p data-k="f1"></p></div>
+      <div class="card glass"><div class="ic">✦</div><h3 data-k="f2t"></h3><p data-k="f2"></p></div>
+      <div class="card glass"><div class="ic">⌛</div><h3 data-k="f3t"></h3><p data-k="f3"></p></div>
+      <div class="card glass"><div class="ic">☍</div><h3 data-k="f4t"></h3><p data-k="f4"></p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-k="lH"></h2><p class="sub" data-k="lS"></p>
+    <div class="langs">
+      <div class="lang glass"><b>Español</b><span>Reina-Valera 1909</span></div>
+      <div class="lang glass"><b>English</b><span>Berean Standard Bible · King James</span></div>
+      <div class="lang glass"><b>Português</b><span>Bíblia Livre</span></div>
+      <div class="lang glass"><b>Français</b><span>Darby 1885</span></div>
+      <div class="lang glass"><b>Deutsch</b><span>Elberfelder 1905</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="trust glass">
+      <div><h2 data-k="tH"></h2><p class="sub" data-k="tS" style="margin:0"></p></div>
+      <ul><li data-k="t1"></li><li data-k="t2"></li><li data-k="t3"></li><li data-k="t4"></li></ul>
+    </div>
+  </section>
+
+  <section id="instalar">
+    <h2 data-k="iH"></h2><p class="sub" data-k="iS"></p>
+    <div class="steps">
+      <div class="card glass"><h3>Android</h3><ol><li data-k="a1"></li><li data-k="a2"></li><li data-k="a3"></li></ol></div>
+      <div class="card glass"><h3>iPhone</h3><ol><li data-k="p1"></li><li data-k="p2"></li><li data-k="p3"></li></ol></div>
+    </div>
+  </section>
+
+  <section id="apoyar">
+    <div class="support glass">
+      <h2 data-k="sH"></h2><p data-k="sS"></p>
+      <a class="btn primary" id="support" data-k="sB"></a>
+      <small id="supportNote" data-k="sSoon"></small>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-k="qH"></h2>
+    <details class="glass"><summary data-k="q1"></summary><p data-k="a1q"></p></details>
+    <details class="glass"><summary data-k="q2"></summary><p data-k="a2q"></p></details>
+    <details class="glass"><summary data-k="q3"></summary><p data-k="a3q"></p></details>
+    <details class="glass"><summary data-k="q4"></summary><p data-k="a4q"></p></details>
+    <details class="glass"><summary data-k="q5"></summary><p data-k="a5q"></p></details>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <div class="links"><a id="lPriv" data-k="priv"></a><a id="lTerms" data-k="terms"></a><a href="app/" data-k="open"></a></div>
+  <p data-k="credits"></p>
+  <p>© <span id="year"></span> Desliza la Palabra</p>
+</div></footer>
+
 <script>
-const L={
- es:{name:"Español",ver:"Reina-Valera 1909",sub:"la Palabra",tag:"La Biblia, un versículo a la vez. Desliza como en tus redes, pero hacia lo que alimenta el alma.",start:"Empezar a deslizar",
-   for:"Para ti",read:"Leer",ask:"¿Qué significa?",chap:"Capítulo",next:"Siguiente",cont:"Toca para continuar",end:"Fin de la Biblia",loading:"Cargando la Biblia…",fail:"No se pudo cargar el texto. Recarga la página.",
-   think:"Pensando…",close:"Cerrar",note:"Explicación generada con IA. Úsala como apoyo, no como autoridad.",noai:"La explicación con IA no está disponible en esta vista.",grant:"Permite el acceso a Claude para ver explicaciones.",rate:"Demasiadas consultas seguidas. Espera un momento.",err:"No se pudo generar la explicación. Inténtalo de nuevo.",
-   p:["Qué dice (aclara palabras antiguas si las hay)","Contexto: quién habla y por qué","Para hoy: una aplicación práctica"],pl:"español sencillo y latinoamericano",sumL:"Resumen del capítulo",offline:"Sin conexión. Abre este libro una vez con internet para tenerlo disponible sin conexión.",chapw:"capítulo",swipe:"Desliza para leer ↑"},
- en:{name:"English",ver:"King James Version",sub:"the Word",tag:"The Bible, one verse at a time. Scroll like your feed, toward what feeds the soul.",start:"Start scrolling",
-   for:"For you",read:"Read",ask:"What does it mean?",chap:"Chapter",next:"Next",cont:"Tap to continue",end:"End of the Bible",loading:"Loading the Bible…",fail:"Couldn't load the text. Reload the page.",
-   think:"Thinking…",close:"Close",note:"AI-generated explanation. Use it as a help, not an authority.",noai:"AI explanations aren't available in this view.",grant:"Allow access to Claude to see explanations.",rate:"Too many requests in a row. Wait a moment.",err:"Couldn't generate the explanation. Try again.",
-   p:["What it says (clarify archaic words if any)","Context: who is speaking and why","For today: one practical application"],pl:"plain, modern English",sumL:"Chapter summary",offline:"You're offline. Open this book once with internet to keep it available offline.",chapw:"chapter",swipe:"Swipe up to read ↑"},
- pt:{name:"Português",ver:"Bíblia Livre",sub:"a Palavra",tag:"A Bíblia, um versículo de cada vez. Deslize como nas redes, rumo ao que alimenta a alma.",start:"Começar a deslizar",
-   for:"Para você",read:"Ler",ask:"O que significa?",chap:"Capítulo",next:"Próximo",cont:"Toque para continuar",end:"Fim da Bíblia",loading:"Carregando a Bíblia…",fail:"Não foi possível carregar o texto. Recarregue a página.",
-   think:"Pensando…",close:"Fechar",note:"Explicação gerada por IA. Use como apoio, não como autoridade.",noai:"A explicação por IA não está disponível nesta visualização.",grant:"Permita o acesso ao Claude para ver explicações.",rate:"Muitas consultas seguidas. Aguarde um momento.",err:"Não foi possível gerar a explicação. Tente novamente.",
-   p:["O que diz (esclareça palavras antigas, se houver)","Contexto: quem fala e por quê","Para hoje: uma aplicação prática"],pl:"português brasileiro simples",sumL:"Resumo do capítulo",offline:"Sem conexão. Abra este livro uma vez com internet para tê-lo disponível offline.",chapw:"capítulo",swipe:"Deslize para ler ↑"},
- fr:{name:"Français",ver:"Darby 1885",sub:"la Parole",tag:"La Bible, un verset à la fois. Faites défiler comme sur vos réseaux, vers ce qui nourrit l'âme.",start:"Commencer",
-   for:"Pour vous",read:"Lire",ask:"Que signifie-t-il ?",chap:"Chapitre",next:"Suivant",cont:"Touchez pour continuer",end:"Fin de la Bible",loading:"Chargement de la Bible…",fail:"Impossible de charger le texte. Rechargez la page.",
-   think:"Réflexion…",close:"Fermer",note:"Explication générée par IA. Utilisez-la comme aide, pas comme autorité.",noai:"Les explications par IA ne sont pas disponibles ici.",grant:"Autorisez l'accès à Claude pour voir les explications.",rate:"Trop de demandes à la suite. Patientez un instant.",err:"Impossible de générer l'explication. Réessayez.",
-   p:["Ce qu'il dit (clarifie les mots anciens s'il y en a)","Contexte : qui parle et pourquoi","Pour aujourd'hui : une application pratique"],pl:"français simple et moderne",sumL:"Résumé du chapitre",offline:"Hors ligne. Ouvrez ce livre une fois avec internet pour l’avoir hors ligne.",chapw:"chapitre",swipe:"Faites défiler pour lire ↑"},
- de:{name:"Deutsch",ver:"Elberfelder 1905",sub:"das Wort",tag:"Die Bibel, Vers für Vers. Wische wie in deinem Feed, hin zu dem, was die Seele nährt.",start:"Loslegen",
-   for:"Für dich",read:"Lesen",ask:"Was bedeutet das?",chap:"Kapitel",next:"Weiter",cont:"Tippen zum Fortfahren",end:"Ende der Bibel",loading:"Bibel wird geladen…",fail:"Text konnte nicht geladen werden. Seite neu laden.",
-   think:"Denke nach…",close:"Schließen",note:"KI-generierte Erklärung. Als Hilfe nutzen, nicht als Autorität.",noai:"KI-Erklärungen sind in dieser Ansicht nicht verfügbar.",grant:"Erlaube den Zugriff auf Claude, um Erklärungen zu sehen.",rate:"Zu viele Anfragen hintereinander. Kurz warten.",err:"Erklärung konnte nicht erstellt werden. Erneut versuchen.",
-   p:["Was er sagt (erkläre altertümliche Wörter, falls vorhanden)","Kontext: wer spricht und warum","Für heute: eine praktische Anwendung"],pl:"einfaches, modernes Deutsch",sumL:"Kapitelübersicht",offline:"Keine Verbindung. Öffne dieses Buch einmal mit Internet, um es offline zu haben.",chapw:"Kapitel",swipe:"Nach oben wischen zum Lesen ↑"}
+/* Payment link for "Support": paste the Stripe Payment Link here when it exists (e.g. "https://buy.stripe.com/…").
+   While empty, the button stays disabled and shows "coming soon". */
+const STRIPE_LINK = "";
+
+const V = { // Psalm 119:105 as each Bible in the app has it, plus the start of its AI explanation
+  es: ["Salmos 119:105", "Lámpara es á mis pies tu palabra, y lumbrera á mi camino.", "Dice que la palabra de Dios es como una lámpara que alumbra donde pisamos, y como una luz que muestra el camino por delante."],
+  en: ["Psalms 119:105", "Your word is a lamp to my feet and a light to my path.", "God's word is like a lamp that lights the place where we step, and like a light that shows the way ahead."],
+  pt: ["Salmos 119:105", "Tua palavra é lâmpada para meus pés e luz para meu caminho.", "Ele diz que a palavra de Deus é como uma lâmpada que ilumina onde pisamos, e como uma luz que mostra o caminho à frente."],
+  fr: ["Psaumes 119:105", "Ta parole est une lampe à mon pied, et une lumière à mon sentier.", "La Parole de Dieu est comme une lampe qui éclaire l'endroit où nous mettons les pieds, et comme une lumière qui montre le chemin."],
+  de: ["Psalmen 119:105", "Dein Wort ist Leuchte meinem Fuße und Licht für meinen Pfad.", "Gottes Wort ist wie eine Lampe, die den Ort beleuchtet, wo wir gerade auftreten, und wie ein Licht, das den Weg vor uns zeigt."],
 };
-const $=id=>document.getElementById(id), feed=$("feed"), cache={};
-let lang="es", B=null, mode="for", sampleFn, ctrl=null, rendered=0, pool=[], expReq=0;
-const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
-const T=k=>k==="ver"?verOf(lang).ver:L[lang][k];
-/* Bibles per language, default first. d = data key: <d>.json and ia/<d>/. The choice is kept per language. */
-const VERS={en:[{d:"bsb",ver:"Berean Standard Bible"},{d:"en",ver:"King James Version"}]};
-const versOf=k=>VERS[k]||[{d:k,ver:L[k].ver}];
-const verOf=k=>{const vs=versOf(k),p=store.get("ver_"+k,null);return vs.find(x=>x.d===p)||vs[0]};
-const dk=k=>verOf(k).d;
-/* History/Characters/Progress text. Spanish is the key and the fallback; other languages come from
-   i18n/<lang>.js (HI18N[lang] = {ui:{es:txt}, TL:[...same shape as timeline.js], PP:{id:{n,d}}}). */
-window.HI18N=window.HI18N||{};
-/* TR */
-/* Fills {0},{1}… and lets the language file adjust the result (HI18N.fr.fix: elision, HI18N.de.fix: dative). */
-const tr=(k,...a)=>{const t=HI18N[lang]?.ui?.[k]??k;if(!a.length)return t;
-  const r=t.replace(/\{(\d)\}/g,(_,i)=>a[i]);return HI18N[lang]?.fix?.(r)??r};
-/* Relationship sentence: each label in people.js REL has a full Spanish template; other languages translate the label key. */
-const rel=(l,a,b)=>tr(HI18N[lang]?.ui?.[l]!=null?l:(REL[l]?.es??"{0} "+l+" {1}"),a,b);
-const isFam=l=>!!REL[l]?.fam;
-/* /TR */
-const TL_ES=window.TL,PP_ES=window.PP;
-let EVL=[],EVI={};  // flat [era,event] list and "ei,vi" -> index; rebuilt when TL changes
-function applyHist(){const h=HI18N[lang];window.TL=h?.TL||TL_ES;
-  window.PP=h?.PP?Object.fromEntries(Object.entries(PP_ES).map(([k,p])=>[k,{...p,...(h.PP[k]||{})}])):PP_ES;
-  EVL=TL.flatMap((era,ei)=>era.e.map((_,vi)=>[ei,vi]));EVI=Object.fromEntries(EVL.map((x,i)=>[x.join(),i]))}
-const histLoad={};
-function loadHist(k){if(k==="es")return Promise.resolve();
-  return histLoad[k]??=new Promise(res=>{const sc=document.createElement("script");sc.src=`i18n/${k}.js?v=3`;
-    sc.onload=()=>res();sc.onerror=()=>{delete histLoad[k];res()};document.head.appendChild(sc)})}
-function guessLang(){const n=(navigator.language||"es").slice(0,2);return L[n]?n:"es"}
+const L = {
+ es:{name:"Español",title:"Desliza la Palabra · La Biblia, un versículo a la vez",sub:"la Palabra",open:"Abrir la app",start:"Empezar a deslizar",install:"Cómo instalarla",
+  tag:"La Biblia, un versículo a la vez. Desliza como en tus redes, pero hacia lo que alimenta el alma.",
+  c1:"Gratis",c2:"Sin anuncios",c3:"Sin cuenta",c4:"Funciona sin conexión",swipe:"Desliza para leer ↑",ask:"¿Qué significa?",expL:"Explicación",
+  fH:"Todo lo que necesitas para entender la Biblia",fS:"Pensada para leer un poco cada día, sin distracciones.",
+  f1t:"Un versículo por pantalla",f1:"Desliza como en tus redes, versículo a versículo, o lee el capítulo completo como un libro.",
+  f2t:"Explicaciones sencillas",f2:"Toca «¿Qué significa?» y lee qué dice, su contexto y una aplicación para hoy. Cada capítulo tiene además un resumen.",
+  f3t:"La historia completa",f3:"Una línea de tiempo desde la creación hasta la iglesia primitiva, con grabados clásicos de Gustave Doré.",
+  f4t:"Personajes y relaciones",f4:"71 personajes con su retrato, su historia y un mapa de cómo se relacionan entre sí y con Jesús.",
+  lH:"En 5 idiomas",lS:"Cada idioma con su Biblia completa y todas las explicaciones, no solo la interfaz traducida.",
+  tH:"Una ayuda para leer, no una autoridad",tS:"Las explicaciones se prepararon con IA (Claude, de Anthropic) para los 31.102 versículos, de forma neutral y sin denominación.",
+  t1:"No es un chat: no inventa respuestas en el momento ni se hace pasar por nadie.",t2:"El texto bíblico es siempre el de la versión elegida, sin cambios.",
+  t3:"Cuando un pasaje se interpreta de varias maneras, la explicación lo dice.",t4:"Úsala como apoyo para tu lectura, tu iglesia y tu comunidad.",
+  iH:"Instálala en tu teléfono",iS:"Es una app web: se instala desde el navegador en segundos y no ocupa casi espacio.",
+  a1:"Abre la app en Chrome.",a2:"Toca el menú ⋮ y elige «Instalar app» o «Agregar a la pantalla principal».",a3:"Ábrela desde el ícono, como cualquier app.",
+  p1:"Abre la app en Safari.",p2:"Toca Compartir y elige «Agregar a inicio».",p3:"Ábrela desde el ícono, a pantalla completa.",
+  sH:"Gratis para todos",sS:"Desliza la Palabra es gratis, sin anuncios y sin pedirte datos. Si te ayuda, puedes apoyar el proyecto para que siga creciendo y llegue a más personas.",
+  sB:"Apoyar el proyecto",sSoon:"Muy pronto podrás apoyar desde aquí.",
+  qH:"Preguntas frecuentes",q1:"¿Es realmente gratis?",a1q:"Sí. Todo el contenido es gratis, sin anuncios y sin necesidad de crear una cuenta. El apoyo es voluntario.",
+  q2:"¿Las explicaciones son confiables?",a2q:"Se prepararon con cuidado para ser neutrales y fieles al texto, y se revisaron para corregir errores. Aun así, son una ayuda y no reemplazan el estudio ni el consejo de tu iglesia.",
+  q3:"¿Qué versiones de la Biblia usa?",a3q:"Versiones de dominio público: Reina-Valera 1909, Berean Standard Bible y King James, Bíblia Livre, Darby 1885 y Elberfelder 1905.",
+  q4:"¿Funciona sin internet?",a4q:"Sí. Una vez instalada, guarda la Biblia de tu idioma y los libros que vas leyendo para que puedas leerlos sin conexión.",
+  q5:"¿Guarda mis datos?",a5q:"Tu progreso y tus ajustes se guardan solo en tu teléfono. No hay cuenta ni seguimiento publicitario.",
+  priv:"Privacidad",terms:"Términos",legal:"legal/es.html",
+  credits:"Grabados de Gustave Doré (1866), Julius Schnorr von Carolsfeld (1860) y James Tissot (c. 1896–1902), de dominio público, vía Wikimedia Commons. Explicaciones generadas con IA."},
+ en:{name:"English",title:"Desliza · The Bible, one verse at a time",sub:"the Word",open:"Open the app",start:"Start scrolling",install:"How to install",
+  tag:"The Bible, one verse at a time. Scroll like your feed, toward what feeds the soul.",
+  c1:"Free",c2:"No ads",c3:"No account",c4:"Works offline",swipe:"Swipe up to read ↑",ask:"What does it mean?",expL:"Explanation",
+  fH:"Everything you need to understand the Bible",fS:"Made for reading a little every day, without distractions.",
+  f1t:"One verse per screen",f1:"Scroll verse by verse like your feed, or read the whole chapter like a book.",
+  f2t:"Plain explanations",f2:"Tap “What does it mean?” to read what it says, its context and one way to live it today. Every chapter also has a summary.",
+  f3t:"The whole story",f3:"A timeline from creation to the early church, with classic engravings by Gustave Doré.",
+  f4t:"People and relationships",f4:"71 biblical figures with a portrait, their story and a map of how they connect to each other and to Jesus.",
+  lH:"In 5 languages",lS:"Each language has its full Bible and every explanation, not just a translated interface.",
+  tH:"A help for reading, not an authority",tS:"The explanations for all 31,102 verses were prepared with AI (Anthropic's Claude), neutral and non-denominational.",
+  t1:"It isn't a chat: it doesn't make up answers on the spot or pretend to be anyone.",t2:"The Bible text is always the chosen version, unchanged.",
+  t3:"When a passage is read in different ways, the explanation says so.",t4:"Use it to support your reading, your church and your community.",
+  iH:"Install it on your phone",iS:"It's a web app: it installs from your browser in seconds and takes almost no space.",
+  a1:"Open the app in Chrome.",a2:"Tap the ⋮ menu and choose “Install app” or “Add to Home screen”.",a3:"Open it from the icon like any app.",
+  p1:"Open the app in Safari.",p2:"Tap Share and choose “Add to Home Screen”.",p3:"Open it from the icon, full screen.",
+  sH:"Free for everyone",sS:"Desliza is free, with no ads and no personal data. If it helps you, you can support the project so it keeps growing and reaches more people.",
+  sB:"Support the project",sSoon:"You'll soon be able to support it from here.",
+  qH:"Questions",q1:"Is it really free?",a1q:"Yes. All content is free, with no ads and no account needed. Support is optional.",
+  q2:"Can I trust the explanations?",a2q:"They were carefully prepared to be neutral and faithful to the text, and reviewed to fix errors. Still, they are a help and don't replace study or your church's guidance.",
+  q3:"Which Bible versions does it use?",a3q:"Public-domain versions: Berean Standard Bible and King James, Reina-Valera 1909, Bíblia Livre, Darby 1885 and Elberfelder 1905.",
+  q4:"Does it work offline?",a4q:"Yes. Once installed it keeps your language's Bible and the books you read, so you can read them without a connection.",
+  q5:"Does it collect my data?",a5q:"Your progress and settings stay on your phone. There's no account and no ad tracking.",
+  priv:"Privacy",terms:"Terms",legal:"legal/en.html",
+  credits:"Engravings by Gustave Doré (1866), Julius Schnorr von Carolsfeld (1860) and James Tissot (c. 1896–1902), public domain, via Wikimedia Commons. AI-generated explanations."},
+ pt:{name:"Português",title:"Desliza · A Bíblia, um versículo de cada vez",sub:"a Palavra",open:"Abrir o app",start:"Começar a deslizar",install:"Como instalar",
+  tag:"A Bíblia, um versículo de cada vez. Deslize como nas redes, rumo ao que alimenta a alma.",
+  c1:"Grátis",c2:"Sem anúncios",c3:"Sem conta",c4:"Funciona offline",swipe:"Deslize para ler ↑",ask:"O que significa?",expL:"Explicação",
+  fH:"Tudo o que você precisa para entender a Bíblia",fS:"Feito para ler um pouco a cada dia, sem distrações.",
+  f1t:"Um versículo por tela",f1:"Deslize versículo por versículo como nas redes, ou leia o capítulo inteiro como um livro.",
+  f2t:"Explicações simples",f2:"Toque em “O que significa?” e veja o que diz, o contexto e uma aplicação para hoje. Cada capítulo também tem um resumo.",
+  f3t:"A história completa",f3:"Uma linha do tempo da criação à igreja primitiva, com gravuras clássicas de Gustave Doré.",
+  f4t:"Personagens e relações",f4:"71 personagens com retrato, história e um mapa de como se relacionam entre si e com Jesus.",
+  lH:"Em 5 idiomas",lS:"Cada idioma com sua Bíblia completa e todas as explicações, não só a interface traduzida.",
+  tH:"Uma ajuda para ler, não uma autoridade",tS:"As explicações dos 31.102 versículos foram preparadas com IA (Claude, da Anthropic), de forma neutra e sem denominação.",
+  t1:"Não é um chat: não inventa respostas na hora nem se passa por ninguém.",t2:"O texto bíblico é sempre o da versão escolhida, sem alterações.",
+  t3:"Quando uma passagem é interpretada de várias formas, a explicação diz isso.",t4:"Use como apoio para sua leitura, sua igreja e sua comunidade.",
+  iH:"Instale no seu celular",iS:"É um app web: instala pelo navegador em segundos e quase não ocupa espaço.",
+  a1:"Abra o app no Chrome.",a2:"Toque no menu ⋮ e escolha “Instalar app” ou “Adicionar à tela inicial”.",a3:"Abra pelo ícone, como qualquer app.",
+  p1:"Abra o app no Safari.",p2:"Toque em Compartilhar e escolha “Adicionar à Tela de Início”.",p3:"Abra pelo ícone, em tela cheia.",
+  sH:"Grátis para todos",sS:"O Desliza é grátis, sem anúncios e sem pedir seus dados. Se ele ajuda você, pode apoiar o projeto para que continue crescendo e chegue a mais pessoas.",
+  sB:"Apoiar o projeto",sSoon:"Em breve você poderá apoiar por aqui.",
+  qH:"Perguntas frequentes",q1:"É realmente grátis?",a1q:"Sim. Todo o conteúdo é grátis, sem anúncios e sem precisar criar conta. O apoio é voluntário.",
+  q2:"As explicações são confiáveis?",a2q:"Foram preparadas com cuidado para serem neutras e fiéis ao texto, e revisadas para corrigir erros. Ainda assim, são uma ajuda e não substituem o estudo nem a orientação da sua igreja.",
+  q3:"Quais versões da Bíblia usa?",a3q:"Versões de domínio público: Bíblia Livre, Reina-Valera 1909, Berean Standard Bible e King James, Darby 1885 e Elberfelder 1905.",
+  q4:"Funciona sem internet?",a4q:"Sim. Depois de instalado, guarda a Bíblia do seu idioma e os livros que você lê para ler offline.",
+  q5:"Guarda meus dados?",a5q:"Seu progresso e suas configurações ficam só no seu celular. Não há conta nem rastreamento de anúncios.",
+  priv:"Privacidade",terms:"Termos",legal:"legal/en.html",
+  credits:"Gravuras de Gustave Doré (1866), Julius Schnorr von Carolsfeld (1860) e James Tissot (c. 1896–1902), domínio público, via Wikimedia Commons. Explicações geradas com IA."},
+ fr:{name:"Français",title:"Desliza · La Bible, un verset à la fois",sub:"la Parole",open:"Ouvrir l’app",start:"Commencer",install:"Comment l’installer",
+  tag:"La Bible, un verset à la fois. Faites défiler comme sur vos réseaux, vers ce qui nourrit l’âme.",
+  c1:"Gratuit",c2:"Sans publicité",c3:"Sans compte",c4:"Fonctionne hors ligne",swipe:"Faites défiler pour lire ↑",ask:"Que signifie-t-il ?",expL:"Explication",
+  fH:"Tout pour comprendre la Bible",fS:"Conçu pour lire un peu chaque jour, sans distraction.",
+  f1t:"Un verset par écran",f1:"Faites défiler verset par verset, ou lisez le chapitre entier comme un livre.",
+  f2t:"Des explications simples",f2:"Touchez « Que signifie-t-il ? » pour lire ce qu’il dit, son contexte et une application pour aujourd’hui. Chaque chapitre a aussi un résumé.",
+  f3t:"Toute l’histoire",f3:"Une frise chronologique de la création à l’Église primitive, avec les gravures classiques de Gustave Doré.",
+  f4t:"Personnages et relations",f4:"71 personnages avec leur portrait, leur histoire et une carte de leurs liens entre eux et avec Jésus.",
+  lH:"En 5 langues",lS:"Chaque langue a sa Bible complète et toutes les explications, pas seulement l’interface traduite.",
+  tH:"Une aide pour lire, pas une autorité",tS:"Les explications des 31 102 versets ont été préparées avec l’IA (Claude, d’Anthropic), de façon neutre et non confessionnelle.",
+  t1:"Ce n’est pas un chat : il n’invente pas de réponses et ne se fait passer pour personne.",t2:"Le texte biblique est toujours celui de la version choisie, sans modification.",
+  t3:"Quand un passage est lu de plusieurs façons, l’explication le dit.",t4:"Utilisez-le pour soutenir votre lecture, votre Église et votre communauté.",
+  iH:"Installez-le sur votre téléphone",iS:"C’est une app web : elle s’installe depuis le navigateur en quelques secondes et prend très peu de place.",
+  a1:"Ouvrez l’app dans Chrome.",a2:"Touchez le menu ⋮ et choisissez « Installer l’application » ou « Ajouter à l’écran d’accueil ».",a3:"Ouvrez-la depuis l’icône, comme une app.",
+  p1:"Ouvrez l’app dans Safari.",p2:"Touchez Partager puis « Sur l’écran d’accueil ».",p3:"Ouvrez-la depuis l’icône, en plein écran.",
+  sH:"Gratuit pour tous",sS:"Desliza est gratuit, sans publicité et sans collecte de données. S’il vous aide, vous pouvez soutenir le projet pour qu’il grandisse et touche plus de personnes.",
+  sB:"Soutenir le projet",sSoon:"Bientôt, vous pourrez le soutenir ici.",
+  qH:"Questions fréquentes",q1:"Est-ce vraiment gratuit ?",a1q:"Oui. Tout le contenu est gratuit, sans publicité et sans compte. Le soutien est facultatif.",
+  q2:"Les explications sont-elles fiables ?",a2q:"Elles ont été préparées avec soin pour être neutres et fidèles au texte, puis relues pour corriger les erreurs. Elles restent une aide et ne remplacent ni l’étude ni l’accompagnement de votre Église.",
+  q3:"Quelles versions de la Bible ?",a3q:"Des versions du domaine public : Darby 1885, Reina-Valera 1909, Berean Standard Bible et King James, Bíblia Livre et Elberfelder 1905.",
+  q4:"Fonctionne-t-il hors ligne ?",a4q:"Oui. Une fois installé, il garde la Bible de votre langue et les livres que vous lisez pour les lire hors ligne.",
+  q5:"Collecte-t-il mes données ?",a5q:"Votre progression et vos réglages restent sur votre téléphone. Pas de compte, pas de pistage publicitaire.",
+  priv:"Confidentialité",terms:"Conditions",legal:"legal/en.html",
+  credits:"Gravures de Gustave Doré (1866), Julius Schnorr von Carolsfeld (1860) et James Tissot (v. 1896–1902), domaine public, via Wikimedia Commons. Explications générées par IA."},
+ de:{name:"Deutsch",title:"Desliza · Die Bibel, Vers für Vers",sub:"das Wort",open:"App öffnen",start:"Loslegen",install:"So installierst du sie",
+  tag:"Die Bibel, Vers für Vers. Wische wie in deinem Feed, hin zu dem, was die Seele nährt.",
+  c1:"Kostenlos",c2:"Ohne Werbung",c3:"Ohne Konto",c4:"Funktioniert offline",swipe:"Nach oben wischen zum Lesen ↑",ask:"Was bedeutet das?",expL:"Erklärung",
+  fH:"Alles, um die Bibel zu verstehen",fS:"Gemacht, um jeden Tag ein wenig zu lesen, ohne Ablenkung.",
+  f1t:"Ein Vers pro Bildschirm",f1:"Wische Vers für Vers wie in deinem Feed, oder lies das ganze Kapitel wie ein Buch.",
+  f2t:"Einfache Erklärungen",f2:"Tippe auf „Was bedeutet das?“ und lies, was er sagt, den Zusammenhang und eine Anwendung für heute. Jedes Kapitel hat außerdem eine Zusammenfassung.",
+  f3t:"Die ganze Geschichte",f3:"Eine Zeitleiste von der Schöpfung bis zur frühen Kirche, mit klassischen Stichen von Gustave Doré.",
+  f4t:"Personen und Beziehungen",f4:"71 biblische Personen mit Porträt, Geschichte und einer Karte ihrer Beziehungen zueinander und zu Jesus.",
+  lH:"In 5 Sprachen",lS:"Jede Sprache mit ihrer vollständigen Bibel und allen Erklärungen, nicht nur übersetzter Oberfläche.",
+  tH:"Eine Lesehilfe, keine Autorität",tS:"Die Erklärungen zu allen 31.102 Versen wurden mit KI (Claude von Anthropic) vorbereitet, neutral und überkonfessionell.",
+  t1:"Es ist kein Chat: Es erfindet keine Antworten und gibt sich nicht als jemand aus.",t2:"Der Bibeltext ist immer der der gewählten Übersetzung, unverändert.",
+  t3:"Wenn eine Stelle unterschiedlich verstanden wird, sagt die Erklärung das.",t4:"Nutze sie als Unterstützung für dein Lesen, deine Gemeinde und deine Gemeinschaft.",
+  iH:"Auf dem Handy installieren",iS:"Es ist eine Web-App: Sie wird in Sekunden über den Browser installiert und braucht kaum Speicher.",
+  a1:"Öffne die App in Chrome.",a2:"Tippe auf das Menü ⋮ und wähle „App installieren“ oder „Zum Startbildschirm hinzufügen“.",a3:"Öffne sie über das Symbol wie jede App.",
+  p1:"Öffne die App in Safari.",p2:"Tippe auf Teilen und wähle „Zum Home-Bildschirm“.",p3:"Öffne sie über das Symbol, im Vollbild.",
+  sH:"Kostenlos für alle",sS:"Desliza ist kostenlos, ohne Werbung und ohne deine Daten zu sammeln. Wenn es dir hilft, kannst du das Projekt unterstützen, damit es wächst und mehr Menschen erreicht.",
+  sB:"Projekt unterstützen",sSoon:"Bald kannst du es hier unterstützen.",
+  qH:"Häufige Fragen",q1:"Ist es wirklich kostenlos?",a1q:"Ja. Alle Inhalte sind kostenlos, ohne Werbung und ohne Konto. Unterstützung ist freiwillig.",
+  q2:"Kann ich den Erklärungen vertrauen?",a2q:"Sie wurden sorgfältig vorbereitet, um neutral und texttreu zu sein, und auf Fehler geprüft. Trotzdem sind sie eine Hilfe und ersetzen weder Bibelstudium noch die Begleitung deiner Gemeinde.",
+  q3:"Welche Bibelübersetzungen?",a3q:"Gemeinfreie Übersetzungen: Elberfelder 1905, Reina-Valera 1909, Berean Standard Bible und King James, Bíblia Livre und Darby 1885.",
+  q4:"Funktioniert es offline?",a4q:"Ja. Nach der Installation speichert es die Bibel deiner Sprache und die gelesenen Bücher, damit du sie offline lesen kannst.",
+  q5:"Werden meine Daten gesammelt?",a5q:"Dein Fortschritt und deine Einstellungen bleiben auf deinem Handy. Kein Konto, kein Werbe-Tracking.",
+  priv:"Datenschutz",terms:"Nutzungsbedingungen",legal:"legal/en.html",
+  credits:"Stiche von Gustave Doré (1866), Julius Schnorr von Carolsfeld (1860) und James Tissot (um 1896–1902), gemeinfrei, über Wikimedia Commons. KI-generierte Erklärungen."},
+};
 
-function paintText(){
-  document.documentElement.lang=lang;
-  $("cSub").textContent=T("sub");$("cTag").textContent=T("tag");$("cStart").textContent=T("start");
-  $("tFor").textContent=T("for");$("tRead").textContent=T("read");$("tHist").textContent=tr("Historia");$("tProg").textContent=tr("Progreso");$("close").textContent=T("close");$("sNote").textContent=T("note");
-  [...$("langs").children].forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===lang));
-  $("lang").value=lang;
-  applyHist();
-  document.querySelectorAll("[data-tr]").forEach(e=>{e.dataset.tr||(e.dataset.tr=e.textContent);e.textContent=tr(e.dataset.tr)});
-  document.querySelectorAll("[data-tra]").forEach(e=>e.setAttribute("aria-label",tr(e.dataset.tra)));
-  if(typeof paintRS==="function")paintRS();
+/* Same "lang" key as the app (stored as JSON), so the choice carries over in both directions. */
+const leer = () => { try { return JSON.parse(localStorage.getItem("lang")) } catch (e) { return null } };
+const guardar = k => { try { localStorage.setItem("lang", JSON.stringify(k)) } catch (e) {} };
+let lang = leer() || (navigator.language || "es").slice(0, 2);
+if (!L[lang]) lang = "es";
+
+function pintar() {
+  const t = L[lang];
+  document.documentElement.lang = lang; document.title = t.title;
+  document.querySelectorAll("[data-k]").forEach(e => { if (t[e.dataset.k] != null) e.textContent = t[e.dataset.k] });
+  const [ref, vs, ex] = V[lang];
+  document.getElementById("mRef").textContent = ref; document.getElementById("mVerse").textContent = vs; document.getElementById("mExp").textContent = ex;
+  document.getElementById("lPriv").href = t.legal + "#privacidad"; document.getElementById("lTerms").href = t.legal + "#terminos";
+  const s = document.getElementById("support");
+  if (STRIPE_LINK) { s.href = STRIPE_LINK; s.removeAttribute("aria-disabled"); document.getElementById("supportNote").hidden = true }
+  else { s.removeAttribute("href"); s.setAttribute("aria-disabled", "true") }
+  document.getElementById("lang").value = lang;
 }
-function buildLangUI(){
-  $("langs").innerHTML="";$("lang").innerHTML="";
-  for(const [k,v] of Object.entries(L)){
-    const b=document.createElement("button");b.dataset.l=k;b.innerHTML="<b></b><span></span>";
-    b.querySelector("b").textContent=v.name;b.querySelector("span").textContent=verOf(k).ver;
-    b.onclick=()=>{lang=k;store.set("lang",k);paintText()};$("langs").appendChild(b);
-    const o=document.createElement("option");o.value=k;o.textContent=k.toUpperCase();$("lang").appendChild(o);
-  }
-}
-
-async function load(k){if(!cache[k])cache[k]=fetch(k+".json").then(r=>{if(!r.ok)throw 0;return r.json()});return cache[k]}
-/* Pregenerated AI texts (from generar_ia.py), one file per book: ia/<lang>/<b>.json -> {exp:{"c:v":txt}, sum:{"c":txt}}.
-   Loaded on demand and cached; a missing file (404) or bad JSON resolves to null, so the live AI is used instead. */
-const iaCache={};
-function iaBook(k,b){const key=k+"/"+b;
-  if(!(key in iaCache))iaCache[key]=fetch(`ia/${k}/${b}.json`).then(r=>r.ok?r.json():null).catch(()=>null);
-  return iaCache[key]}
-let Blang=null;  // data key (dk) of the Bible currently in B
-async function useLang(k){
-  lang=k;store.set("lang",k);const d=dk(k);
-  if(Blang===d){paintText();setMode(mode);return}  // e.g. Home -> Start with the same Bible
-  clearFeed();feed.innerHTML=`<div class="loading">${T("loading")}</div>`;
-  const [,bible]=await Promise.all([loadHist(k),load(d).catch(()=>null)]);
-  if(lang!==k||dk(k)!==d)return;paintText();
-  if(!bible){delete cache[d];feed.innerHTML=`<div class="loading">${T("fail")}</div>`;return}
-  B=bible;Blang=d;for(const x in cache)if(x!==d)delete cache[x];  // a parsed Bible is ~20 MB
-  pool=[];buildPool();
-  $("book").innerHTML=B.map((x,i)=>`<option value="${i}">${x[0]}</option>`).join("");
-  const pos=store.get("pos",[42,2]);$("book").value=pos[0];fillChaps();$("chap").value=pos[1];
-  setMode(mode);
-}
-
-const ref=(b,c,v)=>`${B[b][0]} ${c+1}:${v+1}`;
-function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
-function buildPool(){B.forEach((bk,b)=>bk[1].forEach((ch,c)=>ch.forEach((t,v)=>{
-  if(t.length>50&&t.length<230&&/[.!?]$/.test(t)&&/^\p{Lu}/u.test(t))pool.push([b,c,v])})));shuffle(pool)}
-
-function card(b,c,v){
-  const t=B[b][1][c][v],el=document.createElement("article");el.className="card"+(isRead(b,c,v)?" seen":"");el.tabIndex=0;
-  el.dataset.b=b;el.dataset.c=c;el.dataset.v=v;
-  el.innerHTML='<div class="ref"></div><p></p><button class="ask"></button>';
-  vObs.observe(el);
-  el.querySelector(".ref").textContent=ref(b,c,v);
-  const p=el.querySelector("p");p.textContent=t;if(t.length>180)p.classList.add("long");
-  const a=el.querySelector(".ask");a.textContent=T("ask");a.onclick=e=>{e.stopPropagation();explain(b,c,v)};
-  el.onclick=()=>explain(b,c,v);return el;
-}
-function more(n=8){if(!pool.length)return;const f=document.createDocumentFragment();
-  for(let i=0;i<n;i++){const [b,c,v]=pool[rendered++%pool.length];f.appendChild(card(b,c,v))}feed.appendChild(f)}
-function clearFeed(){vObs.disconnect();sObs.disconnect();pager?.obs.disconnect();pager=null;feed.innerHTML=""}
-function showFor(){clearFeed();rendered=0;more(12);feed.scrollTop=0}
-function showRead(){if(RS.mode!=="verse")return showFlow();feed.className="";
-  const b=+$("book").value,c=+$("chap").value;clearFeed();const f=document.createDocumentFragment();
-  f.appendChild(summaryCard(b,c));
-  B[b][1][c].forEach((_,v)=>f.appendChild(card(b,c,v)));
-  const nx=document.createElement("article");nx.className="card";
-  const nb=chapAt(b,c,1);
-  if(nb){nx.innerHTML='<div class="ref"></div><p></p><div class="hint"></div>';
-    nx.querySelector(".ref").textContent=T("next");nx.querySelector("p").textContent=`${B[nb[0]][0]} ${nb[1]+1}`;nx.querySelector(".hint").textContent=T("cont");
-    nx.onclick=()=>goChap(1)}
-  else{nx.innerHTML="<p></p>";nx.querySelector("p").textContent=T("end")}
-  f.appendChild(nx);feed.appendChild(f);feed.scrollTop=0}
-function summaryCard(b,c){
-  const el=document.createElement("article");el.className="card sum";
-  el.innerHTML='<div class="ref"></div><h2></h2><div class="sumtext"></div><div class="hint"></div>';
-  el.querySelector(".ref").textContent=T("sumL");
-  el.querySelector("h2").textContent=`${B[b][0]} ${c+1}`;
-  el.querySelector(".hint").textContent=T("swipe")+" · ← → "+T("chapw");
-  const ci=chapImage(b,c);
-  if(ci){const fig=document.createElement("figure");fig.className="chfig";fig.innerHTML=`<img class="chimg" src="${ci.src}" alt="" loading="lazy"><figcaption>${ci.exact?"":tr("Ilustración relacionada:")+" "}${esc(ci.title)}</figcaption>`;el.insertBefore(fig,el.querySelector("h2"))}
-  const st=document.createElement("div");st.className="chst";el.insertBefore(st,el.querySelector(".hint"));
-  const paint=()=>{const n=B[b][1][c].length,r=Math.round(chapFrac(b,c)*n);
-    st.innerHTML=`<span class="${r>=n?"done":""}">${r>=n?"✓ "+tr("Leído"):tr("{0} / {1} versículos leídos",r,n)}</span><button type="button"></button>`;
-    const bt=st.querySelector("button");bt.textContent=r>=n?tr("Marcar como no leído"):tr("Marcar capítulo como leído");
-    bt.onclick=e=>{e.stopPropagation();markChap(b,c,r<n);paint();feed.querySelectorAll(".card[data-v]").forEach(x=>x.classList.toggle("seen",r<n));fillChaps();$("chap").value=c}};
-  paint();el._paint=paint;
-  const box=el.querySelector(".sumtext");fillSummary(b,c,box);return el;
-}
-async function fillSummary(b,c,box){
-  const lg=lang,key=`sum:${lg}:${b}:${c}`;
-  box.textContent=T("think");
-  const pre=(await iaBook(dk(lg),b))?.sum?.[c];
-  if(pre){box.textContent=pre;return}
-  const saved=store.get(key,null);
-  if(saved){box.textContent=saved;return}
-  const s=await getSample();if(!s){box.textContent=T(navigator.onLine?"noai":"offline");return}
-  const ch=B[b][1][c];
-  const text=ch.map((t,i)=>`${i+1} ${t}`).join("\n").slice(0,9000);
-  const prompt=`You summarize Bible chapters for a reading app. Write ONLY in ${T("pl")}.\nChapter: ${B[b][0]} ${c+1} (${T("ver")}).\nText:\n${text}\n\nPlain text, no markdown, no title. 2 to 3 short sentences (max 60 words) saying what happens or what is taught in this chapter, based only on the text above. Neutral, non-denominational tone.`;
-  try{const r=await s(prompt,{modelTier:"quick",onText:({text})=>{box.textContent=text}});
-    box.textContent=r.text;if(!r.truncated)store.set(key,r.text)}
-  catch(e){box.textContent=aiErr(e,T("err"))}
-}
-function fillChaps(){const b=+$("book").value;$("chap").innerHTML=B[b][1].map((_,i)=>`<option value="${i}">${T("chap")} ${i+1}${chapFrac(b,i)>=1?" ✓":""}</option>`).join("")}
-function savePos(){store.set("pos",[+$("book").value,+$("chap").value])}
-const TABS={for:"tFor",read:"tRead",hist:"tHist",prog:"tProg"};
-function setMode(m){mode=m;for(const [k,id] of Object.entries(TABS))$(id).setAttribute("aria-pressed",m===k);
-  $("picker").hidden=m!=="read";$("feed").hidden=m==="hist"||m==="prog";$("tl").hidden=m!=="hist";$("prog").hidden=m!=="prog";
-  if(m==="hist"){renderTL();return}
-  if(m==="prog"){renderProg();return}
-  if(B)(m==="for"?showFor():showRead())}
-
-let tlPath=[],tlX=null;
-const YEARS=[[null,null,null,null,null],[-2000,-2000,-1950,-1900,-1800],[-1446,-1446,-1446,-1446,-1440],[-1400,-1200,-1150,-1100,-1100],[-1070,-1050,-1025,-1000,-960],[-930,-860,-760,-722,-586],[-539,-538,-480,-445],[-5,27,28,30,33,33,33],[33,34,35,47,49,61,95]];
-function hTimeline(){
-  /* x: proportional to the year, but each event keeps a minimum gap so cards never overlap */
-  const GAP=150,PX=0.55,PAD=116;let x=PAD,prev=null,items=[],bands=[];
-  TL.forEach((era,ei)=>{const start=x;era.e.forEach((ev,vi)=>{const y=YEARS[ei][vi];
-    if(prev!==null&&y!==null)x=Math.max(x+GAP,x+(y-prev)*PX);else if(items.length)x+=GAP;
-    items.push({ev,ei,vi,y,x});if(y!==null)prev=y;});
-    bands.push({ei,start:start-GAP/2});x+=GAP*0.4;});
-  const W=x+GAP;bands[0].start=0;bands.forEach((b,i)=>b.end=bands[i+1]?.start??W);
-  const yr=y=>y===null?tr("Sin fecha"):y<0?tr("{0} a.C.",-y):tr("{0} d.C.",y);
-  return `<button class="fsbtn" id="fsOpen">⤢ ${tr("Pantalla completa")}</button><div class="hscroll" tabindex="0" aria-label="${tr("Línea de tiempo")}"><button class="fsclose" id="fsClose" aria-label="${tr("Salir de pantalla completa")}">✕</button><div class="htrack" style="width:${W}px">
-   ${bands.map((b,i)=>`<div class="band b${i%2}" data-band="${b.ei}" style="left:${b.start}px;width:${b.end-b.start}px"></div><div class="seg s${i%2}" style="left:${b.start}px;width:${b.end-b.start}px"><div class="segl"><span>${esc(TL[b.ei].t)}</span><small>${esc(TL[b.ei].d)} · <button class="segx" data-era="${b.ei}">${tr("Ver todos los capítulos")} ›</button></small></div></div>`).join("")}
-   <div class="axis"></div>
-   ${items.map((it,i)=>{const up=i%2===0;return `<button class="hev ${up?"up":"down"}" data-hev="${it.ei},${it.vi}" style="left:${it.x}px">
-     <span class="stem"></span><span class="dot"></span>${it.y===null?"":`<span class="yr">${yr(it.y)}</span>`}
-     <span class="hc">${(window.TLIMG||{})[it.ei+','+it.vi]?`<img class="hci" src="${TLIMG[it.ei+','+it.vi].src}" alt="" loading="lazy">`:""}<b>${esc(it.ev.t)}</b><span>${esc(it.ev.s)}</span><small>${esc(bookName(it.ev.r[0]))} ${it.ev.r[1]}</small></span></button>`}).join("")}
-  </div></div><p class="note">${tr("Fechas aproximadas. La distancia entre acontecimientos sigue los años, con un espacio mínimo para que se puedan leer.")}</p>`;
-}
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const MAP=()=>`<svg viewBox="0 0 640 380" role="img" aria-label="${tr("Mapa del mundo bíblico")}"><rect class="sea" width="640" height="380"/>
-<path class="land" d="M0 40 L120 30 L200 60 L250 40 L330 60 L420 40 L520 60 L640 50 L640 380 L470 380 L440 330 L400 300 L360 330 L330 380 L250 380 L230 300 L215 250 L180 240 L160 270 L120 290 L60 300 L0 290Z"/>
-<path class="sea" d="M250 380 L262 300 L280 260 L292 300 L300 380Z"/>
-<path class="sea" d="M520 300 Q560 300 600 330 L640 340 L640 380 L540 380Z"/>
-<path class="river" d="M232 380 C236 320 228 280 224 250"/>
-<path class="river" d="M390 90 C430 160 470 230 530 300"/>
-<path class="river" d="M430 80 C450 150 500 230 540 300"/>
-<path class="river" d="M300 195 L302 235"/>
-<path class="route" d="M545 292 C470 190 380 110 330 130 C300 160 300 190 300 205"/>
-<path class="route" d="M230 262 C250 300 265 320 275 330 C290 300 296 260 300 215"/>
-<text class="soft" x="60" y="200">${tr("Mar Mediterráneo")}</text><text class="soft" x="236" y="372">${tr("Mar Rojo")}</text><text class="soft" x="548" y="360">${tr("Golfo Pérsico")}</text>
-<text class="soft" x="196" y="340">${tr("Nilo")}</text><text class="soft" x="470" y="150">${tr("Éufrates / Tigris")}</text>
-<circle class="pt" cx="300" cy="210" r="5"/><text x="240" y="230">${tr("Jerusalén")}</text>
-<circle class="pt" cx="304" cy="190" r="3.5"/><text x="312" y="192">${tr("Galilea")}</text>
-<circle class="pt" cx="226" cy="262" r="4.5"/><text x="150" y="262">${tr("Egipto")}</text>
-<circle class="pt" cx="276" cy="326" r="4"/><text x="286" y="328">${tr("Sinaí")}</text>
-<circle class="pt" cx="545" cy="292" r="4.5"/><text x="555" y="290">${tr("Ur")}</text>
-<circle class="pt" cx="500" cy="240" r="5"/><text x="508" y="238">${tr("Babilonia")}</text>
-<circle class="pt" cx="440" cy="110" r="4.5"/><text x="448" y="108">${tr("Nínive")}</text>
-<circle class="pt" cx="390" cy="100" r="3.5"/><text x="354" y="90">${tr("Harán")}</text>
-<circle class="pt" cx="300" cy="150" r="3.5"/><text x="312" y="152">${tr("Damasco")}</text>
-<circle class="pt" cx="610" cy="260" r="4"/><text x="568" y="250">${tr("Persia →")}</text>
-<text class="soft" x="20" y="62">${tr("← Grecia y Roma")}</text></svg>`;
-
-function exitFS(){document.querySelector(".hscroll.full")?.classList.remove("full");document.body.classList.remove("fs");
-  try{if(document.fullscreenElement)document.exitFullscreen()}catch(e){}}
-function renderTL(){
-  const box=$("tl"),[ei,vi]=tlPath,era=ei!=null&&ei>=0?TL[ei]:null,ev=era&&vi!=null?era.e[vi]:null;
-  const crumbs=`<nav class="crumbs"><button data-go="">${tr("Historia")}</button>${tlPath[0]===-1?" › "+tr("Panorama"):""}${era?` › <button data-go="${ei}">${esc(era.t)}</button>`:""}${ev?` › ${esc(ev.t)}`:""}</nav>`;
-  let h="";
-  if(tlPath[0]==="pp"){h=ppHTML(tlPath[1]);}
-  else if(tlPath[0]===-1){
-    h=`${crumbs}<h2>${tr("La Biblia en una mirada")}</h2>
-    <p class="lead">${tr("La Biblia es una colección de 66 libros escritos por unos 40 autores a lo largo de más de mil años. Cuenta la historia de Dios con la humanidad: desde la creación, pasando por el pueblo de Israel, hasta Jesús y la iglesia primitiva.")}</p>
-    <div class="facts"><div class="fact"><small>${tr("Libros")}</small><b>${tr("66 (39 AT + 27 NT)")}</b></div><div class="fact"><small>${tr("Escrita")}</small><b>${tr("c. 1400/1000 a.C. – c. 95 d.C.")}</b></div><div class="fact"><small>${tr("Idiomas originales")}</small><b>${tr("Hebreo, arameo, griego")}</b></div><div class="fact"><small>${tr("Autores")}</small><b>${tr("Unos 40")}</b></div></div>
-    <div class="map">${MAP()}<div class="cap">${tr("Mapa esquemático, no a escala. Líneas punteadas: viaje de Abraham (Ur → Harán → Canaán) y Éxodo (Egipto → Sinaí → Canaán).")}</div></div>
-    <dl class="dl">
-      <div><dt>${tr("Dónde ocurre")}</dt><dd>${tr("Principalmente en el antiguo Oriente Medio: Canaán (hoy Israel, Palestina y alrededores), Egipto y Mesopotamia (hoy Irak). El Nuevo Testamento se extiende por el Imperio romano: Turquía, Grecia e Italia.")}</dd></div>
-      <div><dt>${tr("Antiguo Testamento")}</dt><dd>${tr("Escrito en hebreo, con partes en arameo. Narra la creación, los patriarcas, el éxodo, los reyes de Israel, el exilio en Babilonia y el regreso. Incluye ley, historia, poesía (Salmos, Proverbios) y profetas.")}</dd></div>
-      <div><dt>${tr("Entre ambos testamentos")}</dt><dd>${tr("Unos 400 años: dominio persa, luego griego (Alejandro Magno, 332 a.C.) y finalmente romano (63 a.C.). Por eso el Nuevo Testamento se escribe en griego.")}</dd></div>
-      <div><dt>${tr("Nuevo Testamento")}</dt><dd>${tr("Escrito en griego en el siglo I. Los evangelios cuentan la vida de Jesús; Hechos, la expansión de la iglesia; las cartas enseñan a las primeras comunidades; Apocalipsis cierra con la esperanza final.")}</dd></div>
-      <div><dt>${tr("Sobre las fechas")}</dt><dd>${tr("Las fechas anteriores a la monarquía (c. 1000 a.C.) son aproximadas y debatidas entre especialistas. Desde los reyes de Israel hay más apoyo en fuentes externas.")}</dd></div>
-    </dl>
-    <button class="go" data-go="">${tr("Ver la línea de tiempo →")}</button>`;
-  }else if(!era){
-    h=`<h2>${tr("Historia de la Biblia")}</h2><p class="lead">${tr("Desliza hacia los lados para recorrer la historia. Toca un acontecimiento para saber más y leer el pasaje.")}</p>
-    <div class="twin"><button class="node overview" data-ov="1"><b>${tr("La Biblia en una mirada")}</b><small>${tr("Panorama")}</small><span>${tr("Época, contexto, idiomas, ubicación y mapa.")}</span><i>›</i></button><button class="node overview" data-pp=""><b>${tr("Personajes")}</b><small>${tr("{0} personas",Object.keys(PP).length)}</small><span>${tr("Quién es quién y mapa de relaciones.")}</span><i>›</i></button></div>
-    ${hTimeline()}
-    <div class="eras">${TL.map((x,i)=>`<button data-jump="${i}">${esc(x.t)}</button>`).join("")}</div>`;
-  }else if(!ev){
-    h=`${crumbs}<h2>${esc(era.t)}</h2><p class="lead">${esc(era.d)}. ${esc(era.s)}</p>
-    <ol class="rail">${era.e.map((x,i)=>`<li><button class="node" data-ev="${i}"><b>${esc(x.t)}</b><small>${esc(x.d)} · ${esc(bookName(x.r[0]))} ${x.r[1]}</small><span>${esc(x.s)}</span><i>›</i></button></li>`).join("")}</ol>
-    <h3 class="testa">${tr("Todos los capítulos de esta época")}</h3>
-    <p class="note">${tr("Agrupados por libro. Toca un capítulo para leerlo; el color indica tu progreso. Las fechas de algunos libros (Job, Salmos, profetas) son aproximadas.")}</p>
-    ${eraChaptersHTML(ei)}`;
-  }else{
-    const im=(window.TLIMG||{})[ei+','+vi],ix=evIndex(ei,vi);
-    h=`${crumbs}${im?`<figure class="evfig"><img src="${im.src}" alt="${esc(im.t)}"><figcaption>${im.a?`${esc(im.a)}, ${tr("grabado de «Die Bibel in Bildern»")} (${im.y})`:`Gustave Doré, «${esc(im.t.replace(/^\d+[A-Z]?\.\s*/,""))}» (1866)`}. ${tr("Dominio público, vía Wikimedia Commons.")}</figcaption></figure>`:""}<h2>${esc(ev.t)}</h2><p class="lead">${esc(ev.s)}</p>
-    <dl class="dl"><div><dt>${tr("Fecha")}</dt><dd>${esc(ev.d)}</dd></div><div><dt>${tr("Pasaje")}</dt><dd>${esc(bookName(ev.r[0]))} ${ev.r[1]}</dd></div>
-    <div><dt>${tr("Personajes")}</dt><dd>${ev.p.map(esc).join(", ")}</dd></div><div><dt>${tr("Para saber más")}</dt><dd>${ev.k.map(esc).join("<br>")}</dd></div></dl>
-    ${(()=>{const s=evSection(ei,vi);return `<div class="secbox"><b>${tr("Capítulos de esta sección:")} ${esc(bookName(s.b))} ${s.from}${s.to>s.from?"–"+s.to:""}</b>${chapGrid(s.b,s.from,s.to)}</div>`})()}
-    <button class="go" id="goRead">${tr("Leer")} ${esc(bookName(ev.r[0]))} ${ev.r[1]} →</button>
-    <div class="evnav"><button id="evPrev" ${ix===0?"disabled":""}>‹ ${tr("Anterior")}</button><span>${ix+1} / ${EVL.length} · ${tr("desliza")} ← →</span><button id="evNext" ${ix===EVL.length-1?"disabled":""}>${tr("Siguiente")} ›</button></div>`;
-  }
-  box.innerHTML=`<div class="tlw">${h}</div>`;box.scrollTop=0;
-  const hs=box.querySelector(".hscroll");
-  if(hs){
-    $("fsOpen").onclick=()=>{hs.classList.add("full");document.body.classList.add("fs");try{hs.requestFullscreen?.().catch(()=>{})}catch(e){}};
-    $("fsClose").onclick=exitFS;
-    document.onfullscreenchange=()=>{if(!document.fullscreenElement)exitFS()};
-    if(tlX!=null)hs.scrollLeft=tlX;hs.addEventListener("scroll",()=>{tlX=hs.scrollLeft},{passive:true});
-    box.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{const el=hs.querySelector(`[data-band="${b.dataset.jump}"]`);hs.scrollTo({left:el.offsetLeft-12,behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth"})});
-    box.querySelectorAll("[data-hev]").forEach(b=>b.onclick=()=>{exitFS();const [a,c]=b.dataset.hev.split(",").map(Number);tlPath=[a,c];renderTL()})}
-  box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{tlPath=b.dataset.go===""?[]:[+b.dataset.go];renderTL()});
-  box.querySelectorAll("[data-ov]").forEach(b=>b.onclick=()=>{tlPath=[-1];renderTL()});
-  box.querySelectorAll("[data-pp]").forEach(b=>b.onclick=e=>{e.preventDefault();tlPath=b.dataset.pp?["pp",b.dataset.pp]:["pp"];renderTL()});
-  const gw=$("gwrap");if(gw){const sv=gw.querySelector("svg");let z=innerWidth<700?.55:.8;const W0=1800,H0=900;
-    const setZ=()=>{sv.setAttribute("width",W0*z);sv.setAttribute("height",H0*z)};setZ();
-    $("gzIn").onclick=()=>{z=Math.min(2,z*1.25);setZ()};
-    sv.querySelectorAll(".mn").forEach(g=>{g.onclick=e=>{e.preventDefault();e.stopPropagation();const id=g.dataset.pp,p=PP[id],N=ppNeighbors(id),path=ppPath(id)||[];
-      sv.querySelectorAll(".mn").forEach(x=>x.classList.toggle("on",x===g));sv.querySelectorAll(".mn").forEach(x=>x.classList.toggle("path",path.includes(x.dataset.pp)&&x!==g));
-      const pop=$("gpop"),pi=ppImg(id);pop.hidden=false;pop.innerHTML=`<button class="gx" aria-label="${tr("Cerrar")}">✕</button>${pi?`<img class="pav" src="${pi}" alt="">`:""}<b>${esc(p.n)}</b><small>${esc(TL[p.e].t)} · ${tr("{0} relaciones",N.length)}</small><p>${esc(p.d)}</p><div class="gpath">${ppPathHTML(id,path)}</div><button class="go" data-full="${id}">${tr("Ver ficha completa →")}</button>`;
-      pop.querySelector(".gx").onclick=()=>{pop.hidden=true;sv.querySelectorAll(".mn").forEach(x=>x.classList.remove("on","path"))};
-      pop.querySelector("[data-full]").onclick=()=>{tlPath=["pp",id];renderTL()};
-      pop.querySelectorAll(".plink").forEach(a=>a.onclick=ev=>{ev.preventDefault();const t=sv.querySelector(`.mn[data-pp="${a.dataset.pp}"]`);if(t)t.dispatchEvent(new MouseEvent("click",{bubbles:false}))})};
-      g.addEventListener("keydown",e=>{if(e.key==="Enter")g.onclick(e)})});$("gzOut").onclick=()=>{z=Math.max(.35,z/1.25);setZ()}}
-  const pf=$("ppFilter");if(pf)pf.oninput=()=>{const q=pf.value.toLowerCase();box.querySelectorAll(".pcard").forEach(c=>c.hidden=!c.dataset.q.includes(q))};
-  box.querySelectorAll("[data-era]").forEach(b=>b.onclick=e=>{e.stopPropagation();exitFS();tlPath=[+b.dataset.era];renderTL()});
-  box.querySelectorAll("[data-rc]").forEach(b=>b.onclick=()=>{const [bk,ch]=b.dataset.rc.split(",").map(Number);openChap(bk,ch-1)});
-  box.querySelectorAll("[data-ev]").forEach(b=>b.onclick=()=>{tlPath=[ei,+b.dataset.ev];renderTL()});
-  const pv=$("evPrev"),nx=$("evNext");if(pv){pv.onclick=()=>goEv(-1);nx.onclick=()=>goEv(1)}
-  const g=$("goRead");if(g)g.onclick=()=>openChap(ev.r[0],ev.r[1]-1);
-}
-/* Personajes y mapa de relaciones */
-const ADJ={};for(const [a,b] of PR){(ADJ[a]??=[]).push(b);(ADJ[b]??=[]).push(a)}
-function ppPath(id,to="jesus"){if(id===to)return [id];const adj=ADJ;
-  const prev={[id]:null},q=[id];while(q.length){const x=q.shift();for(const y of adj[x]||[])if(!(y in prev)){prev[y]=x;if(y===to){const p=[y];let k=x;while(k!==null){p.unshift(k);k=prev[k]}return p}q.push(y)}}return null}
-function ppPathHTML(id,p=ppPath(id)){if(!p)return tr("No hay una relación con Jesús registrada en estos datos.");if(p.length===1)return tr("Es Jesús.");
-  return p.map(k=>`<a href="#" class="plink" data-pp="${k}">${esc(PP[k].n)}</a>`).join(" → ")+(p.length===2?" ("+tr("relación directa")+")":" ("+tr("{0} pasos",p.length-1)+")")}
-function ppNeighbors(id){const out=[];for(const [a,b,l] of PR){if(a!==id&&b!==id)continue;
-  out.push({id:a===id?b:a,txt:rel(l,PP[a].n,PP[b].n),fam:isFam(l)})}
-  const seen=new Set();return out.filter(x=>!seen.has(x.id)&&seen.add(x.id))}
-function ppMap(id){const N=ppNeighbors(id),W=380,H=Math.max(340,N.length>8?420:340),cx=W/2,cy=H/2;
-  const R=N.length>8?[118,170]:[130],pts=N.map((n,i)=>{const r=R[i%R.length],a=-Math.PI/2+i*2*Math.PI/N.length;return {...n,x:cx+r*Math.cos(a)*1.05,y:cy+r*Math.sin(a)*(H/W)*.95}});
-  const lab=s=>s.length>14?s.slice(0,13)+"…":s;
-  return `<svg class="mind" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(tr("Relaciones de {0}",PP[id].n))}">
-   ${pts.map(p=>`<line x1="${cx}" y1="${cy}" x2="${p.x}" y2="${p.y}" class="${p.fam?"lf":"lo"}"/>`).join("")}
-   ${pts.map(p=>`<g class="mn" data-pp="${p.id}" tabindex="0"><rect x="${p.x-46}" y="${p.y-14}" width="92" height="28" rx="14"/><text x="${p.x}" y="${p.y+4}" text-anchor="middle">${esc(lab(PP[p.id].n))}</text></g>`).join("")}
-   <g class="mc"><circle cx="${cx}" cy="${cy}" r="44"/><text x="${cx}" y="${cy+5}" text-anchor="middle">${esc(lab(PP[id].n))}</text></g></svg>`}
-function ppHTML(id){
-  if(id==="__global")return `<nav class="crumbs"><button data-go="">${tr("Historia")}</button> › <button data-pp="">${tr("Personajes")}</button> ${tr("› Mapa global")}</nav>
-    <h2>${tr("Mapa global")}</h2><p class="lead">${tr("Todos los personajes, ordenados por época de izquierda a derecha. Desliza para moverte, usa + y − para acercar, y toca un nombre para ver su ficha.")}</p>
-    <div class="gtools"><button id="gzOut" aria-label="${tr("Alejar")}">−</button><button id="gzIn" aria-label="${tr("Acercar")}">+</button><span class="legend"><span><i class="ln lf"></i> ${tr("Familia")}</span><span><i class="ln lo"></i> ${tr("Otra relación")}</span></span></div>
-    <div class="gwrap" id="gwrap">${gmapCache[lang]??=globalMap()}</div>
-    <div class="gpop" id="gpop" hidden></div>`;
-  if(!id){const byEra=TL.map((era,ei)=>({era,list:Object.entries(PP).filter(([,p])=>p.e===ei)})).filter(g=>g.list.length);
-    return `<nav class="crumbs"><button data-go="">${tr("Historia")}</button> ${tr("› Personajes")}</nav><h2>${tr("Personajes")}</h2>
-    <p class="lead">${tr("Toca una persona para leer quién es y ver su mapa de relaciones.")}</p>
-    <button class="go" data-pp="__global">${tr("Ver mapa global de relaciones →")}</button>
-    <input id="ppFilter" class="pfilter" type="search" placeholder="${tr("Buscar personaje…")}" aria-label="${tr("Buscar personaje")}">
-    ${byEra.map(g=>`<h3 class="testa">${esc(g.era.t)}</h3><div class="pgrid">${g.list.map(([k,p])=>{const pi=ppImg(k);return `<button class="pcard" data-pp="${k}" data-q="${esc(p.n.toLowerCase())}">${pi?`<img class="pav" src="${pi}" alt="" loading="lazy">`:`<span class="pav pini">${esc(p.n[0])}</span>`}<span class="pct"><b>${esc(p.n)}</b><span>${esc(p.d)}</span></span></button>`}).join("")}</div>`).join("")}`}
-  const p=PP[id],N=ppNeighbors(id),pi=ppImg(id);
-  return `<nav class="crumbs"><button data-go="">${tr("Historia")}</button> › <button data-pp="">${tr("Personajes")}</button> › ${esc(p.n)}</nav>
-  ${pi?`<figure class="chfig"><img class="pbig" src="${pi}" alt=""><figcaption>${(window.PPIMG||{})[id]?"James Tissot (c. 1896–1902). "+tr("Dominio público, vía Wikimedia Commons."):tr("Grabado de un acontecimiento donde aparece. Dominio público.")}</figcaption></figure>`:""}<h2>${esc(p.n)}</h2><small class="eratag">${esc(TL[p.e].t)} · ${esc(TL[p.e].d)}</small>
-  <p class="lead">${esc(p.d)}</p>
-  <div class="mindbox">${ppMap(id)}<div class="legend"><span><i class="ln lf"></i> ${tr("Familia")}</span><span><i class="ln lo"></i> ${tr("Otra relación")}</span><span>${tr("Toca un nombre para centrar el mapa")}</span></div></div>
-  <dl class="dl"><div><dt>${tr("Camino hasta Jesús")}</dt><dd>${ppPathHTML(id)}</dd></div><div><dt>${tr("Relaciones")}</dt><dd>${N.map(n=>`<a href="#" class="plink" data-pp="${n.id}">${esc(n.txt)}</a>`).join("<br>")||"—"}</dd></div>
-  <div><dt>${tr("Dónde leer")}</dt><dd class="reads">${p.r.map(r=>`<button class="chip" data-rc="${r[0]},${r[1]}">${esc(bookName(r[0]))} ${r[1]}</button>`).join("")}</dd></div></dl>`}
-/* Imagen para cada capítulo: la del acontecimiento exacto, si no la más cercana del mismo libro, si no una de su época */
-const BOOK_ERA=[1,2,2,2,2,3,3,3,4,4,4,5,4,5,6,6,6,1,4,4,4,4,5,5,5,6,6,5,5,5,5,5,5,5,5,5,6,6,6,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8];
-function chapImage(b,c){const I=window.TLIMG||{};let best=null;
-  TL.forEach((era,ei)=>era.e.forEach((ev,vi)=>{const k=ei+","+vi;if(!I[k]||ev.r[0]!==b)return;const d=Math.abs(ev.r[1]-(c+1));if(!best||d<best.d)best={d,k,ev}}));
-  if(best)return {src:I[best.k].src,title:best.ev.t,exact:best.d===0};
-  const ei=BOOK_ERA[b],era=TL[ei],list=era.e.map((ev,vi)=>[ev,ei+","+vi]).filter(x=>I[x[1]]);if(!list.length)return null;
-  const [ev,k]=list[(b*7+c)%list.length];return {src:I[k].src,title:ev.t,exact:false}}
-
-/* Mapa global de personajes: columnas por época + fuerzas suaves */
-const gmapCache={};
-function globalMap(){const ids=Object.keys(PP),W=1800,H=900,colW=W/TL.length,pos={};
-  let seed=7;const rnd=()=>(seed=(seed*9301+49297)%233280)/233280;
-  ids.forEach(id=>{const e=PP[id].e;pos[id]={x:colW*(e+.5)+(rnd()-.5)*colW*.6,y:90+rnd()*(H-150),vx:0,vy:0}});
-  const E=PR.filter(r=>pos[r[0]]&&pos[r[1]]);
-  for(let it=0;it<400;it++){const t=1-it/400;
-    for(let i=0;i<ids.length;i++)for(let j=i+1;j<ids.length;j++){const a=pos[ids[i]],b=pos[ids[j]];let dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+.01;if(d2>40000)continue;const f=1800/d2;dx*=f;dy*=f;a.vx+=dx;a.vy+=dy;b.vx-=dx;b.vy-=dy}
-    for(const [s,d] of E){const a=pos[s],b=pos[d];const dx=b.x-a.x,dy=b.y-a.y,dist=Math.hypot(dx,dy)||1,f=(dist-90)*.02;a.vx+=dx/dist*f;a.vy+=dy/dist*f;b.vx-=dx/dist*f;b.vy-=dy/dist*f}
-    ids.forEach(id=>{const p=pos[id],cx=colW*(PP[id].e+.5);p.vx+=(cx-p.x)*.03;p.vy+=(H/2-p.y)*.002;p.x+=Math.max(-12,Math.min(12,p.vx*t));p.y+=Math.max(-12,Math.min(12,p.vy*t));p.vx*=.5;p.vy*=.5;p.y=Math.max(76,Math.min(H-24,p.y));const hw=Math.max(54,PP[id].n.length*6.6+16)/2+8;p.x=Math.max(hw,Math.min(W-hw,p.x))})}
-  return `<svg class="gmap" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="${tr("Mapa global de personajes")}">
-   ${TL.map((era,i)=>`<rect x="${i*colW}" y="0" width="${colW}" height="${H}" class="gcol g${i%2}"/><text x="${i*colW+colW/2}" y="30" text-anchor="middle" class="gera">${esc(era.t)}</text><text x="${i*colW+colW/2}" y="48" text-anchor="middle" class="gerad">${esc(era.d)}</text>`).join("")}
-   ${E.map(([s,d,l])=>`<line x1="${pos[s].x.toFixed(1)}" y1="${pos[s].y.toFixed(1)}" x2="${pos[d].x.toFixed(1)}" y2="${pos[d].y.toFixed(1)}" class="${isFam(l)?"lf":"lo"}"><title>${esc(rel(l,PP[s].n,PP[d].n))}</title></line>`).join("")}
-   ${ids.map(id=>{const p=pos[id],w=Math.max(54,PP[id].n.length*6.6+16);return `<g class="mn" data-pp="${id}" tabindex="0"><rect x="${(p.x-w/2).toFixed(1)}" y="${(p.y-13).toFixed(1)}" width="${w.toFixed(0)}" height="26" rx="13"/><text x="${p.x.toFixed(1)}" y="${(p.y+4).toFixed(1)}" text-anchor="middle">${esc(PP[id].n)}</text></g>`}).join("")}
-  </svg>`}
-/* Capítulos por época y secciones de cada acontecimiento */
-const ERA_CH=[[[0,1,11]],[[0,12,50],[17,1,42]],[[1,1,40],[2,1,27],[3,1,36],[4,1,34]],[[5,1,24],[6,1,21],[7,1,4]],
- [[8,1,31],[9,1,24],[10,1,11],[12,1,29],[13,1,9],[18,1,150],[19,1,31],[20,1,12],[21,1,8]],
- [[10,12,22],[11,1,25],[13,10,36],[22,1,66],[23,1,52],[24,1,5],[27,1,14],[28,1,3],[29,1,9],[30,1,1],[31,1,4],[32,1,7],[33,1,3],[34,1,3],[35,1,3]],
- [[25,1,48],[26,1,12],[14,1,10],[15,1,13],[16,1,10],[36,1,2],[37,1,14],[38,1,4]],
- [[39,1,28],[40,1,16],[41,1,24],[42,1,21]],
- Array.from({length:23},(_,i)=>[43+i,1,null])];
-function eraChaptersHTML(ei){return ERA_CH[ei].map(([b,from,to])=>{const n=B?B[b][1].length:to||1;to=to||n;to=Math.min(to,n);
-  const done=Array.from({length:to-from+1},(_,i)=>B&&chapFrac(b,from+i-1)>=1).filter(Boolean).length;
-  return `<section class="pbook"><div class="pbh"><b>${esc(bookName(b))}${from>1||to<n?` ${from}–${to}`:""}</b><small>${done}/${to-from+1}</small></div>${chapGrid(b,from,to)}</section>`}).join("")}
-/* Numbered chapter squares (1-based from..to), coloured by reading progress */
-const sqCls=f=>f>=1?"full":f>0?"part":"";
-function chapGrid(b,from,to){let h="";for(let c=from;c<=to;c++)h+=`<button class="sq lbl ${B?sqCls(chapFrac(b,c-1)):""}" data-rc="${b},${c}" aria-label="${esc(bookName(b))} ${c}">${c}</button>`;return `<div class="cgrid big">${h}</div>`}
-function evSection(ei,vi){const ev=TL[ei].e[vi],b=ev.r[0];let to=B?B[b][1].length:ev.r[1];
-  const L=EVL;for(const [a,c] of L){const e2=TL[a].e[c];if(e2.r[0]===b&&e2.r[1]>ev.r[1])to=Math.min(to,e2.r[1]-1)}
-  const era=ERA_CH[ei].find(x=>x[0]===b);if(era&&era[2])to=Math.min(to,era[2]);
-  let from=ev.r[1];const first=L.filter(([a,c])=>TL[a].e[c].r[0]===b).sort((x,y)=>TL[x[0]].e[x[1]].r[1]-TL[y[0]].e[y[1]].r[1])[0];
-  if(first&&first[0]===ei&&first[1]===vi&&era)from=era[1];return {b,from,to:Math.max(from,to)}}
-/* Imagen de personaje: grabado de un acontecimiento donde aparece */
-const ppImgCache=new Map();
-function ppImg(id){if(!ppImgCache.has(id))ppImgCache.set(id,findPpImg(id));return ppImgCache.get(id)}
-function findPpImg(id){if((window.PPIMG||{})[id])return PPIMG[id].src;const n=PP_ES[id].n.split(" (")[0],I=window.TLIMG||{};for(let ei=0;ei<TL_ES.length;ei++)for(let vi=0;vi<TL_ES[ei].e.length;vi++){const ev=TL_ES[ei].e[vi];if(I[ei+","+vi]&&ev.p.some(x=>x.split("/")[0].startsWith(n)||x.includes(n)))return I[ei+","+vi].src}return null}
-const ES_BOOKS=["Génesis","Éxodo","Levítico","Números","Deuteronomio","Josué","Jueces","Rut","1 Samuel","2 Samuel","1 Reyes","2 Reyes","1 Crónicas","2 Crónicas","Esdras","Nehemías","Ester","Job","Salmos","Proverbios","Eclesiastés","Cantares","Isaías","Jeremías","Lamentaciones","Ezequiel","Daniel","Oseas","Joel","Amós","Abdías","Jonás","Miqueas","Nahúm","Habacuc","Sofonías","Hageo","Zacarías","Malaquías","Mateo","Marcos","Lucas","Juan","Hechos","Romanos","1 Corintios","2 Corintios","Gálatas","Efesios","Filipenses","Colosenses","1 Tesalonicenses","2 Tesalonicenses","1 Timoteo","2 Timoteo","Tito","Filemón","Hebreos","Santiago","1 Pedro","2 Pedro","1 Juan","2 Juan","3 Juan","Judas","Apocalipsis"];
-const bookName=i=>B?B[i][0]:ES_BOOKS[i];
-
-/* Navegación entre acontecimientos y capítulos */
-const evIndex=(a,b)=>EVI[a+","+b]??-1;
-function goEv(d){if(!isEvPath())return;const i=evIndex(tlPath[0],tlPath[1])+d;if(i<0||i>=EVL.length)return;tlPath=EVL[i];renderTL()}
-/* Chapter d steps from b:c (0-based), crossing book boundaries; null past either end of the Bible */
-function chapAt(b,c,d){c+=d;if(c<0){if(b===0)return null;b--;c=B[b][1].length-1}else if(c>=B[b][1].length){if(b===B.length-1)return null;b++;c=0}return [b,c]}
-/* Select book b, chapter c (0-based), remember it, then show it (default: switch to Read) */
-function openChap(b,c,show=()=>setMode("read")){if(!B)return;$("book").value=b;fillChaps();$("chap").value=c;savePos();show()}
-function goChap(d){if(!B)return;const n=chapAt(+$("book").value,+$("chap").value,d);if(n)openChap(n[0],n[1],showRead)}
-function onSwipe(el,fn){let x0=null,y0,t0;
-  el.addEventListener("touchstart",e=>{if(e.touches.length>1){x0=null;return}const t=e.touches[0];x0=t.clientX;y0=t.clientY;t0=Date.now()},{passive:true});
-  el.addEventListener("touchend",e=>{if(x0==null)return;const t=e.changedTouches[0],dx=t.clientX-x0,dy=t.clientY-y0;x0=null;
-    if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.6&&Date.now()-t0<900)fn(dx<0?1:-1)},{passive:true})}
-onSwipe(feed,d=>{if(mode!=="read")return;if(RS.mode==="paged")turnPage(d);else goChap(d)});
-const isEvPath=()=>tlPath.length===2&&typeof tlPath[0]==="number"&&tlPath[0]>=0;
-onSwipe($("tl"),d=>{if(mode==="hist"&&isEvPath())goEv(d)});
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeSheet();closeRS();return}
-  if(e.target.closest("select,input,textarea"))return;
-  if(e.key!=="ArrowLeft"&&e.key!=="ArrowRight")return;const d=e.key==="ArrowRight"?1:-1;
-  if(mode==="read"){RS.mode==="paged"?turnPage(d):goChap(d)}else if(mode==="hist"&&isEvPath())goEv(d)});
-
-/* Seguimiento de lectura: un versículo cuenta como leído tras ~1 s visible */
-const RD=store.get("rd",{});let rdT=null;
-const rdSave=()=>{clearTimeout(rdT);rdT=setTimeout(()=>store.set("rd",RD),300)};
-function isRead(b,c,v){const s=RD[b+":"+c];return !!s&&s[v]==="1"}
-function chapFrac(b,c){const s=RD[b+":"+c];if(!s)return 0;const n=B?B[b][1][c].length:s.length;let r=0;for(const x of s)if(x==="1")r++;return Math.min(1,r/n)}
-/* Set verse v read (on) or unread; returns whether it changed */
-function markRead(b,c,v,on=true){const k=b+":"+c,n=B[b][1][c].length,s=(RD[k]||"").padEnd(n,"0"),x=on?"1":"0";if(s[v]===x)return false;RD[k]=s.slice(0,v)+x+s.slice(v+1);rdSave();return true}
-function markChap(b,c,on){RD[b+":"+c]=(on?"1":"0").repeat(B[b][1][c].length);store.set("rd",RD)}
-/* A verse card or span counts as read after it stays visible for `ms` */
-function seenV(el){const b=+el.dataset.b,c=+el.dataset.c,v=+el.dataset.v;if(!markRead(b,c,v))return;el.classList.add("seen");
-  if(mode!=="read")return;feed.querySelector(".sum")?._paint?.();if(chapFrac(b,c)>=1){fillChaps();$("chap").value=c}}
-const mkObs=(root,ms,threshold)=>"IntersectionObserver" in window?new IntersectionObserver(es=>{for(const en of es){const el=en.target;
-  if(en.isIntersecting)el._t=setTimeout(()=>seenV(el),ms);else clearTimeout(el._t)}},{root,threshold}):{observe(){},disconnect(){}};
-const vObs=mkObs(feed,1000,.6),sObs=mkObs(feed,1500,.9);
-
-/* Vista de progreso */
-let progSel=null;
-function renderProg(){const box=$("prog");
-  if(!B){box.innerHTML=`<div class="loading">${T("loading")}</div>`;return}
-  const F=B.map((bk,b)=>bk[1].map((_,c)=>chapFrac(b,c)));
-  let tv=0,rv=0,tc=0,rc=0;B.forEach((bk,b)=>bk[1].forEach((ch,c)=>{const f=F[b][c];tv+=ch.length;tc++;rv+=Math.round(f*ch.length);if(f>=1)rc++}));
-  const pct=x=>(x*100).toFixed(x>0&&x<.01?2:1).replace(/\.0$/,"");
-  let h="";
-  if(progSel){const [b,c]=progSel,ch=B[b][1][c],n=ch.length,r=Math.round(chapFrac(b,c)*n);
-    h=`<nav class="crumbs"><button data-pback>${tr("Progreso")}</button> › ${esc(B[b][0])} ${c+1}</nav>
-    <h2>${esc(B[b][0])} ${c+1}</h2><p class="lead">${tr("{0} de {1} versículos leídos.",r,n)}</p>
-    <div class="vgrid">${ch.map((_,v)=>`<button class="vsq ${isRead(b,c,v)?"on":""}" data-vv="${v}" title="${tr("Versículo {0}",v+1)}">${v+1}</button>`).join("")}</div>
-    <p class="note">${tr("Toca un versículo para marcarlo o desmarcarlo.")}</p>
-    <div class="evnav"><button class="go" id="pRead">${tr("Leer")} ${esc(B[b][0])} ${c+1} →</button><button id="pAll">${r>=n?tr("Marcar como no leído"):tr("Marcar todo como leído")}</button></div>`;
-  }else{
-    h=`<h2>${tr("Tu progreso")}</h2>
-    <div class="facts"><div class="fact"><small>${tr("Biblia leída")}</small><b>${pct(rv/tv)}%</b></div><div class="fact"><small>${tr("Capítulos completos")}</small><b>${rc} / ${tc}</b></div><div class="fact"><small>${tr("Versículos leídos")}</small><b>${rv.toLocaleString(lang)} / ${tv.toLocaleString(lang)}</b></div></div>
-    <div class="pbar"><i style="width:${(rv/tv*100).toFixed(2)}%"></i></div>
-    <div class="legend"><span><i class="sq"></i> ${tr("Sin leer")}</span><span><i class="sq part"></i> ${tr("En curso")}</span><span><i class="sq full"></i> ${tr("Leído")}</span></div>
-    <p class="note">${tr("Cada cuadrado es un capítulo. Toca uno para ver sus versículos. El progreso se guarda en este navegador.")}</p>`;
-    B.forEach((bk,b)=>{if(b===0)h+=`<h3 class="testa">${tr("Antiguo Testamento")}</h3>`;if(b===39)h+=`<h3 class="testa">${tr("Nuevo Testamento")}</h3>`;
-      const done=F[b].filter(f=>f>=1).length;
-      h+=`<section class="pbook"><div class="pbh"><b>${esc(bk[0])}</b><small>${done}/${bk[1].length}</small></div><div class="cgrid">${bk[1].map((_,c)=>`<button class="sq ${sqCls(F[b][c])}" data-pc="${b},${c}" title="${esc(bk[0])} ${c+1}" aria-label="${esc(bk[0])} ${c+1}"></button>`).join("")}</div></section>`});
-  }
-  box.innerHTML=`<div class="tlw">${h}</div>`;
-  box.querySelectorAll("[data-pc]").forEach(x=>x.onclick=()=>{progSel=x.dataset.pc.split(",").map(Number);renderProg();box.scrollTop=0});
-  const bk=box.querySelector("[data-pback]");if(bk)bk.onclick=()=>{progSel=null;renderProg()};
-  box.querySelectorAll("[data-vv]").forEach(x=>x.onclick=()=>{const [b,c]=progSel,v=+x.dataset.vv;markRead(b,c,v,!isRead(b,c,v));renderProg()});
-  const pr=$("pRead");if(pr)pr.onclick=()=>openChap(...progSel);
-  const pa=$("pAll");if(pa)pa.onclick=()=>{const [b,c]=progSel;markChap(b,c,chapFrac(b,c)<1);renderProg()};
-}
-feed.addEventListener("scroll",()=>{if(mode==="for"&&feed.scrollTop+feed.clientHeight*3>feed.scrollHeight)more()});
-
-/* Ajustes de lectura (tipo Libros de iOS) */
-const THEMES=[["auto","Automático"],["original","Original"],["quiet","Tranquilo"],["paper","Papel"],["bold","Intenso"],["calm","Sereno"],["night","Noche"]];
-const FONTS=[["cormorant","Clásica",'"Cormorant Garamond",Georgia,serif'],["lora","Libro",'Lora,Georgia,serif'],["figtree","Moderna",'Figtree,system-ui,sans-serif'],["atkinson","Legible",'"Atkinson Hyperlegible",Verdana,sans-serif']];
-const RS=Object.assign({mode:"verse",theme:"auto",font:"cormorant",size:1,lh:1.4},store.get("rs",{}));
-function applyRS(){const r=document.documentElement;
-  if(RS.theme==="auto")r.removeAttribute("data-rt");else r.setAttribute("data-rt",RS.theme);
-  const f=FONTS.find(x=>x[0]===RS.font)||FONTS[0];r.style.setProperty("--rfont",f[2]);
-  r.style.setProperty("--rs",RS.size);r.style.setProperty("--rlh",RS.lh);
-  document.querySelectorAll("#rMode [data-m]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.m===RS.mode));
-  document.querySelectorAll("#rTheme [data-t]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.t===RS.theme));
-  document.querySelectorAll("#rFont [data-f]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===RS.font));
-  document.querySelectorAll("#rLh [data-l]").forEach(b=>b.setAttribute("aria-pressed",+b.dataset.l===+RS.lh));
-  $("rSize").value=RS.size;store.set("rs",RS)}
-function paintRS(){const vs=versOf(lang);$("rVerWrap").hidden=vs.length<2;
-$("rVer").innerHTML=vs.map(v=>`<button data-v="${v.d}" aria-pressed="${v.d===dk(lang)}">${esc(v.ver)}</button>`).join("");
-$("rTheme").innerHTML=THEMES.map(([k,n])=>`<button data-t="${k}" class="th th-${k}"><i>Aa</i><span>${esc(tr(n))}</span></button>`).join("");
-$("rFont").innerHTML=FONTS.map(([k,n,ff])=>`<button data-f="${k}" style="font-family:${ff.replace(/"/g,"&quot;")}">${esc(tr(n))}</button>`).join("");
-if(typeof RS!=="undefined")applyRS()}
-paintRS();
-let relayout=null;const rerender=()=>{clearTimeout(relayout);relayout=setTimeout(()=>{if(mode==="read"&&B){const sp=pageIdx;showRead();if(RS.mode==="paged")setTimeout(()=>goPage(sp),30)}},120)};
-$("rMode").onclick=e=>{const b=e.target.closest("[data-m]");if(!b)return;RS.mode=b.dataset.m;applyRS();if(mode!=="read")setMode("read");else showRead()};
-$("rVer").onclick=e=>{const b=e.target.closest("[data-v]");if(!b||b.dataset.v===dk(lang))return;
-  store.set("ver_"+lang,b.dataset.v);buildLangUI();paintRS();useLang(lang)};
-$("rTheme").onclick=e=>{const b=e.target.closest("[data-t]");if(!b)return;RS.theme=b.dataset.t;applyRS()};
-$("rFont").onclick=e=>{const b=e.target.closest("[data-f]");if(!b)return;RS.font=b.dataset.f;applyRS();if(RS.mode==="paged")rerender()};
-$("rLh").onclick=e=>{const b=e.target.closest("[data-l]");if(!b)return;RS.lh=+b.dataset.l;applyRS();if(RS.mode==="paged")rerender()};
-$("rSize").oninput=e=>{RS.size=+e.target.value;applyRS();if(RS.mode==="paged")rerender()};
-function openRS(){$("rsheet").hidden=false;$("scrim").hidden=false}
-function closeRS(){$("rsheet").hidden=true;if($("sheet").hidden)$("scrim").hidden=true}
-$("aa").onclick=()=>$("rsheet").hidden?openRS():closeRS();$("rClose").onclick=closeRS;
-applyRS();
-
-/* Capítulo completo y páginas */
-let pageIdx=0,pager=null;
-function chapterBody(b,c){const p=document.createElement("div");p.className="ctext";
-  B[b][1][c].forEach((t,v)=>{const s=document.createElement("span");s.className="vs"+(isRead(b,c,v)?" seen":"");s.dataset.b=b;s.dataset.c=c;s.dataset.v=v;
-    s.innerHTML=`<sup>${v+1}</sup>`;s.appendChild(document.createTextNode(t+" "));s.onclick=()=>explain(b,c,v);p.appendChild(s)});return p}
-function showFlow(){const b=+$("book").value,c=+$("chap").value;clearFeed();feed.className=RS.mode;
-  const sum=summaryCard(b,c);sum.className="sum flowsum";
-  const nb=chapAt(b,c,1);
-  const end=document.createElement("div");end.className="flowend";
-  if(nb){end.innerHTML=`<button class="go"></button>`;end.firstChild.textContent=`${T("next")}: ${B[nb[0]][0]} ${nb[1]+1} →`;end.firstChild.onclick=()=>goChap(1)}
-  if(RS.mode==="flow"){const art=document.createElement("article");art.className="flowc";art.append(sum,chapterBody(b,c),end);feed.appendChild(art);feed.scrollTop=0;
-    art.querySelectorAll(".vs").forEach(s=>sObs.observe(s))}
-  else{const wrap=document.createElement("div");wrap.className="pwrap";const cols=document.createElement("div");cols.className="pcols";
-    cols.append(sum,chapterBody(b,c),end);wrap.appendChild(cols);const ind=document.createElement("div");ind.className="pind";feed.append(wrap,ind);pager={wrap,cols,ind,obs:mkObs(wrap,1500,.9)};pageIdx=0;
-    wrap.addEventListener("click",e=>{if(e.target.closest("button,.vs"))return;const x=e.clientX/wrap.clientWidth;if(x>.66)turnPage(1);else if(x<.33)turnPage(-1)});
-    const pg=pager;requestAnimationFrame(()=>{goPage(0);cols.querySelectorAll(".vs").forEach(s=>pg.obs.observe(s))})}}
-function pages(){return pager?Math.max(1,Math.round(pager.cols.scrollWidth/pager.wrap.clientWidth)):1}
-function goPage(i){if(!pager)return;pageIdx=Math.max(0,Math.min(pages()-1,i));pager.wrap.scrollTo({left:pageIdx*pager.wrap.clientWidth,behavior:"auto"});pager.ind.textContent=`${pageIdx+1} / ${pages()}`}
-function turnPage(d){if(!pager)return goChap(d);const n=pages();if(pageIdx+d<0){goChap(-1);return}if(pageIdx+d>=n){goChap(1);return}goPage(pageIdx+d)}
-addEventListener("resize",()=>{if(mode==="read"&&RS.mode==="paged")rerender()});
-
-const aiErr=(e,fallback)=>e?.code==="not_granted"?T("grant"):e?.code==="rate_limited"?T("rate"):fallback;
-async function getSample(){if(sampleFn===undefined){try{sampleFn=(await window.claude?.use?.("sample"))??null}catch(e){sampleFn=null}}return sampleFn}
-async function explain(b,c,v){
-  const t=B[b][1][c][v];$("sRef").textContent=ref(b,c,v);$("sText").textContent=t;
-  $("exp").textContent=T("think");$("sheet").hidden=$("scrim").hidden=false;
-  ctrl?.abort();ctrl=null;const id=++expReq; // stop any live answer still streaming for a previous verse
-  const pre=(await iaBook(dk(lang),b))?.exp?.[`${c}:${v}`];
-  if(id!==expReq)return; // user opened another verse meanwhile
-  if(pre){$("exp").textContent=pre;return}
-  const s=await getSample();if(id!==expReq)return;if(!s){$("exp").textContent=T(navigator.onLine?"noai":"offline");return}
-  ctrl=new AbortController();
-  const ch=B[b][1][c],prev=ch.slice(Math.max(0,v-2),v).join(" "),next=ch.slice(v+1,v+3).join(" "),P=T("p");
-  const prompt=`You are a warm, clear, non-denominational Christian Bible teacher. Explain this verse from the ${T("ver")} translation. Write ONLY in ${T("pl")}.
-Verse (${ref(b,c,v)}): "${t}"
-Previous context: "${prev}"
-Following context: "${next}"
-Plain text, no markdown, at most 130 words, three short parts separated by a blank line:
-1) ${P[0]}.
-2) ${P[1]}.
-3) ${P[2]}.
-Do not invent historical facts; if something is uncertain or interpreted in several ways, say so.`;
-  try{const r=await s(prompt,{signal:ctrl.signal,modelTier:"quick",onText:({text})=>{$("exp").textContent=text}});$("exp").textContent=r.text}
-  catch(e){if(e?.name==="AbortError")return;
-    $("exp").textContent=aiErr(e,e?.text||T("err"))}
-}
-function closeSheet(){expReq++;ctrl?.abort();$("sheet").hidden=$("scrim").hidden=true}
-$("close").onclick=closeSheet;$("scrim").onclick=()=>{closeSheet();closeRS()};
-$("tFor").onclick=()=>setMode("for");$("tRead").onclick=()=>setMode("read");$("tHist").onclick=()=>{tlPath=[];setMode("hist")};$("tProg").onclick=()=>{progSel=null;setMode("prog")};
-$("book").onchange=()=>{fillChaps();showRead();savePos()};$("chap").onchange=()=>{showRead();savePos()};
-$("lang").onchange=e=>useLang(e.target.value);
-$("start").onclick=()=>{$("cover").hidden=true;useLang(lang)};
-$("home").onclick=()=>{closeSheet();$("cover").hidden=false};
-
-/* Offline support. Fails quietly where service workers aren't allowed (e.g. inside a claude.ai artifact). */
-if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
-buildLangUI();lang=store.get("lang",guessLang());if(!L[lang])lang="es";paintText();load(dk(lang)).catch(()=>{});
+const sel = document.getElementById("lang");
+for (const [k, v] of Object.entries(L)) { const o = document.createElement("option"); o.value = k; o.textContent = v.name; sel.appendChild(o) }
+sel.onchange = () => { lang = sel.value; guardar(lang); pintar() };
+document.getElementById("year").textContent = new Date().getFullYear();
+pintar();
 </script>
-
-</body></html>
+</body>
+</html>

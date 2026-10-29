@@ -15,7 +15,7 @@ META = re.compile(
 
 borrar = "--borrar" in sys.argv
 langs = [a for a in sys.argv[1:] if not a.startswith("--")] or ["en", "bsb", "pt", "fr", "de"]
-d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "biblia", "ia")
+d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "biblia", "app", "ia")
 for lang in langs:
     n = 0
     for b in range(66):

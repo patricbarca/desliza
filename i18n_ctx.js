@@ -1,7 +1,7 @@
 /* Loads the app's History data and its real tr()/rel() functions into a Node sandbox, for the dev scripts.
-   tr/rel are taken from the /* TR *​/ block of biblia/index.html, so there is no second copy to keep in sync. */
+   tr/rel are taken from the /* TR *​/ block of biblia/app/index.html, so there is no second copy to keep in sync. */
 const fs = require("fs"), vm = require("vm"), path = require("path");
-const DIR = path.join(__dirname, "biblia");
+const DIR = path.join(__dirname, "biblia", "app");
 const leer = f => fs.readFileSync(path.join(DIR, f), "utf8");
 
 function cargar(lang) {
