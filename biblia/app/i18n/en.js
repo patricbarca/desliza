@@ -5,6 +5,7 @@ ui:{
 "Versión":"Version",
 "66 (39 AT + 27 NT)":"66 (39 OT + 27 NT)",
 "Acercar":"Zoom in",
+"Página principal":"Home page",
 "Ver completa":"Show all",
 "Agrupados por libro. Toca un capítulo para leerlo; el color indica tu progreso. Las fechas de algunos libros (Job, Salmos, profetas) son aproximadas.":"Grouped by book. Tap a chapter to read it; the color shows your progress. Dates for some books (Job, Psalms, the prophets) are approximate.",
 "Ajustes de lectura":"Reading settings",

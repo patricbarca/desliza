@@ -132,10 +132,20 @@ select{font-weight:500;font-size:13px;color:var(--fg);background:var(--surface);
 .hscroll[data-lod="dots"] :is(.hc,.yr,.stem){display:none}
 /* Overview: hovering (or keyboard-focusing) a dot shows that event's card; a wider invisible ring makes the small dots easy to hit */
 .hscroll[data-lod="dots"] .dot::after{content:"";position:absolute;inset:-9px;border-radius:50%}
-.hscroll[data-lod="dots"] .hev:is(:hover,:focus-visible){z-index:5}
-.hscroll[data-lod="dots"] .hev:is(:hover,:focus-visible) .hc{display:flex;border-color:var(--accent);box-shadow:0 8px 24px rgb(0 0 0/.18)}
-.hscroll[data-lod="dots"] .hev:is(:hover,:focus-visible) :is(.yr,.stem){display:block}
-.hscroll[data-lod="dots"] .hev:is(:hover,:focus-visible) .dot{transform:scale(1.6)}
+/* Every zoom level: hovering (or keyboard-focusing) an event opens its full card with the whole engraving, uncropped */
+.hscroll[data-lod] .hev:is(:hover,:focus-visible){z-index:5}
+/* Open card is landscape: the whole engraving on the left (as tall as the space between axis and edge allows,
+   --hh = track height set from JS), text on the right. */
+.hev.up{--room:calc(var(--hh,620px) / 2 + 27px - 64px)}.hev.down{--room:calc(var(--hh,620px) / 2 - 27px - 64px)}
+.hscroll[data-lod] .hev:is(:hover,:focus-visible) .hc{display:grid;grid-template-columns:auto minmax(170px,1fr);grid-template-rows:auto auto 1fr;align-content:start;column-gap:14px;row-gap:4px;
+  width:max-content;max-width:min(560px,92vw);max-height:var(--room);overflow:hidden;padding:12px 14px;border-color:var(--accent);box-shadow:0 10px 30px rgb(0 0 0/.22)}
+.hscroll[data-lod] .hev:is(:hover,:focus-visible) .hc :is(span,small){display:block;grid-column:2;max-width:240px}
+.hscroll[data-lod] .hev:is(:hover,:focus-visible) .hc b{font-size:15px;grid-column:2;max-width:240px}
+.hscroll[data-lod] .hev:is(:hover,:focus-visible) .hc span{-webkit-line-clamp:unset;overflow:visible}
+.hscroll[data-lod] .hev:is(:hover,:focus-visible) .hci{display:block;grid-column:1;grid-row:1/4;width:auto;height:auto;max-width:300px;max-height:var(--room);
+  margin:-12px 0 -12px -14px;border-radius:11px 0 0 11px;object-fit:contain;filter:none}
+.hscroll[data-lod] .hev:is(:hover,:focus-visible) :is(.yr,.stem){display:block}
+.hscroll[data-lod] .hev:is(:hover,:focus-visible) .dot{transform:scale(1.4)}
 .hscroll[data-lod="dots"] .dot{width:7px;height:7px;left:-4.5px;margin-top:-4.5px;border-width:1px;box-shadow:0 0 0 1px var(--accent)}
 .hscroll[data-lod="dots"] .seg{height:calc(var(--ax) - 24px);align-items:flex-start;justify-content:center;padding-top:10px;cursor:zoom-in}
 .hscroll[data-lod="dots"] .segl{position:static;padding:0;writing-mode:vertical-rl;max-width:none;max-height:100%}
@@ -288,7 +298,11 @@ button.sq:hover{outline:2px solid var(--glow);outline-offset:1px}
 .sheet h2{font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0}
 .sheet blockquote{font-family:var(--verse);font-style:italic;font-size:20px;line-height:1.35;margin:0}
 #exp{font-size:16px;line-height:1.6;white-space:pre-wrap;max-width:65ch}
-.sheet .row{display:flex;justify-content:flex-end}
+.sheet .row{display:flex;justify-content:flex-end;align-items:center;gap:12px}
+.tohome{font-size:14px;font-weight:600;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 14px;background:var(--surface)}
+.tohome::before{content:"← "}
+.sheet .row .tohome{margin-right:auto}
+#cover .tohome{position:absolute;top:calc(16px + env(safe-area-inset-top,0px));left:max(16px,env(safe-area-inset-left,0px))}
 .sheet button{font-weight:600;font-size:14px;border-radius:999px;padding:8px 16px;cursor:pointer;border:1px solid var(--line);background:none;color:var(--fg)}
 .note{font-size:12px;color:var(--muted)}
 @media (prefers-reduced-motion:reduce){.start svg{animation:none}}
@@ -376,6 +390,7 @@ select{border-radius:999px;padding:7px 12px;appearance:none;-webkit-appearance:n
 </svg>
 
 <section id="cover" aria-labelledby="cTitle">
+  <a class="tohome" href="../" data-tr="">Página principal</a>
   <svg class="logo" viewBox="0 0 120 120" role="img" aria-label="Logo"><use href="#mark" width="120" height="120"/></svg>
   <h1 id="cTitle">Desliza<br><em id="cSub">la Palabra</em></h1>
   <p class="tag" id="cTag"></p>
@@ -420,7 +435,7 @@ select{border-radius:999px;padding:7px 12px;appearance:none;-webkit-appearance:n
     <div class="szrow"><span class="small">A</span><input type="range" id="rSize" min="0.8" max="1.5" step="0.05" aria-label="Tamaño de letra" data-tra="Tamaño de letra"><span class="big">A</span></div>
     <h2 data-tr="">Interlineado</h2>
     <div class="lhseg" id="rLh"><button data-l="1.2" data-tr="">Compacto</button><button data-l="1.4" data-tr="">Normal</button><button data-l="1.7" data-tr="">Amplio</button></div>
-    <div class="row"><button id="rClose" data-tr="">Listo</button></div>
+    <div class="row"><a class="tohome" href="../" data-tr="">Página principal</a><button id="rClose" data-tr="">Listo</button></div>
   </div>
 </section>
 <section class="sheet" id="sheet" hidden aria-live="polite">
@@ -620,7 +635,7 @@ function hTimeline(){
    <div class="axis"></div>
    ${items.map((it,i)=>{const up=i%2===0;return `<button class="hev ${up?"up":"down"}" data-hev="${it.ei},${it.vi}" style="left:${zx(it.x)}" aria-label="${esc(it.ev.t)}">
      <span class="stem"></span><span class="dot"></span>${it.y===null?"":`<span class="yr">${yr(it.y)}</span>`}
-     <span class="hc">${(window.TLIMG||{})[it.ei+','+it.vi]?`<img class="hci" src="${TLIMG[it.ei+','+it.vi].src}" alt="" loading="lazy">`:""}<b>${esc(it.ev.t)}</b><span>${esc(it.ev.s)}</span><small>${esc(bookName(it.ev.r[0]))} ${it.ev.r[1]}</small></span></button>`}).join("")}
+     <span class="hc">${(window.TLIMG||{})[it.ei+','+it.vi]?`<img class="hci" src="${TLIMG[it.ei+','+it.vi].src}" alt="" loading="lazy" decoding="async">`:""}<b>${esc(it.ev.t)}</b><span>${esc(it.ev.s)}</span><small>${esc(bookName(it.ev.r[0]))} ${it.ev.r[1]}</small></span></button>`}).join("")}
   </div></div></div><p class="note">${tr("Fechas aproximadas. La distancia entre acontecimientos sigue los años, con un espacio mínimo para que se puedan leer.")}</p>`;
 }
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -653,7 +668,7 @@ const MAP=()=>`<svg viewBox="0 0 640 380" role="img" aria-label="${tr("Mapa del 
 function tlZoom(hs){
   const W=+hs.firstElementChild.dataset.w,zmin=()=>Math.min(1,hs.clientWidth/W),ZMAX=2;
   const pad=z=>Math.max(0,(hs.clientWidth-W*z)/2); /* the track is centred when narrower than the screen */
-  const apply=z=>{tlZ=z;hs.style.setProperty("--z",z);hs.dataset.lod=z>=.7?"full":z>=.42?"mid":"dots";
+  const apply=z=>{tlZ=z;hs.style.setProperty("--z",z);hs.style.setProperty("--hh",hs.clientHeight+"px");hs.dataset.lod=z>=.7?"full":z>=.42?"mid":"dots";
     const lo=z<=zmin()+1e-4;$("zOut").disabled=lo;$("zFit").disabled=lo;$("zIn").disabled=z>=ZMAX};
   const setZ=(z,ax=hs.clientWidth/2)=>{z=Math.max(zmin(),Math.min(ZMAX,z));const c=(hs.scrollLeft+ax-pad(tlZ))/tlZ;
     apply(z);hs.scrollLeft=c*z+pad(z)-ax};
@@ -669,7 +684,8 @@ function tlZoom(hs){
   hs.querySelectorAll(".seg").forEach(g=>g.addEventListener("click",()=>{if(hs.dataset.lod==="full")return;
     const x=+g.dataset.x,w=+g.dataset.sw,z=Math.max(zmin(),Math.min(1,hs.clientWidth/w*.94));
     apply(z);hs.scrollTo({left:x*z+pad(z)-(hs.clientWidth-w*z)/2})}));
-  tlRefit=()=>{if(hs.isConnected)setZ(tlZ)}; /* rotation / resize: keep the zoom within the new limits */
+  tlRefit=()=>{if(hs.isConnected)setZ(tlZ)};
+  new ResizeObserver(()=>hs.style.setProperty("--hh",hs.clientHeight+"px")).observe(hs); /* sizes the open card */ /* rotation / resize: keep the zoom within the new limits */
 }
 let tlRefit=null;addEventListener("resize",()=>tlRefit?.());
 function exitFS(){document.querySelector(".tlbox.full")?.classList.remove("full");document.body.classList.remove("fs");
