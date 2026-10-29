@@ -130,6 +130,12 @@ select{font-weight:500;font-size:13px;color:var(--fg);background:var(--surface);
 .hscroll[data-lod="mid"]{--cw:120px}
 .hscroll[data-lod="mid"] .hc :is(img,span,small){display:none}.hscroll[data-lod="mid"] .hc{padding:7px 9px}.hscroll[data-lod="mid"] .hc b{font-size:12px}
 .hscroll[data-lod="dots"] :is(.hc,.yr,.stem){display:none}
+/* Overview: hovering (or keyboard-focusing) a dot shows that event's card; a wider invisible ring makes the small dots easy to hit */
+.hscroll[data-lod="dots"] .dot::after{content:"";position:absolute;inset:-9px;border-radius:50%}
+.hscroll[data-lod="dots"] .hev:is(:hover,:focus-visible){z-index:5}
+.hscroll[data-lod="dots"] .hev:is(:hover,:focus-visible) .hc{display:flex;border-color:var(--accent);box-shadow:0 8px 24px rgb(0 0 0/.18)}
+.hscroll[data-lod="dots"] .hev:is(:hover,:focus-visible) :is(.yr,.stem){display:block}
+.hscroll[data-lod="dots"] .hev:is(:hover,:focus-visible) .dot{transform:scale(1.6)}
 .hscroll[data-lod="dots"] .dot{width:7px;height:7px;left:-4.5px;margin-top:-4.5px;border-width:1px;box-shadow:0 0 0 1px var(--accent)}
 .hscroll[data-lod="dots"] .seg{height:calc(var(--ax) - 24px);align-items:flex-start;justify-content:center;padding-top:10px;cursor:zoom-in}
 .hscroll[data-lod="dots"] .segl{position:static;padding:0;writing-mode:vertical-rl;max-width:none;max-height:100%}
