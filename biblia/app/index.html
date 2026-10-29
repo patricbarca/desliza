@@ -138,7 +138,8 @@ select{font-weight:500;font-size:13px;color:var(--fg);background:var(--surface);
    --hh = track height set from JS), text on the right. */
 .hev.up{--room:calc(var(--hh,620px) / 2 + 27px - 64px)}.hev.down{--room:calc(var(--hh,620px) / 2 - 27px - 64px)}
 .hscroll[data-lod] .hev:is(:hover,:focus-visible) .hc{display:grid;grid-template-columns:auto minmax(170px,1fr);grid-template-rows:auto auto 1fr;align-content:start;column-gap:14px;row-gap:4px;
-  width:max-content;max-width:min(560px,92vw);max-height:var(--room);overflow:hidden;padding:12px 14px;border-color:var(--accent);box-shadow:0 10px 30px rgb(0 0 0/.22)}
+  width:max-content;max-width:min(560px,92vw);max-height:var(--room);overflow:hidden;padding:12px 14px;border-color:var(--accent);box-shadow:0 10px 30px rgb(0 0 0/.22);
+  transform:translateX(calc(-50% + var(--dx,0px)));transition:border-color .15s}
 .hscroll[data-lod] .hev:is(:hover,:focus-visible) .hc :is(span,small){display:block;grid-column:2;max-width:240px}
 .hscroll[data-lod] .hev:is(:hover,:focus-visible) .hc b{font-size:15px;grid-column:2;max-width:240px}
 .hscroll[data-lod] .hev:is(:hover,:focus-visible) .hc span{-webkit-line-clamp:unset;overflow:visible}
@@ -685,7 +686,15 @@ function tlZoom(hs){
     const x=+g.dataset.x,w=+g.dataset.sw,z=Math.max(zmin(),Math.min(1,hs.clientWidth/w*.94));
     apply(z);hs.scrollTo({left:x*z+pad(z)-(hs.clientWidth-w*z)/2})}));
   tlRefit=()=>{if(hs.isConnected)setZ(tlZ)};
-  new ResizeObserver(()=>hs.style.setProperty("--hh",hs.clientHeight+"px")).observe(hs); /* sizes the open card */ /* rotation / resize: keep the zoom within the new limits */
+  new ResizeObserver(()=>hs.style.setProperty("--hh",hs.clientHeight+"px")).observe(hs); /* sizes the open card */
+  /* keep an open card inside the visible window: measure it centred, then slide it in from whichever edge it crosses */
+  const fit=h=>{const cur=parseFloat(h.style.getPropertyValue("--dx"))||0,r=h.querySelector(".hc").getBoundingClientRect(),b=hs.getBoundingClientRect(),m=10;
+    const L=r.left-cur,R=r.right-cur; /* where the card sits when centred on its dot */
+    h.style.setProperty("--dx",(L<b.left+m?b.left+m-L:R>b.right-m?b.right-m-R:0)+"px")};
+  const open=e=>{const h=e.target.closest?.(".hev");if(h&&h.matches(":hover,:focus-visible"))fit(h)};
+  hs.addEventListener("mouseover",open);hs.addEventListener("focusin",open);
+  hs.addEventListener("load",open,true); /* the engraving loads lazily and widens the card */
+  hs.addEventListener("scroll",()=>{const h=hs.querySelector(".hev:hover");if(h)fit(h)},{passive:true}); /* rotation / resize: keep the zoom within the new limits */
 }
 let tlRefit=null;addEventListener("resize",()=>tlRefit?.());
 function exitFS(){document.querySelector(".tlbox.full")?.classList.remove("full");document.body.classList.remove("fs");
