@@ -1,0 +1,295 @@
+{
+ "resumen": "Cuando el Imperio romano de Occidente desapareció, los reinos germánicos ocuparon su lugar. Los francos acabaron dominando gran parte de Europa occidental. Su rey más famoso, Carlomagno, fue coronado emperador en Roma en el año 800 e impulsó las escuelas y la copia de libros desde su corte de Aquisgrán. Tras su muerte, el imperio se dividió y, entre invasiones, el poder pasó a señores locales con castillos y vasallos. Los campesinos sostenían ese mundo, y los monasterios guardaron buena parte de los libros antiguos.",
+ "historias": [
+  {
+   "titulo": "Clodoveo y los reinos que sucedieron a Roma",
+   "fecha": "481 – c. 508",
+   "anio": 496,
+   "lugar": {
+    "nombre": "Reims, Francia",
+    "lat": 49.2535,
+    "lon": 4.0341
+   },
+   "texto": "En 476, un jefe germano llamado Odoacro depuso al último emperador romano de Occidente, un muchacho llamado Rómulo Augústulo. El poder pasó a reinos germánicos: visigodos en Hispania, ostrogodos en Italia, vándalos en el norte de África. En el norte de la Galia mandaban los francos. En 481, Clodoveo se convirtió en rey de una de sus tribus. Con el tiempo unió a casi todos los francos y venció a sus vecinos. Según Gregorio de Tours, que escribió casi un siglo después, se bautizó en Reims tras prometerlo durante una batalla. Eligió el cristianismo católico y no el arriano, otra versión de la fe que seguían los godos. Así se ganó a los obispos y a los galorromanos.",
+   "imagen_wikipedia": "Clovis I",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Carlos Martel frena una incursión en Poitiers",
+   "fecha": "Octubre de 732",
+   "anio": 732,
+   "lugar": {
+    "nombre": "Entre Poitiers y Tours, Francia",
+    "lat": 46.58,
+    "lon": 0.34
+   },
+   "texto": "En 732, un ejército de al-Ándalus cruzó los Pirineos y avanzó hacia Tours, quizá atraído por las riquezas de la iglesia de San Martín. Lo dirigía el gobernador Abd al-Rahman al-Ghafiqi. Algunos historiadores sitúan la batalla en 733. Entre Poitiers y Tours le salió al paso Carlos Martel, mayordomo de palacio de los francos. Era el hombre que de verdad mandaba, por encima de unos reyes merovingios que ya no tenían poder. El gobernador murió en el combate y su ejército se retiró de noche. La victoria dio un enorme prestigio a Carlos, que fue el abuelo de Carlomagno.",
+   "imagen_wikipedia": "Battle of Tours",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Cronistas cristianos de la época",
+     "relato": "La llamada Crónica mozárabe de 754 la escribió un cristiano que vivía en al-Ándalus. Describe a los vencedores como «europenses», uno de los primeros usos conocidos de esa palabra para un grupo de personas. La crónica franca conocida como Continuaciones de Fredegario presenta a Carlos como un héroe protegido por Dios frente a los invasores."
+    },
+    {
+     "region": "Fuentes árabes",
+     "relato": "Los autores árabes la mencionan poco, y casi siempre siglos después. La llaman Balat al-Shuhada, «la calzada de los mártires». Para ellos fue una derrota más en una frontera lejana, no el final de una gran conquista. Daban más importancia a los problemas internos de al-Ándalus, como la gran revuelta bereber de 740."
+    },
+    {
+     "region": "Memoria europea posterior",
+     "relato": "Siglos más tarde, escritores como el británico Edward Gibbon, en el siglo XVIII, la convirtieron en la batalla que «salvó a Europa». Muchos historiadores actuales matizan esa idea. Creen que se trató de una gran incursión de saqueo y no de un intento de conquistar todo el continente."
+    }
+   ],
+   "conecta_con": {
+    "capitulo": "media/islam",
+    "texto": "Descubre cómo el islam llegó hasta los Pirineos →"
+   }
+  },
+  {
+   "titulo": "Un rey nuevo, ungido por el papa",
+   "fecha": "751 – 754",
+   "anio": 754,
+   "lugar": {
+    "nombre": "Abadía de Saint-Denis, cerca de París",
+    "lat": 48.9356,
+    "lon": 2.3597
+   },
+   "texto": "Pipino el Breve, hijo de Carlos Martel, heredó el cargo de mayordomo de palacio, pero quería ser rey. En 751 envió a un monasterio al último rey merovingio, Childerico III, y le cortaron el pelo: la larga melena era el símbolo de su dinastía. Los Anales reales francos, escritos décadas después, dicen que el papa Zacarías lo aprobó. En 754, el papa Esteban II necesitaba protección frente a los lombardos y viajó a la Galia. Allí ungió con aceite sagrado a Pipino y a sus hijos en Saint-Denis. Pipino venció a los lombardos y entregó al papa tierras en Italia. Fue el origen de los Estados Pontificios.",
+   "imagen_wikipedia": "Basilica of Saint-Denis",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Roncesvalles, la derrota que se volvió leyenda",
+   "fecha": "15 de agosto de 778",
+   "anio": 778,
+   "lugar": {
+    "nombre": "Roncesvalles, Navarra",
+    "lat": 43.0092,
+    "lon": -1.3194
+   },
+   "texto": "Carlomagno era rey de los francos desde 768 y pasó casi todo su reinado en guerra, sobre todo contra los sajones. En 778 cruzó los Pirineos. Lo habían invitado gobernadores musulmanes del norte de al-Ándalus, enfrentados al emir de Córdoba. La campaña fracasó, porque Zaragoza no le abrió sus puertas. Al regresar derribó las murallas de Pamplona. En un paso de montaña, la retaguardia de su ejército cayó en una emboscada y fue aniquilada. Según su biógrafo Eginardo, entre los muertos estaba Roldán, jefe de la frontera de Bretaña. El lugar exacto del combate se discute.",
+   "imagen_wikipedia": "Battle of Roncevaux Pass",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Crónica oficial franca",
+     "relato": "Los Anales reales, que contaban los hechos del rey, no mencionaron la derrota en su primera versión. Una revisión posterior y la biografía de Eginardo la reconocen. Culpan a los vascones, los habitantes de las montañas, que conocían bien el terreno, atacaron desde arriba y desaparecieron antes de que nadie pudiera vengarse."
+    },
+    {
+     "region": "Épica medieval francesa",
+     "relato": "El Cantar de Roldán, escrito hacia el año 1100, en la época de las primeras cruzadas, transforma por completo la historia. Los atacantes pasan a ser sarracenos, Roldán se convierte en sobrino de Carlomagno y la batalla en una lucha entre cristianos y musulmanes. Hoy es una de las grandes obras de la literatura francesa, pero no es historia."
+    },
+    {
+     "region": "Cronistas árabes",
+     "relato": "Algunos autores árabes posteriores, como Ibn al-Athir en el siglo XIII, cuentan otra versión. Según ellos, Carlomagno llevaba prisionero a Sulaymán al-Arabi, uno de los gobernadores que lo habían invitado. Sus hijos atacaron al ejército franco para liberarlo. Los historiadores discuten si combatieron junto a los vascones."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "La letra con la que lees esto",
+   "fecha": "789 – 804",
+   "anio": 789,
+   "lugar": {
+    "nombre": "Abadía de San Martín de Tours, Francia",
+    "lat": 47.3936,
+    "lon": 0.6848
+   },
+   "texto": "Eginardo cuenta que Carlomagno guardaba tablillas bajo la almohada para practicar la escritura, pero que empezó demasiado tarde y nunca la dominó. Aun así quería sacerdotes y funcionarios instruidos. Por eso reunió en su corte a sabios de toda Europa: el anglosajón Alcuino de York, el lombardo Pablo Diácono y el visigodo Teodulfo. En 789, un decreto llamado Admonitio generalis pidió escuelas en monasterios y catedrales. Alcuino acabó como abad de San Martín de Tours, un gran taller de copia de libros. De esos talleres salió la minúscula carolina, una letra clara y redonda, con las palabras separadas. Es la antepasada de nuestra letra de imprenta.",
+   "imagen_wikipedia": "Carolingian minuscule",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Aquisgrán, la capital junto a las termas",
+   "fecha": "c. 794 – 814",
+   "anio": 796,
+   "lugar": {
+    "nombre": "Capilla Palatina, Aquisgrán (Aachen), Alemania",
+    "lat": 50.7747,
+    "lon": 6.0839
+   },
+   "texto": "Los reyes francos no tenían una capital fija y viajaban de un palacio a otro. En sus últimos años, Carlomagno se quedó casi siempre en Aquisgrán (Aachen), atraído por sus aguas termales. Eginardo cuenta que le encantaba nadar. Allí construyó un palacio y una capilla de ocho lados, con columnas antiguas traídas de Italia. Según la tradición se consagró en 805. Una inscripción hoy perdida daba el nombre de su arquitecto: Odón de Metz. La capilla sigue en pie como corazón de la catedral. En 1978 fue uno de los primeros lugares declarados Patrimonio de la Humanidad.",
+   "imagen_wikipedia": "Palatine Chapel, Aachen",
+   "profundizar": {
+    "titulo": "Lo que queda del palacio de Carlomagno",
+    "parrafos": [
+     "Las excavaciones han permitido reconstruir el conjunto. Un largo corredor unía la capilla con la gran sala de audiencias del rey. Parte de los muros de esa sala siguen en pie dentro del ayuntamiento gótico de la ciudad, construido siglos después sobre sus cimientos.",
+     "La capilla se inspiró en iglesias como San Vitale de Rávena, en Italia. Se conserva una carta del papa Adriano I que autoriza a Carlomagno a llevarse mármoles y mosaicos de un palacio de Rávena. Así se dio a sí mismo un aire de emperador romano.",
+     "En el piso superior se conserva un sencillo trono de piedra. En uno de sus lados alguien grabó un tablero de un juego de mesa antiguo, una prueba de que se reutilizaron piedras más viejas. Los historiadores discuten si lo usó el propio Carlomagno. Lo seguro es que durante unos seis siglos allí se entronizó a los reyes alemanes.",
+     "A Aquisgrán llegaron también embajadas lejanas. Según los Anales reales, en 802 llegó un elefante llamado Abul-Abbas, regalo del califa abasí Harún al-Rashid de Bagdad. El animal vivió en tierras francas hasta 810. Es una muestra de que la corte franca mantenía contactos con el mundo islámico."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Navidad del año 800: un emperador en Roma",
+   "fecha": "25 de diciembre de 800",
+   "anio": 800,
+   "lugar": {
+    "nombre": "Antigua basílica de San Pedro, Roma",
+    "lat": 41.9022,
+    "lon": 12.4539
+   },
+   "texto": "El día de Navidad del año 800, en la basílica de San Pedro, el papa León III colocó una corona sobre la cabeza de Carlomagno. Los presentes lo aclamaron emperador. Hacía más de tres siglos que no había emperador en Occidente. León le debía mucho a Carlomagno: en 799, unos enemigos lo habían atacado en Roma y había huido a pedirle protección. La ceremonia unió tres herencias: el poder de los francos, el recuerdo de Roma y la Iglesia. De esa idea nacería, siglos después, el Sacro Imperio Romano Germánico. La basílica de entonces ya no existe. En el siglo XVI la sustituyó la actual.",
+   "imagen_wikipedia": "Old St. Peter's Basilica",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "La corte franca",
+     "relato": "Eginardo escribe que Carlomagno aseguró que, si hubiera sabido lo que planeaba el papa, no habría entrado en la iglesia aquel día, aunque fuera una gran fiesta. Los historiadores no se ponen de acuerdo. Pudo ser modestia de cortesía o pudo molestarle que el papa apareciera como quien «daba» la corona."
+    },
+    {
+     "region": "El papado",
+     "relato": "La biografía oficial de los papas, el Liber Pontificalis, pone en el centro al papa que corona y al pueblo de Roma que aclama. Con los siglos, los papas usaron este gesto para defender que el emperador recibía su poder de la Iglesia. Esa idea provocó grandes choques con los emperadores en la Edad Media."
+    },
+    {
+     "region": "Bizancio",
+     "relato": "Para Constantinopla ya existía un emperador romano, en ese momento una mujer, la emperatriz Irene. La coronación parecía una usurpación de un rey bárbaro. Hubo años de tensión. Hacia 812, el emperador Miguel I aceptó llamar emperador a Carlomagno, pero sin reconocerlo como emperador «de los romanos»."
+    }
+   ],
+   "conecta_con": {
+    "capitulo": "media/bizancio",
+    "texto": "Conoce el otro Imperio romano, en Constantinopla →"
+   }
+  },
+  {
+   "titulo": "El monasterio ideal dibujado en pergamino",
+   "fecha": "c. 820 – 830",
+   "anio": 820,
+   "lugar": {
+    "nombre": "Abadía de San Galo (St. Gallen), Suiza",
+    "lat": 47.4233,
+    "lon": 9.3767
+   },
+   "texto": "Hacia el año 612, según la tradición, un monje irlandés llamado Galo se retiró a vivir cerca del lago de Constanza. En aquel lugar creció la abadía de San Galo. Hacia 820, en un monasterio cercano, alguien dibujó para su abad el plano de un monasterio ideal. Es el Plan de San Galo, el plano de arquitectura más antiguo conservado de la Edad Media europea. Muestra iglesia, claustro, huerto, hospital, escuela, cervecería y establos. También aparece la sala donde se copiaban libros. Los monjes seguían la Regla de san Benito: rezar, trabajar y leer.",
+   "imagen_wikipedia": "Plan of Saint Gall",
+   "profundizar": {
+    "titulo": "Copiar para no olvidar",
+    "parrafos": [
+     "El plano está dibujado con tinta roja sobre cinco piezas de pergamino cosidas. Tiene cientos de inscripciones que explican cada edificio. Una dedicatoria indica que se hizo para Gozberto, abad de San Galo. Se cree que salió del monasterio de Reichenau, en una isla del lago de Constanza. Nunca se construyó tal cual, pero muestra cómo imaginaban un monasterio perfecto.",
+     "En el scriptorium, la sala de copia, los monjes escribían con plumas de ave sobre pergamino, hecho con piel de animales. Un libro grande podía necesitar la piel de muchos animales, así que cada copia era muy cara. A veces los copistas dejaban notas en los márgenes quejándose del frío, del cansancio o de la mala tinta.",
+     "Gracias a ese trabajo sobrevivieron muchos autores de la Antigüedad. De bastantes escritores latinos, como Julio César o Lucrecio, las copias más antiguas que conservamos de sus obras son del siglo IX, de la época carolingia. Sin esas copias, muchos textos se habrían perdido.",
+     "La biblioteca de la abadía de San Galo sigue abierta y guarda manuscritos de los siglos VIII y IX, entre ellos el propio plano. En 1983, el conjunto de la abadía fue declarado Patrimonio de la Humanidad."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Los campesinos del abad Irminón",
+   "fecha": "c. 823 – 829",
+   "anio": 823,
+   "lugar": {
+    "nombre": "Abadía de Saint-Germain-des-Prés, París",
+    "lat": 48.8539,
+    "lon": 2.334
+   },
+   "texto": "Casi toda la gente de esta época era campesina. Hacia 823-829, Irminón, abad de Saint-Germain-des-Prés, junto a París, mandó hacer un inventario de las tierras del monasterio. Hoy se llama el políptico de Irminón. Anota, familia por familia, quién vive en cada manso, la parcela que cultivaba una familia. También indica qué debe pagar y cuántos días trabaja para el monasterio. Aparecen colonos libres, siervos y antiguos esclavos liberados, con sus nombres y los de sus hijos. Pagaban con pollos, huevos, vino o madera. Pocas veces conocemos tan de cerca a gente corriente de hace doce siglos.",
+   "imagen_wikipedia": "Abbey of Saint-Germain-des-Prés",
+   "profundizar": {
+    "titulo": "Cómo se trabajaba la tierra",
+    "parrafos": [
+     "El sistema se llama hoy régimen dominical. Las tierras de un gran propietario se dividían en dos partes. La reserva la explotaba directamente el señor. El resto se repartía en mansos entregados a familias campesinas. A cambio, esas familias pagaban en productos y trabajaban gratis en la reserva varios días al año: araban, segaban o acarreaban.",
+     "Un siervo no era exactamente un esclavo como en Roma. Solía tener familia, casa y una parcela propia. Pero estaba atado a la tierra y a su señor, y sus obligaciones eran más duras que las de un colono libre. La esclavitud seguía existiendo en la época carolingia, aunque iba disminuyendo.",
+     "Hay otro documento revelador, el Capitulare de villis, de hacia el año 800. En él Carlomagno da instrucciones para administrar sus fincas. Pide llevar cuentas, cuidar molinos y colmenas y cultivar una larga lista de plantas, hierbas y árboles frutales. Nos dice qué se esperaba de una explotación bien llevada.",
+     "El manuscrito del políptico está incompleto. Los historiadores lo usan para calcular cuántas personas vivían en cada familia y cuánto producían. Sus cifras se discuten, porque no sabemos si el documento anotaba a todos los habitantes o solo a quienes tenían obligaciones con el monasterio."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Tres nietos y un imperio partido",
+   "fecha": "842 – 843",
+   "anio": 843,
+   "lugar": {
+    "nombre": "Verdún, Francia",
+    "lat": 49.1598,
+    "lon": 5.3844
+   },
+   "texto": "Carlomagno murió en Aquisgrán en 814. Su hijo Luis el Piadoso mantuvo unido el imperio con dificultad, y sus nietos acabaron peleándolo en una guerra. En 842, en Estrasburgo, dos de ellos, Carlos el Calvo y Luis el Germánico, se juraron alianza delante de sus tropas. Cada uno habló en la lengua del ejército del otro: una lengua romance, antepasada del francés, y un alemán antiguo. El cronista Nitardo copió esas palabras. Son los Juramentos de Estrasburgo, de los primeros textos escritos en esas lenguas. En 843, el Tratado de Verdún dividió el imperio en tres reinos. Del occidental y del oriental saldrían, con los siglos, Francia y Alemania.",
+   "imagen_wikipedia": "Oaths of Strasbourg",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Torres de piedra y hombres de rodillas",
+   "fecha": "Siglos IX y X; torre de Langeais c. 994",
+   "anio": 994,
+   "lugar": {
+    "nombre": "Langeais, valle del Loira, Francia",
+    "lat": 47.3247,
+    "lon": 0.4058
+   },
+   "texto": "En los siglos IX y X llegaron ataques por todas partes. Los vikingos remontaban los ríos en sus barcos, los magiares (húngaros) llegaban a caballo desde el este y había saqueadores musulmanes en las costas del Mediterráneo. Los reyes llegaban tarde, así que la defensa quedó en manos de condes y señores locales. Así se extendieron los castillos, al principio torres de madera sobre montículos de tierra. Hacia 994, Fulco Nerra, conde de Anjou, levantó en Langeais una torre de piedra. Sus restos se consideran de los más antiguos de Francia. Desde su castillo, un señor protegía, juzgaba, cobraba y mandaba sobre los campesinos de alrededor.",
+   "imagen_wikipedia": "Château de Langeais",
+   "profundizar": {
+    "titulo": "Señores, vasallos y una palabra discutida",
+    "parrafos": [
+     "El vínculo entre un señor y su vasallo se sellaba con el homenaje. El vasallo, de rodillas, ponía sus manos juntas entre las del señor y se declaraba «su hombre». Después juraba fidelidad sobre reliquias o sobre los Evangelios. Una de las descripciones más detalladas de esta ceremonia es de Flandes, en 1127.",
+     "A cambio de su ayuda militar y de sus consejos, el vasallo solía recibir un feudo. Normalmente eran tierras con sus campesinos, que le permitían mantener caballo, armas y hombres. Un mismo noble podía ser vasallo de un señor más poderoso y, a la vez, señor de otros vasallos.",
+     "Durante mucho tiempo se creyó que el decreto de Quierzy, de 877, había hecho hereditarios los cargos y los feudos. Hoy muchos historiadores piensan que fue una medida provisional del rey Carlos el Calvo antes de partir a Italia. Aun así, en la práctica, los hijos solían heredar las tierras y el poder de sus padres.",
+     "La palabra «feudalismo» no se usaba en la Edad Media. La inventaron juristas e historiadores de los siglos XVII y XVIII. Algunos historiadores, como la británica Susan Reynolds, han criticado que se use como si fuera un sistema igual en toda Europa. En realidad variaba mucho de una región a otra."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/vikingos",
+    "texto": "Navega con los vikingos que remontaban los ríos →"
+   }
+  },
+  {
+   "titulo": "El año 1000: abrir la tumba de Carlomagno",
+   "fecha": "Pentecostés del año 1000",
+   "anio": 1000,
+   "lugar": {
+    "nombre": "Catedral de Aquisgrán (Aachen), Alemania",
+    "lat": 50.7747,
+    "lon": 6.0839
+   },
+   "texto": "En el año 1000, el joven emperador Otón III, de 19 años, viajó a Aquisgrán y mandó abrir la tumba de Carlomagno. Su abuelo, Otón I, había derrotado a los húngaros en Lechfeld en 955 y fue coronado emperador en Roma en 962. Así resucitó el título imperial. Thietmar de Merseburgo, un cronista de la época, cuenta que Otón III se llevó una cruz de oro y parte de las ropas del difunto. Una crónica posterior, la de Novalesa, añade que lo encontraron sentado en un trono, intacto. Casi seguro es una leyenda. Para entonces, Carlomagno ya se había convertido en un mito que franceses y alemanes reclamarían como propio.",
+   "imagen_wikipedia": "Otto III, Holy Roman Emperor",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  }
+ ],
+ "notas_revision": [
+  "Clodoveo: la fecha de su bautismo es discutida (496, 498/499 o 508); comprobar que el rango «c. 496–508» es adecuado y que en 481 era rey de los francos salios de Tournai.",
+  "Poitiers: confirmar el debate sobre la fecha (732 frente a 733) y el uso de «europenses» en la Crónica mozárabe de 754.",
+  "Pipino: verificar que la aprobación del papa Zacarías procede de los Anales reales francos (redactados hacia 788 o más tarde) y que la unción de 754 en Saint-Denis incluyó a sus hijos.",
+  "Roncesvalles: comprobar la fecha del 15 de agosto de 778 (procede del epitafio de Eggihard), el cargo de Roldán («prefecto de la marca de Bretaña» en Eginardo) y el relato de Ibn al-Athir sobre los hijos de Sulaymán al-Arabi.",
+  "Admonitio generalis (789): confirmar fecha y que pide escuelas en monasterios y catedrales.",
+  "Capilla Palatina: comprobar la consagración en 805 (tradicional), la inscripción que atribuye la obra a Odón de Metz, la carta de Adriano I sobre los mármoles de Rávena y la inclusión en el Patrimonio Mundial en 1978.",
+  "Trono de Aquisgrán: verificar el tablero de juego grabado en un lateral y el periodo de coronaciones alemanas (936–1531).",
+  "Elefante Abul-Abbas: confirmar llegada en 802 y muerte en 810 según los Anales reales.",
+  "Plan de San Galo: confirmar la datación (c. 820–830), su origen en Reichenau, la dedicatoria al abad Gozberto y las cinco piezas de pergamino.",
+  "Comprobar que las copias más antiguas de Lucrecio y de la Guerra de las Galias de César son del siglo IX.",
+  "Políptico de Irminón: verificar la datación (c. 823–829) y el estado incompleto del manuscrito.",
+  "Langeais: confirmar la datación de la torre de Fulco Nerra (c. 994) y su consideración como una de las más antiguas de piedra en Francia.",
+  "Juramentos de Estrasburgo: confirmar la fecha (14 de febrero de 842) y el reparto de lenguas entre los dos reyes.",
+  "Otón III: confirmar su edad en el año 1000 (nacido en 980), el relato de Thietmar (cruz de oro y ropas) y la versión de la Crónica de Novalesa.",
+  "Comprobar que existen en la Wikipedia en inglés los artículos «Abbey of Saint-Germain-des-Prés», «Battle of Roncevaux Pass» y «Palatine Chapel, Aachen» con esos títulos exactos."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "carlomagno",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:01.853518+00:00",
+  "uso": {
+   "input_tokens": 4084,
+   "output_tokens": 25206,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.2602
+ }
+}

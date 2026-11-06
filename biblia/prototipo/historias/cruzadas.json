@@ -1,0 +1,297 @@
+{
+ "resumen": "Entre 1096 y 1291, ejércitos cristianos de Europa marcharon hacia Oriente para conquistar Jerusalén y defender lo conquistado. Este capítulo cuenta esas guerras desde varios lados. Empieza con el llamamiento del papa en Clermont y las matanzas de judíos en el Rin. Sigue con la sangrienta toma de Jerusalén, la vida en los estados cruzados y la reacción musulmana de Nur al-Din y Saladino. Pasa por el saqueo cristiano de Constantinopla y la caída de Acre ante los mamelucos. Termina con lo que significan hoy las cruzadas en Europa, en el mundo árabe, entre los ortodoxos y entre los judíos.",
+ "historias": [
+  {
+   "titulo": "Clermont, 1095: un papa llama a la guerra",
+   "fecha": "27 de noviembre de 1095",
+   "anio": 1095,
+   "lugar": {
+    "nombre": "Clermont (hoy Clermont-Ferrand), Francia",
+    "lat": 45.7772,
+    "lon": 3.087
+   },
+   "texto": "En 1095, el emperador bizantino Alejo I Comneno pidió ayuda a Occidente, porque los turcos selyúcidas habían conquistado casi toda Anatolia. El papa Urbano II respondió a lo grande. El 27 de noviembre, en un campo a las afueras de Clermont, en Francia, llamó a los cristianos a marchar hacia Oriente y liberar Jerusalén. A quien fuera con fe le prometió el perdón de sus pecados. La respuesta superó lo previsto: decenas de miles de personas, desde caballeros hasta campesinos, cosieron una cruz en su ropa. Nadie hablaba aún de «cruzadas». Ellos lo llamaban peregrinación.",
+   "imagen_wikipedia": "Council of Clermont",
+   "profundizar": {
+    "titulo": "¿Qué dijo realmente Urbano II?",
+    "parrafos": [
+     "No conservamos el discurso. Tenemos cuatro versiones escritas por cronistas: Fulquerio de Chartres, Roberto el Monje, Baldrico de Dol y Guiberto de Nogent. Algunos dicen haber estado allí, pero todos escribieron después de 1099, cuando ya sabían que Jerusalén había caído. Cada uno puso en boca del papa lo que le pareció adecuado.",
+     "Las versiones no coinciden. Fulquerio insiste en ayudar a los cristianos de Oriente. Roberto describe con detalle atrocidades atribuidas a los turcos y añade el grito «Dios lo quiere» (Deus vult), que el público habría coreado. Los historiadores tratan estos textos como reconstrucciones, no como actas.",
+     "Sí se conservan algunas cartas del propio Urbano, enviadas entre otros a los fieles de Flandes y de Bolonia. En ellas habla de liberar las iglesias de Oriente y presenta la expedición como una penitencia que sustituía a otras. Son la prueba más directa de lo que pretendía.",
+     "Las motivaciones de quienes partieron siguen discutiéndose. Hubo fe sincera, deseo de penitencia, ambición de tierras y botín, y presión familiar. El viaje era carísimo: muchos caballeros vendieron o empeñaron propiedades para pagarlo, lo que sugiere que el dinero no era el único motor."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Primavera de 1096: matanzas junto al Rin",
+   "fecha": "mayo de 1096",
+   "anio": 1096,
+   "lugar": {
+    "nombre": "Maguncia (Mainz), Alemania",
+    "lat": 49.9929,
+    "lon": 8.2473
+   },
+   "texto": "Antes de llegar a Oriente, algunos grupos de cruzados se volvieron contra quienes tenían cerca. En la primavera de 1096, bandas dirigidas, entre otros, por el conde Emicho atacaron las comunidades judías de Espira, Worms y Maguncia, junto al río Rin. Su lógica era brutal: ¿por qué ir lejos a combatir a los «enemigos de Cristo» si había otros en casa? A los judíos se les ofrecía bautizarse o morir. Algunos obispos intentaron protegerlos, con desigual éxito. Se calcula que murieron varios miles de personas. Para la memoria judía, 1096 se convirtió en una herida que aún se recuerda.",
+   "imagen_wikipedia": "Rhineland massacres",
+   "profundizar": {
+    "titulo": "Lo que cuentan las crónicas hebreas",
+    "parrafos": [
+     "Conocemos estos hechos sobre todo por tres crónicas escritas en hebreo en el siglo XII, entre ellas la de Salomón bar Sansón y la llamada Anónimo de Maguncia. Narran casi día a día los ataques, dan nombres de víctimas y recogen el dolor de los supervivientes.",
+     "Según estas crónicas, en Espira el obispo Juan dio refugio a los judíos y castigó a algunos agresores, y allí murieron pocas personas. En Maguncia, en cambio, el arzobispo Ruthard no logró o no quiso frenar el ataque, y la comunidad, una de las más importantes de Europa, fue arrasada a finales de mayo.",
+     "Las fuentes describen también un hecho terrible: algunos judíos mataron a sus familias y se quitaron la vida antes que aceptar el bautismo forzoso. Lo entendían como kidush hashem, la «santificación del nombre de Dios». Las crónicas los presentan como mártires.",
+     "Hubo cronistas cristianos, como Alberto de Aquisgrán, que condenaron las matanzas. Pero la violencia se repitió. En 1146, el abad Bernardo de Claraval tuvo que intervenir para frenar a un monje que predicaba contra los judíos. En 1190, en York, Inglaterra, la comunidad judía murió atrapada en la torre del castillo."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "15 de julio de 1099: cae Jerusalén",
+   "fecha": "15 de julio de 1099",
+   "anio": 1099,
+   "lugar": {
+    "nombre": "Jerusalén",
+    "lat": 31.7767,
+    "lon": 35.2345
+   },
+   "texto": "Tras tres años de marcha, hambre y combates, lo que quedaba del ejército cruzado, quizá algo más de diez mil combatientes, llegó a Jerusalén en junio de 1099. La ciudad no estaba en manos de los turcos, sino del califato fatimí de Egipto, que la había recuperado poco antes. Tras unas cinco semanas de asedio, el 15 de julio los cruzados entraron usando torres de madera. Siguió una matanza de musulmanes y judíos que impresionó incluso a cronistas cristianos. El gobernador fatimí y su guardia salieron con vida a cambio de entregar la Torre de David. Nacía el reino latino de Jerusalén.",
+   "imagen_wikipedia": "Siege of Jerusalem (1099)",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Los cronistas cruzados",
+     "relato": "Los cronistas que acompañaban al ejército, como Raimundo de Aguilers, describieron la matanza como un castigo justo y usaron imágenes bíblicas exageradas, con la sangre inundando el recinto del Templo. Para ellos era el cumplimiento de una promesa divina: Jerusalén volvía a manos cristianas después de más de cuatro siglos."
+    },
+    {
+     "region": "Los cronistas musulmanes",
+     "relato": "Ibn al-Qalanisi, que escribía en Damasco, contó que los francos quemaron la sinagoga con judíos dentro. Un siglo más tarde, Ibn al-Athir habló de 70.000 muertos en la mezquita de al-Aqsa, cifra que los historiadores actuales consideran muy exagerada. En su momento la caída tuvo poco eco: los gobernantes musulmanes estaban divididos y tardaron décadas en reaccionar."
+    },
+    {
+     "region": "Los documentos judíos",
+     "relato": "Cartas halladas en la Guenizá de El Cairo, un enorme depósito de papeles medievales, muestran otra cara. La comunidad judía de Ascalón reunió dinero para rescatar cautivos judíos de Jerusalén y libros sagrados. Estas cartas sugieren que no todos murieron y que la masacre, aunque terrible, fue menor de lo que dicen algunas crónicas."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Monjes con espada: templarios y hospitalarios",
+   "fecha": "1142",
+   "anio": 1142,
+   "lugar": {
+    "nombre": "Krak de los Caballeros, Siria",
+    "lat": 34.7569,
+    "lon": 36.2947
+   },
+   "texto": "Tras la conquista, la mayoría de los cruzados volvió a casa. Los nuevos estados cristianos de Oriente, que los europeos llamaban Ultramar, tenían pocos soldados. La solución fue original: órdenes de monjes guerreros. Los templarios nacieron hacia 1120 para proteger a los peregrinos en los caminos. Los hospitalarios empezaron cuidando enfermos en un hospital de Jerusalén y acabaron también armados. Hacían votos de pobreza y obediencia, pero luchaban a caballo. En 1142, los hospitalarios recibieron un castillo en Siria que convirtieron en una de las fortalezas más impresionantes de su tiempo: el Krak de los Caballeros. Hoy es Patrimonio de la Humanidad.",
+   "imagen_wikipedia": "Krak des Chevaliers",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Un púlpito para una ciudad que no era suya",
+   "fecha": "c. 1168",
+   "anio": 1168,
+   "lugar": {
+    "nombre": "Alepo, Siria",
+    "lat": 36.2021,
+    "lon": 37.1343
+   },
+   "texto": "Durante décadas, los señores musulmanes de Siria lucharon más entre sí que contra los francos. Eso cambió en 1144, cuando el gobernante turco Zengi conquistó Edesa, el primer estado cruzado. La segunda cruzada, enviada en respuesta, fracasó ante Damasco. Nur al-Din, hijo de Zengi, unificó Siria y difundió la idea de yihad, guerra santa, para recuperar Jerusalén. Hacia 1168 encargó en Alepo un minbar, el púlpito de una mezquita, de madera finamente tallada. Era para la mezquita de al-Aqsa, en una ciudad que aún no controlaba. Murió en 1174 sin verla. Lo colocaría allí Saladino.",
+   "imagen_wikipedia": "Al-Aqsa Mosque",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Usama, el vecino que observaba a los francos",
+   "fecha": "c. 1183",
+   "anio": 1183,
+   "lugar": {
+    "nombre": "Shaizar, Siria",
+    "lat": 35.2667,
+    "lon": 36.5667
+   },
+   "texto": "Usama ibn Munqidh nació en 1095 en Shaizar, un castillo del norte de Siria, y vivió casi un siglo de cruzadas. Fue guerrero, diplomático, cazador y poeta. Ya anciano escribió unas memorias llenas de anécdotas sobre los francos, como llamaban los musulmanes a los cruzados. Los admiraba como guerreros y los veía toscos en casi todo lo demás. Cuenta que un médico franco hizo cortar de un hachazo la pierna de un herido, que murió, mientras un médico cristiano de la región curaba con dietas y emplastos. Pero también narra amistades: unos templarios le dejaban rezar en la mezquita de al-Aqsa.",
+   "imagen_wikipedia": "Shaizar",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/edad-de-oro-islamica",
+    "texto": "Descubre la ciencia de la edad de oro islámica →"
+   }
+  },
+  {
+   "titulo": "Saladino recupera Jerusalén",
+   "fecha": "2 de octubre de 1187",
+   "anio": 1187,
+   "lugar": {
+    "nombre": "Jerusalén",
+    "lat": 31.778,
+    "lon": 35.2354
+   },
+   "texto": "Salah al-Din Yusuf, a quien Europa llamó Saladino, era de familia kurda. Llegó a gobernar Egipto y Siria y retomó el proyecto de Nur al-Din. El 4 de julio de 1187 destrozó al ejército del reino de Jerusalén en los Cuernos de Hattin, cerca del lago de Tiberíades. Después sitió Jerusalén, que se rindió el 2 de octubre tras una negociación. No hubo matanza: los habitantes cristianos pudieron salir pagando un rescate. El contraste con 1099 no pasó desapercibido, ni entonces ni después. Sin embargo, muchos de los que no pudieron pagar fueron esclavizados.",
+   "imagen_wikipedia": "Saladin",
+   "profundizar": {
+    "titulo": "Cómo se negoció la rendición",
+    "parrafos": [
+     "Conocemos los hechos por varias fuentes. Dos eran hombres cercanos a Saladino: su secretario Imad al-Din al-Isfahani y el juez Baha al-Din ibn Shaddad, que escribió su biografía. Del lado cristiano, la crónica atribuida a Ernoul, escudero de un noble franco, da la versión de los vencidos.",
+     "La defensa la dirigía Balián de Ibelín. Según las crónicas, cuando Saladino amenazó con tomar la ciudad al asalto, Balián respondió que los defensores destruirían los lugares santos musulmanes antes que rendirse sin condiciones. Saladino aceptó negociar. Según las fuentes, el rescate fue de diez dinares por hombre, cinco por mujer y uno por niño.",
+     "Miles de pobres no podían pagar. Las crónicas cuentan que Saladino y su hermano al-Adil dejaron marchar gratis a grupos de ancianos y pobres. Aun así, según los cálculos de la época, varios miles acabaron esclavizados. La generosidad de Saladino fue real, pero tuvo límites.",
+     "Saladino retiró la gran cruz que los cruzados habían puesto sobre la Cúpula de la Roca, devolvió la mezquita de al-Aqsa al culto islámico e instaló en ella el minbar de Nur al-Din. Los cristianos orientales pudieron quedarse y se permitió a los judíos volver a vivir en la ciudad."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Ricardo y Saladino: una guerra sin vencedor",
+   "fecha": "2 de septiembre de 1192",
+   "anio": 1192,
+   "lugar": {
+    "nombre": "Jaffa",
+    "lat": 32.0543,
+    "lon": 34.7516
+   },
+   "texto": "La caída de Jerusalén provocó la tercera cruzada, con los reyes de Inglaterra y Francia y el emperador alemán, que murió ahogado en un río de Anatolia. El inglés Ricardo Corazón de León tomó Acre en 1191 y, ante el retraso de un intercambio pactado, mandó ejecutar a entre 2.600 y 3.000 prisioneros musulmanes, según las fuentes. Venció a Saladino en Arsuf y llegó dos veces cerca de Jerusalén, pero dio media vuelta. En 1192 firmaron la paz de Jaffa: los cristianos conservaban la costa y los peregrinos podían visitar la ciudad santa. Las crónicas añaden gestos caballerescos entre ambos, seguramente adornados.",
+   "imagen_wikipedia": "Richard I of England",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "1204: cruzados contra cristianos",
+   "fecha": "12-15 de abril de 1204",
+   "anio": 1204,
+   "lugar": {
+    "nombre": "Constantinopla (hoy Estambul)",
+    "lat": 41.0086,
+    "lon": 28.9802
+   },
+   "texto": "La cuarta cruzada iba a atacar Egipto, pero los cruzados no podían pagar los barcos encargados a Venecia. Para saldar la deuda, primero conquistaron Zara, una ciudad cristiana del Adriático. Después aceptaron ayudar a un príncipe bizantino exiliado a recuperar el trono a cambio de dinero. Cuando el pago no llegó, asaltaron Constantinopla. Durante tres días de abril de 1204 saquearon la mayor ciudad cristiana del mundo: iglesias, palacios y bibliotecas. Fundaron un imperio latino que duró hasta 1261. Bizancio sobrevivió, pero nunca recuperó su antigua fuerza.",
+   "imagen_wikipedia": "Horses of Saint Mark",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Bizancio",
+     "relato": "Nicetas Coniata, alto funcionario que huyó de la ciudad, escribió un relato desgarrado: soldados profanando Santa Sofía, reliquias robadas, mujeres violadas. Llegó a comparar a los cruzados con los musulmanes de Saladino, que habían sido más compasivos en Jerusalén. Para el mundo ortodoxo, 1204 abrió con Occidente una ruptura más profunda que la separación de las Iglesias en 1054."
+    },
+    {
+     "region": "Los cruzados",
+     "relato": "Godofredo de Villehardouin, uno de los jefes, presentó el desvío como una cadena de decisiones forzadas por las deudas y por la deslealtad de los bizantinos. Roberto de Clari, un caballero modesto, describió maravillado las riquezas de la ciudad. El papa Inocencio III, que había prohibido atacar a cristianos, condenó la violencia, aunque aceptó el nuevo imperio latino."
+    },
+    {
+     "region": "Venecia",
+     "relato": "Venecia fue la gran ganadora: obtuvo puertos, islas y un enorme botín. Los cuatro caballos de bronce de la basílica de San Marcos fueron llevados desde el hipódromo de Constantinopla. Durante siglos se exhibieron como trofeo y símbolo del poder de la república. Hoy los originales se guardan dentro de la basílica y en la fachada hay copias."
+    }
+   ],
+   "conecta_con": {
+    "capitulo": "media/bizancio",
+    "texto": "Conoce la historia completa de Bizancio →"
+   }
+  },
+  {
+   "titulo": "Un emperador recupera Jerusalén sin luchar",
+   "fecha": "18 de febrero de 1229",
+   "anio": 1229,
+   "lugar": {
+    "nombre": "Iglesia del Santo Sepulcro, Jerusalén",
+    "lat": 31.7785,
+    "lon": 35.2296
+   },
+   "texto": "Federico II, emperador germánico y rey de Sicilia, se rodeaba de sabios musulmanes y, según se decía, hablaba árabe. El papa lo había excomulgado por retrasar su cruzada, pero aun así viajó a Oriente en 1228. Allí negoció con el sultán de Egipto al-Kamil, sobrino de Saladino, que tenía sus propios conflictos familiares. En febrero de 1229 firmaron un acuerdo: Jerusalén volvía a los cristianos durante diez años, pero la explanada de las mezquitas seguía en manos musulmanas. Muchos, en ambos bandos, lo vieron como una traición. En 1244 la ciudad se perdió de nuevo, ya para el resto de la Edad Media.",
+   "imagen_wikipedia": "Frederick II, Holy Roman Emperor",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Acre, 1291: el final de Ultramar",
+   "fecha": "18 de mayo de 1291",
+   "anio": 1291,
+   "lugar": {
+    "nombre": "Acre (Akko)",
+    "lat": 32.923,
+    "lon": 35.068
+   },
+   "texto": "A mediados del siglo XIII tomó el poder en Egipto una nueva élite: los mamelucos, soldados de origen esclavo, en su mayoría turcos. En 1260 frenaron a los mongoles en Ain Yalut, algo que pocos habían logrado. Después, el sultán Baibars fue tomando una a una las fortalezas cruzadas, incluido el Krak de los Caballeros en 1271. El último gran bastión era Acre. En la primavera de 1291, el sultán al-Ashraf Jalil la sitió con un gran ejército y la tomó el 18 de mayo. En pocas semanas, los francos abandonaron las últimas ciudades de la costa.",
+   "imagen_wikipedia": "Siege of Acre (1291)",
+   "profundizar": {
+    "titulo": "Los últimos días de Acre",
+    "parrafos": [
+     "El asedio empezó a principios de abril. Los mamelucos llevaron grandes máquinas de asedio y zapadores que excavaron bajo las murallas. Entre los sitiadores estaba un joven príncipe sirio, Abu al-Fida, que con los años sería historiador y dejó por escrito lo que vio.",
+     "Del lado cristiano, un testigo conocido como el Templario de Tiro narró el pánico final: gente que intentaba subir a los barcos del puerto, muchos ahogados o capturados. La fortaleza de los templarios resistió unos días más y cayó a finales de mayo.",
+     "La guerra no terminó de golpe: los templarios aguantaron en el islote de Ruad, frente a Siria, hasta 1302. Pero el sueño de una Tierra Santa cristiana se apagó. Los hospitalarios se trasladaron a Chipre y luego a Rodas, y el papa disolvió la orden del Temple en 1312.",
+     "La idea de cruzada, en cambio, sobrevivió. Se predicaron cruzadas contra los paganos del Báltico, contra los herejes cátaros del sur de Francia y contra los reinos musulmanes de la península ibérica. En 1396, un ejército cruzado fue derrotado por los otomanos en Nicópolis. Pero ya no se dirigían a Jerusalén."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/mongoles",
+    "texto": "Sigue con el Imperio mongol →"
+   }
+  },
+  {
+   "titulo": "Las mismas guerras, memorias opuestas",
+   "fecha": "1898",
+   "anio": 1898,
+   "lugar": {
+    "nombre": "Mausoleo de Saladino, Damasco",
+    "lat": 33.5116,
+    "lon": 36.3066
+   },
+   "texto": "Las cruzadas siguen vivas, aunque de formas muy distintas. En 1898, el emperador alemán Guillermo II visitó en Damasco la tumba de Saladino y pagó un nuevo cenotafio de mármol, que aún puede verse junto al sepulcro original de madera. El gesto resume una paradoja: Europa había convertido a Saladino en modelo de caballero, mientras en el mundo árabe su figura empezaba a recuperarse como héroe frente a los invasores extranjeros. Hoy la palabra «cruzada» significa cosas casi opuestas según quién la escuche: una causa noble para unos, una agresión para otros.",
+   "imagen_wikipedia": "Mausoleum of Saladin",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Europa occidental",
+     "relato": "Durante siglos, Europa recordó las cruzadas como una epopeya de fe y valor. Novelas como El talismán, de Walter Scott (1825), las llenaron de romanticismo, y la palabra «cruzada» pasó a designar cualquier lucha por una buena causa. Desde el siglo XX, los historiadores las estudian de forma más crítica, incluida la violencia contra judíos, bizantinos y musulmanes."
+    },
+    {
+     "region": "Mundo árabe e islámico",
+     "relato": "Los cronistas árabes medievales no hablaban de «cruzadas», sino de guerras contra los francos, y muchos las vieron como un episodio entre otros. La expresión al-hurub al-salibiyya, «guerras de la cruz», se generalizó en el siglo XIX. En la época colonial se interpretaron como el primer capítulo de la agresión occidental, y Saladino se volvió símbolo. Damasco le dedicó una gran estatua ecuestre en 1992."
+    },
+    {
+     "region": "Cristianos ortodoxos",
+     "relato": "Para griegos y otros ortodoxos, la gran herida fue el saqueo de 1204. En 2001, el papa Juan Pablo II lamentó en Atenas aquel ataque contra Constantinopla. En 2004, al cumplirse ocho siglos, volvió a expresar su dolor, y el patriarca Bartolomé aceptó el gesto como un paso hacia la reconciliación."
+    },
+    {
+     "region": "Comunidades judías",
+     "relato": "Las comunidades judías de Europa recordaron 1096 en libros de memoria con los nombres de las víctimas y en poemas de lamento que todavía se recitan el día de ayuno de Tisha be-Av. La oración Av HaRajamim, que se reza en muchas sinagogas por los mártires, se asocia tradicionalmente a ese duelo."
+    }
+   ],
+   "conecta_con": null
+  }
+ ],
+ "notas_revision": [
+  "Clermont: confirmar la fecha del 27 de noviembre de 1095 y los destinatarios de las cartas conservadas de Urbano II (Flandes, Bolonia, Vallombrosa).",
+  "Matanzas del Rin: la cifra total de víctimas («varios miles») es una estimación; comprobar las cifras de Worms y Maguncia y el papel del obispo Juan de Espira y del arzobispo Ruthard.",
+  "Toma de Jerusalén: verificar la estimación de algo más de diez mil combatientes cruzados y la duración del asedio (7 de junio a 15 de julio de 1099).",
+  "Comprobar la atribución a Ibn al-Qalanisi de la quema de la sinagoga y la cifra de 70.000 muertos en Ibn al-Athir.",
+  "Templarios: la fecha de fundación varía entre 1118 y 1120 según las fuentes.",
+  "Minbar de Nur al-Din: confirmar que se encargó hacia 1168-1169 en Alepo; se quemó en el incendio provocado de al-Aqsa en 1969 (no mencionado en el texto).",
+  "Usama ibn Munqidh: la fecha de redacción de sus memorias (c. 1183) es aproximada; verificar los detalles de la anécdota del médico.",
+  "Saladino: comprobar las cifras del rescate (10, 5 y 1 dinares) y la estimación de esclavizados.",
+  "Ricardo I: las cifras de prisioneros ejecutados en Acre varían (2.600 en la carta de Ricardo, unos 3.000 según Baha al-Din).",
+  "Federico II: la afirmación de que hablaba árabe procede de fuentes de la época y no es segura; confirmar la fecha del tratado (18 de febrero de 1229).",
+  "Acre 1291: verificar las fechas del asedio, la caída de la torre templaria (c. 28 de mayo) y la permanencia en Ruad hasta 1302.",
+  "Memoria: confirmar la estatua de Saladino en Damasco (1992), las declaraciones de Juan Pablo II en 2001 y 2004 y el origen tradicional de la oración Av HaRajamim.",
+  "Revisar que el artículo «Council of Clermont» tenga una imagen principal adecuada; alternativa: «Pope Urban II»."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "cruzadas",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:02.288230+00:00",
+  "uso": {
+   "input_tokens": 4109,
+   "output_tokens": 25040,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.2586
+ }
+}

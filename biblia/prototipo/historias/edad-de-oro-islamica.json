@@ -1,0 +1,264 @@
+{
+ "resumen": "Entre 750 y 1258, Bagdad fue el gran centro del saber del mundo islámico. Allí, bajo los califas abasíes, sabios musulmanes, cristianos y judíos tradujeron al árabe la ciencia griega, persa e india y la llevaron más lejos. De esta época vienen el papel barato, el álgebra de al-Juarismi y la medicina de Avicena. En el otro extremo del Mediterráneo, Córdoba fue la capital de un califato rival y el escenario de una convivencia real pero desigual entre tres religiones, que produjo figuras como Averroes y Maimónides. El saqueo mongol de Bagdad en 1258 cerró simbólicamente esta etapa, aunque el conocimiento siguió vivo en otros lugares.",
+ "historias": [
+  {
+   "titulo": "Bagdad, la ciudad redonda",
+   "fecha": "762",
+   "anio": 762,
+   "lugar": {
+    "nombre": "Bagdad (Irak)",
+    "lat": 33.3152,
+    "lon": 44.3661
+   },
+   "texto": "En el año 750, una nueva familia, los abasíes, arrebató el poder a los omeyas y se quedó con un imperio que iba de Asia central al Atlántico. Necesitaban una capital propia. En 762, el califa al-Mansur eligió un lugar junto al río Tigris, cerca de viejas rutas comerciales, y mandó trazar una ciudad circular, con murallas, cuatro puertas y su palacio en el centro. La llamó Madinat al-Salam, «la Ciudad de la Paz», aunque todos la conocieron como Bagdad. En pocas décadas fue, según se calcula, una de las ciudades más grandes del mundo. Hoy no queda nada visible de aquel círculo.",
+   "imagen_wikipedia": "Round city of Baghdad",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/islam",
+    "texto": "¿Cómo empezó todo? Vuelve al nacimiento del islam →"
+   }
+  },
+  {
+   "titulo": "Harún al-Rashid y la llegada del papel",
+   "fecha": "c. 794",
+   "anio": 794,
+   "lugar": {
+    "nombre": "Bagdad (Irak)",
+    "lat": 33.3152,
+    "lon": 44.3661
+   },
+   "texto": "Harún al-Rashid gobernó entre 786 y 809 y es el califa más famoso de Bagdad, en parte porque aparece en Las mil y una noches, una colección de cuentos de origen persa, indio y árabe reunida mucho después. El Harún real envió embajadas hasta la corte de Carlomagno, que recibió de regalo un elefante. Pero su época dejó algo más útil: hacia 794 ya funcionaba en Bagdad un taller de papel. Según una tradición discutida, la técnica llegó de China gracias a prisioneros capturados en una batalla en 751. El papel, mucho más barato que el pergamino, hizo posibles miles de libros.",
+   "imagen_wikipedia": "Harun al-Rashid",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "La Casa de la Sabiduría",
+   "fecha": "813–833",
+   "anio": 820,
+   "lugar": {
+    "nombre": "Bagdad (Irak)",
+    "lat": 33.3152,
+    "lon": 44.3661
+   },
+   "texto": "Bajo el califa al-Mamún, hijo de Harún, Bagdad se llenó de libros. La Bayt al-Hikma, la Casa de la Sabiduría, era una gran biblioteca del palacio donde se copiaban y guardaban manuscritos. A su alrededor trabajaban sabios árabes y persas, musulmanes, cristianos, judíos y sabeos. Se buscaban obras griegas, persas e indias de medicina, astronomía, matemáticas y filosofía, y se pagaba bien por traducirlas al árabe. Al-Mamún también financió observatorios en Bagdad y Damasco. No era una universidad moderna, pero sí un lugar donde el saber de medio mundo se reunió en una sola lengua.",
+   "imagen_wikipedia": "House of Wisdom",
+   "profundizar": {
+    "titulo": "¿Qué era de verdad la Casa de la Sabiduría?",
+    "parrafos": [
+     "Casi todo lo que sabemos procede de textos, no de excavaciones: del edificio no queda nada. Uno de los testimonios principales es el Fihrist, un enorme catálogo de libros escrito en Bagdad hacia 987 por el librero Ibn al-Nadim, que menciona a bibliotecarios y traductores vinculados a la Bayt al-Hikma.",
+     "El mismo Ibn al-Nadim recoge una anécdota: al-Mamún habría soñado con Aristóteles y, tras hablar con él, decidió buscar libros griegos. Es casi seguro una leyenda, pero muestra cómo se quería presentar al califa: como gran protector del saber.",
+     "Los historiadores discuten su verdadero tamaño. Algunos, como Dimitri Gutas, creen que fue sobre todo una biblioteca y archivo del palacio, y que el gran movimiento de traducción lo pagaron muchas personas: califas, visires, médicos y comerciantes ricos. La imagen de una academia oficial gigantesca sería en parte una idealización posterior.",
+     "Lo que sí está documentado es el resultado. Entre los siglos VIII y X se tradujo al árabe buena parte de las obras conservadas de Aristóteles, Galeno, Euclides o Ptolomeo, junto a textos persas e indios. Los astrónomos de al-Mamún llegaron a medir un grado del meridiano terrestre en la llanura de Sinjar, al norte de Irak."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Al-Juarismi y el nacimiento del álgebra",
+   "fecha": "c. 830",
+   "anio": 830,
+   "lugar": {
+    "nombre": "Bagdad (Irak)",
+    "lat": 33.3152,
+    "lon": 44.3661
+   },
+   "texto": "Muhammad ibn Musa al-Juarismi, probablemente originario de Corasmia, en Asia central, trabajó en Bagdad en tiempos de al-Mamún. Escribió un libro para resolver problemas cotidianos: herencias, repartos de tierras, comercio. Su título incluía la palabra al-yabr, que significa «restaurar» o «completar», y que acabó dando nombre al álgebra. En otra obra explicó el sistema de numeración que venía de la India, con nueve cifras y un signo para el cero. Cuando sus libros se tradujeron al latín, su nombre se deformó en «Algoritmi». De ahí viene la palabra algoritmo, la que hoy usan los programadores.",
+   "imagen_wikipedia": "Muhammad ibn Musa al-Khwarizmi",
+   "profundizar": {
+    "titulo": "De Bagdad a tu calculadora",
+    "parrafos": [
+     "Su libro de álgebra, escrito hacia 820-830, se conoce por un título largo que empieza por Al-kitab al-mujtasar fi hisab al-yabr wal-muqabala. No usaba símbolos como x o y: todo se explicaba con palabras y figuras geométricas. Aun así, ofrecía métodos generales para resolver ecuaciones de primer y segundo grado, con un orden y una claridad nuevos.",
+     "Al-yabr consistía en pasar un término que se resta al otro lado de la ecuación para que todo quede en positivo; al-muqabala, en simplificar los términos iguales de ambos lados. Son las mismas operaciones que hoy se enseñan en el colegio, aunque explicadas con otro lenguaje.",
+     "Su tratado de aritmética con cifras indias se ha perdido en árabe y solo se conserva en traducciones latinas. Una de ellas empieza con las palabras «Dixit Algorizmi», es decir, «dijo Algorizmi». De esa forma latinizada de su nombre salió con el tiempo la palabra algoritmo.",
+     "En el siglo XII, traductores como Roberto de Chester y Gerardo de Cremona pasaron su álgebra al latín. Las cifras que llamamos arábigas, aunque nacieron en la India, tardaron todavía siglos en imponerse en Europa frente a los números romanos."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Hunayn, el traductor que buscaba a Galeno",
+   "fecha": "c. 860",
+   "anio": 860,
+   "lugar": {
+    "nombre": "Bagdad (Irak)",
+    "lat": 33.3152,
+    "lon": 44.3661
+   },
+   "texto": "Muchos grandes traductores de Bagdad eran cristianos. El más famoso, Hunayn ibn Ishaq (809-873), pertenecía a la Iglesia de Oriente y había nacido en al-Hira, en el actual Irak. Hablaba árabe, siríaco, griego y persa. Con su hijo y su sobrino tradujo decenas de obras del médico griego Galeno, además de textos de Hipócrates y Aristóteles. Él mismo contó que recorrió Mesopotamia, Siria, Palestina y Egipto buscando manuscritos griegos, y que comparaba varias copias antes de traducir. Según una tradición posterior, le pagaban en oro el peso de los libros que traducía, algo difícil de comprobar.",
+   "imagen_wikipedia": "Hunayn ibn Ishaq",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "clasico/la-antigua-grecia",
+    "texto": "¿De dónde venían esos libros? Visita la antigua Grecia →"
+   }
+  },
+  {
+   "titulo": "Córdoba, el califato del oeste",
+   "fecha": "929",
+   "anio": 929,
+   "lugar": {
+    "nombre": "Madinat al-Zahra, Córdoba (España)",
+    "lat": 37.8878,
+    "lon": -4.8672
+   },
+   "texto": "Cuando los abasíes tomaron el poder en 750, casi toda la familia omeya fue asesinada. Un superviviente, Abd al-Rahman, huyó hasta la península ibérica y en 756 se hizo con el poder en Córdoba. Así nació un al-Ándalus independiente de Bagdad. En 929, su descendiente Abd al-Rahman III, Abderramán en español, se proclamó califa, es decir, sucesor del Profeta, desafiando a Bagdad y a los fatimíes del norte de África. A las afueras de Córdoba mandó construir Madinat al-Zahra, una ciudad palacio de mármol y jardines. Fue saqueada en una guerra civil unos setenta años después.",
+   "imagen_wikipedia": "Madinat al-Zahra",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Córdoba: convivir no siempre fue fácil",
+   "fecha": "c. 950",
+   "anio": 950,
+   "lugar": {
+    "nombre": "Córdoba (España)",
+    "lat": 37.8789,
+    "lon": -4.7794
+   },
+   "texto": "En la Córdoba del siglo X vivían musulmanes, judíos y cristianos. La ley islámica consideraba a judíos y cristianos dimmíes, «protegidos»: podían practicar su religión a cambio de pagar un impuesto especial y aceptar ciertas limitaciones. Un judío, Hasday ibn Shaprut, llegó a ser médico y diplomático de Abderramán III. Cuando el emperador de Bizancio regaló al califa un tratado griego de plantas medicinales, Hasday ayudó a traducirlo al árabe junto a un monje enviado desde Constantinopla. Mientras, la Gran Mezquita crecía con cada gobernante. Hubo colaboración y respeto, pero también desigualdad y, en algunos momentos, violencia.",
+   "imagen_wikipedia": "Mosque–Cathedral of Córdoba",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Tradición judía sefardí",
+     "relato": "Para los judíos sefardíes, al-Ándalus fue una edad de oro. Hasday protegió a poetas y gramáticos que renovaron la poesía en hebreo imitando los modelos árabes, y después brillaron autores como Samuel ibn Nagrela o Yehudá ha-Leví. Pero esa misma memoria recuerda la matanza de judíos en Granada en 1066 y las persecuciones de los almohades en el siglo XII."
+    },
+    {
+     "region": "Cristianos mozárabes",
+     "relato": "Los cristianos que vivían bajo gobierno musulmán, llamados después mozárabes, dejaron testimonios más amargos. Entre 850 y 859, alrededor de medio centenar de cristianos de Córdoba fueron ejecutados tras insultar públicamente al islam, y el clérigo Eulogio los presentó como mártires. Su amigo Álvaro se lamentaba de que los jóvenes cristianos preferían la poesía árabe al latín."
+    },
+    {
+     "region": "Memoria árabe y musulmana",
+     "relato": "En la literatura árabe, al-Ándalus se recuerda a menudo como un paraíso perdido. En el siglo XVII, el historiador argelino al-Maqqari reunió en una gran obra poemas y relatos sobre la belleza de Córdoba y de otras ciudades andalusíes. Esa nostalgia sigue viva hoy en canciones, novelas y libros de todo el mundo árabe."
+    },
+    {
+     "region": "Historiadores actuales",
+     "relato": "La palabra «convivencia» se popularizó en el siglo XX gracias al historiador español Américo Castro. Desde entonces hay debate: unos destacan el intercambio cultural y una tolerancia poco común en la Europa de la época; otros recuerdan que existía una jerarquía clara, con los musulmanes arriba. Muchos hablan hoy de una coexistencia real, pero desigual."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Avicena, el médico que lo leyó todo",
+   "fecha": "c. 1025",
+   "anio": 1025,
+   "lugar": {
+    "nombre": "Hamadán (Irán)",
+    "lat": 34.7989,
+    "lon": 48.515
+   },
+   "texto": "Ibn Sina, conocido en Europa como Avicena, nació hacia 980 cerca de Bujará, en el actual Uzbekistán, en una familia persa. Según su propia autobiografía, a los dieciocho años ya dominaba casi todas las ciencias de su tiempo. Curó a un emir y, como premio, pudo consultar su biblioteca real. Tuvo una vida agitada, sirviendo a distintos príncipes entre guerras y hasta prisiones. Aun así, se le atribuyen más de doscientas obras. La más famosa, el Canon de medicina, terminado hacia 1025, ordenaba el saber médico griego, persa e indio y añadía observaciones propias. Murió en Hamadán, en Irán, en 1037.",
+   "imagen_wikipedia": "Avicenna",
+   "profundizar": {
+    "titulo": "El Canon, un libro de texto durante siglos",
+    "parrafos": [
+     "En su autobiografía, dictada a su discípulo al-Yuzyani, Avicena cuenta que leyó la Metafísica de Aristóteles unas cuarenta veces sin entenderla, hasta que compró por casualidad un comentario del filósofo al-Farabi. Es un relato personal, quizá adornado, pero muestra cómo se estudiaba entonces: copiando, memorizando y discutiendo los textos griegos ya traducidos al árabe.",
+     "El Canon se divide en cinco libros: principios generales de la medicina, medicamentos simples, enfermedades de cada parte del cuerpo, enfermedades que afectan a todo el organismo y medicamentos compuestos. Insiste en probar los remedios con cuidado, en observar el pulso y la orina del paciente, y sugiere que algunas enfermedades pueden transmitirse de una persona a otra.",
+     "En el siglo XII, Gerardo de Cremona lo tradujo al latín en Toledo. Se convirtió en libro de texto en universidades europeas como Montpellier o Padua, y se siguió usando hasta el siglo XVII. También circuló en hebreo y, en el mundo islámico, se estudió durante siglos.",
+     "Avicena fue además un gran filósofo. En su obra al-Shifa, «La curación», intentó unir la lógica de Aristóteles con la fe en un Dios único. Algunos teólogos musulmanes, como al-Gazali, criticaron duramente varias de sus ideas, y ese debate marcó la filosofía islámica posterior."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Averroes, el gran lector de Aristóteles",
+   "fecha": "c. 1180",
+   "anio": 1180,
+   "lugar": {
+    "nombre": "Córdoba (España)",
+    "lat": 37.8847,
+    "lon": -4.7792
+   },
+   "texto": "Ibn Rushd, Averroes para los europeos, nació en Córdoba en 1126 en una familia de jueces. Fue juez, médico y filósofo. Según un cronista de la época, el sabio Ibn Tufayl lo presentó al califa almohade, que se quejaba de lo difícil que era entender a Aristóteles y le pidió que lo explicara. Averroes dedicó décadas a comentar sus obras casi línea por línea. Defendió que la razón y la fe no se contradicen si se interpretan bien. Hacia 1195 cayó en desgracia y algunos de sus libros fueron quemados, aunque después fue perdonado. En la Europa cristiana lo llamaron simplemente «el Comentador».",
+   "imagen_wikipedia": "Averroes",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Maimónides, de Córdoba a El Cairo",
+   "fecha": "c. 1190",
+   "anio": 1190,
+   "lugar": {
+    "nombre": "Fustat, El Cairo (Egipto)",
+    "lat": 30.006,
+    "lon": 31.231
+   },
+   "texto": "Moisés ben Maimón, Maimónides, nació en Córdoba hacia 1138 en una familia judía. Cuando era niño, los almohades, una dinastía musulmana muy rigorista llegada del norte de África, conquistaron la ciudad y pusieron a judíos y cristianos ante una elección dura: convertirse o marcharse. Su familia vagó durante años por al-Ándalus y el Magreb hasta instalarse en Egipto. Allí fue médico de la corte de Saladino y líder de la comunidad judía. Escribió en árabe la Guía de los perplejos, que intenta reconciliar la fe judía con la filosofía de Aristóteles. Su vida resume la grandeza y la fragilidad de aquella convivencia.",
+   "imagen_wikipedia": "Maimonides",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "1258: el día que cayó Bagdad",
+   "fecha": "1258",
+   "anio": 1258,
+   "lugar": {
+    "nombre": "Bagdad (Irak)",
+    "lat": 33.3152,
+    "lon": 44.3661
+   },
+   "texto": "En enero de 1258, un ejército mongol dirigido por Hulagu, nieto de Gengis Kan, rodeó Bagdad. El califato abasí era ya débil y su último califa, al-Mustasim, se había negado a someterse. Tras unas dos semanas de asedio, la ciudad se rindió en febrero. Siguieron días de saqueo y matanza. Las crónicas hablan de cientos de miles de muertos, cifras imposibles de comprobar. El califa fue ejecutado y, según varias fuentes, se destruyeron bibliotecas enteras. Para muchos, aquel año terminó la edad de oro islámica. Pero el saber no murió: siguió vivo en El Cairo, en Persia y en Asia central.",
+   "imagen_wikipedia": "Siege of Baghdad (1258)",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Cronistas árabes musulmanes",
+     "relato": "Para los autores árabes posteriores, como Ibn Kathir en el siglo XIV, la caída de Bagdad fue una catástrofe sin igual: el fin del califato que había durado cinco siglos. De esta tradición procede una imagen famosa, probablemente exagerada: el Tigris teñido de negro por la tinta de los libros arrojados al río y de rojo por la sangre."
+    },
+    {
+     "region": "Historiadores persas al servicio de los mongoles",
+     "relato": "Los historiadores persas que trabajaron para los sucesores de Hulagu, como Rashid al-Din hacia el año 1300, presentaron la conquista como una victoria legítima sobre un califa orgulloso que no quiso rendirse. Junto a Hulagu viajaba el astrónomo Nasir al-Din al-Tusi, que en 1259 fundó con su apoyo el observatorio de Maragha, en el actual Irán."
+    },
+    {
+     "region": "Cristianos de Oriente",
+     "relato": "Algunos cristianos de Mesopotamia y Armenia miraron a los mongoles con esperanza. La esposa principal de Hulagu, Doquz Jatun, era cristiana de la Iglesia de Oriente, y varias fuentes cuentan que se respetó a los cristianos de Bagdad refugiados en una iglesia. Para algunos cronistas armenios, la caída de la ciudad fue un castigo divino contra sus antiguos dominadores."
+    }
+   ],
+   "conecta_con": {
+    "capitulo": "media/mongoles",
+    "texto": "¿Quiénes eran los conquistadores? Sigue con el Imperio mongol →"
+   }
+  }
+ ],
+ "notas_revision": [
+  "Comprobar que existen con ese título exacto en la Wikipedia en inglés: «Round city of Baghdad» y «Mosque–Cathedral of Córdoba» (con guion largo).",
+  "Fecha del primer taller o molino de papel en Bagdad (c. 794-795) y el carácter discutido de la tradición de los prisioneros chinos de la batalla de Talas (751).",
+  "Embajada de Harún al-Rashid a Carlomagno y el elefante Abul-Abbas: verificar formulación (fuentes francas, llegada en 802).",
+  "Atribución a Ibn al-Nadim (Fihrist, c. 987) de la anécdota del sueño de al-Mamún con Aristóteles, y la postura de Dimitri Gutas sobre la Casa de la Sabiduría.",
+  "Medición del grado de meridiano en la llanura de Sinjar bajo al-Mamún.",
+  "Datación del álgebra de al-Juarismi (c. 820-830) y la frase inicial «Dixit Algorizmi» del manuscrito latino de su aritmética.",
+  "Fechas de Hunayn ibn Ishaq (809-873) y la tradición del pago en oro por el peso de los libros (posiblemente legendaria).",
+  "Inicio de la construcción de Madinat al-Zahra (c. 936-940) y su saqueo (c. 1010).",
+  "Regalo bizantino del tratado de Dioscórides (c. 949-951) y la colaboración de Hasday con el monje Nicolás.",
+  "Número de mártires de Córdoba entre 850 y 859 (se suele citar unos 48).",
+  "Número de obras atribuidas a Avicena (cifras varían entre unas 200 y más de 400) y el uso del Canon en universidades europeas hasta el siglo XVII.",
+  "Anécdota de Averroes e Ibn Tufayl ante el califa Abu Yaqub Yusuf (transmitida por al-Marrakushi); fecha de su caída en desgracia (1195) y destierro a Lucena.",
+  "Fecha de nacimiento de Maimónides (1135 o 1138) y conquista almohade de Córdoba (1148); su cargo exacto en la corte (médico del visir al-Qadi al-Fadil y del entorno de Saladino).",
+  "Fechas del asedio de Bagdad (c. 29 de enero - 10 de febrero de 1258) y estimaciones de víctimas.",
+  "Atribución de la imagen del Tigris teñido de tinta a cronistas como Ibn Kathir u otros autores posteriores.",
+  "Papel de Doquz Jatun y el trato a los cristianos de Bagdad en 1258."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "edad-de-oro-islamica",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:01.851521+00:00",
+  "uso": {
+   "input_tokens": 4119,
+   "output_tokens": 21878,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.227
+ }
+}

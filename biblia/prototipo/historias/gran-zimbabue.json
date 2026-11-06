@@ -1,0 +1,294 @@
+{
+ "resumen": "Entre los años 1000 y 1500, el este y el sur de África estaban llenos de vida. En la meseta de Zimbabue, los antepasados de los shona levantaron una ciudad de piedra sin usar argamasa. Su oro bajaba hasta la costa, donde las ciudades suajilis como Kilwa lo embarcaban con los monzones rumbo a Arabia, Persia, India y China. Más al norte, en las montañas de Etiopía, un reino cristiano tallaba iglesias enteras en la roca y contaba que sus reyes descendían de Salomón y la reina de Saba. Este capítulo recorre ese mundo conectado hasta la llegada de los cañones portugueses, y explica por qué durante décadas se negó que africanos hubieran construido Gran Zimbabue.",
+ "historias": [
+  {
+   "titulo": "Una lengua nacida junto al mar",
+   "fecha": "c. 1000",
+   "anio": 1000,
+   "lugar": {
+    "nombre": "Archipiélago de Lamu, Kenia",
+    "lat": -2.2717,
+    "lon": 40.902
+   },
+   "texto": "A lo largo de miles de kilómetros de costa, desde la actual Somalia hasta Mozambique, crecieron pueblos de pescadores, agricultores y comerciantes. Hablaban una lengua bantú, de la misma familia que muchas lenguas del interior de África. Con los siglos, esa lengua tomó muchas palabras del árabe y, más tarde, del persa, del portugués y del inglés. Es el suajili, o kiswahili. Su nombre viene del árabe sawahil, «las costas». Hacia el año 1000, estos pueblos ya levantaban casas y mezquitas de piedra de coral. Para ellos, el océano Índico no era una frontera: era una gran avenida comercial.",
+   "imagen_wikipedia": "Lamu Old Town",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "La leyenda de los príncipes de Shiraz",
+   "fecha": "c. finales del siglo X (según la tradición)",
+   "anio": 1000,
+   "lugar": {
+    "nombre": "Kilwa Kisiwani, Tanzania",
+    "lat": -8.9576,
+    "lon": 39.5103
+   },
+   "texto": "Una crónica escrita en el siglo XVI cuenta cómo nació Kilwa, una isla frente a la costa de la actual Tanzania. Según ese relato, un príncipe de Shiraz, en Persia, llamado Alí ibn al-Hasan, llegó por mar y compró la isla a un rey local. El precio habría sido tanta tela como para rodearla entera. Durante siglos, muchas familias de la costa se llamaron con orgullo «shirazi». Pero las excavaciones muestran que Kilwa ya estaba habitada por comunidades africanas mucho antes. La leyenda puede guardar el recuerdo de lazos reales con el golfo Pérsico, o ser una forma de presumir de un origen prestigioso.",
+   "imagen_wikipedia": "Great Mosque of Kilwa",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "La Crónica de Kilwa",
+     "relato": "La crónica, conservada en una versión árabe y en un resumen del historiador portugués João de Barros, presenta a los fundadores como recién llegados de Persia que traen el islam y la realeza. En este relato, la ciudad empieza con una dinastía extranjera y los habitantes anteriores quedan en segundo plano, casi como simples vendedores de la isla."
+    },
+    {
+     "region": "Tradición suajili de la costa",
+     "relato": "En Zanzíbar, Pemba y otras partes de la costa, ser «shirazi» pasó a significar pertenecer a las familias antiguas y nobles del lugar, más que venir de Persia. Con el tiempo, la etiqueta se convirtió en una identidad local, usada incluso en política durante el siglo XX, y no siempre ligada a antepasados persas."
+    },
+    {
+     "region": "La arqueología",
+     "relato": "Los arqueólogos han encontrado en Kilwa y otras ciudades restos de poblados africanos anteriores a la fecha de la leyenda, con cerámica de tradición local. La mayoría de los investigadores ve la cultura suajili como una creación africana, abierta al comercio y a la llegada de algunos inmigrantes árabes y persas, pero no fundada por ellos."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "El rinoceronte de oro de Mapungubwe",
+   "fecha": "c. 1075 – c. 1220",
+   "anio": 1150,
+   "lugar": {
+    "nombre": "Mapungubwe, Sudáfrica",
+    "lat": -22.1928,
+    "lon": 29.2387
+   },
+   "texto": "Antes de Gran Zimbabue hubo otro reino, junto a la unión de los ríos Limpopo y Shashe, donde hoy se tocan Sudáfrica, Botsuana y Zimbabue. Allí floreció Mapungubwe, aproximadamente entre 1075 y 1220. Sus gobernantes vivían en lo alto de una colina de arenisca, separados de la gente común que vivía abajo. Es uno de los primeros ejemplos en el sur de África de una sociedad dividida en clases. Comerciaban marfil y oro con la costa a cambio de cuentas de vidrio. En 1933 se halló en una tumba de la colina un pequeño rinoceronte de madera cubierto de finas láminas de oro.",
+   "imagen_wikipedia": "Mapungubwe National Park",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Iglesias talladas hacia abajo",
+   "fecha": "c. finales del siglo XII – comienzos del XIII",
+   "anio": 1200,
+   "lugar": {
+    "nombre": "Lalibela, Etiopía",
+    "lat": 12.0317,
+    "lon": 39.0411
+   },
+   "texto": "En las montañas de Etiopía reinaba la dinastía zagüe. Según la tradición, uno de sus reyes, Lalibela, mandó crear un conjunto de iglesias que no se construyeron: se excavaron. Los canteros tallaban la roca de arriba abajo hasta dejar exento un enorme bloque, y luego lo vaciaban por dentro para formar naves, ventanas y columnas. Son once iglesias unidas por zanjas y túneles. La más famosa, Bete Giyorgis, dedicada a san Jorge, tiene forma de cruz y se hunde unos 12 metros en el suelo. La leyenda dice que los ángeles trabajaban de noche. Hoy siguen llenas de fieles vestidos de blanco.",
+   "imagen_wikipedia": "Church of Saint George, Lalibela",
+   "profundizar": {
+    "titulo": "Cómo se talla una iglesia en la roca",
+    "parrafos": [
+     "Etiopía era cristiana desde el siglo IV, cuando el rey Ezana de Aksum adoptó la nueva fe. Por eso, cuando se tallaron las iglesias de Lalibela, el cristianismo etíope ya tenía casi mil años de historia propia, con su lengua litúrgica, el ge'ez, y sus monasterios. No era una copia de Europa, sino una de las iglesias cristianas más antiguas del mundo.",
+     "La técnica fue de sustracción: nada se añadía, todo se quitaba. Los canteros cavaban una trinchera alrededor de un bloque de toba volcánica, una roca relativamente blanda, y luego tallaban techos, puertas y ventanas. Un error no se podía corregir con más piedra. Las marcas de herramientas aún se ven en las paredes.",
+     "La tradición etíope dice que Lalibela quiso crear una «nueva Jerusalén», y varios lugares llevan nombres de Tierra Santa: un arroyo se llama Yordanos, como el río Jordán. Algunos historiadores lo relacionan con la toma de Jerusalén por Saladino en 1187, que dificultó las peregrinaciones, pero es una hipótesis, no un hecho probado.",
+     "Los arqueólogos no se ponen de acuerdo sobre las fechas. El investigador David Phillipson propuso que algunas partes del conjunto son anteriores al rey Lalibela y que quizá no nacieron como iglesias. Otros defienden que la mayor parte es de su época. Lo seguro es que el lugar fue declarado Patrimonio de la Humanidad por la UNESCO en 1978."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "La ciudad de las casas de piedra",
+   "fecha": "c. 1100 – c. 1450",
+   "anio": 1300,
+   "lugar": {
+    "nombre": "Gran Zimbabue, Zimbabue",
+    "lat": -20.2675,
+    "lon": 30.9339
+   },
+   "texto": "En la meseta del sur de África, los antepasados del pueblo shona levantaron la mayor ciudad de piedra al sur del Sahara de su época. Se suele explicar que «zimbabue» viene de una expresión shona que significa «casas de piedra». Su momento de mayor esplendor fue, aproximadamente, entre 1300 y 1450. Los muros se hicieron con bloques de granito encajados sin ninguna argamasa, y algunos superan los 10 metros de alto. Allí vivían un rey, su corte y miles de personas, aunque no se sabe cuántas. Su riqueza venía del ganado y, sobre todo, del oro que se enviaba a la costa.",
+   "imagen_wikipedia": "Great Zimbabwe",
+   "profundizar": {
+    "titulo": "Qué han encontrado los arqueólogos",
+    "parrafos": [
+     "El sitio tiene tres zonas principales. En lo alto de una colina está el llamado Complejo de la Colina, probablemente la residencia del rey y un lugar ritual. Abajo se encuentra el Gran Recinto, un enorme muro curvo. Y entre ambos, las Ruinas del Valle, donde vivía buena parte de la población. En total ocupa varios kilómetros cuadrados.",
+     "El muro exterior del Gran Recinto mide unos 250 metros de largo y llega a unos 11 metros de alto. Dentro hay una torre cónica maciza, sin puertas ni escaleras, de unos 10 metros. Nadie sabe con certeza para qué servía; algunos piensan que simbolizaba un granero, es decir, la abundancia y el poder del rey.",
+     "Las estimaciones de población varían mucho. Muchos autores hablan de entre 10.000 y 18.000 habitantes en su apogeo, pero otros creen que fueron bastantes menos. La mayoría de la gente vivía en casas de barro y paja alrededor de los muros de piedra, que estaban reservados para la élite.",
+     "Entre los hallazgos destacan ocho aves talladas en esteatita, una piedra blanda, sobre pilares, que hoy son símbolo nacional de Zimbabue. También aparecieron cerámica china y persa, cuentas de vidrio y objetos de cobre y oro, prueba de que la ciudad estaba conectada con el comercio del océano Índico."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "El oro que cruzaba el océano",
+   "fecha": "c. siglos XIII – XV",
+   "anio": 1300,
+   "lugar": {
+    "nombre": "Sofala, Mozambique",
+    "lat": -20.17,
+    "lon": 34.73
+   },
+   "texto": "El oro de la meseta de Zimbabue se sacaba de ríos y de pequeñas minas. Viajaba hasta la costa, a puertos como Sofala, en el actual Mozambique. Allí lo compraban comerciantes suajilis, que navegaban en dhows, barcos de vela triangular. Aprovechaban los monzones: vientos que soplan del noreste una parte del año y del suroeste la otra, lo que permitía ir y volver con regularidad. El oro y el marfil subían hacia Kilwa y, de allí, a Arabia, Persia e India. A cambio llegaban telas de algodón indias, cuentas de vidrio y porcelana china, cuyos fragmentos se han encontrado en Gran Zimbabue.",
+   "imagen_wikipedia": "Dhow",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Etiopía y la reina de Saba",
+   "fecha": "1270 y comienzos del siglo XIV",
+   "anio": 1320,
+   "lugar": {
+    "nombre": "Aksum, Etiopía",
+    "lat": 14.1311,
+    "lon": 38.7186
+   },
+   "texto": "En 1270, Yekuno Amlak tomó el poder en Etiopía y fundó la dinastía llamada salomónica. Poco después, probablemente a comienzos del siglo XIV, se compuso en lengua ge'ez el Kebra Nagast, «La gloria de los reyes». Cuenta que la reina de Saba, llamada Makeda, visitó al rey Salomón en Jerusalén y tuvo con él un hijo, Menelik, que se convirtió en el primer rey de Etiopía y trajo consigo el Arca de la Alianza. Los historiadores lo ven como un relato religioso y político, no como un hecho documentado. Pero la dinastía lo usó para justificar su poder hasta 1974.",
+   "imagen_wikipedia": "Kebra Nagast",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Etiopía",
+     "relato": "Para la Iglesia ortodoxa etíope, el Kebra Nagast es un texto venerado. Según su tradición, el Arca de la Alianza se guarda en una capilla de la iglesia de Santa María de Sion, en Aksum, custodiada por un solo monje que no puede salir de allí. Nadie más puede verla, así que su presencia no se puede comprobar."
+    },
+    {
+     "region": "La Biblia hebrea",
+     "relato": "El Primer Libro de los Reyes narra que una reina de Saba visitó a Salomón para ponerlo a prueba con preguntas difíciles y le llevó oro, especias y piedras preciosas. No dice su nombre, no menciona ningún hijo y no habla del Arca viajando a otro país. Simplemente cuenta que la reina regresó a su tierra."
+    },
+    {
+     "region": "El Corán y la tradición de Yemen",
+     "relato": "El Corán, en la sura 27, cuenta que el profeta Sulaymán (Salomón) invitó a la reina de Saba a abandonar el culto al sol, y que ella acabó sometiéndose a Dios. La tradición islámica la llama Bilqis. En Yemen se identifica Saba con el antiguo reino de Marib, al otro lado del mar Rojo."
+    }
+   ],
+   "conecta_con": {
+    "capitulo": "imperios/david-y-salomon",
+    "texto": "Conoce al rey Salomón →"
+   }
+  },
+  {
+   "titulo": "Ibn Battuta en la ciudad más bella",
+   "fecha": "1331",
+   "anio": 1331,
+   "lugar": {
+    "nombre": "Kilwa Kisiwani, Tanzania",
+    "lat": -8.9576,
+    "lon": 39.5103
+   },
+   "texto": "En 1331 llegó a Kilwa el viajero marroquí Ibn Battuta, que recorrió buena parte del mundo islámico. En su libro de viajes la describe como una de las ciudades más bellas y mejor construidas que había visto, con casas de piedra y madera. Elogió la generosidad del sultán, al que la gente llamaba «padre de los regalos». Kilwa vivía su mejor momento: controlaba el comercio del oro que llegaba desde Sofala. Sus sultanes acuñaban monedas propias y levantaron un palacio enorme frente al mar, Husuni Kubwa. Hoy sus ruinas son Patrimonio de la Humanidad.",
+   "imagen_wikipedia": "Kilwa Kisiwani",
+   "profundizar": {
+    "titulo": "Las pruebas de la riqueza de Kilwa",
+    "parrafos": [
+     "Husuni Kubwa, el gran palacio, se atribuye al sultán al-Hasan ibn Sulaiman, en la primera mitad del siglo XIV. Tenía patios, salas de audiencia, una zona de almacenes y hasta una piscina octogonal. Fue uno de los mayores edificios de su tiempo en el África subsahariana, aunque probablemente nunca se terminó del todo.",
+     "La Gran Mezquita de Kilwa se amplió en esa misma época con una sala cubierta por muchas pequeñas cúpulas y bóvedas de piedra de coral. Es una de las mezquitas antiguas mejor conservadas de la costa oriental de África y muestra la habilidad de los constructores suajilis.",
+     "Kilwa acuñó monedas de cobre con los nombres de sus sultanes. Algunas se usaban en el comercio local y han aparecido en otros puntos de la costa. En 1944, un soldado encontró varias monedas de este tipo en una isla del norte de Australia, un hallazgo que todavía se investiga y que los expertos explican de distintas formas.",
+     "Las fuentes escritas también ayudan. Además del relato de Ibn Battuta, existe la Crónica de Kilwa, con listas de sultanes. Sus fechas no siempre coinciden con las de las monedas y las excavaciones, así que los historiadores las comparan con cuidado."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/mali",
+    "texto": "Sigue a Ibn Battuta hasta Mali →"
+   }
+  },
+  {
+   "titulo": "Una jirafa para el emperador de China",
+   "fecha": "1414 – c. 1419",
+   "anio": 1415,
+   "lugar": {
+    "nombre": "Malindi, Kenia",
+    "lat": -3.2175,
+    "lon": 40.1191
+   },
+   "texto": "A comienzos del siglo XV, la China de la dinastía Ming envió grandes flotas por el océano Índico, dirigidas por el almirante Zheng He. En 1414 llegó a la corte una jirafa traída desde Bengala, y poco después embajadores de Malindi, en la costa suajili, regalaron otra al emperador. En China la identificaron con el qilin, un animal mítico que anunciaba buen gobierno, y un pintor de la corte la retrató. En los años siguientes, los barcos de Zheng He visitaron Malindi, Mogadiscio y otros puertos africanos. Luego China abandonó estos viajes.",
+   "imagen_wikipedia": "Zheng He",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Cuando la ciudad de piedra quedó en silencio",
+   "fecha": "c. 1450",
+   "anio": 1450,
+   "lugar": {
+    "nombre": "Khami, Zimbabue",
+    "lat": -20.158,
+    "lon": 28.378
+   },
+   "texto": "Hacia mediados del siglo XV, Gran Zimbabue fue perdiendo habitantes hasta quedar casi vacía. Los historiadores no se ponen de acuerdo sobre la causa. Puede que tanta gente y tanto ganado agotaran los pastos, la leña y la tierra. Quizá hubo sequías. O tal vez las rutas del oro se desplazaron hacia el norte. El poder no desapareció: se repartió entre nuevos estados. Al norte surgió el reino de Mutapa, que los portugueses conocerían bien. Al oeste, el reino de Torwa tuvo su capital en Khami, también con muros de piedra, ahora decorados con dibujos geométricos.",
+   "imagen_wikipedia": "Khami",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Llegan los cañones portugueses",
+   "fecha": "1498 – 1505",
+   "anio": 1505,
+   "lugar": {
+    "nombre": "Kilwa Kisiwani, Tanzania",
+    "lat": -8.9576,
+    "lon": 39.5103
+   },
+   "texto": "En 1498, Vasco da Gama rodeó África y llegó a la costa suajili. En Mombasa lo recibieron con hostilidad. En Malindi, rival de Mombasa, el gobernante lo ayudó y le dio un piloto que conocía la ruta a la India. Los portugueses no querían solo comerciar: querían controlar el comercio. En 1505, la flota de Francisco de Almeida tomó Kilwa, construyó allí un fuerte y saqueó Mombasa. El intercambio que había funcionado durante siglos se rompió, y Kilwa entró en decadencia. Pero la cultura suajili sobrevivió: hoy su lengua la hablan decenas de millones de personas.",
+   "imagen_wikipedia": "Francisco de Almeida",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "¿Quién construyó Gran Zimbabue?",
+   "fecha": "1871 – 1980",
+   "anio": 1929,
+   "lugar": {
+    "nombre": "Gran Zimbabue, Zimbabue",
+    "lat": -20.2675,
+    "lon": 30.9339
+   },
+   "texto": "Cuando los europeos llegaron a las ruinas en el siglo XIX, muchos se negaron a creer que las hubieran levantado africanos. El geólogo alemán Karl Mauch pensó en 1871 que eran obra de la reina de Saba o de los fenicios. Estas ideas sirvieron para justificar la conquista colonial: si los africanos no habían construido nada grande, los colonos podían presentarse como civilizadores. Las excavaciones de David Randall-MacIver en 1905 y de Gertrude Caton-Thompson en 1929 demostraron que la ciudad era africana y medieval. Aun así, el mito duró décadas. En 1980, el país independiente tomó su nombre: Zimbabue.",
+   "imagen_wikipedia": "Zimbabwe Bird",
+   "profundizar": {
+    "titulo": "Un mito desmontado con pruebas",
+    "parrafos": [
+     "Tras la llegada de la Compañía Británica de Sudáfrica de Cecil Rhodes, a finales del siglo XIX, buscadores de tesoros saquearon el lugar. A comienzos del siglo XX, Richard Hall dirigió trabajos que retiraron capas enteras de tierra para «limpiar» las ruinas, destruyendo restos que habrían ayudado a fecharlas.",
+     "Randall-MacIver comparó los objetos hallados con los que usaban los pueblos de la región y concluyó que la ciudad era africana. En 1929, Gertrude Caton-Thompson excavó con métodos más rigurosos y llegó a la misma conclusión. Más tarde, la datación por radiocarbono confirmó que la construcción se hizo, sobre todo, entre los siglos XI y XV.",
+     "En la Rodesia de minoría blanca, en los años setenta, hubo presiones oficiales para presentar el origen africano como dudoso. El arqueólogo Peter Garlake, que defendía las pruebas, dejó su puesto y el país. La arqueología quedó atrapada en la política.",
+     "Las aves de esteatita también viajaron. Varias acabaron en Sudáfrica, una de ellas en la casa de Rhodes. Sudáfrica devolvió varias en 1981, y en 2003 un museo alemán devolvió la parte de otra. Hoy un ave de Zimbabue aparece en la bandera del país."
+    ]
+   },
+   "otras_miradas": [
+    {
+     "region": "Colonos europeos de Rodesia",
+     "relato": "Muchos colonos, desde Karl Mauch hasta escritores de novelas de aventuras, atribuyeron las ruinas a fenicios, árabes o a la reina de Saba. La idea de una «civilización perdida» extranjera encajaba con la creencia de que los africanos no eran capaces de construir ciudades, y ayudaba a justificar que los europeos tomaran la tierra."
+    },
+    {
+     "region": "Tradición shona",
+     "relato": "Para muchos shona, Gran Zimbabue es un lugar sagrado, ligado a los antepasados y a los espíritus. Su memoria oral no hablaba de constructores extranjeros. Durante la guerra de independencia, el sitio se convirtió en símbolo de que los africanos tenían una historia propia y grandiosa antes de la colonización."
+    },
+    {
+     "region": "La arqueología actual",
+     "relato": "Hoy existe un amplio acuerdo entre los arqueólogos: la ciudad fue obra de pueblos de lengua bantú, antepasados de los shona, entre los siglos XI y XV. Los debates actuales son otros: cuánta gente vivía allí, cómo se organizaba el poder, qué significaban los muros y por qué se abandonó la ciudad."
+    }
+   ],
+   "conecta_con": {
+    "capitulo": "hoy/la-descolonizacion",
+    "texto": "Descubre cómo África recuperó su independencia →"
+   }
+  }
+ ],
+ "notas_revision": [
+  "Etimología de «Zimbabue»: suele traducirse como «casas de piedra» (dzimba dza mabwe), pero existen otras propuestas; comprobar formulación.",
+  "Medidas del Gran Recinto: muro de unos 250 m de largo y hasta unos 11 m de alto; torre cónica de unos 10 m. Verificar con UNESCO u obras de referencia.",
+  "Población de Gran Zimbabue: la horquilla de 10.000–18.000 habitantes es una estimación muy discutida.",
+  "Mapungubwe: fechas de apogeo (c. 1075–1220) y año del hallazgo del rinoceronte de oro (1933).",
+  "Lalibela: fechas del reinado del rey Lalibela (varían según autores) y profundidad de Bete Giyorgis (unos 12 m). Comprobar la propuesta de David Phillipson sobre fases anteriores.",
+  "Kebra Nagast: fecha de composición (comienzos del siglo XIV según su colofón) y la tradición del Arca en Santa María de Sion, en Aksum.",
+  "Ibn Battuta en Kilwa: confirmar el año 1331 (algunas cronologías proponen 1332) y el apodo del sultán, «Abu al-Mawahib» («padre de los regalos»).",
+  "Husuni Kubwa: atribución a al-Hasan ibn Sulaiman y datación en la primera mitad del siglo XIV.",
+  "Monedas de Kilwa halladas en 1944 en las islas Wessel (norte de Australia): comprobar los detalles del hallazgo.",
+  "Jirafas en la corte Ming: la de 1414 llegó vía Bengala y la de Malindi en 1415; confirmar qué viajes de Zheng He (probablemente el quinto, 1417–1419) llegaron a Malindi.",
+  "Toma de Kilwa por Francisco de Almeida en 1505 y saqueo de Mombasa ese mismo año.",
+  "Devolución de las aves de esteatita: varias por Sudáfrica en 1981 y un fragmento por Alemania en 2003; comprobar las cifras exactas.",
+  "Peter Garlake: circunstancias exactas de su salida de Rodesia (c. 1970).",
+  "Número de hablantes de suajili: las estimaciones varían mucho; se ha usado «decenas de millones» a propósito."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "gran-zimbabue",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:02.292768+00:00",
+  "uso": {
+   "input_tokens": 4085,
+   "output_tokens": 18697,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.1951
+ }
+}

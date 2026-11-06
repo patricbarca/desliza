@@ -1,0 +1,296 @@
+{
+ "resumen": "Entre 610 y 750, un mensaje nacido en La Meca transformó Arabia y, en poco más de un siglo, gran parte del mundo. Este capítulo recorre la revelación de Mahoma, la Hégira a Medina, la formación del Corán, los primeros califas, la ruptura entre suníes, chiíes y jariyíes, y la expansión omeya desde Al-Ándalus hasta el valle del Indo, hasta la caída de Damasco en 750.",
+ "historias": [
+  {
+   "titulo": "La Meca, un santuario en el desierto",
+   "fecha": "c. 600",
+   "anio": 600,
+   "lugar": {
+    "nombre": "La Meca (actual Arabia Saudí)",
+    "lat": 21.4225,
+    "lon": 39.8262
+   },
+   "texto": "Hacia el año 600, La Meca era una pequeña ciudad en un valle seco del oeste de Arabia. Su riqueza no venía de la tierra, sino de un santuario: la Kaaba, un edificio cúbico al que acudían peregrinos de muchas tribus. Allí se veneraban numerosos ídolos; la tradición islámica habla de 360. La tribu de Quraysh controlaba el santuario y las caravanas hacia Siria y Yemen, aunque los historiadores discuten cuánto pesaba ese comercio. Los musulmanes creen que la Kaaba fue fundada por Abraham (Ibrahim) y su hijo Ismael. En esta ciudad nació Mahoma (Muhammad) hacia el año 570.",
+   "imagen_wikipedia": "Kaaba",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Una voz en la cueva de Hira",
+   "fecha": "c. 610",
+   "anio": 610,
+   "lugar": {
+    "nombre": "Cueva de Hira, monte Jabal al-Nur, cerca de La Meca",
+    "lat": 21.4575,
+    "lon": 39.8586
+   },
+   "texto": "Mahoma era un comerciante respetado, huérfano desde niño y casado con Jadiya, una viuda que dirigía su propio negocio. Según la tradición islámica, solía retirarse a meditar en una cueva del monte Hira. Hacia el año 610, con unos cuarenta años, sintió la presencia del ángel Gabriel (Yibril), que le ordenó: «¡Recita!». Fue la primera de las revelaciones que recibiría durante más de veinte años. Jadiya fue la primera en creerle. Después lo siguieron su primo Alí, su amigo Abu Bakr y Bilal, un esclavo de origen africano al que Abu Bakr compró la libertad. El mensaje: un solo Dios (Alá, en árabe) y justicia para los débiles.",
+   "imagen_wikipedia": "Jabal al-Nour",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "La Hégira: el viaje que abrió un calendario",
+   "fecha": "622",
+   "anio": 622,
+   "lugar": {
+    "nombre": "Medina (antigua Yatrib)",
+    "lat": 24.4672,
+    "lon": 39.6112
+   },
+   "texto": "Los jefes de La Meca vieron peligro en un mensaje que atacaba a los ídolos y, con ellos, el negocio de la peregrinación. Los primeros musulmanes sufrieron insultos y algunos, torturas; hacia 615 un grupo se refugió en Abisinia, protegido por el rey cristiano de Aksum. En 619 murieron Jadiya y Abu Talib, tío y protector de Mahoma. En 622, invitado por tribus de Yatrib, un oasis a unos 340 km al norte, Mahoma emigró allí en secreto con Abu Bakr. Esa emigración, la hiyra o Hégira, marca el año 1 del calendario islámico. Yatrib pasó a llamarse Medina, «la ciudad» del Profeta.",
+   "imagen_wikipedia": "Al-Masjid an-Nabawi",
+   "profundizar": {
+    "titulo": "Lo que sabemos de los primeros años en Medina",
+    "parrafos": [
+     "Uno de los textos más antiguos de la época es la llamada Constitución de Medina, un pacto entre los emigrantes de La Meca y las tribus de Medina, incluidos varios clanes judíos. Nos ha llegado copiado en la biografía del Profeta de Ibn Ishaq, de mediados del siglo VIII. Muchos historiadores, incluso los más críticos, lo consideran auténtico porque refleja una situación que autores posteriores no tenían motivos para inventar.",
+     "El pacto define una umma, una comunidad cuyos miembros se protegen mutuamente y llevan sus disputas ante Mahoma. No era aún un Estado como los de hoy, sino una alianza de grupos con un árbitro común. Con los años, la relación con algunas tribus judías de Medina se rompió; las fuentes musulmanas narran expulsiones y un episodio de ejecuciones que los historiadores siguen estudiando.",
+     "Junto a la casa de Mahoma se levantó la primera mezquita de Medina: según las crónicas, un patio con muros de adobe y un techo de troncos y hojas de palmera. Sobre ese lugar se alza hoy la Mezquita del Profeta, ampliada muchas veces. El calendario que empieza en 622 no se creó entonces: según la tradición, lo instauró el califa Omar unos dieciséis años después."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "De Badr a la vuelta a La Meca",
+   "fecha": "624–632",
+   "anio": 630,
+   "lugar": {
+    "nombre": "La Meca",
+    "lat": 21.4225,
+    "lon": 39.8262
+   },
+   "texto": "Desde Medina, los musulmanes se enfrentaron a La Meca durante ocho años. En 624 ganaron la batalla de Badr pese a ser menos; en 625 perdieron en Uhud; en 627 resistieron un asedio cavando una zanja alrededor de Medina. Tras una tregua firmada en 628, Mahoma entró en La Meca en 630 casi sin combatir. Las fuentes cuentan que perdonó a la mayoría de sus antiguos enemigos y retiró los ídolos de la Kaaba, que quedó dedicada solo a Dios. En 632 encabezó la llamada peregrinación de despedida y murió poco después en Medina.",
+   "imagen_wikipedia": "Masjid al-Haram",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Dos imperios caen en una generación",
+   "fecha": "636–642",
+   "anio": 637,
+   "lugar": {
+    "nombre": "Ctesifonte, capital sasánida (actual Irak)",
+    "lat": 33.0937,
+    "lon": 44.5809
+   },
+   "texto": "A la muerte de Mahoma, sus compañeros eligieron a Abu Bakr como primer califa, es decir, «sucesor». Con él y con Omar, los ejércitos árabes salieron de la península. El momento era propicio: Bizancio y la Persia sasánida acababan de agotarse en una larga guerra entre ellos. En 636 los bizantinos fueron derrotados junto al río Yarmuk, en Siria; hacia 637 los persas perdieron en Qadisiya y su capital, Ctesifonte, cuyo enorme arco sigue en pie. Jerusalén se rindió hacia 638 y Egipto cayó en 642. Muchos pueblos conquistados siguieron siendo cristianos, judíos o zoroastrianos durante siglos.",
+   "imagen_wikipedia": "Taq Kasra",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Cronistas musulmanes",
+     "relato": "Historiadores de los siglos VIII y IX, como al-Baladhuri o al-Tabari, reunieron relatos de las futuh, las «aperturas» o conquistas. Las presentan como prueba del favor divino y destacan los pactos con las ciudades: a cambio de un impuesto, cristianos y judíos conservaban sus templos y sus leyes. También recogen versiones contradictorias sobre fechas y batallas, algo que los propios autores reconocían."
+    },
+    {
+     "region": "Cristianos de Siria y Egipto",
+     "relato": "Para muchos cristianos de Oriente, perseguidos por Constantinopla por diferencias de doctrina, el cambio de gobernantes no fue solo una catástrofe. Siglos después, el patriarca siríaco Miguel el Sirio escribió que Dios había traído a los árabes para librarlos de la crueldad de los romanos. En cambio, la crónica egipcia de Juan de Nikiu, de finales del siglo VII, describe la conquista de Egipto con violencia y dolor."
+    },
+    {
+     "region": "Armenia",
+     "relato": "La historia atribuida a Sebeos, escrita hacia 660 en Armenia, es uno de los primeros textos no musulmanes que mencionan a Mahoma. Lo describe como un mercader que predicaba al Dios de Abraham y presenta a los árabes como un pueblo que castiga a los imperios. Es valiosa porque se escribió apenas una generación después de los hechos."
+    },
+    {
+     "region": "Irán",
+     "relato": "En Irán, la caída de los sasánidas se recordó como el fin de una época gloriosa. Casi cuatro siglos después, el poeta Ferdousí la narró en el Shahnameh, el «Libro de los reyes», con tono de lamento por el último rey, Yazdegerd III, asesinado hacia 651. Aun así, la lengua y la cultura persas sobrevivieron y acabaron transformando el propio mundo islámico."
+    }
+   ],
+   "conecta_con": {
+    "capitulo": "media/bizancio",
+    "texto": "Descubre cómo resistió Bizancio →"
+   }
+  },
+  {
+   "titulo": "El Corán: de la memoria al libro",
+   "fecha": "c. 650",
+   "anio": 650,
+   "lugar": {
+    "nombre": "Medina",
+    "lat": 24.4672,
+    "lon": 39.6112
+   },
+   "texto": "Para los musulmanes, el Corán es la palabra de Dios revelada a Mahoma. Su nombre significa «recitación»: en vida del Profeta se transmitía sobre todo de memoria, aunque algunos pasajes se anotaban en hojas de palma, huesos o pergamino. Según la tradición, tras morir en batalla muchos de quienes lo sabían de memoria, Abu Bakr mandó reunir los textos. Hacia 650, el califa Utmán hizo preparar una versión común y envió copias a las grandes ciudades. El libro tiene 114 capítulos, llamados suras. Su árabe se volvió modelo de la lengua y la caligrafía, y hoy millones de personas lo memorizan entero.",
+   "imagen_wikipedia": "Birmingham Quran manuscript",
+   "profundizar": {
+    "titulo": "Los manuscritos más antiguos",
+    "parrafos": [
+     "En 2015, la Universidad de Birmingham anunció que dos hojas de un Corán de su colección habían sido datadas con radiocarbono entre 568 y 645, con alta probabilidad. La prueba fecha la muerte del animal cuya piel se usó como pergamino, no el momento exacto de la escritura, pero sitúa el texto muy cerca de la época de Mahoma o de sus primeros sucesores.",
+     "En 1972, durante unas obras en la Gran Mezquita de Saná, en Yemen, aparecieron miles de fragmentos antiguos. Entre ellos hay un palimpsesto: un pergamino que fue raspado y reescrito. El texto inferior, del siglo VII, muestra pequeñas variantes de palabras y de orden respecto al texto que se impuso después. Los especialistas estudian estos detalles para entender cómo se fijó el libro.",
+     "Los primeros manuscritos usaban una escritura llamada hiyazí, inclinada y casi sin signos para las vocales ni para distinguir letras parecidas. Por eso la recitación oral siguió siendo esencial. Con el tiempo se añadieron puntos y marcas vocálicas, y se reconocieron varias lecturas tradicionales, que difieren en matices de pronunciación y, a veces, de sentido."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Alí y la herida de la sucesión",
+   "fecha": "656–661",
+   "anio": 656,
+   "lugar": {
+    "nombre": "Kufa y Nayaf (actual Irak)",
+    "lat": 31.9958,
+    "lon": 44.3143
+   },
+   "texto": "Mahoma no dejó hijos varones vivos, y su sucesión dividió a la comunidad. Unos aceptaron a los califas elegidos entre sus compañeros; otros creían que el elegido debía ser Alí, su primo y esposo de su hija Fátima. En 656, el tercer califa, Utmán, fue asesinado en Medina y Alí se convirtió en el cuarto. Pero su gobierno fue una guerra civil: luchó contra Aisha, viuda del Profeta, y contra Muawiya, gobernador de Siria. En 661 fue asesinado en la mezquita de Kufa. Sus seguidores, la shía de Alí o «partido de Alí», darían nombre a los chiíes.",
+   "imagen_wikipedia": "Imam Ali Shrine",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Tradición suní",
+     "relato": "Para la mayoría suní, Abu Bakr, Omar, Utmán y Alí son los cuatro califas «bien guiados» (rashidun), en un orden legítimo. Consideran que Mahoma no nombró sucesor de forma explícita y que la comunidad eligió bien. Muchos suníes aceptan el discurso de Ghadir Jumm, pero lo entienden como muestra de afecto hacia Alí, no como un nombramiento. «Suní» viene de sunna, la tradición del Profeta."
+    },
+    {
+     "region": "Tradición chií",
+     "relato": "Para los chiíes, Mahoma designó a Alí en vida, sobre todo en un discurso junto al estanque de Ghadir Jumm, al volver de su última peregrinación en 632. Por eso ven a Alí como el primer imán, guía espiritual de la comunidad, y consideran que el liderazgo legítimo debía seguir en su descendencia, empezando por sus hijos Hasán y Husáin."
+    },
+    {
+     "region": "Jariyíes e ibadíes",
+     "relato": "Un tercer grupo, los jariyíes («los que se salen»), rechazó a Alí cuando aceptó negociar con Muawiya tras la batalla de Siffín, en 657. Sostenían que cualquier musulmán piadoso podía ser califa, sin importar su linaje. Fue un jariyí quien mató a Alí. Los ibadíes, mayoritarios hoy en Omán, tienen raíces en aquel movimiento, aunque rechazan identificarse con sus grupos más violentos."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Karbala: la muerte de Husáin",
+   "fecha": "10 de octubre de 680",
+   "anio": 680,
+   "lugar": {
+    "nombre": "Karbala (actual Irak)",
+    "lat": 32.6165,
+    "lon": 44.0324
+   },
+   "texto": "Muawiya fundó la dinastía omeya y, antes de morir, hizo reconocer como heredero a su hijo Yazid, algo nuevo que muchos rechazaron. Husáin, nieto de Mahoma e hijo de Alí, se negó a jurarle lealtad y partió hacia Kufa, donde le habían prometido apoyo. Ese apoyo no llegó. En la llanura de Karbala, cerca del Éufrates, un ejército enviado por el gobernador omeya lo rodeó. El día 10 del mes de muharram del año 680, Husáin murió junto a unos setenta compañeros y familiares, según las fuentes. Ese día, Ashura, es para los chiíes la gran jornada de duelo.",
+   "imagen_wikipedia": "Imam Husayn Shrine",
+   "profundizar": {
+    "titulo": "Cómo se recuerda Karbala",
+    "parrafos": [
+     "El relato más detallado procede de Abu Mijnaf, un historiador de Kufa del siglo VIII cuyas obras se perdieron, pero fueron copiadas en parte por al-Tabari hacia el año 900. Recoge testimonios de supervivientes y detalles como la falta de agua: el campamento de Husáin habría quedado separado del río durante días. Los historiadores aceptan el núcleo de los hechos, aunque algunos detalles pudieron dramatizarse con el tiempo.",
+     "Entre los supervivientes estuvieron mujeres de la familia, como Zaynab, hermana de Husáin, y el hijo de este, Alí, llamado después Zayn al-Abidín, que estaba enfermo. Fueron llevados como cautivos a Kufa y a Damasco. La tradición chií recuerda los discursos de Zaynab ante los vencedores como un acto de valentía que mantuvo viva la memoria de lo ocurrido.",
+     "Cada año, en Ashura, comunidades chiíes de Irak, Irán, Líbano, Pakistán, India y otros países recuerdan Karbala con procesiones y recitaciones; en Irán existen además representaciones teatrales llamadas taziyé. Cuarenta días después, millones de peregrinos caminan hasta el santuario de Husáin en la peregrinación de Arbaín. Muchos suníes también honran a Husáin como mártir."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "La Cúpula de la Roca, un mensaje en oro",
+   "fecha": "c. 691",
+   "anio": 691,
+   "lugar": {
+    "nombre": "Jerusalén",
+    "lat": 31.778,
+    "lon": 35.2354
+   },
+   "texto": "Los omeyas gobernaban desde Damasco un imperio lleno de iglesias magníficas. Para dejar su propia huella, el califa Abd al-Malik mandó construir en Jerusalén la Cúpula de la Roca, terminada hacia 691. Se alza sobre una roca sagrada en la explanada donde estuvo el antiguo Templo judío, un lugar que la tradición islámica asocia al viaje nocturno de Mahoma al cielo. Es el gran monumento islámico más antiguo que conserva en buena parte su forma original. Abd al-Malik también hizo del árabe la lengua de la administración y acuñó monedas sin imágenes, solo con palabras.",
+   "imagen_wikipedia": "Dome of the Rock",
+   "profundizar": {
+    "titulo": "Lo que dicen las inscripciones",
+    "parrafos": [
+     "Dentro del edificio, un friso de mosaico de unos 240 metros recorre la arcada octogonal. Incluye la fecha del año 72 de la Hégira, que corresponde a 691-692. Siglos después, el nombre del califa fue sustituido por el del abasí al-Mamún, pero quien lo cambió dejó la fecha original, que delata al verdadero constructor. Es una de las inscripciones coránicas fechadas más antiguas que conocemos.",
+     "Muchos de esos textos se dirigen a los cristianos: afirman que Dios es uno y no tiene hijo, y presentan a Jesús como profeta y mensajero, hijo de María. En una ciudad de mayoría cristiana, donde destacaba la iglesia del Santo Sepulcro, el edificio proclamaba en piedra y oro la identidad de la nueva fe.",
+     "Las primeras monedas del califato imitaban a las bizantinas y persas, con figuras de soberanos y cruces modificadas. Hubo incluso monedas con la imagen de un califa de pie con su espada. Hacia 696-697, Abd al-Malik introdujo un dinar de oro solo con frases religiosas en árabe. Ese modelo sin imágenes marcó la moneda islámica durante siglos."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "711: Tariq cruza el estrecho",
+   "fecha": "711",
+   "anio": 711,
+   "lugar": {
+    "nombre": "Gibraltar",
+    "lat": 36.1408,
+    "lon": -5.3536
+   },
+   "texto": "En el año 711, un general bereber llamado Tariq ibn Ziyad cruzó desde el norte de África con un ejército formado sobre todo por bereberes recién convertidos. Desembarcó junto a un peñón que desde entonces lleva su nombre: Yabal Tariq, «el monte de Tariq», Gibraltar. El reino visigodo estaba dividido por luchas internas, y su rey, Rodrigo, murió en una batalla que la tradición sitúa junto al río Guadalete. En pocos años, Tariq y su superior, Musa ibn Nusayr, dominaron casi toda la península Ibérica. Nacía Al-Ándalus, que duraría, en distintas formas, casi ocho siglos.",
+   "imagen_wikipedia": "Rock of Gibraltar",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Crónicas cristianas",
+     "relato": "La Crónica mozárabe de 754, escrita por un cristiano que vivía bajo dominio musulmán, narra la conquista como una gran desgracia y es la fuente más cercana a los hechos. Siglos después, los reinos del norte construyeron el relato de la «Reconquista», con la batalla de Covadonga, hacia 722, como punto de partida, y con leyendas como la del conde don Julián, que habría traicionado a su rey por venganza."
+    },
+    {
+     "region": "Relatos árabes",
+     "relato": "Los primeros relatos árabes, como el de Ibn Abd al-Hakam, escrito en Egipto en el siglo IX, mezclan datos con cuentos maravillosos: una casa cerrada en Toledo con pinturas que anunciaban a los invasores, o la fabulosa mesa del rey Salomón hallada entre los tesoros. Para estos autores, la conquista formaba parte de la expansión del islam hacia el lejano Occidente, guiada por Dios."
+    },
+    {
+     "region": "Memoria judía",
+     "relato": "Las comunidades judías habían sufrido duras leyes bajo los últimos reyes visigodos, que llegaron a decretar conversiones forzosas y esclavitud. Algunas crónicas árabes cuentan que los conquistadores confiaron a judíos la custodia de ciudades tomadas. En la memoria sefardí posterior, Al-Ándalus quedó asociado a una época en que pudieron vivir y prosperar, aunque no siempre en paz."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Sind: el califato llega al Indo",
+   "fecha": "711–713",
+   "anio": 712,
+   "lugar": {
+    "nombre": "Banbhore, posible antigua Debal (actual Pakistán)",
+    "lat": 24.751,
+    "lon": 67.52
+   },
+   "texto": "Mientras Tariq entraba en Hispania, en el otro extremo del imperio un joven general, Muhammad ibn Qasim, atacaba el reino de Sind, en el actual Pakistán. Según las crónicas, tomó el puerto de Debal en 711 y al año siguiente derrotó al rey Dahir. En 713 llegó a Multán, famosa por su templo dedicado al Sol. Gobernó con pactos: hindúes y budistas pudieron conservar sus templos a cambio de un impuesto. Por esos mismos años, otros ejércitos omeyas tomaban Samarcanda, en Asia central. El califato se extendía ya desde el Atlántico hasta el Indo.",
+   "imagen_wikipedia": "Banbhore",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/india-medieval",
+    "texto": "Sigue con los templos y sultanatos de la India →"
+   }
+  },
+  {
+   "titulo": "750: cae la dinastía de Damasco",
+   "fecha": "750",
+   "anio": 750,
+   "lugar": {
+    "nombre": "Damasco (actual Siria)",
+    "lat": 33.5116,
+    "lon": 36.3066
+   },
+   "texto": "Bajo el califa al-Walid se terminó hacia 715 la Gran Mezquita de Damasco, levantada donde había una basílica cristiana. Pero el imperio omeya acumulaba descontento: muchos musulmanes no árabes, como persas o bereberes, se sentían tratados como ciudadanos de segunda. Desde Jorasán, una región entre el actual Irán y Asia central, una revuelta con banderas negras reclamó el poder para la familia del Profeta. En 750, los abasíes, descendientes de un tío de Mahoma, vencieron junto al río Zab y casi exterminaron a los omeyas. Un príncipe, Abd al-Rahmán, escapó hasta Al-Ándalus y en 756 fundó un emirato independiente en Córdoba.",
+   "imagen_wikipedia": "Umayyad Mosque",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/edad-de-oro-islamica",
+    "texto": "Sigue con la edad de oro islámica →"
+   }
+  }
+ ],
+ "notas_revision": [
+  "La cifra de 360 ídolos en la Kaaba procede de la tradición islámica; confirmar la formulación.",
+  "Fecha de nacimiento de Mahoma (c. 570) y de la primera revelación (c. 610, a los 40 años) son tradicionales; verificar que se presentan como aproximadas.",
+  "Distancia La Meca–Medina: unos 340 km en línea recta; por carretera es algo mayor.",
+  "Primera emigración a Abisinia: c. 615 según la tradición.",
+  "Institución del calendario de la Hégira por Omar: c. 637-638; comprobar 'unos dieciséis años después'.",
+  "Fechas de Qadisiya (636, 637 o 638 según autores), toma de Ctesifonte (637) y rendición de Jerusalén (637 o 638) son discutidas.",
+  "Paráfrasis atribuida a Miguel el Sirio sobre los árabes como liberación frente a los romanos: verificar redacción.",
+  "Datación por radiocarbono del manuscrito de Birmingham: 568-645 con un 95,4 % de probabilidad (anuncio de 2015).",
+  "Hallazgo de los manuscritos de Saná: 1972.",
+  "Número de compañeros muertos con Husáin en Karbala: la tradición suele dar 72; se ha escrito 'unos setenta'. Fecha equivalente al 10 de muharram del 61 H: 10 de octubre de 680.",
+  "Cúpula de la Roca: longitud del friso (unos 240 m), fecha de la inscripción (72 H) y sustitución del nombre por al-Mamún.",
+  "Reforma monetaria de Abd al-Malik: dinar epigráfico de 77 H (696-697).",
+  "Ubicación de la batalla del Guadalete y fecha exacta del desembarco de Tariq (abril o mayo de 711) son discutidas.",
+  "Identificación de Debal con Banbhore es probable pero no segura; fechas de las campañas de Muhammad ibn Qasim (711-713) según la tradición, incluido el Chach Nama, texto tardío.",
+  "Batalla del Zab: enero de 750. Finalización de la Gran Mezquita de Damasco: c. 715.",
+  "Comprobar que existen en Wikipedia en inglés con esos títulos exactos: 'Jabal al-Nour', 'Taq Kasra', 'Imam Ali Shrine', 'Imam Husayn Shrine', 'Banbhore', 'Al-Masjid an-Nabawi', 'Masjid al-Haram' y 'Birmingham Quran manuscript'."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "islam",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:01.826118+00:00",
+  "uso": {
+   "input_tokens": 4075,
+   "output_tokens": 25553,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.2637
+ }
+}

@@ -1,0 +1,2723 @@
+[
+ {
+  "id": "prologo",
+  "n": "Antes de nosotros",
+  "y": "13.800 M – 300.000 a.C.",
+  "desde": -13800000000,
+  "hasta": -300000,
+  "w": "Pillars of Creation",
+  "c": "#2a2f5a",
+  "d": "El universo tardó 13.800 millones de años en preparar el escenario. Los humanos llegamos en el último segundo.",
+  "caps": [
+   {
+    "id": "bigbang",
+    "n": "El Big Bang y las estrellas",
+    "y": "13.800 M años – 13.000 M años",
+    "desde": -13800000000,
+    "hasta": -13000000000,
+    "w": "Hubble Ultra-Deep Field",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": null,
+    "brief": "Cómo empezó el universo según la ciencia actual, cómo se formaron las primeras estrellas y galaxias, y cómo se fabricaron en ellas los átomos de los que estamos hechos."
+   },
+   {
+    "id": "tierra",
+    "n": "Nace la Tierra",
+    "y": "4.600 M años – 4.000 M años",
+    "desde": -4600000000,
+    "hasta": -4000000000,
+    "w": "The Blue Marble",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": null,
+    "brief": "La formación del sistema solar, el choque que creó la Luna, los océanos y cómo sabemos la edad de la Tierra."
+   },
+   {
+    "id": "vida",
+    "n": "El origen de la vida",
+    "y": "4.000 M años – 2.000 M años",
+    "desde": -4000000000,
+    "hasta": -2000000000,
+    "w": "Stromatolite",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": null,
+    "brief": "Las primeras células, los estromatolitos, la fotosíntesis y el oxígeno que cambió la atmósfera; lo que se sabe y lo que sigue siendo un misterio."
+   },
+   {
+    "id": "animales",
+    "n": "De las algas a los animales",
+    "y": "540 M años – 250 M años",
+    "desde": -540000000,
+    "hasta": -250000000,
+    "w": "Burgess Shale",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": null,
+    "brief": "La explosión cámbrica, la salida de la vida a tierra firme, los primeros bosques y la gran extinción del Pérmico."
+   },
+   {
+    "id": "dinosaurios",
+    "n": "La era de los dinosaurios",
+    "y": "230 M años – 66 M años",
+    "desde": -230000000,
+    "hasta": -66000000,
+    "w": "Tyrannosaurus",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": null,
+    "brief": "Dinosaurios, primeros mamíferos y aves, el asteroide de Chicxulub y cómo se reconstruye ese mundo a partir de fósiles."
+   },
+   {
+    "id": "antepasados",
+    "n": "Nuestros antepasados",
+    "y": "7 M años – 300.000 a.C.",
+    "desde": -7000000,
+    "hasta": -300000,
+    "w": "Lucy (Australopithecus)",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": null,
+    "brief": "Los primeros homínidos de África, Lucy, el andar erguido, Homo erectus y las primeras herramientas de piedra."
+   }
+  ]
+ },
+ {
+  "id": "humanos",
+  "n": "Los primeros humanos",
+  "y": "300.000 – 10.000 a.C.",
+  "desde": -300000,
+  "hasta": -10000,
+  "w": "Lascaux",
+  "c": "#5a3a22",
+  "d": "Cazadores y recolectores que salieron de África, poblaron todos los continentes, sobrevivieron al hielo y crearon las primeras obras de arte.",
+  "caps": [
+   {
+    "id": "homo-sapiens",
+    "n": "Aparece el Homo sapiens",
+    "y": "300.000 – 200.000 a.C.",
+    "desde": -300000,
+    "hasta": -200000,
+    "w": "Jebel Irhoud",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Jebel Irhoud",
+     "lat": 31.85,
+     "lon": -8.87
+    },
+    "brief": "Los fósiles más antiguos de nuestra especie, cómo vivían aquellos grupos en África y qué nos hace distintos."
+   },
+   {
+    "id": "fuego-lenguaje",
+    "n": "El fuego, las herramientas y las palabras",
+    "y": "300.000 – 50.000 a.C.",
+    "desde": -300000,
+    "hasta": -50000,
+    "w": "Hand axe",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Cueva Wonderwerk",
+     "lat": -27.85,
+     "lon": 23.55
+    },
+    "brief": "El control del fuego, la cocina, las herramientas cada vez más finas, los adornos y el origen del lenguaje, con lo que se sabe y lo que se discute."
+   },
+   {
+    "id": "salida-de-africa",
+    "n": "La salida de África",
+    "y": "70.000 – 45.000 a.C.",
+    "desde": -70000,
+    "hasta": -45000,
+    "w": "Blombos Cave",
+    "h": [],
+    "lugar": {
+     "nombre": "Bab el-Mandeb",
+     "lat": 12.58,
+     "lon": 43.33
+    },
+    "brief": "Cómo y cuándo los sapiens se expandieron fuera de África, qué cuenta el ADN y los yacimientos clave en cada continente."
+   },
+   {
+    "id": "otros-humanos",
+    "n": "Neandertales, denisovanos y otros humanos",
+    "y": "400.000 – 40.000 a.C.",
+    "desde": -400000,
+    "hasta": -40000,
+    "w": "La Chapelle-aux-Saints 1",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Valle de Neander",
+     "lat": 51.23,
+     "lon": 6.95
+    },
+    "brief": "Las otras especies humanas: neandertales, denisovanos, Homo floresiensis; cómo vivían, su arte y el ADN que heredamos de ellos."
+   },
+   {
+    "id": "australia",
+    "n": "La llegada a Australia",
+    "y": "65.000 – 40.000 a.C.",
+    "desde": -65000,
+    "hasta": -40000,
+    "w": "Kakadu National Park",
+    "h": [
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Madjedbebe",
+     "lat": -12.5,
+     "lon": 132.9
+    },
+    "brief": "La primera gran travesía por mar, los antepasados de los pueblos aborígenes, su arte rupestre y la cultura viva más antigua del mundo."
+   },
+   {
+    "id": "arte-rupestre",
+    "n": "El arte de las cavernas",
+    "y": "45.000 – 12.000 a.C.",
+    "desde": -45000,
+    "hasta": -12000,
+    "w": "Cave of Altamira",
+    "h": [
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Altamira",
+     "lat": 43.38,
+     "lon": -4.12
+    },
+    "brief": "Las pinturas de Sulawesi, Chauvet, Lascaux y Altamira, las figurillas y las primeras flautas; qué podían significar."
+   },
+   {
+    "id": "edad-de-hielo",
+    "n": "La Edad de Hielo",
+    "y": "115.000 – 11.700 a.C.",
+    "desde": -115000,
+    "hasta": -11700,
+    "w": "Woolly mammoth",
+    "h": [],
+    "lugar": {
+     "nombre": "Mezhyrich",
+     "lat": 49.62,
+     "lon": 31.43
+    },
+    "brief": "La vida entre glaciares, mamuts y casas de huesos, la ropa cosida y la extinción de la megafauna."
+   },
+   {
+    "id": "america-poblamiento",
+    "n": "La llegada a América",
+    "y": "23.000 – 12.000 a.C.",
+    "desde": -23000,
+    "hasta": -12000,
+    "w": "Monte Verde",
+    "h": [],
+    "lugar": {
+     "nombre": "Monte Verde",
+     "lat": -41.5,
+     "lon": -73.2
+    },
+    "brief": "El paso por Beringia, el debate sobre cuándo llegaron los primeros americanos, Monte Verde, las huellas de White Sands y Clovis."
+   }
+  ]
+ },
+ {
+  "id": "agricola",
+  "n": "La revolución agrícola",
+  "y": "10.000 – 3000 a.C.",
+  "desde": -10000,
+  "hasta": -3000,
+  "w": "Göbekli Tepe",
+  "c": "#6b5a2a",
+  "d": "Dejamos de perseguir la comida y empezamos a cultivarla, en varios lugares del mundo a la vez. Nacen las aldeas, la propiedad y los primeros templos.",
+  "caps": [
+   {
+    "id": "gobekli-tepe",
+    "n": "El primer templo",
+    "y": "9.600 – 8.000 a.C.",
+    "desde": -9600,
+    "hasta": -8000,
+    "w": "Göbekli Tepe",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Göbekli Tepe",
+     "lat": 37.22,
+     "lon": 38.92
+    },
+    "brief": "Göbekli Tepe y Karahan Tepe: monumentos levantados por cazadores antes de la agricultura, y por qué cambian la historia."
+   },
+   {
+    "id": "creciente-fertil",
+    "n": "Domesticar el trigo y las cabras",
+    "y": "9.500 – 7.000 a.C.",
+    "desde": -9500,
+    "hasta": -7000,
+    "w": "Einkorn wheat",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Creciente Fértil",
+     "lat": 36.0,
+     "lon": 40.0
+    },
+    "brief": "Cómo nació la agricultura en Oriente Próximo: trigo, cebada, cabras, ovejas; el cambio en la dieta, la salud y la sociedad."
+   },
+   {
+    "id": "jerico",
+    "n": "Jericó y las primeras aldeas",
+    "y": "9.000 – 7.000 a.C.",
+    "desde": -9000,
+    "hasta": -7000,
+    "w": "Tower of Jericho",
+    "h": [],
+    "lugar": {
+     "nombre": "Jericó",
+     "lat": 31.87,
+     "lon": 35.44
+    },
+    "brief": "La torre de Jericó, los cráneos modelados y la vida en las primeras aldeas permanentes."
+   },
+   {
+    "id": "catalhoyuk",
+    "n": "Çatalhöyük, una ciudad sin calles",
+    "y": "7.400 – 6.000 a.C.",
+    "desde": -7400,
+    "hasta": -6000,
+    "w": "Çatalhöyük",
+    "h": [
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Çatalhöyük",
+     "lat": 37.67,
+     "lon": 32.83
+    },
+    "brief": "Una ciudad de casas pegadas con entrada por el techo, sus pinturas, sus enterramientos y su sociedad sorprendentemente igualitaria."
+   },
+   {
+    "id": "china-arroz",
+    "n": "China: arroz, mijo y flautas de hueso",
+    "y": "8.000 – 5.000 a.C.",
+    "desde": -8000,
+    "hasta": -5000,
+    "w": "Jiahu flutes",
+    "h": [
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Jiahu",
+     "lat": 33.61,
+     "lon": 113.67
+    },
+    "brief": "Los inicios de la agricultura en los ríos Amarillo y Yangtsé, Jiahu, la cerámica más antigua y las culturas Yangshao."
+   },
+   {
+    "id": "america-maiz",
+    "n": "América: maíz, calabaza y papa",
+    "y": "8.000 – 3.000 a.C.",
+    "desde": -8000,
+    "hasta": -3000,
+    "w": "Teosinte",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Valle de Oaxaca",
+     "lat": 17.05,
+     "lon": -96.72
+    },
+    "brief": "Cómo el teosinte se convirtió en maíz, la papa y la quinoa en los Andes, y otras domesticaciones americanas."
+   },
+   {
+    "id": "otras-cunas",
+    "n": "Otras cunas: Nueva Guinea y África",
+    "y": "8.000 – 3.000 a.C.",
+    "desde": -8000,
+    "hasta": -3000,
+    "w": "Kuk Early Agricultural Site",
+    "h": [],
+    "lugar": {
+     "nombre": "Kuk",
+     "lat": -5.78,
+     "lon": 144.33
+    },
+    "brief": "Los huertos de Kuk en Nueva Guinea, el sorgo y el ganado en el Sáhara verde, y por qué la agricultura nació en varios sitios por separado."
+   },
+   {
+    "id": "primeros-metales",
+    "n": "El cobre y los primeros metales",
+    "y": "5.000 – 3.000 a.C.",
+    "desde": -5000,
+    "hasta": -3000,
+    "w": "Ötzi",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Alpes de Ötztal",
+     "lat": 46.78,
+     "lon": 10.84
+    },
+    "brief": "Varna y su oro, los primeros hornos, el cobre y Ötzi, el hombre de los hielos."
+   },
+   {
+    "id": "megalitos",
+    "n": "Los megalitos",
+    "y": "4.500 – 2.000 a.C.",
+    "desde": -4500,
+    "hasta": -2000,
+    "w": "Stonehenge",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Stonehenge",
+     "lat": 51.18,
+     "lon": -1.83
+    },
+    "brief": "Dólmenes, Carnac, Newgrange y Stonehenge: quién los levantó, cómo y para qué."
+   }
+  ]
+ },
+ {
+  "id": "civilizaciones",
+  "n": "Las primeras civilizaciones",
+  "y": "3500 – 1200 a.C.",
+  "desde": -3500,
+  "hasta": -1200,
+  "w": "Great Pyramid of Giza",
+  "c": "#7a5a2a",
+  "d": "Ciudades, reyes, leyes y, sobre todo, la escritura: la historia empieza cuando alguien la deja anotada. Ocurre en varios valles fluviales del mundo casi al mismo tiempo.",
+  "caps": [
+   {
+    "id": "sumer",
+    "n": "Sumer, las primeras ciudades",
+    "y": "3.500 – 2.000 a.C.",
+    "desde": -3500,
+    "hasta": -2000,
+    "w": "Ziggurat of Ur",
+    "h": [],
+    "lugar": {
+     "nombre": "Ur",
+     "lat": 30.96,
+     "lon": 46.1
+    },
+    "brief": "Uruk y Ur, los zigurats, el regadío, Gilgamesh y la vida diaria en las primeras ciudades."
+   },
+   {
+    "id": "escritura",
+    "n": "La escritura",
+    "y": "3.300 – 1.200 a.C.",
+    "desde": -3300,
+    "hasta": -1200,
+    "w": "Cuneiform",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Uruk",
+     "lat": 31.32,
+     "lon": 45.64
+    },
+    "brief": "Del recuento de ovejas al cuneiforme, los jeroglíficos y la escritura china; los escribas y cómo se descifraron."
+   },
+   {
+    "id": "egipto",
+    "n": "El antiguo Egipto",
+    "y": "3.100 – 30 a.C.",
+    "desde": -3100,
+    "hasta": -30,
+    "w": "Great Sphinx of Giza",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Guiza",
+     "lat": 29.98,
+     "lon": 31.13
+    },
+    "brief": "El Nilo, los faraones, las pirámides, la vida tras la muerte, Hatshepsut, Akenatón, Tutankamón, Ramsés II y Cleopatra."
+   },
+   {
+    "id": "valle-del-indo",
+    "n": "El valle del Indo",
+    "y": "2.600 – 1.900 a.C.",
+    "desde": -2600,
+    "hasta": -1900,
+    "w": "Mohenjo-daro",
+    "h": [],
+    "lugar": {
+     "nombre": "Mohenjo-daro",
+     "lat": 27.33,
+     "lon": 68.14
+    },
+    "brief": "Harappa y Mohenjo-daro: ciudades planificadas con desagües, una escritura sin descifrar y un final misterioso."
+   },
+   {
+    "id": "caral",
+    "n": "Caral, la ciudad más antigua de América",
+    "y": "3.000 – 1.800 a.C.",
+    "desde": -3000,
+    "hasta": -1800,
+    "w": "Caral",
+    "h": [],
+    "lugar": {
+     "nombre": "Caral",
+     "lat": -10.89,
+     "lon": -77.52
+    },
+    "brief": "La civilización Norte Chico en Perú: pirámides sin cerámica ni guerra aparente, y los quipus."
+   },
+   {
+    "id": "hammurabi",
+    "n": "Babilonia y el código de Hammurabi",
+    "y": "1.792 – 1.595 a.C.",
+    "desde": -1792,
+    "hasta": -1595,
+    "w": "Code of Hammurabi",
+    "h": [],
+    "lugar": {
+     "nombre": "Babilonia",
+     "lat": 32.54,
+     "lon": 44.42
+    },
+    "brief": "Hammurabi, sus leyes, las matemáticas y la astronomía babilónicas."
+   },
+   {
+    "id": "abraham-y-los-patriarcas",
+    "n": "Abraham y los patriarcas",
+    "y": "2.000 – 1.600 a.C.",
+    "desde": -2000,
+    "hasta": -1600,
+    "w": "Abraham",
+    "h": [
+     "biblia",
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Ur",
+     "lat": 30.96,
+     "lon": 46.1
+    },
+    "brief": "Abraham, Isaac, Jacob y José según el Génesis, cómo los recuerdan judaísmo, cristianismo e islam, y lo que dice la arqueología del mundo en que se sitúan."
+   },
+   {
+    "id": "creta-y-micenas",
+    "n": "Creta y Micenas",
+    "y": "2.000 – 1.100 a.C.",
+    "desde": -2000,
+    "hasta": -1100,
+    "w": "Knossos",
+    "h": [
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Cnosos",
+     "lat": 35.3,
+     "lon": 25.16
+    },
+    "brief": "Los palacios minoicos, el mito del laberinto, la erupción de Tera, Micenas y el origen de la guerra de Troya."
+   },
+   {
+    "id": "shang",
+    "n": "China: los Shang",
+    "y": "1.600 – 1.046 a.C.",
+    "desde": -1600,
+    "hasta": -1046,
+    "w": "Oracle bone",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Anyang",
+     "lat": 36.1,
+     "lon": 114.35
+    },
+    "brief": "Los huesos oraculares, el bronce, la reina guerrera Fu Hao y los orígenes de la escritura china."
+   },
+   {
+    "id": "hititas",
+    "n": "Los hititas",
+    "y": "1.650 – 1.180 a.C.",
+    "desde": -1650,
+    "hasta": -1180,
+    "w": "Hattusa",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Hattusa",
+     "lat": 40.02,
+     "lon": 34.62
+    },
+    "brief": "El imperio de Anatolia, el hierro, los carros y la batalla de Qadesh vista desde el lado hitita."
+   },
+   {
+    "id": "el-exodo",
+    "n": "El Éxodo",
+    "y": "1.300 – 1.200 a.C.",
+    "desde": -1300,
+    "hasta": -1200,
+    "w": "The Exodus",
+    "h": [
+     "biblia",
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Sinaí",
+     "lat": 28.54,
+     "lon": 33.97
+    },
+    "brief": "Moisés, la salida de Egipto y la ley del Sinaí según la Biblia, su lugar en judaísmo, cristianismo e islam, y el debate histórico y arqueológico."
+   },
+   {
+    "id": "vedas",
+    "n": "India: los Vedas",
+    "y": "1.500 – 500 a.C.",
+    "desde": -1500,
+    "hasta": -500,
+    "w": "Rigveda",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Punyab",
+     "lat": 31.0,
+     "lon": 75.0
+    },
+    "brief": "Los pueblos védicos, los himnos del Rigveda, las castas y las raíces del hinduismo."
+   },
+   {
+    "id": "olmecas",
+    "n": "Los olmecas",
+    "y": "1.400 – 400 a.C.",
+    "desde": -1400,
+    "hasta": -400,
+    "w": "Olmec colossal heads",
+    "h": [
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "San Lorenzo",
+     "lat": 17.75,
+     "lon": -94.76
+    },
+    "brief": "Las cabezas colosales, el juego de pelota, el jaguar y la primera gran cultura de Mesoamérica."
+   }
+  ]
+ },
+ {
+  "id": "imperios",
+  "n": "Los imperios antiguos",
+  "y": "1200 – 500 a.C.",
+  "desde": -1200,
+  "hasta": -500,
+  "w": "Ishtar Gate",
+  "c": "#1f4a7a",
+  "d": "Tras un colapso misterioso surgen imperios cada vez más grandes. Al mismo tiempo nacen ideas que todavía nos guían: el monoteísmo, la filosofía, el budismo.",
+  "caps": [
+   {
+    "id": "colapso-bronce",
+    "n": "El colapso de la Edad del Bronce",
+    "y": "1.200 – 1.150 a.C.",
+    "desde": -1200,
+    "hasta": -1150,
+    "w": "Sea Peoples",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Medinet Habu",
+     "lat": 25.72,
+     "lon": 32.6
+    },
+    "brief": "Cómo cayeron casi a la vez hititas, micénicos y ciudades como Ugarit: Pueblos del Mar, sequías, terremotos y crisis del comercio."
+   },
+   {
+    "id": "fenicios",
+    "n": "Los fenicios y el alfabeto",
+    "y": "1.100 – 146 a.C.",
+    "desde": -1100,
+    "hasta": -146,
+    "w": "Ahiram sarcophagus",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Biblos",
+     "lat": 34.12,
+     "lon": 35.65
+    },
+    "brief": "Navegantes y comerciantes, la púrpura, Cartago y el alfabeto del que vienen casi todos los demás."
+   },
+   {
+    "id": "david-y-salomon",
+    "n": "David y Salomón",
+    "y": "1.050 – 930 a.C.",
+    "desde": -1050,
+    "hasta": -930,
+    "w": "Solomon's Temple",
+    "h": [
+     "biblia",
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Jerusalén",
+     "lat": 31.78,
+     "lon": 35.23
+    },
+    "brief": "Saúl, David y Salomón según la Biblia, el Templo, el reino dividido y lo que dice la arqueología (la estela de Tel Dan)."
+   },
+   {
+    "id": "asiria",
+    "n": "Asiria",
+    "y": "911 – 609 a.C.",
+    "desde": -911,
+    "hasta": -609,
+    "w": "Lamassu",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Nínive",
+     "lat": 36.36,
+     "lon": 43.15
+    },
+    "brief": "El imperio militar de Mesopotamia, Nínive, la biblioteca de Asurbanipal y su caída."
+   },
+   {
+    "id": "kush",
+    "n": "Kush, los faraones negros",
+    "y": "1.070 a.C. – 350",
+    "desde": -1070,
+    "hasta": 350,
+    "w": "Jebel Barkal",
+    "h": [],
+    "lugar": {
+     "nombre": "Napata",
+     "lat": 18.54,
+     "lon": 31.83
+    },
+    "brief": "El reino de Nubia que llegó a gobernar Egipto, sus pirámides de Meroe y sus reinas candaces."
+   },
+   {
+    "id": "grecia-arcaica",
+    "n": "Grecia: Homero y las polis",
+    "y": "800 – 500 a.C.",
+    "desde": -800,
+    "hasta": -500,
+    "w": "Homer",
+    "h": [
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Olimpia",
+     "lat": 37.64,
+     "lon": 21.63
+    },
+    "brief": "Homero, las primeras Olimpiadas, las colonias griegas, Esparta y Atenas."
+   },
+   {
+    "id": "babilonia",
+    "n": "La Babilonia de Nabucodonosor",
+    "y": "626 – 539 a.C.",
+    "desde": -626,
+    "hasta": -539,
+    "w": "Ishtar Gate",
+    "h": [],
+    "lugar": {
+     "nombre": "Babilonia",
+     "lat": 32.54,
+     "lon": 44.42
+    },
+    "brief": "Nabucodonosor II, la Puerta de Ishtar, los jardines colgantes y la astronomía."
+   },
+   {
+    "id": "exilio",
+    "n": "El exilio en Babilonia",
+    "y": "597 – 538 a.C.",
+    "desde": -597,
+    "hasta": -538,
+    "w": "Babylonian captivity",
+    "h": [
+     "biblia",
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Babilonia",
+     "lat": 32.54,
+     "lon": 44.42
+    },
+    "brief": "La caída de Jerusalén, los deportados de Judá, los profetas y la vuelta tras el edicto de Ciro."
+   },
+   {
+    "id": "el-imperio-persa",
+    "n": "El Imperio persa",
+    "y": "550 – 330 a.C.",
+    "desde": -550,
+    "hasta": -330,
+    "w": "Persepolis",
+    "h": [],
+    "lugar": {
+     "nombre": "Persépolis",
+     "lat": 29.93,
+     "lon": 52.89
+    },
+    "brief": "Ciro, Darío, Persépolis, el camino real y una forma tolerante de gobernar un imperio enorme."
+   },
+   {
+    "id": "confucio",
+    "n": "China: los Zhou y Confucio",
+    "y": "1.046 – 256 a.C.",
+    "desde": -1046,
+    "hasta": -256,
+    "w": "Confucius",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Qufu",
+     "lat": 35.6,
+     "lon": 116.99
+    },
+    "brief": "La dinastía Zhou, el mandato del cielo, Confucio, Laozi y los Reinos Combatientes."
+   },
+   {
+    "id": "buda",
+    "n": "India: Buda y Mahavira",
+    "y": "563 – 400 a.C.",
+    "desde": -563,
+    "hasta": -400,
+    "w": "Mahabodhi Temple",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Bodh Gaya",
+     "lat": 24.69,
+     "lon": 84.99
+    },
+    "brief": "Siddharta Gautama, el budismo, el jainismo de Mahavira y las Upanishads."
+   },
+   {
+    "id": "chavin",
+    "n": "Chavín, los Andes antiguos",
+    "y": "900 – 200 a.C.",
+    "desde": -900,
+    "hasta": -200,
+    "w": "Chavín de Huántar",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Chavín de Huántar",
+     "lat": -9.59,
+     "lon": -77.18
+    },
+    "brief": "El templo de Chavín, sus galerías y sus cultos, y la Paracas."
+   },
+   {
+    "id": "nok",
+    "n": "Nok, el arte del hierro en África",
+    "y": "1.000 a.C. – 300",
+    "desde": -1000,
+    "hasta": 300,
+    "w": "Nok culture",
+    "h": [
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Nok",
+     "lat": 9.5,
+     "lon": 8.0
+    },
+    "brief": "Las esculturas de terracota de Nok, la metalurgia del hierro en África y la expansión bantú."
+   }
+  ]
+ },
+ {
+  "id": "clasico",
+  "n": "El mundo clásico",
+  "y": "500 a.C. – 500 d.C.",
+  "desde": -500,
+  "hasta": 500,
+  "w": "Roman Forum",
+  "c": "#7a2a2a",
+  "d": "Filosofía, democracia, imperios enormes conectados por la Ruta de la Seda y nuevas religiones que cambiarán el mundo.",
+  "caps": [
+   {
+    "id": "atenas",
+    "n": "La Atenas clásica",
+    "y": "490 – 404 a.C.",
+    "desde": -490,
+    "hasta": -404,
+    "w": "Parthenon",
+    "h": [
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Atenas",
+     "lat": 37.97,
+     "lon": 23.73
+    },
+    "brief": "Maratón, Salamina, la democracia, Pericles, el Partenón, el teatro y la guerra del Peloponeso."
+   },
+   {
+    "id": "filosofia-griega",
+    "n": "Sócrates, Platón y Aristóteles",
+    "y": "470 – 322 a.C.",
+    "desde": -470,
+    "hasta": -322,
+    "w": "The School of Athens",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Atenas",
+     "lat": 37.98,
+     "lon": 23.72
+    },
+    "brief": "Las grandes preguntas de los filósofos griegos y por qué siguen vivas."
+   },
+   {
+    "id": "alejandro",
+    "n": "Alejandro Magno",
+    "y": "336 – 323 a.C.",
+    "desde": -336,
+    "hasta": -323,
+    "w": "Alexander Mosaic",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Pela",
+     "lat": 40.75,
+     "lon": 22.52
+    },
+    "brief": "De Macedonia a la India en once años, cómo lo recuerdan griegos, persas y egipcios, y el reparto de su imperio."
+   },
+   {
+    "id": "alejandria",
+    "n": "Alejandría y el mundo helenístico",
+    "y": "323 – 30 a.C.",
+    "desde": -323,
+    "hasta": -30,
+    "w": "Library of Alexandria",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Alejandría",
+     "lat": 31.2,
+     "lon": 29.92
+    },
+    "brief": "La biblioteca, el faro, Euclides, Arquímedes, Eratóstenes y la mezcla de culturas."
+   },
+   {
+    "id": "roma",
+    "n": "Roma",
+    "y": "753 a.C. – 476",
+    "desde": -753,
+    "hasta": 476,
+    "w": "Colosseum",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Roma",
+     "lat": 41.89,
+     "lon": 12.49
+    },
+    "brief": "De la fundación a la caída: República, guerras púnicas, César, Augusto, ingeniería, Pompeya, Constantino."
+   },
+   {
+    "id": "qin-han",
+    "n": "China: Qin y Han",
+    "y": "221 a.C. – 220",
+    "desde": -221,
+    "hasta": 220,
+    "w": "Terracotta Army",
+    "h": [],
+    "lugar": {
+     "nombre": "Xi'an",
+     "lat": 34.38,
+     "lon": 109.27
+    },
+    "brief": "El primer emperador, la Gran Muralla, los guerreros de terracota, la dinastía Han y el papel."
+   },
+   {
+    "id": "ruta-de-la-seda",
+    "n": "La Ruta de la Seda",
+    "y": "130 a.C. – 500",
+    "desde": -130,
+    "hasta": 500,
+    "w": "Mogao Caves",
+    "h": [],
+    "lugar": {
+     "nombre": "Dunhuang",
+     "lat": 40.04,
+     "lon": 94.81
+    },
+    "brief": "Cómo se conectaron China, India, Persia y Roma: seda, especias, ideas y religiones."
+   },
+   {
+    "id": "maurya",
+    "n": "India: Ashoka y los Maurya",
+    "y": "322 – 185 a.C.",
+    "desde": -322,
+    "hasta": -185,
+    "w": "Sanchi",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Pataliputra",
+     "lat": 25.61,
+     "lon": 85.14
+    },
+    "brief": "Chandragupta, el Arthashastra y Ashoka, el emperador que se arrepintió de la guerra."
+   },
+   {
+    "id": "judea",
+    "n": "Judea entre griegos y romanos",
+    "y": "167 a.C. – 73",
+    "desde": -167,
+    "hasta": 73,
+    "w": "Masada",
+    "h": [
+     "biblia",
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Masada",
+     "lat": 31.31,
+     "lon": 35.35
+    },
+    "brief": "Los macabeos, Herodes, los manuscritos del mar Muerto, la destrucción del Templo y Masada."
+   },
+   {
+    "id": "jesus",
+    "n": "Jesús de Nazaret",
+    "y": "4 a.C. – 30",
+    "desde": -4,
+    "hasta": 30,
+    "w": "Sea of Galilee",
+    "h": [
+     "biblia",
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Galilea",
+     "lat": 32.8,
+     "lon": 35.59
+    },
+    "brief": "La vida de Jesús según los evangelios, lo que dicen las fuentes no cristianas, y cómo lo ven cristianos, judíos y musulmanes."
+   },
+   {
+    "id": "iglesia",
+    "n": "La Iglesia primitiva",
+    "y": "30 – 380",
+    "desde": 30,
+    "hasta": 380,
+    "w": "Catacombs of Rome",
+    "h": [
+     "biblia",
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Antioquía",
+     "lat": 36.2,
+     "lon": 36.16
+    },
+    "brief": "Pablo, las primeras comunidades, las persecuciones, Constantino y el cristianismo como religión del Imperio."
+   },
+   {
+    "id": "aksum",
+    "n": "El reino de Aksum",
+    "y": "100 – 940",
+    "desde": 100,
+    "hasta": 940,
+    "w": "Obelisk of Axum",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Aksum",
+     "lat": 14.13,
+     "lon": 38.72
+    },
+    "brief": "El gran reino de Etiopía y Eritrea, sus estelas, su moneda y su temprana conversión al cristianismo."
+   },
+   {
+    "id": "teotihuacan",
+    "n": "Teotihuacán",
+    "y": "1 – 550",
+    "desde": 1,
+    "hasta": 550,
+    "w": "Teotihuacan",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Teotihuacán",
+     "lat": 19.69,
+     "lon": -98.84
+    },
+    "brief": "La gran ciudad de las pirámides del Sol y la Luna, sus barrios de extranjeros y su influencia en los mayas."
+   },
+   {
+    "id": "mayas-clasicos",
+    "n": "Los mayas clásicos",
+    "y": "250 – 900",
+    "desde": 250,
+    "hasta": 900,
+    "w": "Tikal",
+    "h": [
+     "ciencia",
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Tikal",
+     "lat": 17.22,
+     "lon": -89.62
+    },
+    "brief": "Tikal, Calakmul y Palenque, la escritura maya, el calendario, el cero y sus reyes."
+   },
+   {
+    "id": "nazca-moche",
+    "n": "Nazca y los moche",
+    "y": "100 a.C. – 800",
+    "desde": -100,
+    "hasta": 800,
+    "w": "Nazca Lines",
+    "h": [
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Nazca",
+     "lat": -14.74,
+     "lon": -75.13
+    },
+    "brief": "Las líneas de Nazca, los señores de Sipán y la cerámica moche."
+   },
+   {
+    "id": "gupta",
+    "n": "India: la edad de oro Gupta",
+    "y": "320 – 550",
+    "desde": 320,
+    "hasta": 550,
+    "w": "Ajanta Caves",
+    "h": [
+     "ciencia",
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Ajanta",
+     "lat": 20.55,
+     "lon": 75.7
+    },
+    "brief": "Matemáticas, astronomía de Aryabhata, el ajedrez, la literatura sánscrita y las cuevas de Ajanta."
+   }
+  ]
+ },
+ {
+  "id": "media",
+  "n": "La Edad Media",
+  "y": "476 – 1450",
+  "desde": 476,
+  "hasta": 1450,
+  "w": "Mont-Saint-Michel",
+  "c": "#3a2a5a",
+  "d": "Castillos y monasterios, pero también califas sabios, samuráis, navegantes polinesios y reyes africanos más ricos que nadie. Mil años que no fueron oscuros en casi ningún sitio.",
+  "caps": [
+   {
+    "id": "bizancio",
+    "n": "Bizancio",
+    "y": "330–1453",
+    "w": "Hagia Sophia",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Constantinopla",
+     "lat": 41.01,
+     "lon": 28.98
+    },
+    "brief": "El Imperio romano de Oriente: Constantinopla, Justiniano y Teodora, Santa Sofía, el código legal, el fuego griego, la iconoclasia, el cisma de 1054, el saqueo de 1204 y la caída ante los otomanos en 1453.",
+    "desde": 330,
+    "hasta": 1453
+   },
+   {
+    "id": "islam",
+    "n": "El nacimiento del islam",
+    "y": "610–750",
+    "w": "Kaaba",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "La Meca",
+     "lat": 21.42,
+     "lon": 39.83
+    },
+    "brief": "Mahoma y la revelación, La Meca y Medina, la Hégira, el Corán, los primeros califas, la división entre suníes y chiíes y la gran expansión desde Al-Ándalus hasta la India.",
+    "desde": 610,
+    "hasta": 750
+   },
+   {
+    "id": "edad-de-oro-islamica",
+    "n": "La edad de oro islámica",
+    "y": "750–1258",
+    "w": "Mosque–Cathedral of Córdoba",
+    "h": [
+     "ciencia",
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Bagdad",
+     "lat": 33.31,
+     "lon": 44.36
+    },
+    "brief": "Bagdad y la Casa de la Sabiduría, la traducción de los clásicos griegos, Al-Juarismi y el álgebra, Avicena, Al-Ándalus y Córdoba, la convivencia (y los conflictos) entre musulmanes, judíos y cristianos, y el fin con el saqueo mongol de 1258.",
+    "desde": 750,
+    "hasta": 1258
+   },
+   {
+    "id": "carlomagno",
+    "n": "Carlomagno y el feudalismo",
+    "y": "481–1000",
+    "w": "Charlemagne",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Aquisgrán",
+     "lat": 50.78,
+     "lon": 6.08
+    },
+    "brief": "Los reinos germánicos tras Roma, los francos, Carlomagno coronado en el año 800, el renacimiento carolingio, señores y vasallos, castillos, campesinos y monasterios que guardaron los libros antiguos.",
+    "desde": 481,
+    "hasta": 1000
+   },
+   {
+    "id": "vikingos",
+    "n": "Los vikingos",
+    "y": "793–1066",
+    "w": "Oseberg ship",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Escandinavia",
+     "lat": 59.91,
+     "lon": 10.75
+    },
+    "brief": "El ataque a Lindisfarne, los barcos, comercio y saqueo, Islandia y Groenlandia, la llegada a América (Vinlandia) hacia el año 1000, la Rus de Kiev y el final en 1066.",
+    "desde": 793,
+    "hasta": 1066
+   },
+   {
+    "id": "china-tang-song",
+    "n": "China: Tang y Song",
+    "y": "618–1279",
+    "w": "Along the River During the Qingming Festival",
+    "h": [
+     "ciencia",
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Chang an",
+     "lat": 34.26,
+     "lon": 108.94
+    },
+    "brief": "La dinastía Tang y la capital Chang an, la Ruta de la Seda, la poesía, los exámenes imperiales, y los inventos de la época Song: imprenta, pólvora, brújula y papel moneda.",
+    "desde": 618,
+    "hasta": 1279
+   },
+   {
+    "id": "india-medieval",
+    "n": "India: templos y sultanatos",
+    "y": "600–1526",
+    "w": "Brihadisvara Temple",
+    "h": [
+     "fe",
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Thanjavur",
+     "lat": 10.78,
+     "lon": 79.13
+    },
+    "brief": "Los grandes reinos hindúes como los Chola y su poder marítimo, los templos de piedra, los números que hoy llamamos arábigos (incluido el cero), la llegada del islam y el sultanato de Delhi.",
+    "desde": 600,
+    "hasta": 1526
+   },
+   {
+    "id": "japon",
+    "n": "Japón: cortesanos y samuráis",
+    "y": "794–1600",
+    "w": "Byōdō-in",
+    "h": [
+     "arte",
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Kioto",
+     "lat": 34.99,
+     "lon": 135.77
+    },
+    "brief": "La corte de Heian en Kioto, Murasaki Shikibu y La historia de Genji, el ascenso de los samuráis, el shogunato de Kamakura, los intentos de invasión mongola y el código del guerrero.",
+    "desde": 794,
+    "hasta": 1600
+   },
+   {
+    "id": "angkor",
+    "n": "El Imperio jemer y Angkor",
+    "y": "802–1431",
+    "w": "Angkor Wat",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Angkor",
+     "lat": 13.41,
+     "lon": 103.87
+    },
+    "brief": "El Imperio jemer en Camboya, Angkor Wat y Angkor Thom, su enorme red de embalses y canales, el paso del hinduismo al budismo y el abandono de la capital.",
+    "desde": 802,
+    "hasta": 1431
+   },
+   {
+    "id": "cruzadas",
+    "n": "Las cruzadas",
+    "y": "1096–1291",
+    "w": "Krak des Chevaliers",
+    "h": [
+     "guerra",
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Jerusalén",
+     "lat": 31.78,
+     "lon": 35.23
+    },
+    "brief": "Las cruzadas contadas desde varios lados: el llamamiento de 1095, la toma de Jerusalén en 1099, Saladino, el saqueo de Constantinopla en 1204, los pogromos contra judíos en Europa, y cómo las recuerdan hoy Europa y el mundo islámico.",
+    "desde": 1096,
+    "hasta": 1291
+   },
+   {
+    "id": "mongoles",
+    "n": "El Imperio mongol",
+    "y": "1206–1368",
+    "w": "Genghis Khan",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Karakórum",
+     "lat": 47.92,
+     "lon": 106.91
+    },
+    "brief": "Gengis Kan, el mayor imperio terrestre de la historia, la conquista y la destrucción, la Pax Mongolica y la Ruta de la Seda, Kublai Kan y Marco Polo, y su papel en la propagación de la peste.",
+    "desde": 1206,
+    "hasta": 1368
+   },
+   {
+    "id": "mali",
+    "n": "Mali y los reinos de África occidental",
+    "y": "750–1600",
+    "w": "Great Mosque of Djenné",
+    "h": [],
+    "lugar": {
+     "nombre": "Tombuctú",
+     "lat": 16.77,
+     "lon": -3.01
+    },
+    "brief": "Ghana, Mali y Songhai, el oro y la sal del Sahara, Sundiata Keita y la tradición de los griots, Mansa Musa y su peregrinación a La Meca, Tombuctú y sus manuscritos.",
+    "desde": 750,
+    "hasta": 1600
+   },
+   {
+    "id": "gran-zimbabue",
+    "n": "Gran Zimbabue y la costa suajili",
+    "y": "1000–1500",
+    "w": "Great Zimbabwe",
+    "h": [],
+    "lugar": {
+     "nombre": "Gran Zimbabue",
+     "lat": -20.27,
+     "lon": 30.93
+    },
+    "brief": "La ciudad de piedra de Gran Zimbabue, el comercio de oro con el océano Índico, las ciudades suajilis como Kilwa, y Etiopía con las iglesias excavadas en la roca de Lalibela.",
+    "desde": 1000,
+    "hasta": 1500
+   },
+   {
+    "id": "america-antes-de-1492",
+    "n": "América antes de los imperios",
+    "y": "600–1400",
+    "w": "Cahokia",
+    "h": [],
+    "lugar": {
+     "nombre": "Cahokia",
+     "lat": 38.66,
+     "lon": -90.06
+    },
+    "brief": "Las culturas que no suelen salir en los libros: Cahokia en el Misisipi, los pueblos ancestrales de Chaco y Mesa Verde, los toltecas, Tiahuanaco y Wari en los Andes, y la caída de las ciudades mayas clásicas.",
+    "desde": 600,
+    "hasta": 1400
+   },
+   {
+    "id": "polinesia",
+    "n": "Los navegantes de Polinesia",
+    "y": "1000–1300",
+    "w": "Moai",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Rapa Nui",
+     "lat": -27.11,
+     "lon": -109.35
+    },
+    "brief": "La mayor expansión marítima antes de la era moderna: canoas dobles, navegación por estrellas y olas, la llegada a Hawái, Nueva Zelanda (los maoríes) y Rapa Nui con sus moáis. También los pueblos aborígenes de Australia.",
+    "desde": 1000,
+    "hasta": 1300
+   },
+   {
+    "id": "peste-negra",
+    "n": "La peste negra",
+    "y": "1347–1351",
+    "w": "The Triumph of Death",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Marsella",
+     "lat": 43.3,
+     "lon": 5.37
+    },
+    "brief": "Cómo llegó la peste desde Asia, la muerte de un tercio de Europa y gran parte de Oriente Medio, los médicos y las explicaciones de la época, la persecución de judíos acusados sin motivo, y cómo cambió los salarios y la sociedad.",
+    "desde": 1347,
+    "hasta": 1351
+   }
+  ]
+ },
+ {
+  "id": "renacimiento",
+  "n": "Dos mundos se encuentran",
+  "y": "1400 – 1650",
+  "desde": 1400,
+  "hasta": 1650,
+  "w": "Florence Cathedral",
+  "c": "#7a4a1a",
+  "d": "Grandes imperios en Asia, Renacimiento en Europa, los imperios de América en su apogeo... y el momento en que todos los continentes quedan conectados, para bien y para mal.",
+  "caps": [
+   {
+    "id": "ming",
+    "n": "China Ming y los viajes de Zheng He",
+    "y": "1368 – 1644",
+    "desde": 1368,
+    "hasta": 1644,
+    "w": "Forbidden City",
+    "h": [],
+    "lugar": {
+     "nombre": "Pekín",
+     "lat": 39.92,
+     "lon": 116.39
+    },
+    "brief": "La Ciudad Prohibida, las flotas del almirante Zheng He y por qué China dejó de navegar."
+   },
+   {
+    "id": "otomanos",
+    "n": "Los otomanos toman Constantinopla",
+    "y": "1299 – 1566",
+    "desde": 1299,
+    "hasta": 1566,
+    "w": "Topkapı Palace",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Estambul",
+     "lat": 41.01,
+     "lon": 28.98
+    },
+    "brief": "El nacimiento del Imperio otomano, 1453 contado desde ambos lados, y Solimán el Magnífico."
+   },
+   {
+    "id": "renacimiento-italiano",
+    "n": "El Renacimiento",
+    "y": "1400 – 1600",
+    "desde": 1400,
+    "hasta": 1600,
+    "w": "Sistine Chapel ceiling",
+    "h": [
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Florencia",
+     "lat": 43.77,
+     "lon": 11.25
+    },
+    "brief": "Florencia, los Médici, Leonardo, Miguel Ángel y la recuperación de los clásicos (en parte llegados de Bizancio y del mundo islámico)."
+   },
+   {
+    "id": "imprenta",
+    "n": "La imprenta",
+    "y": "1450 – 1550",
+    "desde": 1450,
+    "hasta": 1550,
+    "w": "Gutenberg Bible",
+    "h": [
+     "ciencia",
+     "biblia"
+    ],
+    "lugar": {
+     "nombre": "Maguncia",
+     "lat": 49.99,
+     "lon": 8.27
+    },
+    "brief": "Gutenberg, sus antecedentes en China y Corea, y cómo los libros baratos cambiaron el mundo."
+   },
+   {
+    "id": "aztecas",
+    "n": "Los mexicas (aztecas)",
+    "y": "1325 – 1521",
+    "desde": 1325,
+    "hasta": 1521,
+    "w": "Tenochtitlan",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Tenochtitlan",
+     "lat": 19.43,
+     "lon": -99.13
+    },
+    "brief": "Tenochtitlan, la Triple Alianza, la vida cotidiana, la religión y los códices."
+   },
+   {
+    "id": "incas",
+    "n": "Los incas",
+    "y": "1438 – 1533",
+    "desde": 1438,
+    "hasta": 1533,
+    "w": "Machu Picchu",
+    "h": [],
+    "lugar": {
+     "nombre": "Cusco",
+     "lat": -13.53,
+     "lon": -71.97
+    },
+    "brief": "El Tawantinsuyu, los caminos, los quipus, Machu Picchu y una organización sin dinero ni escritura alfabética."
+   },
+   {
+    "id": "portugal-oceanos",
+    "n": "Portugal rodea África",
+    "y": "1415 – 1520",
+    "desde": 1415,
+    "hasta": 1520,
+    "w": "Vasco da Gama",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Lisboa",
+     "lat": 38.7,
+     "lon": -9.14
+    },
+    "brief": "Las carabelas, el cabo de Buena Esperanza, Vasco da Gama en la India y el comercio del océano Índico que ya existía."
+   },
+   {
+    "id": "colon",
+    "n": "1492: Colón y el encuentro de dos mundos",
+    "y": "1492 – 1506",
+    "desde": 1492,
+    "hasta": 1506,
+    "w": "Christopher Columbus",
+    "h": [],
+    "lugar": {
+     "nombre": "Guanahaní",
+     "lat": 24.06,
+     "lon": -74.53
+    },
+    "brief": "El viaje de Colón, los taínos, y por qué llamarlo «descubrimiento» depende de quién lo cuente."
+   },
+   {
+    "id": "conquista",
+    "n": "La conquista de América",
+    "y": "1519 – 1572",
+    "desde": 1519,
+    "hasta": 1572,
+    "w": "Fall of Tenochtitlan",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Tenochtitlan",
+     "lat": 19.43,
+     "lon": -99.13
+    },
+    "brief": "Cortés y los aliados indígenas, Pizarro y Atahualpa, la resistencia, y las versiones de cronistas españoles e indígenas."
+   },
+   {
+    "id": "intercambio-colombino",
+    "n": "El intercambio colombino",
+    "y": "1492 – 1650",
+    "desde": 1492,
+    "hasta": 1650,
+    "w": "Columbian exchange",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "La Española",
+     "lat": 19.0,
+     "lon": -70.7
+    },
+    "brief": "Plantas, animales y epidemias que cruzaron el Atlántico: la catástrofe demográfica americana y el cambio en la comida del mundo."
+   },
+   {
+    "id": "trata-atlantica",
+    "n": "La trata atlántica de esclavos",
+    "y": "1500 – 1867",
+    "desde": 1500,
+    "hasta": 1867,
+    "w": "Cape Coast Castle",
+    "h": [],
+    "lugar": {
+     "nombre": "Costa del Cabo",
+     "lat": 5.1,
+     "lon": -1.24
+    },
+    "brief": "Doce millones de africanos deportados a América, cómo funcionaba el comercio, la vida y la resistencia de los esclavizados."
+   },
+   {
+    "id": "reforma",
+    "n": "La Reforma y las guerras de religión",
+    "y": "1517 – 1648",
+    "desde": 1517,
+    "hasta": 1648,
+    "w": "Martin Luther",
+    "h": [
+     "fe",
+     "biblia"
+    ],
+    "lugar": {
+     "nombre": "Wittenberg",
+     "lat": 51.87,
+     "lon": 12.65
+    },
+    "brief": "Lutero, la Biblia traducida, Calvino, la Contrarreforma y la guerra de los Treinta Años."
+   },
+   {
+    "id": "mogoles",
+    "n": "India: el Imperio mogol",
+    "y": "1526 – 1707",
+    "desde": 1526,
+    "hasta": 1707,
+    "w": "Taj Mahal",
+    "h": [
+     "arte",
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Agra",
+     "lat": 27.17,
+     "lon": 78.04
+    },
+    "brief": "Babur, Akbar y su tolerancia religiosa, el Taj Mahal y Aurangzeb."
+   },
+   {
+    "id": "safavidas",
+    "n": "Persia safávida",
+    "y": "1501 – 1736",
+    "desde": 1501,
+    "hasta": 1736,
+    "w": "Naqsh-e Jahan Square",
+    "h": [
+     "arte",
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Isfahán",
+     "lat": 32.66,
+     "lon": 51.68
+    },
+    "brief": "Isfahán, el chiismo como religión de Estado y el arte persa."
+   },
+   {
+    "id": "japon-unificacion",
+    "n": "Japón: unificación y cierre",
+    "y": "1550 – 1650",
+    "desde": 1550,
+    "hasta": 1650,
+    "w": "Himeji Castle",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Himeji",
+     "lat": 34.84,
+     "lon": 134.69
+    },
+    "brief": "Nobunaga, Hideyoshi y Tokugawa, los misioneros, los arcabuces y el cierre del país."
+   }
+  ]
+ },
+ {
+  "id": "revoluciones",
+  "n": "Ilustración y revoluciones",
+  "y": "1650 – 1850",
+  "desde": 1650,
+  "hasta": 1850,
+  "w": "Liberty Leading the People",
+  "c": "#1f3f6a",
+  "d": "La razón contra la tradición, la ciencia moderna y las revoluciones que proclaman derechos (y la lucha de quienes quedaban fuera de ellos).",
+  "caps": [
+   {
+    "id": "revolucion-cientifica",
+    "n": "La revolución científica",
+    "y": "1543 – 1727",
+    "desde": 1543,
+    "hasta": 1727,
+    "w": "Isaac Newton",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Cambridge",
+     "lat": 52.2,
+     "lon": 0.12
+    },
+    "brief": "Copérnico, Galileo, Kepler y Newton: un nuevo método para entender el mundo."
+   },
+   {
+    "id": "qing",
+    "n": "China Qing",
+    "y": "1644 – 1800",
+    "desde": 1644,
+    "hasta": 1800,
+    "w": "Qianlong Emperor",
+    "h": [],
+    "lugar": {
+     "nombre": "Pekín",
+     "lat": 39.92,
+     "lon": 116.39
+    },
+    "brief": "La conquista manchú, el esplendor del siglo XVIII y la mayor economía del mundo."
+   },
+   {
+    "id": "japon-edo",
+    "n": "Japón Edo",
+    "y": "1603 – 1868",
+    "desde": 1603,
+    "hasta": 1868,
+    "w": "The Great Wave off Kanagawa",
+    "h": [
+     "arte"
+    ],
+    "lugar": {
+     "nombre": "Edo",
+     "lat": 35.68,
+     "lon": 139.69
+    },
+    "brief": "Dos siglos de paz, la ciudad de Edo, el teatro kabuki y los grabados ukiyo-e."
+   },
+   {
+    "id": "ilustracion",
+    "n": "La Ilustración",
+    "y": "1680 – 1800",
+    "desde": 1680,
+    "hasta": 1800,
+    "w": "Encyclopédie",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "París",
+     "lat": 48.85,
+     "lon": 2.35
+    },
+    "brief": "Voltaire, Rousseau, Kant, la Enciclopedia y la idea de derechos universales."
+   },
+   {
+    "id": "rusia-imperial",
+    "n": "Rusia: de Pedro a Catalina",
+    "y": "1682 – 1796",
+    "desde": 1682,
+    "hasta": 1796,
+    "w": "Peter the Great",
+    "h": [],
+    "lugar": {
+     "nombre": "San Petersburgo",
+     "lat": 59.94,
+     "lon": 30.31
+    },
+    "brief": "Pedro el Grande, San Petersburgo, Catalina la Grande y la expansión por Siberia."
+   },
+   {
+    "id": "pacifico-australia",
+    "n": "Cook, el Pacífico y Australia",
+    "y": "1768 – 1850",
+    "desde": 1768,
+    "hasta": 1850,
+    "w": "James Cook",
+    "h": [],
+    "lugar": {
+     "nombre": "Sídney",
+     "lat": -33.87,
+     "lon": 151.21
+    },
+    "brief": "Los viajes de Cook, la colonización de Australia y Nueva Zelanda vista por los pueblos aborígenes y maoríes."
+   },
+   {
+    "id": "eeuu-independencia",
+    "n": "La independencia de Estados Unidos",
+    "y": "1775 – 1789",
+    "desde": 1775,
+    "hasta": 1789,
+    "w": "United States Declaration of Independence",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Filadelfia",
+     "lat": 39.95,
+     "lon": -75.15
+    },
+    "brief": "La revolución, la Declaración, la Constitución y sus contradicciones (esclavitud y pueblos nativos)."
+   },
+   {
+    "id": "revolucion-francesa",
+    "n": "La Revolución francesa",
+    "y": "1789 – 1799",
+    "desde": 1789,
+    "hasta": 1799,
+    "w": "Storming of the Bastille",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "París",
+     "lat": 48.85,
+     "lon": 2.37
+    },
+    "brief": "La Bastilla, los derechos del hombre (y de la mujer, con Olympe de Gouges), el Terror y su legado."
+   },
+   {
+    "id": "haiti",
+    "n": "La revolución de Haití",
+    "y": "1791 – 1804",
+    "desde": 1791,
+    "hasta": 1804,
+    "w": "Haitian Revolution",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Puerto Príncipe",
+     "lat": 18.54,
+     "lon": -72.34
+    },
+    "brief": "La primera rebelión de esclavizados que fundó un país: Toussaint Louverture y Dessalines."
+   },
+   {
+    "id": "napoleon",
+    "n": "Napoleón",
+    "y": "1799 – 1815",
+    "desde": 1799,
+    "hasta": 1815,
+    "w": "Napoleon",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Austerlitz",
+     "lat": 49.13,
+     "lon": 16.76
+    },
+    "brief": "Su ascenso, el código civil, las guerras por Europa y cómo lo recuerdan en Francia, España, Rusia o Egipto."
+   },
+   {
+    "id": "independencias-latinoamericanas",
+    "n": "Las independencias de América Latina",
+    "y": "1808 – 1826",
+    "desde": 1808,
+    "hasta": 1826,
+    "w": "Simón Bolívar",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Bogotá",
+     "lat": 4.6,
+     "lon": -74.08
+    },
+    "brief": "Bolívar, San Martín, Hidalgo y Morelos, la independencia de Brasil y el papel de indígenas, mestizos y afrodescendientes."
+   },
+   {
+    "id": "abolicion",
+    "n": "La abolición de la esclavitud",
+    "y": "1787 – 1888",
+    "desde": 1787,
+    "hasta": 1888,
+    "w": "Am I Not a Man and a Brother?",
+    "h": [],
+    "lugar": {
+     "nombre": "Londres",
+     "lat": 51.51,
+     "lon": -0.13
+    },
+    "brief": "Las campañas abolicionistas, las rebeliones de esclavizados y las abolición país por país hasta Brasil en 1888."
+   },
+   {
+    "id": "zulu",
+    "n": "África austral: el reino zulú",
+    "y": "1816 – 1879",
+    "desde": 1816,
+    "hasta": 1879,
+    "w": "Shaka",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "KwaZulu",
+     "lat": -28.5,
+     "lon": 31.5
+    },
+    "brief": "Shaka, el Mfecane, los bóeres y la batalla de Isandlwana."
+   }
+  ]
+ },
+ {
+  "id": "industrial",
+  "n": "La era industrial",
+  "y": "1760 – 1914",
+  "desde": 1760,
+  "hasta": 1914,
+  "w": "Industrial Revolution",
+  "c": "#4a4a4a",
+  "d": "Vapor, acero y electricidad cambian el mundo más en un siglo que en los diez anteriores. Y unos pocos países se reparten casi todo el planeta.",
+  "caps": [
+   {
+    "id": "maquina-de-vapor",
+    "n": "La máquina de vapor",
+    "y": "1760 – 1840",
+    "desde": 1760,
+    "hasta": 1840,
+    "w": "Watt steam engine",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Birmingham",
+     "lat": 52.48,
+     "lon": -1.89
+    },
+    "brief": "Por qué la revolución industrial empezó en Gran Bretaña: carbón, algodón, Watt y las primeras fábricas."
+   },
+   {
+    "id": "ferrocarril",
+    "n": "El ferrocarril y el telégrafo",
+    "y": "1825 – 1900",
+    "desde": 1825,
+    "hasta": 1900,
+    "w": "Stephenson's Rocket",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Mánchester",
+     "lat": 53.48,
+     "lon": -2.24
+    },
+    "brief": "Trenes, barcos de vapor y telégrafos que encogieron el mundo."
+   },
+   {
+    "id": "obreros",
+    "n": "Fábricas, obreros y nuevas ideas",
+    "y": "1830 – 1914",
+    "desde": 1830,
+    "hasta": 1914,
+    "w": "Karl Marx",
+    "h": [],
+    "lugar": {
+     "nombre": "Mánchester",
+     "lat": 53.48,
+     "lon": -2.24
+    },
+    "brief": "El trabajo infantil, los sindicatos, el socialismo, Marx y las primeras leyes laborales."
+   },
+   {
+    "id": "guerras-del-opio",
+    "n": "Las guerras del opio",
+    "y": "1839 – 1860",
+    "desde": 1839,
+    "hasta": 1860,
+    "w": "First Opium War",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Cantón",
+     "lat": 23.13,
+     "lon": 113.26
+    },
+    "brief": "Gran Bretaña, el opio y China: el comienzo del «siglo de humillación» en la memoria china."
+   },
+   {
+    "id": "india-britanica",
+    "n": "La India británica",
+    "y": "1757 – 1914",
+    "desde": 1757,
+    "hasta": 1914,
+    "w": "Indian Rebellion of 1857",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Delhi",
+     "lat": 28.61,
+     "lon": 77.2
+    },
+    "brief": "La Compañía de las Indias, la rebelión de 1857 (motín o primera guerra de independencia, según quién lo cuente) y el Raj."
+   },
+   {
+    "id": "darwin",
+    "n": "Darwin y la evolución",
+    "y": "1831 – 1882",
+    "desde": 1831,
+    "hasta": 1882,
+    "w": "Charles Darwin",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Galápagos",
+     "lat": -0.95,
+     "lon": -90.97
+    },
+    "brief": "El viaje del Beagle, El origen de las especies y el debate que provocó."
+   },
+   {
+    "id": "guerra-civil-eeuu",
+    "n": "La guerra civil de Estados Unidos",
+    "y": "1861 – 1865",
+    "desde": 1861,
+    "hasta": 1865,
+    "w": "Abraham Lincoln",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Gettysburg",
+     "lat": 39.83,
+     "lon": -77.23
+    },
+    "brief": "La esclavitud, Lincoln, la guerra y la reconstrucción."
+   },
+   {
+    "id": "meiji",
+    "n": "Japón se moderniza",
+    "y": "1868 – 1912",
+    "desde": 1868,
+    "hasta": 1912,
+    "w": "Meiji Restoration",
+    "h": [],
+    "lugar": {
+     "nombre": "Tokio",
+     "lat": 35.68,
+     "lon": 139.69
+    },
+    "brief": "La restauración Meiji, el fin de los samuráis y el Japón industrial."
+   },
+   {
+    "id": "italia-alemania",
+    "n": "Nacen Italia y Alemania",
+    "y": "1848 – 1871",
+    "desde": 1848,
+    "hasta": 1871,
+    "w": "Otto von Bismarck",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Versalles",
+     "lat": 48.8,
+     "lon": 2.12
+    },
+    "brief": "Las revoluciones de 1848, Garibaldi, Bismarck y el nacionalismo."
+   },
+   {
+    "id": "el-reparto-de-africa",
+    "n": "El reparto de África",
+    "y": "1881 – 1914",
+    "desde": 1881,
+    "hasta": 1914,
+    "w": "Scramble for Africa",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Berlín",
+     "lat": 52.52,
+     "lon": 13.4
+    },
+    "brief": "La conferencia de Berlín, el Congo de Leopoldo II, Adwa y la resistencia africana."
+   },
+   {
+    "id": "medicina-moderna",
+    "n": "Vacunas, microbios y anestesia",
+    "y": "1796 – 1910",
+    "desde": 1796,
+    "hasta": 1910,
+    "w": "Louis Pasteur",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "París",
+     "lat": 48.84,
+     "lon": 2.31
+    },
+    "brief": "Jenner, Pasteur, Koch, la anestesia, la higiene y la caída de la mortalidad infantil."
+   },
+   {
+    "id": "electricidad",
+    "n": "La electricidad y los inventos",
+    "y": "1870 – 1914",
+    "desde": 1870,
+    "hasta": 1914,
+    "w": "Thomas Edison",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Menlo Park",
+     "lat": 40.56,
+     "lon": -74.34
+    },
+    "brief": "Luz eléctrica, teléfono, radio, automóvil y aviones: el mundo moderno toma forma."
+   },
+   {
+    "id": "grandes-migraciones",
+    "n": "Las grandes migraciones",
+    "y": "1840 – 1914",
+    "desde": 1840,
+    "hasta": 1914,
+    "w": "Ellis Island",
+    "h": [],
+    "lugar": {
+     "nombre": "Ellis Island",
+     "lat": 40.7,
+     "lon": -74.04
+    },
+    "brief": "Millones de europeos, chinos e indios cruzando océanos; la diáspora y sus nuevos países."
+   }
+  ]
+ },
+ {
+  "id": "guerras",
+  "n": "El siglo de las guerras",
+  "y": "1914 – 1945",
+  "desde": 1914,
+  "hasta": 1945,
+  "w": "Battle of the Somme",
+  "c": "#5a2222",
+  "d": "Dos guerras mundiales, revoluciones, genocidios y una gran crisis económica. La humanidad descubre de lo que es capaz, para bien y para mal.",
+  "caps": [
+   {
+    "id": "revolucion-mexicana",
+    "n": "La Revolución mexicana",
+    "y": "1910 – 1920",
+    "desde": 1910,
+    "hasta": 1920,
+    "w": "Emiliano Zapata",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Morelos",
+     "lat": 18.68,
+     "lon": -99.1
+    },
+    "brief": "Madero, Villa, Zapata y la constitución de 1917."
+   },
+   {
+    "id": "primera-guerra-mundial",
+    "n": "La Primera Guerra Mundial",
+    "y": "1914 – 1918",
+    "desde": 1914,
+    "hasta": 1918,
+    "w": "World War I",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Verdún",
+     "lat": 49.16,
+     "lon": 5.38
+    },
+    "brief": "Las trincheras, los imperios en guerra, los soldados de las colonias y los frentes fuera de Europa."
+   },
+   {
+    "id": "genocidio-armenio",
+    "n": "El genocidio armenio",
+    "y": "1915 – 1923",
+    "desde": 1915,
+    "hasta": 1923,
+    "w": "Armenian genocide",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Anatolia oriental",
+     "lat": 39.9,
+     "lon": 41.27
+    },
+    "brief": "Las deportaciones y matanzas de armenios y otros cristianos del Imperio otomano, y la lucha por su reconocimiento."
+   },
+   {
+    "id": "revolucion-rusa",
+    "n": "La Revolución rusa",
+    "y": "1917 – 1924",
+    "desde": 1917,
+    "hasta": 1924,
+    "w": "October Revolution",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Petrogrado",
+     "lat": 59.94,
+     "lon": 30.31
+    },
+    "brief": "Febrero y octubre de 1917, Lenin, la guerra civil y el nacimiento de la URSS."
+   },
+   {
+    "id": "gripe-1918",
+    "n": "La gripe de 1918",
+    "y": "1918 – 1920",
+    "desde": 1918,
+    "hasta": 1920,
+    "w": "Spanish flu",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Kansas",
+     "lat": 39.0,
+     "lon": -98.0
+    },
+    "brief": "La pandemia que mató a más que la guerra y por qué la llamaron «española»."
+   },
+   {
+    "id": "fin-imperio-otomano",
+    "n": "Del Imperio otomano a Turquía y Oriente Medio",
+    "y": "1918 – 1938",
+    "desde": 1918,
+    "hasta": 1938,
+    "w": "Mustafa Kemal Atatürk",
+    "h": [],
+    "lugar": {
+     "nombre": "Ankara",
+     "lat": 39.93,
+     "lon": 32.86
+    },
+    "brief": "El reparto de Oriente Medio, las nuevas fronteras y Atatürk."
+   },
+   {
+    "id": "gran-depresion",
+    "n": "La Gran Depresión",
+    "y": "1929 – 1939",
+    "desde": 1929,
+    "hasta": 1939,
+    "w": "Migrant Mother",
+    "h": [],
+    "lugar": {
+     "nombre": "Nueva York",
+     "lat": 40.71,
+     "lon": -74.01
+    },
+    "brief": "El crac del 29, el paro, el New Deal y su efecto en todo el mundo."
+   },
+   {
+    "id": "totalitarismos",
+    "n": "Fascismo, nazismo y estalinismo",
+    "y": "1922 – 1939",
+    "desde": 1922,
+    "hasta": 1939,
+    "w": "Nuremberg rallies",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Núremberg",
+     "lat": 49.45,
+     "lon": 11.08
+    },
+    "brief": "Mussolini, Hitler y Stalin: cómo llegaron al poder y cómo controlaban la sociedad."
+   },
+   {
+    "id": "china-en-guerra",
+    "n": "China: república, guerra civil e invasión",
+    "y": "1911 – 1949",
+    "desde": 1911,
+    "hasta": 1949,
+    "w": "Long March",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Yan'an",
+     "lat": 36.6,
+     "lon": 109.49
+    },
+    "brief": "Sun Yat-sen, nacionalistas y comunistas, la Larga Marcha y la invasión japonesa."
+   },
+   {
+    "id": "segunda-guerra-mundial",
+    "n": "La Segunda Guerra Mundial",
+    "y": "1939 – 1945",
+    "desde": 1939,
+    "hasta": 1945,
+    "w": "Normandy landings",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Normandía",
+     "lat": 49.34,
+     "lon": -0.6
+    },
+    "brief": "Del ataque a Polonia a la rendición de Japón, en todos los frentes: Europa, URSS, Asia, Pacífico y África."
+   },
+   {
+    "id": "holocausto",
+    "n": "El Holocausto",
+    "y": "1933 – 1945",
+    "desde": 1933,
+    "hasta": 1945,
+    "w": "Auschwitz concentration camp",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Auschwitz",
+     "lat": 50.03,
+     "lon": 19.2
+    },
+    "brief": "La persecución y el asesinato de seis millones de judíos, y también de gitanos, discapacitados y otros grupos."
+   },
+   {
+    "id": "bomba-atomica",
+    "n": "La bomba atómica",
+    "y": "1942 – 1945",
+    "desde": 1942,
+    "hasta": 1945,
+    "w": "Trinity (nuclear test)",
+    "h": [
+     "ciencia",
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Hiroshima",
+     "lat": 34.39,
+     "lon": 132.45
+    },
+    "brief": "El proyecto Manhattan, Hiroshima y Nagasaki contadas también por los supervivientes."
+   }
+  ]
+ },
+ {
+  "id": "guerra-fria",
+  "n": "La Guerra Fría",
+  "y": "1945 – 1991",
+  "desde": 1945,
+  "hasta": 1991,
+  "w": "Berlin Wall",
+  "c": "#26405a",
+  "d": "Dos superpotencias se disputan el mundo sin enfrentarse directamente, mientras decenas de países conquistan su independencia y la humanidad llega a la Luna.",
+  "caps": [
+   {
+    "id": "onu-derechos",
+    "n": "La ONU y los derechos humanos",
+    "y": "1945 – 1948",
+    "desde": 1945,
+    "hasta": 1948,
+    "w": "Universal Declaration of Human Rights",
+    "h": [],
+    "lugar": {
+     "nombre": "Nueva York",
+     "lat": 40.75,
+     "lon": -73.97
+    },
+    "brief": "La fundación de la ONU, Núremberg y la Declaración Universal de 1948."
+   },
+   {
+    "id": "telon-de-acero",
+    "n": "El telón de acero",
+    "y": "1946 – 1962",
+    "desde": 1946,
+    "hasta": 1962,
+    "w": "Berlin Wall",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Berlín",
+     "lat": 52.52,
+     "lon": 13.4
+    },
+    "brief": "Dos bloques, el plan Marshall, la OTAN y el Pacto de Varsovia, el muro y la crisis de los misiles."
+   },
+   {
+    "id": "india-pakistan",
+    "n": "La independencia de India y Pakistán",
+    "y": "1947 – 1948",
+    "desde": 1947,
+    "hasta": 1948,
+    "w": "Mahatma Gandhi",
+    "h": [],
+    "lugar": {
+     "nombre": "Delhi",
+     "lat": 28.61,
+     "lon": 77.2
+    },
+    "brief": "Gandhi y la no violencia, la partición y sus millones de desplazados."
+   },
+   {
+    "id": "israel-palestina",
+    "n": "Israel y Palestina",
+    "y": "1947 – 1993",
+    "desde": 1947,
+    "hasta": 1993,
+    "w": "Old City (Jerusalem)",
+    "h": [
+     "fe"
+    ],
+    "lugar": {
+     "nombre": "Jerusalén",
+     "lat": 31.78,
+     "lon": 35.23
+    },
+    "brief": "1948 como independencia para unos y Nakba para otros, las guerras y los intentos de paz, contados con las dos memorias."
+   },
+   {
+    "id": "china-mao",
+    "n": "La China de Mao",
+    "y": "1949 – 1976",
+    "desde": 1949,
+    "hasta": 1976,
+    "w": "Tiananmen",
+    "h": [],
+    "lugar": {
+     "nombre": "Pekín",
+     "lat": 39.9,
+     "lon": 116.39
+    },
+    "brief": "La revolución, el Gran Salto Adelante y su hambruna, y la Revolución Cultural."
+   },
+   {
+    "id": "independencias-africanas",
+    "n": "La independencia de África",
+    "y": "1956 – 1980",
+    "desde": 1956,
+    "hasta": 1980,
+    "w": "Kwame Nkrumah",
+    "h": [],
+    "lugar": {
+     "nombre": "Accra",
+     "lat": 5.6,
+     "lon": -0.19
+    },
+    "brief": "Ghana, Argelia, el Congo de Lumumba, Kenia y las guerras de liberación."
+   },
+   {
+    "id": "corea-vietnam",
+    "n": "Corea y Vietnam",
+    "y": "1950 – 1975",
+    "desde": 1950,
+    "hasta": 1975,
+    "w": "Vietnam War",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Hanói",
+     "lat": 21.03,
+     "lon": 105.85
+    },
+    "brief": "Dos guerras calientes de la Guerra Fría vistas desde cada lado."
+   },
+   {
+    "id": "carrera-espacial",
+    "n": "La carrera espacial",
+    "y": "1957 – 1975",
+    "desde": 1957,
+    "hasta": 1975,
+    "w": "Apollo 11",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Baikonur",
+     "lat": 45.92,
+     "lon": 63.34
+    },
+    "brief": "El Sputnik, Gagarin, Valentina Tereshkova y la llegada a la Luna."
+   },
+   {
+    "id": "derechos-civiles",
+    "n": "Derechos civiles y nuevos movimientos",
+    "y": "1955 – 1975",
+    "desde": 1955,
+    "hasta": 1975,
+    "w": "Martin Luther King Jr.",
+    "h": [],
+    "lugar": {
+     "nombre": "Washington",
+     "lat": 38.89,
+     "lon": -77.03
+    },
+    "brief": "Rosa Parks, Martin Luther King, el feminismo y los movimientos de 1968 en todo el mundo."
+   },
+   {
+    "id": "america-latina-guerra-fria",
+    "n": "América Latina: revoluciones y dictaduras",
+    "y": "1959 – 1990",
+    "desde": 1959,
+    "hasta": 1990,
+    "w": "Cuban Revolution",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "La Habana",
+     "lat": 23.11,
+     "lon": -82.37
+    },
+    "brief": "La revolución cubana, las dictaduras del Cono Sur, las guerras de Centroamérica y el regreso de la democracia."
+   },
+   {
+    "id": "caida-del-muro",
+    "n": "La caída del Muro",
+    "y": "1985 – 1991",
+    "desde": 1985,
+    "hasta": 1991,
+    "w": "Fall of the Berlin Wall",
+    "h": [],
+    "lugar": {
+     "nombre": "Berlín",
+     "lat": 52.52,
+     "lon": 13.4
+    },
+    "brief": "Gorbachov, Solidaridad en Polonia, 1989 y el fin de la Guerra Fría."
+   }
+  ]
+ },
+ {
+  "id": "hoy",
+  "n": "El mundo de hoy",
+  "y": "1991 – hoy",
+  "desde": 1991,
+  "hasta": 2025,
+  "w": "Earthrise",
+  "c": "#1a4a5a",
+  "d": "Un mundo conectado como nunca, con nuevas potencias, nuevas amenazas y la historia que todavía estamos escribiendo.",
+  "caps": [
+   {
+    "id": "fin-urss",
+    "n": "El fin de la URSS",
+    "y": "1991 – 1999",
+    "desde": 1991,
+    "hasta": 1999,
+    "w": "Dissolution of the Soviet Union",
+    "h": [],
+    "lugar": {
+     "nombre": "Moscú",
+     "lat": 55.75,
+     "lon": 37.62
+    },
+    "brief": "La disolución, los nuevos países y la difícil transición."
+   },
+   {
+    "id": "fin-apartheid",
+    "n": "Mandela y el fin del apartheid",
+    "y": "1990 – 1994",
+    "desde": 1990,
+    "hasta": 1994,
+    "w": "Nelson Mandela",
+    "h": [],
+    "lugar": {
+     "nombre": "Ciudad del Cabo",
+     "lat": -33.92,
+     "lon": 18.42
+    },
+    "brief": "El apartheid, la cárcel de Robben Island, las primeras elecciones libres y la Comisión de la Verdad."
+   },
+   {
+    "id": "ruanda-balcanes",
+    "n": "Ruanda y los Balcanes",
+    "y": "1991 – 1999",
+    "desde": 1991,
+    "hasta": 1999,
+    "w": "Srebrenica Genocide Memorial",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Kigali",
+     "lat": -1.94,
+     "lon": 30.06
+    },
+    "brief": "El genocidio de Ruanda, las guerras de Yugoslavia y los tribunales internacionales."
+   },
+   {
+    "id": "internet",
+    "n": "Internet",
+    "y": "1969 – 2007",
+    "desde": 1969,
+    "hasta": 2007,
+    "w": "Tim Berners-Lee",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "CERN, Ginebra",
+     "lat": 46.23,
+     "lon": 6.05
+    },
+    "brief": "De ARPANET a la web y los buscadores: cómo se conectó el mundo."
+   },
+   {
+    "id": "ascenso-de-china",
+    "n": "Globalización y ascenso de China",
+    "y": "1978 – 2020",
+    "desde": 1978,
+    "hasta": 2020,
+    "w": "Pudong",
+    "h": [],
+    "lugar": {
+     "nombre": "Shanghái",
+     "lat": 31.23,
+     "lon": 121.47
+    },
+    "brief": "Las reformas de Deng Xiaoping, la fábrica del mundo y la salida de la pobreza de cientos de millones."
+   },
+   {
+    "id": "11-s",
+    "n": "El 11-S y sus guerras",
+    "y": "2001 – 2021",
+    "desde": 2001,
+    "hasta": 2021,
+    "w": "World Trade Center (1973–2001)",
+    "h": [
+     "guerra"
+    ],
+    "lugar": {
+     "nombre": "Nueva York",
+     "lat": 40.71,
+     "lon": -74.01
+    },
+    "brief": "Los atentados, Afganistán, Irak y sus consecuencias en Oriente Medio."
+   },
+   {
+    "id": "crisis-2008",
+    "n": "La crisis de 2008",
+    "y": "2007 – 2012",
+    "desde": 2007,
+    "hasta": 2012,
+    "w": "Lehman Brothers",
+    "h": [],
+    "lugar": {
+     "nombre": "Nueva York",
+     "lat": 40.71,
+     "lon": -74.01
+    },
+    "brief": "Cómo una crisis de hipotecas se volvió mundial."
+   },
+   {
+    "id": "primavera-arabe",
+    "n": "La Primavera Árabe",
+    "y": "2010 – 2013",
+    "desde": 2010,
+    "hasta": 2013,
+    "w": "Tahrir Square",
+    "h": [],
+    "lugar": {
+     "nombre": "El Cairo",
+     "lat": 30.04,
+     "lon": 31.24
+    },
+    "brief": "Túnez, Egipto, Libia, Siria y Yemen: esperanzas y guerras."
+   },
+   {
+    "id": "clima",
+    "n": "El cambio climático",
+    "y": "1988 – 2025",
+    "desde": 1988,
+    "hasta": 2025,
+    "w": "Paris Agreement",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "París",
+     "lat": 48.85,
+     "lon": 2.35
+    },
+    "brief": "Qué dice la ciencia, de Río a París, y quién contamina y quién lo sufre."
+   },
+   {
+    "id": "pandemia",
+    "n": "La pandemia de COVID-19",
+    "y": "2019 – 2023",
+    "desde": 2019,
+    "hasta": 2023,
+    "w": "COVID-19 pandemic",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "Wuhan",
+     "lat": 30.59,
+     "lon": 114.31
+    },
+    "brief": "El virus, los confinamientos, las vacunas en tiempo récord y sus efectos."
+   },
+   {
+    "id": "movil-ia",
+    "n": "Móviles, redes e inteligencia artificial",
+    "y": "2007 – 2025",
+    "desde": 2007,
+    "hasta": 2025,
+    "w": "iPhone (1st generation)",
+    "h": [
+     "ciencia"
+    ],
+    "lugar": {
+     "nombre": "San Francisco",
+     "lat": 37.77,
+     "lon": -122.42
+    },
+    "brief": "El teléfono inteligente, las redes sociales y la llegada de la inteligencia artificial."
+   }
+  ]
+ }
+]

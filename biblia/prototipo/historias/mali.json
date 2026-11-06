@@ -1,0 +1,283 @@
+{
+ "resumen": "Entre los siglos VIII y XVI, África occidental vio nacer tres grandes imperios: Ghana, Mali y Songhai. Crecieron gracias al comercio de oro y sal a través del Sahara y conectaron la región con el mundo islámico. Es la época de Sundiata Keita, cuya historia guardan los griots; de Mansa Musa, que asombró a El Cairo con su oro; y de Tombuctú, ciudad de mercaderes y sabios cuyos manuscritos han llegado hasta hoy.",
+ "historias": [
+  {
+   "titulo": "Cuando la sal valía tanto como el oro",
+   "fecha": "c. 750",
+   "anio": 750,
+   "lugar": {
+    "nombre": "Taghaza, minas de sal del Sahara (actual Mali)",
+    "lat": 23.6,
+    "lon": -5.0
+   },
+   "texto": "Al sur del Sahara había oro, pero faltaba sal. En el desierto, en cambio, la sal se cortaba en grandes bloques en minas como la que más tarde haría famosa a Taghaza. Sin sal, con el calor del Sahel, personas y animales enferman. Por eso el intercambio era tan valioso. El camello, extendido por el Sahara siglos antes, permitía cruzar el desierto en semanas. Con la expansión del islam, hacia el siglo VIII, mercaderes bereberes y árabes multiplicaron las caravanas. Autores árabes hablaron incluso de un «comercio mudo», sin palabras, que quizá sea más leyenda que realidad. Sobre ese oro y esa sal crecieron los grandes reinos de la región.",
+   "imagen_wikipedia": "Taghaza",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Ghana, el reino del oro",
+   "fecha": "1068",
+   "anio": 1068,
+   "lugar": {
+    "nombre": "Koumbi Saleh (actual Mauritania)",
+    "lat": 15.76,
+    "lon": -7.97
+   },
+   "texto": "El primer gran reino conocido de la región se llamaba Wagadu y lo fundaron los soninké. Los árabes lo llamaron Ghana, que en realidad era el título de su rey. Estaba entre el sureste de la actual Mauritania y el oeste de Mali, lejos del país que hoy lleva su nombre. En 1068, el geógrafo andalusí al-Bakri describió su capital: una ciudad de mercaderes musulmanes con doce mezquitas y, a cierta distancia, la ciudad del rey. Allí el soberano recibía rodeado de oro, y hasta sus perros llevaban collares de oro y plata. Las pepitas eran para el rey; el polvo de oro, para el pueblo.",
+   "imagen_wikipedia": "Koumbi Saleh",
+   "profundizar": {
+    "titulo": "Lo que sabemos de Ghana y cómo lo sabemos",
+    "parrafos": [
+     "Al-Bakri nunca viajó a Ghana. Escribió en al-Ándalus a partir de relatos de comerciantes y de textos anteriores. Aun así, su descripción es la más detallada que tenemos. Nombra al rey de entonces, Tunka Manin, y cuenta que practicaba la religión tradicional de su pueblo, aunque tenía ministros e intérpretes musulmanes.",
+     "El reino era más antiguo de lo que sugiere esa fecha. A finales del siglo VIII, el astrónomo al-Fazari ya mencionaba «Ghana, la tierra del oro». Las tradiciones soninké hablan de una larga lista de reyes anteriores, pero no sabemos con certeza cuándo nació el reino.",
+     "En Koumbi Saleh, en el sureste de Mauritania, se excava desde 1914. Han aparecido casas de piedra, una gran mezquita y cementerios. Muchos arqueólogos creen que era la capital descrita por al-Bakri, aunque no hay una prueba definitiva.",
+     "Cuando la antigua colonia británica de Costa de Oro se independizó en 1957, eligió el nombre de Ghana. No estaba en el mismo lugar, pero quería recordar que África había tenido reinos poderosos mucho antes de la llegada de los europeos."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "La serpiente de Wagadu",
+   "fecha": "c. 1076",
+   "anio": 1076,
+   "lugar": {
+    "nombre": "Wagadu, sureste de la actual Mauritania",
+    "lat": 15.5,
+    "lon": -8.3
+   },
+   "texto": "Hacia el siglo XI, Ghana empezó a perder fuerza. Al norte crecía un movimiento religioso y militar bereber, el de los almorávides, que acabaría dominando Marruecos y al-Ándalus. Algunas crónicas árabes dicen que conquistaron Ghana hacia 1076. Pero los soninké cuentan otra historia, y muchos historiadores dudan hoy de que hubiera una conquista. Lo seguro es que el reino se debilitó, que surgieron poderes rivales como Sosso y que muchos soninké se dispersaron por África occidental, llevando consigo su lengua y su oficio de comerciantes.",
+   "imagen_wikipedia": "Soninke people",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Las crónicas árabes",
+     "relato": "Autores como al-Zuhri, en el siglo XII, e Ibn Jaldún, en el XIV, escribieron que los almorávides sometieron Ghana y que su gente se convirtió al islam. Durante mucho tiempo, esta fue la versión aceptada en los libros de historia: un reino africano derrotado por guerreros del desierto llegados del norte."
+    },
+    {
+     "region": "La tradición oral soninké",
+     "relato": "Los soninké cuentan que Wagadu estaba protegido por Bida, una serpiente que cada año exigía una joven a cambio de lluvia y oro. Un joven llamado Mamadi la mató para salvar a su amada, Sia. La cabeza cortada maldijo el reino: llegó la sequía y el oro se fue lejos. La leyenda explica la decadencia como un castigo y quizá recuerda sequías reales."
+    },
+    {
+     "region": "Los historiadores actuales",
+     "relato": "En 1982, los historiadores David Conrad y Humphrey Fisher publicaron un estudio que ponía en duda la conquista militar. Según ellos, las fuentes son tardías y confusas, y la relación entre Ghana y los almorávides pudo ser de comercio, alianzas y conversiones graduales. El debate sigue abierto y la arqueología aún no lo ha resuelto."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Sundiata, el niño que no podía andar",
+   "fecha": "c. 1235",
+   "anio": 1235,
+   "lugar": {
+    "nombre": "Kirina (actual Mali)",
+    "lat": 12.9,
+    "lon": -8.2
+   },
+   "texto": "Según la epopeya que cantan los griots, Sundiata Keita nació en Manden, un pequeño reino mandinga. Era hijo de un rey y de Sogolon, una mujer jorobada a la que la leyenda asocia con un búfalo. De niño no podía caminar y todos se burlaban de él. Un día se levantó apoyándose en una barra de hierro. Tuvo que exiliarse, pero volvió para enfrentarse al temido rey hechicero de Sosso, Sumanguru Kanté. Hacia 1235, en la batalla de Kirina, lo venció. La leyenda adorna mucho su vida, pero Sundiata existió: fue el fundador del Imperio de Mali.",
+   "imagen_wikipedia": "Sundiata Keita",
+   "profundizar": {
+    "titulo": "Una historia guardada en la memoria",
+    "parrafos": [
+     "Casi todo lo que sabemos de Sundiata viene de la tradición oral. La principal fuente escrita medieval es el historiador Ibn Jaldún, en el siglo XIV, que lo llama Mari Jata. Cuenta que venció a los sosso y reinó unos veinticinco años. Es poco, pero confirma que no es solo un personaje de leyenda.",
+     "Su historia la conservan los griots, llamados jeliw en mandinga. Son familias que heredan el oficio de músicos, historiadores y consejeros. Aprenden de memoria genealogías y hazañas, y las cantan acompañados de instrumentos como la kora o el balafón. La versión más conocida la publicó en 1960 el historiador guineano Djibril Tamsir Niane, a partir del relato del griot Mamadou Kouyaté.",
+     "En la epopeya, el griot de Sundiata, Balla Fasséké, descubre los secretos de Sumanguru y toca su balafón mágico. En Niagassola, en Guinea, la familia Kouyaté custodia un balafón llamado Sosso Bala, que según la tradición es aquel mismo instrumento. La UNESCO lo reconoció como patrimonio inmaterial en 2001, aunque su antigüedad real no está comprobada.",
+     "Hay muchas versiones de la epopeya y cada familia de griots cuenta detalles distintos. No es un documento exacto, pero sí una forma de explicar quién es quién, qué clanes son aliados y qué valores se esperan de un buen gobernante."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Kurukan Fuga, las reglas de un imperio",
+   "fecha": "c. 1236",
+   "anio": 1236,
+   "lugar": {
+    "nombre": "Kurukan Fuga, cerca de Kangaba (actual Mali)",
+    "lat": 11.93,
+    "lon": -8.42
+   },
+   "texto": "Tras su victoria, cuenta la tradición, Sundiata reunió a los jefes de los clanes en una llanura llamada Kurukan Fuga, cerca de Kangaba. Allí se habrían fijado las reglas del nuevo imperio: qué familias ejercían cada oficio, cómo se repartía el poder y qué clanes eran aliados. También las bromas rituales entre clanes, el sanankuya, que aún hoy ayudan en Mali a rebajar tensiones. Este acuerdo no se escribió: pasó de boca en boca durante siglos. En 2009, la UNESCO lo reconoció como patrimonio inmaterial. Los historiadores discuten cuánto del texto actual procede de verdad del siglo XIII.",
+   "imagen_wikipedia": "Kouroukan Fouga",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "El rey que se fue por el océano",
+   "fecha": "c. 1311",
+   "anio": 1311,
+   "lugar": {
+    "nombre": "Costa atlántica de África occidental (punto de partida desconocido)",
+    "lat": 13.5,
+    "lon": -16.7
+   },
+   "texto": "Años después, en El Cairo, Mansa Musa contó una historia sorprendente que recogió el escritor al-Umari. Su antecesor no creía que el océano Atlántico no tuviera fin. Según el relato, envió una flota para averiguarlo y solo volvió un barco, que habló de una fuerte corriente en alta mar. Entonces el propio rey partió con muchísimas embarcaciones y nunca regresó. Así, dijo Musa, llegó él al trono. La tradición posterior llama a ese rey Abubakari II. Algunos autores creen que pudo llegar a América, pero no hay ninguna prueba arqueológica. Es un relato fascinante, no un hecho demostrado.",
+   "imagen_wikipedia": "Abu Bakr II",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Mansa Musa deslumbra a El Cairo",
+   "fecha": "1324",
+   "anio": 1324,
+   "lugar": {
+    "nombre": "El Cairo (Egipto)",
+    "lat": 30.04,
+    "lon": 31.24
+   },
+   "texto": "En 1324, Musa, el mansa (rey) de Mali, atravesó el Sahara camino de La Meca, la peregrinación que el islam pide a quien puede hacerla. Lo acompañaban miles de personas y una enorme cantidad de oro. En El Cairo repartió y gastó tanto que, según el cronista al-Umari, el oro perdió valor en la ciudad durante años. La noticia llegó hasta Europa. Hoy se le llama a menudo «el hombre más rico de la historia», pero su riqueza no se puede calcular de verdad: era la de todo un reino con minas de oro.",
+   "imagen_wikipedia": "Mansa Musa",
+   "profundizar": {
+    "titulo": "Las pruebas de un viaje legendario",
+    "parrafos": [
+     "La fuente principal es al-Umari, un funcionario que llegó a El Cairo unos doce años después y habló con testigos. Cuenta que Musa se resistió a inclinarse ante el sultán mameluco al-Nasir Muhammad, y que al final lo hizo explicando que se postraba ante Dios. Para los cairotas fue un acontecimiento inolvidable.",
+     "Las cifras varían mucho. Las crónicas hablan de miles de acompañantes y de decenas de camellos cargados de oro; Ibn Jaldún menciona unas ochenta cargas. Números muy repetidos hoy, como sesenta mil personas, son poco seguros. Lo indudable es la impresión que causó.",
+     "Al-Umari cuenta también que Musa gastó tanto que, para el viaje de vuelta, tuvo que pedir préstamos a comerciantes de El Cairo. Regresó con libros, juristas y sabios, entre ellos el poeta y arquitecto andalusí al-Sahili. La peregrinación sirvió para presentar a Mali como un reino musulmán respetado.",
+     "En 1375, un taller de cartógrafos judíos de Mallorca dibujó el Atlas catalán. En pleno Sahara aparece un rey sentado, con corona y una gran pepita de oro en la mano, identificado como «Musse Melly». Para los europeos, Mali se había convertido en sinónimo de oro."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/islam",
+    "texto": "Descubre cómo nació el islam →"
+   }
+  },
+  {
+   "titulo": "Tombuctú y su mezquita de barro",
+   "fecha": "c. 1327",
+   "anio": 1327,
+   "lugar": {
+    "nombre": "Mezquita de Djinguereber, Tombuctú (actual Mali)",
+    "lat": 16.7716,
+    "lon": -3.0097
+   },
+   "texto": "Tombuctú nació hacia el año 1100 como campamento de pastores tuaregs, cerca del río Níger y a las puertas del desierto. La leyenda dice que su nombre viene de un pozo cuidado por una mujer llamada Buktu. Bajo Mali se convirtió en un gran mercado donde las caravanas cambiaban sal por oro. Al volver de La Meca, Mansa Musa mandó construir la mezquita de Djinguereber, atribuida a al-Sahili. Es de barro, paja y madera, y los vecinos la revocan con regularidad para que la lluvia no la deshaga. Reconstruida y ampliada muchas veces, sigue en uso casi siete siglos después.",
+   "imagen_wikipedia": "Djinguereber Mosque",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/edad-de-oro-islamica",
+    "texto": "Mira de dónde llegaban los libros y saberes →"
+   }
+  },
+  {
+   "titulo": "Ibn Battuta y el griot del rey",
+   "fecha": "1352–1353",
+   "anio": 1352,
+   "lugar": {
+    "nombre": "Capital de Mali (ubicación discutida; quizá cerca de Niani, actual Guinea)",
+    "lat": 11.38,
+    "lon": -8.38
+   },
+   "texto": "En 1352, el viajero marroquí Ibn Battuta llegó a la capital de Mali, cuya ubicación exacta aún se discute. Pasó unos ocho meses junto a Mansa Sulaymán, hermano de Musa. Le asombró la seguridad de los caminos y la devoción en la oración del viernes. Otras cosas le molestaron, como la ropa de las mujeres o un regalo del rey que le pareció tacaño. Su relato describe a Dugha, el intérprete del mansa, que en las fiestas cantaba sus alabanzas, y a poetas disfrazados de pájaro que le recordaban las hazañas de sus antepasados. Eran griots, y su oficio sigue vivo hoy.",
+   "imagen_wikipedia": "Griot",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Songhai, el imperio que heredó a Mali",
+   "fecha": "1493",
+   "anio": 1493,
+   "lugar": {
+    "nombre": "Tumba de Askia, Gao (actual Mali)",
+    "lat": 16.2894,
+    "lon": -0.0447
+   },
+   "texto": "En el siglo XV, Mali se debilitaba y la ciudad de Gao, río abajo en el Níger, tomó el relevo. Su rey Sonni Ali, gran guerrero, conquistó Tombuctú en 1468 y después Djenné. Los sabios de Tombuctú lo recordaron como un tirano; la tradición songhai, como un héroe con poderes mágicos. En 1493, uno de sus generales, Muhammad Turé, tomó el poder con el título de askia. Peregrinó a La Meca, organizó el imperio y protegió a los eruditos. Su tumba en Gao, una pirámide de barro erizada de vigas de madera, es hoy Patrimonio Mundial.",
+   "imagen_wikipedia": "Tomb of Askia",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Tondibi: los arcabuces cruzan el desierto",
+   "fecha": "13 de marzo de 1591",
+   "anio": 1591,
+   "lugar": {
+    "nombre": "Tondibi, cerca de Gao (actual Mali)",
+    "lat": 16.5,
+    "lon": -0.2
+   },
+   "texto": "El sultán de Marruecos, Ahmad al-Mansur, quería controlar el oro del sur. En 1590 envió a través del Sahara un ejército dirigido por Yawdar Pasha, un hombre nacido en España. Muchos de sus soldados llevaban arcabuces, armas de fuego casi desconocidas en Songhai. Tras meses de marcha, en 1591 se enfrentaron en Tondibi, cerca de Gao, al ejército del askia Ishaq II, mucho más numeroso. El estruendo de las armas causó estragos y los marroquíes vencieron. Songhai se rompió en pedazos. Pero el oro que esperaba al-Mansur nunca llegó en la cantidad soñada.",
+   "imagen_wikipedia": "Ahmad al-Mansur",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "La corte de Marruecos",
+     "relato": "Cronistas de la corte, como al-Fishtali, celebraron la campaña como una gran hazaña. La presentaron como la unión de los musulmanes bajo un califa legítimo. Se suele decir que el oro enviado desde el sur valió a al-Mansur el apodo de al-Dhahabi, «el dorado». Para Marruecos fue una muestra de poder frente a otomanos y europeos."
+    },
+    {
+     "region": "Los sabios de Tombuctú",
+     "relato": "El Tarij al-Sudán, una crónica escrita hacia 1655 por el erudito al-Sadi, recuerda la conquista como el final de una época. Describe un antes de seguridad y prosperidad, y un después de miedo, saqueos y desorden. Para los letrados de Tombuctú, que sufrieron persecución y destierro, fue una catástrofe."
+    },
+    {
+     "region": "Los songhai del sur",
+     "relato": "Tras la derrota, parte de la familia del askia se retiró al sur, a la región de Dendi, en el actual Níger. Allí mantuvo un reino independiente durante décadas y resistió a los marroquíes. Para los songhai de esa zona, la historia no acabó en Tondibi, sino que continuó en esa resistencia."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Ahmed Baba y los libros de Tombuctú",
+   "fecha": "1593–1594",
+   "anio": 1594,
+   "lugar": {
+    "nombre": "Mezquita de Sankoré, Tombuctú (actual Mali)",
+    "lat": 16.7766,
+    "lon": -3.0061
+   },
+   "texto": "En el siglo XVI, Tombuctú era una ciudad de sabios. En mezquitas como la de Sankoré y, sobre todo, en casas particulares, maestros y alumnos estudiaban derecho, religión, gramática, astronomía y medicina. Los libros se copiaban a mano y se vendían caros. El más famoso de aquellos eruditos fue Ahmed Baba. Tras la conquista marroquí fue arrestado y llevado a Marrakech hacia 1594, junto con otros sabios. Allí siguió enseñando y escribiendo hasta que pudo volver en 1608. Hoy, muchísimos manuscritos guardados por familias de Tombuctú conservan esa memoria, escrita en árabe y en lenguas africanas con letras árabes.",
+   "imagen_wikipedia": "Timbuktu Manuscripts",
+   "profundizar": {
+    "titulo": "Una memoria escrita que casi se pierde",
+    "parrafos": [
+     "Ahmed Baba (1556–1627) escribió decenas de obras. Entre ellas, un diccionario biográfico de juristas y una respuesta sobre quién podía ser esclavizado según la ley islámica, en la que rechazaba que el color de la piel fuera un motivo. Sus colegas en Marruecos lo respetaban como a un gran maestro.",
+     "Según su propio testimonio, recogido en fuentes posteriores, perdió en el saqueo una biblioteca de unos 1.600 volúmenes, y era la más pequeña de su familia. La cifra no puede comprobarse, pero muestra el valor que los libros tenían en la ciudad.",
+     "Los manuscritos de Tombuctú y su región se cuentan por cientos de miles, aunque las estimaciones varían mucho. Hay coranes, tratados de derecho y astronomía, poemas, cartas comerciales y contratos. En los años setenta, el gobierno de Mali creó un centro con el nombre de Ahmed Baba para conservarlos.",
+     "En 2012, grupos yihadistas ocuparon Tombuctú y destruyeron mausoleos de santos. Bibliotecarios como Abdel Kader Haidara sacaron en secreto la mayoría de los manuscritos hacia Bamako, escondidos en cajas. Al huir en 2013, los ocupantes quemaron una parte, que se calcula en algunos miles."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "industrial/el-reparto-de-africa",
+    "texto": "Siglos después llegaría el reparto colonial de África →"
+   }
+  }
+ ],
+ "notas_revision": [
+  "Comprobar que el artículo 'Taghaza' de Wikipedia en inglés tiene imagen principal adecuada; alternativa: 'Azalai' o 'Taoudenni'. Verificar también que 'Abu Bakr II', 'Kouroukan Fouga' y 'Ahmad al-Mansur' tienen imagen.",
+  "Coordenadas aproximadas de Kirina, Tondibi y el punto atlántico de Abubakari; la capital de Mali visitada por Ibn Battuta no está localizada con certeza (Niani es solo una hipótesis).",
+  "Al-Bakri (1068): verificar 'doce mezquitas' en la ciudad musulmana, el nombre Tunka Manin y los collares de oro y plata de los perros.",
+  "Mención de al-Fazari (finales del siglo VIII) a 'Ghana, la tierra del oro': confirmar atribución y fecha.",
+  "Fecha 1914 para las primeras excavaciones de Koumbi Saleh (Bonnel de Mézières).",
+  "Estudio de Conrad y Fisher (1982) sobre la supuesta conquista almorávide: confirmar año y autores.",
+  "Ibn Jaldún: reinado de Mari Jata de unos 25 años y las 'ochenta cargas' de oro de Mansa Musa.",
+  "Sosso Bala: año de reconocimiento por la UNESCO (2001). Kurukan Fuga: inscripción como patrimonio inmaterial en 2009.",
+  "Relato de al-Umari sobre el viaje atlántico: no se dan cifras en el texto, pero suelen citarse 200 y 2.000 barcos; la identificación del rey como Abubakari II es posterior.",
+  "Préstamos pedidos por Mansa Musa en El Cairo y su reticencia a postrarse ante al-Nasir Muhammad, según al-Umari.",
+  "Fundación de Tombuctú hacia 1100 y leyenda de Buktu; atribución de Djinguereber a al-Sahili hacia 1327.",
+  "Ibn Battuta: estancia de unos ocho meses (1352–1353), Dugha como intérprete y poetas con disfraz de pájaro.",
+  "Sonni Ali: toma de Tombuctú en 1468; Askia Muhammad toma el poder en 1493; la tumba de Askia es Patrimonio Mundial desde 2004.",
+  "Tondibi: fecha exacta (13 de marzo de 1591), origen español de Yawdar/Judar Pasha, tamaño de los ejércitos y el apodo al-Dhahabi de al-Mansur.",
+  "Ahmed Baba: fechas de arresto (1593) y llegada a Marrakech (1594), regreso en 1608, y la cifra de 1.600 volúmenes (de su propio testimonio).",
+  "Manuscritos quemados en 2013: las estimaciones varían (se suele hablar de unos 4.000). Año de creación del centro Ahmed Baba (1970 o 1973)."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "mali",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:02.269688+00:00",
+  "uso": {
+   "input_tokens": 4084,
+   "output_tokens": 24080,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.249
+ }
+}

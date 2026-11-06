@@ -1,0 +1,252 @@
+{
+ "resumen": "Entre 1347 y 1351 una bacteria llegada de Asia central por las rutas del comercio mató quizá a un tercio de Europa y a una parte enorme de Oriente Medio. Este capítulo sigue su viaje: de las lápidas de Kirguistán al asedio de Caffa, de los puertos de Messina y Marsella a Florencia, Damasco y París. Veremos cómo la explicaron médicos y sabios cristianos, musulmanes y bizantinos, la persecución injusta de los judíos y cómo la falta de trabajadores cambió salarios y sociedades.",
+ "historias": [
+  {
+   "titulo": "Lápidas junto a un lago de Asia",
+   "fecha": "1338–1339",
+   "anio": 1338,
+   "lugar": {
+    "nombre": "Valle de Chüy, cerca del lago Issyk-Kul (actual Kirguistán)",
+    "lat": 42.746,
+    "lon": 75.25
+   },
+   "texto": "Cerca del lago Issyk-Kul, en la actual Kirguistán, vivía en el siglo XIV una comunidad cristiana de la Iglesia del Oriente. Eran en buena parte comerciantes, en plena Ruta de la Seda. Sus lápidas, escritas en alfabeto siríaco, muestran algo extraño: en 1338 y 1339 los entierros se disparan, y varias inscripciones dicen que el difunto murió de «pestilencia». Casi siete siglos después, unos científicos analizaron dientes de esas tumbas y encontraron la bacteria de la peste. Es la pista más antigua y sólida del origen de la gran epidemia, aunque el debate sobre dónde nació exactamente sigue abierto.",
+   "imagen_wikipedia": "Burana Tower",
+   "profundizar": {
+    "titulo": "Cómo se leyó el ADN de los muertos",
+    "parrafos": [
+     "Las lápidas se conocen desde finales del siglo XIX. El orientalista Daniel Chwolson las estudió y ya llamó la atención sobre las menciones a una epidemia. Pero con solo las inscripciones nadie podía saber qué enfermedad era: podía tratarse de cualquier brote de los muchos que sufrían las ciudades de la época.",
+     "En 2022, un equipo internacional con investigadores del Instituto Max Planck publicó en la revista Nature el análisis de restos de dos cementerios de la zona, Kara-Djigach y Burana. En varios individuos enterrados en esos años encontraron ADN de Yersinia pestis, la bacteria que causa la peste.",
+     "Lo más revelador fue comparar ese genoma con otros. La cepa de Issyk-Kul aparece justo en el punto del que parten muchas ramas posteriores de la bacteria, incluida la que arrasó Europa pocos años después. Por eso los autores la consideran la antepasada directa de la peste negra.",
+     "La peste vive de forma natural en roedores salvajes, como las marmotas de las montañas de Tian Shan. Los autores creen que la cepa surgió en esa región. No prueba que la epidemia empezara exactamente allí, pero apunta con fuerza a Asia central y no a China o la India, como se había propuesto."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "El asedio de Caffa",
+   "fecha": "1346",
+   "anio": 1346,
+   "lugar": {
+    "nombre": "Caffa (actual Feodosia, Crimea)",
+    "lat": 45.0319,
+    "lon": 35.3824
+   },
+   "texto": "Caffa, hoy Feodosia, en Crimea, era un puerto de comerciantes genoveses en el mar Negro, al final de las rutas que llegaban de Asia. En 1346 la sitiaba el ejército de Yanibeg, kan de la Horda de Oro, uno de los estados herederos del Imperio mongol. Entonces la peste estalló entre los sitiadores. El notario italiano Gabriele de' Mussis escribió que lanzaron cadáveres con catapultas por encima de las murallas para contagiar la ciudad. Es un relato famoso, pero De' Mussis probablemente no estuvo allí, y muchos historiadores creen que la enfermedad entró con ratas y pulgas, no con los cuerpos.",
+   "imagen_wikipedia": "Feodosia",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/mongoles",
+    "texto": "Conoce el imperio que unió Asia: los mongoles →"
+   }
+  },
+  {
+   "titulo": "Las galeras que llegaron a Sicilia",
+   "fecha": "Octubre de 1347",
+   "anio": 1347,
+   "lugar": {
+    "nombre": "Messina, Sicilia",
+    "lat": 38.1938,
+    "lon": 15.554
+   },
+   "texto": "En el otoño de 1347 la peste ya había alcanzado Constantinopla y Alejandría. En octubre llegó a Messina, en Sicilia. Según el fraile franciscano Michele da Piazza, unas galeras genovesas atracaron en el puerto con marineros enfermos, y la enfermedad se extendió enseguida por la ciudad. Los vecinos expulsaron los barcos, pero ya era tarde. Muchos habitantes huyeron al campo y a otras ciudades, y llevaron la plaga consigo. Las rutas comerciales que habían enriquecido al Mediterráneo se convirtieron en los caminos por los que viajaba la muerte.",
+   "imagen_wikipedia": "Messina",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Marsella, la puerta de Occidente",
+   "fecha": "c. noviembre de 1347",
+   "anio": 1347,
+   "lugar": {
+    "nombre": "Puerto de Marsella, Francia",
+    "lat": 43.2965,
+    "lon": 5.3698
+   },
+   "texto": "Hacia comienzos de noviembre de 1347 la peste desembarcó en Marsella, el gran puerto del sur de Francia. Según algunas crónicas, llegó en una galera procedente de Oriente que ya había sido rechazada en otros puertos, aunque los detalles no son seguros. La ciudad sufrió una mortalidad terrible; las cifras de los cronistas, eso sí, son exageradas y poco fiables. Desde aquí la enfermedad subió por el valle del Ródano, alcanzó Aviñón a principios de 1348 y se extendió por Francia, la península ibérica e Inglaterra. Casi cuatro siglos después, en 1720, Marsella viviría la última gran peste de Europa occidental.",
+   "imagen_wikipedia": "Old Port of Marseille",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "El médico del papa que no huyó",
+   "fecha": "1348",
+   "anio": 1348,
+   "lugar": {
+    "nombre": "Aviñón, Francia",
+    "lat": 43.9509,
+    "lon": 4.8075
+   },
+   "texto": "En 1348 Aviñón era la sede de los papas. Allí trabajaba Guy de Chauliac, médico de Clemente VI. Mientras muchos colegas escapaban, él se quedó, enfermó y sobrevivió. Años después lo describió en su tratado de cirugía: al principio la enfermedad atacaba los pulmones, con fiebre y esputos de sangre, y mataba en unos tres días; después aparecían bultos dolorosos en axilas e ingles, los bubones, y la muerte llegaba en unos cinco. Se cuenta que el papa pasó la epidemia sentado entre dos grandes fuegos para purificar el aire. Sin saberlo, quizá eso le protegió de las pulgas.",
+   "imagen_wikipedia": "Palais des Papes",
+   "profundizar": {
+    "titulo": "¿Qué enfermedad era?",
+    "parrafos": [
+     "Durante siglos se discutió qué fue exactamente la peste negra. La primera pista firme llegó en 1894, durante una epidemia en Hong Kong: el médico Alexandre Yersin identificó la bacteria que hoy lleva su nombre, Yersinia pestis. En 1898, Paul-Louis Simond demostró el papel de las pulgas de las ratas en el contagio.",
+     "La bacteria vive en roedores y pasa a los humanos sobre todo por picaduras de pulgas. Así produce la peste bubónica, con los bubones que describió Chauliac. Si llega a los pulmones se convierte en peste neumónica, que se contagia de persona a persona al toser y, sin antibióticos, es casi siempre mortal.",
+     "Aun así, algunos dudaban de que una enfermedad de ratas pudiera matar tan rápido y a tanta gente. El ADN antiguo zanjó la cuestión: en 2011 se reconstruyó el genoma de la bacteria a partir de esqueletos del cementerio de East Smithfield, en Londres, abierto para las víctimas de 1348 y 1349.",
+     "Lo que sigue en debate es cómo se propagó tan deprisa. Algunos investigadores creen que las ratas negras fueron clave; otros piensan que las pulgas y los piojos humanos también transmitieron la enfermedad directamente entre personas. Probablemente actuaron varias vías a la vez."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Boccaccio y la ciudad vacía",
+   "fecha": "Primavera y verano de 1348",
+   "anio": 1348,
+   "lugar": {
+    "nombre": "Florencia, Italia",
+    "lat": 43.7696,
+    "lon": 11.2558
+   },
+   "texto": "Florencia, una de las ciudades más ricas de Europa, fue golpeada en la primavera de 1348. Giovanni Boccaccio abrió su Decamerón describiendo aquella ciudad: familias que abandonaban a sus enfermos, fosas comunes donde los cuerpos se apilaban por capas, calles desiertas. Luego imaginó a diez jóvenes que huyen al campo y se cuentan cien historias. El cronista Giovanni Villani murió ese mismo año, y su crónica se interrumpe a mitad de una frase. Se calcula que Florencia perdió la mitad de sus habitantes o más. En toda Europa murió quizá un tercio de la población; algunos historiadores creen que fueron incluso más.",
+   "imagen_wikipedia": "Giovanni Boccaccio",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Damasco reza unida",
+   "fecha": "Julio de 1348",
+   "anio": 1348,
+   "lugar": {
+    "nombre": "Damasco, Siria",
+    "lat": 33.5117,
+    "lon": 36.3064
+   },
+   "texto": "En julio de 1348, el viajero marroquí Ibn Battuta estaba en Damasco cuando la peste golpeó la ciudad. Según cuenta, los habitantes ayunaron tres días y después salieron juntos, descalzos, hacia la mezquita de las Huellas, a las afueras: musulmanes, judíos con su Torá y cristianos con sus Evangelios, hombres, mujeres y niños, rogando a Dios. El mundo islámico sufrió tanto como Europa. Egipto y Siria, gobernados por el sultanato mameluco, perdieron quizá un tercio de su gente, aunque las cifras son inciertas. De regreso a su tierra, Ibn Battuta supo que su propia madre había muerto de peste en Tánger.",
+   "imagen_wikipedia": "Umayyad Mosque",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "La culpa fue de los planetas",
+   "fecha": "Octubre de 1348",
+   "anio": 1348,
+   "lugar": {
+    "nombre": "Universidad de París, Francia",
+    "lat": 48.8506,
+    "lon": 2.3444
+   },
+   "texto": "En 1348, el rey Felipe VI de Francia pidió a la facultad de medicina de París que explicara la epidemia. Los sabios respondieron con un informe: la causa lejana era una conjunción de Saturno, Júpiter y Marte ocurrida en 1345; la causa cercana, un aire corrompido, el llamado miasma, que entraba en el cuerpo. Recomendaban encender fuegos con maderas aromáticas, cuidar la dieta y evitar el aire húmedo. No funcionó, pero era la mejor ciencia de su tiempo. Por cierto: el famoso médico con máscara de pájaro no existía aún; ese traje apareció en el siglo XVII.",
+   "imagen_wikipedia": "Plague doctor costume",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Europa cristiana",
+     "relato": "Para muchos cristianos la peste era un castigo divino por los pecados, y se respondió con procesiones, misas y penitencias. En tierras germánicas surgieron los flagelantes, grupos que iban de pueblo en pueblo azotándose en público para aplacar a Dios. El papa Clemente VI los condenó en 1349, en parte porque escapaban al control de la Iglesia y a veces alentaban ataques contra los judíos."
+    },
+    {
+     "region": "Mundo islámico",
+     "relato": "Muchos sabios musulmanes, apoyándose en dichos atribuidos al profeta Mahoma, enseñaban que la peste era un martirio y una misericordia para el creyente, y que no había que huir de una tierra afectada ni entrar en ella. Algunos negaban que existiera el contagio. Pero en Granada, el visir y médico Ibn al-Jatib defendió que la experiencia demostraba que la enfermedad pasaba de unas personas a otras."
+    },
+    {
+     "region": "Bizancio",
+     "relato": "En Constantinopla, el emperador Juan VI Cantacuceno, que perdió a su hijo Andrónico en la epidemia, dejó en su Historia una descripción detallada de los síntomas. La escribió imitando al historiador griego Tucídides, que había narrado la peste de Atenas casi dieciocho siglos antes: una manera muy bizantina de entender la catástrofe, a la luz de los clásicos."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Un tesoro escondido antes de la masacre",
+   "fecha": "Marzo de 1349",
+   "anio": 1349,
+   "lugar": {
+    "nombre": "Erfurt, Alemania",
+    "lat": 50.9787,
+    "lon": 11.0291
+   },
+   "texto": "En 1998, unos obreros que trabajaban en el antiguo barrio judío de Erfurt, en Alemania, encontraron un tesoro enterrado: miles de monedas de plata, joyas y un delicado anillo de boda judío. Su dueño lo escondió seguramente poco antes de la matanza de los judíos de la ciudad, en 1349, y nunca volvió a buscarlo. Por toda Europa corrió el rumor de que los judíos envenenaban los pozos. Era falso: morían de peste igual que sus vecinos. Aun así, cientos de comunidades fueron atacadas. En Estrasburgo, en febrero de 1349, cientos de judíos fueron quemados vivos.",
+   "imagen_wikipedia": "Erfurt Treasure",
+   "profundizar": {
+    "titulo": "Cómo se fabricó una mentira",
+    "parrafos": [
+     "Las acusaciones empezaron pronto. En la primavera y el verano de 1348 hubo ataques contra judíos en Provenza y Cataluña. En septiembre, en el castillo de Chillon, junto al lago Lemán, varios judíos fueron torturados hasta «confesar» que habían envenenado pozos. Esas confesiones, arrancadas por la fuerza, circularon de ciudad en ciudad como si fueran pruebas.",
+     "El papa Clemente VI publicó en 1348 bulas que defendían a los judíos. Su argumento era evidente: ellos también morían, y la peste golpeaba lugares donde no vivía ningún judío. Pidió al clero que protegiera a las comunidades. En muchas ciudades nadie le hizo caso.",
+     "En Estrasburgo, los gobernantes que intentaron proteger a los judíos fueron destituidos. El 14 de febrero de 1349, antes incluso de que llegara la peste, los judíos de la ciudad fueron quemados. Las crónicas hablan de unos dos mil; los historiadores creen que fueron menos. Las deudas con ellos quedaron anuladas, lo que revela otros motivos.",
+     "Muchos supervivientes huyeron hacia el este, a Polonia y Lituania, donde fueron acogidos. El tesoro de Erfurt se expone hoy en la Sinagoga Vieja de la ciudad, uno de los edificios judíos medievales mejor conservados de Europa."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Cuando los trabajadores valieron más",
+   "fecha": "1349–1351",
+   "anio": 1351,
+   "lugar": {
+    "nombre": "Westminster, Londres, Inglaterra",
+    "lat": 51.4995,
+    "lon": -0.1248
+   },
+   "texto": "La peste llegó a Inglaterra en el verano de 1348 y mató, según los cálculos, a entre un tercio y la mitad de sus habitantes. De pronto faltaban brazos para sembrar y cosechar. Los campesinos supervivientes exigían mejores salarios o se marchaban con otro señor que pagara más. Alarmados, el rey Eduardo III y el Parlamento aprobaron en 1349 y 1351 leyes que obligaban a trabajar por el sueldo de antes de la epidemia. Fracasaron: los salarios subieron de todas formas. Para muchos supervivientes la vida mejoró: comían más carne, vestían mejor y podían negociar.",
+   "imagen_wikipedia": "Edward III of England",
+   "profundizar": {
+    "titulo": "Un mundo patas arriba",
+    "parrafos": [
+     "La Ordenanza de Trabajadores de 1349 y el Estatuto de Trabajadores de 1351 fijaban los salarios al nivel anterior a la peste y castigaban a quien pidiera más o abandonara su trabajo. Los registros judiciales conservan muchísimos procesos por incumplirlas, señal de que la gente las desobedecía de forma masiva.",
+     "La tensión acumulada estalló en 1381 con la Revuelta de los Campesinos, que llegó hasta Londres. La chispa fue un nuevo impuesto por persona, pero detrás estaba el malestar por las leyes que querían frenar las nuevas libertades. La revuelta fue aplastada, aunque la servidumbre siguió desapareciendo poco a poco en Inglaterra.",
+     "No en todas partes ocurrió lo mismo. En Europa oriental, en los siglos siguientes, los señores lograron atar todavía más a los campesinos a la tierra. En Egipto, según algunos historiadores, la élite mameluca reaccionó exprimiendo a los campesinos, y la economía rural tardó mucho en recuperarse.",
+     "La peste tampoco se fue. Volvió una y otra vez durante más de tres siglos, con nuevos brotes cada pocos años o décadas. Muchas regiones de Europa no recuperaron la población de antes de 1347 hasta finales del siglo XV o incluso más tarde."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Ragusa inventa la cuarentena",
+   "fecha": "27 de julio de 1377",
+   "anio": 1377,
+   "lugar": {
+    "nombre": "Ragusa (actual Dubrovnik, Croacia)",
+    "lat": 42.6407,
+    "lon": 18.1077
+   },
+   "texto": "La peste regresó una y otra vez. En 1377, la república de Ragusa, hoy Dubrovnik, en la costa de Croacia, tomó una decisión nueva: los barcos y viajeros que llegaran de zonas infectadas debían esperar treinta días aislados, en islotes cercanos o en la vecina Cavtat, antes de entrar en la ciudad. Más tarde otros puertos, como Venecia, ampliaron el plazo a cuarenta días, en italiano quaranta giorni. De ahí viene la palabra cuarentena. Nadie sabía aún qué causaba la enfermedad, pero la experiencia enseñó que aislar a los recién llegados ayudaba a frenarla.",
+   "imagen_wikipedia": "Dubrovnik",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "renacimiento/el-renacimiento",
+    "texto": "Descubre el mundo que floreció tras la peste: el Renacimiento →"
+   }
+  }
+ ],
+ "notas_revision": [
+  "Issyk-Kul: confirmar los datos del estudio de Spyrou et al. (Nature, 2022) sobre los cementerios de Kara-Djigach y Burana y la datación 1338–1339; confirmar que Chwolson estudió las lápidas a finales del siglo XIX.",
+  "Caffa: confirmar fecha del asedio (1346) y que el kan era Yanibeg (Jani Beg); el relato de los cadáveres catapultados procede de Gabriele de' Mussis y su presencia en Caffa es dudosa.",
+  "Messina: comprobar la fecha (octubre de 1347) y la atribución del relato de las galeras genovesas a Michele da Piazza.",
+  "Marsella: verificar la fecha de llegada (c. 1 de noviembre de 1347) y la llegada a Aviñón a principios de 1348; la historia de la galera rechazada en otros puertos es incierta.",
+  "Guy de Chauliac: comprobar los plazos de tres y cinco días según la Chirurgia Magna; la anécdota de Clemente VI entre dos fuegos es tradicional y su relación con las pulgas es especulativa.",
+  "East Smithfield: confirmar que el genoma se publicó en 2011 (Bos et al.).",
+  "Villani: confirmar que Giovanni Villani murió de peste en 1348 y que su crónica queda interrumpida a mitad de frase.",
+  "Ibn Battuta: verificar la descripción de la procesión a la mezquita de las Huellas (al-Aqdam) en julio de 1348 y la muerte de su madre por la peste en Tánger.",
+  "Mortalidad: las estimaciones (un tercio de Europa; quizá un tercio de Egipto y Siria; Florencia la mitad o más; Inglaterra entre un tercio y la mitad) son aproximadas y discutidas.",
+  "Informe de París: confirmar la fecha (octubre de 1348) y la conjunción planetaria de 1345 (tradicionalmente el 20 de marzo de 1345).",
+  "Traje de médico con pico: comprobar la datación en el siglo XVII (atribuido a Charles de Lorme).",
+  "Juan VI Cantacuceno: confirmar que su hijo Andrónico murió de peste en 1347.",
+  "Tesoro de Erfurt: confirmar hallazgo en 1998, contenido (más de 3.000 monedas de plata, anillo de boda judío) y fecha del pogromo (marzo de 1349).",
+  "Chillon (septiembre de 1348), bulas de Clemente VI (julio y septiembre de 1348) y Estrasburgo (14 de febrero de 1349; cifra de unos 2.000 según las crónicas, probablemente exagerada).",
+  "Leyes inglesas: Ordenanza de Trabajadores (1349) y Estatuto de Trabajadores (1351); comprobar la expresión sobre la abundancia de procesos judiciales.",
+  "Ragusa: confirmar el decreto del 27 de julio de 1377 sobre los treinta días (trentino) y los lugares de aislamiento (islotes cercanos y Cavtat)."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "peste-negra",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:02.277683+00:00",
+  "uso": {
+   "input_tokens": 4095,
+   "output_tokens": 22645,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.2346
+ }
+}

@@ -1,0 +1,169 @@
+{
+  "resumen": "Durante menos de un siglo, una ciudad de unos pocos cientos de miles de habitantes resistió dos invasiones persas, inventó una democracia directa, levantó el Partenón y llenó sus teatros de tragedias y comedias. Esa misma Atenas se apoyaba en el trabajo de esclavos, excluía a las mujeres de la política y convirtió a sus aliados en súbditos. La guerra contra Esparta terminó con su derrota en el 404 a.C.",
+  "historias": [
+    {
+      "titulo": "Maratón",
+      "fecha": "Septiembre de 490 a.C.",
+      "anio": -490,
+      "lugar": { "nombre": "Llanura de Maratón (Ática, Grecia)", "lat": 38.12, "lon": 23.98 },
+      "texto": "En el 490 a.C., una flota enviada por el rey persa Darío I desembarcó en la llanura de Maratón, a unos 40 kilómetros de Atenas. Unos 10.000 atenienses y un millar de soldados de la pequeña ciudad de Platea salieron a su encuentro. Cargaron a la carrera y rodearon a los persas por los flancos. Heródoto da 6.400 muertos persas frente a 192 atenienses. La famosa carrera de un mensajero hasta Atenas para anunciar la victoria aparece en autores muy posteriores. Heródoto solo menciona a un corredor, Filípides, enviado antes a Esparta para pedir ayuda.",
+      "imagen_wikipedia": "Battle of Marathon",
+      "profundizar": {
+        "titulo": "Una batalla enorme… para Atenas",
+        "parrafos": [
+          "Para los atenienses, Maratón se convirtió en el momento fundador de su ciudad. Los veteranos fueron honrados durante generaciones y el dramaturgo Esquilo, que combatió allí, pidió que en su tumba solo se recordara eso, no sus tragedias.",
+          "Para el Imperio persa, en cambio, fue probablemente una expedición de castigo fallida en el extremo occidental de un territorio que llegaba hasta la India. Ninguna inscripción ni documento persa conservado la menciona. Atenas había apoyado poco antes una revuelta de las ciudades griegas de Asia Menor e incendiado Sardes, una capital provincial persa.",
+          "Todo lo que sabemos procede de Heródoto, que escribió unos cincuenta años después. Sus cifras de muertos atenienses son creíbles, porque sus nombres se inscribieron en un monumento. Las persas son mucho más dudosas, y el tamaño real de la fuerza persa sigue discutiéndose."
+        ]
+      },
+      "conecta_con": { "capitulo": "imperios/el-imperio-persa", "texto": "Conoce el imperio de Darío →" }
+    },
+    {
+      "titulo": "La plata de Laurión y la flota",
+      "fecha": "483 a.C.",
+      "anio": -483,
+      "lugar": { "nombre": "Minas de Laurión (Ática, Grecia)", "lat": 37.71, "lon": 24.05 },
+      "texto": "En el 483 a.C. se encontró un rico filón de plata en las minas de Laurión, al sur de Atenas. Algunos propusieron repartirla entre los ciudadanos. El político Temístocles convenció a la asamblea de usarla para construir unos 200 trirremes, barcos de guerra de tres filas de remos. Esa flota salvaría a la ciudad poco después. Pero la plata tenía un coste humano: en las minas trabajaban miles de esclavos, muchos de ellos encadenados, en galerías estrechas y mal ventiladas. Fueron la base invisible de la riqueza ateniense.",
+      "imagen_wikipedia": "Laurium",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Salamina: Atenas abandonada",
+      "fecha": "Septiembre de 480 a.C.",
+      "anio": -480,
+      "lugar": { "nombre": "Estrecho de Salamina (Grecia)", "lat": 37.95, "lon": 23.56 },
+      "texto": "Diez años después de Maratón, el rey Jerjes invadió Grecia con un ejército enorme. Los atenienses evacuaron su ciudad, y los persas incendiaron los templos de la Acrópolis. La flota griega esperó en el estrecho de Salamina, donde los numerosos barcos persas apenas podían maniobrar. Según Heródoto, Jerjes miraba la batalla sentado en un trono en la costa. Entre sus comandantes había una mujer, la reina Artemisia de Halicarnaso, la única que, según el mismo autor, le aconsejó no combatir en el estrecho. La derrota persa cambió el rumbo de la guerra.",
+      "imagen_wikipedia": "Battle of Salamis",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "De aliados a súbditos",
+      "fecha": "478 – 454 a.C.",
+      "anio": -478,
+      "lugar": { "nombre": "Isla de Delos (Grecia)", "lat": 37.4, "lon": 25.27 },
+      "texto": "Tras las guerras persas, muchas ciudades del Egeo formaron una alianza dirigida por Atenas, la Liga de Delos, para seguir defendiéndose de Persia. Cada miembro aportaba barcos o dinero a un tesoro guardado en la isla sagrada de Delos. Con los años, Atenas fue convirtiendo la liga en un imperio. Cuando la isla de Naxos quiso salir, fue sometida por la fuerza. En el 454 a.C. el tesoro se trasladó a Atenas. Para muchos aliados, la ciudad que presumía de libertad se había convertido en un nuevo amo.",
+      "imagen_wikipedia": "Delos",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "La democracia: votar en la colina",
+      "fecha": "Siglo V a.C.",
+      "anio": -460,
+      "lugar": { "nombre": "La Pnyx, Atenas", "lat": 37.972, "lon": 23.719 },
+      "texto": "Desde las reformas de Clístenes, hacia el 508 a.C., las grandes decisiones de Atenas se tomaban en una asamblea al aire libre, en la colina de la Pnyx. Cualquier ciudadano podía hablar y votar a mano alzada sobre la guerra, la paz o los impuestos. Muchos cargos se repartían por sorteo y los jurados de los tribunales tenían cientos de miembros. Cada año se podía votar el ostracismo: escribir en un trozo de cerámica el nombre de un político para desterrarlo diez años. Era una democracia directa, pero con límites muy claros.",
+      "imagen_wikipedia": "Pnyx",
+      "profundizar": {
+        "titulo": "¿Quién era el «pueblo»?",
+        "parrafos": [
+          "La palabra democracia significa «poder del pueblo», pero en Atenas el pueblo eran los ciudadanos varones adultos hijos de padre y, desde el 451 a.C., también de madre ateniense. Se calcula que eran entre 30.000 y 60.000 personas, según la época.",
+          "Quedaban fuera las mujeres, los extranjeros residentes, llamados metecos, aunque vivieran allí durante generaciones, y los esclavos, que según estimaciones muy inciertas podían ser decenas de miles. En la práctica, quizá menos de una de cada cinco personas que vivían en el Ática podía votar.",
+          "Algunos atenienses criticaron el sistema desde dentro: el filósofo Platón lo consideraba el gobierno de los ignorantes. Aun así, la idea de que los ciudadanos comunes decidan, hablen en público y elijan o destituyan a sus gobernantes acabó influyendo, siglos después, en las democracias modernas, que la ampliaron a toda la población."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "Los persas, contados por un griego",
+      "fecha": "472 a.C.",
+      "anio": -472,
+      "lugar": { "nombre": "Teatro de Dioniso, Atenas", "lat": 37.9703, "lon": 23.7278 },
+      "texto": "En las fiestas del dios Dioniso, miles de atenienses llenaban el teatro al pie de la Acrópolis para ver competir a los autores de tragedias y comedias. Allí se estrenaron obras de Esquilo, Sófocles, Eurípides y Aristófanes que todavía se representan. La tragedia más antigua que conservamos completa, Los persas de Esquilo, del 472 a.C., es sorprendente: cuenta la derrota de Salamina desde el palacio persa, a través del dolor de la reina madre Atosa y del fantasma de Darío. Un veterano de la guerra pidió al público que mirara al enemigo de frente.",
+      "imagen_wikipedia": "Theatre of Dionysus",
+      "profundizar": {
+        "titulo": "¿Una obra sobre el enemigo o sobre la soberbia?",
+        "parrafos": [
+          "Los persas no tiene héroes griegos con nombre: los atenienses aparecen solo como un ejército colectivo. El protagonismo lo tienen la corte persa, los mensajeros y el coro de ancianos que esperan noticias en Susa.",
+          "Algunos lectores ven en la obra compasión hacia los vencidos: las madres y esposas persas lloran a los suyos como cualquier familia ateniense. Otros subrayan que también es una celebración de la victoria y un retrato de los persas como un pueblo derrotado por el exceso de orgullo de su rey.",
+          "Ambas lecturas pueden convivir. Lo notable es que, pocos años después de que los persas quemaran su ciudad, los atenienses aceptaran ver en escena el sufrimiento del otro lado, y que la obra ganara el primer premio."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "Pericles y el Partenón",
+      "fecha": "447 – 432 a.C.",
+      "anio": -447,
+      "lugar": { "nombre": "Acrópolis de Atenas", "lat": 37.9715, "lon": 23.7267 },
+      "texto": "Pericles, el político más influyente de Atenas durante unos treinta años, impulsó la reconstrucción de los templos que los persas habían quemado. El más famoso, el Partenón, dedicado a la diosa Atenea, se construyó en solo quince años en mármol del monte Pentélico. El escultor Fidias dirigió sus relieves y una enorme estatua de oro y marfil de la diosa. Parte del dinero salió del tesoro de la Liga de Delos, y sus rivales lo acusaron de adornar Atenas con el dinero de los aliados. Hoy es uno de los edificios más reconocibles del mundo.",
+      "imagen_wikipedia": "Parthenon",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Las mujeres de Atenas",
+      "fecha": "Siglo V a.C.",
+      "anio": -440,
+      "lugar": { "nombre": "Atenas", "lat": 37.975, "lon": 23.722 },
+      "texto": "Las mujeres de familias ciudadanas no votaban, no podían poseer grandes bienes a su nombre y pasaban buena parte de su vida en casa, bajo la tutela de un hombre. Pero no eran invisibles. Tenían papeles centrales en la religión: la sacerdotisa de Atenea Polias era una de las figuras más respetadas de la ciudad. Las mujeres pobres trabajaban en mercados y talleres. Aspasia, una extranjera de Mileto compañera de Pericles, tenía fama de ser brillante conversadora, aunque casi todo lo que sabemos de ella lo escribieron hombres, a menudo para burlarse.",
+      "imagen_wikipedia": "Aspasia",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "La peste de Atenas",
+      "fecha": "430 – 426 a.C.",
+      "anio": -430,
+      "lugar": { "nombre": "Atenas y el puerto del Pireo", "lat": 37.94, "lon": 23.65 },
+      "texto": "En el 431 a.C. estalló la guerra del Peloponeso entre Atenas y Esparta. Pericles hizo refugiarse a la población del campo dentro de las murallas. Al año siguiente llegó, al parecer desde el puerto del Pireo, una epidemia terrible. Murieron quizá entre una cuarta y una tercera parte de los habitantes, entre ellos el propio Pericles, en el 429 a.C. El historiador Tucídides, que se contagió y sobrevivió, describió los síntomas y el derrumbe moral de una ciudad donde la gente dejó de respetar leyes y entierros. Aún no se sabe qué enfermedad fue.",
+      "imagen_wikipedia": "Plague of Athens",
+      "profundizar": {
+        "titulo": "Tucídides, testigo y protagonista",
+        "parrafos": [
+          "Casi todo lo que sabemos de la guerra del Peloponeso viene de Tucídides, un ateniense que fue general en ella y fue desterrado tras perder una ciudad. Escribió con la intención expresa de explicar las causas de los hechos sin recurrir a los dioses, algo novedoso en su tiempo.",
+          "También puso en boca de los protagonistas largos discursos que él mismo reconoce haber reconstruido según lo que «debían» haber dicho. Uno de ellos es el discurso fúnebre de Pericles, un elogio de la democracia ateniense que pronunció, según Tucídides, poco antes de la peste.",
+          "En cuanto a la enfermedad, se han propuesto el tifus, la fiebre tifoidea, la viruela o el ébola. En 2006 se analizó ADN de una fosa común de la época y se encontraron rastros de fiebre tifoidea, pero el resultado se discute y la descripción de Tucídides no encaja del todo con ninguna enfermedad conocida."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "Melos: el derecho del más fuerte",
+      "fecha": "416 a.C.",
+      "anio": -416,
+      "lugar": { "nombre": "Isla de Melos (Grecia)", "lat": 36.7, "lon": 24.43 },
+      "texto": "Melos, una pequeña isla del Egeo, quería permanecer neutral en la guerra. Atenas le exigió unirse a su imperio. Tucídides reconstruyó el diálogo entre los enviados atenienses y los dirigentes de la isla. Los melios apelaban a la justicia y a la esperanza; los atenienses respondían que los fuertes hacen lo que pueden y los débiles sufren lo que deben. Melos resistió. Cuando cayó, los atenienses mataron a los hombres adultos y vendieron a mujeres y niños como esclavos. Es uno de los textos más citados sobre poder y política internacional.",
+      "imagen_wikipedia": "Milos",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "El desastre de Sicilia",
+      "fecha": "415 – 413 a.C.",
+      "anio": -415,
+      "lugar": { "nombre": "Siracusa (Sicilia, Italia)", "lat": 37.07, "lon": 15.29 },
+      "texto": "En el 415 a.C., la asamblea ateniense votó enviar una gran flota a conquistar Siracusa, la ciudad más poderosa de Sicilia. Uno de sus impulsores, Alcibíades, fue acusado poco después de un sacrilegio y se pasó al bando de Esparta. La expedición se atascó en un largo asedio. En el 413 a.C., la flota fue destruida en el puerto de Siracusa y el ejército, rodeado en su retirada. Miles de prisioneros atenienses acabaron trabajando en las canteras de la ciudad, donde muchos murieron de hambre, frío y sed. Atenas nunca se recuperó del golpe.",
+      "imagen_wikipedia": "Sicilian Expedition",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "La rendición, pagada con oro persa",
+      "fecha": "404 a.C.",
+      "anio": -404,
+      "lugar": { "nombre": "Muros Largos entre Atenas y el Pireo", "lat": 37.955, "lon": 23.68 },
+      "texto": "En los últimos años de la guerra, Esparta consiguió algo decisivo: dinero persa para construir una flota. Con ella, el general espartano Lisandro destruyó la flota ateniense en el 405 a.C. y bloqueó la ciudad por mar. Sin trigo, Atenas se rindió en el 404 a.C. Según el historiador Jenofonte, los Muros Largos que unían la ciudad con el puerto se derribaron al son de flautas. Los vencedores impusieron un gobierno de treinta oligarcas que ejecutó a cientos de personas. La democracia volvió al año siguiente, pero el gran siglo de Atenas había terminado.",
+      "imagen_wikipedia": "Long Walls",
+      "profundizar": null,
+      "conecta_con": { "capitulo": "clasico/filosofia-griega", "texto": "Sigue con Sócrates, Platón y Aristóteles →" }
+    }
+  ],
+  "notas_revision": [
+    "Las cifras de Maratón (10.000 atenienses, 6.400 persas y 192 atenienses muertos) son de Heródoto; la del ejército persa no se da porque es muy discutida.",
+    "La población ciudadana (30.000–60.000) y el número de esclavos son estimaciones modernas con amplio margen.",
+    "La mortalidad de la peste (entre un cuarto y un tercio) es una estimación habitual, no un dato de Tucídides.",
+    "El estudio de ADN de 2006 (Papagrigorakis y otros) sobre fiebre tifoidea es discutido; revisar formulación.",
+    "La frase de los atenienses en el diálogo de Melos está parafraseada, no citada literalmente.",
+    "Revisar si el número de trirremes financiados con la plata de Laurión (unos 200) coincide con la fuente que se use (Heródoto da 200; otras fuentes, 100)."
+  ],
+  "meta": {
+    "era": "clasico",
+    "capitulo": "atenas",
+    "modelo": "claude-opus-5-5 (escrito en el chat, prueba de consumo)",
+    "generado": "2026-10-29T09:30:00+00:00",
+    "uso": null,
+    "coste_usd": null
+  }
+}

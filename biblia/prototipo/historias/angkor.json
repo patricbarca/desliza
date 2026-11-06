@@ -1,0 +1,287 @@
+{
+ "resumen": "Entre los siglos IX y XV, los reyes jemeres levantaron en Camboya una de las mayores ciudades del mundo preindustrial. Angkor fue un paisaje de templos-montaña, arrozales, canales y enormes estanques. Allí se construyó Angkor Wat, el mayor templo hindú, y Angkor Thom, la capital budista de Jayavarman VII. Con el tiempo, el país pasó del culto a Shiva y Vishnu al budismo theravada. Finalmente, guerras, cambios comerciales y crisis climáticas llevaron a la corte a abandonar la vieja capital, aunque los camboyanos nunca la olvidaron.",
+ "historias": [
+  {
+   "titulo": "Antes de Angkor: los reinos de Chenla",
+   "fecha": "c. 600–650",
+   "anio": 620,
+   "lugar": {
+    "nombre": "Sambor Prei Kuk (antigua Isanapura), Camboya",
+    "lat": 12.872,
+    "lon": 105.044
+   },
+   "texto": "Mucho antes de Angkor, en el valle del Mekong ya había reinos. Los cronistas chinos llamaban Funan a uno, centrado en el delta y abierto al comercio por mar. Llamaban Zhenla a otro, más al interior, que hoy conocemos como Chenla. En el siglo VII, el rey Isanavarman I gobernó desde Isanapura, la actual Sambor Prei Kuk, donde aún se alzan decenas de templos de ladrillo. Sus inscripciones mezclan el sánscrito, la lengua sagrada llegada de la India, con el jemer antiguo. De la India llegaron también los dioses Shiva y Vishnu y la idea de un rey ligado a lo divino. Los jemeres no copiaron: lo adaptaron a su manera.",
+   "imagen_wikipedia": "Sambor Prei Kuk",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/india-medieval",
+    "texto": "Descubre la India de los templos →"
+   }
+  },
+  {
+   "titulo": "Un rey en la montaña sagrada",
+   "fecha": "802 (según la tradición)",
+   "anio": 802,
+   "lugar": {
+    "nombre": "Phnom Kulen (Mahendraparvata), Camboya",
+    "lat": 13.567,
+    "lon": 104.117
+   },
+   "texto": "Según la tradición jemer, en el año 802 un rey llamado Jayavarman II subió al monte Mahendraparvata, el actual Phnom Kulen, al norte de Angkor. Allí un sacerdote brahmán celebró un ritual que lo proclamó chakravartin, «soberano universal», y declaró al país libre de la tutela de «Java». Nadie sabe con certeza qué era esa Java: quizá la isla indonesia, quizá otro reino vecino. Lo que sí parece claro es que Jayavarman unió a varios señoríos rivales. Por eso se suele contar desde ese momento el inicio del gran imperio jemer, que duraría más de seis siglos.",
+   "imagen_wikipedia": "Phnom Kulen National Park",
+   "profundizar": {
+    "titulo": "Una fecha escrita 250 años después",
+    "parrafos": [
+     "La fuente principal es la inscripción de Sdok Kok Thom, una estela grabada en 1052 y hallada en un templo que hoy está en Tailandia. La escribió una familia de sacerdotes que quería recordar que sus antepasados habían servido a los reyes desde Jayavarman II. Es decir, el relato se escribió dos siglos y medio después y tenía un interés familiar.",
+     "Por eso algunos historiadores, como Michael Vickery, han dudado de la fecha de 802 y de parte del relato. Las inscripciones de la época del propio Jayavarman son escasas. Aun así, casi todos aceptan que a finales del siglo VIII y comienzos del IX surgió un poder nuevo en la región de Angkor.",
+     "En 2013, un equipo de arqueólogos publicó los resultados de un escaneo con lidar, un láser lanzado desde el aire que permite «ver» el suelo bajo la selva. En la meseta del Phnom Kulen apareció el trazado de una ciudad entera, con calles, diques y templos, que muchos identifican con Mahendraparvata.",
+     "La inscripción habla también del culto al devaraja, a menudo traducido como «dios-rey». Hoy se discute su significado: quizá no divinizaba al rey, sino que era el culto a una divinidad protectora del reino. Es un buen ejemplo de cómo una sola palabra antigua puede cambiar nuestra idea de toda una sociedad."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Yasodharapura, la ciudad de la montaña",
+   "fecha": "c. 890–910",
+   "anio": 900,
+   "lugar": {
+    "nombre": "Phnom Bakheng, Angkor, Camboya",
+    "lat": 13.4236,
+    "lon": 103.8558
+   },
+   "texto": "Hacia el año 890, el rey Yasovarman I trasladó la capital desde Hariharalaya, en la zona de la actual Roluos, a un lugar nuevo. La llamó Yasodharapura y la organizó en torno a una colina natural, el Phnom Bakheng. En su cima levantó un templo dedicado a Shiva con forma de montaña escalonada. Representaba el monte Meru, el centro del universo en la cosmología hindú y budista. Al este mandó excavar un enorme estanque rectangular, el Baray Oriental, de unos 7 kilómetros de largo. Con algunas pausas, esta zona sería el corazón del Imperio jemer durante más de cinco siglos.",
+   "imagen_wikipedia": "Phnom Bakheng",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Banteay Srei, la joya de piedra rosa",
+   "fecha": "967",
+   "anio": 967,
+   "lugar": {
+    "nombre": "Banteay Srei, Camboya",
+    "lat": 13.5988,
+    "lon": 103.9628
+   },
+   "texto": "No todos los grandes templos los encargaron reyes. Banteay Srei, consagrado en el año 967 según su inscripción, lo mandó construir Yajnavaraha, un sabio brahmán que fue consejero real. Es pequeño comparado con otros templos de Angkor, pero está tallado en una arenisca rosada con un detalle asombroso: guirnaldas, dioses y escenas de la mitología hindú que parecen labradas en madera. Su nombre actual significa «ciudadela de las mujeres», quizá por las delicadas figuras femeninas de sus muros. En 1923, el joven escritor francés André Malraux intentó llevarse varias de esas figuras. Lo detuvieron y lo juzgaron en Camboya.",
+   "imagen_wikipedia": "Banteay Srei",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Una ciudad hecha de agua",
+   "fecha": "c. 1050",
+   "anio": 1050,
+   "lugar": {
+    "nombre": "Baray Occidental, Angkor, Camboya",
+    "lat": 13.441,
+    "lon": 103.79
+   },
+   "texto": "Angkor vivía del arroz, y el arroz necesitaba agua. El clima de la región alterna meses de lluvias torrenciales con meses de sequía. Los jemeres respondieron con una red de canales, diques, fosos y enormes estanques llamados barays. El mayor, el Baray Occidental, se construyó en el siglo XI y mide unos 8 kilómetros de largo por algo más de 2 de ancho. Todavía hoy guarda agua. En su centro, en una isla artificial, había un templo donde apareció una gran estatua de bronce del dios Vishnu. En Angkor, el agua, la religión y el poder iban siempre juntos.",
+   "imagen_wikipedia": "West Baray",
+   "profundizar": {
+    "titulo": "¿Para regar o para los dioses?",
+    "parrafos": [
+     "En la década de 1970, el arqueólogo francés Bernard-Philippe Groslier propuso que Angkor era una «ciudad hidráulica»: los barays habrían regado los arrozales y permitido varias cosechas al año. Era una idea atractiva, porque explicaba de dónde salía la riqueza del imperio.",
+     "Otros investigadores la pusieron en duda. Señalaron que los barays no parecían tener canales de salida suficientes para regar grandes superficies y que estaban alineados con los templos, como si tuvieran sobre todo un sentido religioso: el océano que rodea al monte Meru. Hoy muchos piensan que cumplían varias funciones a la vez, incluido el control de las inundaciones.",
+     "El gran cambio llegó con los mapas. El Greater Angkor Project, en el que participan la Universidad de Sídney, la autoridad camboyana APSARA y la Escuela Francesa de Extremo Oriente, combinó fotos aéreas, radar y, desde 2012, lidar. Así se vio que Angkor no eran solo sus templos, sino un paisaje urbano disperso de unos mil kilómetros cuadrados.",
+     "Entre los templos había barrios de casas de madera sobre montículos, estanques familiares, caminos y arrozales. Las casas no han sobrevivido, porque la piedra se reservaba sobre todo para los dioses. Cuánta gente vivía allí sigue en discusión: las estimaciones varían mucho, aunque muchos estudios hablan de varios cientos de miles de habitantes en su mejor momento."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Angkor Wat, un universo en piedra",
+   "fecha": "c. 1113–1150",
+   "anio": 1130,
+   "lugar": {
+    "nombre": "Angkor Wat, Camboya",
+    "lat": 13.4125,
+    "lon": 103.867
+   },
+   "texto": "El rey Suryavarman II, que gobernó aproximadamente entre 1113 y 1150, mandó levantar el templo más famoso de Camboya. Angkor Wat se dedicó a Vishnu y representa el universo: sus cinco torres son las cumbres del monte Meru y su ancho foso, los océanos. Es uno de los mayores monumentos religiosos del mundo. Sus galerías están cubiertas de relieves con batallas, dioses y escenas del Ramayana y el Mahabharata, las grandes epopeyas indias. Curiosamente, mira hacia el oeste, la dirección asociada a la muerte, algo poco habitual en los templos jemeres. Quizá iba a ser también su templo funerario, aunque no hay certeza.",
+   "imagen_wikipedia": "Angkor Wat",
+   "profundizar": {
+    "titulo": "Cómo se construyó Angkor Wat",
+    "parrafos": [
+     "Los bloques visibles son de arenisca, una piedra que se talla bien. Un estudio publicado en 2012 por investigadores japoneses localizó numerosas canteras al pie del Phnom Kulen y propuso que la piedra viajó por canales hasta Angkor, a unos 35 kilómetros. En el interior de los muros se usó laterita, una roca rojiza más fácil de obtener.",
+     "En una de las galerías, un relieve muestra al propio Suryavarman II sentado en su corte y después al frente de un desfile militar. Una breve inscripción lo llama por su nombre póstumo, Paramavishnuloka, «el que ha ido al mundo supremo de Vishnu». Eso sugiere que parte de la decoración se terminó después de su muerte.",
+     "El relieve más célebre es el del Batido del Océano de Leche: dioses y demonios tiran de una serpiente gigante para obtener el elixir de la inmortalidad. Se extiende a lo largo de unos 49 metros. Escenas así no eran simple decoración: los fieles las recorrían caminando, como quien lee un libro sagrado tallado en piedra.",
+     "El nombre Angkor Wat, «ciudad-templo» en jemer, es posterior a su construcción. El templo nunca quedó del todo abandonado: con el tiempo pasó de santuario hindú a budista, y monjes y peregrinos siguieron cuidándolo. Por eso es hoy el templo de Angkor mejor conservado."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Jayavarman VII, el rey de los hospitales",
+   "fecha": "1181–c. 1218",
+   "anio": 1181,
+   "lugar": {
+    "nombre": "Angkor, Camboya",
+    "lat": 13.4615,
+    "lon": 103.8716
+   },
+   "texto": "En 1177, una flota de Champa, un reino rival situado en el actual Vietnam, remontó los ríos y saqueó la capital jemer. Un príncipe llamado Jayavarman expulsó a los invasores y en 1181 fue coronado como Jayavarman VII. Más tarde invadió Champa y la dominó durante años. Era budista mahayana, una rama del budismo que venera a seres compasivos llamados bodisatvas. Su reinado fue el de mayor actividad constructora de Angkor, con templos como Ta Prohm, dedicado a su madre, y Preah Khan, a su padre. Sus inscripciones hablan además de 102 hospitales repartidos por el reino y de casas de descanso para viajeros.",
+   "imagen_wikipedia": "Jayavarman VII",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Los rostros sonrientes del Bayon",
+   "fecha": "c. 1190–1220",
+   "anio": 1200,
+   "lugar": {
+    "nombre": "Bayon, Angkor Thom, Camboya",
+    "lat": 13.4412,
+    "lon": 103.859
+   },
+   "texto": "En el centro de su nueva capital, Angkor Thom, Jayavarman VII levantó el Bayon. Angkor Thom, «la gran ciudad», estaba rodeada por una muralla cuadrada de unos 3 kilómetros por lado, con puertas monumentales. El Bayon sorprende por sus torres coronadas por enormes rostros de piedra que miran en todas direcciones con una leve sonrisa. ¿A quién representan? Muchos expertos creen que a Avalokiteshvara, el bodisatva de la compasión; otros, que al propio rey, o a ambos a la vez. Sus relieves muestran además la vida cotidiana: mercados, cocinas, peleas de gallos y una gran batalla naval contra Champa.",
+   "imagen_wikipedia": "Bayon",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Un viajero chino en Angkor",
+   "fecha": "1296–1297",
+   "anio": 1296,
+   "lugar": {
+    "nombre": "Angkor Thom, Camboya",
+    "lat": 13.4433,
+    "lon": 103.8589
+   },
+   "texto": "En 1296 llegó a Angkor una embajada enviada por el emperador de la dinastía Yuan, la China gobernada por los mongoles. Entre sus miembros iba Zhou Daguan, que vivió allí cerca de un año. A su regreso escribió un breve libro, hoy traducido como «Costumbres de Camboya». Es el único testimonio directo que conservamos de la vida diaria en la capital jemer. Describe torres doradas, procesiones reales con elefantes y parasoles, mercados y casas. Para los historiadores vale oro, porque las inscripciones de piedra hablan de reyes y dioses, pero casi nunca de la gente común.",
+   "imagen_wikipedia": "Angkor Thom",
+   "profundizar": {
+    "titulo": "Lo que vio Zhou Daguan",
+    "parrafos": [
+     "Zhou cuenta que en los mercados quienes comerciaban eran sobre todo las mujeres, y que los chinos recién llegados solían casarse con mujeres locales, en parte por su habilidad para los negocios. También describe a esclavos procedentes de pueblos de las montañas, una parte dura de aquella sociedad que las inscripciones apenas mencionan.",
+     "Distingue tres grupos religiosos: los brahmanes, los seguidores de Shiva y unos monjes budistas con la cabeza rapada y túnicas amarillas. Esta última descripción encaja con el budismo theravada, que en esos años se estaba extendiendo por el país.",
+     "Habla de la costumbre de bañarse a diario en ríos y estanques, de la ropa ligera y de las salidas del rey, rodeado de mujeres de la corte, soldados, elefantes y parasoles. Menciona también que una guerra reciente con los siameses había dejado partes del país devastadas.",
+     "El texto se conoció en Europa gracias a traducciones francesas, la primera en 1819 y otra muy influyente en 1902, obra del sinólogo Paul Pelliot. Hay que leerlo con cuidado: Zhou miraba con ojos de funcionario chino y a veces juzga a los jemeres con prejuicios, pero muchos de sus detalles coinciden con la arqueología."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/mongoles",
+    "texto": "Sigue con el Imperio mongol →"
+   }
+  },
+  {
+   "titulo": "De Shiva y Vishnu a Buda",
+   "fecha": "c. 1243–1309",
+   "anio": 1309,
+   "lugar": {
+    "nombre": "Baphuon, Angkor Thom, Camboya",
+    "lat": 13.4436,
+    "lon": 103.8572
+   },
+   "texto": "La religión de Angkor cambió varias veces. Tras la muerte de Jayavarman VII hubo una reacción hindú: en el siglo XIII miles de imágenes de Buda fueron borradas a cincel de los templos, algo que suele atribuirse al rey Jayavarman VIII. Pero a finales de ese siglo se extendió otra forma de budismo, el theravada, llegada desde Sri Lanka a través de los pueblos vecinos. La primera inscripción conocida en pali, su lengua sagrada, en Camboya data de 1309. Los templos hindúes se adaptaron: en el Baphuon, construido para Shiva hacia 1060, se añadió siglos después un enorme Buda reclinado.",
+   "imagen_wikipedia": "Baphuon",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "¿Por qué se abandonó Angkor?",
+   "fecha": "1431 (según las crónicas)",
+   "anio": 1431,
+   "lugar": {
+    "nombre": "Angkor, Camboya",
+    "lat": 13.435,
+    "lon": 103.889
+   },
+   "texto": "Según las crónicas, en 1431 el reino tailandés de Ayutthaya tomó Angkor. Poco después, la corte jemer se trasladó al sur, cerca de donde hoy está Phnom Penh, junto a la unión del Mekong y el Tonlé Sap. Pero el abandono no fue cosa de un día: la ciudad llevaba décadas perdiendo población. Los historiadores señalan varias causas que se sumaron: las guerras, el auge del comercio marítimo con China, que favorecía un lugar mejor comunicado por río, un budismo que ya no exigía grandes templos de piedra y una red de agua cada vez más difícil de mantener.",
+   "imagen_wikipedia": "Ta Prohm",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Camboya",
+     "relato": "Las crónicas reales camboyanas, que conocemos sobre todo por copias y versiones de los siglos XVIII y XIX, recuerdan los ataques siameses y al rey Ponhea Yat, que habría trasladado la corte hacia el sur. Como se redactaron mucho después, mezclan hechos y tradición, y sus fechas no siempre coinciden. Para muchos camboyanos, Ponhea Yat es el rey que salvó la monarquía al refundarla lejos de Angkor."
+    },
+    {
+     "region": "Tailandia (Ayutthaya)",
+     "relato": "Las crónicas de Ayutthaya cuentan que el rey Borommaracha II sitió y tomó la capital jemer y se llevó cautivos y riquezas. Desde este punto de vista, fue una victoria más en una larga rivalidad entre vecinos. Según una tradición, unas estatuas de bronce jemeres llevadas entonces a Ayutthaya acabaron, tras otras guerras, en la pagoda Mahamuni de Mandalay, en Myanmar, donde aún se veneran."
+    },
+    {
+     "region": "La arqueología y el clima",
+     "relato": "En 2010, un estudio de anillos de árboles del sur de Vietnam mostró que el siglo XIV y comienzos del XV sufrieron sequías muy largas, alternadas con monzones extremos. Los sedimentos hallados en los canales indican que las lluvias torrenciales dañaron y colmataron partes de la red hidráulica. Para muchos investigadores, el clima no destruyó Angkor por sí solo, pero debilitó a una ciudad que dependía de su agua."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Angkor nunca fue olvidado",
+   "fecha": "1860",
+   "anio": 1860,
+   "lugar": {
+    "nombre": "Angkor Wat, Camboya",
+    "lat": 13.4125,
+    "lon": 103.867
+   },
+   "texto": "En Europa se repite que el explorador francés Henri Mouhot «descubrió» Angkor en 1860. No es cierto: los camboyanos nunca lo olvidaron. Angkor Wat siguió siendo un santuario budista con monjes y peregrinos, y antes de Mouhot lo habían visitado otros viajeros, incluidos europeos. Lo que hizo Mouhot fue popularizarlo con sus dibujos y textos, publicados tras su muerte. Poco después Camboya se convirtió en protectorado francés, y los franceses estudiaron y restauraron los templos. Hoy Angkor es Patrimonio de la Humanidad y Angkor Wat figura en la bandera camboyana, una de las pocas del mundo con un edificio.",
+   "imagen_wikipedia": "Flag of Cambodia",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Camboya",
+     "relato": "Para los jemeres, Angkor Wat nunca fue una ruina misteriosa. Una leyenda popular cuenta que lo construyó Preah Pisnokar, el arquitecto celestial, por orden del dios Indra. El templo siguió acogiendo ceremonias budistas y con el tiempo se convirtió en el gran símbolo nacional, usado por gobiernos de todo signo, de la monarquía a la independencia. Incluso los jemeres rojos pusieron su silueta en su bandera."
+    },
+    {
+     "region": "Japón",
+     "relato": "En el siglo XVII, algunos japoneses que comerciaban en el sudeste asiático visitaron Angkor Wat creyendo que era el Jetavana, el monasterio de la India donde, según la tradición, predicó Buda. En 1632, un japonés llamado Morimoto Ukondayu Kazufusa dejó en sus muros una inscripción que aún se puede leer. En Japón se conserva además un antiguo plano del templo que lo identificaba con ese monasterio."
+    },
+    {
+     "region": "Europa",
+     "relato": "Los primeros europeos conocidos en describirlo fueron portugueses del siglo XVI, como el fraile António da Madalena, cuyo relato recogió el cronista Diogo do Couto. Hacia 1850 lo visitó el misionero francés Charles-Émile Bouillevaux. Pero fue el relato de Mouhot, en plena expansión colonial, el que difundió la imagen romántica de una «ciudad perdida» en la selva, que todavía hoy se repite."
+    }
+   ],
+   "conecta_con": {
+    "capitulo": "hoy/la-descolonizacion",
+    "texto": "Sigue con la descolonización →"
+   }
+  }
+ ],
+ "notas_revision": [
+  "Comprobar fechas del reinado de Isanavarman I (c. 616–637) y su vinculación con Isanapura/Sambor Prei Kuk.",
+  "La fecha de 802 para la consagración de Jayavarman II procede de la inscripción de Sdok Kok Thom (1052); verificar la mención a Michael Vickery como crítico de esa cronología.",
+  "Verificar el año de publicación del estudio lidar sobre Phnom Kulen/Mahendraparvata (Evans et al., PNAS, 2013).",
+  "Comprobar dimensiones aproximadas del Baray Oriental (c. 7,5 x 1,8 km) y del Baray Occidental (c. 8 x 2,1 km), y la atribución de este último al siglo XI.",
+  "Verificar la fecha de consagración de Banteay Srei (967) y la figura de Yajnavaraha como consejero de Rajendravarman II y Jayavarman V.",
+  "Confirmar detalles del caso Malraux (1923): detención y juicio en Camboya.",
+  "Revisar la extensión del paisaje urbano de Angkor (c. 1.000 km²) y la horquilla de población estimada.",
+  "Comprobar el estudio de 2012 (Uchida y Shimoda) sobre canteras de arenisca y la distancia aproximada de unos 35 km.",
+  "Verificar la longitud aproximada del relieve del Batido del Océano de Leche (c. 49 m) y el nombre póstumo Paramavishnuloka en la inscripción del relieve de Suryavarman II.",
+  "Comprobar la cifra de 102 hospitales atribuida a las inscripciones de Jayavarman VII y las fechas de su reinado (1181–c. 1218).",
+  "Verificar la duración de la ocupación jemer de Champa (c. 1203–1220).",
+  "Confirmar el número de traducciones francesas de Zhou Daguan (Abel-Rémusat 1819, Pelliot 1902) y los detalles citados de su relato (mujeres comerciantes, monjes con túnicas amarillas, guerra con los siameses).",
+  "Verificar la atribución de la destrucción de imágenes budistas a Jayavarman VIII y la fecha de 1309 como primera inscripción en pali en Camboya.",
+  "Comprobar la fecha de construcción del Baphuon (c. 1060) y la cronología del Buda reclinado añadido (siglos XV–XVI).",
+  "La fecha de 1431 para la toma de Angkor por Ayutthaya procede de crónicas tardías y es discutida; revisar la atribución a Borommaracha II.",
+  "Revisar la tradición que vincula los bronces jemeres de la pagoda Mahamuni (Mandalay) con el saqueo de Angkor.",
+  "Verificar el estudio de anillos de árboles de 2010 (Buckley et al.) sobre megasequías de los siglos XIV–XV.",
+  "Comprobar la inscripción de Morimoto Ukondayu Kazufusa (1632) y la existencia del plano japonés de Angkor Wat identificado como Jetavana.",
+  "Verificar la visita de António da Madalena (c. 1586), recogida por Diogo do Couto, y la de Charles-Émile Bouillevaux (c. 1850).",
+  "Confirmar que Angkor Wat aparece en la bandera de Camboya desde mediados del siglo XIX y en la de la Kampuchea Democrática."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "angkor",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:02.281196+00:00",
+  "uso": {
+   "input_tokens": 4068,
+   "output_tokens": 26019,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.2683
+ }
+}

@@ -1,0 +1,223 @@
+{
+  "resumen": "En el 221 a.C., el reino de Qin acabó con siglos de guerras entre reinos chinos y creó el primer imperio unificado. Duró solo quince años, pero dejó una escritura, unas medidas y una idea de China que perduraron. La dinastía Han, fundada por un antiguo campesino, gobernó durante cuatro siglos, abrió la Ruta de la Seda, convirtió el confucianismo en doctrina oficial y vio nacer el papel. Casi todo lo sabemos por historiadores Han, que tenían sus propios motivos para juzgar a quienes los precedieron.",
+  "historias": [
+    {
+      "titulo": "El rey que se hizo «primer emperador»",
+      "fecha": "230 – 221 a.C.",
+      "anio": -221,
+      "lugar": {
+        "nombre": "Xianyang, capital de Qin (cerca de Xi'an, China)",
+        "lat": 34.33,
+        "lon": 108.71
+      },
+      "texto": "Durante más de dos siglos, el periodo de los Reinos Combatientes, siete reinos lucharon por el control de China. El más occidental, Qin, tenía un ejército organizado con dureza y un Estado basado en leyes estrictas y premios por méritos militares. Su rey, Ying Zheng, conquistó uno tras otro a sus rivales en apenas diez años. En el 221 a.C. cayó el último, Qi. Ying Zheng adoptó entonces un título nuevo: Qin Shi Huangdi, «primer augusto emperador de Qin». Esperaba que sus descendientes reinaran durante diez mil generaciones.",
+      "imagen_wikipedia": "Qin Shi Huang",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Una sola escritura, una sola medida",
+      "fecha": "221 – 210 a.C.",
+      "anio": -220,
+      "lugar": {
+        "nombre": "Xianyang (China)",
+        "lat": 34.33,
+        "lon": 108.71
+      },
+      "texto": "Para gobernar un territorio tan diverso, el ministro Li Si y el emperador unificaron casi todo. Los antiguos reinos se sustituyeron por comandancias dirigidas por funcionarios nombrados desde la capital. Se impuso una misma escritura, el estilo de sello pequeño, una misma moneda redonda con un agujero cuadrado, los mismos pesos y medidas e incluso el mismo ancho para los ejes de los carros, para que todos usaran las mismas rodadas. Muchas de esas normas sobrevivieron a la dinastía. La escritura unificada, en especial, permitió que hablantes de lenguas distintas leyeran los mismos textos.",
+      "imagen_wikipedia": "Small seal script",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Libros quemados, eruditos enterrados",
+      "fecha": "213 – 212 a.C.",
+      "anio": -213,
+      "lugar": {
+        "nombre": "Xianyang (China)",
+        "lat": 34.33,
+        "lon": 108.71
+      },
+      "texto": "Según el historiador Sima Qian, en el 213 a.C. Li Si propuso quemar los libros de historia de los otros reinos y las obras de poesía y filosofía en manos privadas, salvo los de medicina, adivinación y agricultura. Criticar el presente usando el pasado se castigaría con la muerte. Al año siguiente, siempre según Sima Qian, el emperador mandó ejecutar a más de 460 letrados. Durante dos mil años, este episodio fue el gran símbolo de la tiranía de Qin. Hoy muchos historiadores creen que fue real, pero quizá menos extremo de lo que se contó.",
+      "imagen_wikipedia": "Burning of books and burying of scholars",
+      "profundizar": {
+        "titulo": "Una historia escrita por los sucesores",
+        "parrafos": [
+          "Sima Qian escribió sus Memorias históricas hacia el 90 a.C., más de un siglo después, bajo la dinastía Han. Los Han habían derrocado a Qin y tenían interés en presentarla como cruel e ilegítima. Además, los letrados confucianos, que se consideraban las víctimas, influyeron mucho en cómo se recordó el episodio.",
+          "Algunos investigadores señalan que la biblioteca imperial conservó copias de muchos libros prohibidos, y que la mayor pérdida pudo producirse en el 206 a.C., cuando los rebeldes incendiaron la capital de Qin. También se discute si los ejecutados eran letrados confucianos o, sobre todo, alquimistas que habían engañado al emperador con promesas de inmortalidad.",
+          "El propio Sima Qian es un personaje extraordinario. En el 99 a.C. defendió ante el emperador Wu a un general derrotado y fue castigado con la castración. En lugar de suicidarse, como se esperaba de alguien de su posición, decidió vivir para terminar su obra. Sus Memorias se convirtieron en el modelo de la historia oficial china durante dos milenios."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "La primera Gran Muralla",
+      "fecha": "c. 214 a.C.",
+      "anio": -214,
+      "lugar": {
+        "nombre": "Frontera norte de Qin, junto al río Amarillo (Mongolia Interior, China)",
+        "lat": 40.6,
+        "lon": 109.8
+      },
+      "texto": "Varios reinos chinos ya habían levantado murallas defensivas. Tras la unificación, el general Meng Tian, con cientos de miles de soldados, presos y campesinos obligados a trabajar, conectó y amplió las del norte para frenar a los pueblos nómadas de la estepa. Eran sobre todo muros de tierra apisonada, muy distintos de la muralla de piedra y ladrillo que hoy visitan los turistas, construida en gran parte bajo la dinastía Ming, más de mil quinientos años después. Una leyenda popular cuenta que las lágrimas de Meng Jiangnü, cuyo esposo murió en las obras, derrumbaron un tramo.",
+      "imagen_wikipedia": "Great Wall of China",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Un ejército de barro bajo los campos",
+      "fecha": "246 – 208 a.C. (hallado en 1974)",
+      "anio": -210,
+      "lugar": {
+        "nombre": "Mausoleo de Qin Shi Huang, Lintong (Xi'an, China)",
+        "lat": 34.38,
+        "lon": 109.27
+      },
+      "texto": "En 1974, unos campesinos que excavaban un pozo cerca de Xi'an encontraron fragmentos de una figura de barro. Era la punta de un hallazgo asombroso: fosas con miles de soldados de terracota a tamaño real, con caballos, carros y armas de bronce. Cada guerrero tiene un rostro distinto, y originalmente estaban pintados de colores vivos. Se calcula que hay unas 8.000 figuras, aunque muchas siguen enterradas. Formaban parte del complejo funerario del primer emperador, que murió en el 210 a.C. Su tumba principal, bajo un gran montículo, sigue sin excavarse.",
+      "imagen_wikipedia": "Terracotta Army",
+      "profundizar": {
+        "titulo": "La tumba que nadie ha abierto",
+        "parrafos": [
+          "Sima Qian describe la tumba como un palacio subterráneo con un mapa del imperio en el que corrían ríos de mercurio, y con ballestas preparadas para disparar a los ladrones. Durante siglos se pensó que era una exageración.",
+          "Mediciones modernas del suelo del montículo han detectado concentraciones de mercurio mucho más altas de lo normal, lo que apoya en parte su relato. Las autoridades chinas han decidido no abrir la tumba hasta tener técnicas que permitan conservar lo que contenga, porque los colores de los guerreros se perdieron en minutos al contacto con el aire.",
+          "Detrás de la obra hubo un trabajo inmenso. Las fuentes hablan de unos 700.000 trabajadores, una cifra quizá exagerada. Cerca del complejo se han encontrado fosas con restos de obreros, algunos con inscripciones que indican de dónde venían y por qué condena trabajaban."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "La lluvia que derribó un imperio",
+      "fecha": "209 a.C.",
+      "anio": -209,
+      "lugar": {
+        "nombre": "Dazexiang (provincia de Anhui, China)",
+        "lat": 33.63,
+        "lon": 116.98
+      },
+      "texto": "El primer emperador murió en el 210 a.C. durante un viaje. Según Sima Qian, el eunuco Zhao Gao y Li Si falsificaron su testamento para colocar en el trono a un hijo débil. Al año siguiente, un grupo de campesinos reclutados para la frontera quedó detenido por las lluvias. Según el mismo relato, llegar tarde se castigaba con la muerte, así que sus jefes, Chen Sheng y Wu Guang, decidieron sublevarse. A Chen Sheng se atribuye una pregunta famosa: ¿acaso los reyes y los nobles son de otra raza? La revuelta se extendió por todo el imperio.",
+      "imagen_wikipedia": "Dazexiang uprising",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Un campesino funda los Han",
+      "fecha": "206 – 202 a.C.",
+      "anio": -202,
+      "lugar": {
+        "nombre": "Chang'an (actual Xi'an, China)",
+        "lat": 34.27,
+        "lon": 108.9
+      },
+      "texto": "Tras la caída de Qin, dos líderes se disputaron el país. Xiang Yu era un aristócrata y un guerrero temido. Liu Bang, en cambio, procedía de una familia campesina y había sido un funcionario menor. Liu Bang supo rodearse de buenos consejeros y ganar apoyos, y en el 202 a.C. derrotó a su rival. Se convirtió en el emperador Gaozu, fundador de la dinastía Han, con capital en Chang'an. Los Han suavizaron las leyes de Qin y bajaron impuestos, pero conservaron gran parte de su organización. Aún hoy, la mayoría de los chinos se llaman a sí mismos «han».",
+      "imagen_wikipedia": "Emperor Gaozu of Han",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Los Xiongnu: el gran rival de la estepa",
+      "fecha": "200 a.C. – siglo I",
+      "anio": -200,
+      "lugar": {
+        "nombre": "Baideng (cerca de Datong, Shanxi, China)",
+        "lat": 40.1,
+        "lon": 113.3
+      },
+      "texto": "Al norte, los Xiongnu, una confederación de pueblos nómadas a caballo dirigida por el chanyu Modu, habían formado su propio imperio en la estepa. En el 200 a.C. rodearon al emperador Gaozu en Baideng durante siete días. Los Han tuvieron que firmar acuerdos llamados heqin: enviaban princesas como esposas, seda, vino y grano a cambio de paz. Durante unos sesenta años, el gran imperio agrícola pagó de hecho a los nómadas. El emperador Wu cambió de estrategia y lanzó grandes campañas militares contra ellos a partir del 133 a.C.",
+      "imagen_wikipedia": "Huo Qubing",
+      "profundizar": {
+        "titulo": "Un pueblo sin cronistas propios",
+        "parrafos": [
+          "Los Xiongnu no dejaron textos escritos. Todo lo que sabemos de su historia procede de autores chinos, sobre todo Sima Qian, que los describe como pueblos que respetan la fuerza y desprecian a los ancianos. Al mismo tiempo, reconoce su capacidad militar y su organización política.",
+          "Sima Qian recoge incluso la voz de un desertor chino, Zhonghang Yue, que se pasó a los Xiongnu y defendía ante los embajadores Han que la vida nómada era más sencilla y honesta que la de la corte china. Puede ser un recurso literario, pero muestra que el propio historiador estaba dispuesto a presentar otro punto de vista.",
+          "La arqueología completa el retrato. En tumbas de élite en Mongolia, como las de Noin-Ula, se han encontrado sedas chinas, tejidos de Asia Central y objetos de lugares tan lejanos como el mundo griego. Los Xiongnu no eran solo saqueadores: estaban en el centro de una red de intercambios que unía Eurasia."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "El emperador Wu y el viaje de Zhang Qian",
+      "fecha": "141 – 87 a.C.",
+      "anio": -138,
+      "lugar": {
+        "nombre": "Chang'an (actual Xi'an, China)",
+        "lat": 34.27,
+        "lon": 108.9
+      },
+      "texto": "El emperador Wu gobernó más de cincuenta años y transformó el Estado Han. Hizo del confucianismo la doctrina oficial y creó una academia imperial para formar funcionarios. Para pagar sus guerras, el Estado se quedó con el monopolio de la sal y del hierro. En el 138 a.C. envió al oficial Zhang Qian hacia el oeste para buscar aliados contra los Xiongnu. Zhang Qian fue capturado y pasó unos diez años prisionero. Escapó, siguió su viaje hasta Asia Central y volvió trece años después con noticias de reinos que China apenas conocía.",
+      "imagen_wikipedia": "Zhang Qian",
+      "profundizar": null,
+      "conecta_con": {
+        "capitulo": "clasico/ruta-de-la-seda",
+        "texto": "Sigue por la Ruta de la Seda →"
+      }
+    },
+    {
+      "titulo": "Ban Zhao, la historiadora de la corte",
+      "fecha": "c. 45 – 117",
+      "anio": 100,
+      "lugar": {
+        "nombre": "Luoyang, capital de los Han del Este (China)",
+        "lat": 34.62,
+        "lon": 112.45
+      },
+      "texto": "Ban Zhao nació en una familia de historiadores. Su hermano Ban Gu estaba escribiendo la historia oficial de la primera dinastía Han cuando murió en prisión en el año 92. La corte encargó a Ban Zhao terminarla. Fue también maestra de la emperatriz y de las damas de palacio, y escribió poemas y ensayos. Su obra más conocida, Lecciones para mujeres, aconseja humildad y obediencia, pero también defiende que las niñas aprendan a leer igual que los niños. Es una de las primeras historiadoras conocidas en el mundo.",
+      "imagen_wikipedia": "Ban Zhao",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "El papel",
+      "fecha": "Siglo II a.C. – 105",
+      "anio": 105,
+      "lugar": {
+        "nombre": "Luoyang (China)",
+        "lat": 34.62,
+        "lon": 112.45
+      },
+      "texto": "Durante siglos, los chinos escribieron en tablillas de bambú, pesadas y voluminosas, o en seda, muy cara. En el año 105, según la historia oficial, el eunuco Cai Lun presentó al emperador un método para fabricar papel con corteza de árbol, cáñamo, trapos viejos y redes de pesca. Durante mucho tiempo se le atribuyó el invento. Sin embargo, los arqueólogos han encontrado fragmentos de papel bastante más antiguos. El papel tardó siglos en llegar al mundo islámico y a Europa, y cambió para siempre la forma de guardar y difundir el conocimiento.",
+      "imagen_wikipedia": "Cai Lun",
+      "profundizar": {
+        "titulo": "¿Inventor o mejorador?",
+        "parrafos": [
+          "En yacimientos del noroeste de China, como Fangmatan o Xuanquan, se han encontrado trozos de papel de fibras vegetales de los siglos II y I a.C., más de cien años antes de Cai Lun. Algunos se usaban para envolver objetos o medicinas, y en uno de ellos aparece incluso un mapa dibujado.",
+          "Por eso la mayoría de los historiadores ven hoy a Cai Lun como alguien que mejoró y organizó la producción, haciéndola más barata y estable, más que como el inventor. La historia oficial le dio el mérito porque fue quien presentó la técnica en la corte.",
+          "Según la tradición, la técnica salió de China a través de prisioneros chinos capturados en la batalla del río Talas, en el 751, y llevados a Samarcanda. Aunque este relato se discute, es seguro que en el siglo IX ya había fábricas de papel en Bagdad, y desde allí el papel llegó a la península ibérica y al resto de Europa."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "Los Turbantes Amarillos y el fin de los Han",
+      "fecha": "184 – 220",
+      "anio": 184,
+      "lugar": {
+        "nombre": "Julu (provincia de Hebei, China)",
+        "lat": 37.22,
+        "lon": 115.04
+      },
+      "texto": "En el siglo II, la corte Han estaba paralizada por luchas entre eunucos, familias de las emperatrices y funcionarios, mientras los campesinos sufrían hambre, epidemias e impuestos. En el 184, un curandero taoísta llamado Zhang Jue, que había reunido a cientos de miles de seguidores, encabezó una enorme sublevación. Sus fieles se ataban pañuelos amarillos en la cabeza y anunciaban que un nuevo cielo iba a reemplazar al viejo. La revuelta fue aplastada, pero los generales que la combatieron se hicieron más poderosos que el emperador. En el 220, China se dividió en tres reinos.",
+      "imagen_wikipedia": "Yellow Turban Rebellion",
+      "profundizar": null,
+      "conecta_con": {
+        "capitulo": "media/china-tang-song",
+        "texto": "Sigue con la China de los Tang y los Song →"
+      }
+    }
+  ],
+  "notas_revision": [
+    "El número de letrados ejecutados (más de 460) es el que da Sima Qian; su identidad (confucianos o alquimistas) se discute.",
+    "Las cifras de unos 8.000 guerreros de terracota y 700.000 trabajadores son estimaciones o datos antiguos poco seguros.",
+    "Lo de la pena de muerte por retraso en la revuelta de Chen Sheng procede de Sima Qian; textos legales de Qin hallados en Shuihudi sugieren penas menores para algunos retrasos. Valorar añadirlo.",
+    "Los nombres de los yacimientos con papel antiguo (Fangmatan, Xuanquan) y sus fechas deben confirmarse.",
+    "La transmisión del papel tras la batalla de Talas es una tradición discutida; se presenta como tal.",
+    "Duración del cautiverio de Zhang Qian (unos diez años) y del viaje (trece años): revisar con la fuente."
+  ],
+  "meta": {
+    "era": "clasico",
+    "capitulo": "qin-han",
+    "modelo": "claude-opus-5-5 (escrito en el chat, prueba de consumo)",
+    "generado": "2026-10-29T09:40:00+00:00",
+    "uso": null,
+    "coste_usd": null
+  }
+}

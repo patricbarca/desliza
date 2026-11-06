@@ -1,0 +1,169 @@
+{
+  "resumen": "Poco después de que Alejandro se retirara del Indo, Chandragupta Maurya unió gran parte del subcontinente indio en el mayor imperio que había conocido. Su nieto Ashoka, tras una guerra sangrienta, grabó en rocas y columnas de todo el imperio mensajes de arrepentimiento, tolerancia y buena conducta. Ashoka fue olvidado durante casi dos mil años, hasta que en el siglo XIX se descifró la escritura de sus inscripciones. Lo que sabemos combina esas inscripciones con tradiciones budistas, jainistas, hindúes y relatos griegos que a menudo no coinciden.",
+  "historias": [
+    {
+      "titulo": "Chandragupta toma el poder",
+      "fecha": "c. 321 a.C.",
+      "anio": -321,
+      "lugar": { "nombre": "Pataliputra (actual Patna, India)", "lat": 25.61, "lon": 85.14 },
+      "texto": "El reino de Magadha, en la llanura del Ganges, era el más rico del norte de la India, gobernado por la dinastía Nanda. Hacia el 321 a.C., un joven llamado Chandragupta la derrocó y se instaló en su capital, Pataliputra. Su origen es incierto: unas tradiciones lo hacen de familia humilde y otras, de linaje noble. Casi todas coinciden en que tuvo un consejero decisivo, un brahmán llamado Chanakya o Kautilya. En pocos años, Chandragupta extendió su poder desde el Ganges hasta el noroeste, donde quedaban las guarniciones que había dejado Alejandro.",
+      "imagen_wikipedia": "Chandragupta Maurya",
+      "profundizar": null,
+      "conecta_con": { "capitulo": "clasico/alejandro", "texto": "Recuerda la campaña de Alejandro en la India →" }
+    },
+    {
+      "titulo": "Quinientos elefantes por la paz",
+      "fecha": "c. 305 – 303 a.C.",
+      "anio": -305,
+      "lugar": { "nombre": "Aracosia (región de Kandahar, Afganistán)", "lat": 31.61, "lon": 65.71 },
+      "texto": "Seleuco, uno de los generales de Alejandro que se repartieron su imperio, intentó recuperar las provincias del Indo. El resultado del choque con Chandragupta no se conoce en detalle, pero sí el acuerdo final: Seleuco cedió territorios en lo que hoy es Afganistán y Pakistán y recibió a cambio 500 elefantes de guerra. Los autores griegos mencionan también un acuerdo matrimonial entre ambas familias. Los elefantes fueron decisivos pocos años después, en la batalla de Ipso, en Asia Menor, donde Seleuco derrotó a sus rivales griegos. La India influía así en las guerras del Mediterráneo.",
+      "imagen_wikipedia": "Seleucus I Nicator",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Pataliputra vista por un griego",
+      "fecha": "c. 300 a.C.",
+      "anio": -300,
+      "lugar": { "nombre": "Pataliputra (actual Patna, India)", "lat": 25.61, "lon": 85.14 },
+      "texto": "Seleuco envió a la corte de Chandragupta a un embajador, Megástenes, que escribió un libro llamado Indica. Describía Pataliputra como una ciudad inmensa a orillas del Ganges, rodeada de una muralla de madera con cientos de torres, y una administración que vigilaba mercados, extranjeros, nacimientos y muertes. También dividía a la sociedad en siete grupos y afirmaba que en la India no había esclavos. El libro se perdió, pero fragmentos citados por autores posteriores lo convierten en uno de los primeros retratos de la India hechos por un extranjero.",
+      "imagen_wikipedia": "Pataliputra",
+      "profundizar": {
+        "titulo": "Mirar a otro pueblo con ojos propios",
+        "parrafos": [
+          "Megástenes vivió en la India y conoció su corte, pero la interpretó con categorías griegas. Sus «siete clases» (filósofos, agricultores, pastores, artesanos, soldados, inspectores y consejeros) no coinciden con el sistema de varnas que describen los textos indios, aunque tienen puntos de contacto.",
+          "Su afirmación de que no había esclavos en la India contradice las propias fuentes indias, que hablan de distintas formas de servidumbre. Probablemente no encontró nada parecido a la esclavitud masiva que conocía en el mundo griego.",
+          "Junto a observaciones valiosas, la Indica incluía historias fantásticas: hormigas gigantes que excavaban oro o pueblos sin boca que se alimentaban de olores. Por eso historiadores posteriores como Estrabón ya desconfiaban de él. Leído con cuidado, es una fuente útil y un buen ejemplo de cómo los extranjeros ven lo que esperan ver."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "El Arthashastra, un manual del poder",
+      "fecha": "c. siglo IV a.C. – siglo III",
+      "anio": -300,
+      "lugar": { "nombre": "Pataliputra (actual Patna, India)", "lat": 25.61, "lon": 85.14 },
+      "texto": "La tradición atribuye a Kautilya, el consejero de Chandragupta, el Arthashastra, un tratado sobre cómo gobernar un Estado. Habla de impuestos, minas, comercio, leyes, castigos y diplomacia, y recomienda una extensa red de espías, incluidos disfrazados de monjes o comerciantes. Su visión de la política es fría y práctica, y por eso se le ha comparado con Maquiavelo. El texto se había perdido de vista hasta que, en 1905, un bibliotecario de Mysore, R. Shamasastry, identificó un manuscrito completo. Hoy se debate cuándo se escribió y si todo es obra de un solo autor.",
+      "imagen_wikipedia": "Chanakya",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "El emperador que se hizo monje",
+      "fecha": "c. 297 a.C.",
+      "anio": -297,
+      "lugar": { "nombre": "Shravanabelagola (Karnataka, India)", "lat": 12.86, "lon": 76.49 },
+      "texto": "El final de Chandragupta lo cuenta sobre todo la tradición jainista, una religión india que da enorme importancia a no hacer daño a ningún ser vivo. Según ella, en tiempos de una gran hambruna el emperador abdicó, se convirtió en discípulo del maestro Bhadrabahu y viajó con él hacia el sur. En la colina de Shravanabelagola, en Karnataka, habría terminado su vida con un ayuno voluntario, una práctica jainista llamada sallekhana. Las inscripciones del lugar son muy posteriores y los historiadores no pueden confirmarlo, pero la colina sigue siendo un gran centro de peregrinación.",
+      "imagen_wikipedia": "Shravanabelagola",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Bindusara pide vino, higos y un filósofo",
+      "fecha": "c. 297 – 273 a.C.",
+      "anio": -290,
+      "lugar": { "nombre": "Pataliputra (actual Patna, India)", "lat": 25.61, "lon": 85.14 },
+      "texto": "Del hijo de Chandragupta, Bindusara, se sabe poco. Amplió el imperio hacia el sur de la India y mantuvo las relaciones con los reinos griegos. Un autor griego, citado por Ateneo, cuenta una anécdota simpática: Bindusara escribió al rey seléucida Antíoco pidiéndole que le enviara vino dulce, higos secos y un filósofo. Antíoco habría respondido que le mandaría encantado el vino y los higos, pero que en Grecia no estaba permitido vender filósofos. Sea cierta o no, la historia muestra un intercambio fluido entre la India y el mundo helenístico.",
+      "imagen_wikipedia": "Maurya Empire",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Ashoka: ¿el cruel o el piadoso?",
+      "fecha": "c. 268 a.C.",
+      "anio": -268,
+      "lugar": { "nombre": "Pataliputra (actual Patna, India)", "lat": 25.61, "lon": 85.14 },
+      "texto": "Tras la muerte de Bindusara hubo, al parecer, una lucha por el trono, y unos cuatro años después fue coronado uno de sus hijos, Ashoka. Las leyendas budistas escritas siglos más tarde lo presentan, antes de su conversión, como un hombre terrible: habría matado a 99 hermanos y construido una cárcel de torturas conocida como el «infierno de Ashoka». Sus propias inscripciones no dicen nada de eso. Muchos historiadores piensan que las leyendas exageraron su maldad inicial para que su cambio posterior pareciera aún más milagroso.",
+      "imagen_wikipedia": "Ashoka",
+      "profundizar": {
+        "titulo": "Dos Ashokas: el de las rocas y el de las leyendas",
+        "parrafos": [
+          "Hay dos grandes fuentes sobre Ashoka. La primera son sus propias inscripciones, grabadas en vida y en primera persona. En ellas casi nunca usa su nombre: se llama a sí mismo Devanampiya Piyadasi, «el amado de los dioses, de mirada amable».",
+          "La segunda son textos budistas escritos siglos después, como el Ashokavadana en la India o las crónicas Dipavamsa y Mahavamsa en Sri Lanka. Presentan a Ashoka como el rey budista ideal, con milagros, la construcción de 84.000 estupas y episodios difíciles de comprobar.",
+          "Las dos imágenes no siempre encajan. En las inscripciones, Ashoka se declara seguidor del Buda, pero predica un Dhamma, una ética de conducta, que no menciona doctrinas budistas concretas y pide respeto para todas las escuelas religiosas, incluidos los brahmanes y los ascetas de otras tradiciones. Las leyendas, en cambio, lo convierten en un rey plenamente budista."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "Kalinga: la guerra que pesó en su conciencia",
+      "fecha": "c. 261 a.C.",
+      "anio": -261,
+      "lugar": { "nombre": "Dhauli, junto a Bhubaneswar (Odisha, India)", "lat": 20.19, "lon": 85.84 },
+      "texto": "Unos ocho años después de su coronación, Ashoka conquistó Kalinga, un reino de la costa oriental de la India. En una de sus inscripciones da cifras escalofriantes: 150.000 personas deportadas, 100.000 muertas y muchas más que murieron después. Y añade algo insólito para un rey: dice sentir un profundo dolor y arrepentimiento por el sufrimiento causado, y que a partir de entonces quiere conquistar solo mediante el Dhamma, la buena conducta. Es uno de los primeros textos conocidos en que un gobernante lamenta en público una guerra que él mismo ganó.",
+      "imagen_wikipedia": "Dhauli",
+      "profundizar": {
+        "titulo": "Lo que no se grabó en Kalinga",
+        "parrafos": [
+          "Un detalle llama la atención: el famoso edicto del arrepentimiento, el número 13, aparece en varias inscripciones del imperio, pero no en las de Dhauli y Jaugada, las dos que están en el propio territorio de Kalinga. Allí se grabaron en su lugar dos textos especiales dirigidos a los funcionarios, pidiéndoles que traten a la población con justicia.",
+          "Los historiadores interpretan esto de formas distintas. Quizá Ashoka no quiso recordar la masacre a los propios vencidos, o quizá prefirió hablarles de cómo serían gobernados a partir de entonces.",
+          "Tampoco conviene idealizarlo. Ashoka mantuvo el ejército y la pena de muerte, aunque dio un plazo de tres días a los condenados. En el mismo edicto advierte a los pueblos de los bosques de que, aunque desea la paz, tiene poder para castigarlos si causan problemas. Su arrepentimiento fue real en el texto, pero el imperio siguió siendo un imperio."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "Mensajes en las rocas, en tres lenguas",
+      "fecha": "c. 260 – 232 a.C.",
+      "anio": -258,
+      "lugar": { "nombre": "Kandahar (Afganistán)", "lat": 31.61, "lon": 65.71 },
+      "texto": "Ashoka mandó grabar sus mensajes en rocas y columnas pulidas por todo el imperio, desde Afganistán hasta el sur de la India. La mayoría están en prácrito, la lengua hablada, escrita en el alfabeto brahmi. Pero en Kandahar, en el extremo occidental, se encontraron inscripciones en griego y en arameo para que las entendieran los habitantes de origen griego y persa. Los textos piden respetar a los padres, a los maestros y a los animales, ser moderado en el gasto y tolerar a otras religiones. También informan de hospitales, pozos y árboles plantados en los caminos.",
+      "imagen_wikipedia": "Kandahar Bilingual Rock Inscription",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Los leones de Sarnath",
+      "fecha": "c. 250 a.C.",
+      "anio": -250,
+      "lugar": { "nombre": "Sarnath, cerca de Benarés (India)", "lat": 25.38, "lon": 83.02 },
+      "texto": "Sarnath es el lugar donde, según la tradición budista, el Buda pronunció su primer sermón. Allí Ashoka levantó una columna de piedra pulida coronada por cuatro leones sentados espalda con espalda, sobre una base con ruedas y animales. Esa escultura, conocida como el Capitel de los Leones, es hoy el emblema nacional de la India, y la rueda, el chakra, aparece en el centro de su bandera. Al elegirla en 1950, los fundadores de la India independiente quisieron vincular el nuevo país a un gobernante que había predicado la tolerancia.",
+      "imagen_wikipedia": "Lion Capital of Ashoka",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Un árbol viaja a Sri Lanka",
+      "fecha": "c. 250 a.C.",
+      "anio": -247,
+      "lugar": { "nombre": "Anuradhapura (Sri Lanka)", "lat": 8.35, "lon": 80.39 },
+      "texto": "Según las crónicas de Sri Lanka, Ashoka envió a la isla a su hijo Mahinda, convertido en monje, para predicar el budismo al rey Devanampiya Tissa. Después llegó su hija Sanghamitta, que llevó un esqueje del árbol bajo el cual el Buda había alcanzado la iluminación. Ese árbol, plantado en Anuradhapura, se venera aún hoy y se considera uno de los árboles plantados por el ser humano más antiguos con fecha conocida. Las fuentes indias apenas mencionan a Mahinda, pero en Sri Lanka su llegada marca el comienzo de su historia budista.",
+      "imagen_wikipedia": "Jaya Sri Maha Bodhi",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "El fin de los Maurya y el emperador olvidado",
+      "fecha": "185 a.C. – 1837",
+      "anio": -185,
+      "lugar": { "nombre": "Pataliputra (actual Patna, India)", "lat": 25.61, "lon": 85.14 },
+      "texto": "Tras la muerte de Ashoka, hacia el 232 a.C., el imperio se fue fragmentando. En el 185 a.C., el último rey Maurya, Brihadratha, fue asesinado durante un desfile militar por su general, Pushyamitra Shunga, que fundó una nueva dinastía. Con los siglos, la escritura brahmi se dejó de entender y el nombre de Ashoka sobrevivió casi solo en leyendas budistas. En 1837, el estudioso británico James Prinsep, con la ayuda de trabajos anteriores de eruditos indios y europeos, descifró el brahmi. De pronto, las rocas volvieron a hablar.",
+      "imagen_wikipedia": "Pillars of Ashoka",
+      "profundizar": {
+        "titulo": "Cómo se recuperó a Ashoka",
+        "parrafos": [
+          "Prinsep logró leer las inscripciones, pero en ellas el rey se llamaba Devanampiya Piyadasi, un nombre que no coincidía con ningún monarca conocido. Fue gracias a las crónicas de Sri Lanka, que usaban ese título para Ashoka, cuando se pudo identificar al autor.",
+          "La confirmación definitiva llegó en 1915, cuando se descubrió en Maski, en el sur de la India, una inscripción que menciona expresamente el nombre de Ashoka junto a su título.",
+          "Sobre la caída de los Maurya, algunas fuentes budistas acusan a Pushyamitra de perseguir a los monjes, pero muchos historiadores creen que esa imagen está exagerada, porque bajo su dinastía se siguieron construyendo y decorando grandes monumentos budistas, como la estupa de Bharhut."
+        ]
+      },
+      "conecta_con": { "capitulo": "clasico/gupta", "texto": "Salta a la edad de oro Gupta →" }
+    }
+  ],
+  "notas_revision": [
+    "Las fechas de los Maurya son aproximadas; la coronación de Chandragupta puede situarse entre c. 324 y c. 321 a.C. según la cronología que se use.",
+    "Las cifras de Kalinga proceden del Edicto Mayor 13; las traducciones varían ligeramente.",
+    "La anécdota de Bindusara y Antíoco viene de Hegesandro citado por Ateneo; revisar si se trata de Antíoco I.",
+    "La afirmación de que el árbol de Anuradhapura es uno de los más antiguos plantados con fecha conocida es la habitual, pero conviene matizarla.",
+    "La fecha y autoría del Arthashastra son muy discutidas; aquí se presenta como atribuido por la tradición a Kautilya.",
+    "El papel de eruditos anteriores a Prinsep en el desciframiento del brahmi (por ejemplo, Christian Lassen) puede detallarse."
+  ],
+  "meta": {
+    "era": "clasico",
+    "capitulo": "maurya",
+    "modelo": "claude-opus-5-5 (escrito en el chat, prueba de consumo)",
+    "generado": "2026-10-29T09:50:00+00:00",
+    "uso": null,
+    "coste_usd": null
+  }
+}

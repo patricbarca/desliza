@@ -1,0 +1,224 @@
+{
+  "resumen": "Entre los años 250 y 900, las selvas del sur de México, Guatemala, Belice y Honduras estuvieron llenas de ciudades mayas con pirámides, palacios y plazas. Sus reyes grabaron su historia en piedra con una escritura completa, y sus astrónomos usaron el cero y calendarios muy precisos. Dos superpotencias, Tikal y Calakmul, se disputaron la región durante siglos. En el siglo IX muchas de esas ciudades se abandonaron, pero los mayas no desaparecieron: hoy son millones y siguen hablando sus lenguas.",
+  "historias": [
+    {
+      "titulo": "Antes de los clásicos: El Mirador",
+      "fecha": "c. 600 a.C. – 150",
+      "anio": -300,
+      "lugar": {
+        "nombre": "El Mirador (Petén, Guatemala)",
+        "lat": 17.75,
+        "lon": -89.92
+      },
+      "texto": "Mucho antes de la época clásica, en el norte de la selva de Petén creció El Mirador, una de las primeras grandes ciudades mayas. Su complejo de La Danta, una enorme pirámide sobre plataformas, alcanza unos 70 metros de altura y se cuenta entre las construcciones antiguas más voluminosas del mundo. Calzadas elevadas de piedra unían El Mirador con otras ciudades. Hacia el siglo II, por razones que todavía se estudian, quizá la sequía y la deforestación, la ciudad se despobló en gran parte. Su caída abrió el camino a nuevas potencias como Tikal.",
+      "imagen_wikipedia": "El Mirador",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "La llegada de los extranjeros a Tikal",
+      "fecha": "16 de enero de 378",
+      "anio": 378,
+      "lugar": {
+        "nombre": "Tikal (Petén, Guatemala)",
+        "lat": 17.22,
+        "lon": -89.62
+      },
+      "texto": "Las inscripciones de Tikal registran una fecha exacta: el 16 de enero de 378 llegó a la ciudad un personaje llamado Siyaj K'ak', «nacido del fuego». Ese mismo día, el rey de Tikal, Chak Tok Ich'aak, murió; los textos dicen que «entró en el agua». Poco después se coronó un nuevo rey, Yax Nuun Ahiin, hijo de un señor relacionado con la gran ciudad de Teotihuacan, en el centro de México. A partir de entonces, en Tikal aparecen guerreros con armas, trajes y símbolos al estilo de Teotihuacan. Los mayistas llaman a este episodio «la Entrada».",
+      "imagen_wikipedia": "Tikal",
+      "profundizar": {
+        "titulo": "¿Conquista, alianza o algo intermedio?",
+        "parrafos": [
+          "La Entrada es uno de los grandes debates de la historia maya. La interpretación más extendida, propuesta por el epigrafista David Stuart en el año 2000, es que Siyaj K'ak' encabezó una intervención militar enviada desde Teotihuacan o apoyada por ella, que acabó con la dinastía local y puso en el trono a un rey afín.",
+          "Otros investigadores creen que el término «conquista» es demasiado fuerte. Señalan que el nuevo rey se casó con mujeres de la élite local, que la dinastía de Tikal mantuvo su numeración y su memoria, y que la influencia teotihuacana pudo ser más bien una alianza que daba prestigio a una facción.",
+          "Lo que sabemos procede casi solo de inscripciones mayas, escritas por los propios vencedores o por sus descendientes. Teotihuacan no ha dejado textos que podamos leer, así que su versión de los hechos sigue siendo desconocida."
+        ]
+      },
+      "conecta_con": {
+        "capitulo": "clasico/teotihuacan",
+        "texto": "Conoce Teotihuacan →"
+      }
+    },
+    {
+      "titulo": "Una escritura completa",
+      "fecha": "Siglos III – IX",
+      "anio": 755,
+      "lugar": {
+        "nombre": "Escalinata jeroglífica de Copán (Honduras)",
+        "lat": 14.84,
+        "lon": -89.14
+      },
+      "texto": "Los mayas desarrollaron la escritura más completa de la América antigua. Combinaba signos que representan palabras enteras con otros que representan sílabas, y podía escribir cualquier cosa que se dijera en su lengua. Escribían en estelas, paredes, cerámica y libros de corteza de árbol. En Copán, en la actual Honduras, una escalinata dedicada hacia el 755 contiene más de 2.000 glifos: es el texto maya más largo conocido. Cuenta la historia de la dinastía de la ciudad. Durante siglos, nadie supo leerla.",
+      "imagen_wikipedia": "Copán",
+      "profundizar": {
+        "titulo": "Cómo se volvió a leer el maya",
+        "parrafos": [
+          "En el siglo XVI, el obispo Diego de Landa recogió con ayuda de informantes mayas un supuesto «alfabeto». Durante mucho tiempo pareció inútil, porque los estudiosos intentaban leer cada glifo como una letra.",
+          "En 1952, el lingüista soviético Yuri Knorozov propuso que muchos signos eran sílabas, y que el «alfabeto» de Landa en realidad recogía cómo sus informantes escribían el nombre de cada letra española. Su idea fue rechazada al principio por muchos especialistas occidentales, en plena Guerra Fría.",
+          "En 1960, Tatiana Proskouriakoff demostró que las estelas registraban nacimientos, coronaciones y muertes de reyes reales, y no solo asuntos religiosos o astronómicos. Desde los años setenta, con la colaboración de epigrafistas y hablantes de lenguas mayas, hoy se puede leer la mayor parte de los textos."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "El cero y la Cuenta Larga",
+      "fecha": "Época clásica",
+      "anio": 775,
+      "lugar": {
+        "nombre": "Quiriguá (Guatemala)",
+        "lat": 15.27,
+        "lon": -89.04
+      },
+      "texto": "Los mayas usaban varios calendarios a la vez. Uno, de 260 días, servía para rituales y adivinación. Otro, de 365, seguía el año solar. Para fechas largas usaban la Cuenta Larga, que contaba los días transcurridos desde un punto de partida que corresponde al año 3114 a.C. Para ello necesitaban el cero, que representaban a menudo con una concha. Fueron de los primeros pueblos del mundo en usarlo. En 2012, el fin de un gran ciclo de la Cuenta Larga se interpretó en todo el mundo como una profecía del fin del mundo, algo que los mayas nunca predijeron.",
+      "imagen_wikipedia": "Quiriguá",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Tikal contra Calakmul",
+      "fecha": "562 – 695",
+      "anio": 562,
+      "lugar": {
+        "nombre": "Calakmul (Campeche, México)",
+        "lat": 18.1,
+        "lon": -89.81
+      },
+      "texto": "Los mayas nunca formaron un imperio unificado, pero dos ciudades actuaron como superpotencias. Una era Tikal. La otra, Calakmul, capital de la dinastía Kaanul, la «de la serpiente», que tejió una red de ciudades aliadas a su alrededor. En el 562, Tikal fue derrotada por una coalición vinculada a Calakmul y vivió más de un siglo de declive, sin apenas levantar monumentos. En el 695, el rey de Tikal Jasaw Chan K'awiil venció por fin a Calakmul. Las dos grandes capitales nunca se destruyeron por completo: se disputaban la lealtad de las demás.",
+      "imagen_wikipedia": "Calakmul",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Pakal de Palenque",
+      "fecha": "615 – 683",
+      "anio": 615,
+      "lugar": {
+        "nombre": "Palenque (Chiapas, México)",
+        "lat": 17.48,
+        "lon": -92.05
+      },
+      "texto": "K'inich Janaab Pakal subió al trono de Palenque en el 615, con solo doce años. Antes que él había reinado su madre, Sak K'uk', y es posible que ella siguiera gobernando durante su juventud. Pakal reinó 68 años y convirtió Palenque en una de las ciudades más bellas del mundo maya. En 1952, el arqueólogo mexicano Alberto Ruz Lhuillier encontró una escalera oculta dentro del Templo de las Inscripciones. Al final había una cámara con un enorme sarcófago de piedra. Dentro estaba Pakal, con una máscara de jade.",
+      "imagen_wikipedia": "Temple of the Inscriptions",
+      "profundizar": {
+        "titulo": "¿Un astronauta en la lápida?",
+        "parrafos": [
+          "La lápida del sarcófago de Pakal muestra a un hombre recostado bajo una estructura en forma de cruz. En los años sesenta, algunos autores populares afirmaron que representaba a un astronauta a los mandos de una nave espacial. La idea tuvo enorme difusión, pero no tiene apoyo entre los especialistas.",
+          "Para los arqueólogos y epigrafistas, la escena se entiende con el propio vocabulario visual maya: Pakal cae, en el momento de su muerte, hacia las fauces del inframundo. La «nave» es un árbol del mundo, el eje que une el inframundo, la tierra y el cielo, con un ave sobrenatural en su copa.",
+          "Los textos de los laterales del sarcófago y del templo completan la explicación: nombran a sus antepasados, retratados como árboles frutales, y narran su reinado. La teoría del astronauta dice más de la cultura de los años sesenta que de los mayas, y además supone, sin decirlo, que ellos no podían haber creado su propio arte."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "La señora Seis Cielo",
+      "fecha": "682 – c. 741",
+      "anio": 682,
+      "lugar": {
+        "nombre": "Naranjo (Petén, Guatemala)",
+        "lat": 17.13,
+        "lon": -89.25
+      },
+      "texto": "En el 682, una princesa de la ciudad de Dos Pilas llegó a Naranjo, que había sido derrotada en guerras recientes. Se la conoce como la señora Seis Cielo. Su misión era refundar la dinastía local, aliada de Calakmul. Durante años gobernó de hecho la ciudad mientras su hijo era un niño, y organizó campañas militares contra ciudades vecinas. En sus estelas aparece de pie sobre un cautivo, con atributos propios de un guerrero, una imagen que normalmente se reservaba a los reyes. No fue la única: varias mujeres mayas gobernaron o tuvieron enorme poder.",
+      "imagen_wikipedia": "Lady Six Sky",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "El juego de pelota",
+      "fecha": "Época clásica",
+      "anio": 738,
+      "lugar": {
+        "nombre": "Juego de pelota de Copán (Honduras)",
+        "lat": 14.84,
+        "lon": -89.14
+      },
+      "texto": "En casi todas las ciudades mayas había una cancha para el juego de pelota, con dos muros inclinados a los lados. Se jugaba con una pesada pelota de hule, un material que los pueblos de Mesoamérica sabían fabricar con la savia de ciertos árboles. Los jugadores la golpeaban con la cadera y llevaban protecciones gruesas. Era deporte, espectáculo y ritual a la vez. En el Popol Vuh, el libro sagrado de los mayas k'iche', los gemelos héroes juegan a la pelota contra los señores del inframundo. Algunos partidos terminaban con el sacrificio de cautivos.",
+      "imagen_wikipedia": "Mesoamerican ballgame",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Los colores de Bonampak",
+      "fecha": "c. 790",
+      "anio": 790,
+      "lugar": {
+        "nombre": "Bonampak (Chiapas, México)",
+        "lat": 16.7,
+        "lon": -91.07
+      },
+      "texto": "En la selva de Chiapas, las paredes de tres pequeñas habitaciones de Bonampak conservan las pinturas murales mayas más completas que se conocen. Pintadas hacia el 790, muestran la presentación de un heredero, una batalla caótica, prisioneros con las uñas arrancadas suplicando a los vencedores y una gran celebración con músicos, bailarines y nobles. Usan un pigmento muy resistente, el llamado azul maya. Los murales derrumbaron la vieja idea de que los mayas eran un pueblo pacífico de sacerdotes astrónomos: su mundo incluía guerra y violencia, como el de todas las civilizaciones.",
+      "imagen_wikipedia": "Bonampak",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Joya de Cerén: un pueblo sepultado por la ceniza",
+      "fecha": "c. 600",
+      "anio": 600,
+      "lugar": {
+        "nombre": "Joya de Cerén (El Salvador)",
+        "lat": 13.83,
+        "lon": -89.36
+      },
+      "texto": "Casi todo lo que sabemos de los mayas viene de reyes y palacios. Joya de Cerén, en El Salvador, cuenta la vida de la gente común. Hacia el año 600, un volcán cercano entró en erupción y cubrió la aldea con varios metros de ceniza. Sus habitantes huyeron, al parecer a tiempo, y lo dejaron todo. Los arqueólogos han encontrado casas de adobe, cocinas con vasijas aún llenas, herramientas, un baño de vapor comunitario y huertos con maíz, yuca y cacao. Por eso se la llama la «Pompeya de América».",
+      "imagen_wikipedia": "Joya de Cerén",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "El silencio de las ciudades del sur",
+      "fecha": "c. 800 – 909",
+      "anio": 909,
+      "lugar": {
+        "nombre": "Toniná (Chiapas, México)",
+        "lat": 16.9,
+        "lon": -92.01
+      },
+      "texto": "Durante el siglo IX, una tras otra, las grandes ciudades de las tierras bajas del sur dejaron de levantar monumentos. Las cortes reales desaparecieron y la población se fue marchando. La última fecha conocida en Cuenta Larga está en un monumento de Toniná, del año 909. Las causas se siguen debatiendo, pero muchos investigadores combinan varias: sequías graves, detectadas en los sedimentos de lagos y cuevas; guerras cada vez más frecuentes entre ciudades; demasiada población para la tierra disponible; y la pérdida de prestigio de unos reyes que no lograban evitar las crisis.",
+      "imagen_wikipedia": "Toniná",
+      "profundizar": {
+        "titulo": "¿Colapso o transformación?",
+        "parrafos": [
+          "Durante mucho tiempo se habló del «misterioso colapso maya», como si toda una civilización se hubiera esfumado. Hoy muchos especialistas prefieren hablar de un colapso del sistema de las ciudades-Estado del sur, no de los mayas.",
+          "Mientras el sur se vaciaba, en el norte de la península de Yucatán crecían otras ciudades, como Chichén Itzá, y más tarde Mayapán. Las rutas comerciales se desplazaron a la costa y el mundo maya siguió funcionando con nuevas formas de gobierno.",
+          "Para los mayas actuales, la idea de una civilización «desaparecida» es especialmente problemática, porque borra su continuidad. Sus antepasados no se fueron a ninguna parte: muchos se trasladaron a otras regiones, y sus descendientes siguieron viviendo en las mismas tierras cuando llegaron los españoles."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "Los libros que ardieron y los que sobrevivieron",
+      "fecha": "1562 – hoy",
+      "anio": 1562,
+      "lugar": {
+        "nombre": "Maní (Yucatán, México)",
+        "lat": 20.39,
+        "lon": -89.39
+      },
+      "texto": "Los mayas escribieron cientos de libros en papel de corteza doblado como un acordeón. En 1562, en Maní, el fraile franciscano Diego de Landa ordenó quemar los que encontró, por considerarlos obra del demonio, en el marco de duros castigos a mayas acusados de idolatría. Solo cuatro libros mayas antiguos han llegado hasta hoy, conservados en Dresde, Madrid, París y Ciudad de México. Pero la cultura maya sobrevivió. Hoy más de seis millones de personas hablan una de las cerca de treinta lenguas mayas que existen en México, Guatemala, Belice y Honduras.",
+      "imagen_wikipedia": "Dresden Codex",
+      "profundizar": null,
+      "conecta_con": {
+        "capitulo": "media/america-antes-de-1492",
+        "texto": "Sigue con América antes de 1492 →"
+      }
+    }
+  ],
+  "notas_revision": [
+    "La fecha de la Entrada (16 de enero de 378, 8 Eb 15 Mak) sigue la correlación GMT habitual; revisar.",
+    "Altura de La Danta (unos 70 m) y su clasificación por volumen deben confirmarse con publicaciones recientes.",
+    "La escalinata de Copán tiene más de 2.000 glifos (a menudo se citan unos 2.200); su fecha de dedicación (755) es aproximada.",
+    "La interpretación de la Entrada (David Stuart, 2000) es mayoritaria pero discutida; se presentan ambas posturas.",
+    "La regencia de Sak K'uk' durante la juventud de Pakal es una hipótesis.",
+    "El número de hablantes de lenguas mayas (más de seis millones) y de lenguas (unas treinta) varía según las fuentes.",
+    "Fecha de la erupción de Joya de Cerén (c. 600; algunos estudios recientes proponen c. 660 o c. 630): revisar."
+  ],
+  "meta": {
+    "era": "clasico",
+    "capitulo": "mayas-clasicos",
+    "modelo": "claude-opus-5-5 (escrito en el chat, prueba de consumo)",
+    "generado": "2026-10-29T10:10:00+00:00",
+    "uso": null,
+    "coste_usd": null
+  }
+}

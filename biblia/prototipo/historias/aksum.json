@@ -1,0 +1,196 @@
+{
+  "resumen": "En las tierras altas de lo que hoy son Etiopía y Eritrea creció, desde el siglo I, el reino de Aksum. Controlaba el comercio entre el Mediterráneo, Arabia y la India, acuñaba su propia moneda, levantaba gigantescas estelas de piedra y desarrolló una escritura que todavía se usa. Fue uno de los primeros Estados en adoptar el cristianismo y acogió a los primeros refugiados musulmanes. Un profeta persa del siglo III lo contó entre los cuatro grandes reinos del mundo.",
+  "historias": [
+    {
+      "titulo": "Antes de Aksum: el templo de Yeha",
+      "fecha": "c. siglo VIII a.C.",
+      "anio": -700,
+      "lugar": {
+        "nombre": "Yeha (Tigray, Etiopía)",
+        "lat": 14.29,
+        "lon": 39.02
+      },
+      "texto": "Mucho antes de Aksum, en las tierras altas del norte de Etiopía ya existían comunidades agrícolas y ciudades. En Yeha se conserva un templo de piedra de unos 14 metros de altura, construido hacia el siglo VIII a.C. y sorprendentemente bien conservado. Sus inscripciones y su estilo muestran fuertes lazos con el reino de Saba, al otro lado del mar Rojo, en el actual Yemen. Los arqueólogos llaman a esta etapa D'mt, por el nombre de un reino citado en inscripciones. Durante tiempo se pensó que fue una colonia árabe, pero hoy se subraya su base local.",
+      "imagen_wikipedia": "Yeha",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Adulis, el puerto del marfil",
+      "fecha": "Siglo I",
+      "anio": 50,
+      "lugar": {
+        "nombre": "Adulis (cerca de Zula, Eritrea)",
+        "lat": 15.26,
+        "lon": 39.66
+      },
+      "texto": "Hacia mediados del siglo I, un comerciante griego de Egipto escribió una guía para navegantes, el Periplo del mar Eritreo. En ella describe Adulis, un puerto del mar Rojo dependiente de Aksum, a ocho días de camino de la capital. Desde allí se exportaban marfil, cuerno de rinoceronte, caparazones de tortuga y esclavos, y se importaban telas, vino, aceite de oliva y objetos de metal. El autor menciona a un rey llamado Zoskales, ambicioso con el dinero pero bien educado y que sabía griego. Es la primera descripción escrita del reino que conservamos.",
+      "imagen_wikipedia": "Adulis",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Uno de los cuatro grandes reinos del mundo",
+      "fecha": "Siglo III",
+      "anio": 250,
+      "lugar": {
+        "nombre": "Aksum (Tigray, Etiopía)",
+        "lat": 14.13,
+        "lon": 38.72
+      },
+      "texto": "En el siglo III, el profeta persa Mani, fundador del maniqueísmo, enumeró los cuatro grandes reinos de la Tierra. Según un texto atribuido a sus seguidores, eran Persia, Roma, Aksum y China. Aksum había crecido gracias a su posición: controlaba las rutas entre el valle del Nilo, el mar Rojo y el océano Índico, y sus barcos y mercaderes llegaban a Arabia y a la India. Su capital tenía grandes palacios de piedra y madera. En Europa, en cambio, casi nadie la recordaría siglos después, cuando muchos autores negaban que en África hubiera existido algo parecido.",
+      "imagen_wikipedia": "Kingdom of Aksum",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Monedas de oro con nombre de rey",
+      "fecha": "c. 270 – siglo VII",
+      "anio": 270,
+      "lugar": {
+        "nombre": "Aksum (Tigray, Etiopía)",
+        "lat": 14.13,
+        "lon": 38.72
+      },
+      "texto": "Hacia el 270, bajo el rey Endubis, Aksum empezó a acuñar monedas de oro, plata y bronce. Fue el primer Estado del África subsahariana en hacerlo, y uno de los pocos del mundo en ese momento que emitían moneda de oro, junto a Roma, Persia y el imperio Kushán en Asia Central. Las monedas de oro llevaban inscripciones en griego, la lengua del comercio internacional, mientras que las de bronce, usadas en el reino, a menudo estaban en ge'ez, la lengua local. Gracias a ellas conocemos los nombres de una veintena de reyes que no aparecen en ningún otro lugar.",
+      "imagen_wikipedia": "Aksumite currency",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Las estelas gigantes",
+      "fecha": "Siglos III – IV",
+      "anio": 300,
+      "lugar": {
+        "nombre": "Campo de estelas de Aksum (Etiopía)",
+        "lat": 14.13,
+        "lon": 38.72
+      },
+      "texto": "En Aksum se levantaron decenas de estelas, grandes bloques de granito tallados que marcaban tumbas de la élite. Las más grandes imitan edificios de varios pisos, con puertas y ventanas falsas. La mayor medía unos 33 metros y pesaba más de 500 toneladas: probablemente se derrumbó al intentar ponerla en pie, y sigue partida en el suelo. Otra, de 24 metros, fue llevada a Roma en 1937 por la Italia de Mussolini tras invadir Etiopía. Después de décadas de reclamaciones etíopes, fue devuelta en 2005 y vuelta a levantar en 2008.",
+      "imagen_wikipedia": "Obelisk of Axum",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Ezana y la cruz",
+      "fecha": "c. 330 – 360",
+      "anio": 340,
+      "lugar": {
+        "nombre": "Aksum (Tigray, Etiopía)",
+        "lat": 14.13,
+        "lon": 38.72
+      },
+      "texto": "Las primeras monedas del rey Ezana llevan una media luna y un disco, símbolos de los dioses tradicionales. Las posteriores llevan una cruz. Es una de las pruebas materiales más antiguas de un rey que adopta el cristianismo, casi al mismo tiempo que el emperador romano Constantino. Según un historiador romano, Rufino, el cambio se debió a Frumencio, un joven cristiano de Tiro que naufragó en la costa, llegó a ser consejero en la corte y fue nombrado obispo por el patriarca de Alejandría. La Iglesia etíope lo venera como Abba Salama, «padre de la paz».",
+      "imagen_wikipedia": "Ezana of Axum",
+      "profundizar": {
+        "titulo": "Una conversión contada de varias maneras",
+        "parrafos": [
+          "El relato de Rufino, escrito hacia el año 400, dice que se basaba en lo que contó un compañero de Frumencio. Es una historia de aventuras: un barco atacado, dos jóvenes supervivientes y una carrera en la corte que culmina con la conversión del reino.",
+          "La tradición etíope conserva una versión propia, centrada en Abba Salama como el «iluminador» de Etiopía, y atribuye la conversión a dos reyes hermanos, Abreha y Atsbeha, cuyos nombres no coinciden con los de las monedas. Los historiadores discuten cómo encajar ambas tradiciones.",
+          "Las propias inscripciones de Ezana muestran un cambio gradual. En una, escrita en ge'ez, sabeo y griego, da gracias al «Señor del Cielo», una expresión que podían aceptar tanto cristianos como seguidores de otras creencias. En otra posterior, en griego, se declara abiertamente cristiano. La conversión del pueblo fue, con seguridad, mucho más lenta que la del rey."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "El ge'ez, una escritura que sigue viva",
+      "fecha": "Siglo IV",
+      "anio": 350,
+      "lugar": {
+        "nombre": "Aksum (Tigray, Etiopía)",
+        "lat": 14.13,
+        "lon": 38.72
+      },
+      "texto": "Los aksumitas escribían su lengua, el ge'ez, con un alfabeto derivado del de Arabia del Sur que al principio solo marcaba las consonantes. Hacia el siglo IV hicieron una innovación importante: añadieron pequeñas marcas a cada letra para indicar la vocal. Así, cada signo representa una sílaba. Con esa escritura se tradujo la Biblia y se escribieron obras religiosas y de historia. El ge'ez dejó de hablarse hace siglos, pero sigue siendo la lengua litúrgica de las iglesias de Etiopía y Eritrea, y su escritura se usa hoy para el amárico y el tigriña.",
+      "imagen_wikipedia": "Ge'ez script",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Los Nueve Santos y el monasterio de la cuerda",
+      "fecha": "Finales del siglo V – siglo VI",
+      "anio": 480,
+      "lugar": {
+        "nombre": "Debre Damo (Tigray, Etiopía)",
+        "lat": 14.37,
+        "lon": 39.29
+      },
+      "texto": "A finales del siglo V llegaron a Aksum, según la tradición, nueve monjes procedentes de distintas partes del Imperio romano, como Siria o Egipto. Conocidos como los Nueve Santos, fundaron monasterios, tradujeron textos religiosos al ge'ez y llevaron el cristianismo al campo. Uno de esos monasterios, Debre Damo, está en lo alto de una meseta de paredes verticales. La única forma de subir es trepar unos 15 metros por una cuerda de cuero, y solo pueden hacerlo los hombres. Su iglesia es una de las más antiguas de Etiopía que siguen en pie.",
+      "imagen_wikipedia": "Debre Damo",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "La guerra al otro lado del mar",
+      "fecha": "c. 525 – 570",
+      "anio": 525,
+      "lugar": {
+        "nombre": "Himyar (actual Yemen)",
+        "lat": 14.2,
+        "lon": 44.4
+      },
+      "texto": "En el actual Yemen gobernaba el reino de Himyar, cuyo rey Yusuf, conocido como Dhu Nuwas, se había convertido al judaísmo. Hacia el 523, sus tropas mataron a numerosos cristianos en la ciudad de Najrán. Con apoyo del emperador bizantino, el rey Kaleb de Aksum cruzó el mar Rojo hacia el 525, derrotó a Dhu Nuwas y dejó allí a gobernantes cristianos. Uno de ellos, el general Abraha, se independizó. La tradición islámica cuenta que Abraha marchó contra La Meca con un elefante, el año en que, según la misma tradición, nació Mahoma.",
+      "imagen_wikipedia": "Kaleb of Axum",
+      "profundizar": {
+        "titulo": "Una misma guerra, tres memorias",
+        "parrafos": [
+          "Para la tradición cristiana, la matanza de Najrán creó mártires venerados durante siglos, y Kaleb es santo en la Iglesia etíope y en otras iglesias. Las cartas y relatos sirios de la época presentan su expedición como una guerra para proteger a los cristianos perseguidos.",
+          "Las inscripciones del propio Dhu Nuwas, halladas en Arabia, muestran otra cara: celebran sus campañas contra los aksumitas y sus aliados, a los que veía como invasores extranjeros. Para él se trataba de expulsar a una potencia que controlaba su país, más que de una guerra religiosa.",
+          "La tradición islámica recuerda sobre todo el final: el ataque de Abraha contra La Meca, frustrado, según la sura 105 del Corán, por pájaros enviados por Dios. Los historiadores discuten la fecha exacta de esa expedición, que algunos sitúan antes del 570, y si fue una o varias."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "El rey que protegió a los primeros musulmanes",
+      "fecha": "c. 615",
+      "anio": 615,
+      "lugar": {
+        "nombre": "Negash (Tigray, Etiopía)",
+        "lat": 13.88,
+        "lon": 39.6
+      },
+      "texto": "Según las fuentes islámicas, hacia el 615 un grupo de seguidores de Mahoma, perseguidos en La Meca, cruzó el mar Rojo y pidió refugio al rey de Aksum, al que llaman al-Nayashi, el Negus. Los habitantes de La Meca enviaron embajadores para pedir que se los devolviera. El rey escuchó a los refugiados, que le recitaron un pasaje del Corán sobre María, y se negó a entregarlos. Es la llamada primera hégira. En Negash, en el norte de Etiopía, se encuentra una mezquita que, según la tradición local, guarda tumbas de aquellos primeros refugiados.",
+      "imagen_wikipedia": "Migration to Abyssinia",
+      "profundizar": null,
+      "conecta_con": {
+        "capitulo": "media/islam",
+        "texto": "Sigue con el nacimiento del islam →"
+      }
+    },
+    {
+      "titulo": "Declive, una reina legendaria y el Arca",
+      "fecha": "Siglos VII – XIV",
+      "anio": 940,
+      "lugar": {
+        "nombre": "Iglesia de Santa María de Sion, Aksum (Etiopía)",
+        "lat": 14.13,
+        "lon": 38.72
+      },
+      "texto": "Desde el siglo VII, Aksum fue perdiendo el control del comercio del mar Rojo y el reino se desplazó hacia el sur, al interior. La tradición etíope habla de una reina, Gudit, que en el siglo X habría arrasado iglesias, aunque los historiadores discuten quién fue. Siglos después, en el XIV, el libro Kebra Nagast dio a la ciudad una nueva gloria: contó que Menelik, hijo de la reina de Saba y del rey Salomón, trajo a Aksum el Arca de la Alianza. Según la Iglesia etíope, se guarda en una capilla junto a Santa María de Sion.",
+      "imagen_wikipedia": "Church of Our Lady Mary of Zion",
+      "profundizar": null,
+      "conecta_con": {
+        "capitulo": "imperios/david-y-salomon",
+        "texto": "Conoce al Salomón de la Biblia →"
+      }
+    }
+  ],
+  "notas_revision": [
+    "La referencia de Mani a los cuatro reinos procede de los Kephalaia, un texto maniqueo copto; revisar la cita exacta.",
+    "La fecha del Periplo del mar Eritreo (mediados del siglo I) es la habitual, pero se discute.",
+    "Medidas de las estelas (33 m y unos 520 toneladas; 24 m la de Roma) y fechas de devolución (2005) y reinstalación (2008): confirmar.",
+    "La conversión de Ezana suele situarse hacia el 330–340; las monedas permiten fecharla solo de forma aproximada.",
+    "La fecha del ataque de Abraha a La Meca y su relación con el nacimiento de Mahoma son discutidas; se presentan como tradición.",
+    "La reina Gudit es una figura de la tradición etíope con fuentes escasas; hay propuestas de identificación muy diversas.",
+    "Que solo los hombres pueden subir a Debre Damo es una norma del monasterio; revisar si sigue vigente."
+  ],
+  "meta": {
+    "era": "clasico",
+    "capitulo": "aksum",
+    "modelo": "claude-opus-5-5 (escrito en el chat, prueba de consumo)",
+    "generado": "2026-10-29T10:00:00+00:00",
+    "uso": null,
+    "coste_usd": null
+  }
+}

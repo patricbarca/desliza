@@ -1,0 +1,288 @@
+{
+ "resumen": "En pocas décadas, un pueblo de pastores de la estepa construyó el mayor imperio terrestre continuo de la historia. Este capítulo sigue a Gengis Kan y a sus herederos desde Karakórum. Recorre la destrucción de ciudades enteras, la caída de Bagdad y la Pax Mongolica, que mantuvo abierta la Ruta de la Seda. También la China de Kublai y los viajes de Marco Polo y Rabban Bar Sauma. Termina con la peste que viajó por esos mismos caminos y con el final de los Yuan en 1368.",
+ "historias": [
+  {
+   "titulo": "El niño abandonado de la estepa",
+   "fecha": "c. 1162",
+   "anio": 1162,
+   "lugar": {
+    "nombre": "Río Onon, cerca de Dadal (Mongolia)",
+    "lat": 49.03,
+    "lon": 111.62
+   },
+   "texto": "Temüjin nació hacia 1162 junto al río Onon, en la actual Mongolia, aunque la fecha exacta se discute. Casi todo lo que sabemos de su juventud viene de la Historia secreta de los mongoles, una crónica escrita poco después de su muerte. Según ella, su padre, Yesügei, murió envenenado por los tártaros, un pueblo rival. Después, el clan abandonó a la viuda y a sus hijos, que sobrevivieron cazando marmotas y pescando. Temüjin fue capturado, escapó y fue tejiendo alianzas. Cuando los merkitas raptaron a su esposa, Börte, la rescató con ayuda de sus aliados. Aprendió pronto que la lealtad podía valer más que la sangre.",
+   "imagen_wikipedia": "Genghis Khan",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "1206: nace Gengis Kan",
+   "fecha": "1206",
+   "anio": 1206,
+   "lugar": {
+    "nombre": "Fuentes del río Onon, montes Jentii (Mongolia)",
+    "lat": 48.7,
+    "lon": 109.0
+   },
+   "texto": "En 1206, tras años de guerras entre clanes, se reunió una gran asamblea de jefes, el kurultái, cerca de las fuentes del río Onon. Allí proclamaron a Temüjin soberano de todos los «pueblos de las tiendas de fieltro». Recibió el título de Gengis Kan, cuyo significado exacto aún se debate: quizá «gobernante firme» o «universal». Su gran idea fue romper las viejas lealtades de tribu. Repartió a los guerreros en unidades de diez, cien, mil y diez mil hombres. Las mandaban personas elegidas por su mérito y su fidelidad, no por su linaje. Así nació un ejército nuevo, disciplinado y leal solo al kan.",
+   "imagen_wikipedia": "Genghis Khan Equestrian Statue",
+   "profundizar": {
+    "titulo": "Las piezas de un imperio nómada",
+    "parrafos": [
+     "La principal fuente mongola es la Historia secreta de los mongoles. Se escribió en mongol, probablemente hacia 1228 o 1240, pero solo nos ha llegado transcrita con caracteres chinos. Mezcla genealogías, poesía y leyenda: empieza contando que el linaje desciende de un lobo azul y una cierva. Por eso los historiadores la contrastan siempre con fuentes persas y chinas.",
+     "Los mongoles no tenían escritura. Según fuentes chinas posteriores, Gengis encargó a un escriba uigur capturado, Tata Tonga, que adaptara el alfabeto uigur a la lengua mongola. De esa decisión nace la escritura mongola tradicional, que se escribe en vertical. Todavía se usa en Mongolia Interior, en China, y Mongolia la está recuperando.",
+     "Se habla mucho de la Yassa, el supuesto código de leyes de Gengis. Pero no se conserva ningún texto completo. La conocemos por citas de autores persas, árabes y armenios, a veces muy posteriores. Algunos historiadores creen que no era un código escrito único, sino un conjunto de órdenes y costumbres atribuidas al kan.",
+     "Otra pieza clave fue la guardia personal del kan, el keshig, que llegó a reunir a miles de hombres. Muchos eran hijos de jefes aliados, que servían junto al soberano y se formaban como futuros mandos. Era a la vez escolta, escuela de oficiales y una manera de asegurarse la lealtad de las familias poderosas."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Bujará y el castigo de Corasmia",
+   "fecha": "1219–1221",
+   "anio": 1220,
+   "lugar": {
+    "nombre": "Bujará (Uzbekistán)",
+    "lat": 39.776,
+    "lon": 64.4146
+   },
+   "texto": "En 1218 fue masacrada en Otrar una caravana de mercaderes enviada por Gengis Kan. Otrar pertenecía al Imperio corasmio, que dominaba Asia central e Irán. Cuando el sha mandó matar también a un embajador mongol, llegó la venganza. Entre 1219 y 1221, los mongoles arrasaron Otrar, Bujará, Samarcanda, Merv y Nishapur. A menudo perdonaban a quien se rendía, pero no a quien resistía. Los cronistas persas dieron cifras de muertos enormes que hoy se consideran exageradas, pero la destrucción fue real. Según la tradición, en Bujará Gengis solo mandó respetar un edificio: el gran minarete Kalyan, que sigue en pie.",
+   "imagen_wikipedia": "Kalyan Minaret",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Karakórum, una capital en la estepa",
+   "fecha": "c. 1235",
+   "anio": 1235,
+   "lugar": {
+    "nombre": "Karakórum, valle del Orjón (Mongolia)",
+    "lat": 47.1975,
+    "lon": 102.8238
+   },
+   "texto": "Gengis Kan murió en 1227 durante una campaña en el noroeste de China, y su tumba nunca se ha encontrado. Su hijo y sucesor, Ögödei, levantó hacia 1235 una capital en el valle del río Orjón: Karakórum. No era muy grande, pero allí convivían mercaderes musulmanes, artesanos chinos, monjes budistas, cristianos nestorianos y cautivos traídos de medio mundo. El fraile flamenco Guillermo de Rubruck la visitó en 1254. Describió un árbol de plata, obra de un orfebre parisino, del que brotaban cuatro bebidas distintas para los banquetes del kan.",
+   "imagen_wikipedia": "Karakorum",
+   "profundizar": {
+    "titulo": "Lo que vio un fraile y lo que hallaron los arqueólogos",
+    "parrafos": [
+     "Rubruck viajó con cartas del rey Luis IX de Francia y escribió en latín un informe detallado. Describe dos barrios, uno de musulmanes y otro de «catayos», es decir, chinos. Cuenta además doce templos de distintos pueblos, dos mezquitas y una iglesia cristiana. Con cierta ironía, comparó el tamaño de la ciudad con el del pueblo de Saint-Denis, junto a París.",
+     "En 1254 Rubruck participó en un debate religioso ante la corte del gran kan Möngke, con cristianos, musulmanes y budistas. Según su relato, nadie se convirtió y la jornada acabó con todos bebiendo. La escena muestra la política mongola hacia las religiones: los kanes protegían a clérigos de muchas creencias a cambio de que rezaran por ellos.",
+     "Arqueólogos soviéticos y mongoles excavaron el lugar a finales de los años cuarenta. Desde 2000, una misión germano-mongola ha sacado a la luz calles, talleres, monedas y cerámica china. Un gran edificio que se creía el palacio de Ögödei se ha reinterpretado como un templo budista, lo que obliga a revisar viejas ideas sobre la ciudad.",
+     "Cuando Kublai trasladó la capital a China, Karakórum perdió importancia. Según las crónicas, las tropas Ming la arrasaron hacia 1380. En 1585 se fundó junto a sus ruinas, en parte con sus piedras, el monasterio budista de Erdene Zuu, que hoy se puede visitar."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "1241: el año en que Europa tembló",
+   "fecha": "abril de 1241",
+   "anio": 1241,
+   "lugar": {
+    "nombre": "Mohi, junto al río Sajó (Hungría)",
+    "lat": 47.98,
+    "lon": 20.93
+   },
+   "texto": "Entre 1237 y 1240, un ejército dirigido por Batu, nieto de Gengis, y por el general Subotai conquistó los principados de la Rus. Kiev cayó en diciembre de 1240. En abril de 1241, con dos días de diferencia, los mongoles vencieron a un ejército polaco y alemán en Legnica. También derrotaron al rey Bela IV de Hungría en Mohi, junto al río Sajó. Europa central quedó abierta, pero en 1242 se retiraron. Ögödei había muerto y los príncipes debían elegir sucesor. Aun así, los historiadores discuten otras causas, como la falta de pastos para sus caballos.",
+   "imagen_wikipedia": "Battle of Mohi",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Hungría",
+     "relato": "El clérigo Rogerio de Apulia, que fue capturado por los mongoles y logró escapar, escribió el Carmen miserabile («Canto lastimero»). Es un relato estremecedor de la devastación del reino. Hungría perdió una parte importante de su población, aunque las cifras se discuten. Al volver, Bela IV impulsó castillos de piedra para que algo así no se repitiera."
+    },
+    {
+     "region": "La Rus (Rusia, Ucrania, Bielorrusia)",
+     "relato": "Las crónicas de la Rus narran la caída de Riazán, Vladímir y Kiev como un castigo divino. En la memoria rusa comenzó entonces el «yugo tártaro». Durante unos dos siglos y medio, los príncipes pagaron tributo a los kanes de la Horda de Oro y necesitaron su permiso para gobernar. Los historiadores debaten cuánto marcó realmente esta etapa."
+    },
+    {
+     "region": "Europa occidental",
+     "relato": "Los cristianos de Occidente llamaban a los mongoles «tártaros», jugando con el Tártaro, el infierno de la mitología clásica. El cronista inglés Mateo de París los describió casi como monstruos. Para averiguar quiénes eran, el papa envió en 1245 al fraile Giovanni da Pian del Carpine. Llegó a Mongolia y asistió a la entronización del gran kan Güyük."
+    },
+    {
+     "region": "Los mongoles",
+     "relato": "Desde la estepa, aquella fue una campaña más hacia el oeste, en las tierras asignadas a los descendientes de Jochi, padre de Batu. La Historia secreta apenas la menciona. Le interesa sobre todo contar una pelea entre Batu y su primo Güyük durante un banquete. Europa estaba lejos del centro del mundo mongol."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "La caída de Bagdad",
+   "fecha": "febrero de 1258",
+   "anio": 1258,
+   "lugar": {
+    "nombre": "Bagdad (Irak)",
+    "lat": 33.3152,
+    "lon": 44.3661
+   },
+   "texto": "Hülegü, otro nieto de Gengis, marchó sobre Bagdad, sede del califato abasí desde hacía cinco siglos. El califa al-Mustasim se negó a someterse. Tras un breve asedio, la ciudad cayó en febrero de 1258 y fue saqueada durante días. Las cifras de muertos varían muchísimo según las fuentes. Según relatos posteriores, envolvieron al califa en una alfombra y lo pisotearon con caballos, porque los mongoles evitaban derramar sangre real. También se contó que el Tigris corrió negro por la tinta de los libros arrojados al agua. Es una imagen poderosa, no un dato comprobado. Dos años después, los mamelucos de Egipto frenaron a los mongoles en Ain Yalut.",
+   "imagen_wikipedia": "Siege of Baghdad (1258)",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Mundo árabe sunní",
+     "relato": "Para muchos cronistas árabes fue una catástrofe sin igual. Desapareció el califato que daba unidad simbólica a los musulmanes sunníes. En 1261, los sultanes mamelucos de Egipto acogieron en El Cairo a un miembro de la familia abasí y lo nombraron califa. No tenía poder real, pero legitimaba su gobierno como defensores del islam frente a los mongoles."
+    },
+    {
+     "region": "Cristianos de Oriente",
+     "relato": "La esposa principal de Hülegü, Doquz Jatún, era cristiana nestoriana. Según las crónicas, los cristianos de Bagdad fueron respetados durante el saqueo. Cronistas armenios como Kirakos de Gandzak, cuyo reino era aliado de los mongoles, vieron la caída de la ciudad como un castigo a quienes los habían oprimido. Elogiaron a Hülegü y a su esposa."
+    },
+    {
+     "region": "Persas al servicio del ilkan",
+     "relato": "El sabio chií Nasir al-Din Tusi acompañó a Hülegü y después dirigió el gran observatorio de Maragha, en Irán. El historiador persa Ata Malik Yuvayní fue nombrado gobernador de Bagdad. Para estos letrados, colaborar con los nuevos amos era la manera de salvar lo que se pudiera de la ciencia y la administración."
+    }
+   ],
+   "conecta_con": {
+    "capitulo": "media/edad-de-oro-islamica",
+    "texto": "Descubre el mundo que terminó en Bagdad →"
+   }
+  },
+  {
+   "titulo": "Un salvoconducto para cruzar Asia",
+   "fecha": "c. 1270",
+   "anio": 1270,
+   "lugar": {
+    "nombre": "Tabriz, capital del Iljanato (Irán)",
+    "lat": 38.08,
+    "lon": 46.2919
+   },
+   "texto": "Por entonces el imperio se había dividido en cuatro grandes kanatos: la Horda de Oro, el de Chagatái, el Iljanato de Persia y la China Yuan. Rivalizaban y a veces se hacían la guerra, pero los caminos seguían abiertos. Es la llamada Pax Mongolica. Un viajero oficial llevaba una paiza, una tablilla de metal o de madera con una inscripción. Le daba derecho a caballos, comida y alojamiento en la red de postas, el yam. Ciudades como Tabriz se llenaron de mercaderes. Hacia 1340, el manual del comerciante florentino Pegolotti aseguraba que el camino hasta China era muy seguro, de día y de noche.",
+   "imagen_wikipedia": "Paiza",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Kublai Kan, emperador de China",
+   "fecha": "1260–1294",
+   "anio": 1271,
+   "lugar": {
+    "nombre": "Shangdu (Xanadú), Mongolia Interior (China)",
+    "lat": 42.3597,
+    "lon": 116.1814
+   },
+   "texto": "Kublai, nieto de Gengis, era hijo de Sorghaghtani Beki, una princesa cristiana nestoriana que las fuentes persas y chinas elogian por su habilidad política. En 1260 se proclamó gran kan en Shangdu, la ciudad que los europeos llamarían Xanadú. Tuvo que ganar una guerra civil contra su hermano Ariq Böke. En 1271 dio a su dinastía un nombre chino, Yuan, y en 1279 completó la conquista de la China Song. Gobernó desde Dadu, la actual Pekín. Intentó invadir Japón en 1274 y 1281, pero fracasó, en parte por unas tormentas que los japoneses recordaron como kamikaze, «vientos divinos».",
+   "imagen_wikipedia": "Kublai Khan",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/china-tang-song",
+    "texto": "Conoce la China que conquistó Kublai →"
+   }
+  },
+  {
+   "titulo": "Marco Polo en la corte del kan",
+   "fecha": "c. 1275",
+   "anio": 1275,
+   "lugar": {
+    "nombre": "Dadu o Janbalic (actual Pekín, China)",
+    "lat": 39.9042,
+    "lon": 116.4074
+   },
+   "texto": "En 1271, el joven veneciano Marco Polo partió hacia Asia con su padre y su tío, mercaderes que ya habían estado en la corte de Kublai. Según su libro, llegaron hacia 1275 y Marco sirvió al kan durante unos diecisiete años. Volvió a Venecia en 1295. Poco después cayó prisionero de los genoveses y, en la cárcel, dictó sus recuerdos a Rustichello de Pisa. El libro, conocido como Il Milione, asombró a Europa. Hablaba del papel moneda, de unas «piedras negras» que ardían, es decir, el carbón, y de ciudades enormes como Hangzhou. Siglos después, Cristóbal Colón leyó y anotó un ejemplar.",
+   "imagen_wikipedia": "Marco Polo",
+   "profundizar": {
+    "titulo": "¿Estuvo de verdad en China?",
+    "parrafos": [
+     "El libro se dictó en una mezcla de francés e italiano. Su coautor, Rustichello, escribía novelas de caballerías y pudo adornar el relato. Se conservan alrededor de 150 manuscritos con diferencias notables entre ellos. Por eso no existe un texto original único, y cada versión añade o quita episodios.",
+     "En 1995, la sinóloga británica Frances Wood planteó serias dudas. Marco Polo no menciona el té, la caligrafía china ni los pies vendados de las mujeres, y su nombre no aparece en ningún documento chino. Wood sugirió que quizá recopiló relatos de mercaderes persas sin llegar a China.",
+     " Otros investigadores lo defienden. El historiador chino Yang Zhijiu encontró en un documento Yuan los nombres de tres enviados que escoltaron a una princesa mongola hasta Persia. Son los mismos que cita Polo, aunque el documento no menciona a los venecianos. En 2013, Hans Ulrich Vogel mostró que sus datos sobre el papel moneda, la sal y las monedas son exactos y difíciles de conocer de oídas.",
+     "Hoy la mayoría de los historiadores cree que Marco Polo sí estuvo en China. Eso sí, piensan que probablemente exageró su importancia en la corte. Su silencio sobre la Gran Muralla tiene además explicación: la mayor parte de la muralla que conocemos se construyó después, bajo la dinastía Ming."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Rabban Bar Sauma, el Marco Polo al revés",
+   "fecha": "1287–1288",
+   "anio": 1287,
+   "lugar": {
+    "nombre": "Roma (Italia)",
+    "lat": 41.9028,
+    "lon": 12.4964
+   },
+   "texto": "Marco Polo viajó de oeste a este. Rabban Bar Sauma hizo el camino contrario. Era un monje cristiano nestoriano de origen turco, nacido cerca de Pekín, que partió en peregrinación hacia Jerusalén. No llegó, pero en 1287 el ilkan Arghun, señor mongol de Persia, lo envió a Europa en busca de una alianza contra los mamelucos. Visitó Constantinopla, Roma y París. Se entrevistó con los reyes Felipe IV de Francia y Eduardo I de Inglaterra. En 1288 recibió la comunión de manos del papa Nicolás IV. La alianza nunca se concretó, pero el relato de su viaje se conserva.",
+   "imagen_wikipedia": "Rabban Bar Sauma",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Caffa y el camino de la peste",
+   "fecha": "1346",
+   "anio": 1346,
+   "lugar": {
+    "nombre": "Caffa (actual Feodosia, Crimea)",
+    "lat": 45.0319,
+    "lon": 35.3824
+   },
+   "texto": "Caffa, la actual Feodosia, en Crimea, era un puerto genovés en tierras de la Horda de Oro, el kanato mongol del oeste. En 1346 el kan Yanibeg la sitió, y entre sus tropas estalló una epidemia. El notario italiano Gabriele de' Mussi escribió que los sitiadores lanzaron cadáveres con catapultas por encima de las murallas para contagiar a los defensores. No está claro que él lo presenciara, y muchos historiadores dudan del relato. Lo seguro es que la peste llegó a Europa y Oriente Medio en barcos y caravanas, por las rutas que los mongoles habían conectado.",
+   "imagen_wikipedia": "Feodosia",
+   "profundizar": {
+    "titulo": "Pistas sobre el origen de la peste",
+    "parrafos": [
+     "A finales del siglo XIX se estudiaron lápidas de dos cementerios cristianos nestorianos del valle del Chui, en la actual Kirguistán, no lejos del lago Issyk-Kul. Muchas eran de 1338 y 1339. Algunas inscripciones en siríaco decían que los difuntos habían muerto de «pestilencia». Fue una de las primeras pistas sobre dónde empezó todo.",
+     "En 2022, un equipo internacional analizó el ADN de dientes de personas enterradas en esas tumbas y encontró la bacteria Yersinia pestis, causante de la peste. La cepa era muy cercana al antepasado común de las que provocaron la peste negra. Esto apunta a Asia central como origen probable, aunque no definitivo.",
+     "No hay pruebas de que los mongoles difundieran la peste a propósito. Pero sus caravanas, sus ejércitos y sus rutas comerciales unían regiones donde vivían roedores portadores, como las marmotas, con ciudades y puertos lejanos. La misma conexión que hizo posible la Pax Mongolica facilitó también el contagio.",
+     "De' Mussi escribió hacia 1348 en Piacenza, en Italia, y probablemente se basó en relatos de otras personas. Además, Caffa no fue la única puerta de entrada de la enfermedad. La peste se extendió a la vez por varios puertos del mar Negro y del Mediterráneo oriental."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/peste-negra",
+    "texto": "Sigue con la peste negra →"
+   }
+  },
+  {
+   "titulo": "1368: los mongoles vuelven a la estepa",
+   "fecha": "1368",
+   "anio": 1368,
+   "lugar": {
+    "nombre": "Nankín (China)",
+    "lat": 32.0603,
+    "lon": 118.7969
+   },
+   "texto": "A mediados del siglo XIV, el poder mongol en China se tambaleaba. Hubo crecidas del río Amarillo, hambrunas, billetes que perdían valor y rebeliones como la de los Turbantes Rojos. Uno de sus líderes, Zhu Yuanzhang, hijo de campesinos pobres que había sido monje budista, se proclamó emperador en Nankín en 1368 y fundó la dinastía Ming. Ese mismo año sus tropas tomaron Dadu, y el último emperador Yuan, Toghon Temür, huyó a la estepa. El Iljanato de Persia ya se había desintegrado. Los mongoles siguieron gobernando en Mongolia, y la Horda de Oro duró más de un siglo. Pero el gran imperio había terminado.",
+   "imagen_wikipedia": "Hongwu Emperor",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  }
+ ],
+ "notas_revision": [
+  "Fecha de nacimiento de Temüjin: las fuentes dan 1155, 1162 o 1167; se usa c. 1162.",
+  "Coordenadas del lugar de nacimiento (Dadal/Delüün Boldog es una tradición) y del kurultái de 1206: son aproximadas.",
+  "Datación de la Historia secreta de los mongoles (1228, 1240 o 1252 según los autores).",
+  "Atribución a Tata Tonga de la adaptación del alfabeto uigur (fuente: Yuanshi).",
+  "La tradición de que Gengis respetó el minarete Kalyan no está documentada con seguridad.",
+  "Árbol de plata de Karakórum: orfebre Guillaume Boucher, cuatro bebidas según Rubruck.",
+  "Fechas de la destrucción de Karakórum por los Ming (c. 1380) y de la fundación de Erdene Zuu (1585).",
+  "La reinterpretación del supuesto palacio de Ögödei como templo budista viene de la misión germano-mongola; conviene verificar.",
+  "Fechas de las batallas: Legnica, 9 de abril de 1241; Mohi, 11 de abril de 1241. Coordenadas aproximadas de Mohi/Muhi.",
+  "Doquz Jatún y la protección de los cristianos de Bagdad; postura de Kirakos de Gandzak.",
+  "Nombramiento de Ata Malik Yuvayní como gobernador de Bagdad (c. 1259).",
+  "Paráfrasis de Pegolotti (Pratica della mercatura, c. 1340) sobre la seguridad de la ruta: verificar la fecha.",
+  "Origen de Rabban Bar Sauma (uigur u öngüt) y orden exacto de sus visitas en 1287–1288.",
+  "Uso contemporáneo del término kamikaze para las tormentas de 1274 y 1281.",
+  "Número de manuscritos de Marco Polo (unos 150); trabajos de Frances Wood (1995), Yang Zhijiu y Hans Ulrich Vogel (2013).",
+  "Estudio de ADN de 2022 (Spyrou et al., Nature) sobre los cementerios de Kara-Djigach y Burana (Kirguistán).",
+  "Comprobar que la imagen principal del artículo «Feodosia» resulta adecuada; alternativa: el artículo de la fortaleza genovesa de Feodosia."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "mongoles",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:02.053127+00:00",
+  "uso": {
+   "input_tokens": 4088,
+   "output_tokens": 25914,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.2673
+ }
+}

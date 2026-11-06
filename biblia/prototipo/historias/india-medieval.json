@@ -1,0 +1,287 @@
+{
+ "resumen": "Entre los siglos VII y XVI, la India fue un mosaico de reinos brillantes. En el sur, dinastías como los Pallava y los Chola levantaron templos de piedra colosales y enviaron flotas por el océano Índico. Sus matemáticos dieron al mundo el cero y las cifras que hoy llamamos arábigas. El islam llegó por el comercio y por la conquista, y en 1206 nació el sultanato de Delhi, que dominó el norte durante tres siglos. En el sur, Vijayanagara mantuvo vivo un gran reino hindú. En 1526, la victoria de Babur en Panipat abrió una nueva era.",
+ "historias": [
+  {
+   "titulo": "El cero: la nada se vuelve número",
+   "fecha": "628",
+   "anio": 628,
+   "lugar": {
+    "nombre": "Bhinmal (antigua Bhillamala), Rajastán, India",
+    "lat": 25.0,
+    "lon": 72.27
+   },
+   "texto": "En el año 628, el astrónomo Brahmagupta terminó en Bhillamala, la actual Bhinmal, un tratado en verso escrito en sánscrito. Allí hizo algo nuevo: trató el cero como un número con sus propias reglas. Explicó que un número menos sí mismo da cero y enseñó a sumar y restar con deudas y fortunas, es decir, con números negativos. En la India ya se usaba un sistema de diez cifras en el que el valor depende de la posición. Esas cifras viajarían hacia el oeste. Hoy las llamamos arábigas, aunque los propios árabes las llamaban indias.",
+   "imagen_wikipedia": "Chaturbhuj Temple, Gwalior",
+   "profundizar": {
+    "titulo": "Del tratado de Brahmagupta a nuestro bolsillo",
+    "parrafos": [
+     "El libro de Brahmagupta se llama Brahmasphutasiddhanta. No todo lo que propuso coincide con las matemáticas actuales: por ejemplo, afirmó que cero dividido entre cero da cero, algo que hoy no se acepta. Aun así, fue de los primeros en dejar por escrito reglas para operar con el cero y con los números negativos.",
+     "La prueba en piedra más famosa está en un pequeño templo de Gwalior, el Chaturbhuj. Una inscripción fechada en el año 876 recoge cantidades como 270 y 50, y el cero aparece dibujado como un pequeño círculo, muy parecido al nuestro. El manuscrito de Bakhshali, que usa un punto como cero, podría ser más antiguo, pero su datación está discutida.",
+     "Hacia el año 825, el sabio persa al-Juarismi escribió en Bagdad un libro sobre el cálculo de los indios. Solo se conserva en traducciones latinas, que empiezan con su nombre latinizado, Algoritmi, de donde viene la palabra algoritmo. En 1202, el italiano Fibonacci difundió estas cifras en Europa con su libro Liber Abaci."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/edad-de-oro-islamica",
+    "texto": "Sigue el viaje de las cifras hasta Bagdad →"
+   }
+  },
+  {
+   "titulo": "Mamallapuram: templos frente al mar",
+   "fecha": "c. 630 – c. 728",
+   "anio": 700,
+   "lugar": {
+    "nombre": "Mamallapuram, Tamil Nadu, India",
+    "lat": 12.6165,
+    "lon": 80.1993
+   },
+   "texto": "En la costa de Tamil Nadu, la dinastía Pallava convirtió el puerto de Mamallapuram en un gran taller de piedra. En el siglo VII, bajo el rey Narasimhavarman I, apodado Mamalla, 'gran luchador', los escultores tallaron pequeños templos en bloques de granito y un enorme relieve lleno de dioses, personas y elefantes. Hacia el año 700, otro rey Pallava levantó el Templo de la Orilla, uno de los primeros templos del sur de la India construidos con bloques de piedra y no tallados en la roca. Desde este puerto salían barcos hacia el sudeste asiático, y la escritura pallava influyó en alfabetos de aquella región.",
+   "imagen_wikipedia": "Shore Temple",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "El islam llega por mar y por tierra",
+   "fecha": "711–712",
+   "anio": 712,
+   "lugar": {
+    "nombre": "Banbhore (probable antigua Debal), Sindh, Pakistán",
+    "lat": 24.7516,
+    "lon": 67.5283
+   },
+   "texto": "El islam llegó a la India por dos caminos. Uno fue el mar: mercaderes árabes comerciaban desde hacía siglos con la costa de Malabar, en el actual Kerala, y allí surgieron pronto comunidades musulmanas. El otro fue la conquista. En 711 y 712, un joven general, Muhammad ibn Qasim, enviado por el califato omeya, tomó el puerto de Debal y derrotó al rey Dahir de Sindh. Esta región, hoy en Pakistán, pasó a formar parte del califato. Durante casi tres siglos, el avance musulmán hacia el interior de la India fue muy limitado.",
+   "imagen_wikipedia": "Banbhore",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "La crónica persa Chachnama",
+     "relato": "La versión más detallada de la conquista es el Chachnama, escrito en persa hacia el siglo XIII y presentado como traducción de un original árabe perdido. Narra la campaña como una empresa heroica y justa, con un general generoso con quienes se rendían. Los historiadores lo usan con cautela, porque se escribió unos cinco siglos después y mezcla datos con relatos literarios."
+    },
+    {
+     "region": "Sindh",
+     "relato": "Para muchos sindis, sobre todo dentro del nacionalismo sindi moderno, Raja Dahir es un rey local que murió defendiendo su tierra frente a invasores extranjeros. Su figura aparece en canciones, obras de teatro y debates actuales como símbolo de una identidad regional anterior a la llegada del islam."
+    },
+    {
+     "region": "Pakistán",
+     "relato": "En muchos libros escolares de Pakistán, Muhammad ibn Qasim aparece como el pionero que llevó el islam al subcontinente, y a veces se le llama 'el primer pakistaní'. Esta imagen presenta la conquista como el comienzo de una historia propia, distinta de la de la India de mayoría hindú."
+    },
+    {
+     "region": "Kerala",
+     "relato": "Los musulmanes de Kerala, llamados mappila, recuerdan una llegada pacífica a través del comercio. Según su tradición, un rey local, Cheraman Perumal, se convirtió al islam, y la mezquita Cheraman Juma de Kodungallur se fundó en el siglo VII. Los historiadores consideran que estas fechas tan tempranas son difíciles de comprobar."
+    }
+   ],
+   "conecta_con": {
+    "capitulo": "media/islam",
+    "texto": "Descubre cómo nació el islam →"
+   }
+  },
+  {
+   "titulo": "Ellora: un templo tallado de arriba abajo",
+   "fecha": "c. 760",
+   "anio": 760,
+   "lugar": {
+    "nombre": "Ellora, Maharashtra, India",
+    "lat": 20.024,
+    "lon": 75.1791
+   },
+   "texto": "En Ellora, en el oeste de la India, los canteros no construyeron el templo de Kailasa: lo esculpieron. Empezaron por lo alto de una ladera de basalto y fueron quitando roca hacia abajo, hasta dejar un templo entero, con torres, patios, columnas y elefantes, todo de una sola pieza. Se suele atribuir al rey Krishna I, de la dinastía Rashtrakuta, en el siglo VIII. Está dedicado a Shiva y representa su montaña sagrada, el Kailash. Lo más llamativo es el conjunto: en Ellora conviven más de treinta cuevas budistas, hindúes y jainistas, talladas a lo largo de varios siglos.",
+   "imagen_wikipedia": "Ellora Caves",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "El gran templo del rey Rajaraja",
+   "fecha": "1010",
+   "anio": 1010,
+   "lugar": {
+    "nombre": "Thanjavur, Tamil Nadu, India",
+    "lat": 10.7828,
+    "lon": 79.1318
+   },
+   "texto": "En el año 1010, el rey chola Rajaraja I consagró en Thanjavur, su capital, un templo dedicado a Shiva: el Brihadishvara, el 'gran señor'. Su torre sobre el santuario mide unos 66 metros y fue una de las más altas de su tiempo. Está hecha de granito, una piedra escasa en la zona que hubo que traer desde lejos. Pero el templo no era solo un lugar de oración. También prestaba dinero, daba empleo, acogía música y danza y poseía muchas tierras. Era el corazón económico y religioso de un reino que dominaba el sur de la India.",
+   "imagen_wikipedia": "Brihadisvara Temple",
+   "profundizar": {
+    "titulo": "Lo que cuentan las paredes",
+    "parrafos": [
+     "Los muros del templo están cubiertos de inscripciones en tamil. Registran con detalle las donaciones de oro, joyas y tierras del rey, su familia y sus funcionarios. Gracias a ellas se sabe cuántas lámparas debían arder, quién pagaba el aceite y qué recibían los empleados. Son un verdadero archivo económico grabado en piedra.",
+     "Una de las inscripciones más conocidas enumera a unas cuatrocientas bailarinas vinculadas al templo, con sus nombres y las casas que recibían, además de músicos, carpinteros, orfebres y otros trabajadores. Muestra que un gran templo funcionaba casi como una pequeña ciudad que daba trabajo a cientos de personas.",
+     "Según la tradición, la piedra que corona la torre es un solo bloque de unas 80 toneladas, subido por una rampa de varios kilómetros. Algunos estudios recientes sugieren que podría estar formada por varias piezas. Lo seguro es que la obra exigió una enorme organización de trabajo y de transporte.",
+     "En 1931 se descubrieron, bajo pinturas de siglos posteriores, murales de época chola en el pasillo que rodea el santuario. Hoy el templo sigue en uso y forma parte, junto con otros dos grandes templos chola, del Patrimonio Mundial de la UNESCO."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Rajendra Chola, el rey que cruzó el mar",
+   "fecha": "c. 1019 – c. 1025",
+   "anio": 1025,
+   "lugar": {
+    "nombre": "Gangaikonda Cholapuram, Tamil Nadu, India",
+    "lat": 11.2061,
+    "lon": 79.4486
+   },
+   "texto": "El hijo de Rajaraja, Rajendra I, llevó el poder chola más lejos que nadie. Hacia 1020 sus tropas llegaron hasta el río Ganges, y para celebrarlo fundó una nueva capital, Gangaikonda Cholapuram, 'la ciudad del chola que tomó el Ganges'. Hacia 1025 lanzó algo poco común en la historia india: una expedición naval contra Srivijaya, el reino que controlaba el estrecho de Malaca, paso clave del comercio con China. Sus inscripciones enumeran puertos atacados en Sumatra y en la península malaya. Los historiadores discuten el motivo, pero casi todos apuntan al control del comercio marítimo.",
+   "imagen_wikipedia": "Gangaikonda Cholapuram",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Somnath: un saqueo, muchas memorias",
+   "fecha": "1026",
+   "anio": 1026,
+   "lugar": {
+    "nombre": "Somnath, Guyarat, India",
+    "lat": 20.888,
+    "lon": 70.4013
+   },
+   "texto": "Mahmud, sultán de Gazni, en el actual Afganistán, lanzó muchas incursiones sobre el norte de la India entre los años 1000 y 1027, sobre todo en busca de botín. La más recordada ocurrió en 1026, cuando saqueó el templo de Shiva en Somnath, en la costa de Guyarat, famoso por sus riquezas. Mahmud no se quedó a gobernar: volvió a Gazni con el tesoro. El templo fue reconstruido varias veces en los siglos siguientes. Pocas historias de la India medieval se han contado de maneras tan distintas.",
+   "imagen_wikipedia": "Somnath temple",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Cronistas persas",
+     "relato": "Los cronistas de la corte de Mahmud y los autores persas posteriores lo presentaron como un héroe que destruía ídolos en nombre del islam, y con los siglos añadieron detalles cada vez más espectaculares sobre el tesoro. En cambio, el sabio al-Biruni, que conoció la India al servicio de Mahmud, escribió que sus campañas habían arruinado la prosperidad del país."
+    },
+    {
+     "region": "Fuentes sánscritas y jainistas",
+     "relato": "La historiadora india Romila Thapar señaló que las inscripciones sánscritas de las décadas siguientes apenas mencionan el saqueo: hablan de reparaciones y donaciones al templo, y algunos textos jainistas lo citan de pasada. Para ella, el ataque no se vivió entonces como el gran trauma colectivo que se recordaría siglos más tarde."
+    },
+    {
+     "region": "Imperio británico e India moderna",
+     "relato": "En 1842, un gobernador británico anunció que traía de Afganistán las 'puertas de Somnath' robadas por Mahmud; resultaron no ser las originales. El episodio alimentó la idea de un choque eterno entre hindúes y musulmanes. Tras la independencia, el templo se reconstruyó y se inauguró en 1951 como símbolo nacional."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Qutb Minar: nace el sultanato de Delhi",
+   "fecha": "1192 – c. 1199",
+   "anio": 1199,
+   "lugar": {
+    "nombre": "Mehrauli, Delhi, India",
+    "lat": 28.5245,
+    "lon": 77.1855
+   },
+   "texto": "En 1192, el sultán Muhammad de Gur venció al rey rajput Prithviraj Chauhan en la segunda batalla de Tarain, al norte de Delhi. Esta vez los conquistadores se quedaron. Cuando Muhammad murió, en 1206, su general Qutb al-Din Aibak, que había sido esclavo militar, tomó el poder en la India. Así nació el sultanato de Delhi, que gobernó gran parte del norte durante más de tres siglos, con cinco dinastías sucesivas. Su símbolo más visible es el Qutb Minar, un alminar de arenisca de unos 73 metros que Aibak empezó a levantar hacia 1199.",
+   "imagen_wikipedia": "Qutb Minar",
+   "profundizar": {
+    "titulo": "Piedras de dos mundos",
+    "parrafos": [
+     "Junto al alminar está la mezquita Quwwat al-Islam, una de las primeras de Delhi. Una inscripción en su entrada afirma que se construyó con materiales de 27 templos hindúes y jainistas. Todavía hoy se ven columnas con figuras talladas al estilo de los templos, reutilizadas en un edificio islámico.",
+     "Aibak solo pudo terminar el primer piso del Qutb Minar. Su sucesor, Iltutmish, añadió más pisos, y en 1369, tras la caída de un rayo, el sultán Firuz Shah Tughluq reparó la parte superior. Por eso la torre combina materiales y estilos de épocas diferentes.",
+     "En el mismo patio se alza el pilar de hierro, mucho más antiguo: se atribuye a la época de los Gupta, hacia los siglos IV o V. Mide unos siete metros y lleva más de mil quinientos años casi sin oxidarse, gracias a la composición de su hierro. Los metalúrgicos todavía lo estudian.",
+     "De Prithviraj Chauhan se cuentan muchas leyendas, sobre todo en el poema Prithviraj Raso, compuesto siglos después. En él, el rey, cegado y prisionero, mata a su captor con una flecha. Es un relato muy popular, pero las crónicas de la época dicen que Prithviraj murió poco después de la batalla."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Razia, la sultana de Delhi",
+   "fecha": "1236–1240",
+   "anio": 1236,
+   "lugar": {
+    "nombre": "Delhi, India",
+    "lat": 28.6562,
+    "lon": 77.241
+   },
+   "texto": "El sultán Iltutmish eligió como heredera a su hija Razia; según las crónicas, la consideraba más capaz que sus hijos. En 1236 se convirtió en la primera y única mujer que gobernó el sultanato de Delhi. El cronista Minhaj-i Siraj, que vivió en su época, la describe como una gobernante justa e inteligente. Montaba a caballo, dirigía tropas y aparecía en público con túnica y tocado de hombre. Muchos nobles turcos no aceptaron a una mujer en el trono. Tras varias rebeliones fue derrocada, y murió en 1240.",
+   "imagen_wikipedia": "Razia Sultana",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Un viajero marroquí en la corte de Delhi",
+   "fecha": "c. 1334 – 1342",
+   "anio": 1334,
+   "lugar": {
+    "nombre": "Delhi, India",
+    "lat": 28.6139,
+    "lon": 77.209
+   },
+   "texto": "Hacia 1334 llegó a Delhi Ibn Battuta, un viajero de Tánger que recorrería medio mundo. El sultán Muhammad bin Tughluq lo nombró juez y lo colmó de regalos. En sus memorias, Ibn Battuta lo pinta como un hombre culto y generoso, pero también imprevisible y cruel. El sultán tuvo ideas atrevidas que salieron mal: trasladó la capital al sur, a Daulatabad, obligando a mudarse a mucha gente, y acabó volviendo a Delhi. También emitió monedas de cobre con valor de plata, pero se falsificaron tanto que tuvo que retirarlas. En 1342 envió a Ibn Battuta como embajador a China.",
+   "imagen_wikipedia": "Daulatabad Fort",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Vijayanagara, la ciudad de la victoria",
+   "fecha": "1336",
+   "anio": 1336,
+   "lugar": {
+    "nombre": "Hampi, Karnataka, India",
+    "lat": 15.335,
+    "lon": 76.46
+   },
+   "texto": "Mientras el sultanato dominaba el norte, en el sur creció un gran reino hindú. Según la tradición, en 1336 dos hermanos, Harihara y Bukka, fundaron Vijayanagara, 'la ciudad de la victoria', junto al río Tungabhadra, en el actual Karnataka. En su capital, cuyas ruinas hoy se conocen como Hampi, había templos, mercados, canales y palacios entre enormes rocas de granito. El reino rivalizó durante dos siglos con los sultanatos vecinos y compraba caballos que llegaban por mar. Su esplendor terminó en 1565, cuando una alianza de sultanatos derrotó a su ejército y saqueó la ciudad.",
+   "imagen_wikipedia": "Hampi",
+   "profundizar": {
+    "titulo": "Lo que vieron los visitantes",
+    "parrafos": [
+     "Hacia 1420, el mercader veneciano Niccolò de' Conti describió Vijayanagara como una ciudad enorme, rodeada de murallas que subían por las colinas. Su relato llegó a Europa porque un humanista italiano lo puso por escrito tras escuchar su viaje.",
+     "En 1443 llegó Abd al-Razzaq, embajador del soberano timúrida Shah Rukh, que gobernaba desde Herat. Quedó impresionado por los mercados de joyas, las murallas concéntricas y una gran fiesta anual en la que el rey recibía a sus súbditos y tributos. Su relato es uno de los más elogiosos que se conservan.",
+     "Hacia 1520, el portugués Domingos Paes visitó la ciudad en tiempos del rey Krishnadevaraya. La comparó con Roma por su tamaño y describió calles llenas de mercancías. Los historiadores leen estos testimonios con cuidado, porque los viajeros tendían a exagerar, pero en buena parte coinciden con lo que muestran las ruinas.",
+     "Desde el siglo XIX, los arqueólogos estudian Hampi: templos como el de Virupaksha, todavía en uso, establos para elefantes, acueductos y estanques. En 1986, la UNESCO declaró el conjunto Patrimonio Mundial."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Panipat, 1526: llega Babur",
+   "fecha": "21 de abril de 1526",
+   "anio": 1526,
+   "lugar": {
+    "nombre": "Panipat, Haryana, India",
+    "lat": 29.3909,
+    "lon": 76.9635
+   },
+   "texto": "En 1526, el último sultán de Delhi, Ibrahim Lodi, se enfrentó en la llanura de Panipat a un príncipe llegado de Asia central: Babur. Descendía de Timur, o Tamerlán, por parte de padre, y de Gengis Kan por parte de madre. Su ejército era más pequeño, pero usaba cañones y armas de fuego, todavía raros en la India, junto con tácticas de caballería de las estepas. Ibrahim murió en la batalla y el sultanato terminó. Babur fundó el Imperio mogol y dejó unas memorias en turco chagatai, el Baburnama, llenas de observaciones sobre la India.",
+   "imagen_wikipedia": "Babur",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/mongoles",
+    "texto": "Conoce a los antepasados de Babur →"
+   }
+  }
+ ],
+ "notas_revision": [
+  "Comprobar que existe el artículo 'Chaturbhuj Temple, Gwalior' en la Wikipedia en inglés y que su imagen es adecuada; alternativa: 'Brahmagupta' o 'Bakhshali manuscript'.",
+  "Comprobar el título exacto del artículo del templo de Thanjavur en la Wikipedia en inglés ('Brihadisvara Temple' o 'Brihadisvara Temple, Thanjavur').",
+  "Inscripción de Gwalior: fecha 876 d. C. y números 270 y 50 con el cero como círculo.",
+  "Al-Juarismi: fecha aproximada (c. 825) del tratado sobre numeración india.",
+  "Altura de la torre del Brihadishvara (se citan entre 63 y 66 m) y peso tradicional de 80 toneladas de la piedra superior.",
+  "Número de bailarinas en la inscripción de Thanjavur (se cita habitualmente unas 400).",
+  "Hallazgo de murales chola en 1931 bajo pinturas de época nayak.",
+  "Expedición del Ganges de Rajendra I (c. 1019–1023) y expedición naval contra Srivijaya (c. 1025): fechas aproximadas.",
+  "Atribución del templo de Kailasa en Ellora a Krishna I (Rashtrakuta); hay debate sobre si intervinieron varios reyes.",
+  "Identificación de Debal con Banbhore: probable pero no segura.",
+  "Fecha de redacción del Chachnama (siglo XIII) y su carácter de traducción de un original árabe.",
+  "Altura del Qutb Minar (c. 72,5 m) y la cifra de 27 templos en la inscripción de la mezquita Quwwat al-Islam.",
+  "Reparación de Firuz Shah Tughluq en 1369 y datación gupta del pilar de hierro.",
+  "Llegada de Ibn Battuta a Delhi (1333 o 1334) y su envío a China en 1342.",
+  "Fecha tradicional de fundación de Vijayanagara (1336) y fecha aproximada de la visita de Niccolò de' Conti (c. 1420).",
+  "Inauguración del templo reconstruido de Somnath en 1951.",
+  "Título exacto del artículo 'Razia Sultana' en la Wikipedia en inglés."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "india-medieval",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:02.290769+00:00",
+  "uso": {
+   "input_tokens": 4079,
+   "output_tokens": 24761,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.2558
+ }
+}

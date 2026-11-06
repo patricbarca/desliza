@@ -1,0 +1,312 @@
+{
+ "resumen": "Durante mil años, mientras Occidente se fragmentaba, el Imperio romano siguió vivo en Oriente con capital en Constantinopla. Sus habitantes se llamaban a sí mismos romanos. Este capítulo recorre su fundación, las murallas que la protegieron, la época de Justiniano y Teodora (con Santa Sofía, el gran código legal y la primera gran peste), el misterioso fuego griego, la guerra de las imágenes, el alfabeto que llevó a los eslavos, la ruptura entre las Iglesias de Roma y Constantinopla, el saqueo cruzado de 1204 y la conquista otomana de 1453.",
+ "historias": [
+  {
+   "titulo": "Constantino funda una nueva Roma",
+   "fecha": "11 de mayo de 330",
+   "anio": 330,
+   "lugar": {
+    "nombre": "Constantinopla (actual Estambul, Turquía)",
+    "lat": 41.0086,
+    "lon": 28.9714
+   },
+   "texto": "En el año 330, el emperador Constantino inauguró su nueva capital sobre una vieja colonia griega llamada Bizancio, junto al estrecho del Bósforo. El sitio era ideal: un pie en Europa, la mirada puesta en Asia y el control del paso entre el mar Negro y el Mediterráneo. La ciudad tomó su nombre: Constantinopla. Un detalle importante: sus habitantes nunca se llamaron «bizantinos». Se consideraban romanos, rhomaioi en griego, y su Estado era el Imperio romano, que en Oriente duró mil años más. La etiqueta «Imperio bizantino» la popularizaron estudiosos europeos siglos después.",
+   "imagen_wikipedia": "Column of Constantine",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Las murallas que resistieron mil años",
+   "fecha": "c. 413",
+   "anio": 413,
+   "lugar": {
+    "nombre": "Murallas de Teodosio, Constantinopla",
+    "lat": 41.0297,
+    "lon": 28.9347
+   },
+   "texto": "Hacia 413, bajo el emperador Teodosio II, Constantinopla se blindó por tierra con una muralla nueva. Tras un terremoto en 447 se reforzó hasta formar un sistema triple: un foso, un muro exterior y un muro interior más alto, con decenas de torres. A lo largo de los siglos llegaron hasta ellas ávaros, persas, árabes, búlgaros y rus, y se marcharon sin entrar. Por eso, cuando en 476 cayó el último emperador de Occidente, la mitad oriental siguió en pie. Solo dos ejércitos enemigos lograron tomar la ciudad: los cruzados en 1204 y los otomanos en 1453.",
+   "imagen_wikipedia": "Walls of Constantinople",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Teodora y la revuelta de Niká",
+   "fecha": "enero de 532",
+   "anio": 532,
+   "lugar": {
+    "nombre": "Hipódromo de Constantinopla",
+    "lat": 41.0057,
+    "lon": 28.9751
+   },
+   "texto": "Justiniano llegó al trono en 527 con una esposa poco común: Teodora, antigua actriz de origen humilde. En enero de 532, los aficionados a las carreras de carros del Hipódromo, divididos en los bandos de los Azules y los Verdes, se unieron contra el emperador al grito de «¡Niká!», que significa «¡vence!». La ciudad ardió y Justiniano pensó en huir. Según el historiador Procopio, Teodora lo frenó con un discurso: prefería morir como emperatriz antes que vivir como fugitiva. Los generales encerraron a los rebeldes en el Hipódromo y los masacraron. Procopio habla de unos 30.000 muertos, una cifra imposible de comprobar.",
+   "imagen_wikipedia": "Theodora (wife of Justinian I)",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Las leyes de Justiniano siguen vivas",
+   "fecha": "529–534",
+   "anio": 534,
+   "lugar": {
+    "nombre": "Gran Palacio, Constantinopla",
+    "lat": 41.006,
+    "lon": 28.977
+   },
+   "texto": "Justiniano quiso poner orden en siglos de leyes romanas dispersas y contradictorias. Encargó la tarea a un equipo dirigido por el jurista Triboniano. Entre 529 y 534 nacieron tres obras: un código con las leyes de los emperadores, el Digesto, que resumía las opiniones de los grandes juristas romanos, y las Instituciones, un manual para estudiantes. Después se añadieron las leyes nuevas del propio Justiniano. Mucho más tarde, todo el conjunto recibió el nombre de Corpus iuris civilis. Su huella llega hasta hoy: buena parte de los códigos civiles de Europa y América Latina descienden de él.",
+   "imagen_wikipedia": "Corpus Juris Civilis",
+   "profundizar": {
+    "titulo": "De Constantinopla a tu código civil",
+    "parrafos": [
+     "En Occidente, el Digesto quedó casi olvidado durante siglos. A finales del siglo XI reapareció en Italia, y en Bolonia un maestro llamado Irnerio empezó a explicarlo en clase. Estudiantes de toda Europa acudieron a aprender derecho romano, y aquella escuela se convirtió en uno de los orígenes de la universidad de Bolonia.",
+     "Se conserva un manuscrito muy antiguo del Digesto, la llamada Littera Florentina, copiado probablemente en el siglo VI, poco después de Justiniano. Estuvo en Pisa hasta que Florencia conquistó esa ciudad en 1406 y se lo llevó como botín. Hoy se guarda en la Biblioteca Medicea Laurenziana de Florencia.",
+     "En Oriente, las leyes siguieron vivas en griego. Hacia el año 900, el emperador León VI promovió una gran recopilación llamada Basílicas. En 1345, el juez Constantino Harmenópulo redactó el Hexabiblos, un resumen que, según los estudios de historia del derecho, sirvió como base del derecho civil en Grecia hasta 1946.",
+     "Los juristas europeos de la Edad Moderna trabajaron sobre este legado, y de ahí bebieron el Código Civil francés de 1804 y códigos latinoamericanos como el chileno de 1855, redactado por Andrés Bello. Palabras como usufructo, servidumbre u obligación vienen directamente de aquel derecho romano ordenado en Constantinopla."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Santa Sofía, una cúpula colgada del cielo",
+   "fecha": "27 de diciembre de 537",
+   "anio": 537,
+   "lugar": {
+    "nombre": "Santa Sofía, Constantinopla",
+    "lat": 41.0086,
+    "lon": 28.9802
+   },
+   "texto": "La revuelta de Niká había quemado la gran iglesia de la ciudad. Justiniano mandó levantar otra sin reparar en gastos y la encargó a dos sabios expertos en geometría: Antemio de Tralles e Isidoro de Mileto. En menos de seis años terminaron Hagia Sophia, «Santa Sabiduría». Su cúpula, de algo más de 30 metros de diámetro, parece flotar sobre un anillo de 40 ventanas. Procopio escribió que parecía suspendida del cielo por una cadena de oro. Una leyenda posterior cuenta que Justiniano, al entrar, exclamó: «¡Salomón, te he superado!». No hay pruebas de que lo dijera.",
+   "imagen_wikipedia": "Hagia Sophia",
+   "profundizar": {
+    "titulo": "Cómo se sostiene un gigante",
+    "parrafos": [
+     "El gran truco son las pechinas: cuatro piezas curvas, con forma de triángulo, que permiten pasar de una planta cuadrada a una cúpula redonda. El peso baja así hasta cuatro enormes pilares. La técnica no se inventó allí, pero nunca se había usado a una escala tan grande.",
+     "Tanta audacia tuvo un precio. Tras varios terremotos, parte de la cúpula se derrumbó en 558. Isidoro el Joven, sobrino de uno de los arquitectos, la reconstruyó más alta y curvada, y la obra se terminó en 562. Hubo nuevos derrumbes parciales en 989 y 1346, y los otomanos añadieron después contrafuertes para reforzarla.",
+     "El interior se cubrió de mármoles de colores traídos de distintas canteras del Mediterráneo y de mosaicos dorados. La mayoría de los mosaicos con figuras que hoy se ven son posteriores a la crisis de las imágenes, a partir del siglo IX, y algunos retratan a emperadores y emperatrices.",
+     "En una galería superior hay una curiosa huella: una inscripción en runas escandinavas en la que se lee un nombre, interpretado como Halfdan. Probablemente la grabó, entre los siglos IX y XI, un guerrero nórdico al servicio del emperador, aburrido durante alguna larga ceremonia."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "La primera gran peste",
+   "fecha": "541–542",
+   "anio": 542,
+   "lugar": {
+    "nombre": "Constantinopla",
+    "lat": 41.0122,
+    "lon": 28.976
+   },
+   "texto": "En 541 apareció una enfermedad desconocida en Pelusio, en Egipto. Al año siguiente llegó a Constantinopla. Procopio describió fiebre, bultos en ingles y axilas, delirios y calles donde no daba tiempo a enterrar a los muertos. El propio Justiniano enfermó y sobrevivió. La epidemia regresó una y otra vez durante unos dos siglos por todo el Mediterráneo. Cuántas personas murieron sigue siendo un misterio: algunos historiadores hablan de una catástrofe que debilitó al imperio; otros creen que su impacto se ha exagerado. Hoy sabemos que fue peste, la misma enfermedad que volvería a Europa unos ochocientos años después.",
+   "imagen_wikipedia": "Plague of Justinian",
+   "profundizar": {
+    "titulo": "La prueba estaba en los huesos",
+    "parrafos": [
+     "Tenemos varios testigos de la época: Procopio, que vivió el brote en la capital; Juan de Éfeso, que escribió en siríaco; y Evagrio, que la sufrió en Antioquía. Procopio afirma que en el peor momento morían hasta 10.000 personas al día en Constantinopla, una cifra que muchos historiadores consideran exagerada o imposible de verificar.",
+     "Durante mucho tiempo se discutió si aquella enfermedad era realmente la peste. La respuesta llegó del ADN antiguo: en tumbas del siglo VI, por ejemplo en Aschheim, en Baviera, los investigadores encontraron restos genéticos de Yersinia pestis, la bacteria de la peste, que transmiten las pulgas de ratas y otros roedores.",
+     "Los estudios genéticos muestran que aquella cepa era una rama distinta de la que causó la peste negra en el siglo XIV, y que acabó desapareciendo. Su lugar de origen sigue en debate; algunos investigadores apuntan a Asia central, pero no hay consenso.",
+     "El impacto también se discute. Durante años se repitió que murió entre un cuarto y la mitad de la población. Algunos estudios recientes, basados en papiros, monedas, leyes y polen antiguo, sostienen que el golpe fue más desigual y menor de lo que se pensaba."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/peste-negra",
+    "texto": "Mira cómo volvió la peste en 1347 →"
+   }
+  },
+  {
+   "titulo": "El fuego que ardía sobre el agua",
+   "fecha": "c. 672",
+   "anio": 672,
+   "lugar": {
+    "nombre": "Mar de Mármara, frente a Constantinopla",
+    "lat": 40.995,
+    "lon": 28.975
+   },
+   "texto": "Según el cronista Teófanes, hacia 672 un arquitecto llamado Calínico, refugiado de Siria, llevó a Constantinopla un invento temible: un líquido que ardía incluso sobre el agua y era casi imposible de apagar. Los barcos bizantinos lo lanzaban con sifones, unos tubos a presión, contra las naves enemigas. Fue clave para rechazar las flotas árabes que atacaron la ciudad en los años 670 y de nuevo en 717–718. Los bizantinos lo llamaban «fuego marino» o «fuego líquido»; lo de «fuego griego» se lo pusieron los extranjeros. Su receta era secreto de Estado y se perdió. Probablemente se basaba en petróleo.",
+   "imagen_wikipedia": "Greek fire",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "La guerra de las imágenes",
+   "fecha": "726–843",
+   "anio": 726,
+   "lugar": {
+    "nombre": "Constantinopla",
+    "lat": 41.0068,
+    "lon": 28.977
+   },
+   "texto": "¿Se puede rezar ante una imagen de Cristo o de un santo, o eso es idolatría? La pregunta dividió al imperio durante más de un siglo. Hacia 726, el emperador León III empezó a actuar contra los iconos, y su hijo Constantino V fue mucho más lejos. Es la iconoclasia, la «rotura de imágenes». Muchos monjes defendieron los iconos y fueron perseguidos. Hubo una tregua en 787 y una nueva oleada en 815. En 843, la emperatriz Teodora los restauró para siempre, y las Iglesias ortodoxas aún lo celebran. Un aviso: casi todo lo que sabemos lo escribieron los vencedores, los defensores de las imágenes.",
+   "imagen_wikipedia": "Christ Pantocrator (Sinai)",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Un alfabeto para los eslavos",
+   "fecha": "863",
+   "anio": 863,
+   "lugar": {
+    "nombre": "Gran Moravia (actual Chequia)",
+    "lat": 48.7997,
+    "lon": 17.0547
+   },
+   "texto": "En 863, el emperador Miguel III envió a dos hermanos de Tesalónica, Constantino, más tarde llamado Cirilo, y Metodio, a la Gran Moravia, en la actual Chequia. Su príncipe, Rastislav, quería predicadores que hablaran la lengua de su pueblo. Para escribir aquel idioma eslavo, Cirilo creó un alfabeto nuevo, el glagolítico. Más tarde, discípulos suyos en Bulgaria desarrollaron otro más sencillo, basado en letras griegas, que se llamó cirílico en su honor. Hoy lo usan rusos, ucranianos, búlgaros y serbios, entre otros. En 988, el príncipe Vladimiro de Kiev adoptó también el cristianismo bizantino.",
+   "imagen_wikipedia": "Saints Cyril and Methodius",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "1054: la Iglesia se parte en dos",
+   "fecha": "16 de julio de 1054",
+   "anio": 1054,
+   "lugar": {
+    "nombre": "Santa Sofía, Constantinopla",
+    "lat": 41.0084,
+    "lon": 28.9799
+   },
+   "texto": "El 16 de julio de 1054, el cardenal Humberto, enviado del papa, entró en Santa Sofía y dejó sobre el altar una bula que excomulgaba al patriarca Miguel Cerulario. El patriarca respondió excomulgando a los enviados. Detrás había siglos de diferencias: latín frente a griego, pan con o sin levadura, una palabra añadida al Credo en Occidente, filioque, y sobre todo cuánta autoridad tenía el papa. Curiosamente, el papa León IX había muerto meses antes. Los historiadores ven 1054 más como un símbolo que como un corte limpio: la separación fue lenta. Las excomuniones mutuas se levantaron en 1965.",
+   "imagen_wikipedia": "Michael I Cerularius",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Tradición católica (Roma)",
+     "relato": "Para la Iglesia de Roma, el papa es sucesor del apóstol Pedro, a quien según el Evangelio Jesús confió su Iglesia. Por eso el obispo de Roma tendría autoridad sobre toda la cristiandad. El filioque, que afirma que el Espíritu Santo procede del Padre y del Hijo, se veía como expresión legítima de la fe. La negativa oriental se interpretó como un rechazo a la unidad."
+    },
+    {
+     "region": "Tradición ortodoxa (Constantinopla)",
+     "relato": "Para la Iglesia oriental, la autoridad suprema reside en los obispos reunidos en concilios. El papa era el primero en honor entre los patriarcas, no un jefe con poder sobre todos. Añadir el filioque al Credo sin un concilio de toda la Iglesia se vivió como un cambio unilateral. Muchos ortodoxos consideran que la herida definitiva no fue 1054, sino el saqueo de 1204."
+    },
+    {
+     "region": "Mirada de los historiadores",
+     "relato": "Muchos investigadores subrayan que en 1054 pocos fieles se enteraron de lo ocurrido y que los contactos entre ambas Iglesias continuaron. Hubo intentos serios de reunificación, como el concilio de Florencia de 1439, que firmó una unión que la mayoría de los fieles orientales rechazó. El cisma se consolidó poco a poco, más por desconfianza acumulada que por un solo día."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Ana Comnena, la princesa historiadora",
+   "fecha": "c. 1148",
+   "anio": 1148,
+   "lugar": {
+    "nombre": "Constantinopla",
+    "lat": 41.0155,
+    "lon": 28.9555
+   },
+   "texto": "Ana Comnena nació en 1083, hija del emperador Alejo I, y recibió una educación excepcional en historia, filosofía, medicina y retórica. Según el cronista Nicetas Coniates, conspiró contra su hermano por el trono y acabó apartada en un convento. Allí escribió la Alexíada, la historia del reinado de su padre, una de las primeras obras históricas escritas por una mujer que conservamos. Cuenta cómo el imperio, acosado por los turcos selyúcidas tras la derrota de Manzikert en 1071, pidió ayuda a Occidente, y cómo en 1096 llegaron miles de cruzados. Los describe con asombro y desconfianza: aliados útiles, pero peligrosos.",
+   "imagen_wikipedia": "Anna Komnene",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/cruzadas",
+    "texto": "Sigue con las cruzadas →"
+   }
+  },
+  {
+   "titulo": "1204: los cruzados saquean Constantinopla",
+   "fecha": "12–15 de abril de 1204",
+   "anio": 1204,
+   "lugar": {
+    "nombre": "Cuerno de Oro, Constantinopla",
+    "lat": 41.03,
+    "lon": 28.96
+   },
+   "texto": "La Cuarta Cruzada debía ir a Egipto, pero los cruzados debían una fortuna a Venecia por los barcos. Se desviaron hacia Constantinopla para apoyar a un aspirante al trono que les prometió dinero. Cuando el trato se rompió, atacaron. En abril de 1204 entraron en la ciudad y la saquearon durante tres días: iglesias, palacios, bibliotecas. Muchas reliquias y obras de arte acabaron en Europa occidental, como los cuatro caballos de bronce que hoy se conservan en la basílica de San Marcos de Venecia. Los cruzados fundaron un Imperio latino, y los bizantinos no recuperaron su capital hasta 1261.",
+   "imagen_wikipedia": "Horses of Saint Mark",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Un testigo bizantino",
+     "relato": "Nicetas Coniates, alto funcionario de la corte, perdió su casa y huyó de la ciudad. En su Historia describe la profanación de Santa Sofía y la fundición de estatuas antiguas para hacer monedas. Compara a los cruzados con los musulmanes de Saladino, que en 1187 habían tratado mejor a Jerusalén. Para la memoria griega, aquello fue una traición entre cristianos."
+    },
+    {
+     "region": "Los cruzados franceses",
+     "relato": "Godofredo de Villehardouin, uno de los jefes de la expedición, escribió una crónica de la conquista. Justifica el ataque por las promesas incumplidas y la hostilidad de los griegos, y se maravilla de la riqueza de la ciudad, que según él superaba todo lo imaginable. Otro participante, Roberto de Clari, cuenta desde la tropa su asombro ante palacios y reliquias."
+    },
+    {
+     "region": "Venecia",
+     "relato": "Para la república de Venecia fue un gran éxito comercial. Obtuvo barrios, puertos e islas en el Mediterráneo oriental, entre ellas Creta, y su dux añadió a sus títulos el de señor de una parte del Imperio romano. El anciano dux Enrico Dandolo, casi ciego, se convirtió en héroe. Una lápida en Santa Sofía recuerda todavía el lugar de su tumba."
+    },
+    {
+     "region": "El papado",
+     "relato": "El papa Inocencio III había prohibido atacar a cristianos y condenó con dureza el saqueo en sus cartas, aunque luego aceptó el Imperio latino. Ocho siglos después, en 2001, el papa Juan Pablo II expresó públicamente su pesar ante los ortodoxos, y en 2004 el patriarca de Constantinopla, Bartolomé, aceptó ese gesto."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "1453: la caída de Constantinopla",
+   "fecha": "6 de abril – 29 de mayo de 1453",
+   "anio": 1453,
+   "lugar": {
+    "nombre": "Murallas de Constantinopla, puerta de San Romano",
+    "lat": 41.018,
+    "lon": 28.923
+   },
+   "texto": "En la primavera de 1453, el sultán otomano Mehmed II, de 21 años, rodeó Constantinopla. El imperio era ya poco más que la ciudad. Mehmed llevaba enormes cañones, uno de ellos fundido por un ingeniero llamado Urbano, que golpearon durante semanas las viejas murallas. Para burlar la cadena que cerraba el puerto del Cuerno de Oro, hizo arrastrar barcos por tierra. Tras casi dos meses de asedio, el 29 de mayo sus tropas entraron. El último emperador, Constantino XI, murió luchando; su cuerpo nunca se identificó con seguridad. Mehmed convirtió Santa Sofía en mezquita y la ciudad en su capital.",
+   "imagen_wikipedia": "Fall of Constantinople",
+   "profundizar": {
+    "titulo": "Cómo conocemos el asedio",
+    "parrafos": [
+     "Hay testigos de los dos lados. Nicolò Barbaro, médico veneciano, escribió un diario día a día. Jorge Esfrantzes, amigo íntimo del emperador, dejó sus memorias. Critóbulo de Imbros, un griego al servicio del sultán, escribió una biografía de Mehmed, y cronistas otomanos como Tursun Beg, que participó en la campaña, contaron la victoria.",
+     "Las cifras varían mucho. Esfrantzes afirma que contó a los defensores y que había menos de 5.000 griegos y unos 2.000 extranjeros, sobre todo genoveses y venecianos. Las fuentes dan para el ejército otomano números de entre decenas de miles y más de 200.000. Los historiadores actuales suelen hablar de varias decenas de miles, quizá entre 50.000 y 80.000.",
+     "El episodio de los barcos está bien documentado. Hacia el 22 de abril, los otomanos trasladaron decenas de naves por tierra, sobre rodillos de madera engrasados, desde el Bósforo hasta el Cuerno de Oro, detrás de la cadena que protegía el puerto. El recorrido exacto todavía se discute.",
+     "Tras la conquista, Mehmed repobló la ciudad y en 1454 nombró un nuevo patriarca ortodoxo, Genadio, para gobernar a los cristianos. Estambul fue durante siglos la capital otomana. Santa Sofía fue mezquita hasta 1934, cuando la república turca la convirtió en museo, y volvió a ser mezquita en 2020."
+    ]
+   },
+   "otras_miradas": [
+    {
+     "region": "Memoria griega ortodoxa",
+     "relato": "En griego se la llama Álosis, «la toma». La caída ocurrió un martes, y en el mundo griego ese día aún se considera de mala suerte. Nacieron leyendas populares: un emperador convertido en mármol que despertará algún día, o un sacerdote que entró en un muro de Santa Sofía con el cáliz y saldrá cuando vuelva a ser iglesia. Son tradiciones, no hechos."
+    },
+    {
+     "region": "Memoria turca",
+     "relato": "En turco es el Fetih, «la conquista», y Mehmed II pasó a la historia como Fatih, «el Conquistador». El 29 de mayo se conmemora en Estambul. La tradición islámica cita un dicho atribuido a Mahoma que elogia al ejército que tome Constantinopla, aunque su autenticidad es discutida por estudiosos musulmanes. La ciudad fue capital de un gran imperio durante casi cinco siglos."
+    },
+    {
+     "region": "Europa occidental",
+     "relato": "La noticia causó conmoción en las cortes y ciudades cristianas, y el papa llamó a una cruzada que nunca llegó a organizarse. Muchos manuales usan 1453 como final de la Edad Media. Sabios griegos llevaron manuscritos a Italia, aunque ese flujo había empezado décadas antes, por ejemplo con el concilio de Florencia de 1439."
+    }
+   ],
+   "conecta_con": {
+    "capitulo": "renacimiento/el-renacimiento",
+    "texto": "Descubre adónde llegaron los libros de los sabios griegos →"
+   }
+  }
+ ],
+ "notas_revision": [
+  "Comprobar la fecha de las murallas teodosianas (c. 413) y su refuerzo tras el terremoto de 447.",
+  "Cifra de unos 30.000 muertos en la revuelta de Niká: procede de Procopio y no es verificable.",
+  "Verificar que existen los artículos de Wikipedia en inglés con los títulos exactos 'Theodora (wife of Justinian I)', 'Michael I Cerularius' y 'Christ Pantocrator (Sinai)'.",
+  "Diámetro de la cúpula de Santa Sofía (c. 31-32 m), número de ventanas (40) y fechas del derrumbe (558) y reconstrucción (562); derrumbes parciales en 989 y 1346.",
+  "Datación del grafito rúnico de Santa Sofía (Halfdan), siglos IX-XI.",
+  "Traslado de la Littera Florentina de Pisa a Florencia en 1406 y vigencia del Hexabiblos en Grecia hasta 1946.",
+  "Fecha de Calínico (c. 672, según Teófanes) y del primer asedio árabe de Constantinopla (674-678, algunos historiadores proponen fechas distintas).",
+  "Cifra de Procopio de 10.000 muertos diarios en la peste de 542 y yacimiento de Aschheim como ejemplo de ADN de Yersinia pestis.",
+  "Atribución a Esfrantzes del recuento de defensores en 1453 (menos de 5.000 griegos y unos 2.000 extranjeros) y fecha del arrastre de barcos (22 de abril).",
+  "Edad de Mehmed II en 1453 (21 años) y fecha de nombramiento del patriarca Genadio (1454).",
+  "Levantamiento de las excomuniones de 1054 (7 de diciembre de 1965) y gesto de Juan Pablo II (2001) aceptado por el patriarca Bartolomé (2004).",
+  "Atribución del complot de Ana Comnena contra Juan II a Nicetas Coniates; fecha aproximada de redacción de la Alexíada (c. 1148).",
+  "Lápida de Enrico Dandolo en Santa Sofía: es un marcador moderno, la ubicación exacta de la tumba es tradicional."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "bizancio",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:01.606969+00:00",
+  "uso": {
+   "input_tokens": 4098,
+   "output_tokens": 27021,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.2784
+ }
+}

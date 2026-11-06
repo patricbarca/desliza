@@ -1,0 +1,302 @@
+{
+ "resumen": "Entre finales del siglo VIII y 1066, gentes de Escandinavia salieron al mar en barcos ligeros y rápidos. Unos saquearon monasterios y ciudades; otros comerciaron con plata del mundo islámico, poblaron islas vacías como Islandia, fundaron reinos en Inglaterra, Normandía y la Rus, sirvieron al emperador de Bizancio y llegaron a América cinco siglos antes que Colón. Este capítulo recorre esa expansión desde el ataque a Lindisfarne hasta la batalla de Stamford Bridge. También distingue lo que cuentan las sagas, escritas mucho después, de lo que confirman la arqueología y los documentos.",
+ "historias": [
+  {
+   "titulo": "El día que ardió Lindisfarne",
+   "fecha": "8 de junio de 793",
+   "anio": 793,
+   "lugar": {
+    "nombre": "Lindisfarne, Northumbria (Inglaterra)",
+    "lat": 55.669,
+    "lon": -1.801
+   },
+   "texto": "Lindisfarne era una pequeña isla del noreste de Inglaterra con un monasterio famoso por sus libros y por su santo, Cuthbert. Según la Crónica anglosajona, en 793 llegaron por mar hombres paganos que mataron a monjes, se llevaron a otros como esclavos y saquearon los tesoros de la iglesia. No fue el primer ataque nórdico en Inglaterra, pero sí el que más impresionó. El sabio Alcuino de York, que vivía en la corte de Carlomagno, escribió que nunca se había visto en Britania un terror semejante. Para muchos historiadores, ese golpe marca el inicio de la llamada era vikinga.",
+   "imagen_wikipedia": "Lindisfarne Priory",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Los monjes de Inglaterra",
+     "relato": "Para los cronistas cristianos, el ataque fue un castigo divino. La Crónica anglosajona lo anuncia con presagios: torbellinos, relámpagos y dragones de fuego en el cielo. Alcuino, en sus cartas, se preguntaba qué pecados habían provocado aquella desgracia. Esta visión, escrita por las víctimas, marcó durante siglos la imagen del vikingo como un bárbaro sin piedad."
+    },
+    {
+     "region": "Irlanda y Escocia",
+     "relato": "Los anales irlandeses, escritos en monasterios, registran ataques casi cada año desde 795, cuando ardió la isla de Rechru. Iona, el gran monasterio de Escocia, fue asaltado varias veces; en 806, según los Anales de Ulster, murieron 68 miembros de la comunidad. Con el tiempo, los nórdicos fundaron allí ciudades como Dublín y se mezclaron con la población gaélica."
+    },
+    {
+     "region": "Escandinavia",
+     "relato": "En el norte no había crónicas: la escritura se limitaba a las runas, grabadas en piedra o madera. Mucho después, en el siglo XI, algunas piedras rúnicas suecas presumen de expediciones al oeste. En Uppland, un hombre llamado Ulf hizo constar que había cobrado tres veces tributo en Inglaterra. Para sus familias, viajar y volver con riquezas era motivo de honor."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Birka, un mercado entre dos mundos",
+   "fecha": "c. 800",
+   "anio": 800,
+   "lugar": {
+    "nombre": "Birka, isla de Björkö, lago Mälaren (Suecia)",
+    "lat": 59.335,
+    "lon": 17.543
+   },
+   "texto": "Los vikingos no solo saqueaban: también comerciaban, y mucho. En Birka, una isla del lago Mälaren, en la actual Suecia, creció hacia el año 800 un mercado donde se intercambiaban pieles, ámbar, hierro y colmillos de morsa. También se vendían personas: los esclavos capturados en las incursiones eran una de las mercancías más valiosas. En las tumbas de Birka han aparecido sedas de Oriente, vidrio del mundo franco y un anillo con una inscripción en escritura árabe. En la isla sueca de Gotland se han hallado decenas de miles de monedas de plata acuñadas en el mundo islámico.",
+   "imagen_wikipedia": "Birka",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/edad-de-oro-islamica",
+    "texto": "Descubre de dónde venía toda esa plata →"
+   }
+  },
+  {
+   "titulo": "Un barco para viajar al más allá",
+   "fecha": "834",
+   "anio": 834,
+   "lugar": {
+    "nombre": "Túmulo de Oseberg, cerca de Tønsberg (Noruega)",
+    "lat": 59.311,
+    "lon": 10.432
+   },
+   "texto": "En 1904, unos arqueólogos noruegos excavaron un gran túmulo en Oseberg, cerca del fiordo de Oslo. Dentro había un barco de roble de unos 21 metros, casi intacto gracias a la arcilla que lo cubría. En 834, según la datación de la madera, se enterró en él a dos mujeres con un carro, trineos, tejidos y animales sacrificados. El barco fue el gran invento vikingo: casco ligero de tablas superpuestas, poco calado, vela y remos. Podía cruzar el mar abierto y también remontar ríos poco profundos, lo que permitía atacar o comerciar muy tierra adentro.",
+   "imagen_wikipedia": "Oseberg ship",
+   "profundizar": {
+    "titulo": "Cómo sabemos que navegaban tan bien",
+    "parrafos": [
+     "El barco de Oseberg lo excavó el arqueólogo Gabriel Gustafson. Los anillos de crecimiento de la madera indican que se construyó hacia 820 y se enterró en 834. No sabemos quiénes eran las dos mujeres: una tradición la relaciona con una reina llamada Åsa, pero no hay pruebas. Los análisis de los huesos sugieren que una era de edad avanzada y la otra más joven.",
+     "En 1880 apareció otro barco funerario en Gokstad, algo mayor y más marinero, con el cuerpo de un hombre enterrado hacia el año 900. En 1893 una réplica, llamada Viking, cruzó el Atlántico desde Noruega hasta la Exposición Universal de Chicago. La travesía demostró que aquel diseño podía afrontar el océano abierto.",
+     "Los barcos funerarios eran de lujo. Para conocer los de uso diario fueron clave los de Skuldelev: cinco naves hundidas a propósito hacia 1070 en el fiordo de Roskilde, en Dinamarca, para bloquear el paso. Se excavaron en 1962. Había barcos de guerra largos y estrechos y barcos de carga más anchos, pensados para llevar mercancías y animales.",
+     "Uno de los barcos de guerra de Skuldelev se construyó con madera de los alrededores de Dublín. En 2007, una réplica llamada Sea Stallion navegó desde Roskilde hasta Dublín, y volvió al año siguiente. La tripulación comprobó su velocidad, pero también lo duro que era el viaje: frío, humedad constante y casi ningún refugio a bordo."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Jórvík: de saqueadores a vecinos",
+   "fecha": "1 de noviembre de 866",
+   "anio": 866,
+   "lugar": {
+    "nombre": "York (Jórvík), Inglaterra",
+    "lat": 53.9576,
+    "lon": -1.0806
+   },
+   "texto": "En 865 llegó a Inglaterra un ejército nórdico mucho mayor que las bandas anteriores. Los cronistas lo llamaron el Gran Ejército pagano. En 866 tomó York, que pasó a llamarse Jórvík, y en pocos años dominó buena parte del país. Solo el reino de Wessex, con el rey Alfredo, logró resistir. Tras años de guerra, el este de Inglaterra quedó bajo la ley de los daneses, el llamado Danelaw. Allí los recién llegados se asentaron como granjeros y artesanos. Muchos pueblos ingleses cuyo nombre termina en «-by», que significaba granja o aldea, deben ese nombre a su lengua.",
+   "imagen_wikipedia": "Jorvik Viking Centre",
+   "profundizar": {
+    "titulo": "Lo que guardaba el barro de York",
+    "parrafos": [
+     "Entre 1976 y 1981, el York Archaeological Trust excavó la calle Coppergate, en el centro de York. El suelo, húmedo y sin oxígeno, había conservado lo que normalmente se pudre: madera, cuero, tejidos, semillas e incluso restos de insectos. Aparecieron decenas de miles de objetos y los restos de casas y talleres del siglo X.",
+     "Las excavaciones mostraron una ciudad comercial y bulliciosa. Había talleres de peines de asta, zapateros, orfebres y gente que acuñaba monedas. Llegaban productos de lugares lejanos, como seda. Los restos de parásitos intestinales y de basura revelan además cómo era la higiene: la vida cotidiana era sucia y estaba llena de enfermedades.",
+     "La guerra con Wessex no fue solo de espadas. Tras vencer al jefe danés Guthrum en Edington en 878, Alfredo logró que este se bautizara y firmaron un acuerdo que fijaba una frontera. Así nació la división entre la Inglaterra sajona y el Danelaw.",
+     "Jórvík tuvo reyes nórdicos durante buena parte del siglo X. El último suele identificarse con Erik Hacha Sangrienta, expulsado en 954. Después, York se integró en el reino de Inglaterra, pero la herencia nórdica quedó en los nombres de lugares, en las palabras y en las costumbres."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Los varegos y el nacimiento de la Rus",
+   "fecha": "862–882",
+   "anio": 882,
+   "lugar": {
+    "nombre": "Kiev (Ucrania)",
+    "lat": 50.4501,
+    "lon": 30.5234
+   },
+   "texto": "Mientras daneses y noruegos miraban al oeste, muchos suecos navegaron hacia el este por los grandes ríos de Europa oriental, como el Dniéper y el Volga. Los eslavos los llamaban varegos, y a su élite, rus. Según la Crónica de los tiempos pasados, escrita hacia 1113, el jefe Riúrik llegó a Nóvgorod en 862 y su sucesor Oleg tomó Kiev en 882. Así nació la Rus de Kiev, origen común de Ucrania, Bielorrusia y Rusia. En pocas generaciones sus príncipes ya hablaban eslavo, y en 988 el príncipe Vladímir se bautizó como cristiano ortodoxo.",
+   "imagen_wikipedia": "Varangians",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "La crónica de Kiev",
+     "relato": "La Crónica de los tiempos pasados, atribuida por la tradición al monje Néstor, cuenta que las tribus eslavas, cansadas de pelear entre sí, fueron a buscar a los varegos al otro lado del mar para que los gobernaran, porque su tierra era grande y rica pero no tenía orden. Muchos historiadores ven en este relato, escrito dos siglos y medio después, una forma de legitimar a la dinastía de Riúrik."
+    },
+    {
+     "region": "Bizancio",
+     "relato": "Para los bizantinos, los rus aparecieron de golpe. En 860 una flota rus atacó los alrededores de Constantinopla, y el patriarca Focio describió en sus sermones el pánico ante un pueblo desconocido llegado del norte. Más tarde, la relación cambió: hubo tratados comerciales y los rus se convirtieron en clientes, soldados y, finalmente, cristianos de rito bizantino."
+    },
+    {
+     "region": "Los viajeros árabes",
+     "relato": "En 921 y 922, Ahmad ibn Fadlán viajó como enviado del califa de Bagdad al reino de los búlgaros del Volga. Allí conoció a comerciantes rus. Los describió altos y tatuados, y relató con detalle el funeral de un jefe en un barco quemado, en el que se sacrificó a una joven esclava. Es un testimonio único, aunque escrito con la mirada de un extranjero."
+    },
+    {
+     "region": "El debate moderno",
+     "relato": "Desde el siglo XVIII, los historiadores discuten cuánto pesaron los escandinavos en el origen de la Rus. En el Imperio ruso y en la Unión Soviética, la idea de que unos extranjeros fundaron el Estado resultaba incómoda. Hoy la mayoría acepta que la élite inicial era de origen escandinavo, pero que se mezcló enseguida con poblaciones eslavas, bálticas y finesas."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Rollón y el nacimiento de Normandía",
+   "fecha": "c. 911",
+   "anio": 911,
+   "lugar": {
+    "nombre": "Rouen, Normandía (Francia)",
+    "lat": 49.4432,
+    "lon": 1.0999
+   },
+   "texto": "Los ataques vikingos golpearon con fuerza al reino de los francos, heredero del imperio de Carlomagno: París fue atacada en 845 y asediada de nuevo en 885 y 886. Hacia 911, según la tradición, el rey Carlos el Simple hizo un trato con un jefe nórdico llamado Rollón. Le entregó tierras alrededor de Rouen a cambio de que defendiera el río Sena de otros vikingos y se bautizara. No se conserva el texto del acuerdo: lo conocemos por cronistas posteriores. Aquellos hombres del norte dieron nombre a Normandía. Un descendiente de Rollón conquistaría Inglaterra en 1066.",
+   "imagen_wikipedia": "Rollo",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Islandia, una isla sin reyes",
+   "fecha": "874–930",
+   "anio": 930,
+   "lugar": {
+    "nombre": "Þingvellir (Islandia)",
+    "lat": 64.2559,
+    "lon": -21.1299
+   },
+   "texto": "Según el Libro de los asentamientos (Landnámabók), escrito siglos después, el primer colono nórdico de Islandia fue Ingólfr Arnarson, que se instaló hacia 874 donde hoy está Reikiavik. Le siguieron miles de personas de Noruega y de las islas británicas. No quisieron un rey. En 930 fundaron el Althing, una asamblea que se reunía cada verano al aire libre en Þingvellir para hacer leyes y resolver pleitos. Es uno de los parlamentos más antiguos del mundo. Allí se decidió, hacia el año 1000, que la isla adoptaría el cristianismo.",
+   "imagen_wikipedia": "Þingvellir",
+   "profundizar": {
+    "titulo": "Ceniza, sagas y genes",
+    "parrafos": [
+     "Una erupción volcánica dejó una fina capa de ceniza sobre casi toda Islandia. Gracias a los hielos de Groenlandia, que guardan restos de esa misma erupción, se ha fechado hacia el año 871. Los restos humanos más antiguos aparecen justo encima de esa capa. En Reikiavik puede verse una casa de esa época, lo que encaja bastante bien con la fecha tradicional.",
+     "Ari Thorgilsson, que escribió el Libro de los islandeses a comienzos del siglo XII, dice que antes de los nórdicos vivían allí unos monjes irlandeses, los papar, que se marcharon al llegar los paganos. Los arqueólogos han buscado sus huellas, pero los resultados no son concluyentes.",
+     "Los estudios de ADN de los islandeses actuales sugieren que la mayoría de los antepasados varones eran escandinavos. En cambio, una parte importante de los linajes femeninos procede de Irlanda y Escocia. Muchas de esas mujeres pudieron llegar como esposas o como esclavas. Los investigadores discuten todavía las proporciones exactas.",
+     "Buena parte de lo que sabemos de la Islandia vikinga viene de las sagas, escritas sobre todo en el siglo XIII. Mezclan recuerdos familiares, leyes y literatura, así que los historiadores las usan con cautela. Þingvellir, además, está sobre la grieta donde se separan dos placas tectónicas, un paisaje que impresiona todavía hoy."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Harald Diente Azul y la piedra de Jelling",
+   "fecha": "c. 965",
+   "anio": 965,
+   "lugar": {
+    "nombre": "Jelling (Dinamarca)",
+    "lat": 55.7565,
+    "lon": 9.4197
+   },
+   "texto": "Hacia 965, el rey danés Harald Gormsson, apodado Diente Azul, mandó tallar una gran piedra rúnica en Jelling, en Dinamarca. En ella recuerda a sus padres, Gorm y Thyra, y presume de haber ganado toda Dinamarca y Noruega y de haber hecho cristianos a los daneses. Una de sus caras muestra una de las imágenes de Cristo más antiguas de Escandinavia. La piedra resume un cambio enorme: los jefes guerreros se estaban convirtiendo en reyes cristianos al frente de reinos estables. Por cierto, la tecnología Bluetooth lleva su nombre, y su logotipo combina sus iniciales en runas.",
+   "imagen_wikipedia": "Jelling stones",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Erik el Rojo y la tierra verde",
+   "fecha": "c. 985",
+   "anio": 985,
+   "lugar": {
+    "nombre": "Brattahlíð (Qassiarsuk), Groenlandia",
+    "lat": 61.155,
+    "lon": -45.52
+   },
+   "texto": "Erik Thorvaldsson, llamado el Rojo, fue desterrado de Islandia hacia 982 por varias muertes. Pasó su exilio explorando una gran isla helada al oeste. Al volver la llamó Groenlandia, «tierra verde»; según el cronista islandés Ari, para que la gente quisiera ir. Hacia 985 regresó con colonos y fundó granjas en los fiordos del sur. Vivieron de la ganadería, la caza de focas y el comercio de marfil de morsa. La colonia duró unos cuatro siglos: la última noticia escrita es una boda en la iglesia de Hvalsey en 1408. Luego desapareció, por causas aún discutidas. Los inuit, llegados por entonces, siguieron allí.",
+   "imagen_wikipedia": "Hvalsey Church",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Vinlandia: vikingos en América",
+   "fecha": "c. 1000",
+   "anio": 1000,
+   "lugar": {
+    "nombre": "L'Anse aux Meadows, Terranova (Canadá)",
+    "lat": 51.5953,
+    "lon": -55.5331
+   },
+   "texto": "Según dos sagas islandesas escritas en el siglo XIII, hacia el año 1000 Leif Eriksson, hijo de Erik el Rojo, navegó al oeste de Groenlandia y encontró tierras nuevas. A una de ellas la llamó Vinlandia, por las uvas o bayas que crecían allí. Durante mucho tiempo se pensó que podía ser solo una leyenda. En 1960, Helge y Anne Stine Ingstad hallaron en L'Anse aux Meadows, en Terranova (Canadá), los restos de un campamento nórdico. Es la única presencia europea en América confirmada antes de Colón. Las sagas cuentan choques con los nativos, a quienes llamaban skrælingar, y que el asentamiento no duró.",
+   "imagen_wikipedia": "L'Anse aux Meadows",
+   "profundizar": {
+    "titulo": "Cómo se demostró que las sagas tenían razón",
+    "parrafos": [
+     "Las dos fuentes principales son la Saga de los groenlandeses y la Saga de Erik el Rojo. Coinciden en lo esencial, pero no en los detalles. Hablan de tres tierras: Helluland, Markland y Vinlandia, y de personajes como Gudrid y Thorfinn Karlsefni, cuyo hijo Snorri habría nacido en América. La mención escrita más antigua de Vinlandia es anterior: la hizo el cronista alemán Adán de Bremen hacia 1075.",
+     "Las excavaciones de los Ingstad, entre 1961 y 1968, sacaron a la luz varios edificios de turba de estilo nórdico, una herrería donde se trabajó el hierro y objetos como un alfiler de bronce y una fusayola, la pieza que se usa para hilar. Esto sugiere que allí hubo también trabajo textil, quizá realizado por mujeres.",
+     "Entre los restos aparecieron nueces de nogal ceniciento, un árbol que no crece tan al norte. Eso indica que los nórdicos viajaron más al sur, quizá hasta el golfo de San Lorenzo. Muchos arqueólogos creen que L'Anse aux Meadows fue una base de paso, usada durante poco tiempo, y no la propia Vinlandia de las sagas.",
+     "En 2021, un estudio dio una fecha exacta. Una tormenta solar del año 993 dejó una huella química en los anillos de los árboles de todo el mundo. Contando los anillos desde esa marca en maderas cortadas con herramientas de metal, los investigadores concluyeron que los nórdicos talaron árboles allí en el año 1021."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/america-antes-de-1492",
+    "texto": "Conoce a los pueblos que ya vivían en América →"
+   }
+  },
+  {
+   "titulo": "Guardias vikingos del emperador",
+   "fecha": "c. 1034",
+   "anio": 1034,
+   "lugar": {
+    "nombre": "Constantinopla (Estambul, Turquía)",
+    "lat": 41.0086,
+    "lon": 28.9802
+   },
+   "texto": "Siguiendo los ríos de la Rus, los nórdicos llegaron a Constantinopla, a la que llamaban Miklagard, «la gran ciudad». Hacia 988, el príncipe Vladímir de Kiev envió varios miles de guerreros al emperador bizantino Basilio II. Con ellos nació la Guardia Varega, la escolta personal del emperador, famosa por sus hachas y su lealtad. Uno de sus miembros fue Harald Sigurdsson, futuro rey de Noruega, que sirvió allí entre 1034 y 1043 aproximadamente. En una galería de Santa Sofía todavía se leen unas runas talladas por un nórdico, probablemente llamado Halfdan: un grafiti de época vikinga.",
+   "imagen_wikipedia": "Hagia Sophia",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/bizancio",
+    "texto": "Entra en la gran ciudad de Bizancio →"
+   }
+  },
+  {
+   "titulo": "1066: el año de los tres reyes",
+   "fecha": "25 de septiembre de 1066",
+   "anio": 1066,
+   "lugar": {
+    "nombre": "Stamford Bridge, cerca de York (Inglaterra)",
+    "lat": 53.989,
+    "lon": -0.914
+   },
+   "texto": "En enero de 1066 murió sin hijos el rey de Inglaterra, y el poderoso noble inglés Harold Godwinson se coronó. Dos rivales reclamaron el trono. Primero llegó por el norte el noruego Harald Hardrada, el antiguo guardia de Bizancio. El 25 de septiembre, Harold lo sorprendió en Stamford Bridge, cerca de York: Harald murió y su ejército fue destrozado. Días después desembarcó en el sur Guillermo de Normandía, descendiente de Rollón. El 14 de octubre, Guillermo venció y mató a Harold en Hastings. Por convención, esas dos batallas cierran la era vikinga.",
+   "imagen_wikipedia": "Battle of Stamford Bridge",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Inglaterra",
+     "relato": "La Crónica anglosajona narra las dos invasiones casi seguidas. Stamford Bridge aparece como una gran victoria inglesa; Hastings, como un desastre que los cronistas atribuyen a los pecados del pueblo. Para los ingleses, 1066 marca el final de la Inglaterra anglosajona: la nueva nobleza normanda cambió el poder, la propiedad de la tierra e incluso la lengua."
+    },
+    {
+     "region": "Noruega",
+     "relato": "Unos 160 años después, el islandés Snorri Sturluson contó la vida de Harald Hardrada en su obra Heimskringla. Lo presenta como un héroe que cae luchando. Según su relato, antes de la batalla Harold le ofreció solo siete pies de tierra inglesa, lo justo para su tumba. Es una escena memorable, pero no hay fuentes de la época que la confirmen."
+    },
+    {
+     "region": "Normandía",
+     "relato": "Los cronistas normandos, como Guillermo de Poitiers, y el famoso tapiz de Bayeux cuentan la versión del vencedor. Según ellos, el rey difunto había prometido el trono a Guillermo, y Harold había jurado apoyarle. Al coronarse, Harold rompió su juramento sagrado. Así, la conquista aparece como un castigo justo y no como una simple invasión."
+    }
+   ],
+   "conecta_con": null
+  }
+ ],
+ "notas_revision": [
+  "Fecha del ataque a Lindisfarne: la Crónica anglosajona da el 8 de junio de 793, pero algunos autores proponen que el original decía enero. Comprobar cómo presentarlo.",
+  "Paráfrasis de Alcuino («nunca se había visto en Britania un terror semejante»): verificar que no se presenta como cita literal y que se ajusta a su carta al rey Æthelred de Northumbria.",
+  "Anales de Ulster: quema de Rechru en 795 y 68 muertos en Iona en 806. Confirmar cifras y años.",
+  "Piedra rúnica de Ulf de Borresta (U 344), que menciona tres tributos cobrados en Inglaterra: confirmar atribución y datación en el siglo XI.",
+  "Birka: comprobar la descripción del anillo con inscripción en escritura árabe (tumba Bj 515) y la cifra de «decenas de miles» de monedas islámicas halladas en Gotland.",
+  "Barco de Oseberg: longitud de unos 21 metros, construcción hacia 820 y enterramiento en 834 por dendrocronología. Verificar las edades estimadas de las dos mujeres.",
+  "Réplica Viking de 1893 hasta Chicago y réplica Sea Stallion (Roskilde–Dublín, 2007–2008): confirmar fechas.",
+  "Skuldelev: hundimiento hacia 1070 y excavación en 1962; comprobar el origen de la madera de Skuldelev 2 en la zona de Dublín.",
+  "Toma de York: 1 de noviembre de 866 (algunas fuentes dan 867). Erik Hacha Sangrienta expulsado en 954. Verificar.",
+  "Excavaciones de Coppergate (1976–1981): confirmar el volumen aproximado de objetos hallados.",
+  "Islandia: capa de ceniza fechada hacia 871; Althing en 930; conversión hacia 999/1000. Revisar la redacción sobre los estudios genéticos de linajes femeninos.",
+  "Crónica de los tiempos pasados: fechas tradicionales de Riúrik (862) y Oleg en Kiev (882), redacción hacia 1113. Ataque rus a Constantinopla en 860 y viaje de Ibn Fadlán en 921–922.",
+  "Tratado de Saint-Clair-sur-Epte: la fecha de 911 es tradicional y no se conserva el texto. París atacada en 845 y asediada en 885–886.",
+  "Piedra de Jelling: verificar la datación hacia 965 y la afirmación de que tiene una de las imágenes de Cristo más antiguas de Escandinavia (a veces se dice de Dinamarca).",
+  "Groenlandia: destierro de Erik hacia 982, colonización hacia 985/986, boda en Hvalsey en 1408. Confirmar que existe el artículo «Hvalsey Church» en la Wikipedia en inglés.",
+  "L'Anse aux Meadows: descubrimiento en 1960, excavaciones en 1961–1968 y estudio de 2021 (Kuitems y otros, Nature) con la fecha de 1021. Mención de Adán de Bremen hacia 1075.",
+  "Guardia Varega: las fuentes hablan de unos 6.000 hombres enviados por Vladímir hacia 988. Servicio de Harald Hardrada hacia 1034–1043. La datación del grafiti rúnico de Halfdan en Santa Sofía es incierta.",
+  "1066: Eduardo el Confesor murió el 5 de enero; Stamford Bridge fue el 25 de septiembre y Hastings el 14 de octubre. La escena de los «siete pies de tierra» procede de Snorri (c. 1230)."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "vikingos",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:02.285697+00:00",
+  "uso": {
+   "input_tokens": 4083,
+   "output_tokens": 25612,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.2643
+ }
+}

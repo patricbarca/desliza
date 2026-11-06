@@ -1,0 +1,272 @@
+{
+ "resumen": "Durante ocho siglos, Japón pasó del refinamiento de la corte de Heian, en Kioto, al gobierno de los samuráis. Las damas de la corte escribieron obras maestras como La historia de Genji. Los guerreros de provincias crearon un sistema único: un emperador sagrado que reinaba y unos generales, los shogunes, que mandaban. El país resistió dos invasiones mongolas, vivió un siglo de guerras civiles y quedó unificado en 1600.",
+ "historias": [
+  {
+   "titulo": "Kioto nace como capital de la paz",
+   "fecha": "794",
+   "anio": 794,
+   "lugar": {
+    "nombre": "Heian-kyō (actual Kioto), Japón",
+    "lat": 35.0116,
+    "lon": 135.7681
+   },
+   "texto": "En 794, el emperador Kanmu trasladó la capital de Japón a una ciudad nueva: Heian-kyō, «capital de la paz y la tranquilidad». Hoy la conocemos como Kioto. Se trazó como un tablero de ajedrez, con calles rectas y un gran bulevar central, siguiendo el modelo de Chang'an, la capital de la China Tang. Kanmu buscaba empezar de cero, lejos de los poderosos monasterios budistas de la antigua capital, Nara. Lo consiguió: Kioto fue la residencia de los emperadores durante más de mil años, hasta 1869. El periodo que empezó entonces se llama Heian y fue la edad de oro de la cultura cortesana.",
+   "imagen_wikipedia": "Emperor Kanmu",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/china-tang-song",
+    "texto": "Conoce la China que inspiró Kioto →"
+   }
+  },
+  {
+   "titulo": "Sei Shōnagon y el arte de hacer listas",
+   "fecha": "c. 1002",
+   "anio": 1002,
+   "lugar": {
+    "nombre": "Antiguo recinto del palacio de Heian, Kioto",
+    "lat": 35.02,
+    "lon": 135.74
+   },
+   "texto": "En la corte de Heian, los hombres escribían los documentos oficiales en chino, la lengua culta. Pero desde el siglo IX se había extendido el kana, una escritura sencilla nacida de simplificar caracteres chinos, que permitía escribir el japonés tal como se hablaba. Las damas de la corte la adoptaron y crearon con ella una gran literatura. Sei Shōnagon, dama de la emperatriz Teishi, llenó un cuaderno con anécdotas, opiniones y listas: cosas que aceleran el corazón, cosas que fastidian, cosas elegantes. Su «Libro de la almohada», terminado hacia el año 1002, todavía sorprende por su ingenio y su lengua afilada.",
+   "imagen_wikipedia": "The Pillow Book",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Murasaki Shikibu escribe La historia de Genji",
+   "fecha": "c. 1008",
+   "anio": 1008,
+   "lugar": {
+    "nombre": "Kioto, Japón",
+    "lat": 35.0116,
+    "lon": 135.7681
+   },
+   "texto": "Hacia el año 1000, una dama de la corte empezó a escribir la vida del príncipe Genji, «el resplandeciente», hijo de un emperador, seductor y melancólico. La conocemos como Murasaki Shikibu, que es un apodo: su nombre real se perdió. Sirvió a la emperatriz Shōshi, hija del poderoso regente Fujiwara no Michinaga. Su obra, de 54 capítulos y cientos de personajes, retrata amores, celos, rivalidades y la tristeza de que todo pase. Muchos la llaman la primera novela del mundo. Los expertos discuten esa etiqueta, pero nadie duda de que es una obra maestra.",
+   "imagen_wikipedia": "The Tale of Genji",
+   "profundizar": {
+    "titulo": "¿Cómo sabemos todo esto?",
+    "parrafos": [
+     "La prueba más antigua es el diario de la propia Murasaki. En una entrada de 1008 cuenta que un alto funcionario, Fujiwara no Kintō, la buscó en una fiesta preguntando en broma por «la pequeña Murasaki», una heroína de su relato. Eso indica que la obra ya circulaba por la corte y que su apodo venía, probablemente, de ese personaje.",
+     "No se conserva ningún manuscrito de su mano. El texto pasó de copia en copia durante siglos, con variantes. En el siglo XIII, el poeta Fujiwara no Teika preparó una edición que es la base de casi todas las versiones modernas. Por eso algunos estudiosos se preguntan si los últimos capítulos son suyos o de otras manos.",
+     "Las imágenes más antiguas son unos rollos ilustrados del siglo XII de los que sobreviven fragmentos. Hoy son tesoros nacionales y se guardan en museos de Nagoya y Tokio. Usan un truco visual curioso: los tejados de las casas se omiten para que el espectador mire desde arriba lo que pasa dentro.",
+     "El diario también revela su carácter. Murasaki confiesa que ocultaba que sabía leer chino, porque no se consideraba propio de una mujer, y critica con dureza a Sei Shōnagon por presumir de lo contrario. Es una ventana muy rara a cómo pensaba una escritora de hace mil años."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "El pabellón del Fénix y el miedo al fin",
+   "fecha": "1053",
+   "anio": 1053,
+   "lugar": {
+    "nombre": "Byōdō-in, Uji (cerca de Kioto)",
+    "lat": 34.8893,
+    "lon": 135.8077
+   },
+   "texto": "Muchos budistas japoneses de la época creían que hacia 1052 empezaba el mappō, una era final en la que las enseñanzas de Buda perderían su fuerza. Para consolarse, se volvieron hacia el budismo de la Tierra Pura: bastaba con confiar en el buda Amida para renacer en su paraíso. En 1052, Fujiwara no Yorimichi, hijo de Michinaga, convirtió una villa familiar en Uji en el templo Byōdō-in. En 1053 terminó el pabellón del Fénix, que se refleja en un estanque como una visión de ese paraíso. Dentro está una estatua dorada de Amida, obra del escultor Jōchō. Hoy aparece en la moneda de 10 yenes.",
+   "imagen_wikipedia": "Byōdō-in",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Dan-no-ura: el día que cayeron los Taira",
+   "fecha": "1185",
+   "anio": 1185,
+   "lugar": {
+    "nombre": "Estrecho de Shimonoseki, Japón",
+    "lat": 33.9636,
+    "lon": 130.9617
+   },
+   "texto": "Mientras la corte escribía poesía, en las provincias crecía otro poder: guerreros a caballo que protegían tierras y cobraban rentas. Se les llamó samuráis, de una palabra que significa «servir». Dos grandes clanes, los Taira y los Minamoto, acabaron luchando por controlar la corte en la guerra Genpei (1180–1185). El final llegó en el mar, en Dan-no-ura, en 1185, y los Taira perdieron. Según las crónicas, la abuela del niño emperador Antoku, de unos seis años, se arrojó al agua con él en brazos, y con ellos se hundió la espada sagrada del trono. Desde entonces, los guerreros mandaron en Japón.",
+   "imagen_wikipedia": "Battle of Dan-no-ura",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "El Cantar de Heike: la voz de los vencidos",
+     "relato": "El Heike Monogatari, recitado durante siglos por monjes ciegos que se acompañaban de un laúd llamado biwa, cuenta la guerra desde la caída de los Taira. Empieza recordando que los orgullosos no duran y que todo es pasajero, una idea budista. Sus héroes más conmovedores suelen ser los derrotados, y su tono es más de duelo que de celebración."
+    },
+    {
+     "region": "La crónica de los vencedores",
+     "relato": "El Azuma Kagami, una crónica redactada hacia 1300 en el entorno del gobierno de Kamakura, presenta la guerra como el nacimiento legítimo del poder de los Minamoto y de sus sucesores. Es un texto más seco y administrativo, útil para fechas y nombramientos, pero escrito para dar la razón a quienes ganaron."
+    },
+    {
+     "region": "La memoria popular de Shimonoseki",
+     "relato": "En la zona del estrecho se cuenta que las almas de los guerreros Taira viven en unos cangrejos cuyo caparazón recuerda una cara enfadada, los cangrejos heike. También nació la leyenda de Hōichi, un músico ciego al que los fantasmas de los Taira obligaban a cantarles su derrota. El santuario Akama, en Shimonoseki, honra al niño emperador Antoku."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Yoritomo, el primer gran shogun",
+   "fecha": "1192",
+   "anio": 1192,
+   "lugar": {
+    "nombre": "Kamakura, Japón",
+    "lat": 35.3192,
+    "lon": 139.5467
+   },
+   "texto": "El vencedor de la guerra, Minamoto no Yoritomo, no se instaló en Kioto. Montó su propio gobierno en Kamakura, una pequeña ciudad del este, lejos de la corte. En 1192 recibió del emperador el título de shogun, «general que somete a los bárbaros». Así nació el shogunato o bakufu, «gobierno de la tienda de campaña». El emperador seguía en su trono y era sagrado, pero el poder real lo tenían los guerreros. Este doble sistema duró casi siete siglos. Tras la muerte de Yoritomo en 1199, su viuda Hōjō Masako y la familia Hōjō gobernaron en la práctica como regentes.",
+   "imagen_wikipedia": "Minamoto no Yoritomo",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Los vientos que frenaron a Kublai Kan",
+   "fecha": "1274 y 1281",
+   "anio": 1281,
+   "lugar": {
+    "nombre": "Bahía de Hakata (Fukuoka), Japón",
+    "lat": 33.62,
+    "lon": 130.38
+   },
+   "texto": "Kublai Kan, el emperador mongol de China, exigió a Japón que se sometiera. El gobierno de Kamakura, dirigido por el regente Hōjō Tokimune, se negó. En 1274, una flota mongola con tropas chinas y coreanas desembarcó en la bahía de Hakata, en la isla de Kyūshū, pero se retiró poco después. Los japoneses levantaron entonces un muro de piedra en la costa. En 1281 llegó una invasión mucho mayor, que quedó frenada durante semanas frente a esas defensas hasta que un tifón hundió buena parte de los barcos. Los japoneses lo llamaron kamikaze, «viento divino».",
+   "imagen_wikipedia": "Mongol invasions of Japan",
+   "profundizar": {
+    "titulo": "Pruebas en un pergamino y bajo el mar",
+    "parrafos": [
+     "El testimonio japonés más famoso son unos rollos ilustrados encargados por Takezaki Suenaga, un samurái que luchó en ambas invasiones. No los hizo por amor al arte: quería dejar constancia de sus méritos para reclamar una recompensa. En ellos se ven arqueros mongoles, barcos y una bomba que estalla junto a su caballo.",
+     "Durante mucho tiempo se dudó de esas bombas. Pero desde los años ochenta, arqueólogos submarinos han encontrado frente a la isla de Takashima, en Nagasaki, restos de la flota de 1281: anclas, armas, cerámica y esferas rellenas de pólvora. En 2011 localizaron además los restos de un casco de barco.",
+     "El estudio de la madera llevó a algunos investigadores a pensar que muchos barcos se construyeron con prisa, y que parte de ellos eran embarcaciones de río, de fondo plano, poco aptas para mar abierto. Si fue así, el tifón resultó decisivo contra una flota ya vulnerable. Es una hipótesis todavía en debate.",
+     "Las cifras tampoco son seguras. Las crónicas hablan de miles de barcos y de más de cien mil hombres en 1281, pero muchos historiadores creen que esos números están exagerados. Lo que sí está documentado es el muro defensivo de Hakata: hoy pueden visitarse tramos excavados en la ciudad de Fukuoka."
+    ]
+   },
+   "otras_miradas": [
+    {
+     "region": "Japón: la protección de los dioses",
+     "relato": "Para la corte y los templos, la victoria fue fruto de sus oraciones: los dioses habían enviado el viento para proteger el país. La idea reforzó la creencia en Japón como «tierra de los dioses». Siglos después, en la Segunda Guerra Mundial, el nombre kamikaze se usó para los pilotos suicidas, dándole al recuerdo un sentido nuevo y trágico."
+    },
+    {
+     "region": "Corea: el peso de una guerra ajena",
+     "relato": "El reino coreano de Goryeo, sometido a los mongoles, tuvo que construir buena parte de los barcos y aportar soldados y marineros. Para los coreanos, aquellas expediciones fueron una carga enorme impuesta por un imperio extranjero, que consumió recursos y vidas en una guerra que no habían elegido."
+    },
+    {
+     "region": "China: la crónica oficial de los Yuan",
+     "relato": "La Historia de Yuan, la crónica oficial de la dinastía mongola de China, redactada poco después de su caída, atribuye el fracaso sobre todo a las tormentas y a problemas entre los mandos, más que a la fuerza japonesa. Kublai llegó a preparar una tercera invasión, pero la abandonó por otras guerras y dificultades internas."
+    }
+   ],
+   "conecta_con": {
+    "capitulo": "media/mongoles",
+    "texto": "Conoce el imperio que intentó invadir Japón →"
+   }
+  },
+  {
+   "titulo": "Kusunoki Masashige y el ideal del guerrero",
+   "fecha": "1336",
+   "anio": 1336,
+   "lugar": {
+    "nombre": "Minatogawa (actual Kobe), Japón",
+    "lat": 34.6797,
+    "lon": 135.1696
+   },
+   "texto": "La defensa contra los mongoles dejó al gobierno de Kamakura sin tierras con que premiar a sus guerreros, y el descontento creció. En 1333, el emperador Go-Daigo lo derribó con ayuda de samuráis como Kusunoki Masashige. Pero otro aliado, Ashikaga Takauji, se volvió contra el emperador. En 1336, Kusunoki se enfrentó a él en Minatogawa sabiendo que iba a perder. Según el relato épico Taiheiki, tras la derrota se quitó la vida junto a su hermano. Con los siglos se convirtió en el modelo del samurái leal hasta la muerte, aunque en su época muchos guerreros cambiaban de bando sin reparo.",
+   "imagen_wikipedia": "Kusunoki Masashige",
+   "profundizar": {
+    "titulo": "¿Existió de verdad el bushidō?",
+    "parrafos": [
+     "La palabra bushidō, «camino del guerrero», casi no aparece en textos anteriores al siglo XVII. Los guerreros medievales hablaban más bien del «camino del arco y el caballo». Valoraban el valor, la fama de su nombre y la lealtad al señor, pero esa lealtad solía depender de las recompensas. Los cambios de bando eran frecuentes y decidieron batallas.",
+     "El ideal se puso por escrito cuando los samuráis ya casi no combatían, en la larga paz del periodo Edo (1603–1868). El texto más citado, el Hagakure, fue dictado hacia 1716 por Yamamoto Tsunetomo, un antiguo servidor que añoraba un pasado heroico que él no había vivido. Es una visión nostálgica, no un manual medieval.",
+     "En 1900, Nitobe Inazō publicó en inglés «Bushido: el alma de Japón», que presentaba el código como una especie de caballería japonesa. Tuvo un éxito mundial. Más tarde, el nacionalismo japonés usó la figura de Kusunoki y el ideal de morir por el emperador para movilizar a los soldados en la Segunda Guerra Mundial.",
+     "Sí están documentadas prácticas como el seppuku, el suicidio ritual abriéndose el vientre, que los relatos de guerra medievales ya describen como forma de evitar la captura o salvar el honor. Lo discutible no es que existieran valores guerreros, sino que formaran un código único y fijo durante siglos."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Un pabellón de oro para un shogun",
+   "fecha": "1397",
+   "anio": 1397,
+   "lugar": {
+    "nombre": "Kinkaku-ji, Kioto",
+    "lat": 35.0394,
+    "lon": 135.7292
+   },
+   "texto": "Los Ashikaga gobernaron como shogunes desde Kioto, y la ciudad volvió a brillar. El tercero, Ashikaga Yoshimitsu, empezó a construirse en 1397 una villa con un pabellón cubierto de pan de oro junto a un estanque. Tras su muerte se convirtió en un templo zen: el Kinkaku-ji. Yoshimitsu reanudó el comercio con la China Ming, que lo reconoció como «rey de Japón», y protegió a Zeami, el gran creador del teatro nō, con sus máscaras y sus movimientos lentos. El pabellón que vemos hoy es una reconstrucción: un joven monje incendió el original en 1950.",
+   "imagen_wikipedia": "Kinkaku-ji",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "La guerra que arrasó Kioto",
+   "fecha": "1467–1477",
+   "anio": 1467,
+   "lugar": {
+    "nombre": "Kioto, Japón",
+    "lat": 35.027,
+    "lon": 135.7982
+   },
+   "texto": "En 1467 estalló en Kioto la guerra de Ōnin. Dos grandes familias de guerreros, los Hosokawa y los Yamana, se enfrentaron en medio de una disputa por la sucesión del shogun Ashikaga Yoshimasa. Durante diez años lucharon en las calles y buena parte de la capital ardió. El shogun perdió casi todo su poder y Japón se partió en decenas de señoríos en guerra: empezaba el periodo Sengoku, «de los reinos combatientes». Mientras tanto, Yoshimasa se retiró a su villa, hoy el Ginkaku-ji o «pabellón de plata», que nunca se cubrió de plata. Allí florecieron la ceremonia del té y la pintura en tinta.",
+   "imagen_wikipedia": "Ginkaku-ji",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Arcabuces y misioneros llegan del mar",
+   "fecha": "1543",
+   "anio": 1543,
+   "lugar": {
+    "nombre": "Isla de Tanegashima, Japón",
+    "lat": 30.7333,
+    "lon": 131.0
+   },
+   "texto": "En 1543, un junco chino desviado por una tormenta llegó a la isla de Tanegashima con unos pasajeros inesperados: comerciantes portugueses, los primeros europeos documentados en Japón. El señor de la isla les compró dos arcabuces, y los herreros japoneses aprendieron a copiarlos. En pocas décadas, Japón fabricaba armas de fuego en gran número, y la guerra cambió. En 1549 llegó el misionero jesuita Francisco Javier, y el cristianismo ganó, según las estimaciones, cientos de miles de fieles. Los japoneses llamaron a los recién llegados nanban, «bárbaros del sur», y los pintaron con curiosidad en grandes biombos.",
+   "imagen_wikipedia": "Nanban trade",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Sekigahara: la batalla que unió Japón",
+   "fecha": "21 de octubre de 1600",
+   "anio": 1600,
+   "lugar": {
+    "nombre": "Sekigahara, Japón",
+    "lat": 35.365,
+    "lon": 136.4669
+   },
+   "texto": "Tres hombres acabaron con un siglo de guerras. Oda Nobunaga conquistó el centro del país apoyándose en las armas de fuego, hasta que uno de sus generales lo traicionó en 1582. Toyotomi Hideyoshi, de origen humilde según la tradición, terminó de someter a los señores en 1590 e intentó sin éxito conquistar Corea. Tras su muerte, Tokugawa Ieyasu se enfrentó a sus rivales en Sekigahara, en 1600. La traición de un aliado del bando contrario decidió la batalla. Ieyasu fue nombrado shogun en 1603, y su familia gobernó desde Edo, la futura Tokio, durante más de 250 años de paz.",
+   "imagen_wikipedia": "Battle of Sekigahara",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "industrial/japon-se-moderniza",
+    "texto": "Descubre cómo terminó el Japón de los samuráis →"
+   }
+  }
+ ],
+ "notas_revision": [
+  "Kioto como residencia imperial hasta 1869: el traslado a Tokio se produjo entre 1868 y 1869; comprobar la fecha elegida.",
+  "Fecha aproximada de terminación de «El libro de la almohada» (c. 1002) y nombre de la emperatriz (Teishi, también llamada Sadako).",
+  "Entrada del diario de Murasaki Shikibu de 1008 con la anécdota de Fujiwara no Kintō; verificar fecha exacta y redacción.",
+  "La historia de Genji: 54 capítulos; autoría discutida de los capítulos finales (capítulos de Uji). Ubicación de los rollos del siglo XII (Museo Tokugawa de Nagoya y Museo Gotoh de Tokio).",
+  "Byōdō-in: conversión en templo en 1052 y pabellón del Fénix en 1053; atribución de la estatua de Amida a Jōchō.",
+  "Edad del emperador Antoku en Dan-no-ura (nacido en 1178; seis años según el cómputo occidental).",
+  "El retrato de Jingo-ji tradicionalmente identificado como Minamoto no Yoritomo es discutido; algunos investigadores creen que representa a Ashikaga Tadayoshi. Comprobar qué imagen muestra el artículo elegido.",
+  "Inicio del shogunato de Kamakura: 1192 por el título de shogun, aunque muchos historiadores lo sitúan en 1185.",
+  "Invasiones mongolas: cifras de barcos y soldados inciertas; comprobar el hallazgo del casco en Takashima en 2011 y la hipótesis de barcos de río.",
+  "Atribución a Yoshimitsu del título de «rey de Japón» concedido por la corte Ming, y fecha de inicio de la construcción del Kinkaku-ji (1397).",
+  "Llegada portuguesa a Tanegashima: 1543 según la fuente japonesa Teppōki; algunas fuentes portuguesas sugieren 1542. La cifra de cristianos japoneses es una estimación.",
+  "Comprobar que la imagen principal del artículo «Nanban trade» sea un biombo nanban y no un mapa.",
+  "Fecha de Sekigahara (21 de octubre de 1600, calendario gregoriano) y papel decisivo de la deserción de Kobayakawa Hideaki."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "japon",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:02.056127+00:00",
+  "uso": {
+   "input_tokens": 4078,
+   "output_tokens": 22789,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.236
+ }
+}

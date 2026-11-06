@@ -1,0 +1,282 @@
+{
+ "resumen": "Entre 618 y 1279, China vivió dos de sus dinastías más brillantes. Los Tang hicieron de Chang'an una metrópolis abierta a la Ruta de la Seda, con monjes viajeros, una emperatriz que gobernó como emperador y los mayores poetas de la lengua china. Los Song apostaron por funcionarios elegidos por examen y vieron nacer o extenderse inventos que cambiarían el mundo: la imprenta, el papel moneda, la pólvora y la brújula. El capítulo termina con la llegada de los mongoles.",
+ "historias": [
+  {
+   "titulo": "Chang'an, la ciudad de la paz duradera",
+   "fecha": "618",
+   "anio": 618,
+   "lugar": {
+    "nombre": "Chang'an (actual Xi'an, China)",
+    "lat": 34.26,
+    "lon": 108.94
+   },
+   "texto": "En 618, tras años de guerras, un noble llamado Li Yuan fundó la dinastía Tang. Heredó la capital de la dinastía anterior, los Sui, y la llamó Chang'an, que significa «paz duradera». Su hijo, el emperador Taizong, consolidó el imperio. Chang'an llegó a ser una de las mayores ciudades de la Tierra: se calcula que tuvo cerca de un millón de habitantes, aunque la cifra se discute. Era un tablero de calles rectas, con murallas, barrios que se cerraban de noche y dos grandes mercados. Allí convivían comerciantes sogdianos, monjes indios, enviados japoneses y refugiados persas.",
+   "imagen_wikipedia": "Daming Palace",
+   "profundizar": {
+    "titulo": "Cómo era Chang'an por dentro",
+    "parrafos": [
+     "La ciudad fue planeada por los Sui a partir de 582 con el nombre de Daxing. Su muralla formaba un rectángulo de unos 9,7 por 8,6 kilómetros, más de 80 kilómetros cuadrados. Era mucho más grande que cualquier ciudad europea de la época y que la Roma imperial dentro de sus muros.",
+     "El interior se dividía en algo más de cien barrios rodeados por muros propios, llamados fang. Al anochecer sonaban tambores y las puertas de los barrios se cerraban. Una avenida central, la calle Zhuque, medía unos 150 metros de ancho y llevaba hasta la ciudad imperial, al norte.",
+     "El Mercado del Oeste era el gran punto de llegada de la Ruta de la Seda: allí se vendían caballos, especias, vidrio, plata y medicinas. Desde los años cincuenta, arqueólogos chinos han excavado murallas, puertas, mercados y el Palacio Daming, lo que permite comparar los textos antiguos con el terreno.",
+     "El modelo de Chang'an se copió fuera de China. Las capitales japonesas de Nara y Heian, la actual Kioto, se trazaron imitando su cuadrícula, y también influyó en ciudades de Corea."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Xuanzang, el monje que caminó hasta la India",
+   "fecha": "629–645",
+   "anio": 645,
+   "lugar": {
+    "nombre": "Chang'an (actual Xi'an, China)",
+    "lat": 34.22,
+    "lon": 108.96
+   },
+   "texto": "En 629, un joven monje budista llamado Xuanzang salió de Chang'an sin permiso del emperador. Quería llegar a la India, la tierra del Buda, para conseguir textos originales. Cruzó desiertos y montañas por la Ruta de la Seda, la red de caminos que unía China con Asia central, Persia y más allá. Estudió años en el gran monasterio de Nalanda. En 645 volvió con cientos de manuscritos, 657 según su biografía, y fue recibido con honores. Dedicó el resto de su vida a traducirlos. Siglos después, su viaje inspiró la famosa novela Viaje al Oeste.",
+   "imagen_wikipedia": "Giant Wild Goose Pagoda",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/india-medieval",
+    "texto": "Descubre la India que visitó Xuanzang →"
+   }
+  },
+  {
+   "titulo": "Wu Zetian, la mujer que fue emperador",
+   "fecha": "690–705",
+   "anio": 690,
+   "lugar": {
+    "nombre": "Luoyang, China",
+    "lat": 34.62,
+    "lon": 112.45
+   },
+   "texto": "Wu Zhao entró en palacio como concubina de Taizong. Tras su muerte, se casó con su hijo, el emperador Gaozong, y llegó a ser emperatriz. Cuando él enfermó, ella gobernó de hecho. En 690 dio un paso sin precedentes: se proclamó emperador y fundó su propia dinastía, la Zhou, con Luoyang como capital principal. Es la única mujer que reinó en China con ese título. Amplió los exámenes para elegir funcionarios, protegió el budismo y mantuvo el imperio estable. En 705, ya anciana, fue obligada a abdicar y los Tang regresaron.",
+   "imagen_wikipedia": "Wu Zetian",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Los historiadores confucianos",
+     "relato": "Las historias oficiales escritas después, como el Nuevo libro de los Tang o la gran crónica de Sima Guang en el siglo XI, la retrataron como una usurpadora cruel y ambiciosa. Para la tradición confuciana, que una mujer gobernara rompía el orden natural. Muchas anécdotas terribles sobre ella, como la de haber matado a su propia hija, proceden de estas fuentes y hoy se consideran dudosas."
+    },
+    {
+     "region": "La tradición budista",
+     "relato": "Para muchos budistas de su tiempo, Wu fue una gran protectora. Hacia 690 circuló un comentario al Sutra de la Gran Nube que la presentaba como una encarnación de Maitreya, el Buda del futuro, destinada a gobernar. Financió templos y traducciones, y se la asocia con el enorme Buda Vairocana de las cuevas de Longmen, cerca de Luoyang."
+    },
+    {
+     "region": "Historiadores actuales",
+     "relato": "Muchos historiadores modernos, chinos y extranjeros, la ven de otra forma: una gobernante hábil que usó métodos duros, como hicieron muchos emperadores varones, y que abrió la administración a personas de origen más modesto. El debate sigue abierto, y hoy su figura aparece a menudo en discusiones sobre las mujeres y el poder."
+    }
+   ],
+   "conecta_con": null
+  },
+  {
+   "titulo": "Li Bai y Du Fu, la luna y la guerra",
+   "fecha": "Siglo VIII",
+   "anio": 742,
+   "lugar": {
+    "nombre": "Chang'an (actual Xi'an, China)",
+    "lat": 34.27,
+    "lon": 108.95
+   },
+   "texto": "La época Tang es la edad de oro de la poesía china. Una antología reunida en el siglo XVIII recoge casi 49.000 poemas de más de 2.200 autores. Dos brillan sobre todos. Li Bai, viajero y amante del vino, fue un tiempo poeta de la corte en Chang'an y escribía sobre la luna, las montañas y la libertad. Du Fu, más sobrio, retrató la guerra, el hambre y el dolor de la gente común. Se conocieron y se admiraron. Aún hoy, casi todos los niños chinos aprenden un poema de Li Bai en el que la luz de la luna en el suelo parece escarcha y despierta la nostalgia de casa.",
+   "imagen_wikipedia": "Li Bai",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Talas, donde chocaron China y el califato",
+   "fecha": "751",
+   "anio": 751,
+   "lugar": {
+    "nombre": "Río Talas, cerca de Taraz (Kazajistán)",
+    "lat": 42.9,
+    "lon": 71.37
+   },
+   "texto": "En 751, junto al río Talas, en el actual Kazajistán, chocaron dos grandes imperios: los Tang y el califato abasí, recién llegado al poder. Ambos querían controlar Asia central, una región clave de la Ruta de la Seda. Según las fuentes chinas, durante la batalla los karluks, un pueblo turco aliado de China, cambiaron de bando, y el ejército del general Gao Xianzhi fue derrotado. No fue el fin de China en la región, pero poco después una gran rebelión obligó a los Tang a retirar tropas del oeste. Asia central quedó cada vez más unida al mundo islámico.",
+   "imagen_wikipedia": "Talas River",
+   "profundizar": null,
+   "otras_miradas": [
+    {
+     "region": "Fuentes chinas",
+     "relato": "Las crónicas Tang mencionan la derrota brevemente, como un revés más en la frontera. El testimonio más valioso es el de Du Huan, un soldado capturado que vivió unos diez años en tierras del califato y volvió por mar. Escribió un relato de viaje, del que se conservan fragmentos, con una de las primeras descripciones chinas del islam y noticias de artesanos chinos trabajando en Kufa."
+    },
+    {
+     "region": "Fuentes árabes y persas",
+     "relato": "Para los cronistas musulmanes fue una victoria que aseguró la frontera oriental del islam. En el siglo XI, el escritor al-Thaalibi contó que prisioneros chinos enseñaron a fabricar papel en Samarcanda. La historia se repitió durante siglos y convirtió a Talas en el origen tradicional del papel en el mundo islámico."
+    },
+    {
+     "region": "Historiadores actuales",
+     "relato": "Hoy se duda de esa explicación. Se conservan cartas sogdianas escritas en papel hacia el siglo IV, lo que indica que el papel ya circulaba por Asia central mucho antes. Talas quizá ayudó a difundir técnicas chinas, pero no fue el único camino. Muchos ven la batalla más como un símbolo que como un giro decisivo."
+    }
+   ],
+   "conecta_con": {
+    "capitulo": "media/edad-de-oro-islamica",
+    "texto": "El papel llega a Bagdad: sigue con la edad de oro islámica →"
+   }
+  },
+  {
+   "titulo": "La rebelión que rompió a los Tang",
+   "fecha": "755–763",
+   "anio": 755,
+   "lugar": {
+    "nombre": "Mawei, cerca de Xingping (China)",
+    "lat": 34.3,
+    "lon": 108.43
+   },
+   "texto": "El emperador Xuanzong reinó más de cuarenta años y presidió el esplendor Tang. Pero en su vejez dejó el gobierno en manos de favoritos y se volcó en Yang Guifei, su consorte preferida. En 755 se rebeló An Lushan, un poderoso general de origen sogdiano y turco. Tomó Luoyang y después Chang'an. El emperador huyó hacia Sichuan, y en la posta de Mawei sus soldados exigieron la muerte de Yang Guifei, a quien culpaban del desastre. Fue estrangulada. La guerra duró hasta 763. Los Tang sobrevivieron, pero nunca recuperaron su poder anterior.",
+   "imagen_wikipedia": "Yang Guifei",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "El libro impreso más antiguo con fecha",
+   "fecha": "868",
+   "anio": 868,
+   "lugar": {
+    "nombre": "Cuevas de Mogao, Dunhuang (China)",
+    "lat": 40.04,
+    "lon": 94.81
+   },
+   "texto": "En 1900, un monje taoísta, Wang Yuanlu, descubrió una cueva sellada en Dunhuang, un oasis de la Ruta de la Seda. Dentro había decenas de miles de manuscritos. Entre ellos, un rollo de más de cinco metros: el Sutra del Diamante, un texto budista impreso con bloques de madera tallados. Una nota final dice que lo encargó un tal Wang Jie en nombre de sus padres, en una fecha que equivale al 11 de mayo de 868. Es el libro impreso más antiguo que conserva su fecha. La imprenta china se adelantó casi seis siglos a la de Gutenberg.",
+   "imagen_wikipedia": "Diamond Sutra",
+   "profundizar": {
+    "titulo": "La cueva de la biblioteca",
+    "parrafos": [
+     "El rollo apareció en la llamada cueva 17 del complejo de Mogao, un conjunto de cientos de templos excavados en la roca. La cueva se selló hacia el año 1000 y nadie sabe con certeza por qué: quizá por miedo a una invasión, quizá para guardar textos viejos. El aire seco del desierto conservó papel y seda durante nueve siglos.",
+     "La impresión con bloques consistía en tallar el texto al revés en una plancha de madera, entintarla y presionar el papel encima. El Sutra del Diamante está formado por siete hojas pegadas y empieza con un grabado del Buda predicando. Su calidad muestra una técnica ya madura, así que no fue el primer impreso, solo el más antiguo fechado que ha sobrevivido.",
+     "En 1907, el explorador Aurel Stein, al servicio de la India británica, compró a Wang miles de documentos por una suma modesta. Hoy el Sutra está en la Biblioteca Británica de Londres. Después llegaron expediciones de Francia, Japón y Rusia. En China, muchos recuerdan aquella salida de manuscritos como una pérdida de su patrimonio.",
+     "Existen impresos algo anteriores, como amuletos budistas hallados en Corea y Japón del siglo VIII, pero no llevan una fecha tan clara. Por eso el Sutra del Diamante sigue siendo la referencia para hablar de los primeros libros impresos."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Los Song y el poder de los exámenes",
+   "fecha": "960",
+   "anio": 960,
+   "lugar": {
+    "nombre": "Kaifeng, China",
+    "lat": 34.8,
+    "lon": 114.31
+   },
+   "texto": "Tras la caída de los Tang en 907 llegaron décadas de división. En 960, el general Zhao Kuangyin fue proclamado emperador por sus tropas y fundó la dinastía Song, con capital en Kaifeng. Los Song desconfiaban de los militares y apostaron por funcionarios civiles elegidos por examen. Los exámenes imperiales existían desde hacía siglos, pero con los Song se convirtieron en el camino principal hacia el poder. Los candidatos, solo hombres, debían dominar los clásicos de Confucio y escribir ensayos. En teoría, un hijo de campesinos podía llegar a ministro. En la práctica, ayudaba tener una familia que pagara años de estudio.",
+   "imagen_wikipedia": "Emperor Taizu of Song",
+   "profundizar": {
+    "titulo": "Un sistema contra el enchufe",
+    "parrafos": [
+     "Había varios niveles: pruebas locales, un examen en la capital y, desde 973, un examen final en palacio supervisado por el propio emperador. Según las crónicas, Taizu lo creó tras quejas de favoritismo. Así, los nuevos funcionarios debían su puesto al soberano y no a un examinador poderoso.",
+     "Para evitar trampas, en el siglo XI se tapaban los nombres en los exámenes y unos copistas reescribían las respuestas, de modo que los correctores no pudieran reconocer la letra de nadie. Los candidatos pasaban días encerrados escribiendo, vigilados por funcionarios.",
+     "Historiadores como John Chaffee calculan que a comienzos del siglo XI se presentaban decenas de miles de candidatos, y en el siglo XIII quizá cientos de miles. Solo unos pocos cientos obtenían en cada convocatoria el título más alto, llamado jinshi.",
+     "El sistema creó una clase de letrados funcionarios, impulsó escuelas y la venta de libros impresos, y duró hasta 1905. Corea y Vietnam adoptaron modelos parecidos, y en el siglo XVIII algunos pensadores europeos lo admiraron como ejemplo de gobierno por mérito."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "El primer papel moneda del mundo",
+   "fecha": "1024",
+   "anio": 1024,
+   "lugar": {
+    "nombre": "Chengdu, Sichuan (China)",
+    "lat": 30.66,
+    "lon": 104.07
+   },
+   "texto": "En la región de Sichuan circulaban monedas de hierro, tan pesadas y de tan poco valor que una compra importante exigía cargar una gran cantidad de metal. A finales del siglo X, comerciantes de Chengdu empezaron a entregar recibos de papel a cambio de depósitos de monedas. Esos recibos, llamados jiaozi, pasaban de mano en mano como dinero. En 1023 el Estado Song asumió su emisión y en 1024 lanzó el primer papel moneda oficial conocido. Funcionó, pero trajo un problema muy moderno: cuando se imprimía demasiado, los billetes perdían valor.",
+   "imagen_wikipedia": "Jiaozi (currency)",
+   "profundizar": {
+    "titulo": "Del recibo al billete",
+    "parrafos": [
+     "Sichuan usaba hierro porque el gobierno limitaba allí la circulación de monedas de cobre. Según las fuentes Song, a comienzos del siglo XI un grupo de familias ricas de Chengdu garantizaba los recibos. Algunas quebraron o no pudieron pagar, hubo pleitos, y el Estado decidió quedarse con el negocio y crear una oficina propia.",
+     "Los billetes oficiales se imprimían con planchas, sellos y dibujos para dificultar las falsificaciones. Tenían un plazo de validez de unos años, tras el cual se cambiaban por otros nuevos. Durante un tiempo, el gobierno guardó reservas de monedas para respaldarlos.",
+     "Con los Song del Sur, un papel moneda parecido, el huizi, se extendió a otras regiones. Las guerras del siglo XIII llevaron a imprimir sin control y los precios se dispararon. Los mongoles mantuvieron el papel moneda, que asombró a Marco Polo. En Europa, los primeros billetes de banco no aparecieron hasta el siglo XVII."
+    ]
+   },
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Pólvora: de elixir a arma",
+   "fecha": "1044",
+   "anio": 1044,
+   "lugar": {
+    "nombre": "Kaifeng, China",
+    "lat": 34.79,
+    "lon": 114.35
+   },
+   "texto": "La pólvora nació probablemente por accidente. Alquimistas taoístas buscaban elixires de larga vida mezclando sustancias como el salitre y el azufre. Un texto que suele fecharse en el siglo IX ya advierte que ciertas mezclas provocaban llamas que quemaban barbas y casas. En 1044, un manual militar Song, el Wujing Zongyao, recogió las primeras recetas escritas de pólvora, con salitre, azufre, carbón y otros ingredientes. Al principio servía para flechas incendiarias y bombas lanzadas con catapultas. Más tarde llegaron las lanzas de fuego, antepasadas de las armas de fuego. Siglos después, la pólvora cambiaría la guerra en todo el mundo.",
+   "imagen_wikipedia": "Wujing Zongyao",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Shen Kuo y la aguja que señala",
+   "fecha": "c. 1088",
+   "anio": 1088,
+   "lugar": {
+    "nombre": "Zhenjiang, China",
+    "lat": 32.19,
+    "lon": 119.42
+   },
+   "texto": "Shen Kuo fue funcionario, astrónomo, ingeniero y diplomático. Retirado en un jardín de Zhenjiang, escribió hacia 1088 sus Ensayos del estanque de los sueños, un libro de notas sobre todo lo que le interesaba. Allí describe una aguja frotada con un imán que apunta al sur, y observa que no señala exactamente el polo. Es la descripción clara más antigua conocida de la brújula magnética. En 1119 otro autor contó que los marinos de Cantón la usaban con el cielo nublado. Shen Kuo también dejó la principal noticia sobre Bi Sheng, un artesano que hacia 1040 inventó tipos móviles de arcilla.",
+   "imagen_wikipedia": "Shen Kuo",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": null
+  },
+  {
+   "titulo": "Hangzhou, el último esplendor Song",
+   "fecha": "1127–1279",
+   "anio": 1276,
+   "lugar": {
+    "nombre": "Hangzhou, China",
+    "lat": 30.25,
+    "lon": 120.17
+   },
+   "texto": "En 1127, los yurchen, un pueblo del noreste, tomaron Kaifeng y se llevaron prisioneros a dos emperadores. La corte Song huyó al sur y se instaló en Hangzhou, junto al lago del Oeste. El sur floreció: arroz abundante y puertos llenos de barcos que comerciaban con el sudeste asiático, la India y el mundo árabe. Hangzhou fue quizá la mayor ciudad del mundo en su tiempo. Pero en el norte crecía un poder nuevo. Los mongoles tomaron Hangzhou en 1276, y en 1279, en la batalla naval de Yamen, cayó el último emperador Song, un niño. Según las crónicas, un ministro saltó al mar con él a cuestas.",
+   "imagen_wikipedia": "West Lake",
+   "profundizar": null,
+   "otras_miradas": null,
+   "conecta_con": {
+    "capitulo": "media/mongoles",
+    "texto": "Sigue con los mongoles →"
+   }
+  }
+ ],
+ "notas_revision": [
+  "Población de Chang'an (c. 1 millón) y dimensiones de la muralla (c. 9,7 × 8,6 km) y de la calle Zhuque (c. 150 m): son estimaciones; comprobar.",
+  "Número exacto de barrios (fang) de Chang'an: las fuentes dan 108 o 110 según la época.",
+  "Xuanzang: la fecha de partida se da como 627 o 629; la cifra de 657 textos procede de su biografía tradicional.",
+  "Antología Quan Tangshi (1705): comprobar cifras de c. 49.000 poemas y más de 2.200 autores.",
+  "Talas: el lugar exacto de la batalla es incierto; las coordenadas cercanas a Taraz son aproximadas. El cambio de bando de los karluks procede de fuentes chinas.",
+  "Du Huan: comprobar que su relato menciona artesanos chinos en Kufa y la duración de su estancia (c. 751–762).",
+  "Atribución a al-Thaalibi (siglo XI) de la historia de los prisioneros chinos y el papel en Samarcanda.",
+  "Muerte de Yang Guifei en Mawei en 756; comprobar la ubicación de la posta de Mawei.",
+  "Sutra del Diamante: fecha del colofón (11 de mayo de 868), longitud (más de 5 m), siete hojas y sellado de la cueva hacia el año 1000.",
+  "Wu Zetian: asociación con el Buda Vairocana de Longmen (completado c. 675) y fecha del comentario al Sutra de la Gran Nube (c. 689–690).",
+  "Examen de palacio instaurado en 973 por Taizu; cifras de candidatos según John Chaffee.",
+  "Jiaozi: fechas 1023 (oficina estatal) y 1024 (primera emisión oficial); número de familias garantes en Chengdu.",
+  "Texto alquímico del siglo IX sobre mezclas inflamables: la datación es discutida.",
+  "Bi Sheng: invención de tipos móviles en la era Qingli (1041–1048); Zhu Yu, Pingzhou Ketan, 1119.",
+  "Batalla de Yamen (1279): la tradición dice que el ministro Lu Xiufu saltó al mar con el emperador niño Zhao Bing.",
+  "Verificar que existen en la Wikipedia en inglés los artículos de imagen, especialmente 'Talas River', 'Jiaozi (currency)' y 'Daming Palace'."
+ ],
+ "meta": {
+  "era": "media",
+  "capitulo": "china-tang-song",
+  "modelo": "claude-opus-5-5",
+  "generado": "2026-10-29T04:27:02.283192+00:00",
+  "uso": {
+   "input_tokens": 4076,
+   "output_tokens": 22921,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0
+  },
+  "coste_usd": 0.2374
+ }
+}

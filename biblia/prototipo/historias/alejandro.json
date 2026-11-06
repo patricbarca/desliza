@@ -1,0 +1,176 @@
+{
+  "resumen": "En apenas once años, un rey macedonio de veinte años llevó su ejército desde Grecia hasta el río Indo y derribó al mayor imperio de su tiempo, el persa. Los griegos lo recordaron como un héroe; muchos persas, como un destructor; los egipcios lo hicieron faraón y las leyendas de medio mundo lo convirtieron en personaje propio. Al morir a los 32 años, su imperio se repartió entre sus generales y abrió la época helenística.",
+  "historias": [
+    {
+      "titulo": "El hijo de Filipo",
+      "fecha": "356 – 336 a.C.",
+      "anio": -356,
+      "lugar": { "nombre": "Pela, capital de Macedonia (actual Grecia)", "lat": 40.76, "lon": 22.52 },
+      "texto": "Alejandro nació en Pela en el 356 a.C. Su padre, Filipo II, había convertido un reino periférico, al que muchos atenienses miraban como medio bárbaro, en la mayor potencia de Grecia. Su arma era la falange: soldados con picas de unos cinco metros, la sarisa, que avanzaban como un muro. Aristóteles fue durante unos años maestro del joven príncipe. En el 336 a.C., durante la boda de su hija en Egas, Filipo fue asesinado por un guardia, Pausanias. Los motivos aún se discuten. Alejandro, con veinte años, heredó el trono y el ejército.",
+      "imagen_wikipedia": "Pella",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "El Gránico: primera batalla en Asia",
+      "fecha": "Mayo de 334 a.C.",
+      "anio": -334,
+      "lugar": { "nombre": "Río Gránico (actual Biga Çayı, Turquía)", "lat": 40.3, "lon": 27.25 },
+      "texto": "En la primavera del 334 a.C., Alejandro cruzó a Asia con unos 40.000 hombres. Junto al río Gránico lo esperaban los gobernadores persas de la región, los sátrapas, con caballería y miles de mercenarios griegos. Alejandro cargó cruzando el río y estuvo a punto de morir: según los historiadores griegos, su oficial Clito le salvó la vida cortando el brazo de un noble persa. Los mercenarios griegos que servían a Persia fueron rodeados y casi todos murieron o fueron enviados a trabajar como esclavos a Macedonia. Las ciudades de la costa de Asia Menor quedaron abiertas.",
+      "imagen_wikipedia": "Battle of the Granicus",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "El nudo de Gordio",
+      "fecha": "Invierno de 334 – 333 a.C.",
+      "anio": -333,
+      "lugar": { "nombre": "Gordio, antigua capital de Frigia (Turquía)", "lat": 39.65, "lon": 31.98 },
+      "texto": "En Gordio se guardaba un viejo carro atado con un nudo de corteza de cornejo que nadie sabía deshacer. Una profecía decía que quien lo desatara gobernaría Asia. Lo que hizo Alejandro depende de a quién se lea. La versión más famosa dice que lo cortó de un tajo con la espada. Pero Aristóbulo, que lo acompañaba en la campaña, contaba que simplemente sacó la clavija que sujetaba el yugo y el nudo se aflojó. Tajo o maña, la escena se convirtió en símbolo: resolver de golpe un problema imposible.",
+      "imagen_wikipedia": "Gordion",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Issos: frente a frente con Darío",
+      "fecha": "Noviembre de 333 a.C.",
+      "anio": -333,
+      "lugar": { "nombre": "Issos (cerca de Iskenderun, Turquía)", "lat": 36.84, "lon": 36.2 },
+      "texto": "En la estrecha llanura de Issos, entre el mar y las montañas, Alejandro se enfrentó por primera vez al rey persa Darío III. El terreno impidió a los persas aprovechar su número. Cuando la caballería macedonia avanzó hacia el centro, Darío huyó en su carro. En su campamento quedaron su madre, Sisigambis, su esposa y sus hijas. Las fuentes griegas cuentan que Alejandro las trató con respeto y les mantuvo sus títulos. Siglos después, un mosaico de Pompeya inmortalizó el momento en que los dos reyes se miran en plena batalla.",
+      "imagen_wikipedia": "Alexander Mosaic",
+      "profundizar": {
+        "titulo": "Darío III: un rey contado por sus enemigos",
+        "parrafos": [
+          "Casi todo lo que sabemos de Darío III procede de autores griegos y romanos que escribieron siglos después: Diodoro, Quinto Curcio, Plutarco y Arriano. Arriano, el más usado por los historiadores, se basaba en las memorias de Ptolomeo, un general de Alejandro. Ninguna crónica persa de la guerra ha llegado hasta nosotros.",
+          "Esas fuentes suelen pintar a Darío como un rey cobarde que huyó dos veces. Algunos historiadores actuales lo matizan: Darío llevaba poco tiempo en el trono, mantuvo unido un imperio inmenso durante años y huir para reunir otro ejército era una decisión razonable para un rey cuya muerte habría hundido todo el Estado.",
+          "Tras Issos, según Arriano, Darío ofreció a Alejandro todo el territorio al oeste del Éufrates, un gran rescate por su familia y la mano de una de sus hijas. Plutarco recoge un diálogo famoso: el general Parmenión dijo que aceptaría si fuera Alejandro, y este respondió que también aceptaría si fuera Parmenión. Es muy probablemente una anécdota pulida con el tiempo."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "Tiro, la isla que resistió siete meses",
+      "fecha": "Enero – agosto de 332 a.C.",
+      "anio": -332,
+      "lugar": { "nombre": "Tiro (actual Líbano)", "lat": 33.27, "lon": 35.2 },
+      "texto": "Tiro, la gran ciudad fenicia, estaba en una isla a casi un kilómetro de la costa. Ofreció su neutralidad, pero se negó a dejar entrar a Alejandro en el templo de su dios Melqart. Él decidió tomarla. Sus ingenieros construyeron un enorme terraplén sobre el mar mientras los tirios lo atacaban con barcos incendiarios. Tras siete meses, las murallas cayeron. Según Arriano, unos 8.000 habitantes murieron en el asalto y unos 30.000 fueron vendidos como esclavos. El terraplén nunca se retiró: con la arena acumulada, Tiro dejó de ser una isla y hoy es una península.",
+      "imagen_wikipedia": "Siege of Tyre (332 BC)",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "Faraón de Egipto",
+      "fecha": "332 – 331 a.C.",
+      "anio": -331,
+      "lugar": { "nombre": "Oasis de Siwa (Egipto)", "lat": 29.2, "lon": 25.52 },
+      "texto": "Egipto llevaba casi dos siglos, con interrupciones, bajo dominio persa, y el gobernador persa se rindió sin combatir. Alejandro viajó por el desierto hasta el oasis de Siwa para consultar el oráculo del dios Amón. Lo que oyó allí no se sabe: él nunca lo contó, aunque luego se extendió que el dios lo había llamado hijo suyo. En la costa fundó una ciudad con su nombre, Alejandría, que con el tiempo sería una de las más grandes del mundo. En los templos egipcios aparece representado como un faraón más, con su nombre escrito en jeroglíficos.",
+      "imagen_wikipedia": "Siwa Oasis",
+      "profundizar": {
+        "titulo": "Cómo lo vieron los egipcios",
+        "parrafos": [
+          "Para muchos egipcios, los persas habían sido ocupantes impopulares; la tradición griega los acusaba incluso de haber ofendido a sus dioses. Por eso a menudo se presenta a Alejandro como un libertador. Pero hay que tener en cuenta que esa imagen nos llega sobre todo a través de autores griegos, y que el país simplemente cambió de dominadores extranjeros.",
+          "Los sacerdotes egipcios, en cambio, hicieron lo que siempre habían hecho con los reyes extranjeros: lo integraron en su mundo. En el templo de Luxor existe una capilla de la época de Alejandro donde aparece ante el dios Amón con la corona y los títulos de un faraón.",
+          "Siglos después, la Novela de Alejandro, escrita en Alejandría, fue más lejos: lo hizo hijo secreto de Nectanebo II, el último faraón nativo, que habría huido a Macedonia. Así el conquistador extranjero se convertía en heredero legítimo de Egipto. La historia es una leyenda, pero muestra cómo una cultura podía apropiarse de quien la había conquistado."
+        ]
+      },
+      "conecta_con": { "capitulo": "clasico/alejandria", "texto": "Descubre la Alejandría que fundó →" }
+    },
+    {
+      "titulo": "Gaugamela, contada desde Babilonia",
+      "fecha": "1 de octubre de 331 a.C.",
+      "anio": -331,
+      "lugar": { "nombre": "Gaugamela (cerca de Erbil, Irak)", "lat": 36.55, "lon": 43.44 },
+      "texto": "Darío eligió una llanura amplia y la allanó para sus carros armados con cuchillas. Aun así, Alejandro abrió una brecha en sus líneas y Darío volvió a huir. Esta vez no solo lo cuentan los griegos. Los astrónomos de Babilonia, que anotaban cada noche el cielo y los sucesos del día en tablillas de arcilla, registraron un eclipse de luna once días antes y, después, que las tropas de Darío lo abandonaron. Pocos días más tarde, Babilonia abrió sus puertas sin luchar. Su gobernador persa, Maceo, conservó el cargo bajo el nuevo rey.",
+      "imagen_wikipedia": "Battle of Gaugamela",
+      "profundizar": null,
+      "conecta_con": { "capitulo": "imperios/el-imperio-persa", "texto": "Conoce el imperio que cayó en Gaugamela →" }
+    },
+    {
+      "titulo": "El incendio de Persépolis",
+      "fecha": "Primavera de 330 a.C.",
+      "anio": -330,
+      "lugar": { "nombre": "Persépolis (provincia de Fars, Irán)", "lat": 29.93, "lon": 52.89 },
+      "texto": "Persépolis era el gran palacio ceremonial de los reyes persas, decorado con relieves de pueblos de todo el imperio que traían ofrendas. Alejandro se apoderó de su enorme tesoro y meses después los palacios ardieron. Por qué sigue siendo una incógnita. Unos autores antiguos hablan de una venganza deliberada por el incendio de Atenas que los persas habían causado 150 años antes. Otros cuentan que fue una decisión de borrachera, animada en un banquete. Ese mismo verano, Darío fue asesinado por uno de sus propios gobernadores, Beso, mientras huía hacia el este.",
+      "imagen_wikipedia": "Persepolis",
+      "profundizar": {
+        "titulo": "El «maldito» de la tradición persa",
+        "parrafos": [
+          "Arriano, apoyado en Ptolomeo, presenta el incendio como un acto político: castigar a Persia por la invasión de Grecia. Añade que el veterano Parmenión le aconsejó no destruir lo que ya era suyo. Plutarco, Diodoro y Curcio, en cambio, cuentan que la idea surgió en una fiesta, propuesta por la cortesana ateniense Tais. Puede que ambas versiones tengan parte de verdad.",
+          "En Irán, la memoria fue muy distinta a la griega. En textos zoroástricos escritos en persa medio, muchos siglos después, Alejandro aparece con el apodo de «el maldito». Se le acusa de haber matado a sacerdotes y de haber quemado los textos sagrados del Avesta. Los historiadores dudan de que esto último ocurriera tal cual: probablemente es una forma de explicar una pérdida posterior.",
+          "La imagen persa tampoco es única. En el Shahnameh, el gran poema épico iraní escrito hacia el año 1010, el poeta Ferdousí convierte a Iskandar en hijo de un rey persa y medio hermano de Darío. Así, el conquistador acaba siendo, en la leyenda, un rey iraní legítimo."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "Asia Central: Clito y Roxana",
+      "fecha": "329 – 327 a.C.",
+      "anio": -328,
+      "lugar": { "nombre": "Maracanda (actual Samarcanda, Uzbekistán)", "lat": 39.65, "lon": 66.96 },
+      "texto": "En Bactria y Sogdiana, lo que hoy son Afganistán y Uzbekistán, Alejandro no encontró batallas decisivas sino tres años de guerra contra guerrilleros locales, como el líder sogdiano Espitámenes. Allí también cambió. Adoptó ropas y costumbres de la corte persa, algo que muchos macedonios no soportaban. En un banquete en Maracanda, borracho, mató con una lanza a Clito, el oficial que le había salvado la vida en el Gránico. En el 327 a.C. se casó con Roxana, hija de un noble de la región, una alianza que también buscaba pacificar el territorio.",
+      "imagen_wikipedia": "Samarkand",
+      "profundizar": null,
+      "conecta_con": null
+    },
+    {
+      "titulo": "El Hidaspes y el ejército que dijo basta",
+      "fecha": "326 a.C.",
+      "anio": -326,
+      "lugar": { "nombre": "Río Hidaspes (actual Jhelum, Pakistán)", "lat": 32.93, "lon": 73.73 },
+      "texto": "En el Punjab, el rey Poro esperó a Alejandro al otro lado del río Hidaspes con elefantes de guerra. Alejandro cruzó de noche bajo una tormenta y venció, pero la batalla fue dura. Según los autores griegos, cuando le preguntaron a Poro, herido, cómo quería ser tratado, respondió «como un rey», y conservó su reino como aliado. Poco después, junto al río Hífasis, los soldados se negaron a seguir: llevaban ocho años lejos de casa. Alejandro tuvo que dar media vuelta. El regreso por el desierto de Gedrosia causó miles de muertos.",
+      "imagen_wikipedia": "Battle of the Hydaspes",
+      "profundizar": {
+        "titulo": "El silencio de la India",
+        "parrafos": [
+          "Toda la historia de Poro y de la campaña india la conocemos por autores griegos y romanos. Ningún texto indio antiguo conservado menciona a Alejandro. Para las crónicas y tradiciones del subcontinente, su paso por el noroeste fue al parecer un episodio menor en la frontera de su mundo.",
+          "Eso obliga a leer con cuidado el relato griego. La cifra de enemigos, el tamaño del reino de Poro y el dramatismo de la escena del «como un rey» pueden estar exagerados para engrandecer al vencedor. Algunos investigadores creen que la batalla fue más equilibrada de lo que cuentan.",
+          "Plutarco añade un dato curioso: un joven llamado Androkottos habría visto a Alejandro en el Punjab. Muchos historiadores lo identifican con Chandragupta Maurya, quien pocos años después fundó el mayor imperio que había conocido la India y expulsó a las guarniciones griegas de la región."
+        ]
+      },
+      "conecta_con": { "capitulo": "clasico/maurya", "texto": "Sigue con Chandragupta y los Maurya →" }
+    },
+    {
+      "titulo": "Muerte en Babilonia",
+      "fecha": "Junio de 323 a.C.",
+      "anio": -323,
+      "lugar": { "nombre": "Babilonia (Irak)", "lat": 32.54, "lon": 44.42 },
+      "texto": "De vuelta en Persia, en el 324 a.C. Alejandro organizó en Susa bodas en masa: él y unos 90 oficiales se casaron con mujeres de la nobleza persa. Quería un imperio gobernado por ambas élites, aunque muchas de esas uniones no duraron. Instalado en Babilonia, planeaba conquistar Arabia. En junio del 323 a.C. cayó enfermo tras un banquete y murió unos diez días después, con 32 años. Una tablilla de los astrónomos babilonios lo anota con sequedad: «el rey murió». No dejó un heredero adulto. Su hijo con Roxana nació meses después.",
+      "imagen_wikipedia": "Babylon",
+      "profundizar": {
+        "titulo": "¿De qué murió y qué pasó después?",
+        "parrafos": [
+          "Las fuentes antiguas describen una fiebre que fue empeorando durante días. Desde entonces se han propuesto muchas causas: malaria, fiebre tifoidea, una infección, los efectos del alcohol y de las heridas acumuladas, o un envenenamiento. La teoría del veneno circuló ya en la Antigüedad, pero no hay pruebas y muchos historiadores la consideran poco probable.",
+          "Según una anécdota antigua, al preguntarle a quién dejaba el imperio respondió «al más fuerte». Sea cierto o no, eso es lo que ocurrió. Sus generales, los diádocos, lucharon entre sí durante unos cuarenta años. Ptolomeo se quedó con Egipto y se llevó el cuerpo de Alejandro; Seleuco, con gran parte de Asia; y otros, con Macedonia y Asia Menor.",
+          "Su familia no sobrevivió a esas guerras. Roxana y su hijo, Alejandro IV, fueron asesinados hacia el 310 a.C. por orden de Casandro, que gobernaba Macedonia. Lo que sí sobrevivió fue un mundo nuevo, mezclado y conectado, desde el Mediterráneo hasta Asia Central: la época helenística."
+        ]
+      },
+      "conecta_con": null
+    },
+    {
+      "titulo": "Un héroe con mil caras",
+      "fecha": "c. siglo III – siglo XVI",
+      "anio": 300,
+      "lugar": { "nombre": "Alejandría (Egipto)", "lat": 31.2, "lon": 29.92 },
+      "texto": "Después de su muerte, Alejandro se convirtió en leyenda en casi todas las lenguas de su antiguo imperio y más allá. La Novela de Alejandro, compilada en Alejandría en torno al siglo III, fue traducida al siriaco, al armenio, al etíope, al hebreo, al persa y a lenguas europeas medievales. En ella viaja al fondo del mar o vuela tirado por grifos. En la tradición islámica se le conoce como Iskandar, y muchos comentaristas lo identificaron con Dhul-Qarnayn, «el de los dos cuernos», del Corán, aunque esa identificación se discute. Cada pueblo hizo su propio Alejandro.",
+      "imagen_wikipedia": "Alexander Romance",
+      "profundizar": null,
+      "conecta_con": null
+    }
+  ],
+  "notas_revision": [
+    "Las cifras de soldados (unos 40.000 al cruzar a Asia) y de víctimas en Tiro (8.000 muertos, 30.000 esclavizados) proceden de Arriano y son aproximadas.",
+    "La fecha de Gaugamela (1 de octubre de 331 a.C.) se apoya en el eclipse del 20 de septiembre registrado en el diario astronómico babilonio; revisar el número exacto de días entre ambos.",
+    "El número de oficiales en las bodas de Susa varía según la fuente (80 en Arriano, unos 90 o más en otras); se ha puesto «unos 90».",
+    "La cita «el rey murió» es una traducción simplificada de la tablilla babilónica; revisar la formulación exacta.",
+    "La identificación de Androkottos con Chandragupta Maurya es la mayoritaria, pero no unánime.",
+    "La fecha de la historia final (anio 300) es una convención para situar la Novela de Alejandro; su composición fue gradual y difícil de datar."
+  ],
+  "meta": {
+    "era": "clasico",
+    "capitulo": "alejandro",
+    "modelo": "claude-opus-5-5 (escrito en el chat, prueba de consumo)",
+    "generado": "2026-10-29T07:35:00+00:00",
+    "uso": null,
+    "coste_usd": null
+  }
+}

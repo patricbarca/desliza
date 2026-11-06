@@ -1,0 +1,188 @@
+{
+ "lote": "msgbatch_01KnzmAgUetAnYsovz46U4s1",
+ "era": "media",
+ "modelo": "claude-opus-5-5",
+ "esfuerzo": "high",
+ "capitulos": {
+  "bizancio": {
+   "historias": 13,
+   "palabras_texto": 1280,
+   "profundizar": 4,
+   "otras_miradas": 3,
+   "enlaces": 3,
+   "notas_revision": 13,
+   "tokens_salida": 27021,
+   "coste_usd": 0.2784
+  },
+  "islam": {
+   "historias": 12,
+   "palabras_texto": 1185,
+   "profundizar": 4,
+   "otras_miradas": 3,
+   "enlaces": 3,
+   "notas_revision": 16,
+   "tokens_salida": 25553,
+   "coste_usd": 0.2637
+  },
+  "edad-de-oro-islamica": {
+   "historias": 11,
+   "palabras_texto": 1091,
+   "profundizar": 3,
+   "otras_miradas": 2,
+   "enlaces": 3,
+   "notas_revision": 16,
+   "tokens_salida": 21878,
+   "coste_usd": 0.227
+  },
+  "carlomagno": {
+   "historias": 12,
+   "palabras_texto": 1244,
+   "profundizar": 4,
+   "otras_miradas": 3,
+   "enlaces": 3,
+   "notas_revision": 15,
+   "tokens_salida": 25206,
+   "coste_usd": 0.2602
+  },
+  "mongoles": {
+   "historias": 12,
+   "palabras_texto": 1208,
+   "profundizar": 4,
+   "otras_miradas": 2,
+   "enlaces": 3,
+   "notas_revision": 17,
+   "tokens_salida": 25914,
+   "coste_usd": 0.2673
+  },
+  "japon": {
+   "historias": 12,
+   "palabras_texto": 1196,
+   "profundizar": 3,
+   "otras_miradas": 2,
+   "enlaces": 3,
+   "notas_revision": 13,
+   "tokens_salida": 22789,
+   "coste_usd": 0.236
+  },
+  "america-antes-de-1492": {
+   "historias": 11,
+   "palabras_texto": 1045,
+   "profundizar": 4,
+   "otras_miradas": 2,
+   "enlaces": 3,
+   "notas_revision": 17,
+   "tokens_salida": 22260,
+   "coste_usd": 0.2308
+  },
+  "polinesia": {
+   "historias": 12,
+   "palabras_texto": 1251,
+   "profundizar": 4,
+   "otras_miradas": 2,
+   "enlaces": 3,
+   "notas_revision": 13,
+   "tokens_salida": 28950,
+   "coste_usd": 0.2977
+  },
+  "mali": {
+   "historias": 12,
+   "palabras_texto": 1178,
+   "profundizar": 4,
+   "otras_miradas": 2,
+   "enlaces": 3,
+   "notas_revision": 16,
+   "tokens_salida": 24080,
+   "coste_usd": 0.249
+  },
+  "peste-negra": {
+   "historias": 11,
+   "palabras_texto": 1073,
+   "profundizar": 4,
+   "otras_miradas": 1,
+   "enlaces": 2,
+   "notas_revision": 16,
+   "tokens_salida": 22645,
+   "coste_usd": 0.2346
+  },
+  "angkor": {
+   "historias": 12,
+   "palabras_texto": 1206,
+   "profundizar": 4,
+   "otras_miradas": 2,
+   "enlaces": 3,
+   "notas_revision": 20,
+   "tokens_salida": 26019,
+   "coste_usd": 0.2683
+  },
+  "china-tang-song": {
+   "historias": 12,
+   "palabras_texto": 1185,
+   "profundizar": 4,
+   "otras_miradas": 2,
+   "enlaces": 3,
+   "notas_revision": 16,
+   "tokens_salida": 22921,
+   "coste_usd": 0.2374
+  },
+  "vikingos": {
+   "historias": 12,
+   "palabras_texto": 1161,
+   "profundizar": 4,
+   "otras_miradas": 3,
+   "enlaces": 3,
+   "notas_revision": 18,
+   "tokens_salida": 25612,
+   "coste_usd": 0.2643
+  },
+  "cruzadas": {
+   "historias": 12,
+   "palabras_texto": 1169,
+   "profundizar": 4,
+   "otras_miradas": 3,
+   "enlaces": 3,
+   "notas_revision": 13,
+   "tokens_salida": 25040,
+   "coste_usd": 0.2586
+  },
+  "india-medieval": {
+   "historias": 12,
+   "palabras_texto": 1143,
+   "profundizar": 4,
+   "otras_miradas": 2,
+   "enlaces": 3,
+   "notas_revision": 17,
+   "tokens_salida": 24761,
+   "coste_usd": 0.2558
+  },
+  "gran-zimbabue": {
+   "historias": 12,
+   "palabras_texto": 1189,
+   "profundizar": 4,
+   "otras_miradas": 3,
+   "enlaces": 3,
+   "notas_revision": 14,
+   "tokens_salida": 18697,
+   "coste_usd": 0.1951
+  }
+ },
+ "fallos": {},
+ "imagenes_sin_foto": [
+  "Abu Bakr II",
+  "Budj Bim Cultural Landscape",
+  "Ellora Caves",
+  "Erfurt Treasure",
+  "Koumbi Saleh",
+  "Nanban trade",
+  "Paiza",
+  "Sundiata Keita",
+  "Taghaza"
+ ],
+ "imagenes_total": 190,
+ "uso_total": {
+  "input_tokens": 65420,
+  "output_tokens": 389346,
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0
+ },
+ "coste_total_usd": 4.0243
+}

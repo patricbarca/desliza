@@ -1,0 +1,976 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Crónica · prototipo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Mismos tokens que el tema oscuro de la app actual */
+:root{
+  --bg:#121916; --surface:#1B2420; --fg:#E4E9E4; --muted:#93A29B; --line:#2C3833;
+  --accent:#8CC4AF; --on-accent:#0F1613; --glow:#D9B861;
+  --serif:"Cormorant Garamond",Georgia,serif; --ui:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg);color:var(--fg);font-family:var(--ui);-webkit-font-smoothing:antialiased}
+body{overflow:hidden}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+
+/* Imagen de fondo: color de la era mientras carga (o si falla) */
+.img{background-color:var(--c,#24302b);background-image:linear-gradient(135deg,var(--c,#24302b),#0d1210);background-size:cover;background-position:center}
+.img.on{animation:fade .6s ease}
+@keyframes fade{from{opacity:.25}to{opacity:1}}
+
+/* Barra superior */
+.bar{position:fixed;top:0;left:0;right:0;z-index:30;padding:12px 16px 18px;
+  background:linear-gradient(rgba(8,12,10,.88),rgba(8,12,10,.55) 65%,rgba(8,12,10,0))}
+.row{display:flex;align-items:center;gap:10px;max-width:960px;margin:0 auto}
+.brand{font-family:var(--serif);font-size:24px;font-weight:700;letter-spacing:.4px;text-decoration:none}
+.brand small{font-family:var(--ui);font-size:11px;font-weight:500;color:var(--muted);letter-spacing:0;margin-left:6px}
+.back{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;text-decoration:none;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);font-size:18px}
+.bar.solid{background:rgba(12,17,15,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding-bottom:12px;border-bottom:1px solid var(--line)}
+.crumbs{font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 6px;min-width:0}
+.crumbs a{text-decoration:none;color:var(--fg);opacity:.8}
+.crumbs a:hover{opacity:1;text-decoration:underline}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin-top:10px}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:6px 12px;border-radius:999px;font-size:13px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14)}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent);font-weight:600}
+
+/* Vistas */
+.view{position:fixed;inset:0;overflow-y:auto;overflow-x:hidden}
+.snap{scroll-snap-type:y mandatory;overscroll-behavior:contain}
+
+/* Diapositiva a pantalla completa (nivel 0 y nivel 2) */
+.slide{height:100dvh;min-height:520px;scroll-snap-align:start;scroll-snap-stop:always;position:relative;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.slide>.img{position:absolute;inset:0}
+.slide::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 28%,rgba(8,12,10,.5) 52%,rgba(8,12,10,.96) 100%)}
+.slide .body{position:relative;z-index:1;width:100%;max-width:640px;margin:0 auto;padding:24px 20px calc(30px + env(safe-area-inset-bottom))}
+.kicker{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--glow);font-weight:600}
+.slide h1,.slide h2{font-family:var(--serif);font-weight:700;line-height:1.02;margin:6px 0 10px}
+.slide h1{font-size:clamp(40px,9vw,64px)}
+.slide h2{font-size:clamp(34px,7.5vw,52px)}
+.slide p{font-size:16.5px;line-height:1.55;color:#d5ddd8;max-width:56ch}
+.minis{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 18px}
+.minis span{font-size:12.5px;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.12)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;background:var(--accent);color:var(--on-accent);
+  font-weight:600;text-decoration:none;font-size:15px}
+.btn.ghost{background:rgba(255,255,255,.1);color:var(--fg);border:1px solid rgba(255,255,255,.18)}
+.match{margin-top:12px;font-size:13.5px;color:var(--accent);font-weight:600}
+.slide.dim .body{opacity:.45}
+.hint{margin-top:22px;font-size:13px;color:var(--muted);animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(5px)}}
+.credit{position:absolute;z-index:2;right:10px;top:calc(50% - 8px);font-size:10px;color:rgba(255,255,255,.45);writing-mode:vertical-rl}
+
+/* Línea del tiempo de la portada: todas las eras en fila, con foto y resumen */
+.slide.tl{justify-content:center;background:radial-gradient(ellipse at 50% 0%,#1d2a24,var(--bg) 70%)}
+.slide.tl::after{display:none}
+.tl .head{width:100%;max-width:960px;margin:0 auto;padding:110px 20px 0;display:flex;align-items:flex-end;gap:12px}
+.tl .head div{flex:1;min-width:0}
+.tl .head h2{margin:4px 0 4px}
+.tl .head p{font-size:14.5px;color:var(--muted)}
+.tlnav{display:flex;gap:6px;flex:none}
+.tlnav button{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);font-size:18px}
+.tlnav button:hover{background:rgba(255,255,255,.18)}
+.track{display:flex;gap:16px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;
+  padding:40px max(20px,calc((100vw - 960px)/2 + 20px)) 24px;scroll-padding:0 max(20px,calc((100vw - 960px)/2 + 20px));scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.2) transparent}
+.tli{position:relative;flex:none;width:min(250px,74vw);scroll-snap-align:start;text-decoration:none;display:flex;flex-direction:column;
+  border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);transition:transform .25s,border-color .25s,opacity .3s}
+.tli:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.28)}
+/* la línea: cada tarjeta dibuja su tramo hasta la siguiente, y un punto del color de su era */
+.tli::before{content:"";position:absolute;top:-22px;left:0;right:-16px;height:2px;background:rgba(255,255,255,.18)}
+.tli:last-child::before{right:50%}
+.tli::after{content:"";position:absolute;top:-28px;left:14px;width:14px;height:14px;border-radius:50%;background:var(--c);border:2px solid var(--bg);box-shadow:0 0 0 2px var(--c)}
+.tli .yr{position:absolute;top:-30px;left:38px;font-size:11.5px;font-weight:600;color:var(--glow);white-space:nowrap}
+.tli>.img{height:132px;border-radius:15px 15px 0 0;flex:none}
+.tli .tx{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+.tli .tx small{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);font-weight:600}
+.tli .tx b{font-family:var(--serif);font-size:23px;line-height:1.05;margin:3px 0 6px}
+.tli .tx p{font-size:13.5px;line-height:1.45;color:#cdd6d1;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.tli .tx .go{margin-top:auto;padding-top:10px;font-size:13px;font-weight:600;color:var(--accent)}
+.tli.dim{opacity:.35}
+@media (max-height:700px){.tli>.img{height:96px}.tli .tx p{-webkit-line-clamp:3}.tl .head{padding-top:100px}}
+@media (max-width:600px){.tlnav{display:none}}
+
+/* Puntos de navegación entre eras */
+.dots{position:fixed;right:10px;top:50%;transform:translateY(-50%);z-index:25;display:flex;flex-direction:column;gap:7px}
+.dots button{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);transition:all .25s}
+.dots button.on{background:var(--glow);height:20px;border-radius:4px}
+
+/* Nivel 1: era con cuadrícula de capítulos */
+.hero{position:relative;height:52vh;min-height:340px;display:flex;align-items:flex-end}
+.hero>.img{position:absolute;inset:0}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,0) 35%,var(--bg) 100%)}
+.hero .body{position:relative;z-index:1;width:100%;max-width:960px;margin:0 auto;padding:0 16px 8px}
+.hero h2{font-family:var(--serif);font-size:clamp(38px,7vw,58px);line-height:1;margin:6px 0 8px}
+.lead{max-width:960px;margin:0 auto;padding:4px 16px 0;color:#cfd8d3;font-size:16px;line-height:1.55}
+.lead p{max-width:62ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:12px;max-width:960px;margin:0 auto;padding:18px 16px}
+.cap{position:relative;aspect-ratio:3/4;border-radius:16px;overflow:hidden;text-decoration:none;display:block;
+  border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 24px rgba(0,0,0,.35);transition:opacity .3s}
+.cap>.img{position:absolute;inset:0;transition:transform .6s ease}
+.cap:hover>.img{transform:scale(1.06)}
+.cap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 38%,rgba(5,8,7,.92))}
+.cap .t{position:absolute;z-index:1;left:12px;right:12px;bottom:12px}
+.cap .t b{display:block;font-family:var(--serif);font-size:22px;line-height:1.05}
+.cap .t small{font-size:12px;color:#c3ccc7}
+.cap .tag{position:absolute;z-index:1;top:10px;left:10px;font-size:11px;font-weight:600;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);backdrop-filter:blur(6px)}
+.cap .tag.live{background:var(--glow);color:#1b1608}
+.cap .hil{position:absolute;z-index:1;top:8px;right:10px;font-size:15px;letter-spacing:2px}
+.cap.dim{opacity:.28}
+.next{max-width:960px;margin:0 auto;padding:8px 16px 48px}
+.next a{display:flex;align-items:center;gap:14px;padding:14px;border-radius:16px;text-decoration:none;background:var(--surface);border:1px solid var(--line)}
+.next .img{width:72px;height:72px;border-radius:12px;flex:none}
+.next small{color:var(--muted);font-size:12px}
+.next b{display:block;font-family:var(--serif);font-size:22px}
+
+/* Nivel 2: progreso de historias */
+.prog{position:fixed;z-index:31;left:0;right:0;top:0;display:flex;gap:3px;padding:6px 16px 0;max-width:960px;margin:0 auto}
+.prog i{flex:1;height:3px;border-radius:2px;background:rgba(255,255,255,.22);transition:background .3s}
+.prog i.on{background:var(--glow)}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.xlink{display:block;margin-top:14px;padding:10px 14px;border-radius:12px;font-size:14px;text-decoration:none;
+  background:rgba(140,196,175,.14);border:1px solid rgba(140,196,175,.35);color:var(--fg)}
+
+/* Nivel 3: hoja para profundizar */
+.scrim{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .3s}
+.sheet{position:fixed;z-index:41;left:0;right:0;bottom:0;max-width:640px;margin:0 auto;max-height:78dvh;overflow-y:auto;
+  background:var(--surface);border:1px solid var(--line);border-radius:22px 22px 0 0;padding:10px 22px calc(28px + env(safe-area-inset-bottom));
+  transform:translateY(105%);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.open .scrim{opacity:1;pointer-events:auto}
+.open .sheet{transform:none}
+.grab{width:40px;height:4px;border-radius:2px;background:var(--line);margin:4px auto 16px}
+.sheet h3{font-family:var(--serif);font-size:32px;line-height:1.05;margin:6px 0 12px}
+.sheet p{font-size:16px;line-height:1.6;color:#cfd8d3;margin-bottom:12px}
+
+.soon{max-width:640px;margin:0 auto}
+.maplink{margin-left:auto;flex:none;padding:7px 12px;border-radius:999px;font-size:13px;font-weight:600;text-decoration:none;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16)}
+
+/* Vista de mapa con línea de tiempo */
+.mapview{overflow:hidden;display:flex;flex-direction:column;padding-top:60px;background:#0b110f}
+#mapStage{position:relative;flex:1;min-height:0;touch-action:none;overflow:hidden}
+#mapSvg{width:100%;height:100%;display:block;cursor:grab}
+.ocean{fill:#0f1d19}
+.land{fill:#26352f;stroke:#3a4d45;stroke-width:.6;vector-effect:non-scaling-stroke}
+.grat{fill:none;stroke:rgba(255,255,255,.05);vector-effect:non-scaling-stroke}
+.capdot{stroke:#0b110f;stroke-width:1.5;cursor:pointer;vector-effect:non-scaling-stroke;transition:opacity .3s}
+.stdot{fill:var(--glow);stroke:#0b110f;stroke-width:1;vector-effect:non-scaling-stroke;pointer-events:none}
+/* Mapa + columna de sucesos de la época: cada suceso es un punto numerado y una píldora grande con el mismo número */
+.mapMain{flex:1;min-height:0;display:flex}
+.mapMain #mapStage{flex:1;min-width:0} /* min-width:0: sin esto el SVG ensancha el mapa y empuja la columna fuera de la pantalla */
+/* Etiquetas sobre el mapa: título corto de cada suceso (con miniatura) y nombre de cada capítulo activo */
+#mapLabels{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+#mapLines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+#mapLines line{stroke:rgba(240,200,110,.5);stroke-width:1}
+.lbl{position:absolute;left:0;top:0;display:flex;align-items:center;gap:5px;white-space:nowrap;pointer-events:auto;text-decoration:none;
+  color:var(--fg);border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.5);animation:pop .25s ease}
+.lbl.ev{background:rgba(18,26,23,.95);border:1px solid rgba(240,200,110,.45);padding:2px 10px 2px 2px;font-size:12px}
+.lbl.ev .img{width:24px;height:24px;border-radius:50%;flex:none}
+.lbl.ev b{color:var(--glow);font-size:11px}
+.lbl.lcap{background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.14);padding:3px 9px;font-size:11px;font-weight:600;color:#e3e9e6}
+.lbl.lcap i{width:7px;height:7px;border-radius:50%;flex:none}
+.lbl:hover,.lbl.on{border-color:var(--glow);background:#2b2513;z-index:3}
+.evcol{width:380px;flex:none;display:flex;flex-direction:column;border-left:1px solid var(--line);background:#0e1513;min-height:0}
+.evhead{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.evhead>div:first-child{flex:1;min-width:0}
+.evhead b{display:block;font-family:var(--serif);font-size:22px;line-height:1.1}
+.evhead small{font-size:12px;color:var(--muted)}
+.seg{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.seg button{padding:6px 12px;font-size:12.5px}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);font-weight:600}
+.evlist{flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:12px;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.2) transparent}
+.evc{position:relative;flex:none;display:block;border-radius:16px;overflow:hidden;text-decoration:none;color:var(--fg);
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);transition:border-color .2s,transform .2s}
+.evc>.img{height:150px}
+.evc .num{position:absolute;top:10px;left:10px;min-width:28px;height:28px;padding:0 7px;border-radius:999px;display:grid;place-items:center;
+  font-size:13px;font-weight:700;background:var(--glow);color:#1b1608;box-shadow:0 2px 8px rgba(0,0,0,.5)}
+.evc .tx{padding:12px 14px 14px}
+.evc small{display:block;font-size:12px;color:var(--glow);font-weight:600}
+.evc b{display:block;font-family:var(--serif);font-size:22px;line-height:1.1;margin:4px 0 6px}
+.evc p{font-size:13.5px;line-height:1.5;color:#cdd6d1;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.evc em{display:block;font-style:normal;font-size:12.5px;color:var(--muted);margin-top:8px}
+.evc em span{color:var(--accent);font-weight:600}
+.evc:hover,.evc.on{border-color:var(--glow)}
+.evvacio{color:var(--muted);font-size:14px;line-height:1.5;padding:8px 4px}
+/* Resumen global de la época, arriba de la columna */
+.evres{flex:none;border-radius:16px;padding:14px 16px;background:linear-gradient(160deg,rgba(240,200,110,.10),rgba(255,255,255,.03));
+  border:1px solid rgba(240,200,110,.25)}
+.evres h4{font-size:11.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--glow);margin-bottom:6px}
+.evres>p{font-size:14px;line-height:1.5;color:#dfe6e2;margin-bottom:8px}
+.evres>p.narr{font-family:var(--serif);font-size:17.5px;line-height:1.5;color:#eef2ef;margin-bottom:10px}
+.evres>p.cifras{font-size:12.5px;color:var(--muted)}
+.evres h4.sub{margin-top:14px;padding-top:12px;border-top:1px solid rgba(240,200,110,.18)}
+.evres .reg{margin-top:10px}
+.evres .reg b{display:block;font-size:12.5px;color:var(--fg);margin-bottom:3px}
+.evres .reg p{font-size:13px;line-height:1.5;color:#c6d0cb}
+.evres .reg a{color:var(--fg);font-weight:600;text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.35)}
+.evres .reg a:hover{color:var(--glow)}
+.evdot circle{fill:var(--glow);stroke:#0b110f;cursor:pointer;vector-effect:non-scaling-stroke;stroke-width:1.5}
+.evdot text{fill:#1b1608;font-weight:700;text-anchor:middle;dominant-baseline:central;pointer-events:none;font-family:var(--ui)}
+.evdot.on circle{fill:#fff;stroke:var(--glow);stroke-width:3}
+@media (max-width:760px){
+  .mapMain{flex-direction:column}
+  .mapMain #mapStage{min-height:190px}
+  /* alto fijo: así el resumen y las píldoras nunca empujan el mapa fuera de la pantalla */
+  .evcol{width:auto;border-left:0;border-top:1px solid var(--line);flex:none;height:min(340px,46%)}
+  .evlist{min-height:0}
+  .evhead{padding:8px 12px}.evhead b{font-size:18px}
+  .maphint{display:none}
+  .evlist{flex-direction:row;overflow-x:auto;overflow-y:hidden;padding:10px 12px;scroll-snap-type:x mandatory}
+  .evc{width:78vw;max-width:300px;scroll-snap-align:start}
+  .evc>.img{height:96px}.evc b{font-size:18px}.evc p{-webkit-line-clamp:3;font-size:13px}
+  .evvacio{white-space:normal}
+  .evres{width:84vw;max-width:340px;overflow-y:auto;scroll-snap-align:start}
+}
+@keyframes pop{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+.zoombtns{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px;z-index:2}
+.zoombtns button{width:36px;height:36px;border-radius:50%;background:rgba(18,26,23,.9);border:1px solid var(--line);font-size:18px}
+.maphint{position:absolute;left:12px;bottom:10px;font-size:12px;color:var(--muted);background:rgba(0,0,0,.45);padding:4px 10px;border-radius:999px;pointer-events:none}
+.mapPanel{padding:10px 16px calc(12px + env(safe-area-inset-bottom));background:var(--surface);border-top:1px solid var(--line)}
+.yearRow{display:flex;align-items:center;gap:12px;max-width:960px;margin:0 auto}
+#play{width:44px;height:44px;flex:none;border-radius:50%;background:var(--accent);color:var(--on-accent);font-size:16px}
+.year{font-family:var(--serif);font-size:30px;font-weight:700;line-height:1;min-width:130px}
+.eraName{color:var(--muted);font-size:13px;line-height:1.3}
+.timeline{max-width:960px;margin:0 auto}
+.timeline input{width:100%;accent-color:var(--glow);margin:10px 0 2px}
+.ticks{position:relative;height:14px;font-size:10.5px;color:var(--muted)}
+.ticks span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.activos{display:flex;gap:6px;overflow-x:auto;margin:10px auto 0;max-width:960px;scrollbar-width:none}
+.activos::-webkit-scrollbar{display:none}
+.activos a{flex:none;font-size:12px;padding:5px 10px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid var(--line);
+  text-decoration:none;display:flex;align-items:center;gap:6px}
+.activos i{width:8px;height:8px;border-radius:50%;flex:none}
+.activos .lbl{flex:none;font-size:11px;color:var(--muted);align-self:center;text-transform:uppercase;letter-spacing:1px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="bar" id="bar"></header>
+<main class="view" id="view"></main>
+<nav class="dots" id="dots" aria-label="Eras"></nav>
+<div id="deep"><div class="scrim" data-close></div><div class="sheet" role="dialog" aria-modal="true"><div class="grab"></div><div id="deepBody"></div></div></div>
+
+<script>
+/* ============ DATOS ============
+   Era -> capítulos -> historias -> profundizar.
+   "w" = título del artículo de Wikipedia (en inglés) del que se toma la imagen.
+   "h" = hilos temáticos que atraviesan las eras. */
+const HILOS = {
+  biblia: {i:'📖', n:'Biblia'},
+  fe:     {i:'🕊️', n:'Religiones'},
+  guerra: {i:'⚔️', n:'Guerras'},
+  ciencia:{i:'🔬', n:'Ciencia'},
+  arte:   {i:'🎨', n:'Arte'},
+};
+
+/* Eras y capítulos: vienen de estructura.json (la misma fuente que usa generar_historia.py). */
+let ERAS = [];
+const slug = s => s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+
+/* Historias (nivel 2). En el prototipo solo Roma está completo. */
+const STORIES = {
+ roma: [
+  {t:'Una ciudad fundada por dos hermanos', y:'753 a.C.', w:'Capitoline Wolf',
+   x:'Según la leyenda, Rómulo y Remo fueron abandonados en el río Tíber y criados por una loba. Rómulo mató a su hermano y fundó la ciudad que lleva su nombre. Los arqueólogos creen que Roma empezó, en realidad, como un puñado de aldeas sobre siete colinas.'},
+  {t:'Roma echa a sus reyes', y:'509 a.C.', w:'Roman Senate',
+   x:'Los romanos expulsaron a su último rey y crearon la República: dos cónsules elegidos cada año y un Senado de familias poderosas. La palabra «rey» quedó mal vista durante siglos.',
+   deep:{t:'Cómo funcionaba la República', p:[
+     'Cada año se elegían dos cónsules, y cada uno podía vetar al otro. Así nadie acumulaba demasiado poder.',
+     'El Senado, formado por antiguos magistrados, aconsejaba y controlaba el dinero. Los tribunos de la plebe defendían a la gente común y podían bloquear leyes.',
+     'En una emergencia se nombraba un dictador, pero solo por seis meses.',
+     'Este equilibrio duró casi 500 años, hasta que generales como Mario, Sila y César lo rompieron con ejércitos más leales a ellos que a Roma.']}},
+  {t:'Aníbal cruza los Alpes con elefantes', y:'218 a.C.', w:'Hannibal\'s crossing of the Alps',
+   x:'El general cartaginés Aníbal cruzó los Alpes con un ejército y unos 37 elefantes, y aplastó a los romanos en Cannas. Aun así Roma no se rindió: años después, Escipión lo derrotó en Zama y Roma pasó a dominar el Mediterráneo occidental.',
+   deep:{t:'Las guerras púnicas', p:[
+     'Roma y Cartago pelearon tres guerras entre el 264 y el 146 a.C.',
+     'La primera fue por Sicilia y obligó a Roma, que era una potencia de tierra, a construir su primera gran flota.',
+     'La segunda fue la de Aníbal: 15 años con un enemigo dentro de Italia.',
+     'La tercera terminó con Cartago destruida en el 146 a.C. Ese mismo año Roma también arrasó Corinto, en Grecia.']}},
+  {t:'César cruza el Rubicón', y:'49 a.C.', w:'Julius Caesar',
+   x:'Al cruzar con su ejército el río que marcaba el límite de su provincia, Julio César desafió al Senado y empezó una guerra civil. La ganó, se hizo dictador de por vida y fue asesinado por senadores en los idus de marzo del 44 a.C.'},
+  {t:'Augusto, el primer emperador', y:'27 a.C.', w:'Augustus of Prima Porta',
+   x:'Octavio, sobrino nieto de César, ganó la última guerra civil y pasó a llamarse Augusto. Mantuvo las apariencias de la República, pero lo controlaba todo. Empezaron dos siglos de relativa paz: la Pax Romana.',
+   link:{h:'biblia', txt:'Bajo Augusto nace Jesús en Belén (Lucas 2:1)', to:'#/era/clasico/cap/jesus'}},
+  {t:'Los ingenieros del mundo antiguo', y:'siglos I–II', w:'Pont du Gard',
+   x:'Unos 80.000 km de calzadas pavimentadas, acueductos que llevaban agua a un millón de personas y un hormigón que sigue en pie 2.000 años después. La cúpula del Panteón sigue siendo la mayor del mundo hecha de hormigón sin armar.'},
+  {t:'Pompeya, congelada en el tiempo', y:'79 d.C.', w:'Pompeii',
+   x:'El Vesubio entró en erupción y sepultó la ciudad bajo la ceniza. Fue una tragedia, pero también una cápsula del tiempo: panaderías, grafitis y casas enteras nos muestran cómo vivía la gente corriente.'},
+  {t:'Constantino y la cruz', y:'312 d.C.', w:'Constantine the Great',
+   x:'Tras siglos de persecuciones, el emperador Constantino legalizó el cristianismo con el Edicto de Milán (313). Antes de que terminara el siglo, Teodosio lo convirtió en la religión oficial del Imperio.',
+   link:{h:'biblia', txt:'Sigue el hilo: la Iglesia primitiva', to:'#/era/clasico/cap/iglesia'}},
+  {t:'La caída de Roma', y:'476 d.C.', w:'Sack of Rome (410)',
+   x:'Crisis económicas, guerras civiles y la presión de pueblos germánicos debilitaron el Imperio de Occidente. En 476 se depuso al último emperador, un muchacho llamado Rómulo Augústulo. La mitad oriental, Bizancio, duró mil años más.',
+   link:{h:null, txt:'Sigue en la Edad Media: Bizancio →', to:'#/era/media/cap/bizancio'}},
+ ],
+ egipto: [
+  {t:'El regalo del Nilo', y:'antes del 3100 a.C.', w:'Nile',
+   x:'Egipto es casi todo desierto, salvo una franja verde a lo largo del Nilo. Cada verano el río crecía, inundaba los campos y, al bajar, dejaba un barro negro muy fértil. Los egipcios llamaban a su país Kemet, «la tierra negra». Sin esa crecida no habría habido ni faraones ni pirámides.'},
+  {t:'Narmer une las Dos Tierras', y:'c. 3100 a.C.', w:'Narmer Palette',
+   x:'Al principio había dos reinos: el Alto Egipto, en el sur, y el Bajo Egipto, en el delta del norte. Hacia el 3100 a.C. un rey del sur los unió. Desde entonces el faraón fue «señor de las Dos Tierras», y ese reino unido duró casi 3.000 años.',
+   deep:{t:'La Paleta de Narmer', p:[
+     'Es una losa de piedra tallada de unos 64 cm que apareció en 1898 en Hieracómpolis, en el sur de Egipto. Hoy está en el Museo Egipcio de El Cairo.',
+     'En una cara, el rey Narmer lleva la corona blanca del Alto Egipto y golpea a un enemigo. En la otra lleva la corona roja del Bajo Egipto.',
+     'Por eso se suele leer como la imagen de la unificación, aunque los historiadores creen que fue un proceso más largo que una sola batalla.',
+     'Es uno de los primeros objetos de la historia con el nombre de un rey escrito en jeroglíficos.']}},
+  {t:'Los jeroglíficos', y:'c. 3200 a.C.', w:'Egyptian hieroglyphs',
+   x:'Los egipcios inventaron una escritura con cientos de signos: unos representan sonidos y otros, ideas. Durante 3.000 años se tallaron en templos y tumbas. Cuando la última persona capaz de leerlos murió, quedaron mudos durante 1.400 años.',
+   deep:{t:'La piedra de Rosetta', p:[
+     'En 1799 unos soldados franceses encontraron cerca de Rashid (Rosetta), en el delta del Nilo, una piedra con un mismo decreto del año 196 a.C. escrito tres veces.',
+     'Las tres versiones estaban en jeroglíficos, en demótico (la escritura egipcia de uso diario) y en griego antiguo, que sí se sabía leer.',
+     'Comparando los nombres de reyes en las tres versiones, Jean-François Champollion descifró los jeroglíficos en 1822.',
+     'Desde entonces podemos leer lo que los propios egipcios escribieron. Hoy la piedra está en el Museo Británico.']}},
+  {t:'La Gran Pirámide', y:'c. 2560 a.C.', w:'Great Pyramid of Giza',
+   x:'Se construyó como tumba del faraón Keops, con unos 2,3 millones de bloques de piedra, y medía 146 metros. Fue la construcción humana más alta del mundo durante unos 3.800 años. Es la única de las siete maravillas del mundo antiguo que sigue en pie.',
+   deep:{t:'¿Quién la construyó?', p:[
+     'No fueron esclavos, como se cuenta a menudo. Junto a las pirámides se encontró el pueblo de los obreros, con panaderías, cervecerías y sus propias tumbas.',
+     'Eran equipos de trabajadores pagados y bien alimentados, y probablemente se sumaban campesinos durante la inundación, cuando no se podía trabajar el campo.',
+     'En 2013 apareció en un puerto del mar Rojo el Diario de Merer, los papiros escritos más antiguos que se conocen. Es el registro de un capataz que transportaba en barco bloques de caliza para la Gran Pirámide.']}},
+  {t:'Vivir para siempre', y:'2600–30 a.C.', w:'Papyrus of Ani',
+   x:'Los egipcios creían que la vida seguía después de la muerte si se conservaba el cuerpo. La momificación podía durar unos 70 días. Después, según el Libro de los Muertos, el corazón del difunto se pesaba en una balanza contra la pluma de Maat, la diosa de la verdad y la justicia.'},
+  {t:'Hatshepsut, la mujer faraón', y:'1479–1458 a.C.', w:'Mortuary Temple of Hatshepsut',
+   x:'Hatshepsut gobernó como faraón unos 20 años, en una época de paz y riqueza. Mandó una gran expedición al país de Punt y construyó un templo espectacular en Deir el-Bahari. En algunas estatuas aparece con la barba postiza de los faraones. Tras su muerte, muchas de sus imágenes fueron borradas.'},
+  {t:'Akenatón cambia de dios', y:'c. 1350 a.C.', w:'Nefertiti Bust',
+   x:'El faraón Akenatón dejó de lado a los dioses tradicionales y puso en el centro a uno solo: Atón, el disco del sol. Fundó una capital nueva, Amarna, junto a su esposa Nefertiti. Fue algo casi único en el mundo antiguo, pero no duró: después de su muerte todo volvió a ser como antes.',
+   link:{h:'fe', txt:'¿Un primer paso hacia un solo Dios? Sigue con Abraham', to:'#/era/civilizaciones/cap/abraham-y-los-patriarcas'}},
+  {t:'Tutankamón, el rey niño', y:'c. 1332–1323 a.C.', w:'Mask of Tutankhamun',
+   x:'Fue un rey de poca importancia: subió al trono hacia los 9 años y murió con unos 19. Pero su tumba es la única de un faraón que llegó casi intacta hasta nosotros. Cuando Howard Carter la abrió en 1922 encontró más de 5.000 objetos, entre ellos su máscara de oro.'},
+  {t:'Ramsés II y el primer tratado de paz', y:'1274 a.C.', w:'Battle of Kadesh',
+   x:'Ramsés II reinó 66 años y llenó Egipto de estatuas suyas, como las de Abu Simbel. En Qadesh, en la actual Siria, luchó contra los hititas en una de las mayores batallas de carros de la historia. Él la presentó como una gran victoria, pero acabó en tablas.',
+   link:{h:'biblia', txt:'¿Fue el faraón del Éxodo? Sigue el hilo', to:'#/era/civilizaciones/cap/el-exodo'},
+   deep:{t:'El primer tratado de paz conocido', p:[
+     'Unos 15 años después de Qadesh, Egipto y los hititas firmaron la paz (c. 1259 a.C.).',
+     'Se conservan las dos versiones: la egipcia, grabada en templos de Karnak y Tebas, y la hitita, en tablillas de arcilla halladas en Hattusa, en Turquía.',
+     'Incluye una alianza mutua contra enemigos y la devolución de refugiados. Una copia está expuesta en la sede de la ONU en Nueva York.',
+     'Muchas películas presentan a Ramsés como el faraón del Éxodo, pero ningún texto egipcio lo confirma y los historiadores no se ponen de acuerdo.']}},
+  {t:'Cleopatra, la última reina', y:'51–30 a.C.', w:'Cleopatra',
+   x:'Cleopatra VII descendía de un general macedonio de Alejandro Magno, pero fue la única de su dinastía que aprendió egipcio. Se alió primero con Julio César y después con Marco Antonio. Cuando Octavio los derrotó en Accio, ella se quitó la vida, y Egipto pasó a ser una provincia de Roma.',
+   link:{h:null, txt:'Sigue en Roma →', to:'#/era/clasico/cap/roma'}},
+ ],
+ exilio: [
+  {t:'Un reino pequeño entre gigantes', y:'722–600 a.C.', w:'Lachish relief',
+   x:'Tras la muerte de Salomón, el reino se partió en dos: Israel al norte y Judá al sur, con Jerusalén como capital. En 722 a.C. Asiria arrasó Israel y deportó a su gente. Judá sobrevivió pagando tributo, atrapado entre Egipto y los imperios de Mesopotamia.',
+   link:{h:'biblia', txt:'Antes: David y Salomón', to:'#/era/imperios/cap/david-y-salomon'}},
+  {t:'Nabucodonosor llega a Jerusalén', y:'597 a.C.', w:'Nebuchadnezzar II',
+   x:'Babilonia venció a Egipto en Carquemis (605 a.C.) y se quedó con la región. Cuando Judá dejó de pagar, Nabucodonosor II sitió Jerusalén y se llevó al rey Joaquín junto con miles de nobles y artesanos. Entre ellos iba un joven sacerdote: Ezequiel.',
+   deep:{t:'Lo que cuentan las tablillas babilónicas', p:[
+     'Esta historia no está solo en la Biblia. La Crónica babilónica, una tablilla que hoy está en el Museo Británico, registra que Nabucodonosor tomó «la ciudad de Judá» a comienzos del 597 a.C. y puso en el trono a un rey de su elección.',
+     'En el palacio de Babilonia aparecieron además unas tablillas con las raciones de aceite que se daban a prisioneros extranjeros. Una de ellas menciona a «Ya\'ukin, rey de la tierra de Yahudu»: el rey Joaquín.',
+     'Encaja con el final del segundo libro de los Reyes (25:27-30), que cuenta que Joaquín comía cada día a la mesa del rey de Babilonia.']}},
+  {t:'Jeremías, el profeta incómodo', y:'627–586 a.C.', w:'Jeremiah',
+   x:'Jeremías advertía que rebelarse contra Babilonia sería una catástrofe y que el exilio iba a ser largo. Lo acusaron de traidor y lo echaron a una cisterna llena de barro. A los deportados les escribió algo inesperado: construyan casas, planten huertos y busquen el bien de la ciudad donde viven (Jeremías 29).'},
+  {t:'La caída de Jerusalén', y:'587/586 a.C.', w:'Siege of Jerusalem (587 BC)',
+   x:'Sedequías, el rey que había puesto Babilonia, también se rebeló. Tras un asedio de año y medio, las murallas cayeron. El Templo de Salomón fue incendiado, la ciudad destruida y otra oleada de habitantes fue llevada a Babilonia. El libro de las Lamentaciones recoge el dolor de esos días.',
+   deep:{t:'Las huellas que quedaron', p:[
+     'En la Ciudad de David, en Jerusalén, los arqueólogos han encontrado una capa de ceniza de esa época, con casas quemadas, puntas de flecha y vasijas rotas.',
+     'En Laquis, una fortaleza al suroeste de Jerusalén, aparecieron las «cartas de Laquis»: mensajes escritos con tinta sobre trozos de cerámica durante el avance babilónico.',
+     'En una de ellas, un oficial escribe que siguen atentos a las señales de fuego de Laquis porque ya no ven las de Azeca. Jeremías 34:7 menciona precisamente esas dos ciudades como las últimas que resistían.']}},
+  {t:'Junto a los ríos de Babilonia', y:'586–539 a.C.', w:'Psalm 137',
+   x:'Los deportados no vivían encadenados: formaban comunidades junto a los canales, cultivaban la tierra y algunos prosperaron. Pero, lejos del Templo, había una pregunta difícil: ¿cómo cantar a Dios en tierra extranjera? Así lo expresa el Salmo 137.',
+   deep:{t:'Un pueblo llamado «Judá»', p:[
+     'Hace unas décadas salieron a la luz unas 200 tablillas de un pueblo cercano a Babilonia llamado Al-Yahudu, que significa «la ciudad de Judá».',
+     'Son contratos, ventas y préstamos fechados entre el 572 y el 477 a.C. Muchas personas llevan nombres con «Yahu» (como Natanyahu), lo que indica familias judías.',
+     'Gracias a ellas se puede seguir a algunas familias durante cuatro generaciones: se ve que echaron raíces, pagaban impuestos y hacían negocios con sus vecinos babilonios.']}},
+  {t:'El exilio cambia la fe', y:'siglo VI a.C.', w:'Torah',
+   x:'Sin Templo, sin rey y sin tierra, la identidad se sostuvo en otras cosas: el sábado, la circuncisión, las normas sobre los alimentos y, sobre todo, los textos. Muchos historiadores creen que durante el exilio se reunió y editó buena parte de lo que hoy es la Biblia hebrea.'},
+  {t:'Daniel en la corte del rey', y:'siglo VI a.C.', w:'Belshazzar\'s Feast (Rembrandt)',
+   x:'El libro de Daniel cuenta cómo unos jóvenes judíos sirvieron en la corte de Babilonia sin renunciar a su fe: el horno de fuego, el foso de los leones y la escritura en la pared durante el banquete de Belsasar. Muchos especialistas creen que el libro se escribió mucho después, en el siglo II a.C., para dar ánimo a los judíos perseguidos.'},
+  {t:'Ciro abre las puertas', y:'539 a.C.', w:'Cyrus Cylinder',
+   x:'El persa Ciro el Grande tomó Babilonia casi sin luchar. Su política fue dejar volver a los pueblos deportados con sus dioses. Para los judíos fue una liberación: el libro de Isaías llama a Ciro «ungido» de Dios (Isaías 45:1).',
+   link:{h:null, txt:'Sigue con el Imperio persa →', to:'#/era/imperios/cap/el-imperio-persa'},
+   deep:{t:'El Cilindro de Ciro', p:[
+     'Es un cilindro de barro con escritura cuneiforme encontrado en Babilonia en 1879. Hoy está en el Museo Británico.',
+     'Es propaganda: presenta a Ciro como el elegido de Marduk, el dios de Babilonia, para salvar la ciudad de un mal rey.',
+     'Dice que Ciro devolvió a varios pueblos sus dioses y les dejó volver a sus tierras. No menciona a los judíos, pero describe la misma política que cuenta el libro de Esdras.',
+     'A veces se le llama «la primera declaración de derechos humanos». Los historiadores lo consideran una exageración, pero sí muestra un modo de gobernar distinto al de Asiria y Babilonia.']}},
+  {t:'El regreso y el Segundo Templo', y:'538–515 a.C.', w:'Second Temple',
+   x:'Solo una parte de los exiliados volvió. Muchos se quedaron, y en Babilonia (el actual Irak) hubo una comunidad judía durante unos 2.500 años. Los que regresaron reconstruyeron el Templo, terminado en el 515 a.C. Después, Esdras y Nehemías restauraron la ley y las murallas. Este Segundo Templo, ampliado por Herodes, es el que conoció Jesús.',
+   link:{h:'biblia', txt:'Sigue el hilo: Jesús de Nazaret', to:'#/era/clasico/cap/jesus'}},
+ ],
+};
+
+/* ============ IMÁGENES ============
+   Una sola petición a Wikipedia por pantalla (hasta 50 títulos) para la imagen principal de cada artículo.
+   Se guarda en localStorage para no volver a pedirlas. Si falla, se queda el degradado de color. */
+const IMG_KEY = 'cronica-img-v1';
+let imgCache = {};
+try { imgCache = JSON.parse(localStorage.getItem(IMG_KEY) || '{}'); } catch { imgCache = {}; }
+
+async function fetchImages(titles){
+  const need = [...new Set(titles)].filter(t => !(t in imgCache));
+  for (let i = 0; i < need.length; i += 50) {
+    const batch = need.slice(i, i + 50);
+    const url = 'https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1'
+              + '&prop=pageimages&piprop=thumbnail&pithumbsize=1100&titles=' + encodeURIComponent(batch.join('|'));
+    try {
+      const r = await fetch(url);
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      const q = (await r.json()).query || {};
+      // Sigue normalizaciones y redirecciones para saber qué página final corresponde a cada título pedido
+      const final = Object.fromEntries(batch.map(t => [t, t]));
+      for (const step of [q.normalized || [], q.redirects || []])
+        for (const {from, to} of step) for (const k in final) if (final[k] === from) final[k] = to;
+      const byTitle = {};
+      Object.values(q.pages || {}).forEach(p => { if (p.thumbnail) byTitle[p.title] = p.thumbnail.source; });
+      batch.forEach(t => imgCache[t] = byTitle[final[t]] || null);
+    } catch (err) {
+      console.warn('No se pudieron cargar imágenes:', err); // sin caché: se reintenta en la próxima vista
+    }
+  }
+  try { localStorage.setItem(IMG_KEY, JSON.stringify(imgCache)); } catch {}
+}
+
+const paintImages = root => paintEls([...root.querySelectorAll('[data-w]')]);
+async function paintEls(els){
+  await fetchImages(els.map(e => e.dataset.w));
+  els.forEach(el => {
+    const src = imgCache[el.dataset.w];
+    if (!src || el.dataset.done) return;
+    const im = new Image();
+    im.onload = () => { el.style.backgroundImage = `url("${src}")`; el.classList.add('on'); el.dataset.done = 1; };
+    im.src = src;
+  });
+}
+
+/* ============ VISTAS ============ */
+const $ = s => document.querySelector(s);
+const view = $('#view'), bar = $('#bar'), dots = $('#dots');
+const state = { hilo: null, homeIndex: 0 };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const img = (w, c, extra='') => `<div class="img ${extra}" data-w="${esc(w)}" style="--c:${c}"></div>`;
+const hiloIcons = h => h.map(k => HILOS[k]?.i || '').join('');
+const matches = c => !state.hilo || c.h.includes(state.hilo);
+let observers = [];
+let leaveMap = null; // la vista de mapa deja aquí cómo desmontarse (animación, listeners)
+const cleanup = () => { observers.forEach(o => o.disconnect()); observers = []; dots.innerHTML = ''; $('#prog')?.remove(); view.onscroll = null; bar.classList.remove('solid');
+  if (leaveMap) { leaveMap(); leaveMap = null; } };
+
+function chipsHTML(){
+  return `<div class="chips" role="group" aria-label="Hilos">
+    <button class="chip" data-hilo="" aria-pressed="${!state.hilo}">Toda la historia</button>
+    ${Object.entries(HILOS).map(([k,v]) => `<button class="chip" data-hilo="${k}" aria-pressed="${state.hilo===k}">${v.i} ${v.n}</button>`).join('')}
+  </div>`;
+}
+
+function renderBar(crumbs, withChips){
+  const left = crumbs
+    ? `<a class="back" href="${crumbs.at(-2)?.[1] || '#/'}" aria-label="Volver">‹</a>
+       <nav class="crumbs">${crumbs.map(([t,h],i)=> i < crumbs.length-1 ? `<a href="${h}">${esc(t)}</a><span>›</span>` : `<span style="color:var(--fg)">${esc(t)}</span>`).join('')}</nav>`
+    : `<a class="brand" href="#/">Crónica<small>prototipo</small></a>`;
+  const mapa = location.hash.startsWith('#/mapa') ? '' : '<a class="maplink" href="#/mapa">🗺️ Mapa</a>';
+  bar.innerHTML = `<div class="row">${left}${mapa}</div>${withChips ? `<div class="row">${chipsHTML()}</div>` : ''}`;
+}
+
+/* Nivel 0: la gran historia, una era por pantalla */
+function renderHome(){
+  renderBar(null, true);
+  view.className = 'view snap';
+  const intro = `<section class="slide" data-i="-1">${img('The School of Athens','#2E5B4E')}
+    <div class="body"><div class="kicker">La historia de la humanidad</div>
+      <h1>De las cavernas a internet, un scroll a la vez</h1>
+      <p>13 eras y 156 capítulos de todos los continentes. Abajo tienes la línea del tiempo con todas las eras; sigue deslizando para recorrerlas una a una.</p>
+      <div class="hint">Desliza hacia abajo ↓</div></div></section>`;
+  const slides = ERAS.map((e, i) => {
+    const hits = e.caps.filter(c => state.hilo && c.h.includes(state.hilo));
+    const dim = state.hilo && !hits.length;
+    const match = state.hilo
+      ? `<div class="match">${hits.length ? `${HILOS[state.hilo].i} ${hits.length} capítulo${hits.length>1?'s':''}: ${hits.map(c=>esc(c.n)).join(' · ')}` : 'Este hilo no pasa por aquí'}</div>` : '';
+    return `<section class="slide ${dim?'dim':''}" data-i="${i}">${img(e.w, e.c)}
+      <div class="body"><div class="kicker">Era ${i} · ${esc(e.y)}</div>
+        <h2>${esc(e.n)}</h2><p>${esc(e.d)}</p>
+        <div class="minis">${e.caps.slice(0,4).map(c=>`<span>${esc(c.n)}</span>`).join('')}${e.caps.length>4?`<span>+${e.caps.length-4}</span>`:''}</div>
+        <a class="btn" href="#/era/${e.id}">Explorar ${e.caps.length} capítulos →</a>${match}
+      </div></section>`;
+  }).join('');
+  // Línea del tiempo: todas las eras de un vistazo (va justo después de la portada)
+  const timeline = `<section class="slide tl" data-i="-1" aria-label="Línea del tiempo">
+    <div class="head"><div><div class="kicker">Línea del tiempo</div><h2>Toda la historia de un vistazo</h2>
+      <p>Las ${ERAS.length} eras, de la más antigua a hoy. Toca una para entrar.</p></div>
+      <div class="tlnav"><button data-tl="-1" aria-label="Eras anteriores">‹</button><button data-tl="1" aria-label="Eras siguientes">›</button></div></div>
+    <div class="track">${ERAS.map((e, i) => {
+      const dim = state.hilo && !e.caps.some(c => c.h.includes(state.hilo));
+      return `<a class="tli ${dim?'dim':''}" href="#/era/${e.id}" style="--c:${e.c}">
+        <span class="yr">${esc(e.y)}</span>${img(e.w, e.c)}
+        <div class="tx"><small>Era ${i}</small><b>${esc(e.n)}</b><p>${esc(e.d)}</p>
+          <span class="go">${e.caps.length} capítulos →</span></div></a>`;
+    }).join('')}</div></section>`;
+  view.innerHTML = intro + timeline + slides;
+  const track = view.querySelector('.track');
+  view.querySelectorAll('[data-tl]').forEach(b => b.onclick = () =>
+    track.scrollBy({left: +b.dataset.tl * track.clientWidth * .8, behavior: 'smooth'}));
+
+  // Puntos laterales + recordar en qué era estaba al volver
+  dots.innerHTML = ERAS.map((e,i)=>`<button data-go="${i}" aria-label="${esc(e.n)}" title="${esc(e.n)}"></button>`).join('');
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    const i = +en.target.dataset.i; state.homeIndex = i;
+    dots.querySelectorAll('button').forEach((b,j)=>b.classList.toggle('on', j===i));
+  }), {root: view, threshold: .6});
+  view.querySelectorAll('.slide').forEach(s => io.observe(s));
+  observers.push(io);
+  const target = view.querySelector(`.slide[data-i="${state.homeIndex}"]`);
+  if (target && state.homeIndex >= 0) view.scrollTop = target.offsetTop;
+  paintImages(view);
+}
+
+/* Nivel 1: una era y sus capítulos */
+function renderEra(eraId){
+  const i = ERAS.findIndex(e => e.id === eraId);
+  if (i < 0) return (location.hash = '#/');
+  const e = ERAS[i], nx = ERAS[i+1];
+  state.homeIndex = i;
+  renderBar([['Historia','#/'], [e.n, `#/era/${e.id}`]], true);
+  view.className = 'view';
+  // Barra opaca en cuanto el título de la era pasa por debajo
+  view.onscroll = () => bar.classList.toggle('solid', view.scrollTop > 120);
+  view.innerHTML = `
+    <section class="hero">${img(e.w, e.c)}<div class="body"><div class="kicker">Era ${i} · ${esc(e.y)}</div><h2>${esc(e.n)}</h2></div></section>
+    <div class="lead"><p>${esc(e.d)}</p></div>
+    <div class="grid">${e.caps.map(c => {
+      const n = STORIES[c.id]?.length || INDICE[c.id];
+      return `<a class="cap ${matches(c)?'':'dim'}" href="#/era/${e.id}/cap/${c.id}">${img(c.w, e.c)}
+        <span class="tag ${n?'live':''}">${n ? `${n} historias` : 'Próximamente'}</span>
+        <span class="hil">${hiloIcons(c.h)}</span>
+        <span class="t"><b>${esc(c.n)}</b><small>${esc(c.y)}</small></span></a>`;
+    }).join('')}</div>
+    ${nx ? `<div class="next"><a href="#/era/${nx.id}">${img(nx.w, nx.c)}<span><small>Siguiente era</small><b>${esc(nx.n)}</b></span></a></div>` : ''}`;
+  view.scrollTop = 0;
+  paintImages(view);
+}
+
+/* Nivel 2: historias de un capítulo, a pantalla completa */
+async function renderChapter(eraId, capId, startAt){
+  const e = ERAS.find(x => x.id === eraId), c = e?.caps.find(x => x.id === capId);
+  if (!c) return (location.hash = '#/');
+  // Capítulos generados por generar_historia.py: se cargan bajo demanda
+  if (!STORIES[c.id] && INDICE[c.id]) {
+    try { STORIES[c.id] = await loadGenerated(c.id); }
+    catch (err) { console.warn('No se pudo cargar el capítulo', c.id, err); }
+    if (location.hash.split('/')[4] !== capId) return; // el usuario ya navegó a otra parte
+  }
+  renderBar([['Historia','#/'], [e.n, `#/era/${e.id}`], [c.n, location.hash]], false);
+  view.className = 'view snap';
+  const list = STORIES[c.id] || [];
+  const caps = e.caps, ci = caps.indexOf(c), nextCap = caps[ci+1];
+  const nextHref = nextCap ? `#/era/${e.id}/cap/${nextCap.id}` : (ERAS[ERAS.indexOf(e)+1] ? `#/era/${ERAS[ERAS.indexOf(e)+1].id}` : '#/');
+  const nextName = nextCap ? nextCap.n : (ERAS[ERAS.indexOf(e)+1]?.n || 'Volver al inicio');
+
+  if (!list.length) {
+    view.innerHTML = `<section class="slide">${img(c.w, e.c)}<div class="body soon">
+      <div class="kicker">${esc(e.n)} · ${esc(c.y)}</div><h2>${esc(c.n)}</h2>
+      <p>Este capítulo todavía no tiene historias. Están completos Egipto, el exilio en Babilonia, Roma y toda la Edad Media.</p>
+      <div class="actions"><a class="btn" href="#/era/media">Ver la Edad Media →</a><a class="btn" href="#/era/clasico/cap/roma">Ver Roma →</a><a class="btn ghost" href="#/era/${e.id}">Volver a la era</a></div>
+    </div></section>`;
+    view.scrollTop = 0; paintImages(view); return;
+  }
+
+  view.innerHTML = list.map((s, k) => `<section class="slide" data-k="${k}">${img(s.w, e.c)}<span class="credit">Imagen: Wikipedia</span>
+      <div class="body"><div class="kicker">${esc(c.n)} · ${k+1}/${list.length} · ${esc(s.y)}</div>
+        <h2>${esc(s.t)}</h2><p>${esc(s.x)}</p>
+        ${s.link ? `<a class="xlink" href="${s.link.to}">${s.link.h ? HILOS[s.link.h].i+' ' : ''}${esc(s.link.txt)}</a>` : ''}
+        ${s.deep ? `<div class="actions"><button class="btn" data-deep="${k}">Profundizar ↑</button></div>` : ''}
+      </div></section>`).join('')
+    + `<section class="slide" data-k="${list.length}">${img(nextCap?.w || c.w, e.c)}
+      <div class="body"><div class="kicker">Capítulo terminado ✓</div><h2>Has recorrido ${esc(c.n)}</h2>
+        <p>${list.length} historias leídas. Puedes seguir con el siguiente capítulo o volver al mapa de la era.</p>
+        <div class="actions"><a class="btn" href="${nextHref}">Siguiente: ${esc(nextName)} →</a><a class="btn ghost" href="#/era/${e.id}">Mapa de la era</a></div>
+      </div></section>`;
+
+  // Barra de progreso tipo "stories"
+  const prog = document.createElement('div');
+  prog.id = 'prog'; prog.className = 'prog';
+  prog.innerHTML = list.map(() => '<i></i>').join('');
+  document.body.appendChild(prog);
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    const k = +en.target.dataset.k;
+    prog.querySelectorAll('i').forEach((b,j)=>b.classList.toggle('on', j<=k));
+  }), {root: view, threshold: .6});
+  view.querySelectorAll('.slide').forEach(s => io.observe(s));
+  observers.push(io);
+  // Desde el mapa se puede entrar directamente en una historia concreta (#/era/x/cap/y/k)
+  const target = startAt != null ? view.querySelector(`.slide[data-k="${+startAt}"]`) : null;
+  view.scrollTop = target ? target.offsetTop : 0;
+  paintImages(view);
+}
+
+/* ============ MAPA DEL MUNDO CON LÍNEA DE TIEMPO ============
+   La barra va del 10.000 a.C. a hoy con escala por tramos (más espacio para épocas con más
+   acontecimientos). Puntos = capítulos activos ese año; tarjetas = historias cercanas a ese año. */
+const LIBS = {
+  d3: 'https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js',
+  topojson: 'https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js',
+  tierra: 'https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/land-110m.json',
+};
+const loadScript = src => new Promise((ok, fail) => {
+  if (document.querySelector(`script[src="${src}"]`)) return ok();
+  const s = document.createElement('script');
+  s.src = src; s.onload = ok; s.onerror = () => fail(new Error('No se pudo cargar ' + src));
+  document.head.appendChild(s);
+});
+let mapData = null; // {tierra, eventos} se carga una vez
+const mapState = { pos: null, playing: false, modo: 'siglo' };
+const romano = n => [[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']]
+  .reduce((s, [v, r]) => { while (n >= v) { s += r; n -= v; } return s; }, '');
+// Región del mundo a partir de las coordenadas, para agrupar el resumen global
+function regiónDe({lat, lon}){
+  if (lon < -140 || lon > 150 || (lat < -10 && lon > 110)) return 'Oceanía y el Pacífico';
+  if (lon < -30) return 'América';
+  if (lon >= 34 && lon <= 63 && lat >= 12 && lat <= 42) return 'Oriente Medio';
+  if (lon >= -30 && lon < 45 && lat >= 30) return 'Europa y el Mediterráneo';
+  if (lon >= -30 && lon < 52) return 'África';
+  if (lon < 95 && lat < 37) return 'Asia del Sur';
+  if (lon < 95) return 'Asia Central y las estepas';
+  return 'Asia Oriental';
+}
+const ORDEN_REGIONES = ['América', 'Europa y el Mediterráneo', 'África', 'Oriente Medio', 'Asia Central y las estepas', 'Asia del Sur', 'Asia Oriental', 'Oceanía y el Pacífico'];
+// Resumen global de la época: qué capítulos están en marcha en cada región, con su frase de presentación
+// Resúmenes narrados escritos a mano para cada siglo/tramo y cada era (resumenes.json). Si falta, se usa el automático.
+let RESUMENES = {periodos: {}, eras: {}};
+function resumenGlobal(ép, caps, nSucesos){
+  const narrado = ép.modo === 'era' ? RESUMENES.eras[ép.id] : RESUMENES.periodos[`${ép.ini}:${ép.fin}`];
+  if (!caps.length && !narrado) return '';
+  const porRegión = {};
+  caps.forEach(c => (porRegión[regiónDe(c.cap.lugar)] ||= []).push(c));
+  const regiones = ORDEN_REGIONES.filter(r => porRegión[r]);
+  const lista = regiones.length > 1 ? regiones.slice(0, -1).join(', ') + ' y ' + regiones.at(-1) : regiones[0];
+  const cifras = caps.length
+    ? `En ${ép.modo === 'era' ? 'esta era' : 'este periodo'} hay ${caps.length} capítulo${caps.length > 1 ? 's' : ''} en marcha a la vez en ${lista}${nSucesos ? `, con ${nSucesos} suceso${nSucesos > 1 ? 's' : ''} señalado${nSucesos > 1 ? 's' : ''} en el mapa` : ''}.` : '';
+  return `<section class="evres"><h4>Qué pasa en el mundo</h4>
+    ${narrado ? `<p class="narr">${esc(narrado)}</p>` : ''}
+    ${cifras ? `<p class="${narrado ? 'cifras' : ''}">${cifras}</p>` : ''}
+    ${regiones.length ? `<h4 class="sub">Por regiones</h4>` : ''}
+    ${regiones.map(r => `<div class="reg"><b>${r}</b><p>${porRegión[r].sort((a, b) => a.desde - b.desde).map(c =>
+      `<a href="#/era/${c.era.id}/cap/${c.cap.id}">${esc(c.cap.n)}</a>: ${esc(c.cap.brief)}`).join(' ')}</p></div>`).join('')}
+  </section>`;
+}
+// La «época» que se muestra en el mapa: el siglo del año elegido (o un tramo más largo en la prehistoria), o la era entera
+function épocaDe(t, modo){
+  if (modo === 'era') {
+    const e = [...ERAS].reverse().find(e => e.desde <= t && t <= e.hasta);
+    if (e) return {ini: e.desde, fin: e.hasta + 1, nombre: e.n, clave: 'era:' + e.id, id: e.id, modo};
+  }
+  const paso = t >= -1000 ? 100 : t >= -3000 ? 500 : 1000;
+  const ini = Math.floor(t / paso) * paso, fin = ini + paso;
+  const nombre = paso === 100
+    ? (ini >= 0 ? `Siglo ${romano(ini / 100 + 1)}` : `Siglo ${romano(-ini / 100)} a.C.`)
+    : `${fmtAño(ini).replace(' a.C.', '')} – ${fmtAño(fin)}`;
+  return {ini, fin, nombre, clave: ini + ':' + fin, modo: 'siglo'};
+}
+const AÑOS = [-10000, -3000, 0, 1450, 1900, 2025], POS = [0, 150, 400, 700, 880, 1000];
+const fmtAño = t => { const a = Math.abs(t) >= 3000 ? Math.round(t / 100) * 100 : Math.round(t);
+  return a < 0 ? `${(-a).toLocaleString('es')} a.C.` : `${a} d.C.`; };
+
+async function cargarDatosMapa(){
+  if (mapData) return mapData;
+  await loadScript(LIBS.d3); await loadScript(LIBS.topojson);
+  const mundo = await loadJSON(LIBS.tierra);
+  // Historias generadas: se cargan todas las del índice para poder ubicarlas
+  await Promise.all(Object.keys(INDICE).map(async id => {
+    if (!STORIES[id]) { try { STORIES[id] = await loadGenerated(id); } catch (e) { console.warn(e); } }
+  }));
+  const caps = [], historias = [];
+  ERAS.forEach(e => e.caps.forEach(c => {
+    if (!c.lugar || c.hasta < -12000) return; // el prólogo no se sitúa en el mapa
+    const color = d3.color(e.c).brighter(1.7).formatHex();
+    caps.push({era: e, cap: c, color, desde: c.desde, hasta: c.hasta, ll: [c.lugar.lon, c.lugar.lat]});
+    (STORIES[c.id] || []).forEach((s, k) => {
+      if (s.lugar && s.anio != null) historias.push({era: e, cap: c, k, s, anio: s.anio, ll: [s.lugar.lon, s.lugar.lat]});
+    });
+  }));
+  try { RESUMENES = await loadJSON('resumenes.json'); } catch (e) { console.warn('Sin resúmenes narrados:', e); }
+  mapData = { tierra: topojson.feature(mundo, mundo.objects.land), caps, historias };
+  return mapData;
+}
+
+async function renderMap(){
+  renderBar([['Historia', '#/'], ['Mapa del mundo', '#/mapa']], false);
+  view.className = 'view mapview';
+  view.innerHTML = `<div class="mapMain"><div id="mapStage"><svg id="mapSvg" role="img" aria-label="Mapa del mundo"></svg><svg id="mapLines" aria-hidden="true"></svg><div id="mapLabels"></div>
+      <div class="zoombtns"><button data-z="1.6" aria-label="Acercar">+</button><button data-z="0.625" aria-label="Alejar">−</button></div>
+      <div class="maphint">Gira la rueda o mueve la barra para cambiar de época · arrastra para moverte</div></div>
+      <aside class="evcol" aria-label="Sucesos de la época">
+        <div class="evhead"><div><b id="evTit">…</b><small id="evCnt"></small></div>
+          <div class="seg" role="group" aria-label="Tamaño de la época"><button data-modo="siglo">Siglo</button><button data-modo="era">Era</button></div></div>
+        <div class="evlist" id="evList"></div></aside></div>
+    <div class="mapPanel">
+      <div class="yearRow"><button id="play" aria-label="Reproducir">▶</button>
+        <div><div class="year" id="mYear">…</div><div class="eraName" id="mEra">Cargando mapa…</div></div></div>
+      <div class="timeline"><input type="range" id="mSlider" min="0" max="1000" step="1" aria-label="Año">
+        <div class="ticks">${AÑOS.map((a, i) => `<span style="left:${POS[i] / 10}%">${i === 0 ? '' : a === 2025 ? 'hoy' : fmtAño(a).replace(' d.C.', '')}</span>`).join('')}</div></div>
+      <div class="activos" id="mActivos"></div>
+    </div>`;
+  let datos;
+  try { datos = await cargarDatosMapa(); }
+  catch (err) { $('#mEra').textContent = 'No se pudo cargar el mapa: ' + err.message; return; }
+  if (!location.hash.startsWith('#/mapa')) return; // el usuario se fue mientras cargaba
+
+  const stage = $('#mapStage'), svg = d3.select('#mapSvg'), slider = $('#mSlider'), lista = $('#evList');
+  // Pide de antemano (en lotes de 50, con caché) las fotos de todos los sucesos, para que las píldoras salgan ya con imagen
+  const fotosListas = fetchImages(datos.historias.map(h => h.s.w).filter(Boolean));
+  let claveÉpoca = null, sucesos = [];
+  const marcar = (n, desplazar) => { // resalta a la vez el punto y la píldora de un suceso
+    gPuntos.selectAll('g.evdot').classed('on', d => d.n === n).filter(d => d.n === n).raise();
+    lista.querySelectorAll('.evc').forEach(el => el.classList.toggle('on', +el.dataset.n === n));
+    capaEtiquetas.querySelectorAll('.lbl.ev').forEach(el => el.classList.toggle('on', +el.dataset.n === n));
+    if (desplazar) lista.querySelector(`.evc[data-n="${n}"]`)?.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'start'});
+  };
+  lista.addEventListener('mouseover', ev => { const c = ev.target.closest('.evc'); if (c) marcar(+c.dataset.n); });
+  lista.addEventListener('mouseleave', () => marcar(null));
+  const capaEtiquetas = $('#mapLabels'), lineasSvg = $('#mapLines');
+  const etiquetas = new Map(); // clave → etiqueta en pantalla (se reutilizan para que no parpadeen)
+  capaEtiquetas.addEventListener('mouseover', ev => { const e = ev.target.closest('.lbl.ev'); if (e) marcar(+e.dataset.n, true); });
+  capaEtiquetas.addEventListener('mouseleave', () => marcar(null));
+  const corto = (s, n = 32) => s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s;
+
+  // Coloca una etiqueta junto a cada punto. Prueba a la derecha, izquierda, arriba y abajo; si no hay hueco,
+  // en anillos cada vez más lejanos unida al punto con una línea. Los sucesos siempre se muestran (si no cabe,
+  // se pone igualmente); los capítulos, que ya salen en la barra de abajo, se omiten si no hay sitio.
+  function colocarEtiquetas(activos){
+    const {width: W, height: H} = stage.getBoundingClientRect();
+    const items = [
+      ...sucesos.map(h => ({clave: 's:' + h.cap.id + '#' + h.k, xy: h.xy, obligatoria: true, crear: () => {
+        const a = document.createElement('a');
+        a.className = 'lbl ev'; a.dataset.n = h.n; a.href = `#/era/${h.era.id}/cap/${h.cap.id}/${h.k}`; a.title = h.s.t;
+        a.innerHTML = `${img(h.s.w, h.era.c)}<b>${h.n}</b>${esc(corto(h.s.t))}`;
+        return a; }})),
+      ...activos.map(c => ({clave: 'c:' + c.cap.id, xy: c.xy, obligatoria: false, crear: () => {
+        const a = document.createElement('a');
+        a.className = 'lbl lcap'; a.href = `#/era/${c.era.id}/cap/${c.cap.id}`; a.title = `${c.cap.n} · ${c.cap.lugar.nombre}`;
+        a.innerHTML = `<i style="background:${c.color}"></i>${esc(corto(c.cap.n, 26))}`;
+        return a; }})),
+    ].map(it => ({...it, p: zoomT.apply(it.xy)})).filter(({p: [x, y]}) => x >= 0 && y >= 0 && x <= W && y <= H);
+
+    const puntos = items.map(({p: [x, y]}) => ({l: x - 7, t: y - 7, r: x + 7, b: y + 7}));
+    const cajas = [];
+    const libre = (l, t, w, h, propio) => l >= 2 && t >= 2 && l + w <= W - 2 && t + h <= H - 2
+      && !cajas.some(o => l < o.r + 3 && l + w > o.l - 3 && t < o.b + 3 && t + h > o.t - 3)
+      && !puntos.some((o, i) => i !== propio && l < o.r && l + w > o.l && t < o.b && t + h > o.t);
+    const vistas = new Set(), nuevasImgs = [], lineas = [];
+    items.forEach((it, i) => {
+      let el = etiquetas.get(it.clave);
+      if (!el) {
+        el = it.crear(); capaEtiquetas.appendChild(el); etiquetas.set(it.clave, el);
+        el._w = el.offsetWidth; el._h = el.offsetHeight;
+        const im = el.querySelector('[data-w]'); if (im) nuevasImgs.push(im);
+      }
+      const [x, y] = it.p, w = el._w, h = el._h;
+      const huecos = [[x + 11, y - h / 2], [x - w - 11, y - h / 2], [x - w / 2, y - h - 11], [x - w / 2, y + 11]];
+      for (const r of [45, 80, 125, 180, 250]) for (let a = 0; a < 12; a++) {
+        const ang = a * Math.PI / 6;
+        huecos.push([x + r * Math.cos(ang) - (Math.cos(ang) < 0 ? w : 0), y + r * Math.sin(ang) - h / 2]);
+      }
+      let sitio = huecos.find(([l, t]) => libre(l, t, w, h, i));
+      if (!sitio && it.obligatoria) sitio = [Math.min(Math.max(huecos[0][0], 2), W - w - 2), Math.min(Math.max(huecos[0][1], 2), H - h - 2)];
+      if (!sitio) { el.style.display = 'none'; vistas.add(it.clave); return; }
+      el.style.display = ''; el.style.left = sitio[0] + 'px'; el.style.top = sitio[1] + 'px';
+      cajas.push({l: sitio[0], t: sitio[1], r: sitio[0] + w, b: sitio[1] + h});
+      vistas.add(it.clave);
+      const ex = Math.min(Math.max(x, sitio[0]), sitio[0] + w), ey = Math.min(Math.max(y, sitio[1]), sitio[1] + h);
+      if (Math.hypot(ex - x, ey - y) > 16) lineas.push(`<line x1="${x}" y1="${y}" x2="${ex}" y2="${ey}"/>`);
+    });
+    for (const [clave, el] of etiquetas) if (!vistas.has(clave)) { el.remove(); etiquetas.delete(clave); }
+    lineasSvg.innerHTML = lineas.join('');
+    if (nuevasImgs.length) fotosListas.then(() => paintEls(nuevasImgs));
+  }
+  view.querySelectorAll('[data-modo]').forEach(b => b.onclick = () => { mapState.modo = b.dataset.modo; pintar(true); });
+  const escala = d3.scaleLinear().domain(AÑOS).range(POS).clamp(true);
+  if (mapState.pos == null) mapState.pos = escala(-3000);
+  let proj, path, zoomT = d3.zoomIdentity, raf = null, últimoPintado = -1;
+  const g = svg.append('g'), gTierra = g.append('g'), gPuntos = g.append('g');
+
+  function dibujarBase(){
+    const {width: w, height: h} = stage.getBoundingClientRect();
+    if (h > w) {
+      // Pantalla vertical (móvil): el mapa ocupa casi todo el alto y se arrastra para ver el resto.
+      // Centrado en el meridiano 20° E (África, Europa y Asia occidental); América queda a un arrastre.
+      const ancho = Math.min(h * 1.6, w * 3);
+      proj = d3.geoNaturalEarth1().rotate([-20, 0]).fitWidth(ancho, {type: 'Sphere'});
+      const [[x0, y0], [x1, y1]] = d3.geoPath(proj).bounds({type: 'Sphere'});
+      proj.translate([proj.translate()[0] - (x0 + x1) / 2 + w / 2, proj.translate()[1] - (y0 + y1) / 2 + h / 2]);
+    } else {
+      proj = d3.geoNaturalEarth1().fitExtent([[10, 10], [w - 10, h - 10]], {type: 'Sphere'});
+    }
+    path = d3.geoPath(proj);
+    gTierra.html('');
+    gTierra.append('path').attr('class', 'ocean').attr('d', path({type: 'Sphere'}));
+    gTierra.append('path').attr('class', 'grat').attr('d', path(d3.geoGraticule10()));
+    gTierra.append('path').attr('class', 'land').attr('d', path(datos.tierra));
+    datos.caps.forEach(c => c.xy = proj(c.ll));
+    datos.historias.forEach(h => h.xy = proj(h.ll));
+    sucesos.forEach(h => h.xy = proj(h.ll)); // son copias numeradas: también hay que recolocarlas
+  }
+
+  // Zoom con pellizco/botones y arrastre; la rueda sin Ctrl se reserva para avanzar en el tiempo
+  const zoom = d3.zoom().scaleExtent([1, 10])
+    .filter(ev => ev.type === 'wheel' ? ev.ctrlKey : !ev.button)
+    .on('zoom', ev => { zoomT = ev.transform; g.attr('transform', zoomT); pintar(true); });
+  svg.call(zoom);
+  stage.querySelectorAll('[data-z]').forEach(b => b.onclick = () => svg.transition().duration(300).call(zoom.scaleBy, +b.dataset.z));
+
+  function pintar(forzar){
+    const pos = mapState.pos, t = escala.invert(pos);
+    if (!forzar && pos === últimoPintado) return;
+    últimoPintado = pos;
+    slider.value = pos;
+    $('#mYear').textContent = fmtAño(t);
+    const era = [...ERAS].reverse().find(e => e.desde <= t && t <= e.hasta);
+    $('#mEra').textContent = era ? era.n : '';
+
+    // Capítulos activos ese año (puntos de color de su era)
+    const activos = datos.caps.filter(c => c.desde <= t && t <= c.hasta);
+    const k = zoomT.k;
+    gPuntos.selectAll('circle.capdot').data(activos, d => d.cap.id).join(
+      en => en.append('circle').attr('class', 'capdot').on('click', (ev, d) => location.hash = `#/era/${d.era.id}/cap/${d.cap.id}`)
+              .call(s => s.append('title')))
+      .attr('cx', d => d.xy[0]).attr('cy', d => d.xy[1]).attr('r', 6 / k).attr('fill', d => d.color)
+      .select('title').text(d => `${d.cap.n} · ${d.cap.lugar.nombre}`);
+
+    // Todos los sucesos de la época elegida: puntos numerados en el mapa y una píldora grande por cada uno.
+    // La lista solo se rehace al cambiar de época (no en cada paso de la rueda), así no parpadea.
+    const ép = épocaDe(t, mapState.modo);
+    if (ép.clave !== claveÉpoca) {
+      claveÉpoca = ép.clave;
+      sucesos = datos.historias.filter(h => h.anio >= ép.ini && h.anio < ép.fin)
+        .sort((a, b) => a.anio - b.anio || a.ll[0] - b.ll[0])
+        .map((h, i) => ({...h, n: i + 1}));
+      view.querySelectorAll('[data-modo]').forEach(b => b.setAttribute('aria-pressed', b.dataset.modo === mapState.modo));
+      $('#evTit').textContent = ép.nombre;
+      $('#evCnt').textContent = sucesos.length ? `${sucesos.length} suceso${sucesos.length > 1 ? 's' : ''} en el mapa` : '';
+      // Capítulos en marcha en algún momento de la época (no solo en el año exacto de la barra)
+      const capsÉpoca = datos.caps.filter(c => c.desde < ép.fin && c.hasta >= ép.ini);
+      lista.innerHTML = resumenGlobal(ép, capsÉpoca, sucesos.length) + (sucesos.length ? sucesos.map(h => `
+        <a class="evc" data-n="${h.n}" href="#/era/${h.era.id}/cap/${h.cap.id}/${h.k}">${img(h.s.w, h.era.c)}<span class="num">${h.n}</span>
+          <div class="tx"><small>${esc(h.s.y)} · ${esc(h.s.lugar.nombre.split(/[,(]/)[0].trim())}</small><b>${esc(h.s.t)}</b>
+            <p>${esc(h.s.x)}</p><em>${esc(h.cap.n)} · <span>Leer →</span></em></div></a>`).join('')
+        : `<div class="evvacio">Aún no hay sucesos escritos para esta época.${capsÉpoca.length ? ' Los capítulos de arriba ya están en el índice y se irán llenando.' : ''}</div>`);
+      lista.scrollTo(0, 0);
+      fotosListas.then(() => paintImages(lista)); // tras la precarga, para no pedir las fotos dos veces
+    }
+    // Puntos numerados (el número escala con el zoom para mantener el mismo tamaño en pantalla)
+    gPuntos.selectAll('g.evdot').data(sucesos, d => d.cap.id + '#' + d.k).join(en => {
+      const gg = en.append('g').attr('class', 'evdot').on('click', (ev, d) => marcar(d.n, true))
+        .on('mouseenter', (ev, d) => marcar(d.n)).on('mouseleave', () => marcar(null));
+      gg.append('circle'); gg.append('text'); gg.append('title');
+      return gg;
+    }).call(s => {
+      s.select('circle').attr('cx', d => d.xy[0]).attr('cy', d => d.xy[1]).attr('r', d => (d.n > 99 ? 11 : 9) / k);
+      s.select('text').attr('x', d => d.xy[0]).attr('y', d => d.xy[1]).attr('font-size', 10 / k).text(d => d.n);
+      s.select('title').text(d => `${d.n}. ${d.s.t} (${d.s.y})`);
+    });
+    colocarEtiquetas(activos);
+
+    // Qué está pasando en el mundo, de oeste a este
+    $('#mActivos').innerHTML = activos.length
+      ? `<span class="lbl">Ahora en el mundo</span>` + [...activos].sort((a, b) => a.ll[0] - b.ll[0]).map(c =>
+          `<a href="#/era/${c.era.id}/cap/${c.cap.id}"><i style="background:${c.color}"></i>${esc(c.cap.n)}</a>`).join('')
+      : '<span class="lbl">Sin capítulos en este momento</span>';
+  }
+
+  function mover(delta){ mapState.pos = Math.min(1000, Math.max(0, mapState.pos + delta)); pintar(); }
+  slider.oninput = () => { mapState.pos = +slider.value; pintar(); };
+  const rueda = ev => { if (ev.ctrlKey) return; ev.preventDefault(); mover(ev.deltaY * 0.06); };
+  stage.addEventListener('wheel', rueda, {passive: false});
+  const teclas = ev => { if (ev.key === 'ArrowRight') mover(2); if (ev.key === 'ArrowLeft') mover(-2); };
+  document.addEventListener('keydown', teclas);
+
+  // Reproducción automática: recorre toda la historia en unos 2,5 minutos
+  const play = $('#play');
+  function paso(prev){ return now => {
+    if (!mapState.playing) return;
+    mover(((now - (prev ?? now)) / 1000) * 7);
+    if (mapState.pos >= 1000) { mapState.playing = false; play.textContent = '▶'; return; }
+    raf = requestAnimationFrame(paso(now));
+  }; }
+  play.onclick = () => {
+    mapState.playing = !mapState.playing;
+    play.textContent = mapState.playing ? '❚❚' : '▶';
+    if (mapState.playing) { if (mapState.pos >= 1000) mapState.pos = 0; raf = requestAnimationFrame(paso(null)); }
+  };
+
+  const alRedimensionar = () => { dibujarBase(); pintar(true); };
+  window.addEventListener('resize', alRedimensionar);
+  leaveMap = () => {
+    mapState.playing = false; cancelAnimationFrame(raf);
+    window.removeEventListener('resize', alRedimensionar);
+    document.removeEventListener('keydown', teclas);
+  };
+  dibujarBase(); pintar(true);
+}
+
+/* Nivel 3: profundizar en una historia (hoja inferior) */
+function openDeep(story){
+  $('#deepBody').innerHTML = `<div class="kicker">Profundizar</div><h3>${esc(story.deep.t)}</h3>${story.deep.p.map(p=>`<p>${esc(p)}</p>`).join('')}
+    <button class="btn ghost" data-close style="margin-top:6px">Volver a la historia</button>`;
+  $('#deep').classList.add('open');
+}
+const closeDeep = () => $('#deep').classList.remove('open');
+
+/* ============ EVENTOS Y RUTAS ============ */
+document.addEventListener('click', ev => {
+  const t = ev.target.closest('[data-hilo],[data-go],[data-deep],[data-close]');
+  if (!t) return;
+  if (t.dataset.hilo !== undefined) {
+    state.hilo = t.dataset.hilo || null;
+    route(); return;
+  }
+  if (t.dataset.go !== undefined) { view.querySelector(`.slide[data-i="${t.dataset.go}"]`)?.scrollIntoView({behavior:'smooth'}); return; }
+  if (t.dataset.deep !== undefined) {
+    const capId = location.hash.split('/')[4];
+    openDeep(STORIES[capId][+t.dataset.deep]); return;
+  }
+  if (t.dataset.close !== undefined) closeDeep();
+});
+document.addEventListener('keydown', ev => { if (ev.key === 'Escape') closeDeep(); });
+
+function route(){
+  cleanup(); closeDeep();
+  const p = location.hash.replace(/^#\/?/, '').split('/');
+  if (p[0] === 'mapa') renderMap();
+  else if (p[0] === 'era' && p[2] === 'cap') renderChapter(p[1], p[3], p[4]);
+  else if (p[0] === 'era') renderEra(p[1]);
+  else renderHome();
+}
+window.addEventListener('hashchange', route);
+
+/* Arranque: estructura de eras + índice de capítulos generados ({capId: nº de historias}) */
+let INDICE = {};
+async function loadJSON(url){
+  const r = await fetch(url, {cache: 'no-cache'});
+  if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
+  return r.json();
+}
+// Los capítulos generados antes del cambio a "narración neutral" traen otras_miradas aparte:
+// se integran en Profundizar como "lo que cuenta cada fuente", sin botón propio.
+function profundizarConFuentes(s){
+  const p = s.profundizar ? [...s.profundizar.parrafos] : [];
+  const fuentes = (s.otras_miradas || []).map(m => `${m.region}: ${m.relato}`);
+  if (!p.length && !fuentes.length) return null;
+  return {t: s.profundizar?.titulo || 'Lo que cuenta cada fuente', p: p.concat(fuentes)};
+}
+// Convierte el formato del generador al que usan las vistas
+async function loadGenerated(capId){
+  const g = await loadJSON(`historias/${capId}.json`);
+  return g.historias.map(s => ({
+    t: s.titulo, y: s.fecha, w: s.imagen_wikipedia, x: s.texto, anio: s.anio, lugar: s.lugar,
+    deep: profundizarConFuentes(s),
+    link: s.conecta_con ? {h: null, txt: s.conecta_con.texto, to: `#/era/${s.conecta_con.capitulo.replace('/', '/cap/')}`} : null,
+  }));
+}
+(async () => {
+  try {
+    ERAS = (await loadJSON('estructura.json')).map(e => ({...e, caps: e.caps.map(c => ({h: [], ...c, id: c.id || slug(c.n)}))}));
+  } catch (err) {
+    view.innerHTML = `<p style="padding:90px 20px">No se pudo cargar estructura.json (${esc(err.message)}).</p>`; return;
+  }
+  try { INDICE = await loadJSON('historias/indice.json'); } catch { INDICE = {}; } // aún no hay capítulos generados
+  route();
+})();
+</script>
+</body>
+</html>
